@@ -2,20 +2,20 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**140 of 486 solved problems documented.**
+**150 of 486 solved problems documented.**
 
 ## Roadmap progress
 
 | Level | Course | Solved | Total | Documented |
 |---|---|---:|---:|---:|
-| 1 | 500 to 1000 difficulty rating | 156 | 156 | 140 |
+| 1 | 500 to 1000 difficulty rating | 156 | 156 | 150 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 0 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 0 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **140** |
+| | **Total** | **502** | **761** | **150** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -24,14 +24,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | Phase | Problems | Documented |
 |---|---:|---:|
 | 1 | 100 | 100 |
-| 2 | 100 | 40 |
+| 2 | 100 | 50 |
 | 3 | 100 | 0 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (11)</summary>
+<details open><summary><b>Arrays</b> (13)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -46,10 +46,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 135 | [Penalty Shots](docs/arrays/PENALTY.md) | 925 | Summing alternate positions | $O(1)$ per test case — ten fixed entries |
 | 138 | [Chef and Price Control](docs/arrays/PRICECON.md) | 931 | Summing a clamped excess | $O(N)$ per test case |
 | 140 | [No Time to Wait](docs/arrays/NOTIME.md) | 932 | Existence check over a list | $O(N)$ |
+| 141 | [First and Last](docs/arrays/FIRSTANDLAST.md) | 932 | Cyclically adjacent pairs | $O(N)$ per test case |
+| 147 | [Non-Negative Product](docs/arrays/NONNEGPROD.md) | 948 | Sign of a product from the count of negatives | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Basic Math</b> (68)</summary>
+<details open><summary><b>Basic Math</b> (70)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -121,6 +123,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 125 | [Chef and Profits](docs/basic-math/CHFPROFIT.md) | 889 | Factoring a repeated difference | $O(1)$ per test case |
 | 133 | [HOW MANY DIGITS DO I HAVE](docs/basic-math/HOWMANY.md) | 520 | Counting digits | $O(d)$ |
 | 137 | [Chef and Pairing Slippers](docs/basic-math/CHEFSLP.md) | 930 | Pairing limited by the scarcer side | $O(1)$ per test case |
+| 144 | [Car Range](docs/basic-math/CARRANGE.md) | 938 | Reading an off-by-one from the statement | $O(1)$ per test case |
+| 145 | [ Am I Lucky!](docs/basic-math/SPCP4.md) | 941 | Remainders paired off | $O(1)$ per test case |
 
 </details>
 
@@ -151,7 +155,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Conditionals & Case Work</b> (17)</summary>
+<details open><summary><b>Conditionals & Case Work</b> (19)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -172,6 +176,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 123 | [Utkarsh and Placement tests](docs/conditionals-case-work/UTKPLC.md) | 886 | Ranking by a given priority order | $O(1)$ per test case |
 | 129 | [Passing Marks](docs/conditionals-case-work/PSGRADE.md) | 904 | Conjunction of per-subject and aggregate thresholds | $O(1)$ per test case |
 | 136 | [Shoe Fit](docs/conditionals-case-work/SHOEFIT.md) | 925 | Presence of both values in a small collection | $O(1)$ per test case |
+| 149 | [Marathon](docs/conditionals-case-work/MARARUN.md) | 955 | Largest achievable tier | $O(1)$ per test case |
+| 150 | [La Liga](docs/conditionals-case-work/COOK82A.md) | 956 | Parsing labelled input, then a single logical condition | $O(1)$ per test case |
 
 </details>
 
@@ -185,7 +191,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (9)</summary>
+<details open><summary><b>Greedy</b> (10)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -198,10 +204,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 104 | [Smallest Numbers of Notes](docs/greedy/FLOW005.md) | 750 | Greedy change-making in a canonical system | $O(k)$ per test case, $k = 6$ denominations |
 | 127 | [Peaceful Party](docs/greedy/MAYOR_PARTY.md) | 898 | Choosing between mutually exclusive groups | $O(1)$ per test case |
 | 131 | [Avoid Contact](docs/greedy/AVOIDCONTACT.md) | 907 | Packing with separation constraints | $O(1)$ per test case |
+| 146 | [Janmansh at Fruit Market](docs/greedy/JMARKET.md) | 947 | Cheapest choice under a diversity constraint | $O(1)$ per test case |
 
 </details>
 
-<details open><summary><b>Number Theory</b> (16)</summary>
+<details open><summary><b>Number Theory</b> (17)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -221,6 +228,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 121 | [Find the Direction](docs/number-theory/FACEDIR.md) | 880 | Cyclic state via modulo | $O(1)$ per test case |
 | 132 | [Problem](docs/number-theory/PR0BLEM.md) | 908 | Parity invariant | $O(1)$ per test case |
 | 139 | [Akash and Missing Class](docs/number-theory/CHFCLASS.md) | 931 | Counting residues in a range | $O(1)$ per test case |
+| 143 | [Two vs Ten](docs/number-theory/TWOVSTEN.md) | 936 | Which prime factors an operation can supply | $O(1)$ per test case |
 
 </details>
 
@@ -250,7 +258,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (5)</summary>
+<details open><summary><b>Strings</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -259,6 +267,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 92 | [Wordle](docs/strings/WORDLE.md) | 804 | Position-wise comparison | $O(L)$ per test case with $L = 5$ |
 | 99 | [The Block Game](docs/strings/PALL01.md) | 720 | Palindrome check by reversal | $O(d)$ per test case, $d$ = number of digits |
 | 105 | [Is it a VOWEL or CONSONANT](docs/strings/VOWELTB.md) | 520 | Membership test against a small set | $O(1)$ |
+| 142 | [World Chess Championship](docs/strings/WCC.md) | 935 | Counting characters, then a three-way branch | $O(|S|)$ per test case |
+| 148 | [Rearranging digits to get a multiple of 5](docs/strings/DIGARR.md) | 949 | Divisibility decided by one digit | $O(D)$ per test case |
 
 </details>
 

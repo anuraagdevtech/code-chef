@@ -1,0 +1,140 @@
+# 142. World Chess Championship
+
+> CodeChef problem code [`WCC`](https://www.codechef.com/problems/WCC) &middot; difficulty **935** &middot; time limit **1s**
+
+| | |
+|---|---|
+| **Topic** | Strings |
+| **Technique** | Counting characters, then a three-way branch |
+| **Time** | $O(|S|)$ per test case |
+| **Space** | $O(1)$ |
+| **Roadmap course** | 500 to 1000 difficulty rating (Level 1) |
+
+## Question
+
+The World Chess Championship $2022$ is about to start. $14$ Classical games will be played between Chef and Carlsen in the championship, where each game has one of three outcomes — it can be won by Carlsen, won by Chef, or it can be a draw. The winner of a game gets $2$ points, and the loser gets $0$ points. If it’s a draw, both players get $1$ point each.
+
+The total prize pool of the championship is $100 \cdot X$. At end of the $14$ Classical games, if one player has **strictly more** points than the other, he is declared the champion and gets $60 \cdot X$ as his prize money, and the loser gets $40 \cdot X$.
+
+If the total points are **tied**, then the defending champion Carlsen is declared the winner. However, if this happens, the winner gets only $55 \cdot X$, and the loser gets $45 \cdot X$.
+
+Given the results of all the $14$ games, output the prize money that Carlsen receives.
+
+The results are given as a string of length $14$ consisting of the characters `C`, `N`, and `D`.
+- `C` denotes a victory by Carlsen.
+- `N` denotes a victory by Chef.
+- `D` denotes a draw.
+
+**Input**
+
+- The first line of input contains an integer $T$, denoting the number of test cases. The description of $T$ test cases follows.
+- The first line of each test case contains one integer $X$, denoting that the total prize pool is $100\cdot X$.
+- The second line contains the results of the match, as a string of length $14$ containing only the characters `C`, `N`, and `D`.
+
+**Output**
+
+For each test case, output in a single line the total prize money won by Carlsen.
+
+## Constraints
+
+- $1 \leq T \leq 1000$
+- $1 \leq X \leq 10^6$
+- $|S| = 14$
+- $S$ contains only characters `D`, `C`, `N`.
+
+**Subtasks**
+
+**Subtask #1 (100 points):** Original constraints
+
+## Sample
+
+**Sample input**
+
+```
+4
+100
+CCCCCCCCCCCCCC
+400
+CDCDCDCDCDCDCD
+30
+DDCCNNDDDCCNND
+1
+NNDNNDDDNNDNDN
+```
+
+**Sample output**
+
+```
+6000
+24000
+1650
+40
+```
+
+<details><summary>Explanation</summary>
+
+**Test case $1$:** Since Carlsen won all the games, he will be crowned the champion and will get $60 \cdot X$ as the prize money which is $60 \cdot 100 = 6000$
+
+**Test case $2$:** Carlsen won $7$ games and drew $7$, so his score is $2 \cdot 7 + 1 \cdot 7 = 21$. Chef lost $7$ games and drew $7$, so his score is $0 \cdot 7 + 1 \cdot 7 = 7$. Since Carlsen has more points, he will be crowned the champion and will get $60 \cdot X$ as the prize money which is $60 \cdot 400 = 24000$
+
+**Test case $3$:** Carlsen and Chef both end up with $14$ points. So, Carlsen is declared the winner, but because the points were tied, he receives $55\cdot X = 55\cdot 30 = 1650$ in prize money.
+
+</details>
+
+## Approach
+
+Score the string first. A `C` gives Carlsen $2$ points, an `N` gives Chef $2$, and a `D` gives both $1$:
+
+$$\text{Carlsen} = 2\,n_C + n_D, \qquad \text{Chef} = 2\,n_N + n_D$$
+
+Since the string has a fixed length of $14$, counting two of the three characters is enough — but counting all three with `str.count` is clearer and still a single pass each.
+
+Then the prize depends on three cases, and the middle one is the trap:
+
+- Carlsen strictly ahead → $60X$
+- Chef strictly ahead → Carlsen takes the loser's share, $40X$
+- **Tied** → Carlsen is declared champion but receives only $55X$
+
+The tie is not folded into the win. A solution treating "Carlsen wins ties" as simply a win would pay $60X$ and fail sample case 3, where $4$ wins each and $6$ draws leave both on $14$ points and the correct answer is $55 \times 30 = 1650$.
+
+Sample case 4 is the losing case: Chef takes eight games to Carlsen's none, so Carlsen collects $40X = 40$.
+
+Note the draws cancel — $n_D$ appears identically on both sides — so the comparison reduces to $n_C$ against $n_N$. The code keeps the full expressions because they mirror the statement, but recognising the cancellation is a useful check that draws can never decide the title.
+
+With $X$ up to $10^6$ the prize reaches $6 \times 10^7$, which is comfortably inside any integer type.
+
+## Solution (Python)
+
+```python
+import sys
+
+
+def main() -> None:
+    data = sys.stdin.buffer.read().split()
+    t = int(data[0])
+    out = []
+    for i in range(t):
+        x = int(data[1 + 2 * i])
+        s = data[2 + 2 * i].decode()
+        draws = s.count("D")
+        carlsen = 2 * s.count("C") + draws
+        chef = 2 * s.count("N") + draws
+        # A tie still crowns Carlsen, but pays 55 rather than 60.
+        if carlsen > chef:
+            out.append(str(60 * x))
+        elif chef > carlsen:
+            out.append(str(40 * x))
+        else:
+            out.append(str(55 * x))
+    sys.stdout.write("\n".join(out) + "\n")
+
+
+main()
+```
+
+## Complexity
+
+- **Time:** $O(|S|)$ per test case
+- **Space:** $O(1)$
+
+> CodeChef tags: `Mathematics`, `Algorithms`
