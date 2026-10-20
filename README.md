@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**272 of 486 solved problems documented.**
+**280 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 53 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 61 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **272** |
+| | **Total** | **502** | **761** | **280** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,7 +25,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 72 |
+| 3 | 100 | 80 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
@@ -68,7 +68,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Basic Math</b> (83)</summary>
+<details open><summary><b>Basic Math</b> (84)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -155,6 +155,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 224 | [Bella ciao](docs/basic-math/CHFHEIST.md) | 1410 | Summing an arithmetic progression | $O(1)$ per test case |
 | 230 | [Equality](docs/basic-math/EQUALITY.md) | 1419 | Solving a symmetric linear system by summing | $O(N)$ per test case |
 | 265 | [Chef Goes to the Cinema](docs/basic-math/CO92SUBW.md) | 1493 | Triangular numbers and a local search | $O(1)$ per test case |
+| 275 | [Chef Drinks Coke](docs/basic-math/COKE.md) | 1511 | Closed form for a drift-to-target process | $O(N)$ per test case |
 
 </details>
 
@@ -166,7 +167,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (4)</summary>
+<details open><summary><b>Bit Manipulation</b> (6)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -174,6 +175,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 242 | [Make Array Odd](docs/bit-manipulation/MAKEARRAYODD.md) | 1445 | Tracking a single bit through XOR and OR | $O(N)$ per test case |
 | 253 | [Order by XOR](docs/bit-manipulation/XOR_ORDER.md) | 1476 | The highest differing bit decides an XOR comparison | $O(1)$ per test case |
 | 262 | [Interesting XOR!](docs/bit-manipulation/IRSTXOR.md) | 1487 | Maximising a product under a fixed XOR | $O(1)$ per test case |
+| 273 | [Equal by XORing](docs/bit-manipulation/EQBYXOR.md) | 1507 | The XOR span of an initial segment | $O(1)$ per test case |
+| 276 | [One-XOR Deletions](docs/bit-manipulation/DELXORONE.md) | 1516 | Grouping by the value with its low bit dropped | $O(N)$ per test case |
 
 </details>
 
@@ -301,7 +304,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (29)</summary>
+<details open><summary><b>Number Theory</b> (32)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -334,6 +337,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 255 | [Majin Vegeta](docs/number-theory/VEGETA.md) | 1477 | Sieve counting distinct prime factors | $O(V \log\log V)$ once, then $O(m - n)$ per query |
 | 258 | [Jogging](docs/number-theory/JOGGING.md) | 1484 | A doubling recurrence, taken modulo | $O(\log N)$ per test case |
 | 260 | [Chef Odd](docs/number-theory/CHEFODD.md) | 1486 | Parity and capacity constraints together | $O(1)$ per test case |
+| 274 | [Reduce to One](docs/number-theory/REDONE.md) | 1507 | A telescoping product in disguise | $O(1)$ per test case after an $O(N)$ precomputation |
+| 279 | [Split Sums](docs/number-theory/SPSUM.md) | 1524 | Splitting a fixed total under a gcd condition | $O(\log S)$ per test case |
+| 280 | [Guddu on a Date](docs/number-theory/KS2.md) | 1525 | A bijection between prefixes and solutions | $O(\log N)$ per test case |
 
 </details>
 
@@ -364,13 +370,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Simulation</b> (3)</summary>
+<details open><summary><b>Simulation</b> (4)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 178 | [Gasoline Introduction](docs/simulation/BEGGASOL.md) | 1263 | Collecting fuel while moving forward | $O(N)$ per test case |
 | 184 | [Cops and the Thief Devu](docs/simulation/COPS.md) | 1242 | Marking covered ranges over a small domain | $O(100 + M)$ per test case |
 | 235 | [Full Barrier Alchemist](docs/simulation/PIPSQUIK.md) | 1426 | Walking a sequence with a consumable resource | $O(N)$ per test case |
+| 278 | [When to take medicine](docs/simulation/MEDIC.md) | 1522 | Where a parity rule breaks at month boundaries | $O(1)$ per test case |
 
 </details>
 
@@ -391,7 +398,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (24)</summary>
+<details open><summary><b>Strings</b> (25)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -419,6 +426,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 259 | [Correct Sentence](docs/strings/CORTSENT.md) | 1485 | Per-word alphabet membership | $O(\sum |S_i|)$ per test case |
 | 264 | [Anti Palindrome](docs/strings/ANTIPALINDR.md) | 1488 | Forcing a palindrome to be impossible | $O(N)$ per test case |
 | 266 | [Harrenhal](docs/strings/HHAL.md) | 1495 | Covering a two-letter string with palindromes | $O(|H|)$ per test case |
+| 277 | [Concat Palindrome](docs/strings/CONCATPAL.md) | 1520 | Multiset containment forced by mirroring | $O(N + M)$ per test case |
 
 </details>
 
