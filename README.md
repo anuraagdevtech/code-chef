@@ -2,20 +2,20 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**180 of 486 solved problems documented.**
+**200 of 486 solved problems documented.**
 
 ## Roadmap progress
 
 | Level | Course | Solved | Total | Documented |
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
-| 2 | Level up from 1* to 2* | 66 | 66 | 24 |
+| 2 | Level up from 1* to 2* | 66 | 66 | 44 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 0 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **180** |
+| | **Total** | **502** | **761** | **200** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -24,14 +24,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | Phase | Problems | Documented |
 |---|---:|---:|
 | 1 | 100 | 100 |
-| 2 | 100 | 80 |
+| 2 | 100 | 100 |
 | 3 | 100 | 0 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (20)</summary>
+<details open><summary><b>Arrays</b> (22)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -55,6 +55,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 174 | [Chef and IPC Certificates](docs/arrays/IPCCERT.md) | 922 | Filtering rows on two independent criteria | $O(N \cdot K)$ |
 | 176 | [A Subtask Problem](docs/arrays/SUBTASK.md) | 1217 | Ordered condition checks | $O(N)$ per test case |
 | 179 | [Carvans](docs/arrays/CARVANS.md) | 1264 | Running minimum over a prefix | $O(N)$ per test case |
+| 181 | [Average Flex](docs/arrays/AVGFLEX.md) | 1442 | Counting against a global threshold | $O(N^2)$ per test case at these bounds, or $O(N \log N)$ sorted |
+| 183 | [College Life 2](docs/arrays/COLGLF2.md) | 1519 | Group total with a per-group adjustment | $O(\sum E_i)$ per test case |
 
 </details>
 
@@ -162,12 +164,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (2)</summary>
+<details open><summary><b>Combinatorics</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 71 | [Chef Fantasy 11](docs/combinatorics/FIZZBUZZ2303.md) | 739 | Ordered pairs (permutations) | $O(1)$ per test case |
 | 122 | [Farmers League](docs/combinatorics/LEAGUE.md) | 883 | Extremal construction in a round robin | $O(1)$ per test case |
+| 192 | [Count Substrings](docs/combinatorics/CSUB.md) | 1330 | Counting pairs from a tally | $O(N)$ per test case |
 
 </details>
 
@@ -210,7 +213,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (13)</summary>
+<details open><summary><b>Greedy</b> (16)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -227,6 +230,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 160 | [The Two Dishes](docs/greedy/MAX_DIFF.md) | 1254 | Pushing one variable to its bound | $O(1)$ per test case |
 | 162 | [Two Dishes](docs/greedy/TWODISH.md) | 1140 | Bottleneck across shared and exclusive resources | $O(1)$ per test case |
 | 175 | [Make them equal](docs/greedy/MAKEEQUAL.md) | 1267 | Bounded by the widest gap | $O(N)$ per test case |
+| 187 | [Magical Doors](docs/greedy/MAGDOORS.md) | 1355 | Tracking a global flip as parity | $O(|S|)$ per test case |
+| 199 | [Maximise the Subsequence Sum](docs/greedy/SIGNFLIP.md) | 1308 | Flip the largest magnitudes first | $O(N \log N)$ per test case |
+| 200 | [Daanish and Problems](docs/greedy/DIV03.md) | 1388 | Spending a budget from the top down | $O(1)$ per test case — ten fixed difficulties |
 
 </details>
 
@@ -266,7 +272,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sets</b> (5)</summary>
+<details open><summary><b>Sets</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -275,26 +281,32 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 134 | [Two Ranges](docs/sets/TWORANGES.md) | 918 | Inclusion-exclusion on intervals | $O(1)$ per test case |
 | 164 | [Programming Languages](docs/sets/PROGLANG.md) | 1001 | Subset containment | $O(1)$ per test case |
 | 177 | [ICPC Balloons](docs/sets/BALLOON.md) | 1205 | Smallest prefix covering a required set | $O(N)$ per test case |
+| 182 | [Nobel Prize](docs/sets/NOBEL.md) | 1372 | Counting distinct values against a capacity | $O(N)$ per test case |
+| 189 | [Studying Alphabet](docs/sets/ALPHABET.md) | 1123 | Subset containment | $O(|W|)$ per word |
 
 </details>
 
-<details open><summary><b>Simulation</b> (1)</summary>
+<details open><summary><b>Simulation</b> (2)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 178 | [Gasoline Introduction](docs/simulation/BEGGASOL.md) | 1263 | Collecting fuel while moving forward | $O(N)$ per test case |
+| 184 | [Cops and the Thief Devu](docs/simulation/COPS.md) | 1242 | Marking covered ranges over a small domain | $O(100 + M)$ per test case |
 
 </details>
 
-<details open><summary><b>Sorting</b> (1)</summary>
+<details open><summary><b>Sorting</b> (4)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 67 | [Second Largest](docs/sorting/FLOW017.md) | 520 | Median of three | $O(1)$ per test case |
+| 196 | [The Smallest Pair](docs/sorting/SMPAIR.md) | 1352 | The two smallest elements | $O(N)$ per test case |
+| 197 | [Racing Horses](docs/sorting/HORSES.md) | 1231 | Minimum adjacent difference after sorting | $O(N \log N)$ per test case |
+| 198 | [Maximum Weight Difference](docs/sorting/MAXDIFF.md) | 1308 | Taking an extreme K-subset | $O(N \log N)$ per test case |
 
 </details>
 
-<details open><summary><b>Strings</b> (8)</summary>
+<details open><summary><b>Strings</b> (16)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -306,6 +318,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 142 | [World Chess Championship](docs/strings/WCC.md) | 935 | Counting characters, then a three-way branch | $O(|S|)$ per test case |
 | 148 | [Rearranging digits to get a multiple of 5](docs/strings/DIGARR.md) | 949 | Divisibility decided by one digit | $O(D)$ per test case |
 | 153 | [Play Piano](docs/strings/PLAYPIAN.md) | 1180 | Validating fixed-size blocks | $O(|s|)$ per test case |
+| 185 | [Pawri Meme](docs/strings/PAWRI.md) | 1182 | Substring replacement | $O(|S|)$ per test case |
+| 186 | [Chef and the Wildcard Matching](docs/strings/TWOSTR.md) | 1254 | Wildcard matching, position by position | $O(|X|)$ per test case |
+| 188 | [Chef and Feedback](docs/strings/ERROR.md) | 1199 | Substring search | $O(|S|)$ per test case |
+| 190 | [Hiring Test](docs/strings/HIRETEST.md) | 1260 | Counting characters, then a two-branch rule | $O(N \cdot M)$ per test case |
+| 191 | [Lapindromes](docs/strings/LAPIN.md) | 1159 | Comparing character frequencies | $O(|S|)$ per test case |
+| 193 | [Equinox Strings](docs/strings/EQUINOX.md) | 1272 | First-character membership test | $O(N)$ per test case |
+| 194 | [Snake Procession](docs/strings/SNAKPROC.md) | 1290 | Single-pass state machine | $O(L)$ per report |
+| 195 | [Password](docs/strings/PASSWD.md) | 1470 | Several predicates, one with a positional restriction | $O(|S|)$ per test case |
 
 </details>
 

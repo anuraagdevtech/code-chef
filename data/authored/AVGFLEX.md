@@ -1,0 +1,19 @@
+---
+topic: Arrays
+subtopic: Counting against a global threshold
+time: $O(N^2)$ per test case at these bounds, or $O(N \log N)$ sorted
+space: $O(1)$
+---
+Student $i$ boasts when the number scoring $\leq A_i$ exceeds the number scoring $> A_i$. Those two groups partition the class, so if $c_i$ is the count of scores $\leq A_i$ then the other group has $N - c_i$, and the condition becomes
+
+$$c_i > N - c_i \quad\Longleftrightarrow\quad 2c_i > N$$
+
+In words: a student boasts exactly when they are at or above the **median** — more precisely, when strictly more than half the class scores no higher than they do.
+
+The complement trick is the useful part: one count plus the total replaces two counts, the same move used for the even/odd and contest-code problems.
+
+Note that $c_i$ counts the student themselves, since $A_i \leq A_i$. Sample case 1, with three identical scores, has $c_i = 3$ for everyone, and $6 > 3$ makes all three boast — ties count in your favour, which is what the `<=` encodes. Using a strict `<` would give $c_i = 0$ and nobody boasting.
+
+Sample case 3 is the same effect with duplicates: the three students scoring $30$ each see $c_i = 4$, comfortably clearing the bar, while the lone $1$ does not.
+
+With $N \leq 100$ the direct $O(N^2)$ double loop is perfectly fine and reads closest to the statement. Sorting once and using binary search would give $O(N \log N)$, which is the shape to reach for if $N$ grew.
