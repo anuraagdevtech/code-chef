@@ -2,20 +2,20 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**120 of 486 solved problems documented.**
+**140 of 486 solved problems documented.**
 
 ## Roadmap progress
 
 | Level | Course | Solved | Total | Documented |
 |---|---|---:|---:|---:|
-| 1 | 500 to 1000 difficulty rating | 156 | 156 | 120 |
+| 1 | 500 to 1000 difficulty rating | 156 | 156 | 140 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 0 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 0 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **120** |
+| | **Total** | **502** | **761** | **140** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -24,14 +24,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | Phase | Problems | Documented |
 |---|---:|---:|
 | 1 | 100 | 100 |
-| 2 | 100 | 20 |
+| 2 | 100 | 40 |
 | 3 | 100 | 0 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (8)</summary>
+<details open><summary><b>Arrays</b> (11)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -43,10 +43,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 87 | [The Lead Game](docs/arrays/TLG.md) | 1190 | Running totals with a tracked maximum | $O(N)$ |
 | 88 | [Degree of Polynomial](docs/arrays/DPOLY.md) | 793 | Last index satisfying a predicate | $O(N)$ per test case |
 | 89 | [Recent contest problems](docs/arrays/RECENTCONT.md) | 793 | Counting two categories in one pass | $O(N)$ per test case |
+| 135 | [Penalty Shots](docs/arrays/PENALTY.md) | 925 | Summing alternate positions | $O(1)$ per test case — ten fixed entries |
+| 138 | [Chef and Price Control](docs/arrays/PRICECON.md) | 931 | Summing a clamped excess | $O(N)$ per test case |
+| 140 | [No Time to Wait](docs/arrays/NOTIME.md) | 932 | Existence check over a list | $O(N)$ |
 
 </details>
 
-<details open><summary><b>Basic Math</b> (64)</summary>
+<details open><summary><b>Basic Math</b> (68)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -114,6 +117,10 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 117 | [Relativity](docs/basic-math/RELATIVE.md) | 872 | Rearranging a given formula | $O(1)$ per test case |
 | 119 | [Drunk Alcoholic](docs/basic-math/DRUNKALK.md) | 874 | Net progress per cycle, with an odd remainder | $O(1)$ per test case |
 | 120 | [Chef On Island](docs/basic-math/CCISLAND.md) | 878 | Two independent supply checks | $O(1)$ per test case |
+| 124 | [Secret Recipe](docs/basic-math/CHEFRUN.md) | 888 | Comparing ratios by cross-multiplication | $O(1)$ per test case |
+| 125 | [Chef and Profits](docs/basic-math/CHFPROFIT.md) | 889 | Factoring a repeated difference | $O(1)$ per test case |
+| 133 | [HOW MANY DIGITS DO I HAVE](docs/basic-math/HOWMANY.md) | 520 | Counting digits | $O(d)$ |
+| 137 | [Chef and Pairing Slippers](docs/basic-math/CHEFSLP.md) | 930 | Pairing limited by the scarcer side | $O(1)$ per test case |
 
 </details>
 
@@ -125,24 +132,26 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Brute Force</b> (2)</summary>
+<details open><summary><b>Brute Force</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 56 | [Weights](docs/brute-force/WGHTS.md) | 697 | Enumerating every non-empty subset | $O(2^k)$ per test case with $k = 3$, so $O(1)$ |
 | 110 | [Highest Divisor](docs/brute-force/HDIVISR.md) | 860 | Searching a small range downward | $O(1)$ — at most 10 divisibility tests |
+| 128 | [Chef and Battery ](docs/brute-force/FIFTYPE.md) | 901 | Searching one variable of a linear Diophantine equation | $O(1)$ per test case — the search is bounded by a small constant |
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (1)</summary>
+<details open><summary><b>Combinatorics</b> (2)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 71 | [Chef Fantasy 11](docs/combinatorics/FIZZBUZZ2303.md) | 739 | Ordered pairs (permutations) | $O(1)$ per test case |
+| 122 | [Farmers League](docs/combinatorics/LEAGUE.md) | 883 | Extremal construction in a round robin | $O(1)$ per test case |
 
 </details>
 
-<details open><summary><b>Conditionals & Case Work</b> (14)</summary>
+<details open><summary><b>Conditionals & Case Work</b> (17)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -160,6 +169,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 97 | [Genes](docs/conditionals-case-work/GENE01.md) | 826 | Ranking by priority | $O(1)$ |
 | 103 | [Grade The Steel](docs/conditionals-case-work/FLOW014.md) | 900 | Grading from a set of independent flags | $O(1)$ per test case |
 | 113 | [Which Division](docs/conditionals-case-work/WHICHDIV.md) | 867 | Ordered threshold ladder | $O(1)$ per test case |
+| 123 | [Utkarsh and Placement tests](docs/conditionals-case-work/UTKPLC.md) | 886 | Ranking by a given priority order | $O(1)$ per test case |
+| 129 | [Passing Marks](docs/conditionals-case-work/PSGRADE.md) | 904 | Conjunction of per-subject and aggregate thresholds | $O(1)$ per test case |
+| 136 | [Shoe Fit](docs/conditionals-case-work/SHOEFIT.md) | 925 | Presence of both values in a small collection | $O(1)$ per test case |
 
 </details>
 
@@ -173,7 +185,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (7)</summary>
+<details open><summary><b>Greedy</b> (9)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -184,10 +196,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 66 | [A or B](docs/greedy/AORB.md) | 728 | Scheduling order and the exchange argument | $O(1)$ per test case |
 | 82 | [Single-use Attack](docs/greedy/SINGLEUSE.md) | 777 | Comparing both strategies explicitly | $O(1)$ per test case |
 | 104 | [Smallest Numbers of Notes](docs/greedy/FLOW005.md) | 750 | Greedy change-making in a canonical system | $O(k)$ per test case, $k = 6$ denominations |
+| 127 | [Peaceful Party](docs/greedy/MAYOR_PARTY.md) | 898 | Choosing between mutually exclusive groups | $O(1)$ per test case |
+| 131 | [Avoid Contact](docs/greedy/AVOIDCONTACT.md) | 907 | Packing with separation constraints | $O(1)$ per test case |
 
 </details>
 
-<details open><summary><b>Number Theory</b> (13)</summary>
+<details open><summary><b>Number Theory</b> (16)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -204,14 +218,27 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 95 | [Equalizing Numbers](docs/number-theory/EQLZING.md) | 823 | Finding the invariant | $O(1)$ per test case |
 | 111 | [Construct N](docs/number-theory/CONN.md) | 860 | Parity plus a threshold | $O(1)$ per test case |
 | 118 | [Counting Pretty Numbers](docs/number-theory/NUM239.md) | 873 | Counting residues with a prefix function | $O(1)$ per test case |
+| 121 | [Find the Direction](docs/number-theory/FACEDIR.md) | 880 | Cyclic state via modulo | $O(1)$ per test case |
+| 132 | [Problem](docs/number-theory/PR0BLEM.md) | 908 | Parity invariant | $O(1)$ per test case |
+| 139 | [Akash and Missing Class](docs/number-theory/CHFCLASS.md) | 931 | Counting residues in a range | $O(1)$ per test case |
 
 </details>
 
-<details open><summary><b>Sets</b> (1)</summary>
+<details open><summary><b>Prefix Sums</b> (1)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 126 | [Inside The Stadium](docs/prefix-sums/INSTDUM.md) | 895 | Running total compared against the index | $O(N)$ per test case |
+
+</details>
+
+<details open><summary><b>Sets</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 73 | [Chef and Races](docs/sets/CHEFRACES.md) | 745 | Set difference | $O(1)$ per test case |
+| 130 | [Count the Holidays](docs/sets/SUNDAY.md) | 907 | Union of a fixed set with input values | $O(N)$ per test case |
+| 134 | [Two Ranges](docs/sets/TWORANGES.md) | 918 | Inclusion-exclusion on intervals | $O(1)$ per test case |
 
 </details>
 
