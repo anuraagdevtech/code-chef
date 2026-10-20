@@ -1,0 +1,101 @@
+# 24. Reverse The Number
+
+> CodeChef problem code [`FLOW007`](https://www.codechef.com/problems/FLOW007) &middot; difficulty **420** &middot; time limit **1s**
+
+| | |
+|---|---|
+| **Topic** | Strings |
+| **Technique** | Digit reversal and leading zeros |
+| **Time** | $O(d)$ per test case, $d$ = number of digits |
+| **Space** | $O(d)$ |
+| **Roadmap course** | 500 to 1000 difficulty rating (Level 1) |
+
+## Question
+
+Given an Integer **N**, write a program to reverse it.
+
+**Input**
+
+The first line contains an integer **T**, total number of testcases. Then follow **T** lines, each line contains an integer **N**.
+
+**Output**
+
+ For each test case, display the reverse of the given number **N**, in a new line.
+
+**Constraints**
+
+- 1 **≤** **T** **≤** 1000
+
+- 1 **≤** **N** **≤** 1000000
+
+## Constraints
+
+- 1 ≤ T ≤ 1000
+- 1 ≤ N ≤ 1000000
+
+## Sample
+
+**Sample input**
+
+```
+4
+12345
+31203
+2123
+2300
+```
+
+**Sample output**
+
+```
+54321
+30213
+3212
+32
+```
+
+## Approach
+
+Reversing the digits of $N$ has a one-line form in Python: turn the number into a string, slice it backwards with `[::-1]`, and convert back with `int`.
+
+The conversion back to `int` is doing real work, not just restoring the type. Reversing `2300` as text gives the string `"0032"`, and the expected answer is `32` — the leading zeros must disappear. Calling `int` strips them automatically, which is exactly why the round trip through `int` is the right move rather than printing the reversed string directly. Sample case 4 exists specifically to catch this.
+
+The arithmetic alternative avoids strings altogether:
+
+```
+rev = 0
+while n > 0:
+    rev = rev * 10 + n % 10
+    n //= 10
+```
+
+peeling the last digit with `n % 10` and pushing it onto `rev`. This also drops leading zeros for free, because a leading zero in the reversed number is simply never added to a non-zero `rev`. It is the version to reach for in a language without cheap string conversion; in Python the slice is faster to write and no slower in practice.
+
+Both run in time proportional to the digit count, which is $O(\log_{10} N)$ — at most $7$ digits here.
+
+## Solution (Python)
+
+```python
+import sys
+
+
+def main() -> None:
+    data = sys.stdin.buffer.read().split()
+    t = int(data[0])
+    out = []
+    for i in range(t):
+        n = data[1 + i].decode()
+        # int() also strips the leading zeros that reversing can create.
+        out.append(str(int(n[::-1])))
+    sys.stdout.write("\n".join(out) + "\n")
+
+
+main()
+```
+
+## Complexity
+
+- **Time:** $O(d)$ per test case, $d$ = number of digits
+- **Space:** $O(d)$
+
+> CodeChef tags: `Mathematics`, `Basic Math`, `Algorithms`

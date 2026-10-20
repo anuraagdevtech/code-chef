@@ -2,8 +2,9 @@
 """Compact dump of problem payloads for authoring. Usage: dump.py <start> <count>"""
 import json, os, sys, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OV = {k: v for k, v in json.load(open(os.path.join(ROOT,'data','constraints_overrides.json'))).items() if not k.startswith('_')}
-codes = open(os.path.join(ROOT,'data','phase1_codes.txt')).read().split()
+sys.path.insert(0, os.path.join(ROOT,'tools'))
+import constraints as C
+codes = open(os.path.join(ROOT,'data','all_solved.txt')).read().split()
 start, count = int(sys.argv[1]), int(sys.argv[2])
 def c(s):
     s = (s or '').replace('\r\n','\n').strip()
@@ -14,7 +15,7 @@ for i in range(start, min(start+count, len(codes)+1)):
     pc = d.get('problemComponents') or {}
     print('='*78)
     print(f'[{i}] {code} :: {d.get("problem_name")} :: rating {d.get("difficulty_rating")} :: tags {d.get("computed_tags")} / {d.get("user_tags")}')
-    print('--- STATEMENT'); print(c(pc.get('statement')))
+    print('--- STATEMENT'); print(c(pc.get('statement')) or c(d.get('body'))[:1500])
     print('--- INPUT'); print(c(pc.get('inputFormat')))
     print('--- OUTPUT'); print(c(pc.get('outputFormat')))
     print('--- CONSTRAINTS'); print(c(pc.get('constraints')) or OV.get(code,'(none)'))

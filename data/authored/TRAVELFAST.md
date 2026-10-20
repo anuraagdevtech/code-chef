@@ -1,0 +1,13 @@
+---
+topic: Conditionals & Case Work
+subtopic: Three-way comparison
+time: $O(1)$ per test case
+space: $O(1)$
+---
+$X$ is the bike's travel time and $Y$ is the car's, and lower time means faster. The answer is a three-way branch on the comparison of two numbers: `BIKE` when $X < Y$, `CAR` when $Y < X$, and `SAME` when they are equal.
+
+The only thing to be careful about is not inverting the relation. "Faster" is *smaller* time, so the vehicle with the **minimum** value wins. Reading $X < Y$ as "car wins" is the natural slip, and the samples catch it immediately: $X = 1, Y = 5$ answers `BIKE`.
+
+There are exactly three outcomes and they are mutually exclusive, so an `if / elif / else` covers the space completely with no possibility of falling through. Unlike the sale-discount ladder, the order of the branches here carries no meaning — any ordering is correct, because the conditions do not overlap.
+
+Note also that the equality case must be handled explicitly. Writing only `if x < y: BIKE else: CAR` would silently report `CAR` for a tie, which is wrong; whenever a comparison problem offers a "same" answer, the `==` branch needs its own place.

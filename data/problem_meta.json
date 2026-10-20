@@ -1,0 +1,3404 @@
+{
+"AVGPROBLEM": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 1
+},
+"SUBSCRIBE_": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 2
+},
+"JASSIGNMENTS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 3
+},
+"EXAMCHEF": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 4
+},
+"OFFICE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 5
+},
+"AMR15A": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 6
+},
+"CREDCOINS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 7
+},
+"WATERFILLING": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 8
+},
+"SALESEASON": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 9
+},
+"MINPIZZA": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 10
+},
+"CHEFGAMES": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 11
+},
+"EXPERT": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 12
+},
+"HELIUM3": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 13
+},
+"SUGARCANE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 14
+},
+"NOTEBOOK": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 15
+},
+"CHEFCAND": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 16
+},
+"TRAVELFAST": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 17
+},
+"TRUESCORE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 18
+},
+"THREETOPICS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 19
+},
+"MONOPOLY2": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 20
+},
+"TODOLIST": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 21
+},
+"ACTEMP": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 22
+},
+"NEARESTEXIT": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 23
+},
+"FLOW007": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 24
+},
+"SST": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 25
+},
+"NIBBLE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 26
+},
+"QUALIFY": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 27
+},
+"ELECTN": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 28
+},
+"MINCARS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 29
+},
+"CHEFSCORE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 30
+},
+"JENGA": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 31
+},
+"SEATNUMBER": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 32
+},
+"DISCUS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 33
+},
+"MAXTASTE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 34
+},
+"MOVIE2X": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 35
+},
+"POLTHIEF": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 36
+},
+"FLIPCARDS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 37
+},
+"BATH": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 38
+},
+"FINDSHOES": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 39
+},
+"FCTRL2": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 40
+},
+"TRANSFORM": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 41
+},
+"BULLET": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 42
+},
+"C_RATING": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 43
+},
+"DNASTRAND": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 44
+},
+"CHEFBOTTLE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 45
+},
+"CANDYDIST": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 46
+},
+"FSQRT": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 47
+},
+"LASTLEVELS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 48
+},
+"BLACKJACK": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 49
+},
+"FILLCANDIES": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 50
+},
+"XJUMP": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 51
+},
+"CHESSDIST": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 52
+},
+"VALENTINE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 53
+},
+"MYSERVE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 54
+},
+"WTRMIXING": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 55
+},
+"WGHTS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 56
+},
+"CHEFAPPS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 57
+},
+"CHEFEREN": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 58
+},
+"MINCOINS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 59
+},
+"SPCP2": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 60
+},
+"SELFDEF": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 61
+},
+"CRICUP": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 62
+},
+"FLOORS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 63
+},
+"SPEEDTEST": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 64
+},
+"DECINC": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 65
+},
+"AORB": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 66
+},
+"FLOW017": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 67
+},
+"PASSORFAIL": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 68
+},
+"CYCLICQD": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 69
+},
+"POLYBAGS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 70
+},
+"FIZZBUZZ2303": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 71
+},
+"BUILDINGRACE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 72
+},
+"CHEFRACES": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 73
+},
+"MOZZ": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 74
+},
+"PRESENTS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 75
+},
+"FLOW018": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 76
+},
+"CHEAT": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 77
+},
+"T20MCH": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 78
+},
+"CHOPRT": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 79
+},
+"CHN15A": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 80
+},
+"REACHFAST": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 81
+},
+"SINGLEUSE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 82
+},
+"SALE": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 83
+},
+"MINFLIPS": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 84
+},
+"BIN_BAT": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 85
+},
+"DICEGAME2": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 86
+},
+"TLG": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 87
+},
+"DPOLY": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 88
+},
+"RECENTCONT": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 89
+},
+"PRB01": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 90
+},
+"WATERCOOLER2": {
+"contest": "DIFF800",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 91
+},
+"WORDLE": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 92
+},
+"TYRES": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 93
+},
+"SALE2": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 94
+},
+"EQLZING": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 95
+},
+"SUPCHEF": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 96
+},
+"GENE01": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 97
+},
+"BESTOFTENNIS": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 98
+},
+"PALL01": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 99
+},
+"MILEAGE": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 100
+},
+"MELTGOLD": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 101
+},
+"LOOP": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 102
+},
+"FLOW014": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 103
+},
+"FLOW005": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 104
+},
+"VOWELTB": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 105
+},
+"INCREAR": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 106
+},
+"COCONUT": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 107
+},
+"AREAPERI": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 108
+},
+"DEVSPORTS": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 109
+},
+"HDIVISR": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 110
+},
+"CONN": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 111
+},
+"CARCHOICE": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 112
+},
+"WHICHDIV": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 113
+},
+"BADMINTON": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 114
+},
+"CHEFCONTEST": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 115
+},
+"GROUPASSGN": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 116
+},
+"RELATIVE": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 117
+},
+"NUM239": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 118
+},
+"DRUNKALK": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 119
+},
+"CCISLAND": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 120
+},
+"FACEDIR": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 121
+},
+"LEAGUE": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 122
+},
+"UTKPLC": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 123
+},
+"CHEFRUN": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 124
+},
+"CHFPROFIT": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 125
+},
+"INSTDUM": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 126
+},
+"MAYOR_PARTY": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 127
+},
+"FIFTYPE": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 128
+},
+"PSGRADE": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 129
+},
+"SUNDAY": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 130
+},
+"AVOIDCONTACT": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 131
+},
+"PR0BLEM": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 132
+},
+"HOWMANY": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 133
+},
+"TWORANGES": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 134
+},
+"PENALTY": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 135
+},
+"SHOEFIT": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 136
+},
+"CHEFSLP": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 137
+},
+"PRICECON": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 138
+},
+"CHFCLASS": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 139
+},
+"NOTIME": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 140
+},
+"FIRSTANDLAST": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 141
+},
+"WCC": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 142
+},
+"TWOVSTEN": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 143
+},
+"CARRANGE": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 144
+},
+"SPCP4": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 145
+},
+"JMARKET": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 146
+},
+"NONNEGPROD": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 147
+},
+"DIGARR": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 148
+},
+"MARARUN": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 149
+},
+"COOK82A": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 150
+},
+"CCOOK": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 151
+},
+"JOINING": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 152
+},
+"PLAYPIAN": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 153
+},
+"KEPLERSLAW": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 154
+},
+"KTTABLE": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 155
+},
+"BRLADDER": {
+"contest": "DIFF1000",
+"course": "logical-problems",
+"level": 1,
+"course_title": "500 to 1000 difficulty rating",
+"order": 156
+},
+"CHFRICH": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 157
+},
+"VDATES": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 158
+},
+"HOOPS": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 159
+},
+"MAX_DIFF": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 160
+},
+"IMDB": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 161
+},
+"TWODISH": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 162
+},
+"PROBCAT": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 163
+},
+"PROGLANG": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 164
+},
+"CHFSPL": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 165
+},
+"SMOL": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 166
+},
+"WEIGHTBL": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 167
+},
+"CSTOCK": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 168
+},
+"NFS": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 169
+},
+"MXEVNSUB": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 170
+},
+"MANYSUMS": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 171
+},
+"TANDJ1": {
+"contest": "LP1TO201",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 172
+},
+"VACCINQ": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 173
+},
+"IPCCERT": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 174
+},
+"MAKEEQUAL": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 175
+},
+"SUBTASK": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 176
+},
+"BALLOON": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 177
+},
+"BEGGASOL": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 178
+},
+"CARVANS": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 179
+},
+"CASH": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 180
+},
+"AVGFLEX": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 181
+},
+"NOBEL": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 182
+},
+"COLGLF2": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 183
+},
+"COPS": {
+"contest": "LP1TO202",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 184
+},
+"PAWRI": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 185
+},
+"TWOSTR": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 186
+},
+"MAGDOORS": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 187
+},
+"ERROR": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 188
+},
+"ALPHABET": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 189
+},
+"HIRETEST": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 190
+},
+"LAPIN": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 191
+},
+"CSUB": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 192
+},
+"EQUINOX": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 193
+},
+"SNAKPROC": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 194
+},
+"PASSWD": {
+"contest": "LP1TO203",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 195
+},
+"SMPAIR": {
+"contest": "LP1TO204",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 196
+},
+"HORSES": {
+"contest": "LP1TO204",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 197
+},
+"MAXDIFF": {
+"contest": "LP1TO204",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 198
+},
+"SIGNFLIP": {
+"contest": "LP1TO204",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 199
+},
+"DIV03": {
+"contest": "LP1TO204",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 200
+},
+"CM164364": {
+"contest": "LP1TO204",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 201
+},
+"TACHSTCK": {
+"contest": "LP1TO204",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 202
+},
+"STICKS": {
+"contest": "LP1TO204",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 203
+},
+"LINCHESS": {
+"contest": "LP1TO204",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 204
+},
+"LUCKFOUR": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 205
+},
+"MATCHES": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 206
+},
+"PAIREQ": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 207
+},
+"CFRTEST": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 208
+},
+"HOLIDAYS": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 209
+},
+"SIMPSTAT": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 210
+},
+"GFTSHP": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 211
+},
+"PERMEXIS": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 212
+},
+"MAXTHEMIN": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 213
+},
+"MXMTRIO": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 214
+},
+"POLIN": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 215
+},
+"EVENSPLIT": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 216
+},
+"COOKMACH": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 217
+},
+"PUSH7PA": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 218
+},
+"REVSORT": {
+"contest": "LP1TO205",
+"course": "1to2stars",
+"level": 2,
+"course_title": "Level up from 1* to 2*",
+"order": 219
+},
+"AVGPERM": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 220
+},
+"HOTEL": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 221
+},
+"MTYFRI": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 222
+},
+"ARRHALVES": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 223
+},
+"CHFHEIST": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 224
+},
+"PMA": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 225
+},
+"STRAME": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 226
+},
+"REMELEM": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 227
+},
+"COLOUR": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 228
+},
+"PLAYFIT": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 229
+},
+"EQUALITY": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 230
+},
+"DECREM": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 231
+},
+"AVGARR": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 232
+},
+"PLPROCESS": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 233
+},
+"DIRECTI": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 234
+},
+"PIPSQUIK": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 235
+},
+"UNQEQ": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 236
+},
+"MAXAGRY": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 237
+},
+"PERMXORITY": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 238
+},
+"CHEFDINE": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 239
+},
+"HTMLTAGS": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 240
+},
+"CHCOINSG": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 241
+},
+"MAKEARRAYODD": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 242
+},
+"CUTPIZ": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 243
+},
+"FLAGS": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 244
+},
+"SMOKE": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 245
+},
+"SOD3": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 246
+},
+"TRIANGCL": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 247
+},
+"CHEFADV": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 248
+},
+"MKGPLNKS": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 249
+},
+"APPROX2": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 250
+},
+"MGCSET": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 251
+},
+"CHDOGS": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 252
+},
+"XOR_ORDER": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 253
+},
+"CHEFFED": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 254
+},
+"VEGETA": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 255
+},
+"ONOZ": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 256
+},
+"ALTERNATEDIV": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 257
+},
+"JOGGING": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 258
+},
+"CORTSENT": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 259
+},
+"CHEFODD": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 260
+},
+"MAKEPAL": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 261
+},
+"IRSTXOR": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 262
+},
+"CAOS1": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 263
+},
+"ANTIPALINDR": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 264
+},
+"CO92SUBW": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 265
+},
+"HHAL": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 266
+},
+"N1VALUES": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 267
+},
+"GCDSUBARRAYS": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 268
+},
+"TOTCRT": {
+"contest": "DIFF1500",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 269
+},
+"SUBARRAYREM": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 270
+},
+"PALINPAIN": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 271
+},
+"SILLYPRS": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 272
+},
+"EQBYXOR": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 273
+},
+"REDONE": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 274
+},
+"COKE": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 275
+},
+"DELXORONE": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 276
+},
+"CONCATPAL": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 277
+},
+"MEDIC": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 278
+},
+"SPSUM": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 279
+},
+"KS2": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 280
+},
+"POSITNEG": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 281
+},
+"SPCP5": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 282
+},
+"ADMINSHOP": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 283
+},
+"PREFPERM": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 284
+},
+"FLIP": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 285
+},
+"RANKLIST": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 286
+},
+"COUNTSUB": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 287
+},
+"CATHIEF": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 288
+},
+"XXOORR": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 289
+},
+"CHEFSIGN": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 290
+},
+"BORSTR": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 291
+},
+"CHSQR": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 292
+},
+"ORANDCON": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 293
+},
+"MISS_NUM": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 294
+},
+"ARRPAL": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 295
+},
+"S06E06": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 296
+},
+"AMMEAT2": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 297
+},
+"BOUNCE_BALL": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 298
+},
+"DIVCOL": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 299
+},
+"ADVITIYA5": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 300
+},
+"REMOSET": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 301
+},
+"CHFADJSUM": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 302
+},
+"XOR2": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 303
+},
+"CIREQ": {
+"contest": "DIFF1600",
+"course": "2-star-difficulty-problems",
+"level": 2,
+"course_title": "1400 to 1600 difficulty problems",
+"order": 304
+},
+"MAKEDIV3": {
+"contest": "LP2TO301",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 305
+},
+"INDIPERM": {
+"contest": "LP2TO301",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 306
+},
+"MINPIZZAS": {
+"contest": "LP2TO301",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 307
+},
+"ALTER": {
+"contest": "LP2TO301",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 308
+},
+"SRTCHK": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 309
+},
+"CNTSORT": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 310
+},
+"MIXCOLOR": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 311
+},
+"SUBS": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 312
+},
+"PTMSSNG": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 313
+},
+"CNTDIST": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 314
+},
+"MEX": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 315
+},
+"EQDIFFER": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 316
+},
+"JAVELIN": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 317
+},
+"BOOKCHEF": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 318
+},
+"REMONE": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 319
+},
+"PSORT3": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 320
+},
+"SWPSRT1": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 321
+},
+"CHEFRES": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 322
+},
+"ADJSRT": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 323
+},
+"QCKSRT2": {
+"contest": "LP2TO302",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 324
+},
+"MINEAT": {
+"contest": "LP2TO303",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 325
+},
+"STACKS": {
+"contest": "LP2TO303",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 326
+},
+"FORESTGA": {
+"contest": "LP2TO303",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 327
+},
+"SHROUTE": {
+"contest": "LP2TO303",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 328
+},
+"SNAKEEAT": {
+"contest": "LP2TO303",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 329
+},
+"SNTEMPLE": {
+"contest": "LP2TO303",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 330
+},
+"SQUIRREL": {
+"contest": "LP2TO303",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 331
+},
+"MODEQ": {
+"contest": "LP2TO303",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 332
+},
+"FLUSHOT": {
+"contest": "LP2TO303",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 333
+},
+"SUDBOOKS": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 334
+},
+"ATTND": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 335
+},
+"CHFPLN": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 336
+},
+"VCS": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 337
+},
+"BEX": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 338
+},
+"LOWSUM": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 339
+},
+"IPCTRAIN": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 340
+},
+"COOK82C": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 341
+},
+"FEMA2": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 342
+},
+"CHEFTOWN": {
+"contest": "LP2TO304",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 343
+},
+"ADDI": {
+"contest": "LP2TO305",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 344
+},
+"SELINA": {
+"contest": "LP2TO305",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 345
+},
+"CHFNA": {
+"contest": "LP2TO305",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 346
+},
+"XORORED": {
+"contest": "LP2TO305",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 347
+},
+"MAXDMGE": {
+"contest": "LP2TO305",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 348
+},
+"ENGXOR": {
+"contest": "LP2TO305",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 349
+},
+"XXOR": {
+"contest": "LP2TO305",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 350
+},
+"XORSUB": {
+"contest": "LP2TO305",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 351
+},
+"SUBINC": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 352
+},
+"KPRIME": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 353
+},
+"FROGV": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 354
+},
+"LISDIGIT": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 355
+},
+"GDSUB": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 356
+},
+"E1": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 357
+},
+"MGCRNK": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 358
+},
+"GRGUY": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 359
+},
+"CHEFWED": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 360
+},
+"WSTRING": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 361
+},
+"DISHDIS": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 362
+},
+"MAXCROSS": {
+"contest": "LP2TO306",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 363
+},
+"CHFGCD": {
+"contest": "LP2TO307",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 364
+},
+"RESQ": {
+"contest": "LP2TO307",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 365
+},
+"HMAPPY2": {
+"contest": "LP2TO307",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 366
+},
+"CHEFKEY": {
+"contest": "LP2TO307",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 367
+},
+"GCDOPS": {
+"contest": "LP2TO307",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 368
+},
+"GCDQ": {
+"contest": "LP2TO307",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 369
+},
+"PRETNUM": {
+"contest": "LP2TO307",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 370
+},
+"GUESS": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 371
+},
+"FILL01": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 372
+},
+"NODRUGS": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 373
+},
+"WTCH": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 374
+},
+"NPAIRS": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 375
+},
+"CKWLK": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 376
+},
+"HIGHFREQ": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 377
+},
+"KMEX": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 378
+},
+"SUBPERM": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 379
+},
+"LARGEFAM": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 380
+},
+"RECSTI": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 381
+},
+"INCRDEC": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 382
+},
+"POLYREL": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 383
+},
+"DENSE": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 384
+},
+"MXMEDIAN": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 385
+},
+"GOODPAIRS": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 386
+},
+"SHKNUM": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 387
+},
+"LISTLIST": {
+"contest": "LP2TO308",
+"course": "2to3stars",
+"level": 3,
+"course_title": "Jump from 2* to 3*",
+"order": 388
+},
+"ODDSUM": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 389
+},
+"CHFINVNT": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 390
+},
+"DONUTS": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 391
+},
+"BENCHP": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 392
+},
+"DIFSTR": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 393
+},
+"MAXSUBARR": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 394
+},
+"CHEARMY": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 395
+},
+"SURVIVE": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 396
+},
+"GCDPRF": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 397
+},
+"MAXEDGES": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 398
+},
+"IOPC17C": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 399
+},
+"CONSTRRAY": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 400
+},
+"ZEBRA": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 401
+},
+"UCL": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 402
+},
+"BITTUP": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 403
+},
+"SMALLXOR": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 404
+},
+"CONCATSORT": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 405
+},
+"CHARGES": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 406
+},
+"CHEFINSQ": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 407
+},
+"RANGEASSIGN": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 408
+},
+"PERMPAL": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 409
+},
+"FIND_X": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 410
+},
+"FREQARRRET": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 411
+},
+"ORMATRIX": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 412
+},
+"FIRESC": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 413
+},
+"THREENUMBERS": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 414
+},
+"CHEFCAR": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 415
+},
+"VOWMTRX": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 416
+},
+"FENCE": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 417
+},
+"ANTIPALQ": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 418
+},
+"NUMHUNT": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 419
+},
+"ALIENOR": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 420
+},
+"POWPM": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 421
+},
+"ENV": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 422
+},
+"MINIMISEMAX": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 423
+},
+"CHEFPRODUCT": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 424
+},
+"BLAST3": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 425
+},
+"BOX95": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 426
+},
+"S100": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 427
+},
+"BITEQU": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 428
+},
+"GRITGRID": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 429
+},
+"KSUB": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 430
+},
+"MEDMAXMATCH": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 431
+},
+"TOWERTOP": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 432
+},
+"SUBARRAYLEN": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 433
+},
+"OPTPAIRS": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 434
+},
+"ARRSORT": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 435
+},
+"MEXOR": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 436
+},
+"EXAMCHT": {
+"contest": "DIFF1700",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 437
+},
+"WATCHFB": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 438
+},
+"AVGGIFT": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 439
+},
+"XORGAND": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 440
+},
+"ORTUPLES": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 441
+},
+"ARRGAME": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 442
+},
+"BUYSWEET": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 443
+},
+"LUMPYBUS": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 444
+},
+"CHRGES": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 445
+},
+"DEVPERF": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 446
+},
+"SUMPOWER": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 447
+},
+"CEILSUM": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 448
+},
+"MINCOLOR": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 449
+},
+"SUMPRODSEG": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 450
+},
+"MAXMEX": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 451
+},
+"EVENXOR": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 452
+},
+"MSTICK": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 453
+},
+"SUMDIV2": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 454
+},
+"TEAMFOR": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 455
+},
+"MAXIMISESUM": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 456
+},
+"CHAPD": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 457
+},
+"ORACLCS": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 458
+},
+"SETDIFF": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 459
+},
+"CHCBOX": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 460
+},
+"PALINT": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 461
+},
+"FGFS": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 462
+},
+"PSHOT": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 463
+},
+"APP_BAL_SCA": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 464
+},
+"FIX": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 465
+},
+"SUBSEQDIST": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 466
+},
+"MVALUE": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 467
+},
+"XORMUL": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 468
+},
+"PBATTLE": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 469
+},
+"WEIRDSUBARR": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 470
+},
+"FAIR_DISTRIB": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 471
+},
+"GCDMOD": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 472
+},
+"ARMTRN": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 473
+},
+"ONEKING": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 474
+},
+"LUCKPAL": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 475
+},
+"NCOPIES": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 476
+},
+"KFUNC": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 477
+},
+"MAX01EVSWP": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 478
+},
+"EOOPR": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 479
+},
+"FIZZBUZZ2306": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 480
+},
+"CHRL2": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 481
+},
+"ICL1903": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 482
+},
+"DIGITREM": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 483
+},
+"ABREPEAT": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 484
+},
+"STRCOMPARE": {
+"contest": "DIFF1800",
+"course": "3-star-difficulty-problems",
+"level": 3,
+"course_title": "1600 to 1800 difficulty problems",
+"order": 485
+},
+"RISK": {
+"contest": "LP3TO401",
+"course": "3to4stars",
+"level": 4,
+"course_title": "Rise from 3* to 4*",
+"order": 486
+}
+}
