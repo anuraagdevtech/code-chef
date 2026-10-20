@@ -2,20 +2,20 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**200 of 486 solved problems documented.**
+**216 of 486 solved problems documented.**
 
 ## Roadmap progress
 
 | Level | Course | Solved | Total | Documented |
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
-| 2 | Level up from 1* to 2* | 66 | 66 | 44 |
+| 2 | Level up from 1* to 2* | 66 | 66 | 60 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 0 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **200** |
+| | **Total** | **502** | **761** | **216** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,13 +25,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 0 |
+| 3 | 100 | 16 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (22)</summary>
+<details open><summary><b>Arrays</b> (23)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -57,10 +57,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 179 | [Carvans](docs/arrays/CARVANS.md) | 1264 | Running minimum over a prefix | $O(N)$ per test case |
 | 181 | [Average Flex](docs/arrays/AVGFLEX.md) | 1442 | Counting against a global threshold | $O(N^2)$ per test case at these bounds, or $O(N \log N)$ sorted |
 | 183 | [College Life 2](docs/arrays/COLGLF2.md) | 1519 | Group total with a per-group adjustment | $O(\sum E_i)$ per test case |
+| 207 | [Make all equal using Pairs](docs/arrays/PAIREQ.md) | 928 | Keep the most frequent value | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Basic Math</b> (79)</summary>
+<details open><summary><b>Basic Math</b> (80)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -143,6 +144,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 169 | [Turn It](docs/basic-math/NFS.md) | 1350 | Rearranging a kinematic inequality | $O(1)$ per test case |
 | 171 | [Distinct Pair Sums](docs/basic-math/MANYSUMS.md) | 1480 | Range of achievable sums | $O(1)$ per test case |
 | 172 | [Tom And Jerry 1](docs/basic-math/TANDJ1.md) | 1379 | Grid reachability by distance and parity | $O(1)$ per test case |
+| 206 | [Playing with Matches](docs/basic-math/MATCHES.md) | 986 | Per-digit lookup table | $O(d)$ per test case |
 
 </details>
 
@@ -213,7 +215,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (16)</summary>
+<details open><summary><b>Greedy</b> (19)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -233,10 +235,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 187 | [Magical Doors](docs/greedy/MAGDOORS.md) | 1355 | Tracking a global flip as parity | $O(|S|)$ per test case |
 | 199 | [Maximise the Subsequence Sum](docs/greedy/SIGNFLIP.md) | 1308 | Flip the largest magnitudes first | $O(N \log N)$ per test case |
 | 200 | [Daanish and Problems](docs/greedy/DIV03.md) | 1388 | Spending a budget from the top down | $O(1)$ per test case — ten fixed difficulties |
+| 202 | [Chopsticks](docs/greedy/TACHSTCK.md) | 1320 | Pairing adjacent elements after sorting | $O(N \log N)$ |
+| 203 | [Sticks](docs/greedy/STICKS.md) | 1261 | Largest two pairs by frequency | $O(N \log N)$ per test case |
+| 209 | [Lazy Salesman](docs/greedy/HOLIDAYS.md) | 1161 | Take the largest items first | $O(N \log N)$ per test case |
 
 </details>
 
-<details open><summary><b>Number Theory</b> (21)</summary>
+<details open><summary><b>Number Theory</b> (22)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -261,18 +266,20 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 166 | [Smallest Possible Whole Number](docs/number-theory/SMOL.md) | 1306 | Modulo, with a zero-divisor guard | $O(1)$ per test case |
 | 170 | [Maximum Length Even Subarray](docs/number-theory/MXEVNSUB.md) | 1221 | Parity of a triangular number | $O(1)$ per test case |
 | 180 | [Hard Cash](docs/number-theory/CASH.md) | 1300 | A conserved total modulo K | $O(N)$ per test case |
+| 204 | [Chef and Linear Chess](docs/number-theory/LINCHESS.md) | 1200 | Divisors as reachable positions | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (1)</summary>
+<details open><summary><b>Prefix Sums</b> (2)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 126 | [Inside The Stadium](docs/prefix-sums/INSTDUM.md) | 895 | Running total compared against the index | $O(N)$ per test case |
+| 211 | [Gift Shop and Coupon](docs/prefix-sums/GFTSHP.md) | 1364 | Prefix sums with a single discount | $O(N \log N)$ per test case |
 
 </details>
 
-<details open><summary><b>Sets</b> (7)</summary>
+<details open><summary><b>Sets</b> (10)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -283,6 +290,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 177 | [ICPC Balloons](docs/sets/BALLOON.md) | 1205 | Smallest prefix covering a required set | $O(N)$ per test case |
 | 182 | [Nobel Prize](docs/sets/NOBEL.md) | 1372 | Counting distinct values against a capacity | $O(N)$ per test case |
 | 189 | [Studying Alphabet](docs/sets/ALPHABET.md) | 1123 | Subset containment | $O(|W|)$ per word |
+| 201 | [Chocolate Monger](docs/sets/CM164364.md) | 1369 | Distinct count capped by a budget | $O(n)$ per test case |
+| 208 | [Devu and friendship testing](docs/sets/CFRTEST.md) | 1061 | Distinct values as a capacity bound | $O(n)$ per test case |
+| 215 | [Points and Lines](docs/sets/POLIN.md) | 1296 | Counting distinct coordinates independently | $O(N)$ per test case |
 
 </details>
 
@@ -295,7 +305,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (4)</summary>
+<details open><summary><b>Sorting</b> (8)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -303,10 +313,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 196 | [The Smallest Pair](docs/sorting/SMPAIR.md) | 1352 | The two smallest elements | $O(N)$ per test case |
 | 197 | [Racing Horses](docs/sorting/HORSES.md) | 1231 | Minimum adjacent difference after sorting | $O(N \log N)$ per test case |
 | 198 | [Maximum Weight Difference](docs/sorting/MAXDIFF.md) | 1308 | Taking an extreme K-subset | $O(N \log N)$ per test case |
+| 210 | [Simple Statistics](docs/sorting/SIMPSTAT.md) | 1222 | Trimmed mean | $O(N \log N)$ per test case |
+| 212 | [Watson asks Does Permutation Exist](docs/sorting/PERMEXIS.md) | 1207 | Adjacent gaps in sorted order | $O(N \log N)$ per test case |
+| 213 | [Maximize the Minimum](docs/sorting/MAXTHEMIN.md) | 1358 | The (K+1)-th smallest survives | $O(N \log N)$ per test case |
+| 214 | [Maximum Trio](docs/sorting/MXMTRIO.md) | 1349 | Choosing extremes for a product | $O(N \log N)$ per test case |
 
 </details>
 
-<details open><summary><b>Strings</b> (16)</summary>
+<details open><summary><b>Strings</b> (18)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -326,6 +340,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 193 | [Equinox Strings](docs/strings/EQUINOX.md) | 1272 | First-character membership test | $O(N)$ per test case |
 | 194 | [Snake Procession](docs/strings/SNAKPROC.md) | 1290 | Single-pass state machine | $O(L)$ per report |
 | 195 | [Password](docs/strings/PASSWD.md) | 1470 | Several predicates, one with a positional restriction | $O(|S|)$ per test case |
+| 205 | [Lucky Four](docs/strings/LUCKFOUR.md) | 775 | Counting a digit | $O(d)$ per number |
+| 216 | [Even Splits](docs/strings/EVENSPLIT.md) | 1282 | Which orderings are reachable | $O(N \log N)$ per test case |
 
 </details>
 
