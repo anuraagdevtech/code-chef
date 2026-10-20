@@ -1,0 +1,17 @@
+---
+topic: Basic Math
+subtopic: Inverting a stopping condition
+time: $O(1)$ per test case
+space: $O(1)$
+---
+In a best-of-$N$ match with $N$ odd, the winner needs $\frac{N+1}{2}$ sets — a strict majority. The players stop the instant the outcome is decided, which is exactly the moment the winner reaches that number. So at the final score, the winner has **precisely** $\frac{N+1}{2}$ sets, never more.
+
+Inverting that gives $N$ directly from the larger of the two scores:
+
+$$W = \max(X, Y) \quad\Longrightarrow\quad N = 2W - 1$$
+
+The loser's score plays no part at all. That is the counter-intuitive bit, and it is worth seeing why: the match ends when the winner clinches, so the winner's tally pins down the required majority and hence $N$, whatever the loser happened to accumulate along the way. Sample cases 1 and 4 share nothing except $\max = 5$ and $\max = 8$ respectively, and the answers $9$ and $15$ follow from those alone.
+
+Sample case 3 is the extreme: $(99, 1)$ gives $N = 197$, a best-of-197 match that was stopped as soon as Sonu reached $99$ — long before $197$ sets could be played.
+
+The result is automatically odd, since $2W - 1$ is odd for any integer $W$, which satisfies the problem's requirement without a check. The guarantee $X \neq Y$ means there is always a unique winner and no ambiguity about which score to take.
