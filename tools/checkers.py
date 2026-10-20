@@ -56,7 +56,34 @@ def _avgarr(inp, got):
     return True, "valid"
 
 
+def _permxority(inp, got):
+    """PERMXORITY: any permutation whose adjacent-difference XOR is zero."""
+    toks = inp.split()
+    t = int(toks[0])
+    sizes = [int(toks[1 + i]) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for n, line in zip(sizes, lines):
+        vals = line.split()
+        if vals == ["-1"]:
+            # Only n = 2 genuinely has no attractive permutation.
+            if n != 2:
+                return False, f"n={n}: claimed impossible, but a solution exists"
+            continue
+        p = list(map(int, vals))
+        if sorted(p) != list(range(1, n + 1)):
+            return False, f"n={n}: not a permutation of 1..{n}"
+        x = 0
+        for i in range(n - 1):
+            x ^= abs(p[i] - p[i + 1])
+        if x != 0:
+            return False, f"n={n}: difference XOR is {x}, not 0"
+    return True, "attractive"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
+    "PERMXORITY": _permxority,
 }

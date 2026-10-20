@@ -1,0 +1,19 @@
+---
+topic: Simulation
+subtopic: Walking a sequence with a consumable resource
+time: $O(N)$ per test case
+space: $O(1)$
+---
+Each barrier is passed in one of three ways, tested in order.
+
+- **Type 2** (ground up to height $X$): Edward jumps over it if $X \leq Y_2$.
+- **Type 1** (height $X$ up to the sky): Edward ducks under it if $H - Y_1 \leq X$ — ducking lowers his effective height to $H - Y_1$.
+- Otherwise he breaks it, spending one unit of life force.
+
+The rule that decides this problem is the exhaustion clause: **if breaking a barrier leaves zero life force, he does not pass that barrier**. So the check is to decrement first and then test for zero, counting the barrier only if something remains.
+
+Sample case 1 traces it exactly. The first three barriers are cleared by jumping, jumping and ducking. The fourth ($X=8$, too tall to jump) and fifth ($X=4$) are broken, dropping $L$ from $3$ to $1$. The sixth is a type-1 barrier at height $2$, below his ducked height of $4$, so he breaks it — and that takes $L$ to $0$, so he collapses on it. The answer is $5$, not $6$.
+
+Sample case 3 is the same input with the last barrier raised to $X = 6$, which he can now duck under for free, so all $6$ are cleared. Sample case 2 is the minimal exhaustion case: one barrier, one life force, broken and he stops at $0$.
+
+Note the "touching counts as passing" wording makes both comparisons **inclusive** — $X \leq Y_2$ and $H - Y_1 \leq X$. Using strict inequalities would fail sample case 1 on the very first barrier, where $X = 2$ equals $Y_2 = 2$.

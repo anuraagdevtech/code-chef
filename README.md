@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**232 of 486 solved problems documented.**
+**240 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 13 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 21 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **232** |
+| | **Total** | **502** | **761** | **240** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,7 +25,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 32 |
+| 3 | 100 | 40 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
@@ -181,13 +181,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (3)</summary>
+<details open><summary><b>Combinatorics</b> (4)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 71 | [Chef Fantasy 11](docs/combinatorics/FIZZBUZZ2303.md) | 739 | Ordered pairs (permutations) | $O(1)$ per test case |
 | 122 | [Farmers League](docs/combinatorics/LEAGUE.md) | 883 | Extremal construction in a round robin | $O(1)$ per test case |
 | 192 | [Count Substrings](docs/combinatorics/CSUB.md) | 1330 | Counting pairs from a tally | $O(N)$ per test case |
+| 237 | [Maximum Angriness](docs/combinatorics/MAXAGRY.md) | 1432 | Maximising inversions with limited swaps | $O(1)$ per test case |
 
 </details>
 
@@ -220,11 +221,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (1)</summary>
+<details open><summary><b>Constructive</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 232 | [Average Array](docs/constructive/AVGARR.md) | 1424 | Pairing symmetrically around the mean | $O(N)$ per test case |
+| 236 | [Balanced and Unique Arrays](docs/constructive/UNQEQ.md) | 1431 | Balanced split with distinct prefixes | $O(N)$ per test case |
+| 238 | [Permutation Xority](docs/constructive/PERMXORITY.md) | 1437 | Cancelling a XOR with a 1-2-3 triple | $O(N)$ per test case |
 
 </details>
 
@@ -246,7 +249,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (23)</summary>
+<details open><summary><b>Greedy</b> (24)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -273,6 +276,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 222 | [Mighty Friend](docs/greedy/MTYFRI.md) | 1406 | Exchange the largest for the smallest | $O(N \log N)$ per test case |
 | 225 | [Plusle and Minun on Array](docs/greedy/PMA.md) | 1412 | Best single swap | $O(N)$ per test case |
 | 227 | [Remove Element](docs/greedy/REMELEM.md) | 1415 | The smallest element as universal partner | $O(N)$ per test case |
+| 239 | [Akash and Dinner](docs/greedy/CHEFDINE.md) | 1438 | Cheapest representative per group | $O(N \log N)$ per test case |
 
 </details>
 
@@ -306,12 +310,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (2)</summary>
+<details open><summary><b>Prefix Sums</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 126 | [Inside The Stadium](docs/prefix-sums/INSTDUM.md) | 895 | Running total compared against the index | $O(N)$ per test case |
 | 211 | [Gift Shop and Coupon](docs/prefix-sums/GFTSHP.md) | 1364 | Prefix sums with a single discount | $O(N \log N)$ per test case |
+| 233 | [Parallel Processing](docs/prefix-sums/PLPROCESS.md) | 1425 | Minimising the heavier side of a split | $O(N)$ per test case |
 
 </details>
 
@@ -332,12 +337,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Simulation</b> (2)</summary>
+<details open><summary><b>Simulation</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 178 | [Gasoline Introduction](docs/simulation/BEGGASOL.md) | 1263 | Collecting fuel while moving forward | $O(N)$ per test case |
 | 184 | [Cops and the Thief Devu](docs/simulation/COPS.md) | 1242 | Marking covered ranges over a small domain | $O(100 + M)$ per test case |
+| 235 | [Full Barrier Alchemist](docs/simulation/PIPSQUIK.md) | 1426 | Walking a sequence with a consumable resource | $O(N)$ per test case |
 
 </details>
 
@@ -357,7 +363,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (18)</summary>
+<details open><summary><b>Strings</b> (20)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -379,6 +385,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 195 | [Password](docs/strings/PASSWD.md) | 1470 | Several predicates, one with a positional restriction | $O(|S|)$ per test case |
 | 205 | [Lucky Four](docs/strings/LUCKFOUR.md) | 775 | Counting a digit | $O(d)$ per number |
 | 216 | [Even Splits](docs/strings/EVENSPLIT.md) | 1282 | Which orderings are reachable | $O(N \log N)$ per test case |
+| 234 | [Reversing directions](docs/strings/DIRECTI.md) | 1426 | Parsing and reversing a route | $O(N)$ per test case |
+| 240 | [HTML Tags](docs/strings/HTMLTAGS.md) | 1441 | Validating a format | $O(|S|)$ per test case |
 
 </details>
 
