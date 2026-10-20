@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**224 of 486 solved problems documented.**
+**232 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 5 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 13 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **224** |
+| | **Total** | **502** | **761** | **232** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,13 +25,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 24 |
+| 3 | 100 | 32 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (26)</summary>
+<details open><summary><b>Arrays</b> (27)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -61,10 +61,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 218 | [Pushpa ](docs/arrays/PUSH7PA.md) | 1266 | Frequency combined with value | $O(N)$ per test case |
 | 219 | [Reversal Sorting](docs/arrays/REVSORT.md) | 1288 | Constraining which inversions may be undone | $O(N)$ per test case |
 | 223 | [Array Halves](docs/arrays/ARRHALVES.md) | 1407 | Minimum adjacent swaps to gather a set | $O(N)$ per test case |
+| 229 | [Fit to Play](docs/arrays/PLAYFIT.md) | 1419 | Best gain against a running minimum | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Basic Math</b> (81)</summary>
+<details open><summary><b>Basic Math</b> (82)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -149,6 +150,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 172 | [Tom And Jerry 1](docs/basic-math/TANDJ1.md) | 1379 | Grid reachability by distance and parity | $O(1)$ per test case |
 | 206 | [Playing with Matches](docs/basic-math/MATCHES.md) | 986 | Per-digit lookup table | $O(d)$ per test case |
 | 224 | [Bella ciao](docs/basic-math/CHFHEIST.md) | 1410 | Summing an arithmetic progression | $O(1)$ per test case |
+| 230 | [Equality](docs/basic-math/EQUALITY.md) | 1419 | Solving a symmetric linear system by summing | $O(N)$ per test case |
 
 </details>
 
@@ -168,13 +170,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Brute Force</b> (3)</summary>
+<details open><summary><b>Brute Force</b> (4)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 56 | [Weights](docs/brute-force/WGHTS.md) | 697 | Enumerating every non-empty subset | $O(2^k)$ per test case with $k = 3$, so $O(1)$ |
 | 110 | [Highest Divisor](docs/brute-force/HDIVISR.md) | 860 | Searching a small range downward | $O(1)$ — at most 10 divisibility tests |
 | 128 | [Chef and Battery ](docs/brute-force/FIFTYPE.md) | 901 | Searching one variable of a linear Diophantine equation | $O(1)$ per test case — the search is bounded by a small constant |
+| 228 | [Maximize Colours](docs/brute-force/COLOUR.md) | 1415 | Enumerating a tiny decision space | $O(1)$ per test case — eight combinations |
 
 </details>
 
@@ -217,6 +220,22 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
+<details open><summary><b>Constructive</b> (1)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 232 | [Average Array](docs/constructive/AVGARR.md) | 1424 | Pairing symmetrically around the mean | $O(N)$ per test case |
+
+</details>
+
+<details open><summary><b>Game Theory</b> (1)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 226 | [String Game ](docs/game-theory/STRAME.md) | 1413 | Counting the forced number of moves | $O(N)$ per test case |
+
+</details>
+
 <details open><summary><b>Geometry</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
@@ -227,7 +246,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (21)</summary>
+<details open><summary><b>Greedy</b> (23)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -252,10 +271,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 209 | [Lazy Salesman](docs/greedy/HOLIDAYS.md) | 1161 | Take the largest items first | $O(N \log N)$ per test case |
 | 220 | [Average Permutation](docs/greedy/AVGPERM.md) | 1401 | Pair large values with small weights | $O(N)$ per test case |
 | 222 | [Mighty Friend](docs/greedy/MTYFRI.md) | 1406 | Exchange the largest for the smallest | $O(N \log N)$ per test case |
+| 225 | [Plusle and Minun on Array](docs/greedy/PMA.md) | 1412 | Best single swap | $O(N)$ per test case |
+| 227 | [Remove Element](docs/greedy/REMELEM.md) | 1415 | The smallest element as universal partner | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Number Theory</b> (22)</summary>
+<details open><summary><b>Number Theory</b> (23)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -281,6 +302,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 170 | [Maximum Length Even Subarray](docs/number-theory/MXEVNSUB.md) | 1221 | Parity of a triangular number | $O(1)$ per test case |
 | 180 | [Hard Cash](docs/number-theory/CASH.md) | 1300 | A conserved total modulo K | $O(N)$ per test case |
 | 204 | [Chef and Linear Chess](docs/number-theory/LINCHESS.md) | 1200 | Divisors as reachable positions | $O(N)$ per test case |
+| 231 | [Decreasing Srrnmieeda](docs/number-theory/DECREM.md) | 1423 | A strictly decreasing chain of remainders | $O(1)$ per test case |
 
 </details>
 

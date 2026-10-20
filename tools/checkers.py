@@ -35,6 +35,28 @@ def _avgperm(inp, got):
     return True, "optimal"
 
 
+def _avgarr(inp, got):
+    """AVGARR: any array of N distinct ints in [-1000, 1000] with mean X."""
+    toks = inp.split()
+    t = int(toks[0])
+    cases = [(int(toks[1 + 2 * i]), int(toks[2 + 2 * i])) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for (n, x), line in zip(cases, lines):
+        a = list(map(int, line.split()))
+        if len(a) != n:
+            return False, f"n={n}: wrong length {len(a)}"
+        if len(set(a)) != n:
+            return False, f"n={n}: values not distinct"
+        if any(v < -1000 or v > 1000 for v in a):
+            return False, f"n={n}: value out of [-1000, 1000]"
+        if sum(a) != n * x:
+            return False, f"n={n}: mean is not {x}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
+    "AVGARR": _avgarr,
 }
