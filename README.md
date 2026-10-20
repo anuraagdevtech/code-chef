@@ -2,20 +2,20 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**170 of 486 solved problems documented.**
+**180 of 486 solved problems documented.**
 
 ## Roadmap progress
 
 | Level | Course | Solved | Total | Documented |
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
-| 2 | Level up from 1* to 2* | 66 | 66 | 14 |
+| 2 | Level up from 1* to 2* | 66 | 66 | 24 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 0 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **170** |
+| | **Total** | **502** | **761** | **180** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -24,14 +24,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | Phase | Problems | Documented |
 |---|---:|---:|
 | 1 | 100 | 100 |
-| 2 | 100 | 70 |
+| 2 | 100 | 80 |
 | 3 | 100 | 0 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (16)</summary>
+<details open><summary><b>Arrays</b> (20)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -51,10 +51,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 151 | [Chef and Cook-Off](docs/arrays/CCOOK.md) | 961 | Sum of flags mapped to a label | $O(1)$ per contestant |
 | 155 | [Kitchen Timetable](docs/arrays/KTTABLE.md) | 950 | Consecutive differences as a window | $O(N)$ per test case |
 | 161 | [Motivation](docs/arrays/IMDB.md) | 1098 | Maximum over a filtered subset | $O(N)$ per test case |
+| 173 | [Chef in Vaccination Queue](docs/arrays/VACCINQ.md) | 1016 | Prefix sum with a per-element lookup | $O(P)$ per test case |
+| 174 | [Chef and IPC Certificates](docs/arrays/IPCCERT.md) | 922 | Filtering rows on two independent criteria | $O(N \cdot K)$ |
+| 176 | [A Subtask Problem](docs/arrays/SUBTASK.md) | 1217 | Ordered condition checks | $O(N)$ per test case |
+| 179 | [Carvans](docs/arrays/CARVANS.md) | 1264 | Running minimum over a prefix | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Basic Math</b> (77)</summary>
+<details open><summary><b>Basic Math</b> (79)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -135,6 +139,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 167 | [Weight Balance](docs/basic-math/WEIGHTBL.md) | 1045 | Reachable range over repeated choices | $O(1)$ per test case |
 | 168 | [Chef and Stock Prices ](docs/basic-math/CSTOCK.md) | 1069 | Percentage change without floating point | $O(1)$ per test case |
 | 169 | [Turn It](docs/basic-math/NFS.md) | 1350 | Rearranging a kinematic inequality | $O(1)$ per test case |
+| 171 | [Distinct Pair Sums](docs/basic-math/MANYSUMS.md) | 1480 | Range of achievable sums | $O(1)$ per test case |
+| 172 | [Tom And Jerry 1](docs/basic-math/TANDJ1.md) | 1379 | Grid reachability by distance and parity | $O(1)$ per test case |
 
 </details>
 
@@ -204,7 +210,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (12)</summary>
+<details open><summary><b>Greedy</b> (13)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -220,10 +226,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 146 | [Janmansh at Fruit Market](docs/greedy/JMARKET.md) | 947 | Cheapest choice under a diversity constraint | $O(1)$ per test case |
 | 160 | [The Two Dishes](docs/greedy/MAX_DIFF.md) | 1254 | Pushing one variable to its bound | $O(1)$ per test case |
 | 162 | [Two Dishes](docs/greedy/TWODISH.md) | 1140 | Bottleneck across shared and exclusive resources | $O(1)$ per test case |
+| 175 | [Make them equal](docs/greedy/MAKEEQUAL.md) | 1267 | Bounded by the widest gap | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Number Theory</b> (20)</summary>
+<details open><summary><b>Number Theory</b> (21)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -247,6 +254,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 152 | [Joining Date](docs/number-theory/JOINING.md) | 970 | Counting residues in a range | $O(1)$ per test case |
 | 166 | [Smallest Possible Whole Number](docs/number-theory/SMOL.md) | 1306 | Modulo, with a zero-divisor guard | $O(1)$ per test case |
 | 170 | [Maximum Length Even Subarray](docs/number-theory/MXEVNSUB.md) | 1221 | Parity of a triangular number | $O(1)$ per test case |
+| 180 | [Hard Cash](docs/number-theory/CASH.md) | 1300 | A conserved total modulo K | $O(N)$ per test case |
 
 </details>
 
@@ -258,7 +266,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sets</b> (4)</summary>
+<details open><summary><b>Sets</b> (5)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -266,6 +274,15 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 130 | [Count the Holidays](docs/sets/SUNDAY.md) | 907 | Union of a fixed set with input values | $O(N)$ per test case |
 | 134 | [Two Ranges](docs/sets/TWORANGES.md) | 918 | Inclusion-exclusion on intervals | $O(1)$ per test case |
 | 164 | [Programming Languages](docs/sets/PROGLANG.md) | 1001 | Subset containment | $O(1)$ per test case |
+| 177 | [ICPC Balloons](docs/sets/BALLOON.md) | 1205 | Smallest prefix covering a required set | $O(N)$ per test case |
+
+</details>
+
+<details open><summary><b>Simulation</b> (1)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 178 | [Gasoline Introduction](docs/simulation/BEGGASOL.md) | 1263 | Collecting fuel while moving forward | $O(N)$ per test case |
 
 </details>
 
