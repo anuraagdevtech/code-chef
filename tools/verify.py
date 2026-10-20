@@ -13,6 +13,9 @@ Usage:  python3 tools/verify.py [CODE ...]
 """
 import json, os, subprocess, sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from checkers import CHECKERS
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, 'data', 'raw')
 SOLN = os.path.join(ROOT, 'solutions')
@@ -47,6 +50,13 @@ def run(code):
         got, want = norm(p.stdout), norm(exp)
         if got == want:
             continue
+        if code in CHECKERS:
+            # Multiple answers are acceptable; judge it with a real checker.
+            ok, why = CHECKERS[code](inp, p.stdout)
+            if ok:
+                worst = 'PASS*' if worst == 'PASS' else worst
+                continue
+            return 'FAIL', f'sample {i}: {why}'
         if got.lower() == want.lower():
             worst = 'PASS~' if worst == 'PASS' else worst
             continue
@@ -62,7 +72,7 @@ def main():
         tally[status] = tally.get(status, 0) + 1
         if status not in ('PASS', 'SKIP'):
             print(f'{status:6} {code}  {detail}')
-        elif status == 'PASS~':
+        elif status in ('PASS~', 'PASS*'):
             print(f'{status:6} {code}')
     print('\n' + '  '.join(f'{k}={v}' for k, v in sorted(tally.items())))
     return 1 if tally.get('FAIL') or tally.get('ERROR') else 0

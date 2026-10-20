@@ -2,20 +2,20 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**216 of 486 solved problems documented.**
+**224 of 486 solved problems documented.**
 
 ## Roadmap progress
 
 | Level | Course | Solved | Total | Documented |
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
-| 2 | Level up from 1* to 2* | 66 | 66 | 60 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 0 |
+| 2 | Level up from 1* to 2* | 66 | 66 | 63 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 5 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **216** |
+| | **Total** | **502** | **761** | **224** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,13 +25,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 16 |
+| 3 | 100 | 24 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (23)</summary>
+<details open><summary><b>Arrays</b> (26)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -58,10 +58,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 181 | [Average Flex](docs/arrays/AVGFLEX.md) | 1442 | Counting against a global threshold | $O(N^2)$ per test case at these bounds, or $O(N \log N)$ sorted |
 | 183 | [College Life 2](docs/arrays/COLGLF2.md) | 1519 | Group total with a per-group adjustment | $O(\sum E_i)$ per test case |
 | 207 | [Make all equal using Pairs](docs/arrays/PAIREQ.md) | 928 | Keep the most frequent value | $O(N)$ per test case |
+| 218 | [Pushpa ](docs/arrays/PUSH7PA.md) | 1266 | Frequency combined with value | $O(N)$ per test case |
+| 219 | [Reversal Sorting](docs/arrays/REVSORT.md) | 1288 | Constraining which inversions may be undone | $O(N)$ per test case |
+| 223 | [Array Halves](docs/arrays/ARRHALVES.md) | 1407 | Minimum adjacent swaps to gather a set | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Basic Math</b> (80)</summary>
+<details open><summary><b>Basic Math</b> (81)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -145,6 +148,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 171 | [Distinct Pair Sums](docs/basic-math/MANYSUMS.md) | 1480 | Range of achievable sums | $O(1)$ per test case |
 | 172 | [Tom And Jerry 1](docs/basic-math/TANDJ1.md) | 1379 | Grid reachability by distance and parity | $O(1)$ per test case |
 | 206 | [Playing with Matches](docs/basic-math/MATCHES.md) | 986 | Per-digit lookup table | $O(d)$ per test case |
+| 224 | [Bella ciao](docs/basic-math/CHFHEIST.md) | 1410 | Summing an arithmetic progression | $O(1)$ per test case |
 
 </details>
 
@@ -153,6 +157,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 40 | [Small factorials](docs/big-integers/FCTRL2.md) | 420 | Arbitrary-precision arithmetic | $O(n)$ big-integer multiplications per test case |
+
+</details>
+
+<details open><summary><b>Bit Manipulation</b> (1)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 217 | [Cooking Machine](docs/bit-manipulation/COOKMACH.md) | 1329 | Halving and doubling toward a power of two | $O(\log A \cdot \log B)$ per test case |
 
 </details>
 
@@ -215,7 +227,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (19)</summary>
+<details open><summary><b>Greedy</b> (21)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -238,6 +250,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 202 | [Chopsticks](docs/greedy/TACHSTCK.md) | 1320 | Pairing adjacent elements after sorting | $O(N \log N)$ |
 | 203 | [Sticks](docs/greedy/STICKS.md) | 1261 | Largest two pairs by frequency | $O(N \log N)$ per test case |
 | 209 | [Lazy Salesman](docs/greedy/HOLIDAYS.md) | 1161 | Take the largest items first | $O(N \log N)$ per test case |
+| 220 | [Average Permutation](docs/greedy/AVGPERM.md) | 1401 | Pair large values with small weights | $O(N)$ per test case |
+| 222 | [Mighty Friend](docs/greedy/MTYFRI.md) | 1406 | Exchange the largest for the smallest | $O(N \log N)$ per test case |
 
 </details>
 
@@ -305,7 +319,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (8)</summary>
+<details open><summary><b>Sorting</b> (9)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -317,6 +331,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 212 | [Watson asks Does Permutation Exist](docs/sorting/PERMEXIS.md) | 1207 | Adjacent gaps in sorted order | $O(N \log N)$ per test case |
 | 213 | [Maximize the Minimum](docs/sorting/MAXTHEMIN.md) | 1358 | The (K+1)-th smallest survives | $O(N \log N)$ per test case |
 | 214 | [Maximum Trio](docs/sorting/MXMTRIO.md) | 1349 | Choosing extremes for a product | $O(N \log N)$ per test case |
+| 221 | [Hotel Bytelandia](docs/sorting/HOTEL.md) | 1405 | Event sweep | $O(N \log N)$ per test case |
 
 </details>
 
