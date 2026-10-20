@@ -2,20 +2,20 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**100 of 486 solved problems documented.**
+**120 of 486 solved problems documented.**
 
 ## Roadmap progress
 
 | Level | Course | Solved | Total | Documented |
 |---|---|---:|---:|---:|
-| 1 | 500 to 1000 difficulty rating | 156 | 156 | 100 |
+| 1 | 500 to 1000 difficulty rating | 156 | 156 | 120 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 0 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 0 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **100** |
+| | **Total** | **502** | **761** | **120** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -24,7 +24,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | Phase | Problems | Documented |
 |---|---:|---:|
 | 1 | 100 | 100 |
-| 2 | 100 | 0 |
+| 2 | 100 | 20 |
 | 3 | 100 | 0 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
@@ -46,7 +46,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Basic Math</b> (52)</summary>
+<details open><summary><b>Basic Math</b> (64)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -102,6 +102,18 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 96 | [The Preparations](docs/basic-math/SUPCHEF.md) | 823 | Strict comparison against a deadline | $O(1)$ per test case |
 | 98 | [Best of N Sets](docs/basic-math/BESTOFTENNIS.md) | 830 | Inverting a stopping condition | $O(1)$ per test case |
 | 100 | [Mileage matters](docs/basic-math/MILEAGE.md) | 831 | Comparing ratios by cross-multiplication | $O(1)$ per test case |
+| 101 | [Melt Gold](docs/basic-math/MELTGOLD.md) | 835 | Triangular numbers and their inverse | $O(1)$ per test case |
+| 102 | [Circular Track](docs/basic-math/LOOP.md) | 838 | Distance on a circle | $O(1)$ per test case |
+| 106 | [Equal Integers](docs/basic-math/INCREAR.md) | 852 | Asymmetric step sizes | $O(1)$ per test case |
+| 107 | [Summer Heat](docs/basic-math/COCONUT.md) | 852 | Independent requirements summed | $O(1)$ per test case |
+| 109 | [Devendra and Water Sports](docs/basic-math/DEVSPORTS.md) | 859 | Remaining budget against a total cost | $O(1)$ per test case |
+| 112 | [Car Choice](docs/basic-math/CARCHOICE.md) | 861 | Comparing ratios by cross-multiplication | $O(1)$ per test case |
+| 114 | [Badminton Serves](docs/basic-math/BADMINTON.md) | 869 | Counting even values in a range | $O(1)$ per test case |
+| 115 | [Chef and Contest](docs/basic-math/CHEFCONTEST.md) | 872 | Weighted penalty, then a three-way comparison | $O(1)$ per test case |
+| 116 | [Group Assignment](docs/basic-math/GROUPASSGN.md) | 872 | Pairing by reflection | $O(1)$ per test case |
+| 117 | [Relativity](docs/basic-math/RELATIVE.md) | 872 | Rearranging a given formula | $O(1)$ per test case |
+| 119 | [Drunk Alcoholic](docs/basic-math/DRUNKALK.md) | 874 | Net progress per cycle, with an odd remainder | $O(1)$ per test case |
+| 120 | [Chef On Island](docs/basic-math/CCISLAND.md) | 878 | Two independent supply checks | $O(1)$ per test case |
 
 </details>
 
@@ -113,11 +125,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Brute Force</b> (1)</summary>
+<details open><summary><b>Brute Force</b> (2)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 56 | [Weights](docs/brute-force/WGHTS.md) | 697 | Enumerating every non-empty subset | $O(2^k)$ per test case with $k = 3$, so $O(1)$ |
+| 110 | [Highest Divisor](docs/brute-force/HDIVISR.md) | 860 | Searching a small range downward | $O(1)$ — at most 10 divisibility tests |
 
 </details>
 
@@ -129,7 +142,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Conditionals & Case Work</b> (12)</summary>
+<details open><summary><b>Conditionals & Case Work</b> (14)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -145,19 +158,22 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 65 | [Decrement OR Increment](docs/conditionals-case-work/DECINC.md) | 520 | Single divisibility branch | $O(1)$ |
 | 79 | [Chef And Operators](docs/conditionals-case-work/CHOPRT.md) | 520 | Three-way comparison | $O(1)$ per test case |
 | 97 | [Genes](docs/conditionals-case-work/GENE01.md) | 826 | Ranking by priority | $O(1)$ |
+| 103 | [Grade The Steel](docs/conditionals-case-work/FLOW014.md) | 900 | Grading from a set of independent flags | $O(1)$ per test case |
+| 113 | [Which Division](docs/conditionals-case-work/WHICHDIV.md) | 867 | Ordered threshold ladder | $O(1)$ per test case |
 
 </details>
 
-<details open><summary><b>Geometry</b> (2)</summary>
+<details open><summary><b>Geometry</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 52 | [Chessboard Distance](docs/geometry/CHESSDIST.md) | 690 | Chebyshev distance | $O(1)$ per test case |
 | 69 | [Cyclic Quadrilateral](docs/geometry/CYCLICQD.md) | 735 | Cyclic quadrilateral angle condition | $O(1)$ per test case |
+| 108 | [Area OR Perimeter](docs/geometry/AREAPERI.md) | 590 | Comparing area against perimeter | $O(1)$ |
 
 </details>
 
-<details open><summary><b>Greedy</b> (6)</summary>
+<details open><summary><b>Greedy</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -167,10 +183,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 59 | [Minimum number of coins](docs/greedy/MINCOINS.md) | 711 | Largest denomination first | $O(1)$ per test case |
 | 66 | [A or B](docs/greedy/AORB.md) | 728 | Scheduling order and the exchange argument | $O(1)$ per test case |
 | 82 | [Single-use Attack](docs/greedy/SINGLEUSE.md) | 777 | Comparing both strategies explicitly | $O(1)$ per test case |
+| 104 | [Smallest Numbers of Notes](docs/greedy/FLOW005.md) | 750 | Greedy change-making in a canonical system | $O(k)$ per test case, $k = 6$ denominations |
 
 </details>
 
-<details open><summary><b>Number Theory</b> (11)</summary>
+<details open><summary><b>Number Theory</b> (13)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -185,6 +202,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 90 | [Primality Test](docs/number-theory/PRB01.md) | 850 | Trial division to the square root | $O(\sqrt{N})$ per test case |
 | 93 | [Cars and Bikes](docs/number-theory/TYRES.md) | 809 | Remainder modulo 4 | $O(1)$ per test case |
 | 95 | [Equalizing Numbers](docs/number-theory/EQLZING.md) | 823 | Finding the invariant | $O(1)$ per test case |
+| 111 | [Construct N](docs/number-theory/CONN.md) | 860 | Parity plus a threshold | $O(1)$ per test case |
+| 118 | [Counting Pretty Numbers](docs/number-theory/NUM239.md) | 873 | Counting residues with a prefix function | $O(1)$ per test case |
 
 </details>
 
@@ -204,7 +223,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (4)</summary>
+<details open><summary><b>Strings</b> (5)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -212,6 +231,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 44 | [Complementary Strand in a DNA](docs/strings/DNASTRAND.md) | 660 | Character-wise mapping with a translation table | $O(N)$ per test case |
 | 92 | [Wordle](docs/strings/WORDLE.md) | 804 | Position-wise comparison | $O(L)$ per test case with $L = 5$ |
 | 99 | [The Block Game](docs/strings/PALL01.md) | 720 | Palindrome check by reversal | $O(d)$ per test case, $d$ = number of digits |
+| 105 | [Is it a VOWEL or CONSONANT](docs/strings/VOWELTB.md) | 520 | Membership test against a small set | $O(1)$ |
 
 </details>
 

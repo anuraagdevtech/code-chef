@@ -1,0 +1,21 @@
+---
+topic: Brute Force
+subtopic: Searching a small range downward
+time: $O(1)$ — at most 10 divisibility tests
+space: $O(1)$
+---
+Find the largest $d$ in $[1, 10]$ dividing $N$. The search space has ten elements, so simply try them from $10$ downward and return the first that divides:
+
+```python
+next(d for d in range(10, 0, -1) if n % d == 0)
+```
+
+Counting **down** is what makes this correct with an early exit — the first hit is already the largest. Counting up would require scanning all ten and remembering the best, which is no slower here but is the version that invites an off-by-one.
+
+The search can never fail, because $d = 1$ divides every integer. So no fallback or sentinel is needed, and `next` is safe without a default.
+
+It is worth noticing that this is *not* the same as "the largest proper divisor capped at 10", nor does it have anything to do with the greatest common divisor of $N$ with anything. Sample case $N = 91 = 7 \times 13$ answers $7$: the divisors of $91$ are $1, 7, 13, 91$, and $7$ is the largest that fits inside the range.
+
+For a range this small, brute force is not a compromise — it is the right answer. Factorising $N$ first would be more work for no benefit, and would still need a pass to pick the largest factor under $10$.
+
+There is **no $T$**: the input is a single integer.
