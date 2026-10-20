@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**240 of 486 solved problems documented.**
+**248 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 21 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 29 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **240** |
+| | **Total** | **502** | **761** | **248** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,7 +25,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 40 |
+| 3 | 100 | 48 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
@@ -162,15 +162,16 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (1)</summary>
+<details open><summary><b>Bit Manipulation</b> (2)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 217 | [Cooking Machine](docs/bit-manipulation/COOKMACH.md) | 1329 | Halving and doubling toward a power of two | $O(\log A \cdot \log B)$ per test case |
+| 242 | [Make Array Odd](docs/bit-manipulation/MAKEARRAYODD.md) | 1445 | Tracking a single bit through XOR and OR | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Brute Force</b> (4)</summary>
+<details open><summary><b>Brute Force</b> (5)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -178,10 +179,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 110 | [Highest Divisor](docs/brute-force/HDIVISR.md) | 860 | Searching a small range downward | $O(1)$ — at most 10 divisibility tests |
 | 128 | [Chef and Battery ](docs/brute-force/FIFTYPE.md) | 901 | Searching one variable of a linear Diophantine equation | $O(1)$ per test case — the search is bounded by a small constant |
 | 228 | [Maximize Colours](docs/brute-force/COLOUR.md) | 1415 | Enumerating a tiny decision space | $O(1)$ per test case — eight combinations |
+| 245 | [Control the Pollution](docs/brute-force/SMOKE.md) | 1450 | Searching one variable over a small range | $O(N/100)$ per test case — at most 11 iterations |
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (4)</summary>
+<details open><summary><b>Combinatorics</b> (5)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -189,6 +191,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 122 | [Farmers League](docs/combinatorics/LEAGUE.md) | 883 | Extremal construction in a round robin | $O(1)$ per test case |
 | 192 | [Count Substrings](docs/combinatorics/CSUB.md) | 1330 | Counting pairs from a tally | $O(N)$ per test case |
 | 237 | [Maximum Angriness](docs/combinatorics/MAXAGRY.md) | 1432 | Maximising inversions with limited swaps | $O(1)$ per test case |
+| 244 | [Counting Flags](docs/combinatorics/FLAGS.md) | 1446 | Chromatic polynomials of small graphs | $O(1)$ per test case |
 
 </details>
 
@@ -231,21 +234,23 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Game Theory</b> (1)</summary>
+<details open><summary><b>Game Theory</b> (2)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 226 | [String Game ](docs/game-theory/STRAME.md) | 1413 | Counting the forced number of moves | $O(N)$ per test case |
+| 241 | [Chef and Coins Game](docs/game-theory/CHCOINSG.md) | 1442 | Losing positions form a residue class | $O(1)$ per test case |
 
 </details>
 
-<details open><summary><b>Geometry</b> (3)</summary>
+<details open><summary><b>Geometry</b> (4)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 52 | [Chessboard Distance](docs/geometry/CHESSDIST.md) | 690 | Chebyshev distance | $O(1)$ per test case |
 | 69 | [Cyclic Quadrilateral](docs/geometry/CYCLICQD.md) | 735 | Cyclic quadrilateral angle condition | $O(1)$ per test case |
 | 108 | [Area OR Perimeter](docs/geometry/AREAPERI.md) | 590 | Comparing area against perimeter | $O(1)$ |
+| 247 | [Triangle Classification](docs/geometry/TRIANGCL.md) | 1462 | Classifying with squared lengths | $O(1)$ per test case |
 
 </details>
 
@@ -280,7 +285,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (23)</summary>
+<details open><summary><b>Number Theory</b> (26)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -307,6 +312,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 180 | [Hard Cash](docs/number-theory/CASH.md) | 1300 | A conserved total modulo K | $O(N)$ per test case |
 | 204 | [Chef and Linear Chess](docs/number-theory/LINCHESS.md) | 1200 | Divisors as reachable positions | $O(N)$ per test case |
 | 231 | [Decreasing Srrnmieeda](docs/number-theory/DECREM.md) | 1423 | A strictly decreasing chain of remainders | $O(1)$ per test case |
+| 243 | [Cutting Pizza](docs/number-theory/CUTPIZ.md) | 1446 | GCD of angular gaps | $O(n + \log 360)$ per test case |
+| 246 | [Yet another SOD problem](docs/number-theory/SOD3.md) | 1459 | Digit sum congruent to the value mod 3 | $O(1)$ per test case |
+| 248 | [Chef and Adventures](docs/number-theory/CHEFADV.md) | 1462 | Divisibility with an optional one-off offset | $O(1)$ per test case |
 
 </details>
 
