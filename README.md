@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**280 of 486 solved problems documented.**
+**288 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 61 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 69 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **280** |
+| | **Total** | **502** | **761** | **288** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,13 +25,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 80 |
+| 3 | 100 | 88 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (30)</summary>
+<details open><summary><b>Arrays</b> (31)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -65,6 +65,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 261 | [Weird Palindrome Making](docs/arrays/MAKEPAL.md) | 1486 | Odd counts and palindrome feasibility | $O(N)$ per test case |
 | 263 | [CAO Stage-1](docs/arrays/CAOS1.md) | 1488 | Contiguous runs in four directions | $O(R \cdot C)$ per test case |
 | 269 | [Total Correct Submissions](docs/arrays/TOTCRT.md) | 1499 | Aggregating by key, then sorting | $O(N \log N)$ per test case |
+| 287 | [Unstable Subarray](docs/arrays/COUNTSUB.md) | 1545 | A telescoping sum, then counting equal pairs | $O(N)$ per test case |
 
 </details>
 
@@ -167,7 +168,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (6)</summary>
+<details open><summary><b>Bit Manipulation</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -177,6 +178,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 262 | [Interesting XOR!](docs/bit-manipulation/IRSTXOR.md) | 1487 | Maximising a product under a fixed XOR | $O(1)$ per test case |
 | 273 | [Equal by XORing](docs/bit-manipulation/EQBYXOR.md) | 1507 | The XOR span of an initial segment | $O(1)$ per test case |
 | 276 | [One-XOR Deletions](docs/bit-manipulation/DELXORONE.md) | 1516 | Grouping by the value with its low bit dropped | $O(N)$ per test case |
+| 281 | [Positive or Negative Subarrays](docs/bit-manipulation/POSITNEG.md) | 1526 | One power of two dominates all the lower ones | $O(N)$ per test case |
 
 </details>
 
@@ -236,7 +238,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (7)</summary>
+<details open><summary><b>Constructive</b> (8)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -247,6 +249,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 267 | [Exactly N plus 1 Values](docs/constructive/N1VALUES.md) | 1495 | Building a sum from a run plus a remainder | $O(N)$ per test case |
 | 268 | [Gcd of Subarrays](docs/constructive/GCDSUBARRAYS.md) | 1498 | Starting from the minimum and adding the slack | $O(N)$ per test case |
 | 271 | [Palindrome Pain](docs/constructive/PALINPAIN.md) | 1506 | Counting distinct palindrome halves | $O(X + Y)$ per test case |
+| 284 | [Prefix Permutation](docs/constructive/PREFPERM.md) | 1532 | Blocks that only close at the right moment | $O(N)$ per test case |
 
 </details>
 
@@ -271,7 +274,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (26)</summary>
+<details open><summary><b>Greedy</b> (28)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -301,10 +304,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 239 | [Akash and Dinner](docs/greedy/CHEFDINE.md) | 1438 | Cheapest representative per group | $O(N \log N)$ per test case |
 | 270 | [Subarray Removal](docs/greedy/SUBARRAYREM.md) | 1505 | Budgeting two resources | $O(N)$ per test case |
 | 272 | [Magda and Silly Pairs](docs/greedy/SILLYPRS.md) | 1507 | Matching by parity | $O(N)$ per test case |
+| 283 | [Admins and Shopping](docs/greedy/ADMINSHOP.md) | 1529 | The larger of two independent lower bounds | $O(N)$ per test case |
+| 286 | [Let us play with rank list](docs/greedy/RANKLIST.md) | 1543 | How much deficit a given number of edits can absorb | $O(\sqrt{S})$ per test case |
 
 </details>
 
-<details open><summary><b>Number Theory</b> (32)</summary>
+<details open><summary><b>Number Theory</b> (34)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -340,6 +345,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 274 | [Reduce to One](docs/number-theory/REDONE.md) | 1507 | A telescoping product in disguise | $O(1)$ per test case after an $O(N)$ precomputation |
 | 279 | [Split Sums](docs/number-theory/SPSUM.md) | 1524 | Splitting a fixed total under a gcd condition | $O(\log S)$ per test case |
 | 280 | [Guddu on a Date](docs/number-theory/KS2.md) | 1525 | A bijection between prefixes and solutions | $O(\log N)$ per test case |
+| 282 | [Monsters](docs/number-theory/SPCP5.md) | 1527 | Sieve plus a short search | $O(\log H)$ per test case after an $O(V \log\log V)$ sieve |
+| 288 | [Catch the Thief](docs/number-theory/CATHIEF.md) | 1550 | An invariant from step size and parity | $O(1)$ per test case |
 
 </details>
 
@@ -398,7 +405,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (25)</summary>
+<details open><summary><b>Strings</b> (26)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -427,6 +434,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 264 | [Anti Palindrome](docs/strings/ANTIPALINDR.md) | 1488 | Forcing a palindrome to be impossible | $O(N)$ per test case |
 | 266 | [Harrenhal](docs/strings/HHAL.md) | 1495 | Covering a two-letter string with palindromes | $O(|H|)$ per test case |
 | 277 | [Concat Palindrome](docs/strings/CONCATPAL.md) | 1520 | Multiset containment forced by mirroring | $O(N + M)$ per test case |
+| 285 | [Flip the String](docs/strings/FLIP.md) | 1538 | Two independent parity classes | $O(|A|)$ per test case |
 
 </details>
 

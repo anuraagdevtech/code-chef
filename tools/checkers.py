@@ -229,6 +229,36 @@ def _palinpain(inp, got):
     return True, "valid"
 
 
+def _prefperm(inp, got):
+    """PREFPERM: a permutation whose permutation-prefixes are exactly A."""
+    toks = inp.split()
+    t = int(toks[0])
+    pos = 1
+    cases = []
+    for _ in range(t):
+        n, k = int(toks[pos]), int(toks[pos + 1])
+        a = [int(v) for v in toks[pos + 2:pos + 2 + k]]
+        pos += 2 + k
+        cases.append((n, a))
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for (n, a), line in zip(cases, lines):
+        p = list(map(int, line.split()))
+        if sorted(p) != list(range(1, n + 1)):
+            return False, f"n={n}: not a permutation"
+        # A prefix is a permutation exactly when its running max equals its length.
+        run_max = 0
+        found = []
+        for i, v in enumerate(p, 1):
+            run_max = max(run_max, v)
+            if run_max == i:
+                found.append(i)
+        if found != a:
+            return False, f"n={n}: permutation prefixes {found} != {a}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -238,5 +268,6 @@ CHECKERS = {
     "ALTERNATEDIV": _alternatediv,
     "N1VALUES": _n1values,
     "PALINPAIN": _palinpain,
+    "PREFPERM": _prefperm,
     "GCDSUBARRAYS": _gcdsubarrays,
 }
