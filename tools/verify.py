@@ -55,7 +55,7 @@ def run(code):
 
 
 def main():
-    codes = sys.argv[1:] or open(os.path.join(ROOT, 'data', 'phase1_codes.txt')).read().split()
+    codes = sys.argv[1:] or open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
     tally = {}
     for code in codes:
         status, detail = run(code)
