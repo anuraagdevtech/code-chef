@@ -1,0 +1,16 @@
+{
+  "roadmap": "become-5-star",
+  "profile": "anuraag_147",
+  "harvested_on": "2026-10-21",
+  "total_problems": 761,
+  "total_solved": 502,
+  "courses": [
+    {"slug": "logical-problems",           "level": 1, "title": "500 to 1000 difficulty rating",   "solved": 156, "total": 156},
+    {"slug": "1to2stars",                  "level": 2, "title": "Level up from 1* to 2*",          "solved": 66,  "total": 66},
+    {"slug": "2-star-difficulty-problems", "level": 2, "title": "1400 to 1600 difficulty problems","solved": 85,  "total": 85},
+    {"slug": "2to3stars",                  "level": 3, "title": "Jump from 2* to 3*",              "solved": 96,  "total": 96},
+    {"slug": "3-star-difficulty-problems", "level": 3, "title": "1600 to 1800 difficulty problems","solved": 98,  "total": 128},
+    {"slug": "3to4stars",                  "level": 4, "title": "Rise from 3* to 4*",              "solved": 1,   "total": 118},
+    {"slug": "5-star-and-above-problems",  "level": 5, "title": "2000 to 2500 difficulty problems","solved": 0,   "total": 112}
+  ]
+}
