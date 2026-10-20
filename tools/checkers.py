@@ -120,10 +120,36 @@ def _xor_order(inp, got):
     return True, "valid"
 
 
+def _alternatediv(inp, got):
+    """ALTERNATEDIV: any distinct array in [1, 2N] with alternating divisibility."""
+    toks = inp.split()
+    t = int(toks[0])
+    sizes = [int(toks[1 + i]) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for n, line in zip(sizes, lines):
+        a = list(map(int, line.split()))
+        if len(a) != n:
+            return False, f"n={n}: wrong length"
+        if len(set(a)) != n:
+            return False, f"n={n}: values not distinct"
+        if any(v < 1 or v > 2 * n for v in a):
+            return False, f"n={n}: value outside [1, {2 * n}]"
+        for i in range(n - 1):            # i is 0-based; position is i + 1
+            divides = a[i + 1] % a[i] == 0
+            if (i + 1) % 2 == 1 and not divides:
+                return False, f"n={n}: A[{i+1}] should divide A[{i+2}]"
+            if (i + 1) % 2 == 0 and divides:
+                return False, f"n={n}: A[{i+1}] should not divide A[{i+2}]"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
     "PERMXORITY": _permxority,
     "CHDOGS": _float_tolerance(),
     "XOR_ORDER": _xor_order,
+    "ALTERNATEDIV": _alternatediv,
 }

@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**256 of 486 solved problems documented.**
+**264 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 37 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 45 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **256** |
+| | **Total** | **502** | **761** | **264** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,13 +25,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 56 |
+| 3 | 100 | 64 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (27)</summary>
+<details open><summary><b>Arrays</b> (29)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -62,6 +62,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 219 | [Reversal Sorting](docs/arrays/REVSORT.md) | 1288 | Constraining which inversions may be undone | $O(N)$ per test case |
 | 223 | [Array Halves](docs/arrays/ARRHALVES.md) | 1407 | Minimum adjacent swaps to gather a set | $O(N)$ per test case |
 | 229 | [Fit to Play](docs/arrays/PLAYFIT.md) | 1419 | Best gain against a running minimum | $O(N)$ per test case |
+| 261 | [Weird Palindrome Making](docs/arrays/MAKEPAL.md) | 1486 | Odd counts and palindrome feasibility | $O(N)$ per test case |
+| 263 | [CAO Stage-1](docs/arrays/CAOS1.md) | 1488 | Contiguous runs in four directions | $O(R \cdot C)$ per test case |
 
 </details>
 
@@ -162,13 +164,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (3)</summary>
+<details open><summary><b>Bit Manipulation</b> (4)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 217 | [Cooking Machine](docs/bit-manipulation/COOKMACH.md) | 1329 | Halving and doubling toward a power of two | $O(\log A \cdot \log B)$ per test case |
 | 242 | [Make Array Odd](docs/bit-manipulation/MAKEARRAYODD.md) | 1445 | Tracking a single bit through XOR and OR | $O(N)$ per test case |
 | 253 | [Order by XOR](docs/bit-manipulation/XOR_ORDER.md) | 1476 | The highest differing bit decides an XOR comparison | $O(1)$ per test case |
+| 262 | [Interesting XOR!](docs/bit-manipulation/IRSTXOR.md) | 1487 | Maximising a product under a fixed XOR | $O(1)$ per test case |
 
 </details>
 
@@ -228,13 +231,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (3)</summary>
+<details open><summary><b>Constructive</b> (4)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 232 | [Average Array](docs/constructive/AVGARR.md) | 1424 | Pairing symmetrically around the mean | $O(N)$ per test case |
 | 236 | [Balanced and Unique Arrays](docs/constructive/UNQEQ.md) | 1431 | Balanced split with distinct prefixes | $O(N)$ per test case |
 | 238 | [Permutation Xority](docs/constructive/PERMXORITY.md) | 1437 | Cancelling a XOR with a 1-2-3 triple | $O(N)$ per test case |
+| 257 | [Alternating Divisibility](docs/constructive/ALTERNATEDIV.md) | 1483 | Pairing k with 2k | $O(N)$ per test case |
 
 </details>
 
@@ -290,7 +294,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (27)</summary>
+<details open><summary><b>Number Theory</b> (29)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -321,6 +325,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 246 | [Yet another SOD problem](docs/number-theory/SOD3.md) | 1459 | Digit sum congruent to the value mod 3 | $O(1)$ per test case |
 | 248 | [Chef and Adventures](docs/number-theory/CHEFADV.md) | 1462 | Divisibility with an optional one-off offset | $O(1)$ per test case |
 | 255 | [Majin Vegeta](docs/number-theory/VEGETA.md) | 1477 | Sieve counting distinct prime factors | $O(V \log\log V)$ once, then $O(m - n)$ per query |
+| 258 | [Jogging](docs/number-theory/JOGGING.md) | 1484 | A doubling recurrence, taken modulo | $O(\log N)$ per test case |
+| 260 | [Chef Odd](docs/number-theory/CHEFODD.md) | 1486 | Parity and capacity constraints together | $O(1)$ per test case |
 
 </details>
 
@@ -378,7 +384,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (21)</summary>
+<details open><summary><b>Strings</b> (23)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -403,6 +409,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 234 | [Reversing directions](docs/strings/DIRECTI.md) | 1426 | Parsing and reversing a route | $O(N)$ per test case |
 | 240 | [HTML Tags](docs/strings/HTMLTAGS.md) | 1441 | Validating a format | $O(|S|)$ per test case |
 | 249 | [Magical Planks](docs/strings/MKGPLNKS.md) | 1467 | Counting runs | $O(N)$ per test case |
+| 259 | [Correct Sentence](docs/strings/CORTSENT.md) | 1485 | Per-word alphabet membership | $O(\sum |S_i|)$ per test case |
+| 264 | [Anti Palindrome](docs/strings/ANTIPALINDR.md) | 1488 | Forcing a palindrome to be impossible | $O(N)$ per test case |
 
 </details>
 
