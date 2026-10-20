@@ -2,20 +2,20 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**155 of 486 solved problems documented.**
+**160 of 486 solved problems documented.**
 
 ## Roadmap progress
 
 | Level | Course | Solved | Total | Documented |
 |---|---|---:|---:|---:|
-| 1 | 500 to 1000 difficulty rating | 156 | 156 | 155 |
-| 2 | Level up from 1* to 2* | 66 | 66 | 0 |
+| 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
+| 2 | Level up from 1* to 2* | 66 | 66 | 4 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 0 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **155** |
+| | **Total** | **502** | **761** | **160** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -24,7 +24,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | Phase | Problems | Documented |
 |---|---:|---:|
 | 1 | 100 | 100 |
-| 2 | 100 | 55 |
+| 2 | 100 | 60 |
 | 3 | 100 | 0 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
@@ -53,7 +53,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Basic Math</b> (71)</summary>
+<details open><summary><b>Basic Math</b> (73)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -128,6 +128,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 144 | [Car Range](docs/basic-math/CARRANGE.md) | 938 | Reading an off-by-one from the statement | $O(1)$ per test case |
 | 145 | [ Am I Lucky!](docs/basic-math/SPCP4.md) | 941 | Remainders paired off | $O(1)$ per test case |
 | 154 | [Keplers Law](docs/basic-math/KEPLERSLAW.md) | 992 | Testing proportionality by cross-multiplication | $O(1)$ per test case |
+| 157 | [Richie Rich](docs/basic-math/CHFRICH.md) | 878 | Exact division from a guaranteed divisor | $O(1)$ per test case |
+| 159 | [Hoop Jump](docs/basic-math/HOOPS.md) | 930 | Where two converging sequences meet | $O(1)$ per test case |
 
 </details>
 
@@ -158,7 +160,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Conditionals & Case Work</b> (19)</summary>
+<details open><summary><b>Conditionals & Case Work</b> (21)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -181,6 +183,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 136 | [Shoe Fit](docs/conditionals-case-work/SHOEFIT.md) | 925 | Presence of both values in a small collection | $O(1)$ per test case |
 | 149 | [Marathon](docs/conditionals-case-work/MARARUN.md) | 955 | Largest achievable tier | $O(1)$ per test case |
 | 150 | [La Liga](docs/conditionals-case-work/COOK82A.md) | 956 | Parsing labelled input, then a single logical condition | $O(1)$ per test case |
+| 156 | [Bear and Ladder](docs/conditionals-case-work/BRLADDER.md) | 999 | Deriving an adjacency rule from an edge list | $O(1)$ per query |
+| 158 | [Vaccine Dates ](docs/conditionals-case-work/VDATES.md) | 938 | Classifying a value against an interval | $O(1)$ per test case |
 
 </details>
 
@@ -194,7 +198,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (10)</summary>
+<details open><summary><b>Greedy</b> (11)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -208,6 +212,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 127 | [Peaceful Party](docs/greedy/MAYOR_PARTY.md) | 898 | Choosing between mutually exclusive groups | $O(1)$ per test case |
 | 131 | [Avoid Contact](docs/greedy/AVOIDCONTACT.md) | 907 | Packing with separation constraints | $O(1)$ per test case |
 | 146 | [Janmansh at Fruit Market](docs/greedy/JMARKET.md) | 947 | Cheapest choice under a diversity constraint | $O(1)$ per test case |
+| 160 | [The Two Dishes](docs/greedy/MAX_DIFF.md) | 1254 | Pushing one variable to its bound | $O(1)$ per test case |
 
 </details>
 
