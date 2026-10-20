@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**248 of 486 solved problems documented.**
+**256 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 29 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 37 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **248** |
+| | **Total** | **502** | **761** | **256** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,7 +25,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 48 |
+| 3 | 100 | 56 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
@@ -162,16 +162,17 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (2)</summary>
+<details open><summary><b>Bit Manipulation</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 217 | [Cooking Machine](docs/bit-manipulation/COOKMACH.md) | 1329 | Halving and doubling toward a power of two | $O(\log A \cdot \log B)$ per test case |
 | 242 | [Make Array Odd](docs/bit-manipulation/MAKEARRAYODD.md) | 1445 | Tracking a single bit through XOR and OR | $O(N)$ per test case |
+| 253 | [Order by XOR](docs/bit-manipulation/XOR_ORDER.md) | 1476 | The highest differing bit decides an XOR comparison | $O(1)$ per test case |
 
 </details>
 
-<details open><summary><b>Brute Force</b> (5)</summary>
+<details open><summary><b>Brute Force</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -180,10 +181,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 128 | [Chef and Battery ](docs/brute-force/FIFTYPE.md) | 901 | Searching one variable of a linear Diophantine equation | $O(1)$ per test case — the search is bounded by a small constant |
 | 228 | [Maximize Colours](docs/brute-force/COLOUR.md) | 1415 | Enumerating a tiny decision space | $O(1)$ per test case — eight combinations |
 | 245 | [Control the Pollution](docs/brute-force/SMOKE.md) | 1450 | Searching one variable over a small range | $O(N/100)$ per test case — at most 11 iterations |
+| 254 | [Chef and Numbers](docs/brute-force/CHEFFED.md) | 1477 | Bounding the search window | $O(1)$ — a fixed-width scan |
+| 256 | [Digital clock](docs/brute-force/ONOZ.md) | 1482 | Enumerating a small product space | $O(H \cdot M)$ per test case |
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (5)</summary>
+<details open><summary><b>Combinatorics</b> (6)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -192,6 +195,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 192 | [Count Substrings](docs/combinatorics/CSUB.md) | 1330 | Counting pairs from a tally | $O(N)$ per test case |
 | 237 | [Maximum Angriness](docs/combinatorics/MAXAGRY.md) | 1432 | Maximising inversions with limited swaps | $O(1)$ per test case |
 | 244 | [Counting Flags](docs/combinatorics/FLAGS.md) | 1446 | Chromatic polynomials of small graphs | $O(1)$ per test case |
+| 251 | [Magic Set](docs/combinatorics/MGCSET.md) | 1472 | A condition that reduces to its singletons | $O(n)$ per test case |
 
 </details>
 
@@ -243,7 +247,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Geometry</b> (4)</summary>
+<details open><summary><b>Geometry</b> (5)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -251,6 +255,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 69 | [Cyclic Quadrilateral](docs/geometry/CYCLICQD.md) | 735 | Cyclic quadrilateral angle condition | $O(1)$ per test case |
 | 108 | [Area OR Perimeter](docs/geometry/AREAPERI.md) | 590 | Comparing area against perimeter | $O(1)$ |
 | 247 | [Triangle Classification](docs/geometry/TRIANGCL.md) | 1462 | Classifying with squared lengths | $O(1)$ per test case |
+| 252 | [Chef and Three Dogs](docs/geometry/CHDOGS.md) | 1473 | Pursuit curve by relative closing speed | $O(1)$ per test case |
 
 </details>
 
@@ -285,7 +290,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (26)</summary>
+<details open><summary><b>Number Theory</b> (27)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -315,6 +320,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 243 | [Cutting Pizza](docs/number-theory/CUTPIZ.md) | 1446 | GCD of angular gaps | $O(n + \log 360)$ per test case |
 | 246 | [Yet another SOD problem](docs/number-theory/SOD3.md) | 1459 | Digit sum congruent to the value mod 3 | $O(1)$ per test case |
 | 248 | [Chef and Adventures](docs/number-theory/CHEFADV.md) | 1462 | Divisibility with an optional one-off offset | $O(1)$ per test case |
+| 255 | [Majin Vegeta](docs/number-theory/VEGETA.md) | 1477 | Sieve counting distinct prime factors | $O(V \log\log V)$ once, then $O(m - n)$ per query |
 
 </details>
 
@@ -355,7 +361,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (9)</summary>
+<details open><summary><b>Sorting</b> (10)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -368,10 +374,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 213 | [Maximize the Minimum](docs/sorting/MAXTHEMIN.md) | 1358 | The (K+1)-th smallest survives | $O(N \log N)$ per test case |
 | 214 | [Maximum Trio](docs/sorting/MXMTRIO.md) | 1349 | Choosing extremes for a product | $O(N \log N)$ per test case |
 | 221 | [Hotel Bytelandia](docs/sorting/HOTEL.md) | 1405 | Event sweep | $O(N \log N)$ per test case |
+| 250 | [Approximately II](docs/sorting/APPROX2.md) | 1471 | Two pointers, then counting by value | $O(N \log N)$ per test case |
 
 </details>
 
-<details open><summary><b>Strings</b> (20)</summary>
+<details open><summary><b>Strings</b> (21)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -395,6 +402,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 216 | [Even Splits](docs/strings/EVENSPLIT.md) | 1282 | Which orderings are reachable | $O(N \log N)$ per test case |
 | 234 | [Reversing directions](docs/strings/DIRECTI.md) | 1426 | Parsing and reversing a route | $O(N)$ per test case |
 | 240 | [HTML Tags](docs/strings/HTMLTAGS.md) | 1441 | Validating a format | $O(|S|)$ per test case |
+| 249 | [Magical Planks](docs/strings/MKGPLNKS.md) | 1467 | Counting runs | $O(N)$ per test case |
 
 </details>
 

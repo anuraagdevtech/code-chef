@@ -52,6 +52,9 @@ def run(code):
             continue
         if code in CHECKERS:
             # Multiple answers are acceptable; judge it with a real checker.
+            fn = CHECKERS[code]
+            if hasattr(fn, 'expected') or getattr(fn, '__name__', '') == 'check':
+                fn.expected = exp.split()
             ok, why = CHECKERS[code](inp, p.stdout)
             if ok:
                 worst = 'PASS*' if worst == 'PASS' else worst

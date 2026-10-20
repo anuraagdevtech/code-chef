@@ -82,8 +82,48 @@ def _permxority(inp, got):
     return True, "attractive"
 
 
+def _float_tolerance(tol=1e-6):
+    """Judge numerically: accept within absolute OR relative tolerance."""
+    def check(inp, got):
+        want_vals = check.expected
+        got_vals = got.split()
+        if len(got_vals) != len(want_vals):
+            return False, f"expected {len(want_vals)} numbers, got {len(got_vals)}"
+        for w, g in zip(want_vals, got_vals):
+            wf, gf = float(w), float(g)
+            if abs(wf - gf) <= tol or (wf and abs(wf - gf) / abs(wf) <= tol):
+                continue
+            return False, f"{gf} vs expected {wf}"
+        return True, "within tolerance"
+    return check
+
+
+def _xor_order(inp, got):
+    """XOR_ORDER: any X with (A^X) < (B^X) < (C^X), or -1 when none exists."""
+    toks = inp.split()
+    t = int(toks[0])
+    cases = [tuple(int(toks[1 + 3 * i + k]) for k in range(3)) for i in range(t)]
+    vals = got.split()
+    if len(vals) != t:
+        return False, f"expected {t} values, got {len(vals)}"
+    for (a, b, c), v in zip(cases, vals):
+        x = int(v)
+        if x == -1:
+            # Impossible exactly when both pairs turn on the same bit.
+            if (a ^ b).bit_length() != (b ^ c).bit_length():
+                return False, f"({a},{b},{c}): claimed impossible, but a solution exists"
+            continue
+        if not 0 <= x < (1 << 30):
+            return False, f"({a},{b},{c}): X={x} out of range"
+        if not ((a ^ x) < (b ^ x) < (c ^ x)):
+            return False, f"({a},{b},{c}): X={x} does not order them"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
     "PERMXORITY": _permxority,
+    "CHDOGS": _float_tolerance(),
+    "XOR_ORDER": _xor_order,
 }
