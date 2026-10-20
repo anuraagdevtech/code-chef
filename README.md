@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**264 of 486 solved problems documented.**
+**272 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 45 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 53 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **264** |
+| | **Total** | **502** | **761** | **272** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,13 +25,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 64 |
+| 3 | 100 | 72 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (29)</summary>
+<details open><summary><b>Arrays</b> (30)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -64,10 +64,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 229 | [Fit to Play](docs/arrays/PLAYFIT.md) | 1419 | Best gain against a running minimum | $O(N)$ per test case |
 | 261 | [Weird Palindrome Making](docs/arrays/MAKEPAL.md) | 1486 | Odd counts and palindrome feasibility | $O(N)$ per test case |
 | 263 | [CAO Stage-1](docs/arrays/CAOS1.md) | 1488 | Contiguous runs in four directions | $O(R \cdot C)$ per test case |
+| 269 | [Total Correct Submissions](docs/arrays/TOTCRT.md) | 1499 | Aggregating by key, then sorting | $O(N \log N)$ per test case |
 
 </details>
 
-<details open><summary><b>Basic Math</b> (82)</summary>
+<details open><summary><b>Basic Math</b> (83)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -153,6 +154,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 206 | [Playing with Matches](docs/basic-math/MATCHES.md) | 986 | Per-digit lookup table | $O(d)$ per test case |
 | 224 | [Bella ciao](docs/basic-math/CHFHEIST.md) | 1410 | Summing an arithmetic progression | $O(1)$ per test case |
 | 230 | [Equality](docs/basic-math/EQUALITY.md) | 1419 | Solving a symmetric linear system by summing | $O(N)$ per test case |
+| 265 | [Chef Goes to the Cinema](docs/basic-math/CO92SUBW.md) | 1493 | Triangular numbers and a local search | $O(1)$ per test case |
 
 </details>
 
@@ -231,7 +233,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (4)</summary>
+<details open><summary><b>Constructive</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -239,6 +241,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 236 | [Balanced and Unique Arrays](docs/constructive/UNQEQ.md) | 1431 | Balanced split with distinct prefixes | $O(N)$ per test case |
 | 238 | [Permutation Xority](docs/constructive/PERMXORITY.md) | 1437 | Cancelling a XOR with a 1-2-3 triple | $O(N)$ per test case |
 | 257 | [Alternating Divisibility](docs/constructive/ALTERNATEDIV.md) | 1483 | Pairing k with 2k | $O(N)$ per test case |
+| 267 | [Exactly N plus 1 Values](docs/constructive/N1VALUES.md) | 1495 | Building a sum from a run plus a remainder | $O(N)$ per test case |
+| 268 | [Gcd of Subarrays](docs/constructive/GCDSUBARRAYS.md) | 1498 | Starting from the minimum and adding the slack | $O(N)$ per test case |
+| 271 | [Palindrome Pain](docs/constructive/PALINPAIN.md) | 1506 | Counting distinct palindrome halves | $O(X + Y)$ per test case |
 
 </details>
 
@@ -263,7 +268,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (24)</summary>
+<details open><summary><b>Greedy</b> (26)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -291,6 +296,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 225 | [Plusle and Minun on Array](docs/greedy/PMA.md) | 1412 | Best single swap | $O(N)$ per test case |
 | 227 | [Remove Element](docs/greedy/REMELEM.md) | 1415 | The smallest element as universal partner | $O(N)$ per test case |
 | 239 | [Akash and Dinner](docs/greedy/CHEFDINE.md) | 1438 | Cheapest representative per group | $O(N \log N)$ per test case |
+| 270 | [Subarray Removal](docs/greedy/SUBARRAYREM.md) | 1505 | Budgeting two resources | $O(N)$ per test case |
+| 272 | [Magda and Silly Pairs](docs/greedy/SILLYPRS.md) | 1507 | Matching by parity | $O(N)$ per test case |
 
 </details>
 
@@ -384,7 +391,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (23)</summary>
+<details open><summary><b>Strings</b> (24)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -411,6 +418,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 249 | [Magical Planks](docs/strings/MKGPLNKS.md) | 1467 | Counting runs | $O(N)$ per test case |
 | 259 | [Correct Sentence](docs/strings/CORTSENT.md) | 1485 | Per-word alphabet membership | $O(\sum |S_i|)$ per test case |
 | 264 | [Anti Palindrome](docs/strings/ANTIPALINDR.md) | 1488 | Forcing a palindrome to be impossible | $O(N)$ per test case |
+| 266 | [Harrenhal](docs/strings/HHAL.md) | 1495 | Covering a two-letter string with palindromes | $O(|H|)$ per test case |
 
 </details>
 

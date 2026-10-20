@@ -145,6 +145,90 @@ def _alternatediv(inp, got):
     return True, "valid"
 
 
+def _n1values(inp, got):
+    """N1VALUES: N+1 positive ints, one repeated, summing to 2**N, sorted."""
+    toks = inp.split()
+    t = int(toks[0])
+    sizes = [int(toks[1 + i]) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for n, line in zip(sizes, lines):
+        a = list(map(int, line.split()))
+        if len(a) != n + 1:
+            return False, f"n={n}: expected {n+1} values, got {len(a)}"
+        if any(v <= 0 for v in a):
+            return False, f"n={n}: values must be positive"
+        if a != sorted(a):
+            return False, f"n={n}: not non-decreasing"
+        if sum(a) != 1 << n:
+            return False, f"n={n}: sum {sum(a)} != 2^{n}"
+        from collections import Counter
+        c = Counter(a)
+        twice = [v for v, k in c.items() if k == 2]
+        if len(twice) != 1 or any(k > 2 for k in c.values()):
+            return False, f"n={n}: exactly one value must appear twice"
+    return True, "valid"
+
+
+def _gcdsubarrays(inp, got):
+    """GCDSUBARRAYS: array whose subarray-gcd total is K, or -1."""
+    from math import gcd
+    toks = inp.split()
+    t = int(toks[0])
+    cases = [(int(toks[1 + 2 * i]), int(toks[2 + 2 * i])) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for (n, k), line in zip(cases, lines):
+        if line.strip() == "-1":
+            if k >= n * (n + 1) // 2:
+                return False, f"n={n},k={k}: claimed impossible but is not"
+            continue
+        a = list(map(int, line.split()))
+        if len(a) != n:
+            return False, f"n={n}: wrong length"
+        if any(v < 1 or v > 10 ** 18 for v in a):
+            return False, f"n={n}: value out of range"
+        total = 0
+        for i in range(n):
+            g = 0
+            for j in range(i, n):
+                g = gcd(g, a[j])
+                total += g
+        if total != k:
+            return False, f"n={n}: gcd total {total} != {k}"
+    return True, "valid"
+
+
+def _palinpain(inp, got):
+    """PALINPAIN: two distinct palindromes with exactly X 'a' and Y 'b', or -1."""
+    toks = inp.split()
+    t = int(toks[0])
+    cases = [(int(toks[1 + 2 * i]), int(toks[2 + 2 * i])) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    idx = 0
+    for x, y in cases:
+        if idx >= len(lines):
+            return False, "ran out of output"
+        if lines[idx].strip() == "-1":
+            # Impossible iff both counts are odd, or either is below 2.
+            if not ((x % 2 and y % 2) or x < 2 or y < 2):
+                return False, f"X={x},Y={y}: claimed impossible but is not"
+            idx += 1
+            continue
+        s1, s2 = lines[idx], lines[idx + 1]
+        idx += 2
+        if s1 == s2:
+            return False, f"X={x},Y={y}: the two strings are identical"
+        for s in (s1, s2):
+            if s != s[::-1]:
+                return False, f"X={x},Y={y}: {s} is not a palindrome"
+            if s.count("a") != x or s.count("b") != y or len(s) != x + y:
+                return False, f"X={x},Y={y}: {s} has the wrong letter counts"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -152,4 +236,7 @@ CHECKERS = {
     "CHDOGS": _float_tolerance(),
     "XOR_ORDER": _xor_order,
     "ALTERNATEDIV": _alternatediv,
+    "N1VALUES": _n1values,
+    "PALINPAIN": _palinpain,
+    "GCDSUBARRAYS": _gcdsubarrays,
 }
