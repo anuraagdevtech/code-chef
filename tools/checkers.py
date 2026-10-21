@@ -718,6 +718,83 @@ def _bitequ(inp, got):
     return True, "valid"
 
 
+def _mincolor(inp, got):
+    """MINCOLOR: any proper colouring using the minimum number of colours."""
+    toks = inp.split()
+    t = int(toks[0])
+    pos = 1
+    rows = [ln for ln in got.strip().splitlines() if ln.strip()]
+    ri = 0
+    for _ in range(t):
+        n, m = int(toks[pos]), int(toks[pos + 1])
+        x1, y1 = int(toks[pos + 2]), int(toks[pos + 3])
+        x2, y2 = int(toks[pos + 4]), int(toks[pos + 5])
+        pos += 6
+        grid = []
+        for _ in range(n):
+            grid.append([int(v) for v in rows[ri].split()])
+            ri += 1
+            if len(grid[-1]) != m:
+                return False, f"row has {len(grid[-1])} entries, wanted {m}"
+        if grid[x1 - 1][y1 - 1] != 1 or grid[x2 - 1][y2 - 1] != 2:
+            return False, "the two fixed cells were repainted"
+        for i in range(n):
+            for j in range(m):
+                v = grid[i][j]
+                if not 1 <= v <= 10 ** 9:
+                    return False, f"colour {v} is out of range"
+                if i + 1 < n and grid[i + 1][j] == v:
+                    return False, f"cells ({i+1},{j+1}) and ({i+2},{j+1}) clash"
+                if j + 1 < m and grid[i][j + 1] == v:
+                    return False, f"cells ({i+1},{j+1}) and ({i+1},{j+2}) clash"
+        # Two colours suffice iff the fixed cells sit on opposite parities.
+        want = 2 if (x1 + y1) % 2 != (x2 + y2) % 2 else 3
+        used = len({v for row in grid for v in row})
+        if used != want:
+            return False, f"used {used} colours, minimum is {want}"
+    return True, "optimal"
+
+
+def _sumprodseg(inp, got):
+    """SUMPRODSEG: any two disjoint segments drawn from the set S."""
+    toks = inp.split()
+    t = int(toks[0])
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    li = 0
+
+    def exists(x, y):
+        """Is there a disjoint pair at all? Checked by the same reasoning."""
+        from math import isqrt
+        lo_seg = (x // 2, x - x // 2)
+        best_lo, best_hi = 0, None
+        for d in range(1, isqrt(y) + 1):
+            if y % d == 0:
+                best_lo = d
+                best_hi = y // d
+        return (best_lo > lo_seg[1]) or (best_hi is not None
+                                         and best_hi < lo_seg[0])
+
+    for i in range(t):
+        x, y = int(toks[1 + 2 * i]), int(toks[2 + 2 * i])
+        first = lines[li].split()
+        if first == ["-1"]:
+            li += 1
+            if exists(x, y):
+                return False, f"X={x} Y={y}: -1 but a pair exists"
+            continue
+        seg1 = tuple(int(v) for v in first)
+        seg2 = tuple(int(v) for v in lines[li + 1].split())
+        li += 2
+        for lo, hi in (seg1, seg2):
+            if lo > hi or lo < 0:
+                return False, f"[{lo},{hi}] is not a valid segment"
+            if lo + hi != x and lo * hi != y:
+                return False, f"[{lo},{hi}] is not in S for X={x}, Y={y}"
+        if not (seg1[1] < seg2[0] or seg2[1] < seg1[0]):
+            return False, f"{seg1} and {seg2} intersect"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -747,4 +824,6 @@ CHECKERS = {
     "CONSTRRAY": _constrray,
     "PERMPAL": _permpal,
     "BITEQU": _bitequ,
+    "MINCOLOR": _mincolor,
+    "SUMPRODSEG": _sumprodseg,
 }

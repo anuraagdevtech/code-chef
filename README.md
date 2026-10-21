@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**443 of 486 solved problems documented.**
+**451 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -12,10 +12,10 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 84 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 55 |
+| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 63 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **443** |
+| | **Total** | **502** | **761** | **451** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -27,7 +27,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
 | 4 | 100 | 100 |
-| 5 | 86 | 43 |
+| 5 | 86 | 51 |
 
 ## Problems by topic
 
@@ -79,7 +79,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Basic Math</b> (91)</summary>
+<details open><summary><b>Basic Math</b> (92)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -174,6 +174,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 414 | [Three Numbers](docs/basic-math/THREENUMBERS.md) | 1675 | Parity invariant plus a counting identity | $O(1)$ per test case |
 | 429 | [Gritty Grid](docs/basic-math/GRITGRID.md) | 1691 | Checkerboard parity across alternating moves | $O(1)$ per test case |
 | 439 | [Average Gift](docs/basic-math/AVGGIFT.md) | 1701 | Mean reachability as a sign condition | $O(N)$ per test case |
+| 448 | [Ceiling Sum](docs/basic-math/CEILSUM.md) | 1712 | Parity bonus on a fixed total | $O(1)$ per test case |
 
 </details>
 
@@ -297,7 +298,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (20)</summary>
+<details open><summary><b>Constructive</b> (21)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -321,6 +322,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 397 | [GCD of Prefixes](docs/constructive/GCDPRF.md) | 1617 | Divisibility chain, realised by the array itself | $O(N \log A)$ per test case |
 | 400 | [Construct Array](docs/constructive/CONSTRRAY.md) | 1624 | A symmetry that forces the parity of N | $O(N)$ per test case |
 | 428 | [Bitwise Equation](docs/constructive/BITEQU.md) | 1679 | Neutralising the AND to reduce to one XOR | $O(1)$ per test case |
+| 449 | [Minimum Coloring](docs/constructive/MINCOLOR.md) | 1713 | Checkerboard parity, with a third colour only when forced | $O(NM)$ per test case |
 
 </details>
 
@@ -346,7 +348,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Geometry</b> (6)</summary>
+<details open><summary><b>Geometry</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -356,6 +358,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 247 | [Triangle Classification](docs/geometry/TRIANGCL.md) | 1462 | Classifying with squared lengths | $O(1)$ per test case |
 | 252 | [Chef and Three Dogs](docs/geometry/CHDOGS.md) | 1473 | Pursuit curve by relative closing speed | $O(1)$ per test case |
 | 383 | [Polygon Relationship](docs/geometry/POLYREL.md) | 1460 | Halving the vertex count down to a triangle | $O(N)$ per test case, all of it input reading |
+| 446 | [Devu and Perfume](docs/geometry/DEVPERF.md) | 1708 | Manhattan 1-centre via rotated coordinates | $O(nm + n \log m)$ per test case |
 
 </details>
 
@@ -367,7 +370,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (53)</summary>
+<details open><summary><b>Greedy</b> (54)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -424,6 +427,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 431 | [Maximum Median Matching](docs/greedy/MEDMAXMATCH.md) | 1647 | Opposite pairing of the top halves | $O(N \log N)$ per test case |
 | 432 | [Building Towers](docs/greedy/TOWERTOP.md) | 1693 | Doubling to the first tower, then one per operation | $O(1)$ per test case |
 | 443 | [Buying Sweets](docs/greedy/BUYSWEET.md) | 1706 | Batching purchases of the cheapest net-cost sweet | $O(N \log N)$ per test case |
+| 444 | [Lumpy - The Bus Driver](docs/greedy/LUMPYBUS.md) | 1708 | Cheapest refunds first, paid with coins of the larger denomination | $O(N \log N)$ per test case |
 
 </details>
 
@@ -436,7 +440,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (53)</summary>
+<details open><summary><b>Number Theory</b> (54)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -493,10 +497,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 434 | [The Optimal Pairs](docs/number-theory/OPTPAIRS.md) | 1666 | The minimum is always N, attained by a divisor family | $O(\sqrt{N})$ per test case |
 | 435 | [Array sorting](docs/number-theory/ARRSORT.md) | 1681 | GCD of the displacements | $O(N \log N)$ per test case |
 | 437 | [Exam Cheating](docs/number-theory/EXAMCHT.md) | 1639 | Counting divisors of a difference | $O(\sqrt{|A-B|})$ per test case |
+| 450 | [Sum Product Segments](docs/number-theory/SUMPRODSEG.md) | 1713 | Every family shares a pivot, so the pair must be mixed | $O(\sqrt{Y})$ per test case |
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (11)</summary>
+<details open><summary><b>Prefix Sums</b> (12)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -511,10 +516,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 384 | [Dense Bracket Sequence](docs/prefix-sums/DENSE.md) | 1472 | Best split between an open prefix and a close suffix | $O(N)$ per test case |
 | 418 | [Anti-Palindrome Queries](docs/prefix-sums/ANTIPALQ.md) | 1688 | Reducing a rotation condition to one count | $O(N + Q)$ per test case |
 | 440 | [Mystical Numbers](docs/prefix-sums/XORGAND.md) | 1702 | The comparison reduces to equal bit lengths | $O(N + Q)$ per test case |
+| 447 | [Summary Power](docs/prefix-sums/SUMPOWER.md) | 1709 | Counting each boundary's contribution | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Sets</b> (14)</summary>
+<details open><summary><b>Sets</b> (15)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -532,6 +538,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 337 | [Version Control System](docs/sets/VCS.md) | 1217 | Intersection and complement of a union | $O(M + K)$ per test case |
 | 386 | [Good Pairs](docs/sets/GOODPAIRS.md) | 1469 | One-pass tally of mirrored keys | $O(N)$ per test case |
 | 417 | [Fencing](docs/sets/FENCE.md) | 1696 | Perimeter as sides minus shared edges | $O(K)$ per test case |
+| 451 | [Max Mex](docs/sets/MAXMEX.md) | 1714 | Keep everything except the forbidden value | $O(N)$ per test case |
 
 </details>
 
@@ -590,7 +597,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (31)</summary>
+<details open><summary><b>Strings</b> (32)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -625,6 +632,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 335 | [Attendance](docs/strings/ATTND.md) | 1148 | Frequency of a key field | $O(N)$ per test case |
 | 409 | [Permutation and Palindrome](docs/strings/PERMPAL.md) | 1651 | Pairing equal letters inward from both ends | $O(n)$ per test case |
 | 425 | [3-Blast Palindrome](docs/strings/BLAST3.md) | 1699 | Residue classes of the surviving positions | $O(N)$ per test case |
+| 445 | [Spreading Charges](docs/strings/CHRGES.md) | 1708 | Runs of zeros classified by their bounding charges | $O(N)$ per test case |
 
 </details>
 
