@@ -25,18 +25,18 @@ Chef can only install ShareChat at most once. The remaining actions may be perfo
 
 Help Chef find out whether it is possible to move from Discuss to Discourse.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains four space-separated integers $N$, $M$, $X$ and $Y$.
 
-### Output
+**Output**
 For each test case, print a single line containing the string `"Chefirnemo"` if it is possible to reach the required knowledge and power or `"Pofik"` if it is impossible.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 1,000$
 - $1 \le N, M, X, Y \le 10^9$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):** $1 \le N, M, X, Y \le 100$
 
 **Subtask #2 (70 points):** original constraints

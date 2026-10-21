@@ -16,16 +16,16 @@ A sophomore Computer Science student is frustrated with boring college lectures.
 
 Professor X chooses a sequence $A_1, A_2, \ldots, A_N$ and asks $Q$ queries. In each query, the student is given an integer $P$; he has to construct a sequence $B_1, B_2, \ldots, B_N$, where $P \oplus A_i = B_i$ for each valid $i$ ($\oplus$ denotes bitwise XOR), and then he has to find the number of elements of this sequence which have an even number of $1$-s in the binary representation and the number of elements with an odd number of $1$-s in the binary representation. Help him answer the queries.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two space-separated integers $N$ and $Q$.
 - The second line contains $N$ space-separated integers $A_1, A_2, \ldots, A_N$.
 - $Q$ lines follow. Each of these lines contains a single integer $P$ describing a query.
 
-### Output
+**Output**
 For each query, print a single line containing two space-separated integers ― the number of elements with an even number of $1$-s and the number of elements with an odd number of $1$-s in the binary representation.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N, Q \le 10^5$
 - $ T \cdot (N+Q) \leq 4 \cdot 10^6 $
@@ -34,7 +34,7 @@ For each query, print a single line containing two space-separated integers ― 
 
 **The input/output is quite large, please use fast reading and writing methods.**
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):** $N, Q \le 1,000$
 
 **Subtask #2 (70 points):** original constraints

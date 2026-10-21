@@ -16,22 +16,22 @@ There are $N$ watchtowers built in a row. Each watchtower can only accommodate o
 
 Arya heard that the wildlings are planning an attack. She is not satisfied by the current security, so she plans to place more members of the Night's Watch in the empty towers. What is the maximum number of people she can place in the towers such that no two consecutive towers are occupied afterwards? Note that Arya may not remove anyone from already occupied towers.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The next line contains a single string $S$ with length $N$. For each valid $i$, the $i$-th character of this string is '1' if the $i$-th watchtower is initially occupied or '0' if it is empty.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the maximum number of people Arya can place in the towers.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 1,000$
 - $1 \le N \le 10^6$
 - $S$ contains only characters '0' and '1'
 - initially, no two consecutive towers are occupied
 - the sum of $N$ over all test cases does not exceed $10^6$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (20 points):** initially, all towers are empty
 
 **Subtask #2 (80 points):** original constraints

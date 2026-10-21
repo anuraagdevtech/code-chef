@@ -18,21 +18,21 @@ Chef may buy a number of tables, which are large enough for any number of guests
 
 Each table costs $K$ rupees. Chef defines the *inefficiency* of a seating arrangement as the total cost of tables plus the number of guests who are likely to get into an argument with another guest. Tell Chef the minimum possible inefficiency which he can achieve.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two space-separated integers $N$ and $K$.
 - The second line contains $N$ space-separated integers $F_1, F_2, \ldots, F_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the smallest possible inefficiency.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N \le 1,000$
 - $1 \le K \le 1,000$
 - $1 \le F_i \le 100$ for each valid $i$
 - The sum of $N$ across test cases is $\leq 5,000$
-### Subtasks
+**Subtasks**
 - **Subtask #1 (20 points):** $K = 1$
 - **Subtask #2 (80 points):** original constraints
 

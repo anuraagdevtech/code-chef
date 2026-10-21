@@ -18,15 +18,15 @@ You may perform the following operation any number of times (including zero): pi
 
 Determine the minimum number of operations required to change the string $A$ to the string $B$.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single string $A$.
 - The second line contains a single string $B$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the minimum number of operations required.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10^3$
 - $1 \le |A| = |B| \le 10^5$
 - $A$ and $B$ contain only characters '0' and '1'

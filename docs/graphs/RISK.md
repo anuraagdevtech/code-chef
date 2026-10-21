@@ -16,17 +16,16 @@ Chef is playing an easier variation of the board game ‘Risk’ with his friend
 
 In a turn, a player can capture an uncaptured cell that has land, and keep capturing neighbouring cells that share a side with it if they are on land. A cell once captured by a player can't be captured again by another player. The game continues till no uncaptured cell has land. Each player wants to be in control of as many cells of land as possible in total when the game finishes. Find the maximum number of cells of land that Chef can capture if he plays second, and both players play optimally.
 
-###Input:
-
+**Input:**
 - First line will contain $T$, number of testcases. Then the testcases follow.
 - Each testcase contains $N + 1$ lines of input.
 - First line will contain $2$ space separated integers $N$ and $M$ denoting the size of the grid.
 - Each of the next $N$ lines contains a binary string of length $M$ depicting the map.
 
-###Output:
+**Output:**
 For each testcase, output in a single line answer to the problem.
 
-###Constraints
+**Constraints**
 - $1 \leq N, M \leq 10^5$
 - Each character in the grid is either $0$ or $1$
 - There's atleast $1$ land on the grid

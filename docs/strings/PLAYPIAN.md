@@ -16,14 +16,14 @@ Two sisters, A and B, play the piano every day. During the day, they can play in
 
 You are given the entries of the log, but you're not sure if it has been tampered with or not. Your task is to figure out whether these entries could be valid or not.
 
-### Input
+**Input**
 - The first line of the input contains an integer $T$ denoting the number of test cases. The description of the test cases follows.
 - The first line of each test case contains a string $s$ denoting the entries of the log.
 
-### Output
+**Output**
 - For each test case, output `yes` or `no` according to the answer to the problem.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 500$
 - $2 \le |s| \le 100$
 - $|s|$ is even

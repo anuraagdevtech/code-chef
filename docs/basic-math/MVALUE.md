@@ -14,17 +14,16 @@
 
 Given an array $A$ of size $N$. Find the maximum value of the expression $a * b + a - b$ where $a$ and $b$ are $2$ distinct elements of the array.
 
-###Input:
-
+**Input:**
 - First line will contain $T$, number of testcases. Then the testcases follow.
 - Each testcase contains of two lines of input.
 - First line will contain $N$, number of elements of the array.
 - Second line contains $N$ space separated integers, elements of the array $A$.
 
-###Output:
+**Output:**
 For each testcase, output in a single line answer to the problem.
 
-###Constraints
+**Constraints**
 - $1 \leq T \leq 20$
 - $2 \leq N \leq 10^5$
 - $-10^9 \leq A_i \leq 10^9$

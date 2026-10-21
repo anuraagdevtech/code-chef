@@ -19,14 +19,14 @@ The first thing Chefu wanted to do was to calculate the result of his homework â
 Digits are formed using matches in the following way:
 ![](https://codechef_shared.s3.amazonaws.com/download/Images/COOK110/MATCHES/97JCfQw.gif)
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains two space-separated integers $A$ and $B$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer â€” the number of matches needed to write the result ($A+B$).
 
-### Constraints
+**Constraints**
 - $1 \le T \le 1,000$
 - $1 \le A, B \le 10^6$
 

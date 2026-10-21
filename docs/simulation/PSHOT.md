@@ -18,15 +18,15 @@ The two teams take shots alternately — team $A$ shoots first, then team $B$ sh
 
 For each shot, you know whether it was a goal or a miss. You need to find the earliest moment when the winner is known — the smallest $s$ ($0 \le s \le 2N$) such that after $s$ shots, the result of the shoot-out (whether team $A$ won, team $B$ won or the match is drawn) would be known even if we did not know the results of the remaining $2N-s$ shots.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The second line contains a string $S$ with length $2 \cdot N$, where for each valid $i$, the $i$-th character is '0' if the $i$-th shot was a miss or '1' if it was a goal.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the smallest $s$ such that after $s$ shots, the result of the shoot-out is known.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10^5$
 - $1 \le N \le 10^5$
 - $S$ contains only characters '0' and '1'

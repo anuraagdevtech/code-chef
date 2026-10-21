@@ -12,8 +12,7 @@
 
 ## Question
 
-## Stable Quick Sort
-
+**Stable Quick Sort**
 <details>
 <summary>
 Recall the meaning of stable sort
@@ -45,8 +44,7 @@ Note that the if the output of your program is a list of indices called $candida
 
 You are given a [solution template](https://pastebin.com/mLg6vGmb), note that the input and output is taken care of in the template and you only need to correct the function $choose\_pivot$ in the above template.
 
-### Input
-
+**Input**
 Note that you can directly fill in the $choose\_pivot$ function given in the [solution template](https://pastebin.com/mLg6vGmb), so you do not have to worry about this section.
 
 This is an explanation of how input is taken in the solution template.
@@ -55,8 +53,7 @@ There are two lines, the first line contains a single integer $n$, the size of t
 
 The second line contains $2n$ space separated integers, the $2i^{th}$ and $(2i+1)^{th}$ numbers denote the $i^{th}$ tuple.
 
-### Output
-
+**Output**
 Note that you can directly fill in the $choose\_pivot$ function given in the [solution template](https://pastebin.com/mLg6vGmb), so you do not have to worry about this section.
 
 This is an explanation of how output is done in the given solution template.
@@ -65,8 +62,7 @@ In the first line print $m$, the number of valid choices of indices for the pivo
 
 In the second line print those indices (space separated) in increasing order.
 
-### Constraints
-
+**Constraints**
 $1 \leq n \leq 1000$
 
 $-10^9 \leq $ every integer given $ \leq 10^9$

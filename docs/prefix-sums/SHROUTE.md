@@ -12,8 +12,7 @@
 
 ## Question
 
-### Read problem statements in [Vietnamese](https://www.codechef.com/download/translated/JUNE21/vietnamese/SHROUTE.pdf),
-
+**Read problem statements in [Vietnamese](https://www.codechef.com/download/translated/JUNE21/vietnamese/SHROUTE.pdf),**
 There are $N$ cities in Chefland numbered from $1$ to $N$ and every city has a railway station. Some cities have a train and each city has at most one train originating from it. The trains are represented by an array $A$, where $A_i = 0$ means the $i$-th city doesn't have any train originating from it, $A_i = 1$ means the train originating from the $i$-th city is moving right (to a higher numbered city), and $A_i = 2$ means the train originating from the $i$-th city is moving left (to a lower numbered city).
 
 Each train keeps on going forever in its direction and takes $1$ minute to travel from the current station to the next one. There is a special station at city $1$ which lets travellers instantaneously teleport to any other station that currently has a train. Teleportation and getting on a train once in the city both take $0$ minutes and all trains start at time $0$.
@@ -22,25 +21,24 @@ There are $M$ travellers at city $1$, and the $i$-th traveller has destination c
 
 **Note:** The input and output of this problem are large, so prefer using fast input/output methods.
 
-###Input
-
+**Input**
 - The first line contains an integer $T$, the number of test cases. Then the test cases follow.
 - Each test case contains three lines of input.
 - The first line contains two integers $N$, $M$.
 - The second line contains $N$ integers $A_1, A_2, \ldots, A_N$.
 - The third line contains $M$ integers $B_1, B_2, \ldots, B_M$.
 
-###Output
+**Output**
 For each test case, output $M$ space-separated integers $C_1, C_2, \ldots, C_M$, where $C_i$ is the minimum time required by the $i$-th traveller to reach his destination and if the $i$-th traveller can't reach his destination, $C_i = -1$.
 
-###Constraints
+**Constraints**
 - $1 \leq N, M \leq 10^5$
 - $0 \leq A_i \leq 2$
 - $1 \leq B_i \leq N$
 - The sum of $N$ over all test cases is at most $10^6$.
 - The sum of $M$ over all test cases is at most $10^6$.
 
-###Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

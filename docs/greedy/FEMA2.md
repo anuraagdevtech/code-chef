@@ -23,22 +23,22 @@ If there is a magnet in a cell $i$ and iron in a cell $j$, the *attraction power
 
 Chef wants to choose some magnets (possibly none) and to each of these magnets, assign a piece of iron which this magnet should attract. Each piece of iron may only be attracted by at most one magnet and only if the attraction power between them is positive and there are no blocked cells between them. Find the maximum number of magnets Chef can choose.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two space-separated integers $N$ and $K$.
 - The second line contains a single string $S$ with length $N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the maximum number of magnets that can attract iron.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 2,000$
 - $1 \le N \le 10^5$
 - $0 \le K \le 10^5$
 - $S$ contains only characters 'I', 'M', '_', ':' and 'X'
 - the sum of $N$ over all test cases does not exceed $5 \cdot 10^6$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):** there are no sheets, i.e. $S$ does not contain the character ':'
 
 **Subtask #2 (70 points):** original constraints

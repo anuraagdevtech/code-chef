@@ -16,17 +16,17 @@ Codechef challenges have three divisions. In one challenge, there are $N$ proble
 
 Chef wants to find the number of correct solutions, in total among all $3$ divisions, for each problem. Given a list of $N$ problem codes with the numbers of correct solutions for each problem in each division, find the total number of correct solutions for each problem and sort them in non-decreasing order.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - $N$ lines follow. For each valid $i$, the $i$-th of these lines contains a string $S_{3,i}$ followed by a space and an integer $C_{3,i}$ — the problem code and the number of correct solutions on the $i$-th problem in the third division.
 - $N$ more lines follow. For each valid $i$, the $i$-th of these lines contains a string $S_{2,i}$ followed by a space and an integer $C_{2,i}$ — the problem code and the number of correct solutions on the $i$-th problem in the second division.
 - Finally, $N$ more lines follow. For each valid $i$, the $i$-th of these lines contains a string $S_{1,i}$ followed by a space and an integer $C_{1,i}$ — the problem code and the number of correct solutions on the $i$-th problem in the first division.
 
-### Output
+**Output**
 For each test case, let $P$ be the number of distinct problems; you should print $P$ space-separated integers — the number of solutions for each of these problems, sorted in non-decreasing order.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10$
 - $1 \leq N \leq 2 \cdot 10^4$
 - $1 \leq |S_{1,i}|, |S_{2,i}|, |S_{3,i}| \leq 8$ for each valid $i$

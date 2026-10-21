@@ -18,18 +18,18 @@ An integer is *round* if it is greater than $0$ and the sum of its digits in dec
 
 However, Guddu does not like playing with numbers at all and he is unable to solve this problem, so he begs you to solve it for him. In return, he will definitely give you a treat.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains a single integer $N$.
 
-### Output
+**Output**
 For each test case, print a single line containing the $N$-th round integer. It is guaranteed that this number is smaller than $2^{64}$.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10^5$
 - $1 \le N \le 10^{18}$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):**
 - $1 \le T \le 10$
 - $1 \le N \le 10^5$

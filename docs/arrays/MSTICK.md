@@ -31,16 +31,16 @@ He ties rear end of the all the matchsticks together at one point and the front 
 There are $Q$ queries, in each query we ask:
 If he lights the free end of all matchsticks numbered between $L$ and $R$ inclusive, what will be the time needed for all matchsticks to get completely burnt?
 
-### Input
+**Input**
 - First line of input contains a single integer $N$.
 - The next line contains $N$ space separated integers, the $i^{th}$ of which is $b_i$
 - The next line contains a single integer $Q$
 - The next $Q$ lines each contain two space separated integers - $L$ and $R$. The $i^{th}$ line represents the $i^{th}$ query.
 
-### Output
+**Output**
 For each query, print the answer on a new line.
 
-### Constraints:
+**Constraints:**
 - $1 \leq N \leq 10^{5}$
 - $1 \leq b_{i} \leq 10^{8}$
 - $1 \leq Q \leq 10^{5}$
@@ -52,40 +52,40 @@ For each query, print the answer on a new line.
 - $1 \leq b_{i} \leq 10^{8}$
 - $1 \leq Q \leq 10^{5}$
 - $0 \leq L \leq R \leq N-1$
-### Example Input 1
+**Example Input 1**
 ```
 1
 5
 1
 0 0
 ```
-### Example Output 1
+**Example Output 1**
 ```
 5.0
 ```
-### Example Input 2
+**Example Input 2**
 ```
 2
 3 5
 1
 0 1
 ```
-### Example Output 2
+**Example Output 2**
 ```
 4.0
 ```
-### Example Input 3
+**Example Input 3**
 ```
 18
 3 4 2 1 5 7 9 7 10 5 12 3 1 1 2 1 3 2
 1
 4 10
 ```
-### Example Output 3
+**Example Output 3**
 ```
 9.0
 ```
-### Explanation
+**Explanation**
 **Test Case 3:** , in the figure above, yellow colored matches are lighted by a lighter simultaneously.
 The numbers indicate the time required to burn that matchstick (if lighted at one end).
 Now the first lighted matchstick will completely burn in $5$ seconds. Then it will light up all the rest matches from the rear end.

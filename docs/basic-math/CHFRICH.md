@@ -18,21 +18,20 @@ Also, all the richest people in Chefland are not planning to grow and maintain t
 
 To be the richest person in Chefland, he needs to be worth at least $B$ billion dollars. How many years will it take Chef to reach his goal if his value increases by $X$ billion dollars each year?
 
-### Input
-
+**Input**
 - The first line contains an integer $T$, the number of test cases. Then the test cases follow.
 - Each test case contains a single line of input, three integers $A$, $B$, $X$.
 
-### Output
+**Output**
 For each test case, output in a single line the answer to the problem.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 21\ 000$
 - $100 \leq A < B \leq 200$
 - $1 \leq X \leq 50$
 - $X$ divides $B - A$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** Original constraints
 
 ## Constraints

@@ -16,18 +16,18 @@ Chef is given a sequence of prime numbers $A_1, A_2, \ldots, A_N$. This sequence
 
 Chef has to find the number of good subsequences which contain at most $K$ numbers. Since he does not know much about subsequences, help him find the answer. This number could be very large, so compute it modulo $1,000,000,007$.
 
-### Input
+**Input**
 - The first line of the input contains two space-separated integers $N$ and $K$.
 - The second line contains $N$ space-separated integers $A_1, A_2, \ldots, A_N$.
 
-### Output
+**Output**
 Print a single line containing one integer ― the number of good subsequences with size at most $K$, modulo $1,000,000,007$.
 
-### Constraints
+**Constraints**
 - $1 \le K \le N \le 10^5$
 - $2 \le A_i \le 8,000$ for each valid $i$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (40 points):** $A_1, A_2, \ldots, A_N$ are pairwise distinct
 
 **Subtask #2 (60 points):** original constraints

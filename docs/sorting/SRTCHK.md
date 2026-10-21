@@ -12,22 +12,19 @@
 
 ## Question
 
-## Sort Checker
-
+**Sort Checker**
 You are given an array $A$ and an array $B$ of the same size. You have to print **yes** if $B$ is the sorted version of $A$ and **no** otherwise.
 
-### Input
+**Input**
 - First line contains a single integer $T$, the number of testcases.
 - The first line of each testcase contains a single integer $n$, the number of elements in the arrays.
 - The second line of each testcase contains $n$ space separated integers denoting the array $A$.
 - The third line of each testcase contains $n$ space separated integers denoting the array $B$.
 
-### Output
-
+**Output**
 Print one line for each testcase, **yes** or **no**.
 
-### Constraints
-
+**Constraints**
 - $1 \leq T \leq 10^5$
 - $1 \le n \le 10^5$
 - The sum of $n$ over all test cases does not exceed $10^5$.

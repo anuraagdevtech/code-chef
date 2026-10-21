@@ -20,14 +20,14 @@ The cooks immediately started to run to the bottle. Chef runs with speed $V_1$, 
 
 Your task is to figure out who reaches the bottle first and gets the secret recipe (of course, it is possible that both cooks reach the bottle at the same time).
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains five space-separated integers $X_1$, $X_2$, $X_3$, $V_1$ and $V_2$.
 
-### Output
+**Output**
 For each test case, print a single line containing the string `"Chef"` if Chef reaches the bottle first, `"Kefa"` if Kefa reaches the bottle first or `"Draw"` if Chef and Kefa reach the bottle at the same time (without quotes).
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10^5$
 - $|X_1|, |X_2|, |X_3| \le 10^5$
 - $X_1 \lt X_3 \lt X_2$

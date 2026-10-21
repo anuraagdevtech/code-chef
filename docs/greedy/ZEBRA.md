@@ -12,8 +12,7 @@
 
 ## Question
 
-### Read problems statements in [Russian](https://www.codechef.com/download/translated/COOK133/russian/ZEBRA.pdf) and [Bengali](https://www.codechef.com/download/translated/COOK133/bengali/ZEBRA.pdf).
-
+**Read problems statements in [Russian](https://www.codechef.com/download/translated/COOK133/russian/ZEBRA.pdf) and [Bengali](https://www.codechef.com/download/translated/COOK133/bengali/ZEBRA.pdf).**
 There's a zebra crossing appearing in the middle of nowhere with $N$ blocks in it. The colors of the zebra crossing is represented by a binary string $S$, where $S_i$ is `1` if the $i$-th block from the left is white, and `0` if the block is black.
 
 Chef really wants to play with the zebra crossing. Although the given zebra crossing might not have alternate black and white blocks, Chef wants to follow the alternating white-black color pattern while crossing it.

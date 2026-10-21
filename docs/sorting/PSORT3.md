@@ -18,20 +18,19 @@ The task is to sort these pairs in **decreasing** order of the second elements o
 
 Output the sorted pairs in a single line with a space separating the pairs. Each pair is printed with first element followed by a space and second element. See Explanation Section for better understanding.
 
-### Input:
-
+**Input:**
 - First line will contain a single integer $N$.
 - Second line contains $N$ space separated integers $A_0$, $A_1$, $...$ $A_{N - 1}$ denoting the elements of array $A$.
 - Third line contains $N$ space separated integers $B_0$, $B_1$, $...$ $B_{N - 1}$ denoting the elements of array $B$.
 
-### Output:
+**Output:**
 Output in a single line $2 * N$ space separated integers. Output the pairs in sorted order, where the first element of a pair is from $A_j$ and second element is from $B_j$ with a space in between.
 
-### Constraints
+**Constraints**
 - $1 \leq N \leq 10^5$
 - $1 \leq A_i, B_i \leq 10^{18}$
 
-### Subtasks
+**Subtasks**
 - 30 points : $1 \leq N \leq 1000$
 - 70 points : Original constraints
 

@@ -18,15 +18,15 @@ Chef wants to eat all the chocolates in the first half of the box and leave all 
 
 A right cyclic shift by $k$ chocolates ($0 \le k \lt N$) consists of moving the last $k$ chocolates in the row to the beginning in the same order and moving each of the remaining $N-k$ chocolates $k$ places to the right. Before eating the first half of the chocolates, Chef wants to perform some right cyclic shift in such a way that he will not be unhappy after eating them. Find the number of ways to do this, i.e. the number of valid integers $k$ such that if Chef performs the right cyclic shift by $k$ chocolates and then eats the first half of the chocolates in the box, he does not become unhappy.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The second line contains $N$ space-separated integers $W_1, W_2, \ldots, W_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the number of shifts for which Chef does not become unhappy.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 5$
 - $1 \le N \le 10^5$
 - $N$ is even

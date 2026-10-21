@@ -18,17 +18,16 @@ The series has $S$ seasons, and the $i^{th}$ season has $E_i$ episodes, each of 
 
 Find the total time in minutes, that he has to watch.
 
-### Input:
-
+**Input:**
 - First line will contain a single integer, $T$, denoting the number of testcases. Then the testcases follow.
 - The first line of each testcase will contain a single integer $S$, denoting the total number of seasons.
 - The second line contains $S$ space separated integers, $Q_1, Q_2, \ldots, Q_S$, where $Q_i$ denotes the duration of the intro song in the $i^{th}$ season.
 - The $i^{th}$ of the next $S$ lines contains $E_i + 1$ space separated integers, where the first integer is $E_i$, denoting the number of episodes in the $i^{th}$ season. That is followed by the duration of each of the $E_i$ episodes, $L_{i,1}, L_{i,2}, \ldots, L_{i,E_i}$.
 
-### Output:
+**Output:**
 For each testcase, output the answer in a single line.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 5$
 - $1 \leq S \leq 10^5$
 - $2 \leq L_{i,j} \leq 10^5$

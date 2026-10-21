@@ -16,18 +16,17 @@ You visit a doctor on a date given in the format $yyyy:mm:dd$. Your doctor sugge
 
 So you come up with the idea of taking medicine on the dates whose day is odd or even depending on whether $dd$ is odd or even. Calculate the number of pills you took on right time before messing up for the first time.
 
-###Note:
+**Note:**
 Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100; the centurial years that are exactly divisible by 400 are still leap years. For example, the year 1900 is not a leap year; the year 2000 is a leap year.
 
-###Input:
-
+**Input:**
 - First line will contain $T$, number of testcases. Then the testcases follow.
 - Each testcase contains of a single line of input, in the format $yyyy:mm:dd$
 
-###Output:
+**Output:**
 For each testcase, output in a single line the required answer.
 
-###Constraints
+**Constraints**
 - $ 1 \leq T \leq 1000 $
 - $ 1900 \leq yyyy \leq 2038 $
 - $yyyy:mm:dd$ is a valid date

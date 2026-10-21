@@ -18,18 +18,18 @@ Sheokand is good at mathematics. One day, to test his math skills, Kaali gave hi
 
 However, Sheokand is preparing for his exams. Can you help him find the minimum number of operations required to convert $N$ into a valid integer $M$?
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each testcase contains a single integer $N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the minimum required number of operations.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100,000$
 - $1 \le N \le 10^9$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):** $1 \le T \le 1,000$
 
 **Subtask #2 (70 points):** original constraints

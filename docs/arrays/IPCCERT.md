@@ -20,14 +20,14 @@ The criteria for getting a certificate is that a student must have watched at le
 
 Find out how many participants are eligible for a certificate.
 
-### Input
+**Input**
 - The first line of the input contains three space-separated integers $N$, $M$ and $K$.
 - $N$ lines follow. For each valid $i$, the $i$-th of these lines contains $K+1$ space-separated integers $T_{i, 1}, T_{i, 2}, \ldots, T_{i, K}, Q_i$.
 
-### Output
+**Output**
 Print a single line containing one integer — the number of participants eligible for a certificate.
 
-###Constraints
+**Constraints**
 - $1 \le N, K \le 1,000$
 - $1 \le M \le 10^6$
 - $1 \le Q_i \le 10^6$ for each valid $i$

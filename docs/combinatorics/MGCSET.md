@@ -18,21 +18,21 @@ She defines a *good* sequence of integers as a non-empty sequence such that the 
 
 Katya wants to know the number of good subsequences of the sequence $a$. Can you help her?
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two space-separated integers $n$ and $m$.
 - The second line contains $n$ space-separated integers $a_1, a_2, \dots, a_n$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the number of good subsequences.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 1,000$
 - $1 \le n \le 30$
 - $1 \le m \le 1,000$
 - $1 \le a_i \le 1,000$ for each valid $i$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):** $1 \le n \le 5$
 
 **Subtask #2 (70 points):** original constraints

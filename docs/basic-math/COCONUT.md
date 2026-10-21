@@ -12,8 +12,7 @@
 
 ## Question
 
-### Read problem statements in [Vietnamese](https://www.codechef.com/download/translated/JUNE21/vietnamese/COCONUT.pdf),
-
+**Read problem statements in [Vietnamese](https://www.codechef.com/download/translated/JUNE21/vietnamese/COCONUT.pdf),**
 Chefland has $2$ different types of coconut, type $A$ and type $B$. Type $A$ contains only $x_a$ milliliters of coconut water and type $B$ contains only $x_b$ grams of coconut pulp. Chef's nutritionist has advised him to consume $X_a$ milliliters of coconut water and $X_b$ grams of coconut pulp every week in the summer. Find the total number of coconuts (type $A$ + type $B$) that Chef should buy each week to keep himself active in the hot weather.
 
 **Input**

@@ -16,14 +16,14 @@ No play and eating all day makes your belly fat. This happened to Chef during th
 
 Scientific research in all growing kids shows that their weights increase by a value between $x_1$ and $x_2$ kg (inclusive) per month, but not necessarily the same value each month. Chef assumes that he is a growing kid. Tell him whether his home scale could be giving correct results.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains five space-separated integers $w_1$, $w_2$, $x_1$, $x_2$ and $M$.
 
-### Output
+**Output**
 For each test case, print a single line containing the integer $1$ if the result shown by the scale can be correct or $0$ if it cannot.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10^5$
 - $1 \leq w_1 \lt w_2 \leq 100$
 - $0 \leq x_1 \leq x_2 \leq 10$

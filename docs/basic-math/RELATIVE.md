@@ -19,12 +19,11 @@ Find the smallest height (in meters) from which Chef should jump such that durin
 Assume he jumps at zero velocity and at any time, his velocity ($v$) and depth of descent ($H$) are related as
 $$v^2 = 2 \cdot g \cdot H.$$
 
-### Input
-
+**Input**
 - The first line contains an integer $T$, the number of test cases. Then the test cases follow.
 - Each test case contains a single line of input, two integers $g$, $c$.
 
-### Output
+**Output**
 For each test case, output in a single line the answer to the problem. We can show that under the constraints, the answer is an integer.
 
 ## Constraints

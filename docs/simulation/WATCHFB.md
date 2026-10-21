@@ -22,22 +22,22 @@ Chef asks for the score and receives a reply $N$ times. There are two types of r
 
 Chef is asking you to help him determine the score of his favourite team after each of Chefu's replies. After each reply, based on the current reply and all previous information (but without any following replies), tell him whether it is possible to certainly determine the number of goals scored by his favourite team.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The following $N$ lines describe Chefu's replies in the format described above.
 
-### Output
+**Output**
 For each of Chefu's replies, print a single line containing the string `"YES"` if it is possible to determine the score of Chef's favourite team after this reply or `"NO"` if it is impossible.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N \le 10^4$
 - $0 \le A, B \le 10^9$
 - the sum of $N$ over all test cases does not exceed $10^5$
 - there is at least one valid sequence of scored goals consistent with all replies
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

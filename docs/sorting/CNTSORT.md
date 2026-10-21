@@ -16,16 +16,15 @@ Given an array $A$ of $N$ integers, such that $1 \le A[i] \le 100$,,
 
 sort $A$ in non-decreasing/ascending order, and display the elements of the sorted array.
 
-### Input:
-
+**Input:**
 - The first line contains an integer $T$, denoting the number of test cases.
 - The first line of each test case contains an integer $N$, the number of elements in $A$.
 - The next line contains $N$ space-separated integers, denoting the elements of array $A$.
 
-### Output:
+**Output:**
 For each test case, display the elements of the sorted array, in a new line, separated by a space.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 3$
 - $1 \le N \le 10^6$
 - $1 \le A[i] \le 100$

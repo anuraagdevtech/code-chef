@@ -20,18 +20,15 @@ Chef knows all $P$ pairs of frogs, which want to send messages. Help him to defi
 
 **Note** : More than $1$ frog can be on the same point on the X-axis.
 
-### Input
-
+**Input**
 -   The first line contains three integers $N$, $K$ and $P$.
 -   The second line contains $N$ space-separated integers $A_1$, $A_2$, ..., $A_N$ denoting the x-coordinates of frogs".
 -   Each of the next $P$ lines contains two integers $A$ and $B$ denoting the numbers of frogs according to the input.
 
-### Output
-
+**Output**
 For each pair print "Yes" without a brackets if frogs can speak and "No" if they cannot.
 
-### Constraints
-
+**Constraints**
 -   $1 \le N, P \le 10^5$
 -   $0 \le A_i, K \le 10^9$
 -   $1 \le A, B \le N$

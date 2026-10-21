@@ -17,26 +17,22 @@ A subarray $A[i, j]$, where $1 ≤ i ≤ j ≤ N$ is a sequence of integers ${A_
 
 A subarray $A[i, j]$ is non-decreasing if $A_i ≤ A_{i+1} ≤ A_{i+2} ≤ ... ≤ A_j$. You have to count the total number of such subarrays.
 
-### Input
-
+**Input**
 - The first line of input contains an integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 
 - The first line of each test case contains a single integer $N$ denoting the size of array.
 
 - The second line contains $N$ space-separated integers $A_1$, $A_2$, ..., $A_N$ denoting the elements of the array.
 
-### Output
-
+**Output**
 For each test case, output in a single line the required answer.
 
-### Constraints
-
+**Constraints**
 -   $1 ≤ T ≤ 5$
 -   $1 ≤ N ≤ 10^5$
 -   $1 ≤ A_i ≤ 10^9$
 
-### Subtasks
-
+**Subtasks**
 -   **Subtask 1** (20 points) : $1 ≤ N ≤ 100$
 -   **Subtask 2** (30 points) : $1 ≤ N ≤ 1000$
 -   **Subtask 3** (50 points) : Original constraints

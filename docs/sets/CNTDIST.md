@@ -12,8 +12,7 @@
 
 ## Question
 
-## <Problem-Name>
-
+**<Problem-Name>**
 Given an array of size $n$, find the number of distinct elements in the array.
 
 Chef already tried an attempt to solve the above problem and he came up with this [code](https://pastebin.com/tSrY8yD3).
@@ -30,15 +29,15 @@ First find the value of $a$, and then optimise Chef's code using the data struct
 
 (Hint: Think about sets/ dictionary and how it could be used to solve this problem.)
 
-### Input
+**Input**
 - First line contains an integer $n$, the size of the array
 - Next $n$ lines each contain a single integer, the elements of the array.
 
-### Output
+**Output**
 Print two lines. In the first line print the value of $a$ where the worst case time complexity of Chef's code is $\Theta(n^a)$.
 In the second line, print a single integer, the number of distinct values in the given array.
 
-### Constraints
+**Constraints**
 - $1 \leq n \leq 10^5$
 - $0 \leq A_i \leq 10^9$
 - The elements of the array are generated uniformly randomly among the given constraints.

@@ -20,16 +20,16 @@ $M$ people (numbered $1$ through $M$) are planning to eat at the restaurant; let
 
 For each person, calculate how long they have to wait (possibly $0$ time), or determine that they will wait forever for the restaurant to open.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of the input contains two space-separated integers $N$ and $M$.
 - $N$ lines follow. For each valid $i$, the $i$-th of these lines contains two space-separated integers $L_i$ and $R_i$.
 - $M$ lines follow. For each valid $i$, the $i$-th of these lines contains a single integer $P_i$.
 
-### Output
+**Output**
 For each test case, print $M$ lines. For each valid $i$, the $i$-th of these lines should contain a single integer — the time person $i$ has to wait, or $-1$ if person $i$ has to wait forever.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N, M \le 10^5$
 - $1 \le L_i \lt R_i \le 10^9$ for each valid $i$
@@ -38,7 +38,7 @@ For each test case, print $M$ lines. For each valid $i$, the $i$-th of these lin
 - the sum of $N$ for all test cases does not exceed $3 \cdot 10^5$
 - the sum of $M$ for all test cases does not exceed $3 \cdot 10^5$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):**
 - the sum of $N$ for all test cases does not exceed $1,000$
 - the sum of $M$ for all test cases does not exceed $1,000$

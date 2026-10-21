@@ -19,7 +19,7 @@ In one operation, you
 - select at most $K$ indices in the array $A$, and
 - for each selected index $i$, replace $A_i$ with $A_i\oplus 2^p$. Here, $\oplus$ denotes bitwise XOR.
 
-### Subtasks
+**Subtasks**
 - **Subtask #1 (100 points)**: Original Constraints
 
 **Input**

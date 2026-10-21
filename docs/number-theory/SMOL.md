@@ -14,19 +14,19 @@
 
 You are given two integers $N$ and $K$. You may perform the following operation any number of times (including zero): change $N$ to $N-K$, i.e. subtract $K$ from $N$. Find the smallest non-negative integer value of $N$ you can obtain this way.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains two space-separated integers $N$ and $K$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the smallest value you can get.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10^5$
 - $1 \leq N \leq 10^9$
 - $0 \leq K \leq 10^9$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

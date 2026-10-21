@@ -16,25 +16,25 @@ Chef received a new sequence $A_1, A_2, \ldots, A_N$. He does not like arbitrari
 
 Help Chef and find a permutation of the given sequence which satisfies this condition or determine that no such permutation exists. If there are multiple solutions, you may find any one.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The second line contains $N$ space-separated integers $A_1, A_2, \ldots, A_N$.
 
-### Output
+**Output**
 For each test case:
 - If there is no permutation of $A$ that satisfies the given condition, print a single line containing the string `"NO"` (without quotes).
 - Otherwise, print two lines.
 - The first of these lines should contain the string `"YES"` (without quotes).
 - The second line should contain $N$ space-separated integers ― the elements of your permuted sequence.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N \le 10^5$
 - $1 \le A_i \le 2 \cdot 10^5$ for each valid $i$
 - the sum of $N$ over all test cases does not exceed $10^6$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (50 points):**
 - $N \le 10^3$
 - $A_i \le 2 \cdot 10^3$ for each valid $i$

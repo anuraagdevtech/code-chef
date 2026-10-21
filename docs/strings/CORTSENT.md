@@ -18,16 +18,16 @@ Due to Chef's limited vocabulary, he sometimes mixes the languages when forming 
 
 You are given a sentence as a sequence of $K$ words $S_1, S_2, \ldots, S_K$. Determine whether it could be a sentence formed by Chef, i.e. if it contains only the characters from the two given languages and each word contains only characters from a single language.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains an integer $K$ followed by a space and $K$ space-separated strings $S_1, S_2, \ldots, S_K$.
 
-### Output
+**Output**
 For each test case, print a single line containing the string `"YES"` if the given sentence can be formed by Chef or `"NO"` if it cannot.
 
 You may print each character of the string in uppercase or lowercase (for example, the strings "yEs", "yes", "Yes" and "YES" will all be treated as identical).
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10^5$
 - $1 \leq K \leq 10$
 - $1 \leq |S_i| \leq 100$ for each valid $i$

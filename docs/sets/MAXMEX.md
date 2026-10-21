@@ -16,15 +16,15 @@ Chef has a sequence of positive integers $A_1, A_2, \ldots, A_N$. He wants to ch
 
 Help Chef find the largest number of elements of the sequence $A$ which he can choose such that their MEX is equal to $M$, or determine that it is impossible.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two space-separated integers $N$ and $M$.
 - The second line contains $N$ space-separated integers $A_1, A_2, \ldots, A_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the maximum number of elements Chef can choose, or $-1$ if he cannot choose elements in such a way that their MEX is $M$.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $2 \le M \le N \le 10^5$
 - $1 \le A_i \le 10^9$ for each valid $i$

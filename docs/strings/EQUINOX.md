@@ -16,23 +16,22 @@ Sarthak and Anuradha are very good friends and are eager to participate in an ev
 
 Print the winner of the game, if any, otherwise print “DRAW”.
 
-###Input
-
+**Input**
 - The first line contains an integer $T$, the number of test cases. Then the test cases follow.
 - The first line of each test case contains three integers $N$, $A$, $B$.
 - $N$ lines follow, each containing a string $S_{i}$.
 - All strings are in UPPERCASE.
 
-###Output
+**Output**
 - For each test case, print “SARTHAK” (case insensitive) if he has more points than Anuradha, print “ANURADHA” (case insensitive) if she has more points than Sarthak, otherwise print “DRAW” (case insensitive), without the quotes.
 
-###Constraints
+**Constraints**
 - $1 \leq T \leq 100$
 - $1 \leq N \leq 100$
 - $1 \leq A$, $B \leq 10^{9}$
 - $1 \leq \left|S_{i}\right| \leq 100$
 
-###Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

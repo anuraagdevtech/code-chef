@@ -14,15 +14,14 @@
 
 Given integers $N$ and $M$, find the number of ordered pairs $(a, b)$ such that $1 \le a < b \le N$ and $((M\ \mathrm{mod}\ a)\ \mathrm{mod}\ b) = ((M\ \mathrm{mod}\ b)\ \mathrm{mod}\ a)$.
 
-###Input
-
+**Input**
 - The first line contains an integer $T$, the number of test cases. Then the test cases follow.
 - The only line of each test case contains two integers $N$, $M$.
 
-###Output
+**Output**
 For each testcase, output in a single line the answer to the problem.
 
-###Constraints
+**Constraints**
 - $1 \leq T \leq 1000$
 - $2 \leq N \leq 10^6$
 - $1 \leq M \leq 5\cdot 10^5$
@@ -30,7 +29,7 @@ For each testcase, output in a single line the answer to the problem.
 
 **Note:** Multiplier for JAVA for this problem is reduced to $1.25$ instead of usual $2$.
 
-###Subtasks
+**Subtasks**
 **Subtask #1 (10 points):**
 - $1 \leq T \leq 10$
 - $2 \leq N \leq 10^3$

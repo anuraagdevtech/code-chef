@@ -18,21 +18,21 @@ Before each lesson, Chef has to take attendance, i.e. call out the names of stud
 
 Help Chef decide, for each student, whether he will call out this student's full name or only the first name.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - $N$ lines follow. For each valid $i$, the $i$-th of the following $N$ lines contains two space-separated strings denoting the first and last name of student $i$.
 
-### Output
+**Output**
 For each test case, print $N$ lines. For each valid $i$, the $i$-th of these lines should describe how Chef calls out the $i$-th student's name ― it should contain either the first name or the first and last name separated by a space.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $2 \le N \le 100$
 - all first and last names contain only lowercase English letters
 - the lengths of all first and last names are between $1$ and $10$ inclusive
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

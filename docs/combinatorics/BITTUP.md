@@ -16,18 +16,18 @@ Chef has two numbers $N$ and $M$. Help Chef to find number of integer $N$-tuples
 
 Since the number of tuples can be large, output it modulo $10^9+7$.
 
-### Input
+**Input**
 - The first line contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains two integers $N$ and $M$.
 
-### Output
+**Output**
 For each test case, output in a single line the answer to the problem modulo $10^9+7$.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10^5$
 - $1 \leq N, M \leq 10^6$
 
-###Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

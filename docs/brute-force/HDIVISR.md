@@ -14,16 +14,16 @@
 
 You are given an integer $N$. Find the largest integer between $1$ and $10$ (inclusive) which divides $N$.
 
-### Input
+**Input**
 The first and only line of the input contains a single integer $N$.
 
-### Output
+**Output**
 Print a single line containing one integer ― the largest divisor of $N$ between $1$ and $10$.
 
-### Constraints
+**Constraints**
 - $2 \leq N \leq 1,000$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

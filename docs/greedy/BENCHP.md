@@ -24,26 +24,25 @@ For example:
 
 Find whether Chef will be able to collect the required weights to feel satisfied.
 
-### Input
-
+**Input**
 - The first line contains an integer $T$, the number of test cases. Then the test cases follow.
 - Each test case contains two lines of input.
 - The first line contains three space-separated integers $N, W, W_r$.
 - The second line contains $N$ space-separated integers $w_1, w_2, \ldots, w_N$.
 
-### Output
+**Output**
 For each test case, output the answer in a single line: "YES" if Chef will be satisfied after his workout and "NO" if not (without quotes).
 
 You may print each character of each string in uppercase or lowercase (for example, the strings "yEs", "yes", "Yes" and "YES" will all be treated as identical).
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10$
 - $1 \leq N \leq 10^5$
 - $1 \leq W \leq 2\cdot 10^5$
 - $1 \leq w_i \leq 10^5$
 - $1 \leq W_r \leq 2\cdot 10^4$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):** $w_i = 1$ for all valid $i$
 
 **Subtask #2 (70 points):** original constraints

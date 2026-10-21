@@ -56,11 +56,9 @@ For each test case, output a single line containing probability as an [irreducib
 
 <details><summary>Explanation</summary>
 
-#test1: The only way is when Alice and Bob both choose 1. So, Alice won't have to go because sum is even.
-
-#test2: The different ways are (1,1) and (1,2), where first term denotes the number choosen by Alice. So of all possible cases (ie. 2) in only 1 case Alice has to go. Therefore, probability is 1/2.
-
-#test3: The different ways are (1,1), (1,2), (1,3), (2,1), (2,2), (2,3) where first term denotes the number choosen by Alice. So of all possible cases (ie. 6) in only 3 cases Alice has to go. Therefore, probability is 1/2.
+**test1: The only way is when Alice and Bob both choose 1. So, Alice won't have to go because sum is even.**
+**test2: The different ways are (1,1) and (1,2), where first term denotes the number choosen by Alice. So of all possible cases (ie. 2) in only 1 case Alice has to go. Therefore, probability is 1/2.**
+**test3: The different ways are (1,1), (1,2), (1,3), (2,1), (2,2), (2,3) where first term denotes the number choosen by Alice. So of all possible cases (ie. 6) in only 3 cases Alice has to go. Therefore, probability is 1/2.**
 
 </details>
 

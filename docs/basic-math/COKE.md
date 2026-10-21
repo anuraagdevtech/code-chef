@@ -23,15 +23,15 @@ The ambient temperature outside is $K$. When a can of coke is outside, its tempe
 
 When Chef drinks coke from a can, he wants its temperature to be between $L$ and $R$ (inclusive). Find the cheapest can for which this condition is satisfied or determine that there is no such can.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains five space-separated integers $N$, $M$, $K$, $L$ and $R$.
 - $N$ lines follow. For each $i$ ($1 \le i \le N$), the $i$-th of these lines contains two space-separated integers $C_i$ and $P_i$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the price of the can Chef should buy, or $-1$ if it is impossible to buy a can such that Chef's condition is satisfied.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 1,000$
 - $1 \le N \le 100$
 - $1 \le M \le 100$

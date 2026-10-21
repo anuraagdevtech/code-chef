@@ -14,14 +14,14 @@
 
 Chef wants to impress Chefina but she gave him a problem. Chef is not good in problem-solving so he wants your help to find the minimum of $(A⊕X) + (A⊕Y)$ for any $A$, where ⊕ is Bit-wise XOR.
 
-### Input:
+**Input:**
 - First-line will contain $T$, the number of test cases. Then the test cases follow:
 - Each test case contains a single line of input, two integers $X, Y$.
 
-### Output:
+**Output:**
 For each test case, output in a single line minimum of $(A⊕X) + (A⊕Y)$.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10^4$
 - $1 \leq X, Y \leq 10^9$
 

@@ -15,15 +15,15 @@
 Prajit was trying to solve a tricky problem .As we all know he is a noob he failed to solve that and he gave up for the day.He left the problem and went to sleep.Can you solve it?
 
  There is a number $N$.We need to find total unset bits of that number.
-### Input:
+**Input:**
 First line contains $T$,Test cases.
 
 Second line contains a single integer $N$ .
 
-### Output:
+**Output:**
 Print a single integer.
 
-### Constraints:
+**Constraints:**
 - $1\leq T \leq 1000$
 - $1\leq N \leq 10^{18}$
 
@@ -31,11 +31,11 @@ Print a single integer.
 
 - $1\leq T \leq 1000$
 - $1\leq N \leq 10^{18}$
-###Example Input:
+**Example Input:**
 2
 10
 1
-###Example Output:
+**Example Output:**
 2
 0
 

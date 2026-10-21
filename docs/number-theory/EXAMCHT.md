@@ -20,14 +20,14 @@ Obviously, Ram and Shyam can cheat only if they get the same set of questions.
 
 You are given the roll numbers of Ram and Shyam: $A$ and $B$ respectively. Find the number of values of $p$ for which they can cheat, or determine that there is an infinite number of such values.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains two space-separated integers $A$ and $B$.
 
-### Output
+**Output**
 For each test case, print a single line — the number of values of $p$ for which Ram and Shyam can cheat, or $-1$ if there is an infinite number of such values.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le A, B \le 10^8$
 

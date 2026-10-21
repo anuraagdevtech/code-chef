@@ -18,15 +18,15 @@ After a team solves a problem, a balloon with a colour representing that problem
 
 Find the minimum number of problems which Chef's team needs to solve in order to get all the balloons for problems $1$ through $7$ (and possibly some other balloons too) tied next to their desk, if you know that Chef's team knows the difficulties of all problems and solves the problems in increasing order of difficulty.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The second line contains $N$ space-separated integers $A_1, A_2, \ldots, A_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the minimum number of problems Chef's team needs to solve.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10,500$
 - $7 \leq N \leq 15$
 - $1 \leq A_i \leq N$ for each valid $i$

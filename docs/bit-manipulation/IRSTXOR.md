@@ -16,18 +16,18 @@ You are given an integer $C$. Let $d$ be the smallest integer such that $2^d$ is
 
 Consider all pairs of non-negative integers $(A,B)$ such that $A,B \lt 2^d$ and $A \oplus B = C$ ($\oplus$ denotes the bitwise XOR operation). Find the maximum value of $A \cdot B$ over all these pairs.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains a single integer $C$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the maximum possible product $A \cdot B$.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10^5$
 - $1 \leq C \leq 10^9$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):** $1 \leq C \leq 10^3$
 
 **Subtask #2 (70 points):** original constraints

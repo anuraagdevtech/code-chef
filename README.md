@@ -22,7 +22,7 @@ The roadmap headline counts **502 solved entries**, but that sums a per-course c
 ## Views
 
 - **[By topic](#problems-by-topic)** - the index below, and `docs/<topic>/<CODE>.md`.
-- **[By difficulty](by-rating/README.md)** - the same write-ups ordered by CodeChef rating, in `by-rating/`, each naming the topics used.
+- **[By rating](by-rating/README.md)** - the same problems numbered `001`-`486` in difficulty order, each with the topic used, the constraints, the approach, the solution, its edge cases and a dry run.
 
 ## Phases
 
@@ -680,7 +680,7 @@ The roadmap headline counts **502 solved entries**, but that sums a per-course c
 
 ```
 docs/<topic>/<CODE>.md       write-ups grouped by topic
-by-rating/<rating>-<CODE>.md the same write-ups in difficulty order
+by-rating/<NNN>-<CODE>.md   the same problems in rating order
 solutions/<CODE>.py          runnable Python solutions
 data/authored/<CODE>.md      hand written approach + metadata
 data/raw/<CODE>.json         problem payloads fetched from CodeChef

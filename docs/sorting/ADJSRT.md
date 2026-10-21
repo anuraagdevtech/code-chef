@@ -12,8 +12,7 @@
 
 ## Question
 
-## Sort by Adjacent Swaps
-
+**Sort by Adjacent Swaps**
 You are given an array $A$ (of size $n$) and you can only perform the adjacent swaps on the array, i.e. you can choose
 an index $i$ ($0 \leq i \leq n-2$) and swap the values present in $A_i$ and $A_{i+1}$.
 
@@ -21,14 +20,12 @@ Sort the array using **minimum** number of adjacent swap operations.
 
 Note that there may be multiple possible outputs, you can print **any** of them.
 
-### Input
-
+**Input**
 The first line contains a single integer $n$, the number of elements in the array
 
 The second line contains $n$ space separated integers, the elements of the array
 
-### Output
-
+**Output**
 In the first line print the number of swaps that your solution performs on the array, let this number be $m$
 
 In the next line print $m$ space separated integers, each between $0$ and $n-2$ (inclusive), the $i^{th}$ integer denotes that
@@ -36,8 +33,7 @@ $A_i$ and $A_{i+1}$ are swapped.
 
 Note that $m$ must be equal to the minimum number of adjacent swap operations required to sort the array.
 
-### Constraints
-
+**Constraints**
 $1 \leq n \leq 10^5$
 
 $-10^9 \leq A_i \leq 10^9$

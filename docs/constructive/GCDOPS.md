@@ -16,20 +16,20 @@ Consider a sequence $A_1, A_2, \ldots, A_N$, where initially, $A_i = i$ for each
 
 You are given a sequence $B_1, B_2, \ldots, B_N$. Is it possible to obtain this sequence, i.e. change $A$ to $B$, using the given operations?
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The second line contains $N$ space-separated integers $B_1, B_2, \ldots, B_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing the string `"YES"` if it is possible to obtain $A = B$ or `"NO"` if it is impossible.
 
-### Constraints
+**Constraints**
 - $1 \le N \le 10^4$
 - $1 \le B_i \le i$ for each valid $i$
 - the sum of $N$ over all test cases does not exceed $10^5$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (10 points):** $N \le 4$
 
 **Subtask #2 (20 points):** there is at most one valid index $p$ such that $B_p \neq p$

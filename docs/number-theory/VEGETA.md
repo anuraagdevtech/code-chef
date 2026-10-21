@@ -18,14 +18,14 @@ Babidi has laid out a trap. Vegeta is standing at the $nth$ level of mind contro
 
 Vegeta needs your help in order to figure out how much total minimum energy he needs to defeat Babidi's trap. The total energy is the sum of energy used at each increment of a level.In the calculation of energy, $n$ and $m$ are inclusive.
 
-###Input:
+**Input:**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follow.
 - The first and only line of each test case contains the two integers $n$ and $m$, separated by a single space.
 
-###Output:
+**Output:**
 For each test case, print a single line containing one integer denoting the energy needed by Vegeta to escape Babidi's mind control and continue his battle with Kakarot.
 
-###Constraints
+**Constraints**
 - $1 \leq T \leq 2$
 - $1 \leq n \leq m \leq 10^6$
 

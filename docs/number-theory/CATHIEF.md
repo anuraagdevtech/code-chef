@@ -18,14 +18,14 @@ Initially, the policeman is at a coordinate $x$ and the thief is at a coordinate
 
 Will the policeman be able to catch the thief if they both move optimally? The thief is caught as soon as the policeman and thief meet at the same position at the same time.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains four space-separated integers $x$, $y$, $K$ and $N$.
 
-### Output
+**Output**
 For each test case, print a single line containing the string `"Yes"` if the thief can be caught or `"No"` if the thief cannot be caught (without quotes).
 
-### Constraints
+**Constraints**
 - $1 \le T \le 1,000$
 - $1 \le N \le 10^9$
 - $1 \le K \le N$

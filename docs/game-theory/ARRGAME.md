@@ -23,22 +23,22 @@ Tzuyu gave Nayeon a strip of $N$ cells (numbered $1$ through $N$) for her birthd
 
 Nayeon and Tzuyu are very smart, so they both play optimally. Since it is Nayeon's birthday, she wants to know if she can beat Tzuyu. Find out who wins.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The second line contains $N$ space-separated integers $A_1, A_2, \ldots, A_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing the string `"Yes"` if Nayeon wins the game or `"No"` if Tzuyu wins (without quotes).
 
-### Constraints
+**Constraints**
 - $1 \le T \le 40,000$
 - $2 \le N \le 3\cdot 10^5$
 - $0 \le A_i \le 1$ for each valid $i$
 - $A_1 = A_N = 1$
 - the sum of $N$ over all test cases does not exceed $10^6$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (50 points):** $A_i = 0$ for each $i$ ($2 \le i \le N-1$)
 
 **Subtask #2 (50 points):** original constraints

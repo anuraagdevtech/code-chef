@@ -16,22 +16,22 @@ Chef and his friend Magda have $2N$ mutual friends: $N$ of these friends are che
 
 The chefs have heights $A_1, A_2, \ldots, A_N$ and the chefettes have heights $B_1, B_2, \ldots, B_N$. For each valid $i, j$, if the $i$-th chef and the $j$-th chefette are paired, they will have exactly one child with height $\left\lfloor\frac{A_i+B_j}{2}\right\rfloor$. Magda wants to pair up the chefs and chefettes in such a way that the sum of heights of all their children ($N$ children in total) is maximum possible. Please help her do that.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The second line contains $N$ space-separated integers $A_1, A_2, \ldots, A_N$.
 - The third line contains $N$ space-separated integers $B_1, B_2, \ldots, B_N$.
 
-### Output
+**Output**
 Print a single line containing one integer ― the maximum sum of heights of the children.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10$
 - $1 \le N \le 10^5$
 - $1 \le A_i \le 10^9$ for each valid $i$
 - $1 \le B_i \le 10^9$ for each valid $i$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (40 points):** $1 \le N \le 100$
 
 **Subtask #2 (60 points):** original constraints

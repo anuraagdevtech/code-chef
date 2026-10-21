@@ -18,22 +18,22 @@ You want the board to display a string $S$ with length $N > K$. Since the board 
 
 The power required to switch the board from step $i$ to step $i+1$ (for $1 \le i \le N-K$) is equal to the number of characters displayed on the board that have to change between these steps. You should find the total power required for the whole process of displaying a string, i.e. the sum of powers required for switching between all consecutive pairs of steps.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two space-separated integers $N$ and $K$.
 - The second line contains a single string $S$ with length $N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the total power required for text switching.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 1,000$
 - $2 \le N \le 10^5$
 - $1 \le K \lt N$
 - each character of $S$ is a lowercase English letter
 - the sum of $N$ for all test cases does not exceed $10^6$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (20 points):**
 - $1 \le T \le 100$
 - $2 \le N \le 50$

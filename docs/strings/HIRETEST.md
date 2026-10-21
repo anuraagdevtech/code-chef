@@ -18,18 +18,16 @@ To pass the test, each candidate needs to either solve $X$ or more problems comp
 
 Given the above specifications as input, print a line containing $N$ integers. The $i^{th}$ integer should be $1$ if the $i^{th}$ candidate has passed the test, else it should be $0$.
 
-###Input:
-
+**Input:**
 - The first line of the input contains an integer $T$, denoting the number of test cases.
 - The first line of each test case contains two space-separated integers, $N$ and $M$, denoting the number of candidates who appeared for the test, and the number of problems in the test, respectively.
 - The second line of each test case contains two space-separated integers, $X$ and $Y$, as described above, respectively.
 - The next $N$ lines contain $M$ characters each. The $j^{th}$ character of the $i^{th}$ line denotes the result of the $i^{th}$ candidate in the $j^{th}$ problem. 'F' denotes that the problem was solved completely, 'P' denotes partial solve, and 'U' denotes that the problem was not solved by the candidate.
 
-###Output:
-
+**Output:**
 For each test case, print a single line containing $N$ integers. The $i^{th}$  integer denotes the result of the $i^{th}$ candidate. $1$ denotes that the candidate passed the test, while $0$ denotes that he/she failed the test.
 
-###Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N \le 100$
 - $2 \le M \le 100$

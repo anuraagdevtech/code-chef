@@ -16,17 +16,16 @@ Recently, Chef's College Examination has concluded. He was enrolled in $3$ cours
 
 Given seven integers $A_{min}, B_{min}, C_{min}, T_{min}, A, B, C$, tell whether Chef passes the semester or not.
 
-###Input:
-
+**Input:**
 - The first line will contain $T$, number of testcases. Then the testcases follow.
 - Each testcase contains of a single line of input, seven integers $A_{min}, B_{min}, C_{min}, T_{min}, A, B, C$ each separated by aspace.
 
-###Output:
+**Output:**
 Output in a single line, the answer, which should be "YES" if Chef passes the semester and "NO" if not.
 
 You may print each character of the string in uppercase or lowercase (for example, the strings "yEs", "yes", "Yes" and "YES" will all be treated as identical).
 
-###Constraints
+**Constraints**
 - $1 \leq T \leq 100$
 - $1 \leq A_{min}, B_{min}, C_{min}, A, B, C \leq 100$
 - $A_{min} + B_{min} + C_{min} \leq T_{min} \leq 300$

@@ -16,19 +16,19 @@ Appy and Chef are participating in a contest. There are $N$ problems in this con
 
 To win, it is necessary to solve at least $K$ problems. You have to tell Appy whether they are going to win or lose.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains four space-separated integers $N$, $A$, $B$ and $K$.
 
-### Output
+**Output**
 For each test case, print a single line containing the string `"Win"` if they can solve at least $K$ problems or `"Lose"` otherwise (without quotes).
 
-### Constraints
+**Constraints**
 - $1 \le T \le 15$
 - $1 \le K \le N \le 10^{18}$
 - $1 \le A, B \le 10^9$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (15 points):**
 - $1 \le T \le 15$
 - $1 \le K \le N \le 10^6$

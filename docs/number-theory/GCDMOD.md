@@ -16,19 +16,19 @@ At ShareChat, there are are plenty of interesting problems to solve. Here is one
 
 Given integers $A$, $B$ and $N$, you should calculate the GCD of $A^N + B^N$ and $|A - B|$. (Assume that $GCD(0, a) = a$ for any positive integer $a$). Since this number could be very large, compute it modulo $1000000007$ ($10^9 + 7$).
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains three space-separated integers $A$, $B$ and $N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the required GCD modulo $10^9 + 7$.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10$
 - $1 \le A, B, N \le 10^{12}$
 - $B \le A$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (10 points):** $1 \le A, B, N \le 10$
 
 **Subtask #2 (40 points):** $1 \le A, B, N \le 10^9$

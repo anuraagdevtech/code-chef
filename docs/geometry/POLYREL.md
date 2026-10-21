@@ -19,15 +19,15 @@ You are given a strictly convex polygon with $N$ vertices (numbered $1$ through 
 
 Your goal is to draw as many sides of polygons in total as possible (including the polygon given at the start). Find this maximum total number of sides.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - $N$ lines follow. For each valid $i$, the $i$-th of these lines contains two space-separated integers $X_i$ and $Y_i$.
 
-### Output
+**Output**
 Print a single line containing one integer ― the maximum possible number of sides of polygons.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 1,000$
 - $3 \le N \le 10^5$
 - $|X_i|, |Y_i| \le 10^9$ for each valid $i$

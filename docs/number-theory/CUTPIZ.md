@@ -18,18 +18,17 @@ Let $O$ be the center of the pizza, $P_i$ be the endpoint of the $i$-th cut lyin
 
 Vasya may cut his pizza a few more times, and the new cuts still have to be straight segments starting at the center. He wants to make the pizza separated into several equal slices, with each slice being a circular sector with no cuts inside of it. How many new cuts Vasya will have to make?
 
-### Input:
-
+**Input:**
 The first line of input contains $T$ , i.e number of test cases per file.
 
 The first line of each test case contains a single integer $n-$  the numbers of premade cuts ($2 \leq n \leq 360$).
 
 The second lines contains $n$ integers $a_1, \ldots, a_n-$ angles of the cuts $1, \ldots, n$ respectively ($0 \leq a_1 < \ldots, a_{n - 1} < 360$).
 
-### Output:
+**Output:**
 Print a single integer$-$ the smallest number of additional cuts Vasya has to make so that the pizza is divided into several equal slices.
 
-### Constraints
+**Constraints**
 - $1  \leq T  \leq 36$
 - $2 \leq n \leq 360$
 - $0 \leq a_1 < \ldots, a_{n - 1} < 360$

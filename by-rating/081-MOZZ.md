@@ -1,0 +1,134 @@
+# 081. Endless Appetizers
+
+> [`MOZZ`](https://www.codechef.com/problems/MOZZ) &middot; difficulty **752** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
+
+> _Edge cases and dry run for this problem are still to be written._
+
+## Topic used
+
+| | |
+|---|---|
+| **Topic** | Basic Math |
+| **Technique** | Inverting a reward, then a ceiling division |
+| **CodeChef tags** | `Mathematics`, `Basic Math` |
+| **Complexity class** | Constant time $O(1)$ |
+| **Time** | $O(1)$ per test case |
+| **Space** | $O(1)$ |
+
+## Question
+
+*Life is a like a box of of mozzarella sticks. You never know what you're gonna get, but you can predict with [100 percent](https://www.gawker.com/my-14-hour-search-for-the-end-of-tgi-fridays-endless-ap-1606122925) accuracy that it will be a mozzarella stick.*
+
+Chef's colleague issued a challenge to Chef: "If you eat more than $X$ mozzarella sticks, I'll give you $30$ rupees for each extra one you eat".
+For example, if $X = 5$ and Chef eats $8$ sticks, he would receive $90$ rupees because he ate $3$ *extra* sticks.
+
+You know that the restaurant serves $Y$ mozzarella sticks per plate.
+You also know that Chef received $R$ rupees from his colleague as a result of the challenge.
+
+What's the **maximum** number of plates of mozzarella sticks that Chef could have ordered?
+
+**Note:**
+- Chef won't order a new plate till he finishes eating all the sticks from the previous one.
+- However, it's possible that Chef didn't finish all the sticks from the *final* plate he ordered.
+See the explained examples below for more clarification.
+
+**Input**
+
+- The first line of input will contain a single integer $T$, denoting the number of test cases.
+- Each test case consists of one line of input, containing three space-separated integers $X, Y, $ and $R$ — the lower limit on the number of sticks, the number of sticks on a single plate, and the money received by Chef.
+
+**Output**
+
+For each test case, output on a new line the answer: the maximum number of plates Chef could have ordered.
+
+## Constraints
+
+- $1 \leq T \leq 10^4$
+- $1 \leq X \leq 100$
+- $1 \leq Y \leq 10$
+- $0 \leq R \leq 3\cdot 10^4$
+- It is guaranteed that $R$ is a multiple of $30$.
+
+**Subtasks**
+
+- **Subtask 1 (10 points):** $1 \leq M \leq 10$
+- **Subtask 2 (20 points):** The sum of $N$ across all test cases won't exceed $20$.
+- **Subtask 3 (70 points):** No further constraints.
+
+## Sample
+
+**Sample input**
+
+```
+4
+7 5 30
+16 5 0
+15 9 120
+23 1 2130
+```
+
+**Sample output**
+
+```
+2
+4
+3
+94
+```
+
+<details><summary>Explanation</summary>
+
+**Test case $1$:** Chef received $30$ rupees; meaning he ate $1$ extra stick.
+Since $X = 7$, this means he must've eaten exactly $8$ sticks.
+At $5$ sticks per plate, Chef would need $2$ plates to eat $8$ sticks (and two sticks from the second plate will remain uneaten).
+
+**Test case $2$:** Chef received $0$ rupees. Since $X = 16$, this means he ate $\leq 16$ sticks.
+The maximum he could've eaten is exactly $16$; and this would require $4$ plates since each plate has $5$ sticks.
+
+**Test case $3$:** Chef received $120$ rupees, meaning he ate $4$ extra sticks.
+This makes for a total of $15 + 4 = 19$ sticks, and at $9$ sticks per plate he would need $3$ plates.
+
+</details>
+
+## Approach
+
+Two steps, run in sequence.
+
+**Recover the sticks eaten.** Chef is paid $30$ rupees for each stick beyond $X$, so $R$ rupees means $R/30$ extra sticks and a total of
+
+$$S = X + \frac{R}{30}$$
+
+The guarantee that $R$ is a multiple of $30$ makes this exact. Note that $R = 0$ does not mean Chef ate nothing — it means he ate no *extra*, so $S = X$, which is the most he could have eaten without earning anything. Sample case 2 is exactly this, with $S = 16$.
+
+**Convert sticks to plates.** Plates hold $Y$ sticks, and the rules say Chef finishes each plate before ordering the next but may leave the **final** plate unfinished. The question asks for the *maximum* possible number of plates, so assume he abandoned the last one after a single stick:
+
+$$\left\lceil \frac{S}{Y} \right\rceil$$
+
+The "maximum" wording is what makes this a ceiling. Were the question the minimum number of plates, the answer would be the same ceiling for a different reason — but here the subtlety is that any partially eaten plate still counts as ordered, which is precisely what rounding up expresses.
+
+Sample case 3 shows it: $S = 15 + 4 = 19$ sticks at $9$ per plate means two full plates and one stick from a third, so $3$ plates.
+
+## Solution
+
+```python
+import sys
+
+
+def main() -> None:
+    data = sys.stdin.buffer.read().split()
+    t = int(data[0])
+    out = []
+    for i in range(t):
+        x, y, r = map(int, data[1 + 3 * i:4 + 3 * i])
+        sticks = x + r // 30          # r is guaranteed to be a multiple of 30
+        # The final plate may be left unfinished but was still ordered.
+        out.append(str((sticks + y - 1) // y))
+    sys.stdout.write("\n".join(out) + "\n")
+
+
+main()
+```
+
+---
+
+Same problem grouped by topic: [../docs/basic-math/MOZZ.md](../docs/basic-math/MOZZ.md)

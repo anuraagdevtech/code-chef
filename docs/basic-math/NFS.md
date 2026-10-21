@@ -16,20 +16,20 @@ Chef is playing Need For Speed. Currently, his car is running on a straight road
 
 The brakes of Chef's car allow him to slow down with a deceleration (negative acceleration) not exceeding $A$ metres per squared second. Tell him whether he can cross the turn successfully. The velocity $v$ when entering the turn can be determined from Newton's 2nd law to be $v^2 = U^2 + 2 \cdot a \cdot S$ if the car is moving with a uniform acceleration $a$.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains four space-separated integers $U$, $V$, $A$ and $S$.
 
-### Output
+**Output**
 For each test case, print a single line containing the string `"Yes"` if Chef can cross the turn successfully or `"No"` if he cannot (without quotes).
 
 You may print each character of each string in uppercase or lowercase (for example, the strings "yEs", "yes", "Yes" and "YES" will all be treated as identical).
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10^5$
 - $1 \leq U, V, A, S \leq 10^4$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

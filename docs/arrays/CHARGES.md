@@ -20,25 +20,24 @@ When Chef is not in the kitchen, he is doing physics experiments on subatomic pa
 
 **Note:** Each update is persistent for further updates.
 
-### Input
-
+**Input**
 - The first line contains an integer $T$, the number of test cases. Then the test cases follow.
 - Each test case contains three lines of input.
 - The first line contains two integers $N$, $K$.
 - The second line contains a string $S$ of length $N$, where $S_i$ represents the initial charge on $i$-th particle.
 - The third line contains $K$ integers $Q_1, Q_2, \ldots, Q_K$, the positions of the changed particles.
 
-### Output
+**Output**
 For each test case, output $K$ lines, where the $i$-th line contains the answer after the updates $Q_1,\ldots, Q_i$ have been made.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 5$
 - $1 \leq N, K \leq 10^5$
 - $S$ contains only $0$ and $1$ characters.
 - $1 \leq Q_i \leq N$
 - The sum of $K$ over all testcases is at most $2 \cdot 10^5$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

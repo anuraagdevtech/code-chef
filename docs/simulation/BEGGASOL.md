@@ -18,20 +18,20 @@ You are driving car $1$ in the clockwise direction. To move one unit of distance
 
 What is the total clockwise distance travelled by your car?
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains a single integer $N$.
 - The second line contains $N$ space-separated integers $f_1, f_2, \ldots, f_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the total clockwise distance travelled.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N \le 100$
 - $0 \le f_i \le 100$ for each valid $i$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

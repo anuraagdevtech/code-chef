@@ -26,16 +26,15 @@ How many barriers can Edward cross?
 
 And remember never to call him a pipsqueak if his height is too short!
 
-### Input:
-
+**Input:**
 - The first line contains $T$, the number of test cases. Then the test cases follow.
 - For each test case, the first line contains five integers $N$, $H$, $Y_{1}$, $Y_{2}$ and $L$.
 - The i-th of the next $N$ lines contains two integers $t_{i}$ and $X_{i}$ for the $i^{th}$ barrier where $t_{i} = 1$ denotes a Type 1 Barrier and $t_{i} = 2$ denotes a Type 2 barrier.
 
-### Output:
+**Output:**
 For each test case print a single line containing the number of barriers Edward can pass.
 
-### Constraints
+**Constraints**
 - $1 \leq T\leq 100$
 - $1 \leq N\leq 10^{3}$
 - $2 \leq H\leq 10^{3}$

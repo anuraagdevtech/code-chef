@@ -26,7 +26,6 @@ AUTH = os.path.join(ROOT, 'data', 'authored')
 SOLN = os.path.join(ROOT, 'solutions')
 DOCS = os.path.join(ROOT, 'docs')
 RATED = os.path.join(ROOT, 'by-rating')
-BYCPX = os.path.join(ROOT, 'by-complexity')
 
 META = json.load(open(os.path.join(ROOT, 'data', 'problem_meta.json')))
 IDX = json.load(open(os.path.join(ROOT, 'data', 'roadmap_index.json')))
@@ -81,6 +80,9 @@ def clean(md):
     if HTMLISH.search(md):
         md = html_to_md(md)
     md = re.sub(r'[ \t]+\n', '\n', md)
+    # Statements carry their own "### Input" style headings; demote them so the
+    # write-up keeps a single heading hierarchy of its own.
+    md = re.sub(r'^#{1,6} *(.+?)\s*$', r'**\1**', md, flags=re.M)
     return re.sub(r'\n{3,}', '\n\n', md).strip()
 
 
@@ -151,13 +153,6 @@ def load(code):
     }
 
 
-def rated_name(d):
-    """0000-padded rating prefix so a plain listing is in difficulty order."""
-    if d['rating'] <= 0:
-        return f'unrated-{d["code"]}.md'
-    return f'{d["rating"]:04d}-{d["code"]}.md'
-
-
 def problem_body(d, A):
     """Question, constraints and samples - shared by both views."""
     pc = d['pc']
@@ -206,50 +201,36 @@ def solution_body(d, A):
     A('')
 
 
-def render_rated(d):
-    """The by-rating view: difficulty first, then the topics used."""
-    meta, pm = d['meta'], d['pm']
-    rating = d['rating'] if d['rating'] > 0 else 'unrated'
-    P = []
-    A = P.append
-    A(f'# {rating} &middot; {d["name"]}\n')
-    A(f'> CodeChef problem code [`{d["code"]}`]'
-      f'(https://www.codechef.com/problems/{d["code"]}) &middot; '
-      f'time limit **{d["timelimit"]}s** &middot; '
-      f'{pm["course_title"]} (Level {pm["level"]})\n')
-    A('## Topics used\n')
-    A('| | |')
-    A('|---|---|')
-    A(f'| **Topic** | {meta["topic"]} |')
-    A(f'| **Technique** | {meta.get("subtopic", "-")} |')
-    if d['tags']:
-        A(f'| **CodeChef tags** | {", ".join(f"`{t}`" for t in d["tags"])} |')
-    if d['best_tag']:
-        A(f'| **CodeChef top tag** | `{d["best_tag"]}` |')
-    if d['category']:
-        A(f'| **CodeChef category** | {d["category"]} |')
-    A(f'| **Time** | {meta["time"]} |')
-    A(f'| **Space** | {meta["space"]} |')
-    A('')
-    topic_path = os.path.join('..', 'docs', slugify(meta['topic']), f'{d["code"]}.md')
-    A(f'Same write-up grouped by topic: [{topic_path}]({topic_path})\n')
-    problem_body(d, A)
-    solution_body(d, A)
-    return '\n'.join(P).rstrip() + '\n'
+def rating_order(codes):
+    """Sequence number per code: easiest rating first, unrated last."""
+    rows = []
+    for c in codes:
+        raw = json.load(open(os.path.join(RAW, f'{c}.json'), encoding='utf-8'))
+        r = raw.get('difficulty_rating')
+        r = int(r) if str(r).lstrip('-').isdigit() else -1
+        # Unrated problems have no place on the ladder, so they go at the end.
+        rows.append((r if r > 0 else 10 ** 7, c))
+    rows.sort()
+    return {c: i + 1 for i, (_, c) in enumerate(rows)}
 
 
-def render_complexity(d, seq):
-    """The by-complexity view: the six sections asked for, in order."""
+def render_study(d, seq):
+    """by-rating view: one file per problem, in rating order, with the
+    topic, constraints, approach, solution, edge cases and a dry run."""
     meta, pm, sec = d['meta'], d['pm'], d['sections']
-    key, note = X.classify(meta['time'])
+    cls, cls_note = X.classify(meta['time'])
     rating = d['rating'] if d['rating'] > 0 else 'unrated'
+    ready = {'edge cases', 'dry run'} <= set(sec)
     P = []
     A = P.append
     A(f'# {seq:03d}. {d["name"]}\n')
     A(f'> [`{d["code"]}`](https://www.codechef.com/problems/{d["code"]}) '
       f'&middot; difficulty **{rating}** '
-      f'&middot; complexity class **{X.LABEL[key]}** {X.CANON[key]}'
-      f'{" (" + note + ")" if note else ""}\n')
+      f'&middot; time limit **{d["timelimit"]}s** '
+      f'&middot; {pm["course_title"]} (Level {pm["level"]})\n')
+    if not ready:
+        A('> _Edge cases and dry run for this problem are still to be '
+          'written._\n')
 
     A('## Topic used\n')
     A('| | |')
@@ -258,15 +239,13 @@ def render_complexity(d, seq):
     A(f'| **Technique** | {meta.get("subtopic", "-")} |')
     if d['tags']:
         A(f'| **CodeChef tags** | {", ".join(f"`{t}`" for t in d["tags"])} |')
+    A(f'| **Complexity class** | {X.LABEL[cls]} {X.CANON[cls]}'
+      f'{" (" + cls_note + ")" if cls_note else ""} |')
     A(f'| **Time** | {meta["time"]} |')
     A(f'| **Space** | {meta["space"]} |')
     A('')
 
-    A('## Problem\n')
-    A(d['statement'] + '\n')
-
-    A('## Problem constraints\n')
-    A((d['cons'] or '_Not published for this problem._') + '\n')
+    problem_body(d, A)
 
     A('## Approach\n')
     A(d['approach'] + '\n')
@@ -276,81 +255,90 @@ def render_complexity(d, seq):
     A(d['solution'])
     A('```\n')
 
-    A('## Edge cases\n')
-    A(sec['edge cases'] + '\n')
-
-    A('## Dry run\n')
-    A(sec['dry run'] + '\n')
+    if 'edge cases' in sec:
+        A('## Edge cases\n')
+        A(sec['edge cases'] + '\n')
+    if 'dry run' in sec:
+        A('## Dry run\n')
+        A(sec['dry run'] + '\n')
 
     rel = os.path.join('..', 'docs', slugify(meta['topic']), f'{d["code"]}.md')
-    A(f'---\n')
+    A('---\n')
     A(f'Same problem grouped by topic: [{rel}]({rel})\n')
     return '\n'.join(P).rstrip() + '\n'
 
 
-def complexity_order(codes):
-    """seq number per code: cheapest class first, then easiest rating."""
-    rows = []
-    for c in codes:
-        key, _ = X.classify(X.time_of(c))
-        raw = json.load(open(os.path.join(RAW, f'{c}.json'), encoding='utf-8'))
-        r = raw.get('difficulty_rating')
-        r = int(r) if str(r).lstrip('-').isdigit() else -1
-        rows.append((X.RANK[key], r if r > 0 else 10 ** 6, c, key))
-    rows.sort()
-    return {c: (i + 1, key) for i, (_, _, c, key) in enumerate(rows)}
+BAND = 200
 
 
-def write_complexity_index(rows, order):
-    """by-complexity/README.md, grouped by class in increasing cost."""
-    done = {r['code'] for r in rows}
-    by_class = defaultdict(list)
-    for code, (seq, key) in order.items():
-        by_class[key].append((seq, code))
+def write_study_index(built, order):
+    """by-rating/README.md: the whole ladder, grouped into rating bands."""
+    by_code = {b['code']: b for b in built}
+    rows = sorted(((seq, c) for c, seq in order.items()))
+    done = sum(1 for _, c in rows if by_code[c]['has_extras'])
+    bands = defaultdict(list)
+    for seq, c in rows:
+        r = by_code[c]['num_rating']
+        bands['unrated' if r <= 0 else r // BAND * BAND].append((seq, c))
+    keys = sorted(k for k in bands if k != 'unrated')
+
     L = []
     A = L.append
-    A('# Problems in order of complexity\n')
-    A('Every problem ordered by the time complexity of its solution, cheapest '
-      'first, and numbered so a plain directory listing follows that order. '
-      'Each file carries the topic used, the problem constraints, the '
-      'approach, the solution, its edge cases and a dry run.\n')
-    A('How a problem lands in a class is set out in `tools/complexity.py`: the '
-      'class is the cost of **one test case** in the bounds the problem '
-      'states, so a cost quoted per query or per item is multiplied up, and a '
-      'one-off sieve is flagged rather than counted.\n')
-    A(f'**{len(done)} of {len(order)} written.**\n')
-    A('| # | Class | Problems | Written |')
-    A('|---|---|---:|---:|')
-    for rank, key, canon, label in X.CLASSES:
-        rows_k = by_class.get(key, [])
-        if not rows_k:
-            continue
-        n = sum(1 for _, c in rows_k if c in done)
-        A(f'| {rank} | [{label} {canon}](#{rank}-{slugify(label)}) '
-          f'| {len(rows_k)} | {n} |')
+    A('# Problems in rating order\n')
+    A('Every solved problem, ordered by CodeChef difficulty rating and '
+      'numbered so a plain directory listing follows the same order: '
+      '`001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file '
+      'per problem, each carrying the topic used, the problem and its '
+      'constraints, the approach, the solution, its edge cases and a dry '
+      'run.\n')
+    A(f'**{len(rows)} problems** &middot; ratings '
+      f'{by_code[rows[0][1]]["num_rating"]} upward &middot; '
+      f'**{done} with edge cases and a dry run written so far**. Problems '
+      'CodeChef has not rated carry no place on the ladder, so they sit at '
+      'the end.\n')
+    A('Same write-ups grouped by topic instead: [`../docs`](../docs).\n')
+
+    A('## Bands\n')
+    A('| Band | Problems | Written | Most common topic |')
+    A('|---|---:|---:|---|')
+    for k in keys:
+        rs = bands[k]
+        top = Counter(by_code[c]['topic'] for _, c in rs).most_common(1)[0]
+        A(f'| [{k}&ndash;{k + BAND - 1}](#{k}{k + BAND - 1}) | {len(rs)} '
+          f'| {sum(1 for _, c in rs if by_code[c]["has_extras"])} '
+          f'| {top[0]} ({top[1]}) |')
+    if 'unrated' in bands:
+        rs = bands['unrated']
+        top = Counter(by_code[c]['topic'] for _, c in rs).most_common(1)[0]
+        A(f'| [Unrated](#unrated) | {len(rs)} '
+          f'| {sum(1 for _, c in rs if by_code[c]["has_extras"])} '
+          f'| {top[0]} ({top[1]}) |')
     A('')
-    meta_by_code = {r['code']: r for r in rows}
-    for rank, key, canon, label in X.CLASSES:
-        rows_k = sorted(by_class.get(key, []))
-        if not rows_k:
-            continue
-        A(f'## {rank}. {label}\n')
-        A(f'{canon} &mdash; {len(rows_k)} problems\n')
-        A('| # | Problem | Difficulty | Topic | Technique |')
-        A('|---:|---|---:|---|---|')
-        for seq, code in rows_k:
-            r = meta_by_code.get(code)
-            if r is None:
-                A(f'| {seq:03d} | `{code}` _(not written yet)_ | | | |')
-                continue
-            shown = r['num_rating'] if r['num_rating'] > 0 else '&ndash;'
-            A(f'| {seq:03d} | [{r["name"]}]({seq:03d}-{code}.md) `{code}` '
-              f'| {shown} | {r["topic"]} | {r["subtopic"]} |')
+
+    def table(rs):
+        A('| # | Problem | Rating | Topic | Technique | Edge cases + dry run |')
+        A('|---:|---|---:|---|---|:---:|')
+        for seq, c in rs:
+            b = by_code[c]
+            shown = b['num_rating'] if b['num_rating'] > 0 else '&ndash;'
+            mark = 'yes' if b['has_extras'] else '&ndash;'
+            A(f'| {seq:03d} | [{b["name"]}]({seq:03d}-{c}.md) `{c}` '
+              f'| {shown} | {b["topic"]} | {b["subtopic"]} | {mark} |')
         A('')
+
+    for k in keys:
+        A(f'## {k}&ndash;{k + BAND - 1}\n')
+        table(bands[k])
+    if 'unrated' in bands:
+        A('## Unrated\n')
+        A('CodeChef publishes no difficulty rating for these.\n')
+        table(bands['unrated'])
+
     A('---\n')
-    A('Generated by `python3 tools/build_docs.py`.\n')
-    os.makedirs(BYCPX, exist_ok=True)
-    with open(os.path.join(BYCPX, 'README.md'), 'w', encoding='utf-8') as f:
+    A('Generated by `python3 tools/build_docs.py` - edit '
+      '`data/authored/<CODE>.md` or `solutions/<CODE>.py` and rebuild.\n')
+    os.makedirs(RATED, exist_ok=True)
+    with open(os.path.join(RATED, 'README.md'), 'w', encoding='utf-8') as f:
         f.write('\n'.join(L).rstrip() + '\n')
 
 
@@ -389,92 +377,19 @@ def build_one(code):
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(P).rstrip() + '\n')
 
-    seq = CPX_ORDER[code][0] if code in CPX_ORDER else None
-    if seq and {'edge cases', 'dry run'} <= set(d['sections']):
-        os.makedirs(BYCPX, exist_ok=True)
-        with open(os.path.join(BYCPX, f'{seq:03d}-{code}.md'),
-                  'w', encoding='utf-8') as f:
-            f.write(render_complexity(d, seq))
-
     os.makedirs(RATED, exist_ok=True)
-    rated_path = os.path.join(RATED, rated_name(d))
-    with open(rated_path, 'w', encoding='utf-8') as f:
-        f.write(render_rated(d))
+    seq = SEQ[code]
+    with open(os.path.join(RATED, f'{seq:03d}-{code}.md'),
+              'w', encoding='utf-8') as f:
+        f.write(render_study(d, seq))
 
     return {'code': code, 'name': name, 'rating': rating, 'topic': topic,
             'subtopic': meta.get('subtopic', '-'), 'order': pm['order'],
             'level': pm['level'], 'path': os.path.relpath(out_path, ROOT),
             'time': meta['time'], 'num_rating': d['rating'],
-            'rated_file': rated_name(d), 'tags': d['tags'],
+            'tags': d['tags'],
             'best_tag': d['best_tag'],
             'has_extras': {'edge cases', 'dry run'} <= set(d['sections'])}
-
-
-BAND = 200
-
-
-def write_rating_index(built):
-    """by-rating/README.md: every problem in difficulty order, with its topics."""
-    rated = sorted((b for b in built if b['num_rating'] > 0),
-                   key=lambda b: (b['num_rating'], b['code']))
-    unrated = sorted((b for b in built if b['num_rating'] <= 0),
-                     key=lambda b: b['code'])
-    bands = defaultdict(list)
-    for b in rated:
-        bands[b['num_rating'] // BAND * BAND].append(b)
-
-    L = []
-    A = L.append
-    A('# Problems in difficulty order\n')
-    A('The same write-ups as [`docs/`](../docs), ordered by CodeChef difficulty '
-      'rating instead of grouped by topic, so they can be worked through from '
-      'easiest to hardest. Each file names the topic and the technique it uses, '
-      "alongside CodeChef's own tags.\n")
-    A('Files are named `<rating>-<CODE>.md` with the rating zero-padded to four '
-      'digits, so a plain directory listing is already in difficulty order. '
-      'Problems CodeChef has not rated are named `unrated-<CODE>.md`.\n')
-    A(f'**{len(built)} problems** &middot; ratings '
-      f'{rated[0]["num_rating"]} to {rated[-1]["num_rating"]}'
-      f'{f" &middot; {len(unrated)} unrated" if unrated else ""}\n')
-
-    A('## Bands\n')
-    A('| Band | Problems | Most common topic |')
-    A('|---|---:|---|')
-    for lo in sorted(bands):
-        rows = bands[lo]
-        top = Counter(r['topic'] for r in rows).most_common(1)[0]
-        anchor = f'#{lo}{lo + BAND - 1}'
-        A(f'| [{lo}&ndash;{lo + BAND - 1}]({anchor}) | {len(rows)} '
-          f'| {top[0]} ({top[1]}) |')
-    if unrated:
-        top = Counter(r['topic'] for r in unrated).most_common(1)[0]
-        A(f'| [Unrated](#unrated) | {len(unrated)} | {top[0]} ({top[1]}) |')
-    A('')
-
-    def table(rows):
-        A('| Rating | Problem | Topic | Technique | CodeChef tags |')
-        A('|---:|---|---|---|---|')
-        for r in rows:
-            shown = r['num_rating'] if r['num_rating'] > 0 else '&ndash;'
-            tags = ', '.join(f'`{t}`' for t in r['tags'][:4]) or '&ndash;'
-            A(f'| {shown} | [{r["name"]}]({r["rated_file"]}) `{r["code"]}` '
-              f'| {r["topic"]} | {r["subtopic"]} | {tags} |')
-        A('')
-
-    for lo in sorted(bands):
-        A(f'## {lo}&ndash;{lo + BAND - 1}\n')
-        table(bands[lo])
-    if unrated:
-        A('## Unrated\n')
-        A('CodeChef publishes no difficulty rating for these.\n')
-        table(unrated)
-
-    A('---\n')
-    A('Generated by `python3 tools/build_docs.py` - edit '
-      '`data/authored/<CODE>.md` or `solutions/<CODE>.py` and rebuild.\n')
-    os.makedirs(RATED, exist_ok=True)
-    with open(os.path.join(RATED, 'README.md'), 'w', encoding='utf-8') as f:
-        f.write('\n'.join(L).rstrip() + '\n')
 
 
 def write_index(built, codes):
@@ -522,8 +437,9 @@ def write_index(built, codes):
     A('## Views\n')
     A('- **[By topic](#problems-by-topic)** - the index below, and '
       '`docs/<topic>/<CODE>.md`.')
-    A('- **[By difficulty](by-rating/README.md)** - the same write-ups ordered '
-      'by CodeChef rating, in `by-rating/`, each naming the topics used.')
+    A('- **[By rating](by-rating/README.md)** - the same problems numbered '
+      '`001`-`486` in difficulty order, each with the topic used, the '
+      'constraints, the approach, the solution, its edge cases and a dry run.')
     A('')
     A('## Phases\n')
     A('| Phase | Problems | Documented |')
@@ -545,7 +461,7 @@ def write_index(built, codes):
     A('## Repository layout\n')
     A('```')
     A('docs/<topic>/<CODE>.md       write-ups grouped by topic')
-    A('by-rating/<rating>-<CODE>.md the same write-ups in difficulty order')
+    A('by-rating/<NNN>-<CODE>.md   the same problems in rating order')
     A('solutions/<CODE>.py          runnable Python solutions')
     A('data/authored/<CODE>.md      hand written approach + metadata')
     A('data/raw/<CODE>.json         problem payloads fetched from CodeChef')
@@ -567,22 +483,21 @@ def write_index(built, codes):
         f.write('\n'.join(L).rstrip() + '\n')
 
 
-CPX_ORDER = {}
+SEQ = {}
 
 
 def main():
-    global CPX_ORDER
+    global SEQ
     codes = open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
-    CPX_ORDER = complexity_order(codes)
+    SEQ = rating_order(codes)
     built = [build_one(c) for c in codes
              if os.path.exists(os.path.join(AUTH, f'{c}.md'))
              and os.path.exists(os.path.join(SOLN, f'{c}.py'))]
     write_index(built, codes)
-    write_rating_index(built)
-    cpx = [b for b in built if b['has_extras']]
-    write_complexity_index(cpx, CPX_ORDER)
-    print(f'built {len(built)} / {len(codes)} docs; '
-          f'by-complexity written for {len(cpx)}')
+    write_study_index(built, SEQ)
+    extras = sum(1 for b in built if b['has_extras'])
+    print(f'built {len(built)} / {len(codes)} docs in two views; '
+          f'{extras} have edge cases and a dry run')
 
 
 if __name__ == '__main__':

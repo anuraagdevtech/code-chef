@@ -20,18 +20,15 @@ Formally, a snake is represented by a 'H' followed by some (possibly zero) '.'s,
 
 Chef had binged on the festival food and had been very drowsy. So his report might be invalid. You need to help him find out if his report is valid or not.
 
-### Input
-
+**Input**
 - The first line contains a single integer, $R$, which denotes the number of reports to be checked. The description of each report follows after this.
 - The first line of each report contains a single integer, $L$, the length of that report.
 - The second line of each report contains a string of length $L$. The string contains only the characters '.', 'H', and 'T'.
 
-### Output
-
+**Output**
 - For each report, output the string **Valid** or **Invalid** in a new line, depending on whether it was a valid report or not.
 
-### Constraints
-
+**Constraints**
 - $1 \le R \le 500$
 - $1 \le L \le 500$
 

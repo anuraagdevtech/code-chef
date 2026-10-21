@@ -20,8 +20,7 @@ You have given $Q$ queries of either of the two types
 
 •	Type 2.  $(-1)$ In this Query Sudhanva takes out the topmost book, you have to print the number on the book he just took out. If the shelf is empty and Sudhanva is trying to take out a book, print "kuchbhi?" Without quotes
 
-### Input:
-
+**Input:**
 - First line will contain $Q$, number of queries
 - Following $Q$ lines will contain queries of one of the types mentioned
 - Type 1:    $1$ $N$
@@ -29,14 +28,14 @@ You have given $Q$ queries of either of the two types
 - Type 2:    $-1$
 	This query specifies that Sudhanva takes out the topmost books from the shelf.
 
-### Output:
+**Output:**
 For each query of Type 2, print the number $N$ on the book he just took out, if the shelf was empty and it was not possible to take out a book, then print "kuchbhi?" (without quotes)  Each output should be printed on a new line.
 
-### Constraints
+**Constraints**
 - $1 \leq Q \leq 10^6$
 - $1 \leq N \leq 10^9$
 
-### Subtasks
+**Subtasks**
 - 100 points : Original Constraints
 
 ## Constraints

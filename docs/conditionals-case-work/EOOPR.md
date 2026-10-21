@@ -26,14 +26,13 @@ He can perform any one of the following operations for one round of cleaning:
 
 Find minimum number of rounds (possibly zero) to make lab clean.
 
-###Input:
-
+**Input:**
 - First line will contain $T$, number of test cases. $T$ testcases follow :
 - Each test case contains two space separated integers $X, Y$.
 
-###Output:
+**Output:**
 For each test case, output an integer denoting minimum number of rounds to clean the lab.
-###Constraints
+**Constraints**
 - $1 \leq T \leq 10^5$
 - $ |X|,|Y| \leq 10^9$
 

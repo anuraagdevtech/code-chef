@@ -18,21 +18,21 @@ Now Chef finally decides to use his special power which he has gained through ye
 
 Find out whether Chef can use one of the available time zones to solve the problem and submit it before the contest ends.
 
-### Input
+**Input**
 - The first line of the input contains three space-separated integers $N$, $H$ and $x$.
 - The second line contains $N$ space-separated integers $T_1, T_2, \ldots, T_N$.
 
-### Output
+**Output**
 Print a single line containing the string `"YES"` if Chef can solve the problem on time or `"NO"` if he cannot.
 
 You may print each character of each string in uppercase or lowercase (for example, the strings "yEs", "yes", "Yes" and "YES" will all be treated as identical).
 
-### Constraints
+**Constraints**
 - $1 \leq N \leq 100$
 - $1 \leq x \lt H \leq 100$
 - $1 \leq T_i \leq 100$ for each valid $i$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

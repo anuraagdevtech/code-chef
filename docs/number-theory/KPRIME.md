@@ -18,17 +18,14 @@ The game is called **Count K-Primes**. A number is a $K$-prime if it has exactly
 
 Bob hasn't prepared so well. But he really wants to win the game. He wants you to tell him the correct answer.
 
-### Input
-
+**Input**
 - First line of input contains a single integer $T$, the number of times they play.
 - Each game is described in a single line containing the three numbers $A$,$B$ & $K$.
 
-### Output
-
+**Output**
 For each game, output on a separate line the number of $K$-primes between $A$ & $B$.
 
-### Constraints:
-
+**Constraints:**
 - $1 \le T \le 10000$
 - $2 \le A \le B \le 100000$
 - $1 \le K \le 5$
@@ -38,8 +35,8 @@ For each game, output on a separate line the number of $K$-primes between $A$ & 
 - $1 \le T \le 10000$
 - $2 \le A \le B \le 100000$
 - $1 \le K \le 5$
-### Example:
-### Sample Input
+**Example:**
+**Sample Input**
 ```
 4
 2 5 1
@@ -47,7 +44,7 @@ For each game, output on a separate line the number of $K$-primes between $A$ & 
 14 15 2
 2 20 3
 ```
-### Sample Output
+**Sample Output**
 ```
 4
 2

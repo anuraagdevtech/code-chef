@@ -25,21 +25,21 @@ Motu and Tomu already chose a sequence $A$ for this game. However, since Tomu pl
 
 Now, Tomu wants you to determine if it is possible to perform up to $K$ swaps in such a way that he can win this game.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two space-separated integers $N$ and $K$ denoting the number of elements in the sequence and the maximum number of swaps Tomu can perform.
 - The second line contains $N$ space-separated integers $A_0, A_1, \dots, A_{N-1}$.
 
-### Output
+**Output**
 For each test case, print a single line containing the string `"YES"` if Tomu can win the game or `"NO"` otherwise (without quotes).
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N \le 10,000$
 - $0 \le K \le 10,000$
 - $1 \le A_i \le 10,000$ for each valid $i$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (20 points):** $1 \le N \le 100$
 
 **Subtask #2 (80 points):** original constraints

@@ -20,14 +20,14 @@ The UEFA Champions League is the most prestigious annual sports competition in t
 
 Each team plays two matches against every other team in its group ― one match as the home team and one match as the away team. You are given the number of goals scored by each team for all twelve matches in one group. Determine the leaders of this group ― the first and second top-ranked team. It is guaranteed that there are no ties for either of these places (for the given results of the matches).
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - For each test case, $12$ lines follow. Each of these lines describes the result of one match in the format `HomeTeamName HomeTeamGoals vs. AwayTeamGoals AwayTeamName`, where `HomeTeamName` and `AwayTeamName` are strings and `HomeTeamGoals` and `AwayTeamGoals` are integers denoting the number of goals scored by the respective teams in this match.
 
-### Output
+**Output**
 For each scenario, print a single line containing two space-separated strings ― the name of the top-ranked team and the name of the second top-ranked team.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 50$
 - the length of the name of each team does not exceed $10$
 - the name of each team contains only lowercase English letters

@@ -21,15 +21,15 @@ A lot of employees are friends with each other. The friendship is mutual. This m
 If two employees are friends, they do not want to escape through different routes.
 This complicates the task for the Chef. As already mentioned, he wants to have the maximum number of fire escape routes to ensure maximum safety. Also, for every escape route, one of the employees using that route needs to be appointed as the fire drill captain. The captain will be responsible for conducting the mock drills and train all the employees using that route. Your task is simple. Given the number of employees and the friendship list, you need to tell the Chef the maximum number of fire escape routes that he can have in the building and the number of ways of selecting the captains for every route. Since the number of ways can be really large, output this value modulo $10^{9} + 7$.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$, denoting the number of test cases. The description of T test cases follows.
 - The first line of each test case contains two space-separated integers $N$ and $M$, denoting the number of employees and the number of friendship relations, respectively.
 - Each of the following $M$ lines contains two space-separated integers $i$ and $j$, denoting that employee $i$ and employee $j$ are friends.
 
-### Output
+**Output**
 For each test case, output a single line containing two space separated integers, denoting the maximum number of distinct fire escape routes that can be constructed and the number of ways of selecting the captains modulo $10^{9} + 7$.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 5$
 - $1 \leq N \leq 10^{5}$
 - $0 \leq M \leq 10^{5}$

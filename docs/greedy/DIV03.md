@@ -16,21 +16,21 @@ Daanish as always is busy creating and solving his favourite and interesting gra
 
 A participant hacked Daanish's account and got access to the problem proposal document. He can delete up to $K$ problems from the document in order to reduce the difficulty of the contest for himself and his friends. Find the smallest possible value of the difficulty of the most difficult problem which remains after removing $K$ problems.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains $10$ space-separated integers $A_1, A_2, \ldots, A_{10}$.
 - The second line contains a single integer $K$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the minimum difficulty of the most difficult remaining problem.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 2 \cdot 10^4$
 - $0 \leq A_i \leq 10^8$ for each valid $i$
 - $A_1 + A_2 + \ldots + A_{10} \gt 0$
 - $0 \leq K \lt A_1 + A_2 + \ldots + A_{10}$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

@@ -16,14 +16,14 @@ You are playing EVE Online. Initially, you have one dollar, but you have somehow
 
 You want to have exactly $N$ dollars. Now you are wondering: can you achieve that by only using some sequence of cheat codes?
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains a single integer $N$.
 
-### Output
+**Output**
 - For each test case, print a single line containing the string `"Yes"` if you can make exactly $N$ dollars or `"No"` otherwise.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N \le 10^{18}$
 

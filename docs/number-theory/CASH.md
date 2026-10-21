@@ -21,22 +21,22 @@ There are $N$ bags with coins in a row (numbered $1$ through $N$); for each vali
 
 Of course, the number of coins placed in the last $N-c$ bags must not exceed the number of coins taken out from the first $c$ bags, but there may be some coins left over. Let's denote the number of these coins by $R$. You should find the smallest possible value of $R$.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two integers $N$ and $K$.
 - The second line contains $N$ space-separated integers $A_1, A_2, \ldots, A_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the smallest value of $R$.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10^3$
 - $1 \le N \le 10^5$
 - $0 \le A_i \le 10^9$ for each valid $i$
 - $1 \le K \le 10^9$
 - the sum of $N$ over all test cases does not exceed $10^5$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (10 points):** $K = 2$
 
 **Subtask #2 (20 points):** $N \le 3$

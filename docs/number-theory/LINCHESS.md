@@ -19,24 +19,24 @@ Chef wants to play a game of *linear chess* on a one-dimensional board ― an in
 
 Unfortunately, Chef cannot move his pawn during the game, making him an easy target for other players. Given the starting positions of all $N+1$ players, find a player who can capture Chef's pawn in the smallest number of moves or determine that no player can capture his pawn.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two space-separated integers $N$ and $K$.
 - The second line contains $N$ space-separated integers $P_1, P_2, \ldots, P_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the starting square of one player that can beat Chef in the smallest number of turns, or $-1$ if no player can beat him.
 
 If there are multiple solutions, you may find any one.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N \le 1,000$
 - $1 \le K \le 10^9$
 - $1 \le P_i \le 10^9$ for each valid $i$
 - $K, P_1, P_2, \ldots, P_N$ are pairwise distinct
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (100 points):** original constraints
 
 ## Constraints

@@ -21,18 +21,18 @@ Consider a list of integers $L$. Initially, $L$ contains the integers $1$ throug
 
 At the end, $L$ contains exactly one integer. Find the maximum possible value of this integer. Since the answer may be large, compute it modulo $1,000,000,007$ ($10^9+7$).
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains a single integer $N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the maximum possible value of the final number in the list modulo $10^9+7$.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100,000$
 - $1 \le N \le 1,000,000$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (20 points):** $1 \le T, N \le 25$
 
 **Subtask #2 (80 points):** original constraints

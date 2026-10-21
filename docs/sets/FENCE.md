@@ -20,15 +20,15 @@ You want to build fences in the field in such a way that the following condition
 
 The fences can only be built between cells or on the boundary of the grid, i.e. on the sides of cells. The total length of the built fences is the number of pairs of side-adjacent cells such that there is a fence built on their common side plus the number of sides of cells on the boundary of the grid which have fences built on them. Find the minimum required total length of fences that need to be built.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains three space-separated integers $N$, $M$ and $K$.
 - $K$ lines follow. Each of these lines contains two space-separated integers $r$ and $c$ denoting that the cell in row $r$ and column $c$ contains a plant.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer — the minimum required length of fences.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10$
 - $1 \le N, M \le 10^9$
 - $1 \le K \le 10^5$
@@ -36,7 +36,7 @@ For each test case, print a single line containing one integer — the minimum r
 - $1 \le c \le M$
 - the cells containing plants are pairwise distinct
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):** $1 \le N, M \le 1,000$
 
 **Subtask #2 (70 points):** original constraints

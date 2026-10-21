@@ -17,16 +17,16 @@ $$N \,\%\, L \gt N \,\%\, (L + 1) \gt \ldots \gt N \,\%\, (R - 1) \gt N \,\%\, R
 
 Here, $\%$ is the modulo operator, so $A \,\%\, B$ is the remainder of $A$ after division by $B$. For example, $11 \,\%\, 3 = 2$.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first and only line of each test case contains two space-separated integers $L$ and $R$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the smallest possible $N$, or $-1$ if no solution exists.
 
 It is guaranteed that when a solution exists, the smallest solution does not exceed $10^{18}$.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10^5$
 - $1 \le L \lt R \le 10^6$
 

@@ -15,22 +15,22 @@
 Given an array  $A_1, A_2, .., A_N$  of size $N$ and an integer $K$.
 You want to choose $K$ elements from array $A$ such that difference between maximum and minimum element ( from chosen elements) is minimum.
 
-### Input
+**Input**
 - The first line of input contains one integer $T$.
 - The first line of each test case contains two space-separated integers $N$ and $K$.
 - The second line of each test case contains $N$ space-separated integers $A_i$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer —  difference between maximum and minimum element.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 100$
 - $1 \le N \le 10^5$
 - $1 \le K \le N$
 - $0 \le A_i \le 10^9$
 - Sum of $N$ over all test cases doesn't exceed $2*10^6$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (10 points):**
 - $1 \le N \le 20$
 

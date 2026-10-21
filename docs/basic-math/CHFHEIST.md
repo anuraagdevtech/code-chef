@@ -16,20 +16,19 @@ Read problem statements in [Vietnamese](https://www.codechef.com/download/transl
 
 Chef is planning a heist in the reserve bank of Chefland. They are planning to hijack the bank for $D$ days and print the money. The initial rate of printing the currency is $P$ dollars per day and they increase the production by $Q$ dollars after every interval of $d$ days. For example, after $d$ days the rate is $P+Q$ dollars per day, and after $2d$ days the rate is $P+2Q$ dollars per day, and so on. Output the amount of money they will be able to print in the given period.
 
-### Input
-
+**Input**
 - The first line contains an integer $T$, the number of test cases. Then the test cases follow.
 - Each test case contains a single line of input, four integers $D, d, P, Q$.
 
-### Output
+**Output**
 For each test case, output in a single line the answer to the problem.
 
-### Constraints
+**Constraints**
 - $1 \leq T \leq 10^5$
 - $1 \leq d \leq D \leq 10^6$
 - $1 \leq P, Q \leq 10^6$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (15 points):** $d \leq D \leq 100$
 
 **Subtask #2 (85 points):** original constraints

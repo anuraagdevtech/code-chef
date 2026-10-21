@@ -16,20 +16,20 @@ Chef has a sequence $A_1, A_2, \ldots, A_N$. This sequence has exactly $2^N$ sub
 
 Help Chef find the number of interesting subsequences of the sequence $A$.
 
-### Input
+**Input**
 - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
 - The first line of each test case contains two space-separated integers $N$ and $K$.
 - The second line contains $N$ space-separated integers $A_1, A_2, \ldots, A_N$.
 
-### Output
+**Output**
 For each test case, print a single line containing one integer ― the number of interesting subsequences.
 
-### Constraints
+**Constraints**
 - $1 \le T \le 10$
 - $1 \le K \le N \le 50$
 - $1 \le A_i \le 100$ for each valid $i$
 
-### Subtasks
+**Subtasks**
 **Subtask #1 (30 points):** $1 \le N \le 20$
 
 **Subtask #2 (70 points):** original constraints
