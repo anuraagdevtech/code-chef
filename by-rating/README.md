@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **247 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **261 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -15,7 +15,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
-| [1400&ndash;1599](#14001599) | 118 | 23 | Greedy (18) |
+| [1400&ndash;1599](#14001599) | 118 | 37 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
@@ -299,20 +299,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 245 | [Balanced and Unique Arrays](245-UNQEQ.md) `UNQEQ` | 1431 | Constructive | Balanced split with distinct prefixes | yes |
 | 246 | [Maximum Angriness](246-MAXAGRY.md) `MAXAGRY` | 1432 | Combinatorics | Maximising inversions with limited swaps | yes |
 | 247 | [Permutation Xority](247-PERMXORITY.md) `PERMXORITY` | 1437 | Constructive | Cancelling a XOR with a 1-2-3 triple | yes |
-| 248 | [Akash and Dinner](248-CHEFDINE.md) `CHEFDINE` | 1438 | Greedy | Cheapest representative per group | &ndash; |
-| 249 | [HTML Tags](249-HTMLTAGS.md) `HTMLTAGS` | 1441 | Strings | Validating a format | &ndash; |
-| 250 | [The Nights Watch](250-WTCH.md) `WTCH` | 1441 | Greedy | Leftmost-feasible placement | &ndash; |
-| 251 | [Average Flex](251-AVGFLEX.md) `AVGFLEX` | 1442 | Arrays | Counting against a global threshold | &ndash; |
-| 252 | [Chef and Coins Game](252-CHCOINSG.md) `CHCOINSG` | 1442 | Game Theory | Losing positions form a residue class | &ndash; |
-| 253 | [High Frequency](253-HIGHFREQ.md) `HIGHFREQ` | 1443 | Greedy | Halving the top frequency against the runner-up | &ndash; |
-| 254 | [Sleepy Chef](254-FILL01.md) `FILL01` | 1445 | Greedy | Independent runs, each packed by division | &ndash; |
-| 255 | [Make Array Odd](255-MAKEARRAYODD.md) `MAKEARRAYODD` | 1445 | Bit Manipulation | Tracking a single bit through XOR and OR | &ndash; |
-| 256 | [Cutting Pizza](256-CUTPIZ.md) `CUTPIZ` | 1446 | Number Theory | GCD of angular gaps | &ndash; |
-| 257 | [Counting Flags](257-FLAGS.md) `FLAGS` | 1446 | Combinatorics | Chromatic polynomials of small graphs | &ndash; |
-| 258 | [K-MEX](258-KMEX.md) `KMEX` | 1450 | Conditionals & Case Work | Feasibility as a counting interval | &ndash; |
-| 259 | [Control the Pollution](259-SMOKE.md) `SMOKE` | 1450 | Brute Force | Searching one variable over a small range | &ndash; |
-| 260 | [Yet another SOD problem](260-SOD3.md) `SOD3` | 1459 | Number Theory | Digit sum congruent to the value mod 3 | &ndash; |
-| 261 | [Polygon Relationship](261-POLYREL.md) `POLYREL` | 1460 | Geometry | Halving the vertex count down to a triangle | &ndash; |
+| 248 | [Akash and Dinner](248-CHEFDINE.md) `CHEFDINE` | 1438 | Greedy | Cheapest representative per group | yes |
+| 249 | [HTML Tags](249-HTMLTAGS.md) `HTMLTAGS` | 1441 | Strings | Validating a format | yes |
+| 250 | [The Nights Watch](250-WTCH.md) `WTCH` | 1441 | Greedy | Leftmost-feasible placement | yes |
+| 251 | [Average Flex](251-AVGFLEX.md) `AVGFLEX` | 1442 | Arrays | Counting against a global threshold | yes |
+| 252 | [Chef and Coins Game](252-CHCOINSG.md) `CHCOINSG` | 1442 | Game Theory | Losing positions form a residue class | yes |
+| 253 | [High Frequency](253-HIGHFREQ.md) `HIGHFREQ` | 1443 | Greedy | Halving the top frequency against the runner-up | yes |
+| 254 | [Sleepy Chef](254-FILL01.md) `FILL01` | 1445 | Greedy | Independent runs, each packed by division | yes |
+| 255 | [Make Array Odd](255-MAKEARRAYODD.md) `MAKEARRAYODD` | 1445 | Bit Manipulation | Tracking a single bit through XOR and OR | yes |
+| 256 | [Cutting Pizza](256-CUTPIZ.md) `CUTPIZ` | 1446 | Number Theory | GCD of angular gaps | yes |
+| 257 | [Counting Flags](257-FLAGS.md) `FLAGS` | 1446 | Combinatorics | Chromatic polynomials of small graphs | yes |
+| 258 | [K-MEX](258-KMEX.md) `KMEX` | 1450 | Conditionals & Case Work | Feasibility as a counting interval | yes |
+| 259 | [Control the Pollution](259-SMOKE.md) `SMOKE` | 1450 | Brute Force | Searching one variable over a small range | yes |
+| 260 | [Yet another SOD problem](260-SOD3.md) `SOD3` | 1459 | Number Theory | Digit sum congruent to the value mod 3 | yes |
+| 261 | [Polygon Relationship](261-POLYREL.md) `POLYREL` | 1460 | Geometry | Halving the vertex count down to a triangle | yes |
 | 262 | [Chef and Adventures](262-CHEFADV.md) `CHEFADV` | 1462 | Number Theory | Divisibility with an optional one-off offset | &ndash; |
 | 263 | [GCD operations](263-GCDOPS.md) `GCDOPS` | 1462 | Constructive | Each reduction has a self-fixing pivot | &ndash; |
 | 264 | [Triangle Classification](264-TRIANGCL.md) `TRIANGCL` | 1462 | Geometry | Classifying with squared lengths | &ndash; |

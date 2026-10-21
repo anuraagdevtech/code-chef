@@ -2,8 +2,6 @@
 
 > [`AVGFLEX`](https://www.codechef.com/problems/AVGFLEX) &middot; difficulty **1442** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -113,6 +111,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The condition is a strict majority including yourself.** With $c$ students scoring at most $A_i$, the rest number $n - c$, so boasting means $c > n - c$, i.e. $2c > n$. This is a median test, *not* a comparison against the average — on $2, 1, 3$ the mean is $2$ and the median rule happens to agree, but the two rules diverge on skewed inputs.
+- **Equal scores all boast or none do.** The third row has three $30$s, each seeing $c = 4$ out of $4$, so all three boast; ties are counted in the "less than or equal" side by definition.
+- **All scores identical** (the first row): every student sees $c = n$, so everyone boasts.
+- **An even $N$ makes the threshold strict.** With $n = 4$, $c = 2$ gives $4 > 4$, which is false — exactly half is not a majority.
+- **$A_i$ may be $0$**, which is an ordinary score.
+- **$N \leq 100$** makes the quadratic double count affordable; sorting once would give $O(N \log N)$ if the bounds were larger.
+
+## Dry run
+
+Second sample: scores $2, 1, 3$, so $n = 3$.
+
+| student | score | $c$ = count $\leq$ score | $n - c$ | $c > n - c$? |
+|---:|---:|---:|---:|:---:|
+| 1 | 2 | 2 | 1 | yes |
+| 2 | 1 | 1 | 2 | no |
+| 3 | 3 | 3 | 0 | yes |
+
+Output `2`.
 
 ---
 

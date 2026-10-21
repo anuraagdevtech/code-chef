@@ -2,8 +2,6 @@
 
 > [`HTMLTAGS`](https://www.codechef.com/problems/HTMLTAGS) &middot; difficulty **1441** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -120,6 +118,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The length check must come first.** A valid tag needs at least four characters (`</x>`), so `</>` with an empty body is an `Error` — and slicing before checking would hand `all` an empty sequence, which returns `True`.
+- **`isalnum()` would be wrong.** It accepts uppercase letters, so `</aA>` would pass; the last sample row is exactly this and must be an `Error`. The test is `islower() or isdigit()` per character.
+- **A digit-only body is valid** — the fourth row, `</5>`.
+- **A `/` inside the body is invalid** (the last row, `<//aA>`), so checking the `</` prefix alone is not enough; every body character needs testing.
+- **Both ends must match**: `Clearly_Invalid` fails the prefix and the suffix together, but either one alone is disqualifying.
+- **Characters are confined to ASCII $33$–$126$ with no spaces**, which is what makes `islower()` and `isdigit()` safe here — both would also accept non-ASCII letters and digits that the input cannot contain — and lets each tag be read as a single whitespace-delimited token.
+
+## Dry run
+
+| tag | length $\geq 4$ | starts `</` | ends `>` | body | all lower/digit | output |
+|---|:---:|:---:|:---:|---|:---:|---|
+| `</h1>` | yes | yes | yes | `h1` | yes | `Success` |
+| `Clearly_Invalid` | yes | **no** | no | — | — | `Error` |
+| `</singlabharat>` | yes | yes | yes | `singlabharat` | yes | `Success` |
+| `</5>` | yes | yes | yes | `5` | yes | `Success` |
+| `<//aA>` | yes | yes | yes | `/aA` | **no** | `Error` |
 
 ---
 

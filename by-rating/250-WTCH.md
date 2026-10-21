@@ -2,8 +2,6 @@
 
 > [`WTCH`](https://www.codechef.com/problems/WTCH) &middot; difficulty **1441** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -108,6 +106,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Placing as early as legal is optimal.** Any valid set of new towers can be shifted leftward one tower at a time without losing any, so the leftmost-feasible greedy matches the maximum — no lookahead is needed.
+- **The ends have only one neighbour**, which the `j == 0` and `j == n - 1` guards cover; the second row places towers at both index $0$ and the final index $10$.
+- **The string must be mutated as the scan proceeds**, or later positions will not see the towers just placed. In the second row, index $9$ is blocked solely by the tower placed at index $8$ a moment earlier.
+- **The input is guaranteed to start valid** — no two consecutive towers are occupied — so no pre-check is needed and the greedy can begin immediately.
+- **A `bytearray` keeps the mutation in place**, and comparing against the byte literals `0x30`/`0x31` avoids decoding up to a megabyte of input.
+- **Sum of $N \leq 10^6$**: a single pass with no per-character object creation.
+
+## Dry run
+
+Second sample: `00101010000`, $N = 11$.
+
+| index | char | left free | right free | place? | string becomes |
+|---:|---|:---:|:---:|:---:|---|
+| 0 | `0` | edge | yes | **yes** | `10101010000` |
+| 1–7 | — | blocked by a neighbour | | no | — |
+| 8 | `0` | yes | yes | **yes** | `10101010100` |
+| 9 | `0` | **no** (just placed) | | no | — |
+| 10 | `0` | yes | edge | **yes** | `10101010101` |
+
+Output `3`.
 
 ---
 

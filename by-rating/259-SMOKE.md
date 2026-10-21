@@ -2,8 +2,6 @@
 
 > [`SMOKE`](https://www.codechef.com/problems/SMOKE) &middot; difficulty **1450** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -116,6 +114,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Only the bus count needs searching.** Once it is fixed, the leftover people must all go by car, so the car count is forced at $\lceil \text{rest}/4 \rceil$ — one variable, not two.
+- **The last bus may run under-filled.** The third row puts $100$ of $105$ people on one bus and the other five in two cars, which beats both all-car and two-bus options.
+- **More than $\lceil N/100 \rceil$ buses can never help**, which bounds the loop at eleven iterations; `max(0, …)` keeps the remainder non-negative at that last step.
+- **Cars round up too**: nine people need three cars, not two and a quarter.
+- **Either mode can win outright** — the first row takes no buses at all, the second takes no cars.
+- **$N, X, Y \leq 1000$** keeps every candidate cost small, so the brute force is comfortably within budget at $T = 1000$.
+
+## Dry run
+
+Third sample: $N = 105$, bus cost $X = 80$, car cost $Y = 10$.
+
+| buses | carried by bus | rest | cars $\lceil \text{rest}/4 \rceil$ | cost |
+|---:|---:|---:|---:|---:|
+| 0 | 0 | 105 | 27 | 270 |
+| 1 | 100 | 5 | 2 | **100** |
+| 2 | 200 | 0 | 0 | 160 |
+
+Output `100`.
 
 ---
 

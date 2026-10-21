@@ -2,8 +2,6 @@
 
 > [`CHEFDINE`](https://www.codechef.com/problems/CHEFDINE) &middot; difficulty **1438** &middot; time limit **2.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -142,6 +140,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A preparation time of zero is legal** ($B_i \geq 0$), so the per-category minimum must not use $0$ as an "unset" sentinel. The second row's answer depends on a genuine $0$.
+- **Fewer than $K$ distinct categories** → $-1$. The fourth row has only two categories and needs three, even though it has five dishes.
+- **Only the cheapest dish per category counts**, so a category full of slow dishes is represented by its one fast dish and nothing else — the second row's category $1$ offers $3$ and $4$ and contributes only $3$.
+- **Exactly $K$ categories** → every one of them is used and the sort is a formality.
+- **Category labels are compared as raw byte tokens**, which is safe because the input has no leading zeros, so each label has one spelling.
+- **Sum of $N \leq 10^5$**: only the per-category minima are sorted, at most $\min(N, \text{distinct})$ values.
+
+## Dry run
+
+Second sample: $N = 8$, $K = 3$, categories $1,3,2,2,4,1,3,5$ with times $3,3,0,1,2,4,1,4$.
+
+| category | times offered | cheapest |
+|---:|---|---:|
+| 1 | $3, 4$ | 3 |
+| 2 | $0, 1$ | **0** |
+| 3 | $3, 1$ | 1 |
+| 4 | $2$ | 2 |
+| 5 | $4$ | 4 |
+
+Five categories available, so pick the three cheapest minima: $0 + 1 + 2 = $ `3`.
 
 ---
 

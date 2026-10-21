@@ -2,8 +2,6 @@
 
 > [`POLYREL`](https://www.codechef.com/problems/POLYREL) &middot; difficulty **1460** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -125,6 +123,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The coordinates are irrelevant.** Only the vertex count matters, so all $2N$ coordinate tokens are skipped wholesale — strict convexity is what guarantees the geometry always permits the counting bound.
+- **Each side of a child must be a chord, never a side, of the parent**, so every child edge skips at least one parent vertex — which caps a child at $\lfloor N/2 \rfloor$ vertices and makes the chain a halving sequence.
+- **The chain stops below $3$**, since a polygon needs three vertices: $N = 4$ contributes only $4$ (its child would have $2$), while $N = 7$ gives $7 + 3 = 10$.
+- **Halving floors**: $7 \to 3$, not $3.5$, so odd counts lose the fractional vertex.
+- **$N \geq 3$ is guaranteed**, so the loop always runs at least once and the answer is never $0$.
+- **Sum of $N$ up to $2 \cdot 10^6$** coordinate pairs to skip, so the file must be read in one buffered call even though nearly all of it is discarded.
+
+## Dry run
+
+| $N$ | chain of polygons | total sides |
+|---:|---|---:|
+| 4 | $4$ (child would need $2$ vertices) | `4` |
+| 7 | $7 \to 3$ (then $1$, too small) | `10` |
+
+For $N = 7$ the child is a triangle on every second vertex; its own child would have one vertex, so the chain ends.
 
 ---
 

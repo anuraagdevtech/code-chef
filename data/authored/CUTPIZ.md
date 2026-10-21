@@ -23,3 +23,26 @@ Sample case 3 is the extreme: cuts at $0°$ and $1°$ force $d = \gcd(360, 1) = 
 Sample case 2 has cuts at $90°$ and $210°$, a gap of $120$, so $d = 120$ and one more cut at $330°$ completes three equal thirds. Sample case 1 is already a perfect quartering.
 
 Note the answer is never negative: $d$ divides every gap, so all $n$ distinct cuts lie on the grid of $360/d$ positions.
+
+## Edge cases
+
+- **$360$ must be seeded into the gcd** so the pattern closes over a full turn. Cuts at $0$ and $240$ have a single difference of $240$, and $360/240$ is not an integer; seeding gives $\gcd(360, 240) = 120$ and the correct answer of one extra cut at $120$.
+- **Already evenly spaced** (the first row, every $90^\circ$) → $0$ extra cuts.
+- **A one-degree offset forces the finest possible division.** The third row's cuts at $0$ and $1$ give $\gcd = 1$, so all $360$ single-degree slices are needed and $358$ cuts must be added.
+- **Differences are taken against a fixed base** rather than between consecutive angles, which gives the same gcd and avoids needing a wrap-around term for the last gap.
+- **$n \geq 2$ is guaranteed**, so at least one difference exists and the gcd is never left at $360$ by default.
+- **The answer is $360/d - n$**, so the existing cuts are subtracted — forgetting that term reports the total slice count instead of the cuts to add.
+
+## Dry run
+
+Second sample: cuts at $90^\circ$ and $210^\circ$.
+
+| step | value |
+|---|---|
+| difference from base | $210 - 90 = 120$ |
+| $\gcd(360, 120)$ | $120$ |
+| total slices needed | $360 / 120 = 3$ |
+| cuts already made | $2$ |
+| extra cuts | `1` |
+
+The missing cut is at $330^\circ$, completing three $120^\circ$ slices.

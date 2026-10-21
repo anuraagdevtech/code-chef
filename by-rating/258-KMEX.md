@@ -2,8 +2,6 @@
 
 > [`KMEX`](https://www.codechef.com/problems/KMEX) &middot; difficulty **1450** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -128,6 +126,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Everything below $K$ is mandatory.** The fourth row lacks any $1$, so no subsequence can have MEX $3$ and the answer is `NO` regardless of the length.
+- **Every copy of $K$ is unusable**, so the pool shrinks by $\mathrm{count}(K)$. The fifth row needs length $4$ but has two $2$s among its five elements, leaving only $3$ usable — `NO`.
+- **The subsequence must be at least $K$ long** just to hold $0, \dots, K-1$. The second row needs length $2$ and $M$ is $1$ — `NO`.
+- **$K = 0$ makes nothing mandatory**, and the test collapses to $M \leq N - \mathrm{count}(0)$.
+- **Duplicates and values above $K$ are free padding**, which is how the sixth row pads out to length $5$ using its extra zeros.
+- **Both bounds are inclusive**: $K \leq M \leq N - \mathrm{count}(K)$, and the third row sits on both ends at once ($K = M = N = 3$).
+
+## Dry run
+
+Fifth sample: $N = 5$, $M = 4$, $K = 2$, $A = 0, 2, 1, 2, 5$.
+
+| check | value | verdict |
+|---|---|---|
+| are $0$ and $1$ present? | yes, one each | ✓ |
+| $K \leq M$ | $2 \leq 4$ | ✓ |
+| usable elements $N - \mathrm{count}(2)$ | $5 - 2 = 3$ | — |
+| $M \leq$ usable | $4 \leq 3$ | **✗** |
+
+Output `NO`: the two $2$s must be excluded, and the remaining $0, 1, 5$ cannot reach length $4$.
 
 ---
 
