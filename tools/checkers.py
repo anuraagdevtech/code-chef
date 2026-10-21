@@ -259,6 +259,52 @@ def _prefperm(inp, got):
     return True, "valid"
 
 
+def _chsqr(inp, got):
+    """CHSQR: a K x K Latin square whose nearest 1 to the centre is at (K-1)/2."""
+    toks = inp.split()
+    t = int(toks[0])
+    sizes = [int(toks[1 + i]) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    idx = 0
+    for k in sizes:
+        if idx + k > len(lines):
+            return False, f"k={k}: not enough rows"
+        grid = [list(map(int, lines[idx + r].split())) for r in range(k)]
+        idx += k
+        want = set(range(1, k + 1))
+        for r in range(k):
+            if len(grid[r]) != k or set(grid[r]) != want:
+                return False, f"k={k}: row {r} is not a permutation of 1..{k}"
+        for c in range(k):
+            if set(grid[r][c] for r in range(k)) != want:
+                return False, f"k={k}: column {c} is not a permutation of 1..{k}"
+        mid = (k - 1) // 2
+        best = min(abs(r - mid) + abs(c - mid)
+                   for r in range(k) for c in range(k) if grid[r][c] == 1)
+        if best != (k - 1) // 2:
+            return False, f"k={k}: nearest 1 at {best}, optimum is {(k - 1) // 2}"
+    return True, "optimal"
+
+
+def _orandcon(inp, got):
+    """ORANDCON: distinct A,B,C <= 1e9 with (A|B)&(B|C)&(C|A) == X."""
+    toks = inp.split()
+    t = int(toks[0])
+    xs = [int(toks[1 + i]) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for x, line in zip(xs, lines):
+        a, b, c = map(int, line.split())
+        if len({a, b, c}) != 3:
+            return False, f"X={x}: values not distinct"
+        if any(v < 0 or v > 10 ** 9 for v in (a, b, c)):
+            return False, f"X={x}: value out of [0, 1e9]"
+        if (a | b) & (b | c) & (c | a) != x:
+            return False, f"X={x}: expression gives {(a | b) & (b | c) & (c | a)}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -269,5 +315,7 @@ CHECKERS = {
     "N1VALUES": _n1values,
     "PALINPAIN": _palinpain,
     "PREFPERM": _prefperm,
+    "CHSQR": _chsqr,
+    "ORANDCON": _orandcon,
     "GCDSUBARRAYS": _gcdsubarrays,
 }

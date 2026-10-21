@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**288 of 486 solved problems documented.**
+**294 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 69 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 75 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 0 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **288** |
+| | **Total** | **502** | **761** | **294** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -25,7 +25,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 |---|---:|---:|
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
-| 3 | 100 | 88 |
+| 3 | 100 | 94 |
 | 4 | 100 | 0 |
 | 5 | 86 | 0 |
 
@@ -168,7 +168,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (7)</summary>
+<details open><summary><b>Bit Manipulation</b> (9)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -179,10 +179,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 273 | [Equal by XORing](docs/bit-manipulation/EQBYXOR.md) | 1507 | The XOR span of an initial segment | $O(1)$ per test case |
 | 276 | [One-XOR Deletions](docs/bit-manipulation/DELXORONE.md) | 1516 | Grouping by the value with its low bit dropped | $O(N)$ per test case |
 | 281 | [Positive or Negative Subarrays](docs/bit-manipulation/POSITNEG.md) | 1526 | One power of two dominates all the lower ones | $O(N)$ per test case |
+| 289 | [XxOoRr](docs/bit-manipulation/XXOORR.md) | 1551 | Bits are independent, so count per column | $O(N \log \max A)$ per test case |
+| 293 | [Yet Another Constructive Problem](docs/bit-manipulation/ORANDCON.md) | 1580 | The expression computes a bitwise majority | $O(1)$ per test case |
 
 </details>
 
-<details open><summary><b>Brute Force</b> (7)</summary>
+<details open><summary><b>Brute Force</b> (8)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -193,6 +195,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 245 | [Control the Pollution](docs/brute-force/SMOKE.md) | 1450 | Searching one variable over a small range | $O(N/100)$ per test case — at most 11 iterations |
 | 254 | [Chef and Numbers](docs/brute-force/CHEFFED.md) | 1477 | Bounding the search window | $O(1)$ — a fixed-width scan |
 | 256 | [Digital clock](docs/brute-force/ONOZ.md) | 1482 | Enumerating a small product space | $O(H \cdot M)$ per test case |
+| 294 | [Missing Numbers](docs/brute-force/MISS_NUM.md) | 1594 | Guessing which two values are the sum and difference | $O(1)$ per test case — twelve candidate assignments |
 
 </details>
 
@@ -238,7 +241,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (8)</summary>
+<details open><summary><b>Constructive</b> (9)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -250,6 +253,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 268 | [Gcd of Subarrays](docs/constructive/GCDSUBARRAYS.md) | 1498 | Starting from the minimum and adding the slack | $O(N)$ per test case |
 | 271 | [Palindrome Pain](docs/constructive/PALINPAIN.md) | 1506 | Counting distinct palindrome halves | $O(X + Y)$ per test case |
 | 284 | [Prefix Permutation](docs/constructive/PREFPERM.md) | 1532 | Blocks that only close at the right moment | $O(N)$ per test case |
+| 292 | [Chef and squares](docs/constructive/CHSQR.md) | 1576 | A shifted cyclic Latin square | $O(K^2)$ per test case |
 
 </details>
 
@@ -405,7 +409,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (26)</summary>
+<details open><summary><b>Strings</b> (28)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -435,6 +439,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 266 | [Harrenhal](docs/strings/HHAL.md) | 1495 | Covering a two-letter string with palindromes | $O(|H|)$ per test case |
 | 277 | [Concat Palindrome](docs/strings/CONCATPAL.md) | 1520 | Multiset containment forced by mirroring | $O(N + M)$ per test case |
 | 285 | [Flip the String](docs/strings/FLIP.md) | 1538 | Two independent parity classes | $O(|A|)$ per test case |
+| 290 | [Chef and Sign Sequences](docs/strings/CHEFSIGN.md) | 1563 | Run lengths scanned from both directions | $O(|s|)$ per test case |
+| 291 | [Boring String](docs/strings/BORSTR.md) | 1566 | Longest repeated run | $O(N)$ per test case |
 
 </details>
 
