@@ -490,6 +490,102 @@ def _lisdigit(inp, got):
     return True, "valid"
 
 
+def _subperm(inp, got):
+    """SUBPERM: any permutation of length N with exactly K good subsegments."""
+    toks = inp.split()
+    t = int(toks[0])
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for i, line in enumerate(lines):
+        n, k = int(toks[1 + 2 * i]), int(toks[2 + 2 * i])
+        vals = [int(x) for x in line.split()]
+        if vals == [-1]:
+            if n > 1 and k == 1:
+                continue
+            return False, f"n={n} k={k}: -1 but a permutation exists"
+        if sorted(vals) != list(range(1, n + 1)):
+            return False, f"n={n}: not a permutation of 1..{n}"
+        # A window is good iff its values are 1..len, i.e. min 1 and max len.
+        good = 0
+        for lo in range(n):
+            mn = mx = vals[lo]
+            for hi in range(lo, n):
+                mn = min(mn, vals[hi])
+                mx = max(mx, vals[hi])
+                if mn == 1 and mx == hi - lo + 1:
+                    good += 1
+        if good != k:
+            return False, f"n={n}: {good} good subsegments, wanted {k}"
+    return True, "valid"
+
+
+def _incrdec(inp, got):
+    """INCRDEC: any strictly-up-then-strictly-down permutation of A."""
+    toks = inp.split()
+    t = int(toks[0])
+    pos = 1
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    li = 0
+    for _ in range(t):
+        n = int(toks[pos])
+        a = [int(x) for x in toks[pos + 1:pos + 1 + n]]
+        pos += 1 + n
+        counts = {}
+        for v in a:
+            counts[v] = counts.get(v, 0) + 1
+        feasible = max(counts.values()) <= 2 and counts[max(counts)] == 1
+        if li >= len(lines):
+            return False, "output ended early"
+        verdict = lines[li].strip().upper()
+        li += 1
+        if verdict == "NO":
+            if feasible:
+                return False, f"said NO but {a} can be arranged"
+            continue
+        if verdict != "YES":
+            return False, f"expected YES/NO, got {verdict!r}"
+        if not feasible:
+            return False, f"said YES but {a} cannot be arranged"
+        vals = [int(x) for x in lines[li].split()]
+        li += 1
+        if sorted(vals) != sorted(a):
+            return False, "not a permutation of A"
+        peak = vals.index(max(vals))
+        up = all(vals[i] < vals[i + 1] for i in range(peak))
+        down = all(vals[i] > vals[i + 1] for i in range(peak, n - 1))
+        if not (up and down):
+            return False, f"{vals} is not increasing then decreasing"
+    return True, "valid"
+
+
+def _mxmedian(inp, got):
+    """MXMEDIAN: any permutation of A attaining the maximum median of B."""
+    toks = inp.split()
+    t = int(toks[0])
+    pos = 1
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    li = 0
+    for _ in range(t):
+        n = int(toks[pos])
+        a = [int(x) for x in toks[pos + 1:pos + 1 + 2 * n]]
+        pos += 1 + 2 * n
+        # The (N+1)/2-th largest element is the best attainable median.
+        best = sorted(a)[n + (n + 1) // 2 - 1]
+        claimed = int(lines[li])
+        li += 1
+        vals = [int(x) for x in lines[li].split()]
+        li += 1
+        if claimed != best:
+            return False, f"reported median {claimed}, optimum is {best}"
+        if sorted(vals) != sorted(a):
+            return False, "not a permutation of A"
+        b = [max(vals[2 * i], vals[2 * i + 1]) for i in range(n)]
+        if sorted(b)[(n + 1) // 2 - 1] != best:
+            return False, f"arrangement gives median {sorted(b)[(n + 1) // 2 - 1]}"
+    return True, "optimal"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -511,4 +607,7 @@ CHECKERS = {
     "GCDSUBARRAYS": _gcdsubarrays,
     "XORORED": _xorored,
     "LISDIGIT": _lisdigit,
+    "SUBPERM": _subperm,
+    "INCRDEC": _incrdec,
+    "MXMEDIAN": _mxmedian,
 }

@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**378 of 486 solved problems documented.**
+**385 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 74 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 81 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **378** |
+| | **Total** | **502** | **761** | **385** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,7 +26,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 78 |
+| 4 | 100 | 85 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
@@ -278,7 +278,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (14)</summary>
+<details open><summary><b>Constructive</b> (16)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -296,6 +296,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 306 | [Indivisible Permutation](docs/constructive/INDIPERM.md) | 1329 | A single cyclic shift | $O(N)$ per test case |
 | 355 | [Digit Longest Increasing Subsequences 2](docs/constructive/LISDIGIT.md) | 1297 | Using the LIS value itself as the digit | $O(n)$ per test case |
 | 368 | [GCD operations](docs/constructive/GCDOPS.md) | 1462 | Each reduction has a self-fixing pivot | $O(N)$ per test case |
+| 379 | [Subarray permutations](docs/constructive/SUBPERM.md) | 1502 | Forcing every good subsegment to be a prefix | $O(N)$ per test case |
+| 382 | [Increasing Decreasing](docs/constructive/INCRDEC.md) | 1557 | Multiplicity bounds for a bitonic arrangement | $O(N \log N)$ per test case |
 
 </details>
 
@@ -320,7 +322,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Geometry</b> (5)</summary>
+<details open><summary><b>Geometry</b> (6)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -329,10 +331,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 108 | [Area OR Perimeter](docs/geometry/AREAPERI.md) | 590 | Comparing area against perimeter | $O(1)$ |
 | 247 | [Triangle Classification](docs/geometry/TRIANGCL.md) | 1462 | Classifying with squared lengths | $O(1)$ per test case |
 | 252 | [Chef and Three Dogs](docs/geometry/CHDOGS.md) | 1473 | Pursuit curve by relative closing speed | $O(1)$ per test case |
+| 383 | [Polygon Relationship](docs/geometry/POLYREL.md) | 1460 | Halving the vertex count down to a triangle | $O(N)$ per test case, all of it input reading |
 
 </details>
 
-<details open><summary><b>Greedy</b> (37)</summary>
+<details open><summary><b>Greedy</b> (39)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -373,6 +376,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 372 | [Sleepy Chef](docs/greedy/FILL01.md) | 1445 | Independent runs, each packed by division | $O(N)$ per test case |
 | 374 | [The Nights Watch](docs/greedy/WTCH.md) | 1441 | Leftmost-feasible placement | $O(N)$ per test case |
 | 377 | [High Frequency](docs/greedy/HIGHFREQ.md) | 1443 | Halving the top frequency against the runner-up | $O(N)$ per test case |
+| 380 | [Largest Family](docs/greedy/LARGEFAM.md) | 1532 | Maximising a set size under a sum budget | $O(N \log N)$ per test case |
+| 381 | [Sticks and Rectangles](docs/greedy/RECSTI.md) | 1555 | Pairing by length, then pairing the pairs | $O(N + \max L)$ per test case |
 
 </details>
 
@@ -437,7 +442,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (8)</summary>
+<details open><summary><b>Prefix Sums</b> (9)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -449,6 +454,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 350 | [Chef and Easy Problem](docs/prefix-sums/XXOR.md) | 1810 | Per-bit prefix counts, decided bit by bit | $O(31(N + Q))$ |
 | 361 | [W String](docs/prefix-sums/WSTRING.md) | 1809 | Per-letter counts over hash-delimited blocks | $O(|S| + 26 h)$ per test case, where $h$ is the number of '#' |
 | 369 | [Gcd Queries](docs/prefix-sums/GCDQ.md) | 1674 | Prefix and suffix GCD arrays | $O(N \log A + Q \log A)$ per test case |
+| 384 | [Dense Bracket Sequence](docs/prefix-sums/DENSE.md) | 1472 | Best split between an open prefix and a close suffix | $O(N)$ per test case |
 
 </details>
 
@@ -483,7 +489,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (22)</summary>
+<details open><summary><b>Sorting</b> (23)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -509,6 +515,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 323 | [Sort by Adjacent Swaps](docs/sorting/ADJSRT.md) | -1 | Insertion sort performs exactly the inversions | $O(n + \text{inversions})$ |
 | 324 | [Stable Quick Sort](docs/sorting/QCKSRT2.md) | -1 | Which pivot choices preserve stability | $O(n)$ |
 | 354 | [Chef and Frogs](docs/sorting/FROGV.md) | 1668 | Connected components from gaps in sorted order | $O(N \log N + P)$ |
+| 385 | [Median of adjacent maximum numbers](docs/sorting/MXMEDIAN.md) | 1523 | Pairing extremes to lift the median | $O(N \log N)$ per test case |
 
 </details>
 
