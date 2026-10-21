@@ -2,8 +2,6 @@
 
 > [`JOGGING`](https://www.codechef.com/problems/JOGGING) &middot; difficulty **1484** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -102,6 +100,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The $K$-th kilometre burns the *total* of the first $K-1$**, which doubles the running total each step: $X, 2X, 4X, \dots$, so the answer is $X \cdot 2^{N-1}$ with no recurrence to iterate.
+- **$N = 1$** → just $X$, and $2^0 = 1$ gives it; writing $2^N$ would double every answer.
+- **The exponent must be computed modularly.** At $N = 10^6$ the true value has over $300{,}000$ digits, so `pow(2, n - 1, MOD)` is essential rather than computing the power and reducing afterwards.
+- **$X \leq 100$ is already below the modulus**, so the `x % MOD` is defensive rather than necessary.
+- **The modulus is $10^9 + 7$**, and the product of two reduced values stays under $10^{18}$ — within 64-bit, and exact in Python.
+- **$T$ up to $10^5$** with one modular exponentiation each, at $O(\log N)$.
+
+## Dry run
+
+| $N$ | $X$ | per-kilometre burn | total |
+|---:|---:|---|---:|
+| 1 | 2 | $2$ | `2` |
+| 2 | 1 | $1, 1$ | `2` |
+| 4 | 1 | $1, 1, 2, 4$ | 8 |
+
+The totals after each kilometre are $X, 2X, 4X, 8X$ — the running sum doubles because the new kilometre equals everything before it.
 
 ---
 

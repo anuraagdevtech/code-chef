@@ -2,8 +2,6 @@
 
 > [`CHEFODD`](https://www.codechef.com/problems/CHEFODD) &middot; difficulty **1486** &middot; time limit **2.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -116,6 +114,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Two independent necessary conditions**, and both must be checked. Each part needs at least two elements, so $N \geq 2K$; and each part needs an odd number of odd elements, so the total count of odds must match $K$ in parity.
+- **The parity condition is what fails the first row.** $N = 5$ has three odd numbers and $K = 2$: three odd counts cannot be split into two odd pieces, since a sum of two odd numbers is even.
+- **The size condition is independent** — $N = 5$ with $K = 3$ would fail on $5 < 6$ instead, even though $3$ and $3$ agree in parity.
+- **The odd count is $\lceil N/2 \rceil$**, so it is $(N+1)/2$ for odd $N$ and $N/2$ for even $N$; writing $N/2$ throughout breaks every odd case.
+- **Even elements are free padding**, which is why they never enter the conditions: they can be distributed anywhere without affecting any sum's parity.
+- **$N$ up to $10^{18}$** demands exact integer arithmetic, with no floating-point halving.
+
+## Dry run
+
+| $N$ | $K$ | odds $\lceil N/2 \rceil$ | $N \geq 2K$? | parity match? | output |
+|---:|---:|---:|:---:|:---:|---|
+| 5 | 2 | 3 | $5 \geq 4$ ✓ | $3$ odd vs $2$ even **✗** | `NO` |
+| 14 | 5 | 7 | $14 \geq 10$ ✓ | $7$ odd, $5$ odd ✓ | `YES` |
+
+For the second row, five parts each take an odd number of the seven odds — for instance three parts with one odd each and two with… in fact $1{+}1{+}1{+}1{+}3 = 7$ works.
 
 ---
 

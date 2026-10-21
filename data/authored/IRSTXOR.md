@@ -21,3 +21,25 @@ Checking $C = 13 = 1101_2$: here $d = 4$, $M = 1111_2$, and $M \oplus C = 0010_2
 For $C = 10 = 1010_2$: $M \oplus C = 0101_2$, $A = 0101 \mid 1000 = 13$, $B = 0101 \mid 0010 = 7$, giving $91$ — larger than for $C = 13$, since the shared ones contribute more.
 
 In Python $d$ is `C.bit_length()`, so the whole thing is a handful of bitwise operations.
+
+## Edge cases
+
+- **The bound $A, B < 2^d$ is what makes the maximum finite.** Without it, both numbers could carry arbitrarily high matching bits — the XOR would be unaffected and the product unbounded.
+- **Bits where $C$ is $0$ should be set in both.** $A$ and $B$ must agree there, and setting both to $1$ raises each factor at no cost to the XOR.
+- **Bits where $C$ is $1$ must differ**, so they are split — and the product is maximised by balancing the two factors, which means giving $A$ the single top bit of $C$ and $B$ all of $C$'s lower set bits. Since $2^{d-1}$ exceeds the sum of everything below it, any other split is worse.
+- **$d = C.\text{bit\_length}()$** is exactly the smallest $d$ with $2^d > C$, for $C \geq 1$.
+- **$C$ a power of two** leaves only one differing bit, so one factor gets it and the other gets all the zero-bits below.
+- **$C \leq 10^9$** keeps the factors under $2^{30}$ and the product under $2^{60}$ — past 32-bit, inside 64-bit, exact in Python.
+
+## Dry run
+
+Sample: $C = 13 = 1101_2$, so $d = 4$ and both factors are below $16$.
+
+| bit | $2^b$ | $C$ | requirement | $A$ | $B$ |
+|---:|---:|---:|---|---:|---:|
+| 3 | 8 | 1 | differ — give to $A$ (top bit) | 1 | 0 |
+| 2 | 4 | 1 | differ — give to $B$ | 0 | 1 |
+| 1 | 2 | 0 | agree — set both | 1 | 1 |
+| 0 | 1 | 1 | differ — give to $B$ | 0 | 1 |
+
+$A = 1010_2 = 10$, $B = 0111_2 = 7$, and $10 \oplus 7 = 13$ with product `70`.

@@ -21,3 +21,21 @@ Sample case 2 shows divisibility passing while the alternation fails: $P = 3$ wi
 Sample case 3 is the off-by-one case that must be **accepted**: $a = 1$ and $b = 2$ differ by exactly one, which happens naturally after three days with Bob starting.
 
 A strict equality check would reject it, and a check omitting the gap entirely would accept cases 2 and 4 — both halves are load-bearing.
+
+## Edge cases
+
+- **Divisibility first**: each person's total must be an exact multiple of their per-day gain, so $P \bmod A$ and $Q \bmod B$ must both be zero. The fourth row passes this and still fails.
+- **Alternation bounds the day counts.** They work on alternate days, so the two counts can differ by at most one — $|P/A - Q/B| \leq 1$. The second row needs $3$ days from Alice and $1$ from Bob, which no alternating schedule produces.
+- **A difference of exactly one is fine** (the third row: one day for Alice, two for Bob), since whoever starts gets the extra day.
+- **Equal counts are fine too** (the first row), corresponding to an even total number of days.
+- **$P, Q \geq 1$**, so both day counts are at least one and the degenerate "nobody works" case cannot arise.
+- **Which of them takes the odd days is not fixed**, which is exactly why the bound is on the absolute difference rather than on a signed one.
+
+## Dry run
+
+| $A$ | $B$ | $P$ | $Q$ | Alice's days | Bob's days | difference | output |
+|---:|---:|---:|---:|---:|---:|---:|---|
+| 1 | 2 | 1 | 2 | 1 | 1 | 0 | `YES` |
+| 1 | 2 | 3 | 2 | 3 | 1 | **2** | `NO` |
+| 4 | 3 | 4 | 6 | 1 | 2 | 1 | `YES` |
+| 3 | 5 | 9 | 25 | 3 | 5 | **2** | `NO` |

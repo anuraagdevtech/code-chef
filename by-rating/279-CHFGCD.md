@@ -2,8 +2,6 @@
 
 > [`CHFGCD`](https://www.codechef.com/problems/CHFGCD) &middot; difficulty **1481** &middot; time limit **0.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -104,6 +102,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Already sharing a factor** (the first row, $\gcd(4,16) = 4$) → $0$ operations, which must be tested first.
+- **One of them even, coprime** → one operation: increment the odd one so both are even and share $2$. The second row turns $55$ into $56$ alongside $4$.
+- **Both odd and coprime** → check whether a single increment suffices. Raising either one may create a shared odd factor, as with $3$ and $5$ where $\gcd(3, 6) = 3$.
+- **The answer is never more than $2$.** Incrementing both makes both even, so $2$ always works — which is why the final branch needs no search.
+- **$X = Y = 1$** is the smallest hard case: $\gcd(2,1) = \gcd(1,2) = 1$, so it costs the full $2$.
+- **$X, Y$ up to $10^9$**: at most three gcd computations per case, each $O(\log)$.
+
+## Dry run
+
+| $X$ | $Y$ | $\gcd$ | parity | single increment helps? | output |
+|---:|---:|---:|---|---|---:|
+| 4 | 16 | 4 | — | — | `0` |
+| 4 | 55 | 1 | one even | yes: $4, 56$ share $4$ | `1` |
+| 3 | 5 | 1 | both odd | yes: $\gcd(3,6) = 3$ | `1` |
+| 1 | 1 | 1 | both odd | no | `2` |
+
+The last row needs $2, 2$, which share the factor $2$.
 
 ---
 

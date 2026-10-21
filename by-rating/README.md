@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **275 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **289 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -15,7 +15,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
-| [1400&ndash;1599](#14001599) | 118 | 51 | Greedy (18) |
+| [1400&ndash;1599](#14001599) | 118 | 65 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
@@ -327,20 +327,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 273 | [Order by XOR](273-XOR_ORDER.md) `XOR_ORDER` | 1476 | Bit Manipulation | The highest differing bit decides an XOR comparison | yes |
 | 274 | [Chef and Numbers](274-CHEFFED.md) `CHEFFED` | 1477 | Brute Force | Bounding the search window | yes |
 | 275 | [Majin Vegeta](275-VEGETA.md) `VEGETA` | 1477 | Number Theory | Sieve counting distinct prime factors | yes |
-| 276 | [Max Mex](276-MEX.md) `MEX` | 1478 | Greedy | Spending a budget on the smallest gaps first | &ndash; |
-| 277 | [Count Subarrays](277-SUBINC.md) `SUBINC` | 1478 | Arrays | Counting subarrays by maximal runs | &ndash; |
-| 278 | [Distinct Pair Sums](278-MANYSUMS.md) `MANYSUMS` | 1480 | Basic Math | Range of achievable sums | &ndash; |
-| 279 | [Chef and GCD](279-CHFGCD.md) `CHFGCD` | 1481 | Number Theory | Case analysis on parity | &ndash; |
-| 280 | [Digital clock](280-ONOZ.md) `ONOZ` | 1482 | Brute Force | Enumerating a small product space | &ndash; |
-| 281 | [Alternating Divisibility](281-ALTERNATEDIV.md) `ALTERNATEDIV` | 1483 | Constructive | Pairing k with 2k | &ndash; |
-| 282 | [Jogging](282-JOGGING.md) `JOGGING` | 1484 | Number Theory | A doubling recurrence, taken modulo | &ndash; |
-| 283 | [Correct Sentence](283-CORTSENT.md) `CORTSENT` | 1485 | Strings | Per-word alphabet membership | &ndash; |
-| 284 | [Alternating Work Days](284-ALTER.md) `ALTER` | 1486 | Number Theory | Divisibility plus an alternation constraint | &ndash; |
-| 285 | [Chef Odd](285-CHEFODD.md) `CHEFODD` | 1486 | Number Theory | Parity and capacity constraints together | &ndash; |
-| 286 | [Weird Palindrome Making](286-MAKEPAL.md) `MAKEPAL` | 1486 | Arrays | Odd counts and palindrome feasibility | &ndash; |
-| 287 | [Interesting XOR!](287-IRSTXOR.md) `IRSTXOR` | 1487 | Bit Manipulation | Maximising a product under a fixed XOR | &ndash; |
-| 288 | [Anti Palindrome](288-ANTIPALINDR.md) `ANTIPALINDR` | 1488 | Strings | Forcing a palindrome to be impossible | &ndash; |
-| 289 | [CAO Stage-1](289-CAOS1.md) `CAOS1` | 1488 | Arrays | Contiguous runs in four directions | &ndash; |
+| 276 | [Max Mex](276-MEX.md) `MEX` | 1478 | Greedy | Spending a budget on the smallest gaps first | yes |
+| 277 | [Count Subarrays](277-SUBINC.md) `SUBINC` | 1478 | Arrays | Counting subarrays by maximal runs | yes |
+| 278 | [Distinct Pair Sums](278-MANYSUMS.md) `MANYSUMS` | 1480 | Basic Math | Range of achievable sums | yes |
+| 279 | [Chef and GCD](279-CHFGCD.md) `CHFGCD` | 1481 | Number Theory | Case analysis on parity | yes |
+| 280 | [Digital clock](280-ONOZ.md) `ONOZ` | 1482 | Brute Force | Enumerating a small product space | yes |
+| 281 | [Alternating Divisibility](281-ALTERNATEDIV.md) `ALTERNATEDIV` | 1483 | Constructive | Pairing k with 2k | yes |
+| 282 | [Jogging](282-JOGGING.md) `JOGGING` | 1484 | Number Theory | A doubling recurrence, taken modulo | yes |
+| 283 | [Correct Sentence](283-CORTSENT.md) `CORTSENT` | 1485 | Strings | Per-word alphabet membership | yes |
+| 284 | [Alternating Work Days](284-ALTER.md) `ALTER` | 1486 | Number Theory | Divisibility plus an alternation constraint | yes |
+| 285 | [Chef Odd](285-CHEFODD.md) `CHEFODD` | 1486 | Number Theory | Parity and capacity constraints together | yes |
+| 286 | [Weird Palindrome Making](286-MAKEPAL.md) `MAKEPAL` | 1486 | Arrays | Odd counts and palindrome feasibility | yes |
+| 287 | [Interesting XOR!](287-IRSTXOR.md) `IRSTXOR` | 1487 | Bit Manipulation | Maximising a product under a fixed XOR | yes |
+| 288 | [Anti Palindrome](288-ANTIPALINDR.md) `ANTIPALINDR` | 1488 | Strings | Forcing a palindrome to be impossible | yes |
+| 289 | [CAO Stage-1](289-CAOS1.md) `CAOS1` | 1488 | Arrays | Contiguous runs in four directions | yes |
 | 290 | [Chef Goes to the Cinema](290-CO92SUBW.md) `CO92SUBW` | 1493 | Basic Math | Triangular numbers and a local search | &ndash; |
 | 291 | [Harrenhal](291-HHAL.md) `HHAL` | 1495 | Strings | Covering a two-letter string with palindromes | &ndash; |
 | 292 | [Exactly N plus 1 Values](292-N1VALUES.md) `N1VALUES` | 1495 | Constructive | Building a sum from a run plus a remainder | &ndash; |
