@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**348 of 486 solved problems documented.**
+**354 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 44 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 50 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **348** |
+| | **Total** | **502** | **761** | **354** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,12 +26,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 48 |
+| 4 | 100 | 54 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (36)</summary>
+<details open><summary><b>Arrays</b> (37)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -71,6 +71,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 316 | [Equal Difference](docs/arrays/EQDIFFER.md) | 1500 | Which multisets have all pairwise differences equal | $O(N)$ per test case |
 | 330 | [A temple of Snakes](docs/arrays/SNTEMPLE.md) | 1800 | Runs computed from both directions | $O(n)$ per test case |
 | 343 | [ChefTown Parade](docs/arrays/CHEFTOWN.md) | 1882 | Sliding-window maximum and minimum with deques | $O(N)$ |
+| 352 | [Count Subarrays](docs/arrays/SUBINC.md) | 1478 | Counting subarrays by maximal runs | $O(N)$ per test case |
 
 </details>
 
@@ -186,7 +187,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (17)</summary>
+<details open><summary><b>Bit Manipulation</b> (19)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -207,6 +208,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 346 | [Chef and Chefina](docs/bit-manipulation/CHFNA.md) | 1400 | Independent bits give a closed form | $O(1)$ per test case |
 | 347 | [XOR-ORED](docs/bit-manipulation/XORORED.md) | 1621 | Choosing X bit by bit against an OR | $O(N)$ per test case |
 | 348 | [Maximum Damage](docs/bit-manipulation/MAXDMGE.md) | 1636 | AND is monotone, so only adjacent pairs matter | $O(N)$ per test case |
+| 349 | [XOR Engine](docs/bit-manipulation/ENGXOR.md) | 1632 | Popcount parity is additive under XOR | $O(N + Q)$ per test case |
+| 351 | [XOR with Subset](docs/bit-manipulation/XORSUB.md) | 1879 | XOR linear basis over GF(2) | $O(N \log V + \log^2 V)$ per test case |
 
 </details>
 
@@ -358,7 +361,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (39)</summary>
+<details open><summary><b>Number Theory</b> (40)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -401,10 +404,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 307 | [Minimum Number of Pizzas](docs/number-theory/MINPIZZAS.md) | 1532 | Smallest multiplier for divisibility | $O(\log \min(N,K))$ per test case |
 | 308 | [Alternating Work Days](docs/number-theory/ALTER.md) | 1486 | Divisibility plus an alternation constraint | $O(1)$ per test case |
 | 332 | [Modular Equation](docs/number-theory/MODEQ.md) | 1761 | Reducing a nested modulo to a divisibility test | $O(N \cdot d)$ per test case after an $O(M)$ sieve |
+| 353 | [Count K-Primes](docs/number-theory/KPRIME.md) | 1549 | Sieve of distinct prime factors plus prefix counts | $O(V \log \log V + 5V)$ precomputation, $O(1)$ per query |
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (5)</summary>
+<details open><summary><b>Prefix Sums</b> (6)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -413,6 +417,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 233 | [Parallel Processing](docs/prefix-sums/PLPROCESS.md) | 1425 | Minimising the heavier side of a split | $O(N)$ per test case |
 | 298 | [Bouncing Ball](docs/prefix-sums/BOUNCE_BALL.md) | 1607 | Alternating hits balance two totals | $O(N)$ per test case |
 | 328 | [Shortest Route](docs/prefix-sums/SHROUTE.md) | 1756 | Nearest qualifying index from each side | $O(N + M)$ per test case |
+| 350 | [Chef and Easy Problem](docs/prefix-sums/XXOR.md) | 1810 | Per-bit prefix counts, decided bit by bit | $O(31(N + Q))$ |
 
 </details>
 
@@ -447,7 +452,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (21)</summary>
+<details open><summary><b>Sorting</b> (22)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -472,6 +477,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 322 | [Chef Restaurant ](docs/sorting/CHEFRES.md) | 1776 | Binary search over disjoint intervals | $O((N + M) \log N)$ per test case |
 | 323 | [Sort by Adjacent Swaps](docs/sorting/ADJSRT.md) | -1 | Insertion sort performs exactly the inversions | $O(n + \text{inversions})$ |
 | 324 | [Stable Quick Sort](docs/sorting/QCKSRT2.md) | -1 | Which pivot choices preserve stability | $O(n)$ |
+| 354 | [Chef and Frogs](docs/sorting/FROGV.md) | 1668 | Connected components from gaps in sorted order | $O(N \log N + P)$ |
 
 </details>
 
