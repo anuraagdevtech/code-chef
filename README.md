@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**360 of 486 solved problems documented.**
+**366 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 56 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 62 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **360** |
+| | **Total** | **502** | **761** | **366** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,12 +26,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 60 |
+| 4 | 100 | 66 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (37)</summary>
+<details open><summary><b>Arrays</b> (38)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -72,6 +72,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 330 | [A temple of Snakes](docs/arrays/SNTEMPLE.md) | 1800 | Runs computed from both directions | $O(n)$ per test case |
 | 343 | [ChefTown Parade](docs/arrays/CHEFTOWN.md) | 1882 | Sliding-window maximum and minimum with deques | $O(N)$ |
 | 352 | [Count Subarrays](docs/arrays/SUBINC.md) | 1478 | Counting subarrays by maximal runs | $O(N)$ per test case |
+| 363 | [Maximal crosses](docs/arrays/MAXCROSS.md) | 1570 | Maximal runs along rows, columns and both diagonals | $O(n^2)$ |
 
 </details>
 
@@ -293,7 +294,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Dynamic Programming</b> (4)</summary>
+<details open><summary><b>Dynamic Programming</b> (5)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -301,6 +302,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 358 | [Magic Rankings](docs/dynamic-programming/MGCRNK.md) | 1540 | Maximising an average with a fixed denominator | $O(N^2)$ per test case |
 | 359 | [Gravity Guy](docs/dynamic-programming/GRGUY.md) | 1568 | Two-state DP with a zero-cost move | $O(n)$ per test case |
 | 360 | [Chef and Wedding Arrangements](docs/dynamic-programming/CHEFWED.md) | 1841 | Partition DP with an incrementally maintained segment cost | $O(N^2)$ per test case |
+| 362 | [Dish Distribution](docs/dynamic-programming/DISHDIS.md) | 1596 | Bounded compositions via a prefix-sum convolution | $O(nm)$ per test case |
 
 </details>
 
@@ -374,7 +376,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (40)</summary>
+<details open><summary><b>Number Theory</b> (43)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -418,10 +420,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 308 | [Alternating Work Days](docs/number-theory/ALTER.md) | 1486 | Divisibility plus an alternation constraint | $O(1)$ per test case |
 | 332 | [Modular Equation](docs/number-theory/MODEQ.md) | 1761 | Reducing a nested modulo to a divisibility test | $O(N \cdot d)$ per test case after an $O(M)$ sieve |
 | 353 | [Count K-Primes](docs/number-theory/KPRIME.md) | 1549 | Sieve of distinct prime factors plus prefix counts | $O(V \log \log V + 5V)$ precomputation, $O(1)$ per query |
+| 364 | [Chef and GCD](docs/number-theory/CHFGCD.md) | 1481 | Case analysis on parity | $O(\log \min(X,Y))$ per test case |
+| 365 | [Arranging Cup-cakes](docs/number-theory/RESQ.md) | 1322 | Divisor nearest the square root | $O(\sqrt{N})$ per test case |
+| 366 | [Appy and Contest](docs/number-theory/HMAPPY2.md) | 1358 | Counting multiples with inclusion-exclusion | $O(\log \min(A,B))$ per test case |
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (6)</summary>
+<details open><summary><b>Prefix Sums</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -431,6 +436,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 298 | [Bouncing Ball](docs/prefix-sums/BOUNCE_BALL.md) | 1607 | Alternating hits balance two totals | $O(N)$ per test case |
 | 328 | [Shortest Route](docs/prefix-sums/SHROUTE.md) | 1756 | Nearest qualifying index from each side | $O(N + M)$ per test case |
 | 350 | [Chef and Easy Problem](docs/prefix-sums/XXOR.md) | 1810 | Per-bit prefix counts, decided bit by bit | $O(31(N + Q))$ |
+| 361 | [W String](docs/prefix-sums/WSTRING.md) | 1809 | Per-letter counts over hash-delimited blocks | $O(|S| + 26 h)$ per test case, where $h$ is the number of '#' |
 
 </details>
 
