@@ -115,7 +115,7 @@ main()
 - **No pair is counted twice.** Both cases together would force $S_i = S_j$ and $j - i = 0$, which $i < j$ rules out — so the two tallies are disjoint and simply add.
 - **Digit characters work as raw byte codes**, since only differences matter and the $+48$ offset cancels on both sides of every comparison.
 - **Adjacent equal digits are not a pair**: the gap is $1$ but the digit difference is $0$.
-- **All digits identical** (the first row, `123`? no — rather a string like `111`) lands every index in the same `down` bucket when the digits ascend by one, which is what gives the first row its $3$.
+- **Digits ascending by exactly one put every index in the same `down` bucket**, since $S - \text{index}$ never changes — which is why `123` gives all three pairs rather than only the adjacent two.
 - **The keys can be negative** (for `down`) and are unbounded above (for `up`), so a dictionary rather than an array is the right structure.
 - **Sum of $N \leq 2 \cdot 10^5$**: two `Counter`s per case.
 
