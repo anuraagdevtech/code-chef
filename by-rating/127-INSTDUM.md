@@ -2,8 +2,6 @@
 
 > [`INSTDUM`](https://www.codechef.com/problems/INSTDUM) &middot; difficulty **895** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -127,6 +125,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **No match at all** (the second row): the answer is $0$, so zero is legitimate output.
+- **Every prefix matches** (all ones): the answer is $N$ — the running total tracks the index exactly.
+- **A zero run breaks a match and a later run restores it.** In the first row the totals are $1, 1, 3, 6$ against indices $1, 2, 3, 4$: a match at index $1$, lost at $2$ because of the zero, regained at $3$. So the count is not monotone and the whole prefix has to be walked.
+- **$A_i$ may be $0$ or as large as $6$**, so the total can jump well past the index and never come back.
+- A strike rate of exactly $100$ means runs equal balls faced, which is the condition $\text{total} = i$.
+
+## Dry run
+
+First sample, runs $1, 0, 2, 3$:
+
+| ball $i$ | run | total | $\text{total} = i$? |
+|---:|---:|---:|:---:|
+| 1 | 1 | 1 | yes |
+| 2 | 0 | 1 | no |
+| 3 | 2 | 3 | yes |
+| 4 | 3 | 6 | no |
+
+Two matches, so the output is `2`. The third sample ($1,1,1$) matches at every ball, giving `3`.
 
 ---
 

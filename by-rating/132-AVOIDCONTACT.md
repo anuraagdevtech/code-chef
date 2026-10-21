@@ -2,8 +2,6 @@
 
 > [`AVOIDCONTACT`](https://www.codechef.com/problems/AVOIDCONTACT) &middot; difficulty **907** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -119,6 +117,21 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Nobody infected** ($Y = 0$): no separation is needed, so the answer is just $X$. The first sample row.
+- **Everybody infected** ($X = Y$): the $-1$ fires, giving $2X - 1$ rather than $2X$, because with no healthy group present one leading gap is unnecessary. The third sample row ($3, 3$) gives $5$ and is the only case that exercises the correction.
+- **A mix** ($5, 3$): $X + Y$ with no correction.
+- The $-1$ triggers on exactly one condition, so the formula is $X + Y$ everywhere else — which makes that single sample row the whole test of the special case.
+
+## Dry run
+
+| $X$ | $Y$ | $X + Y$ | $X = Y$? | correction | output |
+|---:|---:|---:|:---:|---:|---|
+| 4 | 0 | 4 | no | 0 | `4` |
+| 5 | 3 | 8 | no | 0 | `8` |
+| 3 | 3 | 6 | yes | $-1$ | `5` |
 
 ---
 

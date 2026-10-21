@@ -2,8 +2,6 @@
 
 > [`PRICECON`](https://www.codechef.com/problems/PRICECON) &middot; difficulty **931** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -115,6 +113,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Every price below the cap** (the second row): the answer is $0$.
+- **A price exactly at the cap**: contributes nothing, so the boundary is harmless either way.
+- **The clamp is essential.** Without `max(0, ...)` the cheap items subtract: the first row would evaluate to $6 - 2 - 1 + 0 + 1 = 4$ instead of $7$. This is not an off-by-one but a wrong answer.
+- **Every price above the cap** (the third row): all five items contribute, summing to $15$.
+- **Largest inputs** ($N = 10^4$ with prices up to $1000$): the total stays under $10^7$.
+
+## Dry run
+
+First sample, cap $K = 4$:
+
+| price | excess $\max(0, P-K)$ |
+|---:|---:|
+| 10 | 6 |
+| 2 | 0 |
+| 3 | 0 |
+| 4 | 0 |
+| 5 | 1 |
+
+Total $7$, so the output is `7`. Note the $2$ and $3$ contribute zero rather than $-2$ and $-1$.
 
 ---
 

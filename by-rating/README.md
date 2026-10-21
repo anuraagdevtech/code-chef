@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **121 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **149 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -12,7 +12,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 |---|---:|---:|---|
 | [400&ndash;599](#400599) | 34 | 34 | Basic Math (18) |
 | [600&ndash;799](#600799) | 60 | 60 | Basic Math (31) |
-| [800&ndash;999](#800999) | 69 | 27 | Basic Math (26) |
+| [800&ndash;999](#800999) | 69 | 55 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 0 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 0 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 0 | Greedy (18) |
@@ -158,34 +158,34 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 119 | [Drunk Alcoholic](119-DRUNKALK.md) `DRUNKALK` | 874 | Basic Math | Net progress per cycle, with an odd remainder | yes |
 | 120 | [Chef On Island](120-CCISLAND.md) `CCISLAND` | 878 | Basic Math | Two independent supply checks | yes |
 | 121 | [Richie Rich](121-CHFRICH.md) `CHFRICH` | 878 | Basic Math | Exact division from a guaranteed divisor | yes |
-| 122 | [Find the Direction](122-FACEDIR.md) `FACEDIR` | 880 | Number Theory | Cyclic state via modulo | &ndash; |
-| 123 | [Farmers League](123-LEAGUE.md) `LEAGUE` | 883 | Combinatorics | Extremal construction in a round robin | &ndash; |
-| 124 | [Utkarsh and Placement tests](124-UTKPLC.md) `UTKPLC` | 886 | Conditionals & Case Work | Ranking by a given priority order | &ndash; |
-| 125 | [Secret Recipe](125-CHEFRUN.md) `CHEFRUN` | 888 | Basic Math | Comparing ratios by cross-multiplication | &ndash; |
-| 126 | [Chef and Profits](126-CHFPROFIT.md) `CHFPROFIT` | 889 | Basic Math | Factoring a repeated difference | &ndash; |
-| 127 | [Inside The Stadium](127-INSTDUM.md) `INSTDUM` | 895 | Prefix Sums | Running total compared against the index | &ndash; |
-| 128 | [Peaceful Party](128-MAYOR_PARTY.md) `MAYOR_PARTY` | 898 | Greedy | Choosing between mutually exclusive groups | &ndash; |
-| 129 | [Grade The Steel](129-FLOW014.md) `FLOW014` | 900 | Conditionals & Case Work | Grading from a set of independent flags | &ndash; |
-| 130 | [Chef and Battery ](130-FIFTYPE.md) `FIFTYPE` | 901 | Brute Force | Searching one variable of a linear Diophantine equation | &ndash; |
-| 131 | [Passing Marks](131-PSGRADE.md) `PSGRADE` | 904 | Conditionals & Case Work | Conjunction of per-subject and aggregate thresholds | &ndash; |
-| 132 | [Avoid Contact](132-AVOIDCONTACT.md) `AVOIDCONTACT` | 907 | Greedy | Packing with separation constraints | &ndash; |
-| 133 | [Count the Holidays](133-SUNDAY.md) `SUNDAY` | 907 | Sets | Union of a fixed set with input values | &ndash; |
-| 134 | [Problem](134-PR0BLEM.md) `PR0BLEM` | 908 | Number Theory | Parity invariant | &ndash; |
-| 135 | [Two Ranges](135-TWORANGES.md) `TWORANGES` | 918 | Sets | Inclusion-exclusion on intervals | &ndash; |
-| 136 | [Chef and IPC Certificates](136-IPCCERT.md) `IPCCERT` | 922 | Arrays | Filtering rows on two independent criteria | &ndash; |
-| 137 | [Penalty Shots](137-PENALTY.md) `PENALTY` | 925 | Arrays | Summing alternate positions | &ndash; |
-| 138 | [Shoe Fit](138-SHOEFIT.md) `SHOEFIT` | 925 | Conditionals & Case Work | Presence of both values in a small collection | &ndash; |
-| 139 | [Make all equal using Pairs](139-PAIREQ.md) `PAIREQ` | 928 | Arrays | Keep the most frequent value | &ndash; |
-| 140 | [Chef and Pairing Slippers](140-CHEFSLP.md) `CHEFSLP` | 930 | Basic Math | Pairing limited by the scarcer side | &ndash; |
-| 141 | [Hoop Jump](141-HOOPS.md) `HOOPS` | 930 | Basic Math | Where two converging sequences meet | &ndash; |
-| 142 | [Akash and Missing Class](142-CHFCLASS.md) `CHFCLASS` | 931 | Number Theory | Counting residues in a range | &ndash; |
-| 143 | [Chef and Price Control](143-PRICECON.md) `PRICECON` | 931 | Arrays | Summing a clamped excess | &ndash; |
-| 144 | [First and Last](144-FIRSTANDLAST.md) `FIRSTANDLAST` | 932 | Arrays | Cyclically adjacent pairs | &ndash; |
-| 145 | [No Time to Wait](145-NOTIME.md) `NOTIME` | 932 | Arrays | Existence check over a list | &ndash; |
-| 146 | [World Chess Championship](146-WCC.md) `WCC` | 935 | Strings | Counting characters, then a three-way branch | &ndash; |
-| 147 | [Two vs Ten](147-TWOVSTEN.md) `TWOVSTEN` | 936 | Number Theory | Which prime factors an operation can supply | &ndash; |
-| 148 | [Car Range](148-CARRANGE.md) `CARRANGE` | 938 | Basic Math | Reading an off-by-one from the statement | &ndash; |
-| 149 | [Vaccine Dates ](149-VDATES.md) `VDATES` | 938 | Conditionals & Case Work | Classifying a value against an interval | &ndash; |
+| 122 | [Find the Direction](122-FACEDIR.md) `FACEDIR` | 880 | Number Theory | Cyclic state via modulo | yes |
+| 123 | [Farmers League](123-LEAGUE.md) `LEAGUE` | 883 | Combinatorics | Extremal construction in a round robin | yes |
+| 124 | [Utkarsh and Placement tests](124-UTKPLC.md) `UTKPLC` | 886 | Conditionals & Case Work | Ranking by a given priority order | yes |
+| 125 | [Secret Recipe](125-CHEFRUN.md) `CHEFRUN` | 888 | Basic Math | Comparing ratios by cross-multiplication | yes |
+| 126 | [Chef and Profits](126-CHFPROFIT.md) `CHFPROFIT` | 889 | Basic Math | Factoring a repeated difference | yes |
+| 127 | [Inside The Stadium](127-INSTDUM.md) `INSTDUM` | 895 | Prefix Sums | Running total compared against the index | yes |
+| 128 | [Peaceful Party](128-MAYOR_PARTY.md) `MAYOR_PARTY` | 898 | Greedy | Choosing between mutually exclusive groups | yes |
+| 129 | [Grade The Steel](129-FLOW014.md) `FLOW014` | 900 | Conditionals & Case Work | Grading from a set of independent flags | yes |
+| 130 | [Chef and Battery ](130-FIFTYPE.md) `FIFTYPE` | 901 | Brute Force | Searching one variable of a linear Diophantine equation | yes |
+| 131 | [Passing Marks](131-PSGRADE.md) `PSGRADE` | 904 | Conditionals & Case Work | Conjunction of per-subject and aggregate thresholds | yes |
+| 132 | [Avoid Contact](132-AVOIDCONTACT.md) `AVOIDCONTACT` | 907 | Greedy | Packing with separation constraints | yes |
+| 133 | [Count the Holidays](133-SUNDAY.md) `SUNDAY` | 907 | Sets | Union of a fixed set with input values | yes |
+| 134 | [Problem](134-PR0BLEM.md) `PR0BLEM` | 908 | Number Theory | Parity invariant | yes |
+| 135 | [Two Ranges](135-TWORANGES.md) `TWORANGES` | 918 | Sets | Inclusion-exclusion on intervals | yes |
+| 136 | [Chef and IPC Certificates](136-IPCCERT.md) `IPCCERT` | 922 | Arrays | Filtering rows on two independent criteria | yes |
+| 137 | [Penalty Shots](137-PENALTY.md) `PENALTY` | 925 | Arrays | Summing alternate positions | yes |
+| 138 | [Shoe Fit](138-SHOEFIT.md) `SHOEFIT` | 925 | Conditionals & Case Work | Presence of both values in a small collection | yes |
+| 139 | [Make all equal using Pairs](139-PAIREQ.md) `PAIREQ` | 928 | Arrays | Keep the most frequent value | yes |
+| 140 | [Chef and Pairing Slippers](140-CHEFSLP.md) `CHEFSLP` | 930 | Basic Math | Pairing limited by the scarcer side | yes |
+| 141 | [Hoop Jump](141-HOOPS.md) `HOOPS` | 930 | Basic Math | Where two converging sequences meet | yes |
+| 142 | [Akash and Missing Class](142-CHFCLASS.md) `CHFCLASS` | 931 | Number Theory | Counting residues in a range | yes |
+| 143 | [Chef and Price Control](143-PRICECON.md) `PRICECON` | 931 | Arrays | Summing a clamped excess | yes |
+| 144 | [First and Last](144-FIRSTANDLAST.md) `FIRSTANDLAST` | 932 | Arrays | Cyclically adjacent pairs | yes |
+| 145 | [No Time to Wait](145-NOTIME.md) `NOTIME` | 932 | Arrays | Existence check over a list | yes |
+| 146 | [World Chess Championship](146-WCC.md) `WCC` | 935 | Strings | Counting characters, then a three-way branch | yes |
+| 147 | [Two vs Ten](147-TWOVSTEN.md) `TWOVSTEN` | 936 | Number Theory | Which prime factors an operation can supply | yes |
+| 148 | [Car Range](148-CARRANGE.md) `CARRANGE` | 938 | Basic Math | Reading an off-by-one from the statement | yes |
+| 149 | [Vaccine Dates ](149-VDATES.md) `VDATES` | 938 | Conditionals & Case Work | Classifying a value against an interval | yes |
 | 150 | [ Am I Lucky!](150-SPCP4.md) `SPCP4` | 941 | Basic Math | Remainders paired off | &ndash; |
 | 151 | [Janmansh at Fruit Market](151-JMARKET.md) `JMARKET` | 947 | Greedy | Cheapest choice under a diversity constraint | &ndash; |
 | 152 | [Non-Negative Product](152-NONNEGPROD.md) `NONNEGPROD` | 948 | Arrays | Sign of a product from the count of negatives | &ndash; |

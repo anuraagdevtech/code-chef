@@ -2,8 +2,6 @@
 
 > [`CHEFSLP`](https://www.codechef.com/problems/CHEFSLP) &middot; difficulty **930** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -102,6 +100,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **No slippers at all** ($N = 0$): zero revenue.
+- **A price of zero** ($X = 0$): zero revenue even though pairs exist. The sample's second row.
+- **The scarcer side caps the pairs.** The fourth row has $7$ left and $3$ right, so only $3$ pairs sell and the four surplus left shoes are worthless — using $L$ alone would report $7$.
+- **All of one kind** ($L = 0$ or $L = N$): no pairs at all.
+- **Largest input** ($N = X = 1000$): $500 \times 1000 = 5 \times 10^5$.
+
+## Dry run
+
+| $N$ | $L$ (left) | right $N-L$ | pairs $\min$ | $X$ | output |
+|---:|---:|---:|---:|---:|---|
+| 0 | 0 | 0 | 0 | 100 | `0` |
+| 10 | 1 | 9 | 1 | 0 | `0` |
+| 1000 | 10 | 990 | 10 | 1000 | `10000` |
+| 10 | 7 | 3 | 3 | 1 | `3` |
+
+Row 4 is limited by the right shoes; row 2 by the price.
 
 ---
 

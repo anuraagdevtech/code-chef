@@ -2,8 +2,6 @@
 
 > [`IPCCERT`](https://www.codechef.com/problems/IPCCERT) &middot; difficulty **922** &middot; time limit **3s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -124,6 +122,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Enough watch time but too many questions** (the third row: $12$ hours watched, $11$ questions): ineligible. Both criteria matter and must be ANDed.
+- **Few enough questions but not enough watching** (rows 1 and 4): also ineligible.
+- **The question limit of $10$ is a constant from the statement, not an input.** Expecting it on the first line misparses every case.
+- **Exactly on either threshold** (watched $= M$, or questions $= 10$): eligible, so both comparisons are non-strict.
+- **Input shape**: the first line is $N$, $M$, $K$ — not a test-case count — and each row has $K$ watch times followed by the question count, so the row stride is $K+1$.
+
+## Dry run
+
+$N = 4$, $M = 8$, $K = 4$:
+
+| row | watch times | total | questions | $\geq 8$? | $\leq 10$? | eligible |
+|---:|---|---:|---:|:---:|:---:|:---:|
+| 1 | $1,2,1,2$ | 6 | 5 | no | yes | no |
+| 2 | $3,5,1,3$ | 12 | 4 | yes | yes | **yes** |
+| 3 | $1,2,4,5$ | 12 | 11 | yes | no | no |
+| 4 | $1,1,1,3$ | 6 | 12 | no | no | no |
+
+One eligible student, so the output is `1`.
 
 ---
 

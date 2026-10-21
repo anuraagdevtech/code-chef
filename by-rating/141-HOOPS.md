@@ -2,8 +2,6 @@
 
 > [`HOOPS`](https://www.codechef.com/problems/HOOPS) &middot; difficulty **930** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -104,6 +102,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$N = 1$**: a single hoop, taken by the first player.
+- **$N$ is guaranteed odd**, which is what makes the two converging sequences meet at one hoop rather than passing each other — there is never a simultaneous arrival at two different hoops to resolve.
+- **$N = 3$**: the middle hoop, index $2$.
+- **Largest input** ($N = 199999$): $100000$.
+- The first player reaches the middle hoop first, so the answer is that index rather than a tie — which is why the formula is $\lceil N/2 \rceil$ and not something symmetric.
+
+## Dry run
+
+| $N$ | middle $\lceil N/2 \rceil$ | output |
+|---:|---:|---|
+| 1 | 1 | `1` |
+| 3 | 2 | `2` |
+
+For $N = 5$ the answer would be $3$: the first player's hoops are $1, 2, 3$ while the second's run $5, 4$, and they meet at $3$.
 
 ---
 

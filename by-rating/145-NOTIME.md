@@ -2,8 +2,6 @@
 
 > [`NOTIME`](https://www.codechef.com/problems/NOTIME) &middot; difficulty **932** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -123,6 +121,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Exactly enough** (sample 1: $x = 3$ plus a zone of $2$ reaches $H = 5$): `YES`, so the comparison is non-strict. The two sample runs differ only in $H$ by one, which is precisely the test of that boundary.
+- **$x < H$ is guaranteed**, so Chef always needs at least one zone — he can never already be done.
+- **Only existence matters**, so there is no need to find the best zone; taking the maximum would also work but is unnecessary.
+- **Input shape**: the first line is $N$, $H$, $x$ — *not* a test-case count, which is the usual trap in these single-case problems.
+
+## Dry run
+
+Sample 1: $N = 2$, $H = 5$, $x = 3$, zones $1, 2$.
+
+| zone $t$ | $x + t$ | $\geq H$? |
+|---:|---:|:---:|
+| 1 | 4 | no |
+| 2 | 5 | **yes** |
+
+One zone suffices, so `YES`. Sample 2 raises $H$ to $6$: now $4$ and $5$ both fall short, so `NO`.
 
 ---
 

@@ -19,3 +19,22 @@ Sample case 1, $[1,2,3]$, has every value unique, so the mode count is $1$ and t
 Sample case 2 is already uniform, needing $0$ operations, which the formula gives without a special case.
 
 The requirement that $i \neq j$ never binds, because $N \geq 2$ guarantees a second index exists to copy from. If the array were a single element it would already be uniform anyway.
+
+## Edge cases
+
+- **Already all equal** ($5,5,5,5$): zero operations.
+- **All distinct** ($1,2,3$): $N-1$ operations, the worst case.
+- **A tie for most frequent** ($2,2,1,1$): either value may be kept and the cost is the same, so no tie-break is needed.
+- **Keeping the most frequent value is what minimises the work** — keeping any other value costs strictly more, which is why the answer is $N$ minus the maximum count rather than $N$ minus any count.
+- $N \geq 2$, so there is always at least one pair to work with.
+
+## Dry run
+
+| array | counts | most frequent | $N - \max$ | output |
+|---|---|---:|---:|---|
+| $1,2,3$ | $1,1,1$ | 1 | 2 | `2` |
+| $5,5,5,5$ | $4$ | 4 | 0 | `0` |
+| $2,2,1,1$ | $2,2$ | 2 | 2 | `2` |
+| $1,1,2$ | $2,1$ | 2 | 1 | `1` |
+
+Row 3 has two values tied at two apiece, and both choices cost the same.

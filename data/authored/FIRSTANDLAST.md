@@ -19,3 +19,21 @@ The wraparound term is essential and easy to drop. Sample case 2, $[5, 10, 15]$,
 Sample case 1 with $N = 2$ is a degenerate case worth checking: both elements are adjacent to each other in both directions, and the sum $13$ is the only possible answer.
 
 Values reach $10^9$, so a pair sums to $2 \times 10^9$ — past the signed 32-bit limit, which a C solution would need to handle with a 64-bit type.
+
+## Edge cases
+
+- **The wraparound pair must be included.** For $[9, 1, 8]$ the interior pairs give $10$ and $9$, while the wraparound $8 + 9 = 17$ wins — omitting it silently understates the answer. The modulo in the index is doing real work.
+- **$N = 2$**: the two elements, where the forward and wraparound pairs coincide and the answer is their sum.
+- **All equal** ($4,4,4,4$): twice the value.
+- **The best pair may be interior** ($5, 10, 15$ gives $10 + 15 = 25$), so neither the wraparound nor the interior can be assumed.
+- The observation that makes this work: rotating only slides the split point, so the first and last elements of any rotation are always **cyclically adjacent** in the original array.
+
+## Dry run
+
+| array | cyclically adjacent pairs | best | output |
+|---|---|---:|---|
+| $5, 8$ | $5{+}8$ | 13 | `13` |
+| $5, 10, 15$ | $15,\ 25,\ 20$ | 25 | `25` |
+| $4, 4, 4, 4$ | $8, 8, 8, 8$ | 8 | `8` |
+
+In row 2 the pairs are $(5{+}10), (10{+}15), (15{+}5)$ — the last being the wraparound.

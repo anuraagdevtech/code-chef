@@ -2,8 +2,6 @@
 
 > [`UTKPLC`](https://www.codechef.com/problems/UTKPLC) &middot; difficulty **886** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -106,6 +104,22 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The preference order comes from the input**, so the ranking has to be rebuilt for each test case. Hard-coding $A > B > C$ answers the first sample row correctly by luck and gets the second one wrong, where the order is $B > C > A$ and the answer is `C`.
+- **$x$ and $y$ are guaranteed distinct**, so there is never a tie to break.
+- **The answer may be any of the three preference levels**: in the second row the better of the two offers is only the input's *second* choice.
+- `first`, `second` and `third` are guaranteed to be a permutation of $\{A, B, C\}$, so the ranking is always total and every offer has a rank.
+
+## Dry run
+
+| preference | offered | ranks | better | output |
+|---|---|---|---|---|
+| $A > B > C$ | $A, B$ | $0, 1$ | $A$ | `A` |
+| $B > C > A$ | $A, C$ | $2, 1$ | $C$ | `C` |
+
+The second row is the one that defeats a fixed alphabetical ranking.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`CHFPROFIT`](https://www.codechef.com/problems/CHFPROFIT) &middot; difficulty **889** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -109,6 +107,22 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Selling at cost** ($Y = Z$): the margin is zero, so the profit is $0$ — the constraint $Y \leq Z$ allows this.
+- **$Y \leq Z$ is guaranteed**, so the profit is never negative and no clamp is needed.
+- **A margin of one** (the last two sample rows): the answer is just the share count.
+- **Largest inputs** ($X = 10^4$ with a margin of $10^4 - 1$): close to $10^8$, inside 32-bit range but worth noting.
+- Factoring as $X(Z-Y)$ is one multiplication rather than the two of $XZ - XY$, and keeps the intermediate values small.
+
+## Dry run
+
+| $X$ (shares) | $Y$ (bought at) | $Z$ (sold at) | margin $Z-Y$ | profit $X \cdot {\cdot}$ | output |
+|---:|---:|---:|---:|---:|---|
+| 2 | 5 | 20 | 15 | 30 | `30` |
+| 3 | 1 | 2 | 1 | 3 | `3` |
+| 4 | 5 | 6 | 1 | 4 | `4` |
 
 ---
 

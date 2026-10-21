@@ -2,8 +2,6 @@
 
 > [`TWORANGES`](https://www.codechef.com/problems/TWORANGES) &middot; difficulty **918** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -107,6 +105,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Disjoint ranges** ($1..3$ and $5..5$): the overlap expression evaluates to $-1$ and **must clamp to zero**. Without the clamp the answer comes out as $5$ instead of $4$, and the sample's first row is exactly this.
+- **Ranges that touch without overlapping** ($1..3$ and $4..6$): the expression gives exactly $0$, so the clamp is not needed but does no harm — the boundary between the two behaviours.
+- **One range inside the other** ($1..8$ and $4..6$): the union is just the outer range, $8$.
+- **Identical single points** ($5..5$ twice): the union is $1$, not $2$.
+- **Inclusive counts throughout**: a range $A..B$ holds $B - A + 1$ values, so each $+1$ matters — dropping them understates every answer.
+
+## Dry run
+
+| $A..B$ | $C..D$ | sizes | overlap $\min(B,D) - \max(A,C) + 1$ | union | output |
+|---|---|---|---:|---:|---|
+| $1..3$ | $5..5$ | $3 + 1$ | $3 - 5 + 1 = -1 \to 0$ | 4 | `4` |
+| $3..8$ | $2..5$ | $6 + 4$ | $5 - 3 + 1 = 3$ | 7 | `7` |
+| $1..8$ | $4..6$ | $8 + 3$ | $6 - 4 + 1 = 3$ | 8 | `8` |
+| $5..5$ | $5..5$ | $1 + 1$ | $5 - 5 + 1 = 1$ | 1 | `1` |
+
+Row 1 is the clamp; row 3 is full containment.
 
 ---
 

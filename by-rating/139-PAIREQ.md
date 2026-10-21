@@ -2,8 +2,6 @@
 
 > [`PAIREQ`](https://www.codechef.com/problems/PAIREQ) &middot; difficulty **928** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -116,6 +114,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Already all equal** ($5,5,5,5$): zero operations.
+- **All distinct** ($1,2,3$): $N-1$ operations, the worst case.
+- **A tie for most frequent** ($2,2,1,1$): either value may be kept and the cost is the same, so no tie-break is needed.
+- **Keeping the most frequent value is what minimises the work** — keeping any other value costs strictly more, which is why the answer is $N$ minus the maximum count rather than $N$ minus any count.
+- $N \geq 2$, so there is always at least one pair to work with.
+
+## Dry run
+
+| array | counts | most frequent | $N - \max$ | output |
+|---|---|---:|---:|---|
+| $1,2,3$ | $1,1,1$ | 1 | 2 | `2` |
+| $5,5,5,5$ | $4$ | 4 | 0 | `0` |
+| $2,2,1,1$ | $2,2$ | 2 | 2 | `2` |
+| $1,1,2$ | $2,1$ | 2 | 1 | `1` |
+
+Row 3 has two values tied at two apiece, and both choices cost the same.
 
 ---
 
