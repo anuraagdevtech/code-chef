@@ -1,6 +1,6 @@
 # 321. Sort by swaps
 
-> CodeChef problem code [`SWPSRT1`](https://www.codechef.com/problems/SWPSRT1) &middot; difficulty **-1** &middot; time limit **1s**
+> CodeChef problem code [`SWPSRT1`](https://www.codechef.com/problems/SWPSRT1) &middot; difficulty **unrated** &middot; time limit **1s**
 
 | | |
 |---|---|

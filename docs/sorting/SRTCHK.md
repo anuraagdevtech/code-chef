@@ -1,6 +1,6 @@
 # 309. Sort Checker
 
-> CodeChef problem code [`SRTCHK`](https://www.codechef.com/problems/SRTCHK) &middot; difficulty **-1** &middot; time limit **1s**
+> CodeChef problem code [`SRTCHK`](https://www.codechef.com/problems/SRTCHK) &middot; difficulty **unrated** &middot; time limit **1s**
 
 | | |
 |---|---|

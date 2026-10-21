@@ -1,6 +1,6 @@
 # 310. Counting Sort
 
-> CodeChef problem code [`CNTSORT`](https://www.codechef.com/problems/CNTSORT) &middot; difficulty **-1** &middot; time limit **1s**
+> CodeChef problem code [`CNTSORT`](https://www.codechef.com/problems/CNTSORT) &middot; difficulty **unrated** &middot; time limit **1s**
 
 | | |
 |---|---|

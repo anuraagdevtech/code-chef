@@ -1,6 +1,6 @@
 # 313. Missing a Point
 
-> CodeChef problem code [`PTMSSNG`](https://www.codechef.com/problems/PTMSSNG) &middot; difficulty **-1** &middot; time limit **2s**
+> CodeChef problem code [`PTMSSNG`](https://www.codechef.com/problems/PTMSSNG) &middot; difficulty **unrated** &middot; time limit **2s**
 
 | | |
 |---|---|

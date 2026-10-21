@@ -1,6 +1,6 @@
 # 345. Jon and Selina
 
-> CodeChef problem code [`SELINA`](https://www.codechef.com/problems/SELINA) &middot; difficulty **-1** &middot; time limit **1s**
+> CodeChef problem code [`SELINA`](https://www.codechef.com/problems/SELINA) &middot; difficulty **unrated** &middot; time limit **1s**
 
 | | |
 |---|---|

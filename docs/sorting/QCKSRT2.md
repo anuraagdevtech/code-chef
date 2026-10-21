@@ -1,6 +1,6 @@
 # 324. Stable Quick Sort
 
-> CodeChef problem code [`QCKSRT2`](https://www.codechef.com/problems/QCKSRT2) &middot; difficulty **-1** &middot; time limit **1s**
+> CodeChef problem code [`QCKSRT2`](https://www.codechef.com/problems/QCKSRT2) &middot; difficulty **unrated** &middot; time limit **1s**
 
 | | |
 |---|---|

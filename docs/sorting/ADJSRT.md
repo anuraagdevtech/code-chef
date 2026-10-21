@@ -1,6 +1,6 @@
 # 323. Sort by Adjacent Swaps
 
-> CodeChef problem code [`ADJSRT`](https://www.codechef.com/problems/ADJSRT) &middot; difficulty **-1** &middot; time limit **1s**
+> CodeChef problem code [`ADJSRT`](https://www.codechef.com/problems/ADJSRT) &middot; difficulty **unrated** &middot; time limit **1s**
 
 | | |
 |---|---|

@@ -1,6 +1,6 @@
 # 320. Pair Sort Version 3
 
-> CodeChef problem code [`PSORT3`](https://www.codechef.com/problems/PSORT3) &middot; difficulty **-1** &middot; time limit **1s**
+> CodeChef problem code [`PSORT3`](https://www.codechef.com/problems/PSORT3) &middot; difficulty **unrated** &middot; time limit **1s**
 
 | | |
 |---|---|

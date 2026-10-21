@@ -17,7 +17,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
 | | **Total** | **502** | **761** | **486** |
 
-The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
+The roadmap headline counts **502 solved entries**, but that sums a per-course counter and a problem can hold more than one slot. Deduplicated it is **486 distinct problems**, which is what is documented here: 7 problems occupy two slots inside a single course and 19 are listed in two different courses. Run `python3 tools/reconcile_counts.py` to reproduce the breakdown.
+
+## Views
+
+- **[By topic](#problems-by-topic)** - the index below, and `docs/<topic>/<CODE>.md`.
+- **[By difficulty](by-rating/README.md)** - the same write-ups ordered by CodeChef rating, in `by-rating/`, each naming the topics used.
 
 ## Phases
 
@@ -220,10 +225,10 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 289 | [XxOoRr](docs/bit-manipulation/XXOORR.md) | 1551 | Bits are independent, so count per column | $O(N \log \max A)$ per test case |
 | 293 | [Yet Another Constructive Problem](docs/bit-manipulation/ORANDCON.md) | 1580 | The expression computes a bitwise majority | $O(1)$ per test case |
 | 303 | [Consecutive Xor](docs/bit-manipulation/XOR2.md) | 1611 | The total XOR is invariant | $O(N)$ per test case |
-| 313 | [Missing a Point](docs/bit-manipulation/PTMSSNG.md) | -1 | XOR cancels everything that appears twice | $O(N)$ per test case |
+| 313 | [Missing a Point](docs/bit-manipulation/PTMSSNG.md) | unrated | XOR cancels everything that appears twice | $O(N)$ per test case |
 | 341 | [Hussain Set](docs/bit-manipulation/COOK82C.md) | 2608 | Grouping a halving process by bit length | $O(N \log N + L)$, where $L$ is the number of moves reached |
-| 344 | [Prajit and bits](docs/bit-manipulation/ADDI.md) | -1 | Zero bits inside the binary width | $O(1)$ per test case |
-| 345 | [Jon and Selina](docs/bit-manipulation/SELINA.md) | -1 | Parity bitmask over a 26-letter alphabet | $O(N)$ per test case |
+| 344 | [Prajit and bits](docs/bit-manipulation/ADDI.md) | unrated | Zero bits inside the binary width | $O(1)$ per test case |
+| 345 | [Jon and Selina](docs/bit-manipulation/SELINA.md) | unrated | Parity bitmask over a 26-letter alphabet | $O(N)$ per test case |
 | 346 | [Chef and Chefina](docs/bit-manipulation/CHFNA.md) | 1400 | Independent bits give a closed form | $O(1)$ per test case |
 | 347 | [XOR-ORED](docs/bit-manipulation/XORORED.md) | 1621 | Choosing X bit by bit against an OR | $O(N)$ per test case |
 | 348 | [Maximum Damage](docs/bit-manipulation/MAXDMGE.md) | 1636 | AND is monotone, so only adjacent pairs matter | $O(N)$ per test case |
@@ -563,7 +568,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 201 | [Chocolate Monger](docs/sets/CM164364.md) | 1369 | Distinct count capped by a budget | $O(n)$ per test case |
 | 208 | [Devu and friendship testing](docs/sets/CFRTEST.md) | 1061 | Distinct values as a capacity bound | $O(n)$ per test case |
 | 215 | [Points and Lines](docs/sets/POLIN.md) | 1296 | Counting distinct coordinates independently | $O(N)$ per test case |
-| 314 | [Count Distinct Values](docs/sets/CNTDIST.md) | -1 | Replacing a linear scan with a hash set | $O(n)$ overall |
+| 314 | [Count Distinct Values](docs/sets/CNTDIST.md) | unrated | Replacing a linear scan with a hash set | $O(n)$ overall |
 | 337 | [Version Control System](docs/sets/VCS.md) | 1217 | Intersection and complement of a union | $O(M + K)$ per test case |
 | 386 | [Good Pairs](docs/sets/GOODPAIRS.md) | 1469 | One-pass tally of mirrored keys | $O(N)$ per test case |
 | 417 | [Fencing](docs/sets/FENCE.md) | 1696 | Perimeter as sides minus shared edges | $O(K)$ per test case |
@@ -600,17 +605,17 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 214 | [Maximum Trio](docs/sorting/MXMTRIO.md) | 1349 | Choosing extremes for a product | $O(N \log N)$ per test case |
 | 221 | [Hotel Bytelandia](docs/sorting/HOTEL.md) | 1405 | Event sweep | $O(N \log N)$ per test case |
 | 250 | [Approximately II](docs/sorting/APPROX2.md) | 1471 | Two pointers, then counting by value | $O(N \log N)$ per test case |
-| 309 | [Sort Checker](docs/sorting/SRTCHK.md) | -1 | Verifying a claimed sort | $O(N \log N)$ per test case |
-| 310 | [Counting Sort](docs/sorting/CNTSORT.md) | -1 | Counting sort over a small value range | $O(N + V)$ per test case with $V = 100$ |
-| 312 | [Fair distribution](docs/sorting/SUBS.md) | -1 | Sliding a fixed-size window | $O(N \log N)$ per test case |
+| 309 | [Sort Checker](docs/sorting/SRTCHK.md) | unrated | Verifying a claimed sort | $O(N \log N)$ per test case |
+| 310 | [Counting Sort](docs/sorting/CNTSORT.md) | unrated | Counting sort over a small value range | $O(N + V)$ per test case with $V = 100$ |
+| 312 | [Fair distribution](docs/sorting/SUBS.md) | unrated | Sliding a fixed-size window | $O(N \log N)$ per test case |
 | 317 | [Javelin Qualification](docs/sorting/JAVELIN.md) | 1538 | Two-stage selection | $O(N \log N)$ per test case |
 | 318 | [ChefWatson uses Social Network](docs/sorting/BOOKCHEF.md) | 1610 | Sorting on a composite key | $O(M \log M)$ |
 | 319 | [Remove One Element](docs/sorting/REMONE.md) | 1700 | Two candidate offsets, verified by a merge | $O(N \log N)$ per test case |
-| 320 | [Pair Sort Version 3](docs/sorting/PSORT3.md) | -1 | Mixed-direction composite key | $O(N \log N)$ |
-| 321 | [Sort by swaps](docs/sorting/SWPSRT1.md) | -1 | Selection sort meets the swap budget exactly | $O(n^2)$ |
+| 320 | [Pair Sort Version 3](docs/sorting/PSORT3.md) | unrated | Mixed-direction composite key | $O(N \log N)$ |
+| 321 | [Sort by swaps](docs/sorting/SWPSRT1.md) | unrated | Selection sort meets the swap budget exactly | $O(n^2)$ |
 | 322 | [Chef Restaurant ](docs/sorting/CHEFRES.md) | 1776 | Binary search over disjoint intervals | $O((N + M) \log N)$ per test case |
-| 323 | [Sort by Adjacent Swaps](docs/sorting/ADJSRT.md) | -1 | Insertion sort performs exactly the inversions | $O(n + \text{inversions})$ |
-| 324 | [Stable Quick Sort](docs/sorting/QCKSRT2.md) | -1 | Which pivot choices preserve stability | $O(n)$ |
+| 323 | [Sort by Adjacent Swaps](docs/sorting/ADJSRT.md) | unrated | Insertion sort performs exactly the inversions | $O(n + \text{inversions})$ |
+| 324 | [Stable Quick Sort](docs/sorting/QCKSRT2.md) | unrated | Which pivot choices preserve stability | $O(n)$ |
 | 354 | [Chef and Frogs](docs/sorting/FROGV.md) | 1668 | Connected components from gaps in sorted order | $O(N \log N + P)$ |
 | 385 | [Median of adjacent maximum numbers](docs/sorting/MXMEDIAN.md) | 1523 | Pairing extremes to lift the median | $O(N \log N)$ per test case |
 | 399 | [Max Out](docs/sorting/IOPC17C.md) | 1621 | The second largest distinct value is the answer | $O(N)$ per test case |
@@ -674,12 +679,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 ## Repository layout
 
 ```
-docs/<topic>/<CODE>.md    generated problem write-ups
-solutions/<CODE>.py       runnable Python solutions
-data/authored/<CODE>.md   hand written approach + metadata
-data/raw/<CODE>.json      problem payloads fetched from CodeChef
-data/problem_meta.json    code -> contest, course, level, order
-tools/                    fetch, build and verify scripts
+docs/<topic>/<CODE>.md       write-ups grouped by topic
+by-rating/<rating>-<CODE>.md the same write-ups in difficulty order
+solutions/<CODE>.py          runnable Python solutions
+data/authored/<CODE>.md      hand written approach + metadata
+data/raw/<CODE>.json         problem payloads fetched from CodeChef
+data/problem_meta.json       code -> contest, course, level, order
+data/roadmap_slots.json      per-course problem slots, for the count audit
+tools/                       fetch, build, verify and audit scripts
 ```
 
 ## Regenerating
@@ -688,6 +695,7 @@ tools/                    fetch, build and verify scripts
 python3 tools/fetch_raw.py     # pull problem payloads into data/raw/
 python3 tools/build_docs.py    # rebuild docs/ and this README
 python3 tools/verify.py        # run every solution against its samples
+python3 tools/reconcile_counts.py   # audit the roadmap solved count
 ```
 
-Docs are generated, so edit `data/authored/<CODE>.md` or `solutions/<CODE>.py` and rebuild rather than editing `docs/` directly.
+Both views are generated, so edit `data/authored/<CODE>.md` or `solutions/<CODE>.py` and rebuild rather than editing `docs/` or `by-rating/` directly.

@@ -1,6 +1,6 @@
 # 314. Count Distinct Values
 
-> CodeChef problem code [`CNTDIST`](https://www.codechef.com/problems/CNTDIST) &middot; difficulty **-1** &middot; time limit **1s**
+> CodeChef problem code [`CNTDIST`](https://www.codechef.com/problems/CNTDIST) &middot; difficulty **unrated** &middot; time limit **1s**
 
 | | |
 |---|---|

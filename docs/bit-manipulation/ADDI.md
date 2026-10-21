@@ -1,6 +1,6 @@
 # 344. Prajit and bits
 
-> CodeChef problem code [`ADDI`](https://www.codechef.com/problems/ADDI) &middot; difficulty **-1** &middot; time limit **1s**
+> CodeChef problem code [`ADDI`](https://www.codechef.com/problems/ADDI) &middot; difficulty **unrated** &middot; time limit **1s**
 
 | | |
 |---|---|

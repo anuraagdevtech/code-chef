@@ -1,6 +1,6 @@
 # 312. Fair distribution
 
-> CodeChef problem code [`SUBS`](https://www.codechef.com/problems/SUBS) &middot; difficulty **-1** &middot; time limit **2s**
+> CodeChef problem code [`SUBS`](https://www.codechef.com/problems/SUBS) &middot; difficulty **unrated** &middot; time limit **2s**
 
 | | |
 |---|---|
