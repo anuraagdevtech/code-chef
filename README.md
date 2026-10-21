@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**324 of 486 solved problems documented.**
+**330 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 20 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 26 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **324** |
+| | **Total** | **502** | **761** | **330** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,12 +26,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 24 |
+| 4 | 100 | 30 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (34)</summary>
+<details open><summary><b>Arrays</b> (35)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -69,6 +69,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 295 | [Yet Another Palindrome Problem](docs/arrays/ARRPAL.md) | 1594 | Prefix increments force a non-increasing profile | $O(N)$ per test case |
 | 311 | [Mix the Colors](docs/arrays/MIXCOLOR.md) | 1419 | Counting duplicates | $O(N)$ per test case |
 | 316 | [Equal Difference](docs/arrays/EQDIFFER.md) | 1500 | Which multisets have all pairwise differences equal | $O(N)$ per test case |
+| 330 | [A temple of Snakes](docs/arrays/SNTEMPLE.md) | 1800 | Runs computed from both directions | $O(n)$ per test case |
 
 </details>
 
@@ -168,6 +169,17 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 40 | [Small factorials](docs/big-integers/FCTRL2.md) | 420 | Arbitrary-precision arithmetic | $O(n)$ big-integer multiplications per test case |
+
+</details>
+
+<details open><summary><b>Binary Search</b> (4)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 325 | [Minion Chef and Bananas](docs/binary-search/MINEAT.md) | 1781 | Searching the answer on a monotonic predicate | $O(N \log \max A)$ per test case |
+| 326 | [Stacks](docs/binary-search/STACKS.md) | 1799 | Patience stacking with a sorted top list | $O(N \log N)$ per test case |
+| 327 | [Forest Gathering](docs/binary-search/FORESTGA.md) | 1829 | Searching time on a monotonic yield | $O(N \log(\text{months}))$ |
+| 329 | [Snake Eating](docs/binary-search/SNAKEEAT.md) | 1940 | Feasibility check with prefix sums | $O((N + Q) \log N)$ per test case |
 
 </details>
 
@@ -371,7 +383,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (4)</summary>
+<details open><summary><b>Prefix Sums</b> (5)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -379,6 +391,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 211 | [Gift Shop and Coupon](docs/prefix-sums/GFTSHP.md) | 1364 | Prefix sums with a single discount | $O(N \log N)$ per test case |
 | 233 | [Parallel Processing](docs/prefix-sums/PLPROCESS.md) | 1425 | Minimising the heavier side of a split | $O(N)$ per test case |
 | 298 | [Bouncing Ball](docs/prefix-sums/BOUNCE_BALL.md) | 1607 | Alternating hits balance two totals | $O(N)$ per test case |
+| 328 | [Shortest Route](docs/prefix-sums/SHROUTE.md) | 1756 | Nearest qualifying index from each side | $O(N + M)$ per test case |
 
 </details>
 
