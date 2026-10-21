@@ -2,8 +2,6 @@
 
 > [`MAKEEQUAL`](https://www.codechef.com/problems/MAKEEQUAL) &middot; difficulty **1267** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -108,6 +106,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **One move raises every lagging element at once**, so the cost is the single widest gap, not the total shortfall. The first row needs $2$; summing the per-element deficits ($2 + 0 + 2$) gives $4$.
+- **Already equal** (the second row) → $0$, which $\max - \min$ gives with no special case.
+- **$N = 1$**: maximum and minimum coincide, so the answer is $0$.
+- **The target is forced to be $\max(A)$** — raising elements only, so nothing below the maximum can be the common value, and every element must climb to it.
+- **Sum of $N$ bounded by $10^5$** across up to $10^4$ cases, so one pass per case with no sorting.
+
+## Dry run
+
+| input | max | min | gap | output |
+|---|---:|---:|---:|---|
+| $1, 3, 1$ | 3 | 1 | 2 | `2` |
+| $2, 2, 2$ | 2 | 2 | 0 | `0` |
+
+In the first row both $1$s rise together on each of the two moves.
 
 ---
 

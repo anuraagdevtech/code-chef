@@ -2,8 +2,6 @@
 
 > [`BEGGASOL`](https://www.codechef.com/problems/BEGGASOL) &middot; difficulty **1263** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -135,6 +133,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Arriving with exactly zero fuel still collects that car's fuel.** The decrement happens before the pickup, so `1 1 1 1 1` works: the tank hits $0$ on arrival at every car and is immediately refilled to $1$.
+- **The stop test comes before the move**, not after. With `3 0 0 0 0` the car travels three units and halts at car $4$ because there is no fuel left to reach car $5$.
+- **Leftover fuel past the last car converts one-for-one into distance.** The third row arrives at car $5$ with $11$ units spare and adds every one of them, so the final `dist += fuel` is not an afterthought — it supplies most of the answer.
+- **$f_i$ may be $0$, including $f_1$**, in which case the car never moves and the answer is $0$.
+- **$N = 1$**: the loop body never runs and the answer is $f_1$ alone.
+
+## Dry run
+
+Third sample: fuel per car $5, 4, 3, 2, 1$.
+
+| at car | fuel on arrival | distance | collects | fuel after |
+|---:|---:|---:|---:|---:|
+| 1 | — | 0 | 5 | 5 |
+| 2 | 4 | 1 | 4 | 8 |
+| 3 | 7 | 2 | 3 | 10 |
+| 4 | 9 | 3 | 2 | 11 |
+| 5 | 10 | 4 | 1 | 11 |
+
+Past car $5$ the remaining $11$ units carry the car $11$ further: $4 + 11 = $ `15`.
 
 ---
 

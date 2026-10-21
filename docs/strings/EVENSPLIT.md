@@ -6,7 +6,7 @@
 |---|---|
 | **Topic** | Strings |
 | **Technique** | Which orderings are reachable |
-| **Time** | $O(N \log N)$ per test case |
+| **Time** | $O(N)$ per test case |
 | **Space** | $O(N)$ |
 | **Roadmap course** | Level up from 1* to 2* (Level 2) |
 
@@ -130,5 +130,5 @@ main()
 
 ## Complexity
 
-- **Time:** $O(N \log N)$ per test case
+- **Time:** $O(N)$ per test case
 - **Space:** $O(N)$

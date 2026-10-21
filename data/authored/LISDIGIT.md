@@ -17,3 +17,28 @@ $$\mathrm{LIS}(i) = 1 + \max\{\mathrm{LIS}(j) : j < i,\ d_j < d_i\}$$
 Two side conditions fall out for free. Every $\mathrm{LIS}_i \geq 1$, so no digit is $0$ and there is never a leading zero; and $n \leq 9$ bounds $\mathrm{LIS}_i \leq 9$, so every value is a legal single digit. That bound on $n$ is exactly what makes the identity construction work — for $n \geq 11$ an LIS array could demand a value of $10$.
 
 Many answers are accepted. For $[1,2,2,1,3,2,4]$ we print `1221324` where the sample prints `1730418`; both have that LIS array. For $[1,1]$ we print `11` — equal digits are correct here, since the LIS must be *strictly* increasing so the second digit cannot extend the first.
+
+## Edge cases
+
+- **Using the LIS value as the digit is self-consistent.** Reading the array as digits, a strictly increasing run ending at position $i$ is a strictly increasing run of integers finishing at $L_i$ and starting at $1$ or more, so it has at most $L_i$ terms; and a chain with values $1, 2, \ldots, L_i$ genuinely exists, so exactly $L_i$ is achieved.
+- **No leading zero**, because every $L_i \geq 1$; and **no digit above $9$**, because $n \leq 9$ bounds any increasing subsequence.
+- **$L_i$ is the LIS length *ending at* position $i$**, not of the prefix — in `1 2 2 1` the value drops back to $1$ at the last position, which a prefix reading could never do.
+- **Repeated values are fine**: the two $2$s in that array both have $L = 2$, because strict increase stops the second $2$ from extending a chain through the first.
+- **This answer differs from the sample's.** The sample prints `1531` where this prints `1221`; a special judge checks the resulting LIS array rather than the exact digits, so both are accepted.
+- **Existence is guaranteed** by the statement, so no feasibility check is needed.
+
+## Dry run
+
+Last sample: $L = 1, 2, 2, 1, 3, 2, 4$, so the number is `1221324`.
+
+| position | digit | longest strictly increasing run ending here | length |
+|---:|---:|---|---:|
+| 1 | 1 | $1$ | 1 |
+| 2 | 2 | $1, 2$ | 2 |
+| 3 | 2 | $1, 2$ | 2 |
+| 4 | 1 | $1$ | 1 |
+| 5 | 3 | $1, 2, 3$ | 3 |
+| 6 | 2 | $1, 2$ | 2 |
+| 7 | 4 | $1, 2, 3, 4$ | 4 |
+
+The lengths reproduce the input array exactly.

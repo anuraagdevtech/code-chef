@@ -19,3 +19,20 @@ Sample case 1 has $\max = 3$ and $\min = 1$, so $2$ moves: raise both $1$s toget
 Aiming above $\max(A)$ would only add moves, so there is no reason to consider a higher target.
 
 One pass computes both extremes, giving $O(N)$ time and $O(1)$ space — appropriate given the sum of $N$ reaches $10^5$.
+
+## Edge cases
+
+- **One move raises every lagging element at once**, so the cost is the single widest gap, not the total shortfall. The first row needs $2$; summing the per-element deficits ($2 + 0 + 2$) gives $4$.
+- **Already equal** (the second row) → $0$, which $\max - \min$ gives with no special case.
+- **$N = 1$**: maximum and minimum coincide, so the answer is $0$.
+- **The target is forced to be $\max(A)$** — raising elements only, so nothing below the maximum can be the common value, and every element must climb to it.
+- **Sum of $N$ bounded by $10^5$** across up to $10^4$ cases, so one pass per case with no sorting.
+
+## Dry run
+
+| input | max | min | gap | output |
+|---|---:|---:|---:|---|
+| $1, 3, 1$ | 3 | 1 | 2 | `2` |
+| $2, 2, 2$ | 2 | 2 | 0 | `0` |
+
+In the first row both $1$s rise together on each of the two moves.

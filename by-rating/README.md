@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **191 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **205 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -14,7 +14,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [600&ndash;799](#600799) | 60 | 60 | Basic Math (31) |
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
-| [1200&ndash;1399](#12001399) | 46 | 13 | Number Theory (7) |
+| [1200&ndash;1399](#12001399) | 46 | 27 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 0 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
@@ -238,20 +238,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 189 | [Chef and the Wildcard Matching](189-TWOSTR.md) `TWOSTR` | 1254 | Strings | Wildcard matching, position by position | yes |
 | 190 | [Hiring Test](190-HIRETEST.md) `HIRETEST` | 1260 | Strings | Counting characters, then a two-branch rule | yes |
 | 191 | [Sticks](191-STICKS.md) `STICKS` | 1261 | Greedy | Largest two pairs by frequency | yes |
-| 192 | [Gasoline Introduction](192-BEGGASOL.md) `BEGGASOL` | 1263 | Simulation | Collecting fuel while moving forward | &ndash; |
-| 193 | [Carvans](193-CARVANS.md) `CARVANS` | 1264 | Arrays | Running minimum over a prefix | &ndash; |
-| 194 | [Pushpa ](194-PUSH7PA.md) `PUSH7PA` | 1266 | Arrays | Frequency combined with value | &ndash; |
-| 195 | [Make them equal](195-MAKEEQUAL.md) `MAKEEQUAL` | 1267 | Greedy | Bounded by the widest gap | &ndash; |
-| 196 | [Equinox Strings](196-EQUINOX.md) `EQUINOX` | 1272 | Strings | First-character membership test | &ndash; |
-| 197 | [Even Splits](197-EVENSPLIT.md) `EVENSPLIT` | 1282 | Strings | Which orderings are reachable | &ndash; |
-| 198 | [Reversal Sorting](198-REVSORT.md) `REVSORT` | 1288 | Arrays | Constraining which inversions may be undone | &ndash; |
-| 199 | [Snake Procession](199-SNAKPROC.md) `SNAKPROC` | 1290 | Strings | Single-pass state machine | &ndash; |
-| 200 | [Points and Lines](200-POLIN.md) `POLIN` | 1296 | Sets | Counting distinct coordinates independently | &ndash; |
-| 201 | [Digit Longest Increasing Subsequences 2](201-LISDIGIT.md) `LISDIGIT` | 1297 | Constructive | Using the LIS value itself as the digit | &ndash; |
-| 202 | [Hard Cash](202-CASH.md) `CASH` | 1300 | Number Theory | A conserved total modulo K | &ndash; |
-| 203 | [Sudhanva and Books](203-SUDBOOKS.md) `SUDBOOKS` | 1300 | Simulation | A stack, with an empty-pop guard | &ndash; |
-| 204 | [Smallest Possible Whole Number](204-SMOL.md) `SMOL` | 1306 | Number Theory | Modulo, with a zero-divisor guard | &ndash; |
-| 205 | [Maximum Weight Difference](205-MAXDIFF.md) `MAXDIFF` | 1308 | Sorting | Taking an extreme K-subset | &ndash; |
+| 192 | [Gasoline Introduction](192-BEGGASOL.md) `BEGGASOL` | 1263 | Simulation | Collecting fuel while moving forward | yes |
+| 193 | [Carvans](193-CARVANS.md) `CARVANS` | 1264 | Arrays | Running minimum over a prefix | yes |
+| 194 | [Pushpa ](194-PUSH7PA.md) `PUSH7PA` | 1266 | Arrays | Frequency combined with value | yes |
+| 195 | [Make them equal](195-MAKEEQUAL.md) `MAKEEQUAL` | 1267 | Greedy | Bounded by the widest gap | yes |
+| 196 | [Equinox Strings](196-EQUINOX.md) `EQUINOX` | 1272 | Strings | First-character membership test | yes |
+| 197 | [Even Splits](197-EVENSPLIT.md) `EVENSPLIT` | 1282 | Strings | Which orderings are reachable | yes |
+| 198 | [Reversal Sorting](198-REVSORT.md) `REVSORT` | 1288 | Arrays | Constraining which inversions may be undone | yes |
+| 199 | [Snake Procession](199-SNAKPROC.md) `SNAKPROC` | 1290 | Strings | Single-pass state machine | yes |
+| 200 | [Points and Lines](200-POLIN.md) `POLIN` | 1296 | Sets | Counting distinct coordinates independently | yes |
+| 201 | [Digit Longest Increasing Subsequences 2](201-LISDIGIT.md) `LISDIGIT` | 1297 | Constructive | Using the LIS value itself as the digit | yes |
+| 202 | [Hard Cash](202-CASH.md) `CASH` | 1300 | Number Theory | A conserved total modulo K | yes |
+| 203 | [Sudhanva and Books](203-SUDBOOKS.md) `SUDBOOKS` | 1300 | Simulation | A stack, with an empty-pop guard | yes |
+| 204 | [Smallest Possible Whole Number](204-SMOL.md) `SMOL` | 1306 | Number Theory | Modulo, with a zero-divisor guard | yes |
+| 205 | [Maximum Weight Difference](205-MAXDIFF.md) `MAXDIFF` | 1308 | Sorting | Taking an extreme K-subset | yes |
 | 206 | [Maximise the Subsequence Sum](206-SIGNFLIP.md) `SIGNFLIP` | 1308 | Greedy | Flip the largest magnitudes first | &ndash; |
 | 207 | [Chopsticks](207-TACHSTCK.md) `TACHSTCK` | 1320 | Greedy | Pairing adjacent elements after sorting | &ndash; |
 | 208 | [Arranging Cup-cakes](208-RESQ.md) `RESQ` | 1322 | Number Theory | Divisor nearest the square root | &ndash; |

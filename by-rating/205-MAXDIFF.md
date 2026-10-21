@@ -2,8 +2,6 @@
 
 > [`MAXDIFF`](https://www.codechef.com/problems/MAXDIFF) &middot; difficulty **1308** &middot; time limit **2s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -114,6 +112,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Both extremes must be evaluated.** Giving the son the $K$ lightest is a different outcome from the $K$ heaviest, and which wins depends on $K$ and the weights: in the first row the lightest choice gives $17$ and the heaviest only $7$.
+- **All weights equal** (the second row): the answer is $|N - 2K| = |8 - 6| = 2$, not $0$ — the difference comes from the group *sizes*, since $K < N$ forces unequal counts.
+- **$K < N$ is guaranteed**, so neither group is ever empty and both slices are valid.
+- **The result is an absolute difference**, so it does not matter which of the two gets the larger total; taking `abs` of both candidates covers it.
+- **Only the $K$ smallest or $K$ largest can be optimal**, because swapping an interior item for a more extreme one moves the two sums further apart.
+- Weights up to $10^5$ with $N \leq 100$ keeps every sum small.
+
+## Dry run
+
+First sample: weights $8, 4, 5, 2, 10$ sorted to $2, 4, 5, 8, 10$, total $29$, $K = 2$.
+
+| son's share | son's sum | other's sum | difference |
+|---|---:|---:|---:|
+| lightest two: $2, 4$ | 6 | 23 | **17** |
+| heaviest two: $8, 10$ | 18 | 11 | 7 |
+
+Output `17`.
 
 ---
 

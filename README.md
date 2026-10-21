@@ -655,7 +655,7 @@ The roadmap headline counts **502 solved entries**, but that sums a per-course c
 | 194 | [Snake Procession](docs/strings/SNAKPROC.md) | 1290 | Single-pass state machine | $O(L)$ per report |
 | 195 | [Password](docs/strings/PASSWD.md) | 1470 | Several predicates, one with a positional restriction | $O(|S|)$ per test case |
 | 205 | [Lucky Four](docs/strings/LUCKFOUR.md) | 775 | Counting a digit | $O(d)$ per number |
-| 216 | [Even Splits](docs/strings/EVENSPLIT.md) | 1282 | Which orderings are reachable | $O(N \log N)$ per test case |
+| 216 | [Even Splits](docs/strings/EVENSPLIT.md) | 1282 | Which orderings are reachable | $O(N)$ per test case |
 | 234 | [Reversing directions](docs/strings/DIRECTI.md) | 1426 | Parsing and reversing a route | $O(N)$ per test case |
 | 240 | [HTML Tags](docs/strings/HTMLTAGS.md) | 1441 | Validating a format | $O(|S|)$ per test case |
 | 249 | [Magical Planks](docs/strings/MKGPLNKS.md) | 1467 | Counting runs | $O(N)$ per test case |

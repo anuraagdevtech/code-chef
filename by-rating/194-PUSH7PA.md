@@ -2,8 +2,6 @@
 
 > [`PUSH7PA`](https://www.codechef.com/problems/PUSH7PA) &middot; difficulty **1266** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -115,6 +113,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Frequency can beat raw height.** With heights $2, 1, 1, 1$ the tallest tower reaches only $2$, while the three $1$s stack to $1 + 3 - 1 = 3$ — so taking $\max(H)$ is wrong even though the sample does not expose it.
+- **A single tower** ($N = 1$, the second row): the count is $1$ and the answer is $H_1$ exactly, which is what the $-1$ in $h + c - 1$ ensures.
+- **All heights distinct**: every count is $1$, so the answer degenerates to $\max(H)$.
+- **$H_i$ up to $10^9$** while counts are at most $N = 10^5$, so the sum stays small and no overflow concern arises.
+- Grouping by height is the whole trick: towers of *different* heights never combine, so the maximum is taken over groups rather than over the array.
+
+## Dry run
+
+First sample: heights $1, 2, 1, 3$.
+
+| height | count $c$ | reach $h + c - 1$ |
+|---:|---:|---:|
+| 1 | 2 | 2 |
+| 2 | 1 | 2 |
+| 3 | 1 | **3** |
+
+Output `3`. Note the two $1$s reach as high as the lone $2$.
 
 ---
 

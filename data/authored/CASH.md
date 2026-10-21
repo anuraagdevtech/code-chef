@@ -23,3 +23,21 @@ It is worth seeing *why* $c$ drops out. Moving one bag from the suffix to the pr
 Checking sample 1: $1 + 14 + 4 + 41 + 1 = 61$, and $61 \bmod 7 = 5$. Sample 2: $1 + 10 + 19 = 30$, and $30 \bmod 9 = 3$.
 
 Spotting the conserved quantity turns an apparent optimisation over $N+1$ split points into a single modulo — which also makes the $10^5$ bound on $\sum N$ a non-issue.
+
+## Edge cases
+
+- **Where the splits are made is irrelevant.** Coins are conserved and every bag ends holding a multiple of $K$, so the leftover is $\left(\sum A_i\right) \bmod K$ whatever the arrangement — no search over distributions is needed.
+- **$A_i$ may be $0$**, contributing nothing to the total.
+- **A total of $0$** gives $0$ left over.
+- **$K$ larger than the total**: no bag can be filled at all, and the modulo already returns the whole sum.
+- **$K$ divides the total**: nothing is left over, and the answer is $0$.
+- **Sums reach $10^5 \times 10^9 = 10^{14}$**, past 32-bit but native in Python.
+
+## Dry run
+
+| coins | total | $K$ | total $\bmod K$ |
+|---|---:|---:|---:|
+| $1, 14, 4, 41, 1$ | 61 | 7 | `5` |
+| $1, 10, 19$ | 30 | 9 | `3` |
+
+$61 = 8 \cdot 7 + 5$, so eight bags fill and five coins remain.

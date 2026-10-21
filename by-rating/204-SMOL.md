@@ -2,8 +2,6 @@
 
 > [`SMOL`](https://www.codechef.com/problems/SMOL) &middot; difficulty **1306** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -107,6 +105,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$K = 0$ is permitted by the constraints** and would raise `ZeroDivisionError`. With a step of zero no subtraction changes anything, so the answer is $N$ itself — this guard is the whole problem.
+- **$K > N$** (the third row, $N = 2$ with $K = 5$): no subtraction is possible without going negative, and `n % k` already returns $N$, so no extra branch is needed.
+- **$K$ divides $N$** (the second row): the result is $0$, the smallest whole number reachable.
+- **$N$ is at least $1$**, so a $0$ answer only ever arises from exact divisibility.
+- **$T$ up to $10^5$** with constant work per case; the input is read in one buffered call.
+
+## Dry run
+
+| $N$ | $K$ | path | output |
+|---:|---:|---|---:|
+| 5 | 2 | $5 \to 3 \to 1$ | `1` |
+| 4 | 4 | $4 \to 0$ | `0` |
+| 2 | 5 | cannot subtract | `2` |
+
+A fourth, unsampled case: $N = 7$, $K = 0$ stays at `7` instead of crashing.
 
 ---
 

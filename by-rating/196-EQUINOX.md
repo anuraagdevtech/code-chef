@@ -2,8 +2,6 @@
 
 > [`EQUINOX`](https://www.codechef.com/problems/EQUINOX) &middot; difficulty **1272** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -125,6 +123,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Only the first character is consulted.** `UUUFFFDDD` scores for Sarthak on its leading `U` even though most of it is not an equinox letter, and `ABBBCDDE` scores for Anuradha despite containing `C`, `D` and `E`.
+- **A draw is possible and must be printed as `DRAW`** — the first case ties at $3$ each, and does so with *unequal* per-word values ($A = 1$ against $B = 3$), so the tie is in the totals, not in the word counts.
+- **More words does not mean winning.** The second case gives each player one word, and the larger $B = 7$ beats $A = 5$.
+- **`EQUINOX` has seven distinct letters** including `X`, which the second case's `XOXOXOXO` relies on — a set built from the literal word covers them all without hand-listing.
+- **$A, B \leq 10^9$ with $N \leq 100$** puts the totals up to $10^{11}$, past 32-bit but native in Python.
+- Bytes are compared throughout, so the first character is an integer code and the lookup set is built from the byte string.
+
+## Dry run
+
+First sample: $A = 1$, $B = 3$.
+
+| word | first char | in `EQUINOX`? | Sarthak | Anuradha |
+|---|---|:---:|---:|---:|
+| `ABBBCDDE` | `A` | no | 0 | 3 |
+| `EARTH` | `E` | yes | 1 | 3 |
+| `INDIA` | `I` | yes | 2 | 3 |
+| `UUUFFFDDD` | `U` | yes | **3** | **3** |
+
+Equal totals, so `DRAW`.
 
 ---
 
