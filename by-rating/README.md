@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **303 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **317 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -15,7 +15,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
-| [1400&ndash;1599](#14001599) | 118 | 79 | Greedy (18) |
+| [1400&ndash;1599](#14001599) | 118 | 93 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
@@ -355,20 +355,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 301 | [Reduce to One](301-REDONE.md) `REDONE` | 1507 | Number Theory | A telescoping product in disguise | yes |
 | 302 | [Magda and Silly Pairs](302-SILLYPRS.md) `SILLYPRS` | 1507 | Greedy | Matching by parity | yes |
 | 303 | [Chef Drinks Coke](303-COKE.md) `COKE` | 1511 | Basic Math | Closed form for a drift-to-target process | yes |
-| 304 | [One-XOR Deletions](304-DELXORONE.md) `DELXORONE` | 1516 | Bit Manipulation | Grouping by the value with its low bit dropped | &ndash; |
-| 305 | [College Life 2](305-COLGLF2.md) `COLGLF2` | 1519 | Arrays | Group total with a per-group adjustment | &ndash; |
-| 306 | [Concat Palindrome](306-CONCATPAL.md) `CONCATPAL` | 1520 | Strings | Multiset containment forced by mirroring | &ndash; |
-| 307 | [When to take medicine](307-MEDIC.md) `MEDIC` | 1522 | Simulation | Where a parity rule breaks at month boundaries | &ndash; |
-| 308 | [Median of adjacent maximum numbers](308-MXMEDIAN.md) `MXMEDIAN` | 1523 | Sorting | Pairing extremes to lift the median | &ndash; |
-| 309 | [Split Sums](309-SPSUM.md) `SPSUM` | 1524 | Number Theory | Splitting a fixed total under a gcd condition | &ndash; |
-| 310 | [Guddu on a Date](310-KS2.md) `KS2` | 1525 | Number Theory | A bijection between prefixes and solutions | &ndash; |
-| 311 | [Positive or Negative Subarrays](311-POSITNEG.md) `POSITNEG` | 1526 | Bit Manipulation | One power of two dominates all the lower ones | &ndash; |
-| 312 | [Monsters](312-SPCP5.md) `SPCP5` | 1527 | Number Theory | Sieve plus a short search | &ndash; |
-| 313 | [Admins and Shopping](313-ADMINSHOP.md) `ADMINSHOP` | 1529 | Greedy | The larger of two independent lower bounds | &ndash; |
-| 314 | [The White Knight](314-E1.md) `E1` | 1530 | Dynamic Programming | Layered DP over columns of a DAG | &ndash; |
-| 315 | [Largest Family](315-LARGEFAM.md) `LARGEFAM` | 1532 | Greedy | Maximising a set size under a sum budget | &ndash; |
-| 316 | [Minimum Number of Pizzas](316-MINPIZZAS.md) `MINPIZZAS` | 1532 | Number Theory | Smallest multiplier for divisibility | &ndash; |
-| 317 | [Prefix Permutation](317-PREFPERM.md) `PREFPERM` | 1532 | Constructive | Blocks that only close at the right moment | &ndash; |
+| 304 | [One-XOR Deletions](304-DELXORONE.md) `DELXORONE` | 1516 | Bit Manipulation | Grouping by the value with its low bit dropped | yes |
+| 305 | [College Life 2](305-COLGLF2.md) `COLGLF2` | 1519 | Arrays | Group total with a per-group adjustment | yes |
+| 306 | [Concat Palindrome](306-CONCATPAL.md) `CONCATPAL` | 1520 | Strings | Multiset containment forced by mirroring | yes |
+| 307 | [When to take medicine](307-MEDIC.md) `MEDIC` | 1522 | Simulation | Where a parity rule breaks at month boundaries | yes |
+| 308 | [Median of adjacent maximum numbers](308-MXMEDIAN.md) `MXMEDIAN` | 1523 | Sorting | Pairing extremes to lift the median | yes |
+| 309 | [Split Sums](309-SPSUM.md) `SPSUM` | 1524 | Number Theory | Splitting a fixed total under a gcd condition | yes |
+| 310 | [Guddu on a Date](310-KS2.md) `KS2` | 1525 | Number Theory | A bijection between prefixes and solutions | yes |
+| 311 | [Positive or Negative Subarrays](311-POSITNEG.md) `POSITNEG` | 1526 | Bit Manipulation | One power of two dominates all the lower ones | yes |
+| 312 | [Monsters](312-SPCP5.md) `SPCP5` | 1527 | Number Theory | Sieve plus a short search | yes |
+| 313 | [Admins and Shopping](313-ADMINSHOP.md) `ADMINSHOP` | 1529 | Greedy | The larger of two independent lower bounds | yes |
+| 314 | [The White Knight](314-E1.md) `E1` | 1530 | Dynamic Programming | Layered DP over columns of a DAG | yes |
+| 315 | [Largest Family](315-LARGEFAM.md) `LARGEFAM` | 1532 | Greedy | Maximising a set size under a sum budget | yes |
+| 316 | [Minimum Number of Pizzas](316-MINPIZZAS.md) `MINPIZZAS` | 1532 | Number Theory | Smallest multiplier for divisibility | yes |
+| 317 | [Prefix Permutation](317-PREFPERM.md) `PREFPERM` | 1532 | Constructive | Blocks that only close at the right moment | yes |
 | 318 | [Sheokand and Number](318-SHKNUM.md) `SHKNUM` | 1534 | Binary Search | Precomputed candidate set with a bisect | &ndash; |
 | 319 | [Flip the String](319-FLIP.md) `FLIP` | 1538 | Strings | Two independent parity classes | &ndash; |
 | 320 | [Javelin Qualification](320-JAVELIN.md) `JAVELIN` | 1538 | Sorting | Two-stage selection | &ndash; |

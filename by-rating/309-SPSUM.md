@@ -2,8 +2,6 @@
 
 > [`SPSUM`](https://www.codechef.com/problems/SPSUM) &middot; difficulty **1524** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -119,6 +117,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The two sums are forced by $S$ and $M$.** Their total is $S = N(N+1)/2$ and their difference is $M$, so they must be $(S+M)/2$ and $(S-M)/2$ — there is nothing to search.
+- **Parity must match**: if $S + M$ is odd no integer split exists, so the answer is `No` before any gcd is computed.
+- **$M$ cannot exceed $S$** (the second row, $N = 1$ with $M = 2$), since the larger share is at most everything.
+- **Any target in $[0, S]$ is a reachable subset sum** of $1 \dots N$, which is why only the parity and the gcd need checking and no feasibility search over subsets is needed.
+- **The gcd condition is the real test**, and it can fail even when the arithmetic works out — for instance $N = 4$ with $M = 0$ gives $5$ and $5$, whose gcd is $5$.
+- **$M$ up to $10^{18}$ and $N$ up to $10^9$** put $S$ near $5 \times 10^{17}$, so exact integers are required throughout.
+
+## Dry run
+
+First sample: $N = 5$, so $S = 15$, and $M = 7$.
+
+| step | value |
+|---|---|
+| $S + M = 22$ | even ✓ |
+| A's share $(S+M)/2$ | 11 |
+| B's share $(S-M)/2$ | 4 |
+| $\gcd(11, 4)$ | 1 ✓ |
+
+Output `Yes` — for instance A takes $\{5, 4, 2\}$ and B takes $\{1, 3\}$.
 
 ---
 

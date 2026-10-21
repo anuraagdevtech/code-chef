@@ -24,3 +24,25 @@ Sample $H = 10$: neither $k=0$ ($P=10$, composite) nor $k=1$ ($P=9$) works, but 
 Sample $H = 21$ is the impossible case: $22$ is not a power of two, and every remainder $21, 20, 18, 14, 6$ is composite, so $-1$.
 
 Note $P$ must be at least $2$; a remainder of $1$ is not prime, which is why $k$ values leaving exactly $1$ are rejected.
+
+## Edge cases
+
+- **$k$ regular attacks always deal exactly $2^k - 1$**, since the power doubles each time: $1 + 2 + 4 + \dots + 2^{k-1}$. The order of moves is therefore irrelevant and only the count matters.
+- **The special move must cover the whole remainder**, so the remainder has to be prime — the single prime is the only flexibility available.
+- **An exact power-of-two-minus-one health needs no special move.** If $2^k - 1 = H$ the answer is $k$, which the equality check catches before the primality test.
+- **Some health values are unreachable** (the second row, $H = 21$): every remainder $21 - (2^k - 1)$ is composite for all valid $k$, so the answer is $-1$.
+- **The loop bound is $2^k - 1 \leq H$**, which keeps $k$ under about $20$ for $H \leq 10^6$ and guarantees termination.
+- **The remainder is always within the sieve** because it is at most $H \leq 10^6$, but the explicit bound check keeps the index safe.
+- **Fewer regular attacks are always better**, so the first $k$ that works is optimal — the loop breaks immediately on success.
+
+## Dry run
+
+First sample: $H = 10$.
+
+| $k$ | regular damage $2^k - 1$ | remainder | remainder prime? | total moves |
+|---:|---:|---:|:---:|---:|
+| 0 | 0 | 10 | no ($2 \cdot 5$) | — |
+| 1 | 1 | 9 | no ($3^2$) | — |
+| 2 | 3 | **7** | **yes** | $2 + 1 = $ `3` |
+
+Two regular attacks deal $1$ and $2$, then the special move deals the prime $7$.

@@ -2,8 +2,6 @@
 
 > [`MINPIZZAS`](https://www.codechef.com/problems/MINPIZZAS) &middot; difficulty **1532** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -105,6 +103,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The condition is $N \mid KP$**, so the smallest $P$ is $N / \gcd(N, K)$: the pizza size already supplies $\gcd(N,K)$ of the factor $N$, and $P$ must cover the rest.
+- **$K$ a multiple of $N$** → one pizza suffices, which the first row shows with $N = K = 2$.
+- **$N$ and $K$ coprime** → $P = N$, the worst case; the second row needs two pizzas for two friends with three slices each.
+- **A partial overlap** (the third row, $N = 4$ and $K = 2$) needs $4/2 = 2$ pizzas.
+- **$N = 1$** → one friend takes everything, and $\gcd(1, K) = 1$ gives $P = 1$.
+- **Chef's own share is not counted** — only the $N$ friends — so there is no $N+1$ anywhere.
+- **$N, K$ up to $10^9$ with $T$ up to $2 \cdot 10^5$**: one gcd per case, and no search over $P$.
+
+## Dry run
+
+| $N$ | $K$ | $\gcd(N,K)$ | $P = N/\gcd$ | slices $KP$ | each friend gets |
+|---:|---:|---:|---:|---:|---:|
+| 2 | 2 | 2 | `1` | 2 | 1 |
+| 2 | 3 | 1 | `2` | 6 | 3 |
+| 4 | 2 | 2 | `2` | 4 | 1 |
 
 ---
 

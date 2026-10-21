@@ -21,3 +21,23 @@ The bijection is what makes this $O(\log N)$ rather than a search. With $N$ up t
 The outer $\bmod 10$ matters for the case $S(N) \equiv 0$, where the completing digit is $0$ rather than $10$ — for example $N = 19$ gives $190$.
 
 The result reaches about $10^{19}$, which **exceeds signed 64-bit range** and needs unsigned or big integers elsewhere; the problem's guarantee that it fits in $2^{64}$ is the hint.
+
+## Edge cases
+
+- **There is exactly one round number per prefix.** Appending a digit to any $n \geq 1$ adds that digit to the digit sum, and precisely one choice in $0 \dots 9$ brings the total to a multiple of $10$ — so the $n$-th round number is $n$ with that digit appended, a clean bijection.
+- **This makes the answer a string operation**, not a search: the $10^{18}$-th round number is computed in one pass over nineteen digits.
+- **A digit sum already divisible by $10$ needs a trailing `0`**, which the outer `% 10` supplies — writing just $10 - s \bmod 10$ would append `10` instead. $N = 19$ has digit sum $10$ and the answer is $190$.
+- **The smallest round number is $19$** ($N = 1$), since the number must be greater than $0$ and single digits cannot reach a digit sum of $10$.
+- **The result has one more digit than $N$**, so it is produced as text rather than as an integer — at $N = 10^{18}$ the answer has twenty digits.
+- **The digit sum is computed on the raw bytes** with `ch - 48`, avoiding a decode per case at $T = 10^5$.
+
+## Dry run
+
+| $N$ | digit sum | needed digit | answer |
+|---:|---:|---:|---|
+| 1 | 1 | 9 | `19` |
+| 2 | 2 | 8 | `28` |
+| 10 | 1 | 9 | `109` |
+| 19 | 10 | **0** | `190` |
+
+Listing the round numbers confirms it: $19, 28, 37, \dots, 91, 109, 118, \dots, 190$ — the $19$th is $190$.

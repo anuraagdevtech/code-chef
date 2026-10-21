@@ -2,8 +2,6 @@
 
 > [`MXMEDIAN`](https://www.codechef.com/problems/MXMEDIAN) &middot; difficulty **1523** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -139,6 +137,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$N$ is odd**, so the median of $B$ is its $\lceil N/2 \rceil$-th largest element — call that count $k$. Maximising the median means making the $k$ largest entries of $B$ as large as possible.
+- **Each of the $k$ largest values should carry its own pair**, partnered with one of the $k$ smallest so that it is the pair's maximum. Then the $k$-th largest entry of $B$ is the $k$-th largest value overall, $A_{2N-k}$ in sorted order — and no arrangement can do better, since $B$ has only $N$ entries drawn from pairs.
+- **The leftover middle values pair among themselves**, and their maxima all fall below the median, so their arrangement is irrelevant.
+- **$N = 1$** (the first row) makes $k = 1$: the single pair's maximum is the larger of the two values.
+- **Duplicates are handled by position, not value.** The third row has three $3$s, and the answer is $3$ — the construction never needs distinct values.
+- **Two things must be printed**: the median on one line and a witnessing permutation on the next.
+- **This permutation differs from the sample's** (`1 5 2 6 3 4` against `1 3 2 5 4 6` for the second case), and both achieve a median of $5$, so a special judge verifies the pairing.
+
+## Dry run
+
+Second sample: $N = 3$ and $A = 1,2,3,4,5,6$ (already sorted), so $k = 2$.
+
+| pair | values | max |
+|---:|---|---:|
+| 1 | $1, 5$ | 5 |
+| 2 | $2, 6$ | 6 |
+| 3 | $3, 4$ | 4 |
+
+$B = 5, 6, 4$, whose median is `5` $= A_{2N-k} = A_4$. The two largest values each head their own pair.
 
 ---
 

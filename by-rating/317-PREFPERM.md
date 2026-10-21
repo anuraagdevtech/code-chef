@@ -2,8 +2,6 @@
 
 > [`PREFPERM`](https://www.codechef.com/problems/PREFPERM) &middot; difficulty **1532** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -124,6 +122,33 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Putting the block's largest value first is what prevents an early close.** Within the block $(\text{prev}, \text{end}]$, the prefix cannot be a permutation until every value up to `end` has appeared — and since `end` itself leads, no intermediate prefix has its maximum equal to its length.
+- **Only the listed prefixes may be permutations**, so the construction must block all the others — which is exactly what the leading maximum achieves, block by block.
+- **The listed lengths close automatically**: after finishing block $i$, the values seen are precisely $1 \dots A_i$.
+- **$A_K = N$ is guaranteed**, so the blocks tile the whole array and nothing is left over.
+- **A block of size $1$** contributes just its own value, as the third sample row does throughout — giving the identity permutation when every prefix must be good.
+- **$K = 1$** means only the full array may be a permutation, so one big block runs from $1$ to $N$ with $N$ in front.
+- **This answer differs from the sample's** at $N = 8$ (`3 1 2 6 4 5 7 8` against `2 3 1 6 4 5 7 8`); both have good prefixes at exactly $3, 6, 7, 8$, so a special judge checks which prefixes close.
+
+## Dry run
+
+First sample: $N = 8$ with $A = 3, 6, 7, 8$ gives $P = 3, 1, 2, 6, 4, 5, 7, 8$.
+
+| prefix length | values seen | permutation? |
+|---:|---|:---:|
+| 1 | $\{3\}$ | no |
+| 2 | $\{1,3\}$ | no |
+| 3 | $\{1,2,3\}$ | **yes** |
+| 4 | $\{1,2,3,6\}$ | no |
+| 5 | $\{1,2,3,4,6\}$ | no |
+| 6 | $\{1,\dots,6\}$ | **yes** |
+| 7 | $\{1,\dots,7\}$ | **yes** |
+| 8 | $\{1,\dots,8\}$ | **yes** |
+
+Exactly the four listed lengths close.
 
 ---
 
