@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**306 of 486 solved problems documented.**
+**312 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 2 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 8 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **306** |
+| | **Total** | **502** | **761** | **312** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,12 +26,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 6 |
+| 4 | 100 | 12 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (32)</summary>
+<details open><summary><b>Arrays</b> (33)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -67,6 +67,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 269 | [Total Correct Submissions](docs/arrays/TOTCRT.md) | 1499 | Aggregating by key, then sorting | $O(N \log N)$ per test case |
 | 287 | [Unstable Subarray](docs/arrays/COUNTSUB.md) | 1545 | A telescoping sum, then counting equal pairs | $O(N)$ per test case |
 | 295 | [Yet Another Palindrome Problem](docs/arrays/ARRPAL.md) | 1594 | Prefix increments force a non-increasing profile | $O(N)$ per test case |
+| 311 | [Mix the Colors](docs/arrays/MIXCOLOR.md) | 1419 | Counting duplicates | $O(N)$ per test case |
 
 </details>
 
@@ -322,7 +323,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (36)</summary>
+<details open><summary><b>Number Theory</b> (38)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -362,6 +363,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 288 | [Catch the Thief](docs/number-theory/CATHIEF.md) | 1550 | An invariant from step size and parity | $O(1)$ per test case |
 | 297 | [Andrew and the Meatballs again](docs/number-theory/AMMEAT2.md) | 1597 | A shared prime factor guarantees non-coprimality | $O(K)$ per test case |
 | 299 | [Non-Divisor Array](docs/number-theory/DIVCOL.md) | 1623 | Colouring the divisibility order by prime-factor count | $O(N \log \log N)$ per test case |
+| 307 | [Minimum Number of Pizzas](docs/number-theory/MINPIZZAS.md) | 1532 | Smallest multiplier for divisibility | $O(\log \min(N,K))$ per test case |
+| 308 | [Alternating Work Days](docs/number-theory/ALTER.md) | 1486 | Divisibility plus an alternation constraint | $O(1)$ per test case |
 
 </details>
 
@@ -404,7 +407,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (10)</summary>
+<details open><summary><b>Sorting</b> (13)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -418,6 +421,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 214 | [Maximum Trio](docs/sorting/MXMTRIO.md) | 1349 | Choosing extremes for a product | $O(N \log N)$ per test case |
 | 221 | [Hotel Bytelandia](docs/sorting/HOTEL.md) | 1405 | Event sweep | $O(N \log N)$ per test case |
 | 250 | [Approximately II](docs/sorting/APPROX2.md) | 1471 | Two pointers, then counting by value | $O(N \log N)$ per test case |
+| 309 | [Sort Checker](docs/sorting/SRTCHK.md) | -1 | Verifying a claimed sort | $O(N \log N)$ per test case |
+| 310 | [Counting Sort](docs/sorting/CNTSORT.md) | -1 | Counting sort over a small value range | $O(N + V)$ per test case with $V = 100$ |
+| 312 | [Fair distribution](docs/sorting/SUBS.md) | -1 | Sliding a fixed-size window | $O(N \log N)$ per test case |
 
 </details>
 
