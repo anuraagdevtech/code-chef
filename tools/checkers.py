@@ -409,6 +409,21 @@ def _indiperm(inp, got):
     return True, "valid"
 
 
+def _cntdist(inp, got):
+    """CNTDIST: the sample masks line 1 with '*', so check both lines directly."""
+    toks = inp.split()
+    n = int(toks[0])
+    want = len(set(toks[1:1 + n]))
+    lines = [ln.strip() for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != 2:
+        return False, f"expected 2 lines, got {len(lines)}"
+    if lines[0] != "2":
+        return False, f"complexity exponent {lines[0]}, should be 2"
+    if lines[1] != str(want):
+        return False, f"distinct count {lines[1]}, should be {want}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -426,5 +441,6 @@ CHECKERS = {
     "ADVITIYA5": _advitiya5,
     "MAKEDIV3": _makediv3,
     "INDIPERM": _indiperm,
+    "CNTDIST": _cntdist,
     "GCDSUBARRAYS": _gcdsubarrays,
 }

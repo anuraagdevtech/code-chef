@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**312 of 486 solved problems documented.**
+**318 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 8 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 14 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **312** |
+| | **Total** | **502** | **761** | **318** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,12 +26,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 12 |
+| 4 | 100 | 18 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (33)</summary>
+<details open><summary><b>Arrays</b> (34)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -68,6 +68,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 287 | [Unstable Subarray](docs/arrays/COUNTSUB.md) | 1545 | A telescoping sum, then counting equal pairs | $O(N)$ per test case |
 | 295 | [Yet Another Palindrome Problem](docs/arrays/ARRPAL.md) | 1594 | Prefix increments force a non-increasing profile | $O(N)$ per test case |
 | 311 | [Mix the Colors](docs/arrays/MIXCOLOR.md) | 1419 | Counting duplicates | $O(N)$ per test case |
+| 316 | [Equal Difference](docs/arrays/EQDIFFER.md) | 1500 | Which multisets have all pairwise differences equal | $O(N)$ per test case |
 
 </details>
 
@@ -170,7 +171,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (10)</summary>
+<details open><summary><b>Bit Manipulation</b> (11)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -184,6 +185,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 289 | [XxOoRr](docs/bit-manipulation/XXOORR.md) | 1551 | Bits are independent, so count per column | $O(N \log \max A)$ per test case |
 | 293 | [Yet Another Constructive Problem](docs/bit-manipulation/ORANDCON.md) | 1580 | The expression computes a bitwise majority | $O(1)$ per test case |
 | 303 | [Consecutive Xor](docs/bit-manipulation/XOR2.md) | 1611 | The total XOR is invariant | $O(N)$ per test case |
+| 313 | [Missing a Point](docs/bit-manipulation/PTMSSNG.md) | -1 | XOR cancels everything that appears twice | $O(N)$ per test case |
 
 </details>
 
@@ -285,7 +287,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (31)</summary>
+<details open><summary><b>Greedy</b> (32)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -320,6 +322,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 296 | [The One On The Last Night](docs/greedy/S06E06.md) | 1596 | Raise the smallest digit first | $O(d \log d)$ per test case with $d \leq 7$ digits |
 | 302 | [Chef And Adjacent Sums](docs/greedy/CHFADJSUM.md) | 1604 | Keeping the heaviest elements apart | $O(N)$ per test case |
 | 304 | [Positive array](docs/greedy/CIREQ.md) | 1620 | Hall's condition on value-capped positions | $O(N)$ per test case |
+| 315 | [Max Mex](docs/greedy/MEX.md) | 1478 | Spending a budget on the smallest gaps first | $O(N + V)$ per test case |
 
 </details>
 
@@ -379,7 +382,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sets</b> (10)</summary>
+<details open><summary><b>Sets</b> (11)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -393,6 +396,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 201 | [Chocolate Monger](docs/sets/CM164364.md) | 1369 | Distinct count capped by a budget | $O(n)$ per test case |
 | 208 | [Devu and friendship testing](docs/sets/CFRTEST.md) | 1061 | Distinct values as a capacity bound | $O(n)$ per test case |
 | 215 | [Points and Lines](docs/sets/POLIN.md) | 1296 | Counting distinct coordinates independently | $O(N)$ per test case |
+| 314 | [Count Distinct Values](docs/sets/CNTDIST.md) | -1 | Replacing a linear scan with a hash set | $O(n)$ overall |
 
 </details>
 
@@ -407,7 +411,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (13)</summary>
+<details open><summary><b>Sorting</b> (15)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -424,6 +428,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 309 | [Sort Checker](docs/sorting/SRTCHK.md) | -1 | Verifying a claimed sort | $O(N \log N)$ per test case |
 | 310 | [Counting Sort](docs/sorting/CNTSORT.md) | -1 | Counting sort over a small value range | $O(N + V)$ per test case with $V = 100$ |
 | 312 | [Fair distribution](docs/sorting/SUBS.md) | -1 | Sliding a fixed-size window | $O(N \log N)$ per test case |
+| 317 | [Javelin Qualification](docs/sorting/JAVELIN.md) | 1538 | Two-stage selection | $O(N \log N)$ per test case |
+| 318 | [ChefWatson uses Social Network](docs/sorting/BOOKCHEF.md) | 1610 | Sorting on a composite key | $O(M \log M)$ |
 
 </details>
 
