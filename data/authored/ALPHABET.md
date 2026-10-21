@@ -19,3 +19,20 @@ The guarantee that each letter appears in $S$ at most once means $S$ is already 
 Sample case 2, `dog`, fails on the very first letter, and the `<=` short-circuits there.
 
 Note the input shape: there is **no $T$**. The first line is the known-letter string, the second is $N$, and then come $N$ words — each producing one `Yes` or `No`.
+
+## Edge cases
+
+- **Repetition in the word is irrelevant**: `cat` and `catt` both need only $\{a, c, t\}$, which is why a set comparison is right and counting is not needed.
+- **Order is irrelevant** too — `act` and `cat` are the same requirement.
+- **One unknown letter is enough to fail**: `dog` shares nothing with $\{a,c,t\}$, but `cad` would fail just as surely on the single `d`.
+- **All 26 letters known**: every word answers `Yes`.
+- **Input shape**: no test-case count — the first token is the known-letters string, then the word count, then the words.
+
+## Dry run
+
+Known letters $\{a, c, t\}$.
+
+| word | letters used | subset? | output |
+|---|---|:---:|---|
+| `cat` | $\{c, a, t\}$ | yes | `Yes` |
+| `dog` | $\{d, o, g\}$ | no | `No` |

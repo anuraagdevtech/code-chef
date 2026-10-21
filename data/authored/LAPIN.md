@@ -19,3 +19,24 @@ For odd lengths the middle character is discarded. Taking the left half as `s[:n
 Sample case 6, `ababc`, has halves `ab` and `bc` — same length, different contents — and fails.
 
 With $|S| \leq 1000$ the linear pass is trivial; the counter holds at most 26 entries, so the space is effectively constant.
+
+## Edge cases
+
+- **Odd length skips the middle character.** `rotor` compares `ro` against `or` and ignores the central `t`; slicing from $|S| - h$ rather than from $h$ is what achieves that.
+- **Frequencies, not order**: `ro` and `or` match, so the halves need not be equal as strings.
+- **Multiplicities matter.** `abbaab` splits into `abb` and `aab`, which use the same letters but in different quantities, so the answer is `NO` — comparing *sets* instead of counts would wrongly say `YES`. This is the sharpest case in the sample.
+- **Shortest input** ($|S| = 2$): two halves of one character each.
+- At most 26 distinct letters, so the counters are effectively constant space.
+
+## Dry run
+
+| $S$ | first half | last half | counts match? | output |
+|---|---|---|:---:|---|
+| `gaga` | `ga` | `ga` | yes | `YES` |
+| `abcde` | `ab` | `de` | no | `NO` |
+| `rotor` | `ro` | `or` | yes | `YES` |
+| `xyzxy` | `xy` | `xy` | yes | `YES` |
+| `abbaab` | `abb` | `aab` | **no** | `NO` |
+| `ababc` | `ab` | `bc` | no | `NO` |
+
+Row 5 uses the same two letters in both halves and still fails, on the counts.

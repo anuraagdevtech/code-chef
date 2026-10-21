@@ -21,3 +21,21 @@ Sample case 3 is built precisely on that. $183$ dropping $17\%$ gives $183 \time
 Note $C$ may be negative, which the formula handles naturally — $100 + C$ simply shrinks. Sample case 2 is a $7\%$ drop to exactly $93$, falling one rupee short of the range.
 
 The range comparison is inclusive at both ends, and Python's chained comparison expresses it in one line.
+
+## Edge cases
+
+- **A negative change** (the last two rows): the price falls, and the formula handles it because $100 + C$ stays non-negative for $C \geq -100$. At $C = -100$ exactly the new price is $0$.
+- **Scaling by $100$ removes the division entirely.** Computing $S(1 + C/100)$ as a float risks a rounding error at precisely the boundary cases the problem is built around; multiplying both sides by $100$ keeps everything in integers.
+- **Exactly at $A$ or $B$**: inside the range, so the comparisons are non-strict.
+- **$S = 0$**: the new price is $0$, and since $A$ may also be $0$ the answer can still be `Yes`.
+- **$A \leq B$ is guaranteed**, so the range is never empty.
+
+## Dry run
+
+| $S$ | $C$ | $S(100+C)$ | $100A$ | $100B$ | inside? | output |
+|---:|---:|---:|---:|---:|:---:|---|
+| 100 | 7 | 10700 | 9300 | 10800 | yes | `Yes` |
+| 100 | $-7$ | 9300 | 9400 | 10000 | no | `No` |
+| 183 | $-17$ | 15189 | 15200 | 17200 | no | `No` |
+
+Row 3 misses by $11$ hundredths of a rupee, which is exactly why the comparison must stay exact.

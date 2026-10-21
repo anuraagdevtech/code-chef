@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **163 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **177 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -13,7 +13,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [400&ndash;599](#400599) | 34 | 34 | Basic Math (18) |
 | [600&ndash;799](#600799) | 60 | 60 | Basic Math (31) |
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
-| [1000&ndash;1199](#10001199) | 15 | 0 | Strings (5) |
+| [1000&ndash;1199](#10001199) | 15 | 14 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 0 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 0 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
@@ -205,20 +205,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 164 | [Programming Languages](164-PROGLANG.md) `PROGLANG` | 1001 | Sets | Subset containment | &ndash; |
-| 165 | [Chef in Vaccination Queue](165-VACCINQ.md) `VACCINQ` | 1016 | Arrays | Prefix sum with a per-element lookup | &ndash; |
-| 166 | [Weight Balance](166-WEIGHTBL.md) `WEIGHTBL` | 1045 | Basic Math | Reachable range over repeated choices | &ndash; |
-| 167 | [Devu and friendship testing](167-CFRTEST.md) `CFRTEST` | 1061 | Sets | Distinct values as a capacity bound | &ndash; |
-| 168 | [Chef and Stock Prices ](168-CSTOCK.md) `CSTOCK` | 1069 | Basic Math | Percentage change without floating point | &ndash; |
-| 169 | [Motivation](169-IMDB.md) `IMDB` | 1098 | Arrays | Maximum over a filtered subset | &ndash; |
-| 170 | [Studying Alphabet](170-ALPHABET.md) `ALPHABET` | 1123 | Sets | Subset containment | &ndash; |
-| 171 | [Two Dishes](171-TWODISH.md) `TWODISH` | 1140 | Greedy | Bottleneck across shared and exclusive resources | &ndash; |
-| 172 | [Attendance](172-ATTND.md) `ATTND` | 1148 | Strings | Frequency of a key field | &ndash; |
-| 173 | [Lapindromes](173-LAPIN.md) `LAPIN` | 1159 | Strings | Comparing character frequencies | &ndash; |
-| 174 | [Lazy Salesman](174-HOLIDAYS.md) `HOLIDAYS` | 1161 | Greedy | Take the largest items first | &ndash; |
-| 175 | [Play Piano](175-PLAYPIAN.md) `PLAYPIAN` | 1180 | Strings | Validating fixed-size blocks | &ndash; |
-| 176 | [Pawri Meme](176-PAWRI.md) `PAWRI` | 1182 | Strings | Substring replacement | &ndash; |
-| 177 | [The Lead Game](177-TLG.md) `TLG` | 1190 | Arrays | Running totals with a tracked maximum | &ndash; |
+| 164 | [Programming Languages](164-PROGLANG.md) `PROGLANG` | 1001 | Sets | Subset containment | yes |
+| 165 | [Chef in Vaccination Queue](165-VACCINQ.md) `VACCINQ` | 1016 | Arrays | Prefix sum with a per-element lookup | yes |
+| 166 | [Weight Balance](166-WEIGHTBL.md) `WEIGHTBL` | 1045 | Basic Math | Reachable range over repeated choices | yes |
+| 167 | [Devu and friendship testing](167-CFRTEST.md) `CFRTEST` | 1061 | Sets | Distinct values as a capacity bound | yes |
+| 168 | [Chef and Stock Prices ](168-CSTOCK.md) `CSTOCK` | 1069 | Basic Math | Percentage change without floating point | yes |
+| 169 | [Motivation](169-IMDB.md) `IMDB` | 1098 | Arrays | Maximum over a filtered subset | yes |
+| 170 | [Studying Alphabet](170-ALPHABET.md) `ALPHABET` | 1123 | Sets | Subset containment | yes |
+| 171 | [Two Dishes](171-TWODISH.md) `TWODISH` | 1140 | Greedy | Bottleneck across shared and exclusive resources | yes |
+| 172 | [Attendance](172-ATTND.md) `ATTND` | 1148 | Strings | Frequency of a key field | yes |
+| 173 | [Lapindromes](173-LAPIN.md) `LAPIN` | 1159 | Strings | Comparing character frequencies | yes |
+| 174 | [Lazy Salesman](174-HOLIDAYS.md) `HOLIDAYS` | 1161 | Greedy | Take the largest items first | yes |
+| 175 | [Play Piano](175-PLAYPIAN.md) `PLAYPIAN` | 1180 | Strings | Validating fixed-size blocks | yes |
+| 176 | [Pawri Meme](176-PAWRI.md) `PAWRI` | 1182 | Strings | Substring replacement | yes |
+| 177 | [The Lead Game](177-TLG.md) `TLG` | 1190 | Arrays | Running totals with a tracked maximum | yes |
 | 178 | [Chef and Feedback](178-ERROR.md) `ERROR` | 1199 | Strings | Substring search | &ndash; |
 
 ## 1200&ndash;1399

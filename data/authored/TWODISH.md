@@ -22,3 +22,20 @@ Recognising that $A$ and $C$ **add** rather than each capping separately is the 
 Sample case 2 is vegetable-bound: $A + C = 4$ would allow four dishes, but only $2$ vegetables exist, so just $2$ are possible against a required $3$.
 
 Sample case 4 is the mirror case, bound by $A + C = 2$ while vegetables are plentiful at $3$. Dropping either term of the `min` fails one of these two.
+
+## Edge cases
+
+- **Vegetables are the bottleneck** (the second row: $2$ vegetables for $3$ dishes): `NO`.
+- **The fruit-plus-fish total is the bottleneck** (the last row: $A + C = 2$ for $3$ dishes): `NO`. The sample has one row failing on each side, so checking only one constraint passes half of them wrongly.
+- **Exactly enough** (the first row: $\min(2, 2) = 2$ for $2$ dishes): `YES`, so the comparison is non-strict.
+- **A surplus on one side does not help the other** (the third row has $6$ vegetables but only $5$ of the fruit-or-fish pool): the binding limit is the smaller.
+- Each dish needs one vegetable **and** one of fruit or fish, so the two requirements are independent minima rather than a single total.
+
+## Dry run
+
+| $N$ | $A$ (fruit) | $B$ (veg) | $C$ (fish) | veg limit | fruit+fish | $\min$ | $\geq N$? | output |
+|---:|---:|---:|---:|---:|---:|---:|:---:|---|
+| 2 | 1 | 2 | 1 | 2 | 2 | 2 | yes | `YES` |
+| 3 | 2 | 2 | 2 | 2 | 4 | 2 | no | `NO` |
+| 4 | 2 | 6 | 3 | 6 | 5 | 5 | yes | `YES` |
+| 3 | 1 | 3 | 1 | 3 | 2 | 2 | no | `NO` |

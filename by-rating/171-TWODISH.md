@@ -2,8 +2,6 @@
 
 > [`TWODISH`](https://www.codechef.com/problems/TWODISH) &middot; difficulty **1140** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -107,6 +105,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Vegetables are the bottleneck** (the second row: $2$ vegetables for $3$ dishes): `NO`.
+- **The fruit-plus-fish total is the bottleneck** (the last row: $A + C = 2$ for $3$ dishes): `NO`. The sample has one row failing on each side, so checking only one constraint passes half of them wrongly.
+- **Exactly enough** (the first row: $\min(2, 2) = 2$ for $2$ dishes): `YES`, so the comparison is non-strict.
+- **A surplus on one side does not help the other** (the third row has $6$ vegetables but only $5$ of the fruit-or-fish pool): the binding limit is the smaller.
+- Each dish needs one vegetable **and** one of fruit or fish, so the two requirements are independent minima rather than a single total.
+
+## Dry run
+
+| $N$ | $A$ (fruit) | $B$ (veg) | $C$ (fish) | veg limit | fruit+fish | $\min$ | $\geq N$? | output |
+|---:|---:|---:|---:|---:|---:|---:|:---:|---|
+| 2 | 1 | 2 | 1 | 2 | 2 | 2 | yes | `YES` |
+| 3 | 2 | 2 | 2 | 2 | 4 | 2 | no | `NO` |
+| 4 | 2 | 6 | 3 | 6 | 5 | 5 | yes | `YES` |
+| 3 | 1 | 3 | 1 | 3 | 2 | 2 | no | `NO` |
 
 ---
 

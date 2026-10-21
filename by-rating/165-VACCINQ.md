@@ -2,8 +2,6 @@
 
 > [`VACCINQ`](https://www.codechef.com/problems/VACCINQ) &middot; difficulty **1016** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -110,6 +108,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Chef himself is included.** The slice runs over the first $P$ people, so position $P$ counts — and $A_P = 1$ is guaranteed, meaning Chef always takes the longer time $Y$.
+- **Chef is first** ($P = 1$): only his own time, as in the second sample row.
+- **Chef is last** ($P = N$): everyone ahead of him counts, as in the third row.
+- **The people behind Chef are irrelevant**, so the array beyond $P$ is never read — the first row has a $1$ at position $4$ that contributes nothing.
+- **Input order is $N$, $P$, $X$, $Y$** on one line, then the array.
+
+## Dry run
+
+First sample: $N=4$, $P=2$, $X=3$, $Y=2$, flags $0, 1, 0, 1$.
+
+| position | flag | time | running total |
+|---:|---:|---:|---:|
+| 1 | 0 | $X = 3$ | 3 |
+| 2 | 1 | $Y = 2$ | 5 |
+
+Positions $3$ and $4$ are behind Chef and ignored, so the output is `5`.
 
 ---
 

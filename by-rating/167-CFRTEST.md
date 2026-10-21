@@ -2,8 +2,6 @@
 
 > [`CFRTEST`](https://www.codechef.com/problems/CFRTEST) &middot; difficulty **1061** &middot; time limit **1.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -110,6 +108,21 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Everyone wants the same day** ($1, 1$): only one party can happen, so the answer is $1$ rather than $n$.
+- **All days distinct** ($3, 2$): every friend is satisfied, so the answer is $n$.
+- **One party per day** is the whole constraint: friends sharing a day compete for it and only one can be served, which is why the answer is the number of *distinct* days.
+- **$n = 1$**: one friend, one party.
+- The $d_i$ are bounded by $100$ while $n \leq 50$, so the distinct count can never be capped by the day range.
+
+## Dry run
+
+| days requested | distinct | output |
+|---|---:|---|
+| $3, 2$ | $\{2, 3\}$ | `2` |
+| $1, 1$ | $\{1\}$ | `1` |
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`PAWRI`](https://www.codechef.com/problems/PAWRI) &middot; difficulty **1182** &middot; time limit **2s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -102,6 +100,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A partial match stays put**: `part` lacks the trailing `y`, so it is left alone. The whole five-character pattern must appear.
+- **A near miss**: `parti` is not a match either, and the second sample row contains one between two real matches.
+- **Adjacent occurrences** (`partyparty`): both are replaced in the one pass.
+- **No cascading is possible**, because `pawri` does not contain `party` — so a single `replace` is correct and there is no need to loop until the string stabilises.
+- **$|S|$ up to $10^5$ across ten cases**, so the replacement should be a single library call rather than a character loop.
+
+## Dry run
+
+| input | matches found | output |
+|---|---|---|
+| `part` | none | `part` |
+| `partypartiparty` | positions $0$ and $10$ | `pawripartipawri` |
+
+In the second row the middle `parti` is skipped, leaving it untouched between the two replacements.
 
 ---
 

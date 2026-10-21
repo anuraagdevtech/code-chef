@@ -19,3 +19,21 @@ Sample case 2, `ABBA`, shows that the order within a day may vary freely: `AB` t
 Sample case 4, `AA`, is the minimal failure — a single day with the same sister twice.
 
 In Python this reads cleanly as `all(s[i] != s[i+1] for i in range(0, len(s), 2))`, which short-circuits on the first bad day.
+
+## Edge cases
+
+- **Block alignment is the point, not the letter counts.** `ABBA` passes because its blocks are `AB` and `BA`, while `ABAABB` fails on its middle block `AA` — and both strings contain three of each letter in the second case, so a counting argument cannot distinguish them.
+- **$|s|$ is guaranteed even**, so there is never a trailing partial block to decide about.
+- **The shortest input** ($|s| = 2$) is a single block: `AB` passes, `AA` fails.
+- **A failure anywhere fails the whole string**, so `all` short-circuits on the first bad block.
+
+## Dry run
+
+| $s$ | blocks of two | all differ? | output |
+|---|---|:---:|---|
+| `AB` | `AB` | yes | `yes` |
+| `ABBA` | `AB`, `BA` | yes | `yes` |
+| `ABAABB` | `AB`, `AA`, `BB` | no | `no` |
+| `AA` | `AA` | no | `no` |
+
+Rows 2 and 3 have the same letter counts in different alignments.

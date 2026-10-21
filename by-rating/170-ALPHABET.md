@@ -2,8 +2,6 @@
 
 > [`ALPHABET`](https://www.codechef.com/problems/ALPHABET) &middot; difficulty **1123** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -122,6 +120,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Repetition in the word is irrelevant**: `cat` and `catt` both need only $\{a, c, t\}$, which is why a set comparison is right and counting is not needed.
+- **Order is irrelevant** too — `act` and `cat` are the same requirement.
+- **One unknown letter is enough to fail**: `dog` shares nothing with $\{a,c,t\}$, but `cad` would fail just as surely on the single `d`.
+- **All 26 letters known**: every word answers `Yes`.
+- **Input shape**: no test-case count — the first token is the known-letters string, then the word count, then the words.
+
+## Dry run
+
+Known letters $\{a, c, t\}$.
+
+| word | letters used | subset? | output |
+|---|---|:---:|---|
+| `cat` | $\{c, a, t\}$ | yes | `Yes` |
+| `dog` | $\{d, o, g\}$ | no | `No` |
 
 ---
 

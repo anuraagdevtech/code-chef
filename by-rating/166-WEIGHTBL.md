@@ -2,8 +2,6 @@
 
 > [`WEIGHTBL`](https://www.codechef.com/problems/WEIGHTBL) &middot; difficulty **1045** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -113,6 +111,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Below the minimum** (the first row: a gain of $1$ against a required $2 \times 1 = 2$): `0`.
+- **Above the maximum** (the last row: a gain of $99$ against a ceiling of $2 \times 2 = 4$): `0`.
+- **Exactly on either bound**: the second row sits on the lower bound and the third on the upper, and both answer `1` — so both comparisons are non-strict, and the sample covers each.
+- **$x_1 = x_2$**: the range collapses to a single value and the gain must match it exactly.
+- **$x_1$ may be $0$**, which makes the lower bound $0$ and admits any gain up to $m x_2$.
+- Monthly gains vary freely within $[x_1, x_2]$, so **every** integer total in $[m x_1, m x_2]$ is reachable — that is why a plain range test suffices and no divisibility condition is needed.
+
+## Dry run
+
+| $w_1$ | $w_2$ | gain | $x_1$ | $x_2$ | $M$ | range $[Mx_1, Mx_2]$ | inside? | output |
+|---:|---:|---:|---:|---:|---:|---|:---:|---|
+| 1 | 2 | 1 | 1 | 2 | 2 | $[2,4]$ | no | `0` |
+| 2 | 4 | 2 | 1 | 2 | 2 | $[2,4]$ | yes (lower) | `1` |
+| 4 | 8 | 4 | 1 | 2 | 2 | $[2,4]$ | yes (upper) | `1` |
+| 5 | 8 | 3 | 1 | 2 | 2 | $[2,4]$ | yes | `1` |
+| 1 | 100 | 99 | 1 | 2 | 2 | $[2,4]$ | no | `0` |
 
 ---
 
