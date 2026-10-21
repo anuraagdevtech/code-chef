@@ -2,8 +2,6 @@
 
 > [`MAXTASTE`](https://www.codechef.com/problems/MAXTASTE) &middot; difficulty **627** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -93,6 +91,22 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The two largest values in the same pair** is the trap, and the sample's second row is it: $16, 15, 5, 4$ has $16$ and $15$ as the two biggest overall, but both come from the first pair, so only one may be taken and the answer is $16 + 5 = 21$, not $31$. Sorting all four and adding the top two is wrong.
+- **A tie inside a pair** ($a = b$): either choice gives the same total, so no tie-break is needed.
+- **All four equal**: the answer is twice that value.
+- The two picks are genuinely independent — one from each pair — which is why maximising them separately is optimal rather than merely convenient.
+
+## Dry run
+
+| $a$ | $b$ | $c$ | $d$ | $\max(a,b)$ | $\max(c,d)$ | total | output |
+|---:|---:|---:|---:|---:|---:|---:|---|
+| 3 | 5 | 6 | 2 | 5 | 6 | 11 | `11` |
+| 16 | 15 | 5 | 4 | 16 | 5 | 21 | `21` |
+
+Row 2 shows $15$ going unused despite being the second largest value present.
 
 ---
 

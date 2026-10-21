@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **35 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **53 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -11,7 +11,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | Band | Problems | Written | Most common topic |
 |---|---:|---:|---|
 | [400&ndash;599](#400599) | 34 | 34 | Basic Math (18) |
-| [600&ndash;799](#600799) | 60 | 1 | Basic Math (31) |
+| [600&ndash;799](#600799) | 60 | 19 | Basic Math (31) |
 | [800&ndash;999](#800999) | 69 | 0 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 0 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 0 | Number Theory (7) |
@@ -67,24 +67,24 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
 | 035 | [Elections in Chefland](035-ELECTN.md) `ELECTN` | 604 | Arrays | Counting with a predicate | yes |
-| 036 | [Minimum Cars required](036-MINCARS.md) `MINCARS` | 608 | Basic Math | Ceiling division | &ndash; |
-| 037 | [Test Score](037-CHEFSCORE.md) `CHEFSCORE` | 610 | Number Theory | Divisibility with an upper bound | &ndash; |
-| 038 | [Jenga Night](038-JENGA.md) `JENGA` | 613 | Number Theory | Divisibility as an exact-fit condition | &ndash; |
-| 039 | [Bus  Seat Numbering](039-SEATNUMBER.md) `SEATNUMBER` | 613 | Conditionals & Case Work | Decomposing an index into deck and position | &ndash; |
-| 040 | [Discus Throw](040-DISCUS.md) `DISCUS` | 622 | Basic Math | Maximum of a fixed set | &ndash; |
-| 041 | [Maximise the Tastiness](041-MAXTASTE.md) `MAXTASTE` | 627 | Greedy | Independent choices optimised separately | &ndash; |
-| 042 | [Watching Movies at 2x](042-MOVIE2X.md) `MOVIE2X` | 628 | Basic Math | Rate and time | &ndash; |
-| 043 | [Police and Thief](043-POLTHIEF.md) `POLTHIEF` | 639 | Basic Math | Relative speed | &ndash; |
-| 044 | [Flip the cards](044-FLIPCARDS.md) `FLIPCARDS` | 641 | Basic Math | Choosing the cheaper of two targets | &ndash; |
-| 045 | [Bath in Winters](045-BATH.md) `BATH` | 643 | Basic Math | Floor division by a composite unit | &ndash; |
-| 046 | [Finding Shoes](046-FINDSHOES.md) `FINDSHOES` | 646 | Basic Math | Clamping one side of a two-part requirement | &ndash; |
-| 047 | [Mario and Transformation](047-TRANSFORM.md) `TRANSFORM` | 649 | Number Theory | Cyclic state via modulo | &ndash; |
-| 048 | [Mario and Bullet](048-BULLET.md) `BULLET` | 650 | Basic Math | Working backwards from a deadline | &ndash; |
-| 049 | [Chess Ratings](049-C_RATING.md) `C_RATING` | 651 | Basic Math | Ceiling division with a clamp | &ndash; |
-| 050 | [Complementary Strand in a DNA](050-DNASTRAND.md) `DNASTRAND` | 660 | Strings | Character-wise mapping with a translation table | &ndash; |
-| 051 | [Chef and Water Bottles](051-CHEFBOTTLE.md) `CHEFBOTTLE` | 662 | Basic Math | Two competing limits | &ndash; |
-| 052 | [Candy Distribution](052-CANDYDIST.md) `CANDYDIST` | 668 | Number Theory | Divisibility by a composite modulus | &ndash; |
-| 053 | [The Last Levels](053-LASTLEVELS.md) `LASTLEVELS` | 679 | Basic Math | Counting separators, not groups | &ndash; |
+| 036 | [Minimum Cars required](036-MINCARS.md) `MINCARS` | 608 | Basic Math | Ceiling division | yes |
+| 037 | [Test Score](037-CHEFSCORE.md) `CHEFSCORE` | 610 | Number Theory | Divisibility with an upper bound | yes |
+| 038 | [Jenga Night](038-JENGA.md) `JENGA` | 613 | Number Theory | Divisibility as an exact-fit condition | yes |
+| 039 | [Bus  Seat Numbering](039-SEATNUMBER.md) `SEATNUMBER` | 613 | Conditionals & Case Work | Decomposing an index into deck and position | yes |
+| 040 | [Discus Throw](040-DISCUS.md) `DISCUS` | 622 | Basic Math | Maximum of a fixed set | yes |
+| 041 | [Maximise the Tastiness](041-MAXTASTE.md) `MAXTASTE` | 627 | Greedy | Independent choices optimised separately | yes |
+| 042 | [Watching Movies at 2x](042-MOVIE2X.md) `MOVIE2X` | 628 | Basic Math | Rate and time | yes |
+| 043 | [Police and Thief](043-POLTHIEF.md) `POLTHIEF` | 639 | Basic Math | Relative speed | yes |
+| 044 | [Flip the cards](044-FLIPCARDS.md) `FLIPCARDS` | 641 | Basic Math | Choosing the cheaper of two targets | yes |
+| 045 | [Bath in Winters](045-BATH.md) `BATH` | 643 | Basic Math | Floor division by a composite unit | yes |
+| 046 | [Finding Shoes](046-FINDSHOES.md) `FINDSHOES` | 646 | Basic Math | Clamping one side of a two-part requirement | yes |
+| 047 | [Mario and Transformation](047-TRANSFORM.md) `TRANSFORM` | 649 | Number Theory | Cyclic state via modulo | yes |
+| 048 | [Mario and Bullet](048-BULLET.md) `BULLET` | 650 | Basic Math | Working backwards from a deadline | yes |
+| 049 | [Chess Ratings](049-C_RATING.md) `C_RATING` | 651 | Basic Math | Ceiling division with a clamp | yes |
+| 050 | [Complementary Strand in a DNA](050-DNASTRAND.md) `DNASTRAND` | 660 | Strings | Character-wise mapping with a translation table | yes |
+| 051 | [Chef and Water Bottles](051-CHEFBOTTLE.md) `CHEFBOTTLE` | 662 | Basic Math | Two competing limits | yes |
+| 052 | [Candy Distribution](052-CANDYDIST.md) `CANDYDIST` | 668 | Number Theory | Divisibility by a composite modulus | yes |
+| 053 | [The Last Levels](053-LASTLEVELS.md) `LASTLEVELS` | 679 | Basic Math | Counting separators, not groups | yes |
 | 054 | [Blackjack](054-BLACKJACK.md) `BLACKJACK` | 681 | Basic Math | Solving for the unknown, then range checking | &ndash; |
 | 055 | [Fill Candies](055-FILLCANDIES.md) `FILLCANDIES` | 681 | Basic Math | Ceiling division by a composite capacity | &ndash; |
 | 056 | [X Jumps](056-XJUMP.md) `XJUMP` | 686 | Greedy | Prefer the large step, then settle the remainder | &ndash; |

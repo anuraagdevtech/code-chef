@@ -2,8 +2,6 @@
 
 > [`DISCUS`](https://www.codechef.com/problems/DISCUS) &middot; difficulty **622** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -93,6 +91,21 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **All three throws equal** ($32, 32, 32$): the maximum is that value; ties need no special handling.
+- **The best throw in each position** — the sample has it in the middle ($10, 15, 8$) and the first ($82, 45, 54$), so a solution that only compares two of the three fails somewhere.
+- **All at the minimum** ($1, 1, 1$): answer $1$; there is no "no valid throw" case, since every throw counts.
+- Only the single best attempt scores, so the other two are discarded rather than summed or averaged.
+
+## Dry run
+
+| $A$ | $B$ | $C$ | best | output |
+|---:|---:|---:|---:|---|
+| 10 | 15 | 8 | 15 | `15` |
+| 32 | 32 | 32 | 32 | `32` |
+| 82 | 45 | 54 | 82 | `82` |
 
 ---
 

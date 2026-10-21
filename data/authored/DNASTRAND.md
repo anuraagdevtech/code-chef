@@ -13,3 +13,20 @@ The table is worth reading carefully — it is its own inverse. Position by posi
 A common slip is to build the complement with chained `replace` calls: `s.replace("A","T").replace("T","A")` destroys the data, because the second call also rewrites the `T`s the first one just produced, collapsing everything to `A`. A single simultaneous substitution avoids that entirely, which is the real reason `translate` is the right tool rather than merely a convenient one.
 
 Note the problem gives $N$ on its own line before the string. It is redundant for Python, since the string carries its own length, but the token must still be consumed when walking the input.
+
+## Edge cases
+
+- **`A` and `T` map to each other**, as do `C` and `G`, so sequential replacement is wrong: replacing every `A` with `T` and *then* every `T` with `A` turns the original `A`s back into `A`s. A single-pass translation table applies all four substitutions simultaneously, and the sample's first string `ATCG` exposes the bug at once.
+- **A homogeneous strand** (`AAAAA`): becomes all `T`, confirming the mapping is per character and not positional.
+- **$N = 1$**: a single base.
+- **The length line must be consumed.** Python never needs $N$, but skipping to read it would desynchronise every later test case, so the parser advances past it deliberately.
+
+## Dry run
+
+The strand `ATCG`, one base at a time:
+
+| base | `A` | `T` | `C` | `G` |
+|---|---|---|---|---|
+| complement | `T` | `A` | `G` | `C` |
+
+So `ATCG` becomes `TAGC`. The other cases follow the same table: `GTCC` to `CAGG`, `AAAAA` to `TTTTT`, and `TAC` to `ATG`.

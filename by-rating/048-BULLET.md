@@ -2,8 +2,6 @@
 
 > [`BULLET`](https://www.codechef.com/problems/BULLET) &middot; difficulty **650** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -104,6 +102,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The bullet cannot arrive in time even if fired immediately** ($X = 2$, $Y = 4$, $Z = 1$: a flight of $2$ against a deadline of $1$): the wait would be negative, so the clamp returns $0$. The sample's second row is this case.
+- **Exact arrival** (flight time equal to $Z$): the wait is $0$ — fire at once.
+- **$X$ divides $Y$ is guaranteed**, so the flight time $Y/X$ is an exact integer and no rounding decision arises.
+- Firing early is not allowed, so a negative wait is meaningless rather than useful, which is why it clamps to zero instead of being reported.
+
+## Dry run
+
+| $X$ (speed) | $Y$ (distance) | $Z$ (deadline) | flight $Y/X$ | wait $Z - {\cdot}$ | output |
+|---:|---:|---:|---:|---:|---|
+| 3 | 3 | 5 | 1 | 4 | `4` |
+| 2 | 4 | 1 | 2 | $-1 \to 0$ | `0` |
+| 3 | 12 | 8 | 4 | 4 | `4` |
+
+Row 2 is the clamped case.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`DNASTRAND`](https://www.codechef.com/problems/DNASTRAND) &middot; difficulty **660** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -115,6 +113,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **`A` and `T` map to each other**, as do `C` and `G`, so sequential replacement is wrong: replacing every `A` with `T` and *then* every `T` with `A` turns the original `A`s back into `A`s. A single-pass translation table applies all four substitutions simultaneously, and the sample's first string `ATCG` exposes the bug at once.
+- **A homogeneous strand** (`AAAAA`): becomes all `T`, confirming the mapping is per character and not positional.
+- **$N = 1$**: a single base.
+- **The length line must be consumed.** Python never needs $N$, but skipping to read it would desynchronise every later test case, so the parser advances past it deliberately.
+
+## Dry run
+
+The strand `ATCG`, one base at a time:
+
+| base | `A` | `T` | `C` | `G` |
+|---|---|---|---|---|
+| complement | `T` | `A` | `G` | `C` |
+
+So `ATCG` becomes `TAGC`. The other cases follow the same table: `GTCC` to `CAGG`, `AAAAA` to `TTTTT`, and `TAC` to `ATG`.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`JENGA`](https://www.codechef.com/problems/JENGA) &middot; difficulty **613** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -106,6 +104,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Fewer tiles than one round needs** ($N = 4$, $X = 2$): $2 \bmod 4 = 2$, so `NO` — not even one round completes. The sample's second row covers it, and it is also the row that catches swapping the operands, since $4 \bmod 2 = 0$ would wrongly say `YES`.
+- **Exactly one round's worth** ($N = X$): `YES`.
+- **$N = 1$**: every $X$ is divisible by $1$, so always `YES`.
+- **Largest inputs** ($N = X = 1000$): `YES`.
+- The condition is an exact fit, not "enough tiles": leftovers are a failure, so divisibility is the whole test.
+
+## Dry run
+
+| $N$ (per round) | $X$ (tiles) | $X \bmod N$ | output |
+|---:|---:|---:|---|
+| 3 | 3 | 0 | `YES` |
+| 4 | 2 | 2 | `NO` |
+| 2 | 4 | 0 | `YES` |
+
+Rows 2 and 3 are the same pair of numbers swapped, and they give opposite answers.
 
 ---
 

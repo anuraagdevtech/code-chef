@@ -2,8 +2,6 @@
 
 > [`CANDYDIST`](https://www.codechef.com/problems/CANDYDIST) &middot; difficulty **668** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -107,6 +105,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Divisible by $M$ but with an odd share** ($N = 9$, $M = 3$: three candies each): testing only $N \bmod M = 0$ wrongly answers `Yes`. The share must also be even, and the sample's first row is exactly this trap.
+- **Divisible by $2M$ exactly** ($N = 4$, $M = 2$): `Yes`, with two candies each.
+- **$M = 1$**: the condition collapses to "$N$ is even".
+- **Not divisible by $M$ at all** ($N = 8$, $M = 3$): `No`.
+- Folding the two requirements into a single modulus by $2M$ is exact, since "divisible by $M$ with an even quotient" and "divisible by $2M$" are the same statement.
+
+## Dry run
+
+| $N$ | $M$ | $2M$ | $N \bmod 2M$ | share $N/M$ | output |
+|---:|---:|---:|---:|---:|---|
+| 9 | 3 | 6 | 3 | 3 (odd) | `No` |
+| 4 | 1 | 2 | 0 | 4 | `Yes` |
+| 4 | 2 | 4 | 0 | 2 | `Yes` |
+| 8 | 3 | 6 | 2 | not integral | `No` |
+
+Row 1 divides evenly by $M$ and still fails, which is the point.
 
 ---
 

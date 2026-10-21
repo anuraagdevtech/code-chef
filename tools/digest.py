@@ -34,8 +34,9 @@ def main():
             print(f'--- SAMPLE {i} OUT'); print((s.get('output') or '').strip()[:400])
         print('--- SOLUTION')
         print(d['solution'])
-        print('--- APPROACH')
-        print(d['approach'][:900])
+        if '--approach' in sys.argv:
+            print('--- APPROACH')
+            print(d['approach'][:900])
 
 
 if __name__ == '__main__':

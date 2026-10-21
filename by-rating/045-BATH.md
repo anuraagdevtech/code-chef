@@ -2,8 +2,6 @@
 
 > [`BATH`](https://www.codechef.com/problems/BATH) &middot; difficulty **643** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -97,6 +95,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Not enough for a single bath** ($X = 10$, $Y = 6$ needs $12$ litres): the answer is $0$, and two of the four sample rows are this case.
+- **Leftover water is wasted** — this is a floor, not a ceiling. $X = 25$, $Y = 1$ gives $12$ baths using $24$ litres and strands the last one.
+- **An exact fit** ($X = 100$, $Y = 10$): $5$ baths with nothing left.
+- **The unit is $2Y$, not $Y$.** A bath needs $Y$ hot *and* $Y$ cold, so dividing by $Y$ doubles every answer — the composite unit is the only real content here.
+
+## Dry run
+
+| $X$ (litres) | $Y$ | cost per bath $2Y$ | $X // 2Y$ | output |
+|---:|---:|---:|---:|---|
+| 10 | 6 | 12 | 0 | `0` |
+| 25 | 1 | 2 | 12 | `12` |
+| 100 | 10 | 20 | 5 | `5` |
+| 30 | 40 | 80 | 0 | `0` |
+
+Row 2 wastes one litre; rows 1 and 4 cannot afford even one bath.
 
 ---
 

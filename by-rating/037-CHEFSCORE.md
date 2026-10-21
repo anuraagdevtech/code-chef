@@ -2,8 +2,6 @@
 
 > [`CHEFSCORE`](https://www.codechef.com/problems/CHEFSCORE) &middot; difficulty **610** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -110,6 +108,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$Y = 0$**: zero is divisible by any $X$ and needs no correct answers, so `YES`. The sample's third case is this, and a solution requiring at least one correct answer fails it.
+- **$Y = N \cdot X$ exactly** (all questions right): the sample's fourth case, $10 \times 10 = 100$, sits on the boundary and must be `YES`.
+- **Divisible but out of reach**: $N = 3$, $X = 5$, $Y = 20$ needs four correct answers out of three questions. **Both conditions are needed** — divisibility alone would wrongly accept it.
+- **Not divisible** ($Y = 4$, $X = 8$): no number of correct answers lands on $4$, so `NO`.
+
+## Dry run
+
+| $N$ | $X$ | $Y$ | $Y \bmod X$ | $Y / X$ | $\leq N$? | output |
+|---:|---:|---:|---:|---:|:---:|---|
+| 1 | 8 | 4 | 4 | — | — | `NO` |
+| 3 | 6 | 12 | 0 | 2 | yes | `YES` |
+| 4 | 5 | 0 | 0 | 0 | yes | `YES` |
+| 10 | 10 | 100 | 0 | 10 | yes (equal) | `YES` |
+| 8 | 5 | 36 | 1 | — | — | `NO` |
+
+Rows 1 and 5 fail on divisibility; row 4 is the exact upper limit.
 
 ---
 

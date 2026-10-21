@@ -2,8 +2,6 @@
 
 > [`FINDSHOES`](https://www.codechef.com/problems/FINDSHOES) &middot; difficulty **646** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -107,6 +105,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **More spares than needed** ($N = 2$, $M = 4$): the two surplus shoes are useless, so the clamp is essential — without `max(0, ...)` the shortfall is $-2$ and the answer comes out as $0$ instead of $2$. The sample's first row is this case.
+- **No spares at all** ($M = 0$): every shoe must be bought, so $2N$. The sample's second row.
+- **Exactly enough spares** ($M = N$): only the other $N$ shoes are needed.
+- **The two sides are asymmetric**: all $N$ of one kind must be bought no matter what, and only the other kind benefits from existing stock, which is why the expression is $N + \max(0, N - M)$ rather than symmetric in $M$.
+
+## Dry run
+
+| $N$ | $M$ (spares) | shortfall $N - M$ | clamped | total $N + {\cdot}$ | output |
+|---:|---:|---:|---:|---:|---|
+| 2 | 4 | $-2$ | 0 | 2 | `2` |
+| 6 | 0 | 6 | 6 | 12 | `12` |
+| 4 | 3 | 1 | 1 | 5 | `5` |
+
+Row 1 is the one the clamp exists for.
 
 ---
 
