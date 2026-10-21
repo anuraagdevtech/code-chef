@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**342 of 486 solved problems documented.**
+**348 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 38 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 44 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **342** |
+| | **Total** | **502** | **761** | **348** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,12 +26,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 42 |
+| 4 | 100 | 48 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (35)</summary>
+<details open><summary><b>Arrays</b> (36)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -70,6 +70,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 311 | [Mix the Colors](docs/arrays/MIXCOLOR.md) | 1419 | Counting duplicates | $O(N)$ per test case |
 | 316 | [Equal Difference](docs/arrays/EQDIFFER.md) | 1500 | Which multisets have all pairwise differences equal | $O(N)$ per test case |
 | 330 | [A temple of Snakes](docs/arrays/SNTEMPLE.md) | 1800 | Runs computed from both directions | $O(n)$ per test case |
+| 343 | [ChefTown Parade](docs/arrays/CHEFTOWN.md) | 1882 | Sliding-window maximum and minimum with deques | $O(N)$ |
 
 </details>
 
@@ -185,7 +186,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (12)</summary>
+<details open><summary><b>Bit Manipulation</b> (17)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -201,6 +202,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 303 | [Consecutive Xor](docs/bit-manipulation/XOR2.md) | 1611 | The total XOR is invariant | $O(N)$ per test case |
 | 313 | [Missing a Point](docs/bit-manipulation/PTMSSNG.md) | -1 | XOR cancels everything that appears twice | $O(N)$ per test case |
 | 341 | [Hussain Set](docs/bit-manipulation/COOK82C.md) | 2608 | Grouping a halving process by bit length | $O(N \log N + L)$, where $L$ is the number of moves reached |
+| 344 | [Prajit and bits](docs/bit-manipulation/ADDI.md) | -1 | Zero bits inside the binary width | $O(1)$ per test case |
+| 345 | [Jon and Selina](docs/bit-manipulation/SELINA.md) | -1 | Parity bitmask over a 26-letter alphabet | $O(N)$ per test case |
+| 346 | [Chef and Chefina](docs/bit-manipulation/CHFNA.md) | 1400 | Independent bits give a closed form | $O(1)$ per test case |
+| 347 | [XOR-ORED](docs/bit-manipulation/XORORED.md) | 1621 | Choosing X bit by bit against an OR | $O(N)$ per test case |
+| 348 | [Maximum Damage](docs/bit-manipulation/MAXDMGE.md) | 1636 | AND is monotone, so only adjacent pairs matter | $O(N)$ per test case |
 
 </details>
 

@@ -424,6 +424,42 @@ def _cntdist(inp, got):
     return True, "valid"
 
 
+def _xorored(inp, got):
+    """XORORED: any X attaining the minimum OR is accepted."""
+    toks = inp.split()
+    t = int(toks[0])
+    pos = 1
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for line in lines:
+        n = int(toks[pos])
+        a = [int(x) for x in toks[pos + 1:pos + 1 + n]]
+        pos += 1 + n
+        parts = line.split()
+        if len(parts) != 2:
+            return False, f"expected 'X OR', got {line!r}"
+        x, claimed = int(parts[0]), int(parts[1])
+        if x < 0:
+            return False, "X must be non-negative"
+        # Mixed bits survive whatever X does, so this is the floor.
+        best = 0
+        for v in a:
+            best |= v
+        both = a[0]
+        for v in a:
+            both &= v
+        best ^= both
+        actual = 0
+        for v in a:
+            actual |= v ^ x
+        if actual != best:
+            return False, f"X={x} gives OR {actual}, optimum is {best}"
+        if claimed != best:
+            return False, f"reported OR {claimed} but optimum is {best}"
+    return True, "optimal"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -443,4 +479,5 @@ CHECKERS = {
     "INDIPERM": _indiperm,
     "CNTDIST": _cntdist,
     "GCDSUBARRAYS": _gcdsubarrays,
+    "XORORED": _xorored,
 }
