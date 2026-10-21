@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**435 of 486 solved problems documented.**
+**443 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -12,10 +12,10 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 84 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 47 |
+| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 55 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **435** |
+| | **Total** | **502** | **761** | **443** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -27,7 +27,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
 | 4 | 100 | 100 |
-| 5 | 86 | 35 |
+| 5 | 86 | 43 |
 
 ## Problems by topic
 
@@ -79,7 +79,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Basic Math</b> (90)</summary>
+<details open><summary><b>Basic Math</b> (91)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -173,6 +173,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 396 | [Survive in ChocoLand](docs/basic-math/SURVIVE.md) | 1616 | Ceiling division with a running feasibility check | $O(S)$ per test case |
 | 414 | [Three Numbers](docs/basic-math/THREENUMBERS.md) | 1675 | Parity invariant plus a counting identity | $O(1)$ per test case |
 | 429 | [Gritty Grid](docs/basic-math/GRITGRID.md) | 1691 | Checkerboard parity across alternating moves | $O(1)$ per test case |
+| 439 | [Average Gift](docs/basic-math/AVGGIFT.md) | 1701 | Mean reachability as a sign condition | $O(N)$ per test case |
 
 </details>
 
@@ -198,7 +199,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (21)</summary>
+<details open><summary><b>Bit Manipulation</b> (22)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -223,6 +224,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 351 | [XOR with Subset](docs/bit-manipulation/XORSUB.md) | 1879 | XOR linear basis over GF(2) | $O(N \log V + \log^2 V)$ per test case |
 | 420 | [ALIEN-OR](docs/bit-manipulation/ALIENOR.md) | 1639 | Single-bit values are necessary and sufficient | $O(NK)$ per test case |
 | 426 | [Boxes](docs/bit-manipulation/BOX95.md) | 1688 | The top bit caps a box at two elements | $O(N)$ per test case |
+| 436 | [MEX-OR](docs/bit-manipulation/MEXOR.md) | 1650 | OR of a prefix of the integers | $O(1)$ per test case |
 
 </details>
 
@@ -241,7 +243,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (14)</summary>
+<details open><summary><b>Combinatorics</b> (15)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -259,6 +261,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 403 | [Bitwise Tuples](docs/combinatorics/BITTUP.md) | 1634 | Independent bits, each a complement count | $O(\log N + \log M)$ per test case |
 | 407 | [Chef and Interesting Subsequences ](docs/combinatorics/CHEFINSQ.md) | 1646 | Choosing among the tied boundary value | $O(N \log N)$ per test case |
 | 416 | [The Vowel Matrix](docs/combinatorics/VOWMTRX.md) | 1694 | Independent cut choices between vowel blocks | $O(N)$ per test case |
+| 441 | [OR Tuples](docs/combinatorics/ORTUPLES.md) | 1703 | Independent bits with an eight-case table | $O(20)$ per test case |
 
 </details>
 
@@ -333,12 +336,13 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Game Theory</b> (2)</summary>
+<details open><summary><b>Game Theory</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 226 | [String Game ](docs/game-theory/STRAME.md) | 1413 | Counting the forced number of moves | $O(N)$ per test case |
 | 241 | [Chef and Coins Game](docs/game-theory/CHCOINSG.md) | 1442 | Losing positions form a residue class | $O(1)$ per test case |
+| 442 | [Game on a Strip](docs/game-theory/ARRGAME.md) | 1705 | Largest free run against the runner-up | $O(N)$ per test case |
 
 </details>
 
@@ -363,7 +367,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (52)</summary>
+<details open><summary><b>Greedy</b> (53)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -419,6 +423,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 430 | [K-Subarrays](docs/greedy/KSUB.md) | 1663 | Earliest cut maximises the number of GCD-$G$ pieces | $O(N \log A)$ per test case |
 | 431 | [Maximum Median Matching](docs/greedy/MEDMAXMATCH.md) | 1647 | Opposite pairing of the top halves | $O(N \log N)$ per test case |
 | 432 | [Building Towers](docs/greedy/TOWERTOP.md) | 1693 | Doubling to the first tower, then one per operation | $O(1)$ per test case |
+| 443 | [Buying Sweets](docs/greedy/BUYSWEET.md) | 1706 | Batching purchases of the cheapest net-cost sweet | $O(N \log N)$ per test case |
 
 </details>
 
@@ -431,7 +436,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (52)</summary>
+<details open><summary><b>Number Theory</b> (53)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -487,10 +492,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 424 | [Chef Product](docs/number-theory/CHEFPRODUCT.md) | 1658 | Size feasibility from a square bound and a parity | $O(\sqrt[2]{N})$-free, $O(1)$ per test case |
 | 434 | [The Optimal Pairs](docs/number-theory/OPTPAIRS.md) | 1666 | The minimum is always N, attained by a divisor family | $O(\sqrt{N})$ per test case |
 | 435 | [Array sorting](docs/number-theory/ARRSORT.md) | 1681 | GCD of the displacements | $O(N \log N)$ per test case |
+| 437 | [Exam Cheating](docs/number-theory/EXAMCHT.md) | 1639 | Counting divisors of a difference | $O(\sqrt{|A-B|})$ per test case |
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (10)</summary>
+<details open><summary><b>Prefix Sums</b> (11)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -504,6 +510,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 369 | [Gcd Queries](docs/prefix-sums/GCDQ.md) | 1674 | Prefix and suffix GCD arrays | $O(N \log A + Q \log A)$ per test case |
 | 384 | [Dense Bracket Sequence](docs/prefix-sums/DENSE.md) | 1472 | Best split between an open prefix and a close suffix | $O(N)$ per test case |
 | 418 | [Anti-Palindrome Queries](docs/prefix-sums/ANTIPALQ.md) | 1688 | Reducing a rotation condition to one count | $O(N + Q)$ per test case |
+| 440 | [Mystical Numbers](docs/prefix-sums/XORGAND.md) | 1702 | The comparison reduces to equal bit lengths | $O(N + Q)$ per test case |
 
 </details>
 
@@ -528,7 +535,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Simulation</b> (6)</summary>
+<details open><summary><b>Simulation</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -538,6 +545,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 278 | [When to take medicine](docs/simulation/MEDIC.md) | 1522 | Where a parity rule breaks at month boundaries | $O(1)$ per test case |
 | 334 | [Sudhanva and Books](docs/simulation/SUDBOOKS.md) | 1300 | A stack, with an empty-pop guard | $O(1)$ per query |
 | 402 | [UEFA Champions League](docs/simulation/UCL.md) | 1633 | Building a league table and sorting by two keys | $O(1)$ per test case (12 fixed matches) |
+| 438 | [Chef and Football Match](docs/simulation/WATCHFB.md) | 1700 | Tracking the at-most-two consistent states | $O(N)$ per test case |
 
 </details>
 
