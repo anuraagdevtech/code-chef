@@ -2,8 +2,6 @@
 
 > [`HIRETEST`](https://www.codechef.com/problems/HIRETEST) &middot; difficulty **1260** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -130,6 +128,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The fallback needs *exactly* $X - 1$ full solves, not merely fewer.** The first case's fourth candidate `PPPFP` has one full and four partial solves against $X = 3$, and fails despite having far more than $Y = 2$ partials. Writing the condition as `full < x and partial >= y` accepts this row wrongly.
+- **$X$ may be $1$**, which makes the fallback need zero full solves — the second case's `PUPP` qualifies on partials alone.
+- **Nothing solved at all** (the second case's `UUUU`): a $0$.
+- **Meeting the primary bar makes the partials irrelevant.** `FUFFP` has three full solves and is accepted without its partial count ever being consulted.
+- **The output is one line of $N$ digits with no separators**, not $N$ separate lines — `1100`, not four lines.
+- **$(X-1) + Y \leq M$ is guaranteed**, so the fallback is always attainable by some candidate in principle.
+
+## Dry run
+
+First sample: $N = 4$, $M = 5$, $X = 3$, $Y = 2$.
+
+| candidate | full `F` | partial `P` | $\geq X$? | $= X{-}1$ and $\geq Y$? | digit |
+|---|---:|---:|:---:|:---:|:---:|
+| `FUFFP` | 3 | 1 | **yes** | — | 1 |
+| `PFPFU` | 2 | 2 | no | yes ($2 = 2$, $2 \geq 2$) | 1 |
+| `UPFFU` | 2 | 1 | no | no ($1 < 2$ partials) | 0 |
+| `PPPFP` | 1 | 4 | no | no ($1 \neq 2$ full) | 0 |
+
+Output `1100`. Rows 3 and 4 fail for different reasons: too few partials, and the wrong number of full solves.
 
 ---
 

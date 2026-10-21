@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **177 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **191 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -13,8 +13,8 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [400&ndash;599](#400599) | 34 | 34 | Basic Math (18) |
 | [600&ndash;799](#600799) | 60 | 60 | Basic Math (31) |
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
-| [1000&ndash;1199](#10001199) | 15 | 14 | Strings (5) |
-| [1200&ndash;1399](#12001399) | 46 | 0 | Number Theory (7) |
+| [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
+| [1200&ndash;1399](#12001399) | 46 | 13 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 0 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
@@ -219,25 +219,25 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 175 | [Play Piano](175-PLAYPIAN.md) `PLAYPIAN` | 1180 | Strings | Validating fixed-size blocks | yes |
 | 176 | [Pawri Meme](176-PAWRI.md) `PAWRI` | 1182 | Strings | Substring replacement | yes |
 | 177 | [The Lead Game](177-TLG.md) `TLG` | 1190 | Arrays | Running totals with a tracked maximum | yes |
-| 178 | [Chef and Feedback](178-ERROR.md) `ERROR` | 1199 | Strings | Substring search | &ndash; |
+| 178 | [Chef and Feedback](178-ERROR.md) `ERROR` | 1199 | Strings | Substring search | yes |
 
 ## 1200&ndash;1399
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 179 | [Chef and Linear Chess](179-LINCHESS.md) `LINCHESS` | 1200 | Number Theory | Divisors as reachable positions | &ndash; |
-| 180 | [ICPC Balloons](180-BALLOON.md) `BALLOON` | 1205 | Sets | Smallest prefix covering a required set | &ndash; |
-| 181 | [Watson asks Does Permutation Exist](181-PERMEXIS.md) `PERMEXIS` | 1207 | Sorting | Adjacent gaps in sorted order | &ndash; |
-| 182 | [A Subtask Problem](182-SUBTASK.md) `SUBTASK` | 1217 | Arrays | Ordered condition checks | &ndash; |
-| 183 | [Version Control System](183-VCS.md) `VCS` | 1217 | Sets | Intersection and complement of a union | &ndash; |
-| 184 | [Maximum Length Even Subarray](184-MXEVNSUB.md) `MXEVNSUB` | 1221 | Number Theory | Parity of a triangular number | &ndash; |
-| 185 | [Simple Statistics](185-SIMPSTAT.md) `SIMPSTAT` | 1222 | Sorting | Trimmed mean | &ndash; |
-| 186 | [Racing Horses](186-HORSES.md) `HORSES` | 1231 | Sorting | Minimum adjacent difference after sorting | &ndash; |
-| 187 | [Cops and the Thief Devu](187-COPS.md) `COPS` | 1242 | Simulation | Marking covered ranges over a small domain | &ndash; |
-| 188 | [The Two Dishes](188-MAX_DIFF.md) `MAX_DIFF` | 1254 | Greedy | Pushing one variable to its bound | &ndash; |
-| 189 | [Chef and the Wildcard Matching](189-TWOSTR.md) `TWOSTR` | 1254 | Strings | Wildcard matching, position by position | &ndash; |
-| 190 | [Hiring Test](190-HIRETEST.md) `HIRETEST` | 1260 | Strings | Counting characters, then a two-branch rule | &ndash; |
-| 191 | [Sticks](191-STICKS.md) `STICKS` | 1261 | Greedy | Largest two pairs by frequency | &ndash; |
+| 179 | [Chef and Linear Chess](179-LINCHESS.md) `LINCHESS` | 1200 | Number Theory | Divisors as reachable positions | yes |
+| 180 | [ICPC Balloons](180-BALLOON.md) `BALLOON` | 1205 | Sets | Smallest prefix covering a required set | yes |
+| 181 | [Watson asks Does Permutation Exist](181-PERMEXIS.md) `PERMEXIS` | 1207 | Sorting | Adjacent gaps in sorted order | yes |
+| 182 | [A Subtask Problem](182-SUBTASK.md) `SUBTASK` | 1217 | Arrays | Ordered condition checks | yes |
+| 183 | [Version Control System](183-VCS.md) `VCS` | 1217 | Sets | Intersection and complement of a union | yes |
+| 184 | [Maximum Length Even Subarray](184-MXEVNSUB.md) `MXEVNSUB` | 1221 | Number Theory | Parity of a triangular number | yes |
+| 185 | [Simple Statistics](185-SIMPSTAT.md) `SIMPSTAT` | 1222 | Sorting | Trimmed mean | yes |
+| 186 | [Racing Horses](186-HORSES.md) `HORSES` | 1231 | Sorting | Minimum adjacent difference after sorting | yes |
+| 187 | [Cops and the Thief Devu](187-COPS.md) `COPS` | 1242 | Simulation | Marking covered ranges over a small domain | yes |
+| 188 | [The Two Dishes](188-MAX_DIFF.md) `MAX_DIFF` | 1254 | Greedy | Pushing one variable to its bound | yes |
+| 189 | [Chef and the Wildcard Matching](189-TWOSTR.md) `TWOSTR` | 1254 | Strings | Wildcard matching, position by position | yes |
+| 190 | [Hiring Test](190-HIRETEST.md) `HIRETEST` | 1260 | Strings | Counting characters, then a two-branch rule | yes |
+| 191 | [Sticks](191-STICKS.md) `STICKS` | 1261 | Greedy | Largest two pairs by frequency | yes |
 | 192 | [Gasoline Introduction](192-BEGGASOL.md) `BEGGASOL` | 1263 | Simulation | Collecting fuel while moving forward | &ndash; |
 | 193 | [Carvans](193-CARVANS.md) `CARVANS` | 1264 | Arrays | Running minimum over a prefix | &ndash; |
 | 194 | [Pushpa ](194-PUSH7PA.md) `PUSH7PA` | 1266 | Arrays | Frequency combined with value | &ndash; |

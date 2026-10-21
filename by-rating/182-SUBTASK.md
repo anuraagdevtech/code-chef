@@ -2,8 +2,6 @@
 
 > [`SUBTASK`](https://www.codechef.com/problems/SUBTASK) &middot; difficulty **1217** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -127,6 +125,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The full-pass check must come first.** The third row passes every test, which also means it passes the first $M$; testing the prefix first would award $K = 50$ instead of $100$. This ordering is the entire difficulty of the problem.
+- **Passing the prefix but failing later** (the second row, where test $3$ fails): exactly $K$.
+- **Failing inside the prefix** (the first and fourth rows): $0$, no matter how many later tests pass — the fourth row fails only test $3$ of $5$ and still scores nothing.
+- **$M < N$ is guaranteed**, so subtask 1 is a strict prefix and the two conditions are genuinely distinct.
+- **Subtask 1 is the *first* $M$ tests specifically**, not any $M$ of them, so the prefix slice is the right test.
+
+## Dry run
+
+| $N, M, K$ | verdicts | all pass? | first $M$ pass? | output |
+|---|---|:---:|:---:|---:|
+| $4, 2, 50$ | $1, 0, 1, 1$ | no | no | `0` |
+| $3, 2, 50$ | $1, 1, 0$ | no | yes | `50` |
+| $4, 2, 50$ | $1, 1, 1, 1$ | **yes** | yes | `100` |
+| $5, 3, 30$ | $1, 1, 0, 1, 1$ | no | no | `0` |
+
+Row 3 satisfies both conditions, which is why the full-pass branch has to be checked first.
 
 ---
 

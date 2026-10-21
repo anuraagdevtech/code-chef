@@ -2,8 +2,6 @@
 
 > [`COPS`](https://www.codechef.com/problems/COPS) &middot; difficulty **1242** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -134,6 +132,31 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The input order is $M$, $X$, $Y$** — the count comes first, before the two speed values. Reading them as $X, Y, M$ transposes the reach and the cop count and passes none of the sample rows.
+- **Ranges must be clamped to $[1, 100]$.** In the first row the reach is $7 \times 8 = 56$, so a cop at house $12$ covers from $-44$ — an unclamped index would wrap around to the end of the array in Python and mark the wrong houses.
+- **Overlapping ranges must not be double-counted.** The third row has a cop covering $[1, 50]$ and another $[11, 91]$; summing range lengths gives $131$ "covered" houses out of $100$. Marking a boolean array makes the overlap free.
+- **Total coverage** (the first row): the answer is $0$.
+- **Gaps can be interior as well as at the ends.** The second row leaves $42$–$54$ in the middle *and* $96$–$100$ at the end, totalling $18$ — a solution that only measures the ends of the street misses half of it.
+- The street is fixed at $100$ houses regardless of the inputs.
+
+## Dry run
+
+Second sample: $M = 2$, $X = 10$, $Y = 2$, so reach $= 20$; cops at $21$ and $75$.
+
+| cop | raw range | clamped |
+|---:|---|---|
+| 21 | $[1, 41]$ | $[1, 41]$ |
+| 75 | $[55, 95]$ | $[55, 95]$ |
+
+| uncovered stretch | houses |
+|---|---:|
+| $42$–$54$ | 13 |
+| $96$–$100$ | 5 |
+
+Output `18`.
 
 ---
 

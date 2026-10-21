@@ -19,3 +19,28 @@ Sample case 2 shows this starkly: the problems arrive in descending order, so pr
 Sample case 3 needs $8$: problem $2$ does not appear until position $8$, even though problem $8$ was picked up at position $7$ as a side effect.
 
 The constraint $N \geq 7$ with distinct values in $[1, N]$ guarantees all seven are present, so the scan always terminates.
+
+## Edge cases
+
+- **Problems numbered above $7$ are irrelevant and must not advance the count.** The second and third rows both contain an $8$, and the third also a $9$; counting them as progress gives the wrong index.
+- **The answer can be $N$** (the first row, where the last of the seven arrives on the final problem).
+- **All of $1, \dots, 7$ are guaranteed present**, because $N \geq 7$ and the $A_i$ are distinct values in $[1, N]$ — so the loop always finds the seventh and the fallback `answer = n` is a formality.
+- **Duplicates are impossible**, so each needed problem is counted exactly once and the set never re-adds.
+- **$T$ up to $10{,}500$** with $N \leq 15$: the work is dominated by reading input, so the scan should break as soon as the seventh is seen.
+
+## Dry run
+
+Third sample: $7, 4, 3, 5, 6, 1, 8, 2, 9$.
+
+| position | problem | needed? | distinct needed seen |
+|---:|---:|:---:|---:|
+| 1 | 7 | yes | 1 |
+| 2 | 4 | yes | 2 |
+| 3 | 3 | yes | 3 |
+| 4 | 5 | yes | 4 |
+| 5 | 6 | yes | 5 |
+| 6 | 1 | yes | 6 |
+| 7 | 8 | **no** | 6 |
+| 8 | 2 | yes | **7** |
+
+Output `8`. Problem $8$ at position $7$ contributes nothing.

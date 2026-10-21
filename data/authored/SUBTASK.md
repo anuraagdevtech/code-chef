@@ -22,3 +22,22 @@ Sample case 2 is the partial-credit case: the first two pass and the third fails
 Sample case 4 is the one that punishes a loose reading. Four of five tests pass — more than in case 2 — yet the score is $0$, because the failure sits at position $3$, *inside* the first $M = 3$. Partial credit depends on an unbroken **prefix**, not on a count of passes. A solution comparing the number of passes against $M$ would wrongly award $30$ here.
 
 The constraint $M < N$ guarantees the two rules never collide, so there is no ambiguity about which applies.
+
+## Edge cases
+
+- **The full-pass check must come first.** The third row passes every test, which also means it passes the first $M$; testing the prefix first would award $K = 50$ instead of $100$. This ordering is the entire difficulty of the problem.
+- **Passing the prefix but failing later** (the second row, where test $3$ fails): exactly $K$.
+- **Failing inside the prefix** (the first and fourth rows): $0$, no matter how many later tests pass — the fourth row fails only test $3$ of $5$ and still scores nothing.
+- **$M < N$ is guaranteed**, so subtask 1 is a strict prefix and the two conditions are genuinely distinct.
+- **Subtask 1 is the *first* $M$ tests specifically**, not any $M$ of them, so the prefix slice is the right test.
+
+## Dry run
+
+| $N, M, K$ | verdicts | all pass? | first $M$ pass? | output |
+|---|---|:---:|:---:|---:|
+| $4, 2, 50$ | $1, 0, 1, 1$ | no | no | `0` |
+| $3, 2, 50$ | $1, 1, 0$ | no | yes | `50` |
+| $4, 2, 50$ | $1, 1, 1, 1$ | **yes** | yes | `100` |
+| $5, 3, 30$ | $1, 1, 0, 1, 1$ | no | no | `0` |
+
+Row 3 satisfies both conditions, which is why the full-pass branch has to be checked first.

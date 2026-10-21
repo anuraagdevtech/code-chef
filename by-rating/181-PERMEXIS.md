@@ -2,8 +2,6 @@
 
 > [`PERMEXIS`](https://www.codechef.com/problems/PERMEXIS) &middot; difficulty **1207** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -117,6 +115,21 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Duplicates give a gap of $0$**, which is allowed — the first row is $2, 2, 3, 3$ and answers `YES`.
+- **One oversized gap condemns the whole multiset.** If sorted order has $a_{i+1} - a_i \geq 2$, then every value up to $a_i$ is at most $a_i$ and every value from $a_{i+1}$ on is at least $a_{i+1}$, so whatever the arrangement, somewhere the sequence must cross that gap — sorted order is therefore optimal and testing it alone is sufficient.
+- **$N = 1$**: no adjacent pair exists, so the `all` over an empty range answers `YES`.
+- **Values up to $10^9$** but only differences matter, so no bucketing or counting array is needed.
+- **The input line may have trailing whitespace** (the first sample row does), which token-based reading handles naturally.
+
+## Dry run
+
+| input | sorted | adjacent gaps | all $\leq 1$? | output |
+|---|---|---|:---:|---|
+| $3, 2, 2, 3$ | $2, 2, 3, 3$ | $0, 1, 0$ | yes | `YES` |
+| $1, 5$ | $1, 5$ | $4$ | no | `NO` |
 
 ---
 

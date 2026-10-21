@@ -2,8 +2,6 @@
 
 > [`MXEVNSUB`](https://www.codechef.com/problems/MXEVNSUB) &middot; difficulty **1221** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -101,6 +99,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$N = 1$**: the total is $1$, odd, so the formula gives $0$ — correctly saying no non-empty contiguous block of $\{1\}$ has an even sum.
+- **$N = 2$**: total $3$, odd, so the answer is $1$ (the single element $2$).
+- **Dropping the leading $1$ is what fixes an odd total.** The sequence starts at $1$, so the suffix $2, \dots, N$ has a sum one less than the whole — flipping the parity — which is why $N - 1$ always works whenever $N$ does not. No shorter block is ever needed.
+- **The answer depends only on $N \bmod 4$**, since the triangular number $N(N+1)/2$ is even for $N \equiv 0, 3$ and odd for $N \equiv 1, 2$.
+- **$T$ up to $10^4$** with $N$ up to $10^4$: the closed form answers each case in constant time, with no per-case scan.
+
+## Dry run
+
+| $N$ | total $N(N+1)/2$ | parity | longest even block | output |
+|---:|---:|---|---|---:|
+| 1 | 1 | odd | — | `0` |
+| 2 | 3 | odd | $\{2\}$ | `1` |
+| 3 | 6 | even | $\{1,2,3\}$ | `3` |
+| 4 | 10 | even | $\{1,2,3,4\}$ | `4` |
+| 5 | 15 | odd | $\{2,3,4,5\}$ | `4` |
+| 6 | 21 | odd | $\{2,\dots,6\}$ | `5` |
+
+The sample covers $N = 3, 4, 5$; the pattern repeats with period $4$.
 
 ---
 
