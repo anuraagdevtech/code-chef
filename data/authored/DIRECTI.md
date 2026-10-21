@@ -18,3 +18,25 @@ That index shift is where this problem is usually lost. Reversing the list and k
 The output format needs a **blank line after each test case**, including the last. Omitting it is a common presentation error.
 
 With $N \leq 40$ the cost is irrelevant; the whole difficulty is the pairing and the parsing.
+
+## Edge cases
+
+- **Road names contain spaces and digits**, so the split must be on the *first* `" on "` only. `100 Feet Road` and `Ganapathi Temple Road` both break a naive split on whitespace, and a split without `maxsplit=1` would also mangle any name containing the word `on`.
+- **The turn and the road are offset by one on the way back.** Turn $i$ was what took you *onto* road $i$; returning, that same junction leads you onto road $i-1$. Pairing turn $i$ with road $i$ is the natural mistake and shifts the whole output.
+- **`Begin` is never flipped.** It is dropped entirely and replaced by a fresh `Begin on <last road>`.
+- **A blank line follows every test case**, including the last one.
+- **$N \geq 2$ is guaranteed**, so there is always at least one turn to reverse.
+- **Only `Left` and `Right` occur** as turns after the first, so a two-entry lookup table covers every flip.
+
+## Dry run
+
+First sample.
+
+| outward | | return |
+|---|---|---|
+| Begin on Road A | | Begin on Road D |
+| Right on Road B | turn 4 was `Left`, previous road is C | Right on Road C |
+| Right on Road C | turn 3 was `Right`, previous road is B | Left on Road B |
+| Left on Road D | turn 2 was `Right`, previous road is A | Left on Road A |
+
+Each returned turn is the flip of the turn that *followed* the road being entered.

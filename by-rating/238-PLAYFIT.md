@@ -2,8 +2,6 @@
 
 > [`PLAYFIT`](https://www.codechef.com/problems/PLAYFIT) &middot; difficulty **1419** &middot; time limit **1.64548s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -116,6 +114,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The comparison must come before the minimum is updated**, so the earlier match is strictly earlier. Updating first would let a match pair with itself and record a gain of $0$.
+- **A gain of exactly $0$ is not fit.** The third row has two consecutive $2$s, and that pairing is rejected; only a strictly positive improvement counts, which the `best = 0` start plus `> best` enforces.
+- **Non-increasing goal counts** (the second row) → `UNFIT`.
+- **The best pair need not involve the global minimum or maximum.** The first row's answer pairs the opening $3$ with the $7$ right after it, both of which precede the global minimum of $1$ — so tracking only the overall extremes gives the wrong pair.
+- **$g_i$ may be $0$**, which is an ordinary value and a legitimate running minimum.
+- **$N = 1$**: the loop never runs, so `UNFIT` is printed.
+
+## Dry run
+
+First sample: goals $3, 7, 1, 4, 2, 4$.
+
+| match | goals | running min before | gain | best |
+|---:|---:|---:|---:|---:|
+| 2 | 7 | 3 | 4 | **4** |
+| 3 | 1 | 3 | $-2$ | 4 |
+| 4 | 4 | 1 | 3 | 4 |
+| 5 | 2 | 1 | 1 | 4 |
+| 6 | 4 | 1 | 3 | 4 |
+
+Output `4`, from the first two matches.
 
 ---
 

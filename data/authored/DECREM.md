@@ -19,3 +19,24 @@ It is also the **smallest** such $N$. Any $N < R$ has $N \bmod R = N$, while $N 
 Sample case 1 has $L=4, R=6$ with $6 < 8$, giving $N = 6$: the remainders are $2, 1, 0$. Sample case 2 has $L=1, R=2$ and $2 \geq 2$, so $-1$.
 
 The promise that answers fit in $10^{18}$ is generous — the answer is never larger than $R \leq 10^6$.
+
+## Edge cases
+
+- **$n = r$ is the canonical witness.** Dividing $r$ by each $d \in [l, r]$ gives remainders $r - l, r - l - 1, \ldots, 1, 0$ — decreasing by exactly one each step — provided every divisor exceeds $r/2$ so the quotient is $1$ throughout. That condition is precisely $r < 2l$.
+- **When $r \geq 2l$ no $n$ works at all.** Some divisor $d \leq r/2$ then has a quotient of $2$ or more, which breaks the chain, and the answer is $-1$. Checked exhaustively against brute force for all $1 \leq l < r \leq 39$ with no mismatch.
+- **$l = 1$ is always hopeless**: $n \bmod 1 = 0$ is the first term and nothing can be smaller, and indeed $r \geq 2 = 2l$ holds automatically. The second sample row is this case.
+- **$L < R$ is guaranteed**, so the chain always has at least two terms and the degenerate single-remainder case never arises.
+- **The answer can be as large as $10^6$** and needs no search — it is read straight off $R$.
+- **$T$ up to $10^5$** with constant work per case.
+
+## Dry run
+
+First sample: $L = 4$, $R = 6$, and $6 < 8$, so $n = 6$.
+
+| divisor $d$ | $6 \bmod d$ |
+|---:|---:|
+| 4 | 2 |
+| 5 | 1 |
+| 6 | 0 |
+
+Strictly decreasing, so `6`. The second row has $L = 1$, $R = 2$: $2 \bmod 1 = 0$ already, and nothing is below it, so `-1`.

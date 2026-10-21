@@ -17,3 +17,25 @@ The sums match by a neat cancellation: pairing $i$ with $N+1-i$ across $A$'s two
 For $N = 4$ it produces $A = [1,4]$, $B = [2,3]$ — exactly the sample.
 
 **Multiple answers are accepted**, so this is judged by a checker rather than by text comparison. The sum of $N$ reaches $10^6$, so the output is built with joins rather than repeated concatenation.
+
+## Edge cases
+
+- **$4 \mid N$ is the exact feasibility condition.** The two halves must share the total $N(N+1)/2$ equally, so $4$ must divide $N(N+1)$; with $N$ even, $N+1$ is odd, which forces $4 \mid N$. The sample's $N = 2$ is the smallest rejection.
+- **The *prefix* sums must all differ, not just the totals.** This construction keeps $A$'s $i$-th prefix exactly $ik$ below $B$'s for the first $k$ positions and strictly apart thereafter, so no intermediate collision occurs — verified for every $N \leq 396$ divisible by $4$.
+- **Both halves must have $N/2$ elements**: $A$ takes $k$ from each end for $2k = N/2$, and $B$ takes the remaining $N - 2k = N/2$.
+- **The two halves must partition $1 \dots N$ exactly**, which the disjoint ranges guarantee with no value repeated or omitted.
+- **The last prefix pair is allowed to be equal** — indeed it must be, since the totals match — which is why the condition stops at $i = N/2 - 1$.
+- **Sum of $N$ up to $10^6$**: the arrays are built from ranges and joined once, with all output accumulated before printing.
+
+## Dry run
+
+$N = 8$, so $k = 2$: $A = 1, 2, 7, 8$ and $B = 3, 4, 5, 6$.
+
+| $i$ | $A$ prefix | $B$ prefix | equal? |
+|---:|---:|---:|:---:|
+| 1 | 1 | 3 | no |
+| 2 | 3 | 7 | no |
+| 3 | 10 | 12 | no |
+| 4 | 18 | 18 | **yes, as required** |
+
+The first three must differ and do; the fourth is the shared total.

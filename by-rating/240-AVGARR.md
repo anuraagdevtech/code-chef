@@ -2,8 +2,6 @@
 
 > [`AVGARR`](https://www.codechef.com/problems/AVGARR) &middot; difficulty **1424** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -114,6 +112,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Odd $N$ takes the mean itself as the centre**; even $N$ uses only symmetric pairs, so the mean is never an element — $N = 2$, $X = 5$ gives $4$ and $6$.
+- **All values must be distinct**, which the strictly increasing offsets $d = 1, 2, 3, \ldots$ guarantee: no two entries share a magnitude of displacement on the same side.
+- **The output bound is $[-1000, 1000]$ and this construction stays well inside it.** The largest offset is $\lfloor N/2 \rfloor \leq 500$, and with $0 \leq X \leq 100$ the values span $[-500, 600]$ — so the bound never needs checking.
+- **Negative values are allowed and are often necessary**: $N = 5$, $X = 1$ produces $-1$, and the second sample row's own answer uses $-5$.
+- **$N = 1$** → the single element is $X$ itself.
+- **The sum is exactly $N X$ by construction**, since each pair contributes $2X$ and any centre contributes $X$, so no rounding is involved.
+- **This answer differs from the sample's** (`7 6 8` against `5 10 6`); the statement allows any valid array, so a special judge checks distinctness, the bound and the mean.
+
+## Dry run
+
+Second sample: $N = 5$, $X = 1$.
+
+| part | values | sum |
+|---|---|---:|
+| centre ($N$ odd) | $1$ | 1 |
+| pair $d = 1$ | $0, 2$ | 2 |
+| pair $d = 2$ | $-1, 3$ | 2 |
+
+Array $1, 0, 2, -1, 3$: five distinct values summing to $5$, so the mean is `1`.
 
 ---
 

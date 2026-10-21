@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **233 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **247 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -15,7 +15,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
-| [1400&ndash;1599](#14001599) | 118 | 9 | Greedy (18) |
+| [1400&ndash;1599](#14001599) | 118 | 23 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
@@ -285,20 +285,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 231 | [Guessing Game](231-GUESS.md) `GUESS` | 1410 | Basic Math | Counting by parity, reduced to lowest terms | yes |
 | 232 | [Plusle and Minun on Array](232-PMA.md) `PMA` | 1412 | Greedy | Best single swap | yes |
 | 233 | [String Game ](233-STRAME.md) `STRAME` | 1413 | Game Theory | Counting the forced number of moves | yes |
-| 234 | [Maximize Colours](234-COLOUR.md) `COLOUR` | 1415 | Brute Force | Enumerating a tiny decision space | &ndash; |
-| 235 | [Remove Element](235-REMELEM.md) `REMELEM` | 1415 | Greedy | The smallest element as universal partner | &ndash; |
-| 236 | [Equality](236-EQUALITY.md) `EQUALITY` | 1419 | Basic Math | Solving a symmetric linear system by summing | &ndash; |
-| 237 | [Mix the Colors](237-MIXCOLOR.md) `MIXCOLOR` | 1419 | Arrays | Counting duplicates | &ndash; |
-| 238 | [Fit to Play](238-PLAYFIT.md) `PLAYFIT` | 1419 | Arrays | Best gain against a running minimum | &ndash; |
-| 239 | [Decreasing Srrnmieeda](239-DECREM.md) `DECREM` | 1423 | Number Theory | A strictly decreasing chain of remainders | &ndash; |
-| 240 | [Average Array](240-AVGARR.md) `AVGARR` | 1424 | Constructive | Pairing symmetrically around the mean | &ndash; |
-| 241 | [Say No To Drugs](241-NODRUGS.md) `NODRUGS` | 1425 | Conditionals & Case Work | Monotone objective, so only an endpoint dose matters | &ndash; |
-| 242 | [Parallel Processing](242-PLPROCESS.md) `PLPROCESS` | 1425 | Prefix Sums | Minimising the heavier side of a split | &ndash; |
-| 243 | [Reversing directions](243-DIRECTI.md) `DIRECTI` | 1426 | Strings | Parsing and reversing a route | &ndash; |
-| 244 | [Full Barrier Alchemist](244-PIPSQUIK.md) `PIPSQUIK` | 1426 | Simulation | Walking a sequence with a consumable resource | &ndash; |
-| 245 | [Balanced and Unique Arrays](245-UNQEQ.md) `UNQEQ` | 1431 | Constructive | Balanced split with distinct prefixes | &ndash; |
-| 246 | [Maximum Angriness](246-MAXAGRY.md) `MAXAGRY` | 1432 | Combinatorics | Maximising inversions with limited swaps | &ndash; |
-| 247 | [Permutation Xority](247-PERMXORITY.md) `PERMXORITY` | 1437 | Constructive | Cancelling a XOR with a 1-2-3 triple | &ndash; |
+| 234 | [Maximize Colours](234-COLOUR.md) `COLOUR` | 1415 | Brute Force | Enumerating a tiny decision space | yes |
+| 235 | [Remove Element](235-REMELEM.md) `REMELEM` | 1415 | Greedy | The smallest element as universal partner | yes |
+| 236 | [Equality](236-EQUALITY.md) `EQUALITY` | 1419 | Basic Math | Solving a symmetric linear system by summing | yes |
+| 237 | [Mix the Colors](237-MIXCOLOR.md) `MIXCOLOR` | 1419 | Arrays | Counting duplicates | yes |
+| 238 | [Fit to Play](238-PLAYFIT.md) `PLAYFIT` | 1419 | Arrays | Best gain against a running minimum | yes |
+| 239 | [Decreasing Srrnmieeda](239-DECREM.md) `DECREM` | 1423 | Number Theory | A strictly decreasing chain of remainders | yes |
+| 240 | [Average Array](240-AVGARR.md) `AVGARR` | 1424 | Constructive | Pairing symmetrically around the mean | yes |
+| 241 | [Say No To Drugs](241-NODRUGS.md) `NODRUGS` | 1425 | Conditionals & Case Work | Monotone objective, so only an endpoint dose matters | yes |
+| 242 | [Parallel Processing](242-PLPROCESS.md) `PLPROCESS` | 1425 | Prefix Sums | Minimising the heavier side of a split | yes |
+| 243 | [Reversing directions](243-DIRECTI.md) `DIRECTI` | 1426 | Strings | Parsing and reversing a route | yes |
+| 244 | [Full Barrier Alchemist](244-PIPSQUIK.md) `PIPSQUIK` | 1426 | Simulation | Walking a sequence with a consumable resource | yes |
+| 245 | [Balanced and Unique Arrays](245-UNQEQ.md) `UNQEQ` | 1431 | Constructive | Balanced split with distinct prefixes | yes |
+| 246 | [Maximum Angriness](246-MAXAGRY.md) `MAXAGRY` | 1432 | Combinatorics | Maximising inversions with limited swaps | yes |
+| 247 | [Permutation Xority](247-PERMXORITY.md) `PERMXORITY` | 1437 | Constructive | Cancelling a XOR with a 1-2-3 triple | yes |
 | 248 | [Akash and Dinner](248-CHEFDINE.md) `CHEFDINE` | 1438 | Greedy | Cheapest representative per group | &ndash; |
 | 249 | [HTML Tags](249-HTMLTAGS.md) `HTMLTAGS` | 1441 | Strings | Validating a format | &ndash; |
 | 250 | [The Nights Watch](250-WTCH.md) `WTCH` | 1441 | Greedy | Leftmost-feasible placement | &ndash; |
