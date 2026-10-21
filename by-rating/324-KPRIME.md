@@ -2,8 +2,6 @@
 
 > [`KPRIME`](https://www.codechef.com/problems/KPRIME) &middot; difficulty **1549** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -147,6 +145,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Distinct primes, not total factors.** $4 = 2^2$ counts as $1$, and so do $8$ and $16$ — which is why the sieve adds one per *prime* over its multiples, never once per prime power.
+- **The answer can be $0$** (the fourth row): the smallest number with three distinct prime factors is $30$, so a range ending at $20$ has none.
+- **$A \geq 2$ is guaranteed**, so `row[a - 1]` never reaches a negative index.
+- **$0$ and $1$ have no prime factors**, so they sit at $\omega = 0$ and are never counted for $K \geq 1$.
+- **A prime is detected by $\omega(p)$ still being $0$** when the outer loop reaches it — the pass doubles as both sieve and counter.
+- **$K \leq 5$** means only five prefix rows are needed, so the $5 \times 10^5$ table is affordable where a per-query scan at $T = 10^4$ would not be.
+- **Both endpoints are inclusive**, which the prefix difference `row[b] - row[a-1]` handles directly.
+
+## Dry run
+
+| range | $K$ | numbers and their distinct prime counts | matches |
+|---|---:|---|---:|
+| $2 \dots 5$ | 1 | $2{:}1$, $3{:}1$, $4{:}1$, $5{:}1$ | `4` |
+| $4 \dots 10$ | 2 | $6{:}2$, $10{:}2$ (others $1$ or more) | `2` |
+| $14 \dots 15$ | 2 | $14 = 2 \cdot 7$, $15 = 3 \cdot 5$ | `2` |
+| $2 \dots 20$ | 3 | none reach three distinct primes | `0` |
+
+Note $4$, $8$ and $16$ all have $\omega = 1$, which is what the first row relies on.
 
 ---
 

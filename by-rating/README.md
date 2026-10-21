@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **317 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **331 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -15,7 +15,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
-| [1400&ndash;1599](#14001599) | 118 | 93 | Greedy (18) |
+| [1400&ndash;1599](#14001599) | 118 | 107 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
@@ -369,20 +369,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 315 | [Largest Family](315-LARGEFAM.md) `LARGEFAM` | 1532 | Greedy | Maximising a set size under a sum budget | yes |
 | 316 | [Minimum Number of Pizzas](316-MINPIZZAS.md) `MINPIZZAS` | 1532 | Number Theory | Smallest multiplier for divisibility | yes |
 | 317 | [Prefix Permutation](317-PREFPERM.md) `PREFPERM` | 1532 | Constructive | Blocks that only close at the right moment | yes |
-| 318 | [Sheokand and Number](318-SHKNUM.md) `SHKNUM` | 1534 | Binary Search | Precomputed candidate set with a bisect | &ndash; |
-| 319 | [Flip the String](319-FLIP.md) `FLIP` | 1538 | Strings | Two independent parity classes | &ndash; |
-| 320 | [Javelin Qualification](320-JAVELIN.md) `JAVELIN` | 1538 | Sorting | Two-stage selection | &ndash; |
-| 321 | [Magic Rankings](321-MGCRNK.md) `MGCRNK` | 1540 | Dynamic Programming | Maximising an average with a fixed denominator | &ndash; |
-| 322 | [Let us play with rank list](322-RANKLIST.md) `RANKLIST` | 1543 | Greedy | How much deficit a given number of edits can absorb | &ndash; |
-| 323 | [Unstable Subarray](323-COUNTSUB.md) `COUNTSUB` | 1545 | Arrays | A telescoping sum, then counting equal pairs | &ndash; |
-| 324 | [Count K-Primes](324-KPRIME.md) `KPRIME` | 1549 | Number Theory | Sieve of distinct prime factors plus prefix counts | &ndash; |
-| 325 | [Catch the Thief](325-CATHIEF.md) `CATHIEF` | 1550 | Number Theory | An invariant from step size and parity | &ndash; |
-| 326 | [XxOoRr](326-XXOORR.md) `XXOORR` | 1551 | Bit Manipulation | Bits are independent, so count per column | &ndash; |
-| 327 | [Sticks and Rectangles](327-RECSTI.md) `RECSTI` | 1555 | Greedy | Pairing by length, then pairing the pairs | &ndash; |
-| 328 | [Increasing Decreasing](328-INCRDEC.md) `INCRDEC` | 1557 | Constructive | Multiplicity bounds for a bitonic arrangement | &ndash; |
-| 329 | [Chef and Sign Sequences](329-CHEFSIGN.md) `CHEFSIGN` | 1563 | Strings | Run lengths scanned from both directions | &ndash; |
-| 330 | [Nice Pairs ](330-NPAIRS.md) `NPAIRS` | 1564 | Combinatorics | Counting pairs that share an invariant key | &ndash; |
-| 331 | [Boring String](331-BORSTR.md) `BORSTR` | 1566 | Strings | Longest repeated run | &ndash; |
+| 318 | [Sheokand and Number](318-SHKNUM.md) `SHKNUM` | 1534 | Binary Search | Precomputed candidate set with a bisect | yes |
+| 319 | [Flip the String](319-FLIP.md) `FLIP` | 1538 | Strings | Two independent parity classes | yes |
+| 320 | [Javelin Qualification](320-JAVELIN.md) `JAVELIN` | 1538 | Sorting | Two-stage selection | yes |
+| 321 | [Magic Rankings](321-MGCRNK.md) `MGCRNK` | 1540 | Dynamic Programming | Maximising an average with a fixed denominator | yes |
+| 322 | [Let us play with rank list](322-RANKLIST.md) `RANKLIST` | 1543 | Greedy | How much deficit a given number of edits can absorb | yes |
+| 323 | [Unstable Subarray](323-COUNTSUB.md) `COUNTSUB` | 1545 | Arrays | A telescoping sum, then counting equal pairs | yes |
+| 324 | [Count K-Primes](324-KPRIME.md) `KPRIME` | 1549 | Number Theory | Sieve of distinct prime factors plus prefix counts | yes |
+| 325 | [Catch the Thief](325-CATHIEF.md) `CATHIEF` | 1550 | Number Theory | An invariant from step size and parity | yes |
+| 326 | [XxOoRr](326-XXOORR.md) `XXOORR` | 1551 | Bit Manipulation | Bits are independent, so count per column | yes |
+| 327 | [Sticks and Rectangles](327-RECSTI.md) `RECSTI` | 1555 | Greedy | Pairing by length, then pairing the pairs | yes |
+| 328 | [Increasing Decreasing](328-INCRDEC.md) `INCRDEC` | 1557 | Constructive | Multiplicity bounds for a bitonic arrangement | yes |
+| 329 | [Chef and Sign Sequences](329-CHEFSIGN.md) `CHEFSIGN` | 1563 | Strings | Run lengths scanned from both directions | yes |
+| 330 | [Nice Pairs ](330-NPAIRS.md) `NPAIRS` | 1564 | Combinatorics | Counting pairs that share an invariant key | yes |
+| 331 | [Boring String](331-BORSTR.md) `BORSTR` | 1566 | Strings | Longest repeated run | yes |
 | 332 | [List of Lists](332-LISTLIST.md) `LISTLIST` | 1567 | Greedy | Counting how many singletons can survive | &ndash; |
 | 333 | [Gravity Guy](333-GRGUY.md) `GRGUY` | 1568 | Dynamic Programming | Two-state DP with a zero-cost move | &ndash; |
 | 334 | [Maximal crosses](334-MAXCROSS.md) `MAXCROSS` | 1570 | Arrays | Maximal runs along rows, columns and both diagonals | &ndash; |

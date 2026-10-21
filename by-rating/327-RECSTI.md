@@ -2,8 +2,6 @@
 
 > [`RECSTI`](https://www.codechef.com/problems/RECSTI) &middot; difficulty **1555** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -117,6 +115,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Two levels of pairing.** Sticks pair up by equal length, and then the *pairs* pair up into rectangles — so both an odd count within a length and an odd total number of pairs cost extra sticks.
+- **Each odd length contributes one orphan**, needing one new stick to complete its pair: the last row's lone $3$ costs exactly one.
+- **A leftover pair needs a whole new pair**, hence $+2$ rather than $+1$. The first row has a single stick: one added makes one pair, and that pair needs two more sticks to square off — total $3$.
+- **Four sticks of one length form a square**, which is a rectangle, so no cross-length matching is required and the pair count is all that matters.
+- **Already complete** (the third row, two $2$s and two $3$s) → $0$.
+- **The pair count is computed after the orphans are filled**, via $\lceil c/2 \rceil$ — counting $\lfloor c/2 \rfloor$ instead would miss the pairs the new sticks create.
+- **Added sticks may be any length**, which is what makes the fix always available.
+
+## Dry run
+
+| sticks | counts | orphans (odd counts) | pairs after filling | pairs odd? | added |
+|---|---|---:|---:|:---:|---:|
+| $1$ | $1{:}1$ | 1 | 1 | yes → $+2$ | `3` |
+| $2, 5$ | $2{:}1$, $5{:}1$ | 2 | 2 | no | `2` |
+| $2,2,3,3$ | $2{:}2$, $3{:}2$ | 0 | 2 | no | `0` |
+| $1,3,5,7,1,7,5$ | $1{:}2$, $3{:}1$, $5{:}2$, $7{:}2$ | 1 | 4 | no | `1` |
+
+Row 1 ends up with four sticks of two lengths — one rectangle.
 
 ---
 

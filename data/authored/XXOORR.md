@@ -23,3 +23,26 @@ Working the sample, $A = [3, 6, 10]$ with $K = 2$: in binary $0011$, $0110$, $10
 Note bit $1$ is the only column needing two operations — three elements at two per operation. Bits set in a single element still cost one operation each, which is why the total exceeds the largest column count.
 
 Counting columns is one pass over the array per bit, or equivalently one pass accumulating all $30$ counters at once.
+
+## Edge cases
+
+- **One operation touches exactly one bit position**, so the $30$ bit columns are completely independent and the answer is a sum over them — no interaction to reason about.
+- **A column with $c$ set bits needs $\lceil c/K \rceil$ operations**, since each operation can clear at most $K$ of them and there is never a reason to flip a zero bit on.
+- **Already all zero** → $0$ operations, which falls out of every column having $c = 0$.
+- **$K \geq N$ makes each non-empty column cost exactly one**, so the answer is the number of distinct bit positions used anywhere in the array.
+- **$A_i$ up to $10^9$** fits in $30$ bits, so the column array is a fixed $30$ entries regardless of $N$.
+- **The low-bit trick** (`x & -x`) walks only the set bits, so a sparse value costs far less than $30$ steps per element.
+- **$A_i$ may be $0$** and contributes nothing to any column.
+
+## Dry run
+
+Sample: $K = 2$, $A = 3, 6, 10$ — binary $0011$, $0110$, $1010$.
+
+| bit | which elements have it | count $c$ | $\lceil c/2 \rceil$ |
+|---:|---|---:|---:|
+| 0 | 3 | 1 | 1 |
+| 1 | 3, 6, 10 | 3 | 2 |
+| 2 | 6 | 1 | 1 |
+| 3 | 10 | 1 | 1 |
+
+Total `5`. Bit $1$ is the only column needing two operations, since three indices exceed $K = 2$.

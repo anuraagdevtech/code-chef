@@ -2,8 +2,6 @@
 
 > [`FLIP`](https://www.codechef.com/problems/FLIP) &middot; difficulty **1538** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -126,6 +124,31 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **One operation touches a single parity class.** The chosen substring has odd length and its *odd positions* flip, which in the original string means a contiguous run of indices stepping by two — all of the same parity. So the two parity classes are entirely independent.
+- **The substring's odd length forces both ends to flip**, which is why an operation covers a complete run $s, s+2, \dots, s+2m$ and cannot stop half-way.
+- **The answer is the number of maximal difference runs within each class, summed.** Each such run needs its own operation, and one operation suffices for it.
+- **Already equal** (the second row) → $0$ operations.
+- **Adjacent differing positions belong to different classes.** The third row, `000` against `111`, differs everywhere; the even class holds indices $0$ and $2$ — consecutive *within that class*, so one run — and the odd class holds index $1$, giving $2$ in total rather than $1$ or $3$.
+- **A gap inside a class splits a run.** The first row's even class differs only at index $4$, while its odd class differs at $1$ and $3$ (consecutive within the class), giving $1 + 1 = 2$.
+- **Sum of $|A| \leq 10^5$**: two strided passes.
+
+## Dry run
+
+First sample: $A = $ `100001`, $B = $ `110111`.
+
+| index | $A$ | $B$ | differs? | class |
+|---:|---:|---:|:---:|---|
+| 0 | 1 | 1 | no | even |
+| 1 | 0 | 1 | **yes** | odd |
+| 2 | 0 | 0 | no | even |
+| 3 | 0 | 1 | **yes** | odd |
+| 4 | 0 | 1 | **yes** | even |
+| 5 | 1 | 1 | no | odd |
+
+Even class: differences at $\{4\}$ → one run. Odd class: differences at $\{1, 3\}$, adjacent within the class → one run. Output `2`.
 
 ---
 

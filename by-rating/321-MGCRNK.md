@@ -2,8 +2,6 @@
 
 > [`MGCRNK`](https://www.codechef.com/problems/MGCRNK) &middot; difficulty **1540** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -131,6 +129,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Every monotone path visits the same number of judges.** A path from $[1][1]$ to $[N][N]$ moving only right or down covers $2N-1$ cells, two of which — the corners — hold no judge. So the denominator is always $2N-3$ and maximising the average reduces to maximising the sum.
+- **That is what makes a plain max-path DP correct.** If the path length varied, the average would not be optimised by the best sum, and the problem would need a fractional search.
+- **The corner cells are guaranteed zero** ($S[1][1] = S[N][N] = 0$), so including them in the DP sum costs nothing and no special-casing is needed.
+- **Negative points are allowed and common**, so the best sum can still be negative — in which case the answer is `Bad Judges` rather than a number.
+- **The threshold is strict**: a best sum of exactly $0$ prints `0.000000`, not `Bad Judges`.
+- **$N = 2$ gives a denominator of $1$** (the sample), so the average equals the single judge's score; this is also the smallest allowed $N$.
+- **The rolling single row** is enough because each cell depends only on its left and upper neighbours, keeping memory at $O(N)$ for $N \leq 100$.
+
+## Dry run
+
+First sample: $N = 2$ with $S = \begin{pmatrix} 0 & -4 \\ 8 & 0\end{pmatrix}$.
+
+| path | judges passed | sum |
+|---|---|---:|
+| right then down | $S[1][2] = -4$ | $-4$ |
+| down then right | $S[2][1] = 8$ | **8** |
+
+Denominator $2N - 3 = 1$, so the answer is `8.000000`. The second sample's best sum is $-3$, hence `Bad Judges`.
 
 ---
 

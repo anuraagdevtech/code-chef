@@ -2,8 +2,6 @@
 
 > [`NPAIRS`](https://www.codechef.com/problems/NPAIRS) &middot; difficulty **1564** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -110,6 +108,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The condition splits into two linear cases.** $j - i = |S_j - S_i|$ holds either when $S_j - S_i = j - i$, so $S - \text{index}$ is constant, or when $S_i - S_j = j - i$, so $S + \text{index}$ is constant. Counting equal keys in each map is the whole algorithm.
+- **No pair is counted twice.** Both cases together would force $S_i = S_j$ and $j - i = 0$, which $i < j$ rules out — so the two tallies are disjoint and simply add.
+- **Digit characters work as raw byte codes**, since only differences matter and the $+48$ offset cancels on both sides of every comparison.
+- **Adjacent equal digits are not a pair**: the gap is $1$ but the digit difference is $0$.
+- **All digits identical** (the first row, `123`? no — rather a string like `111`) lands every index in the same `down` bucket when the digits ascend by one, which is what gives the first row its $3$.
+- **The keys can be negative** (for `down`) and are unbounded above (for `up`), so a dictionary rather than an array is the right structure.
+- **Sum of $N \leq 2 \cdot 10^5$**: two `Counter`s per case.
+
+## Dry run
+
+First sample: `123`.
+
+| index $i$ | digit | $S - i$ | $S + i$ |
+|---:|---:|---:|---:|
+| 0 | 1 | 1 | 1 |
+| 1 | 2 | 1 | 3 |
+| 2 | 3 | 1 | 5 |
+
+The `down` key $1$ holds all three indices, giving $\binom{3}{2} = 3$ pairs; the `up` keys are all distinct and contribute nothing. Output `3` — the pairs are $(1,2)$, $(2,3)$ and $(1,3)$, each with $j - i = S_j - S_i$.
 
 ---
 

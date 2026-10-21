@@ -2,8 +2,6 @@
 
 > [`RANKLIST`](https://www.codechef.com/problems/RANKLIST) &middot; difficulty **1543** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -133,6 +131,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The deficit is $n(n+1)/2 - s$**, and it is never negative: the ideal list has the largest possible sum for a rank list of size $n$, so $s$ can only fall short.
+- **$k$ edits can raise the sum by at most $k(k+1)/2$**, independent of $n$ — the best possible is to lift $k$ chosen elements onto the $k$ largest missing ranks. So the answer is the smallest $k$ meeting the deficit.
+- **Zero deficit** → $0$ edits, which the first two rows show ($n = 1, s = 1$ and $n = 3, s = 6$ are already ideal).
+- **The bound is independent of which rank list the input came from**, which is why only $n$ and $s$ are given and no array is read.
+- **Validity is guaranteed**, so the deficit always corresponds to a real rank list and no infeasible case arises.
+- **The loop runs $O(\sqrt{S})$ times** at most, around $1.4 \times 10^5$ for $s$ near $10^{10}$ — cheap at $T \leq 10$, though the quadratic formula would also serve.
+
+## Dry run
+
+| $n$ | $s$ | ideal sum | deficit | smallest $k$ with $k(k+1)/2 \geq$ deficit | output |
+|---:|---:|---:|---:|---|---:|
+| 1 | 1 | 1 | 0 | $k = 0$ | `0` |
+| 3 | 6 | 6 | 0 | $k = 0$ | `0` |
+| 3 | 5 | 6 | 1 | $k = 1$ (gain 1) | `1` |
+| 3 | 3 | 6 | 3 | $k = 2$ (gain 3) | `2` |
+
+The last row starts from $\{1,1,1\}$; changing two elements to $2$ and $3$ gives the ideal list.
 
 ---
 
