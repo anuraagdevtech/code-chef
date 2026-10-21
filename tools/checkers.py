@@ -460,6 +460,36 @@ def _xorored(inp, got):
     return True, "optimal"
 
 
+def _lisdigit(inp, got):
+    """LISDIGIT: any n-digit number realising the given LIS array."""
+    toks = inp.split()
+    t = int(toks[0])
+    pos = 1
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for line in lines:
+        n = int(toks[pos])
+        want = [int(x) for x in toks[pos + 1:pos + 1 + n]]
+        pos += 1 + n
+        num = line.strip()
+        if len(num) != n or not num.isdigit():
+            return False, f"{num!r} is not a {n}-digit number"
+        if n > 1 and num[0] == "0":
+            return False, f"{num} has a leading zero"
+        digits = [int(ch) for ch in num]
+        lis = []
+        for i, d in enumerate(digits):
+            best = 0
+            for j in range(i):
+                if digits[j] < d and lis[j] > best:
+                    best = lis[j]
+            lis.append(best + 1)
+        if lis != want:
+            return False, f"{num} has LIS array {lis}, wanted {want}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -480,4 +510,5 @@ CHECKERS = {
     "CNTDIST": _cntdist,
     "GCDSUBARRAYS": _gcdsubarrays,
     "XORORED": _xorored,
+    "LISDIGIT": _lisdigit,
 }

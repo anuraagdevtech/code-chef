@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**354 of 486 solved problems documented.**
+**360 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 50 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 56 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **354** |
+| | **Total** | **502** | **761** | **360** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,7 +26,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 54 |
+| 4 | 100 | 60 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
@@ -228,7 +228,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (8)</summary>
+<details open><summary><b>Combinatorics</b> (9)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -240,6 +240,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 251 | [Magic Set](docs/combinatorics/MGCSET.md) | 1472 | A condition that reduces to its singletons | $O(n)$ per test case |
 | 301 | [Break Free](docs/combinatorics/REMOSET.md) | 1612 | A condition pinned down by its singletons | $O(N)$ per test case |
 | 336 | [Chef In Infinite Plane](docs/combinatorics/CHFPLN.md) | 1582 | Capacity per value | $O(N)$ per test case |
+| 356 | [Chef and Good Subsequences](docs/combinatorics/GDSUB.md) | 1999 | Elementary symmetric polynomials by DP | $O(m \min(K, m))$ after an $O(N)$ tally, where $m$ is the number of distinct values |
 
 </details>
 
@@ -272,7 +273,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (12)</summary>
+<details open><summary><b>Constructive</b> (13)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -288,6 +289,18 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 300 | [K Odd Sum](docs/constructive/ADVITIYA5.md) | 1614 | Parity blocks and the number of switches | $O(N)$ per test case |
 | 305 | [Make it Divisible](docs/constructive/MAKEDIV3.md) | 1379 | Fixing the digit sum, then the last digit | $O(N)$ per test case |
 | 306 | [Indivisible Permutation](docs/constructive/INDIPERM.md) | 1329 | A single cyclic shift | $O(N)$ per test case |
+| 355 | [Digit Longest Increasing Subsequences 2](docs/constructive/LISDIGIT.md) | 1297 | Using the LIS value itself as the digit | $O(n)$ per test case |
+
+</details>
+
+<details open><summary><b>Dynamic Programming</b> (4)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 357 | [The White Knight](docs/dynamic-programming/E1.md) | 1530 | Layered DP over columns of a DAG | $O(N^2)$ per test case |
+| 358 | [Magic Rankings](docs/dynamic-programming/MGCRNK.md) | 1540 | Maximising an average with a fixed denominator | $O(N^2)$ per test case |
+| 359 | [Gravity Guy](docs/dynamic-programming/GRGUY.md) | 1568 | Two-state DP with a zero-cost move | $O(n)$ per test case |
+| 360 | [Chef and Wedding Arrangements](docs/dynamic-programming/CHEFWED.md) | 1841 | Partition DP with an incrementally maintained segment cost | $O(N^2)$ per test case |
 
 </details>
 
