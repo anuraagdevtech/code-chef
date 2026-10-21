@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**318 of 486 solved problems documented.**
+**324 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 14 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 20 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **318** |
+| | **Total** | **502** | **761** | **324** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,7 +26,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 18 |
+| 4 | 100 | 24 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
@@ -411,7 +411,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (15)</summary>
+<details open><summary><b>Sorting</b> (21)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -430,6 +430,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 312 | [Fair distribution](docs/sorting/SUBS.md) | -1 | Sliding a fixed-size window | $O(N \log N)$ per test case |
 | 317 | [Javelin Qualification](docs/sorting/JAVELIN.md) | 1538 | Two-stage selection | $O(N \log N)$ per test case |
 | 318 | [ChefWatson uses Social Network](docs/sorting/BOOKCHEF.md) | 1610 | Sorting on a composite key | $O(M \log M)$ |
+| 319 | [Remove One Element](docs/sorting/REMONE.md) | 1700 | Two candidate offsets, verified by a merge | $O(N \log N)$ per test case |
+| 320 | [Pair Sort Version 3](docs/sorting/PSORT3.md) | -1 | Mixed-direction composite key | $O(N \log N)$ |
+| 321 | [Sort by swaps](docs/sorting/SWPSRT1.md) | -1 | Selection sort meets the swap budget exactly | $O(n^2)$ |
+| 322 | [Chef Restaurant ](docs/sorting/CHEFRES.md) | 1776 | Binary search over disjoint intervals | $O((N + M) \log N)$ per test case |
+| 323 | [Sort by Adjacent Swaps](docs/sorting/ADJSRT.md) | -1 | Insertion sort performs exactly the inversions | $O(n + \text{inversions})$ |
+| 324 | [Stable Quick Sort](docs/sorting/QCKSRT2.md) | -1 | Which pivot choices preserve stability | $O(n)$ |
 
 </details>
 
