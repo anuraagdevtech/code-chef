@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**330 of 486 solved problems documented.**
+**336 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 26 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 32 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **330** |
+| | **Total** | **502** | **761** | **336** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,7 +26,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 30 |
+| 4 | 100 | 36 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
@@ -172,7 +172,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Binary Search</b> (4)</summary>
+<details open><summary><b>Binary Search</b> (6)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -180,6 +180,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 326 | [Stacks](docs/binary-search/STACKS.md) | 1799 | Patience stacking with a sorted top list | $O(N \log N)$ per test case |
 | 327 | [Forest Gathering](docs/binary-search/FORESTGA.md) | 1829 | Searching time on a monotonic yield | $O(N \log(\text{months}))$ |
 | 329 | [Snake Eating](docs/binary-search/SNAKEEAT.md) | 1940 | Feasibility check with prefix sums | $O((N + Q) \log N)$ per test case |
+| 331 | [Squirrel and chestnut](docs/binary-search/SQUIRREL.md) | 1611 | Searching time, with a greedy capacity check | $O(m \log m \log(\text{time}))$ per test case |
+| 333 | [Flu Shot Lineup](docs/binary-search/FLUSHOT.md) | 1692 | Binary search on a real-valued answer | $O(N \log \frac{1}{\varepsilon})$ per test case |
 
 </details>
 
@@ -216,7 +218,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (7)</summary>
+<details open><summary><b>Combinatorics</b> (8)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -227,6 +229,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 244 | [Counting Flags](docs/combinatorics/FLAGS.md) | 1446 | Chromatic polynomials of small graphs | $O(1)$ per test case |
 | 251 | [Magic Set](docs/combinatorics/MGCSET.md) | 1472 | A condition that reduces to its singletons | $O(n)$ per test case |
 | 301 | [Break Free](docs/combinatorics/REMOSET.md) | 1612 | A condition pinned down by its singletons | $O(N)$ per test case |
+| 336 | [Chef In Infinite Plane](docs/combinatorics/CHFPLN.md) | 1582 | Capacity per value | $O(N)$ per test case |
 
 </details>
 
@@ -338,7 +341,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (38)</summary>
+<details open><summary><b>Number Theory</b> (39)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -380,6 +383,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 299 | [Non-Divisor Array](docs/number-theory/DIVCOL.md) | 1623 | Colouring the divisibility order by prime-factor count | $O(N \log \log N)$ per test case |
 | 307 | [Minimum Number of Pizzas](docs/number-theory/MINPIZZAS.md) | 1532 | Smallest multiplier for divisibility | $O(\log \min(N,K))$ per test case |
 | 308 | [Alternating Work Days](docs/number-theory/ALTER.md) | 1486 | Divisibility plus an alternation constraint | $O(1)$ per test case |
+| 332 | [Modular Equation](docs/number-theory/MODEQ.md) | 1761 | Reducing a nested modulo to a divisibility test | $O(N \cdot d)$ per test case after an $O(M)$ sieve |
 
 </details>
 
@@ -413,7 +417,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Simulation</b> (4)</summary>
+<details open><summary><b>Simulation</b> (5)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -421,6 +425,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 184 | [Cops and the Thief Devu](docs/simulation/COPS.md) | 1242 | Marking covered ranges over a small domain | $O(100 + M)$ per test case |
 | 235 | [Full Barrier Alchemist](docs/simulation/PIPSQUIK.md) | 1426 | Walking a sequence with a consumable resource | $O(N)$ per test case |
 | 278 | [When to take medicine](docs/simulation/MEDIC.md) | 1522 | Where a parity rule breaks at month boundaries | $O(1)$ per test case |
+| 334 | [Sudhanva and Books](docs/simulation/SUDBOOKS.md) | 1300 | A stack, with an empty-pop guard | $O(1)$ per query |
 
 </details>
 
@@ -452,7 +457,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (28)</summary>
+<details open><summary><b>Strings</b> (29)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -484,6 +489,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 285 | [Flip the String](docs/strings/FLIP.md) | 1538 | Two independent parity classes | $O(|A|)$ per test case |
 | 290 | [Chef and Sign Sequences](docs/strings/CHEFSIGN.md) | 1563 | Run lengths scanned from both directions | $O(|s|)$ per test case |
 | 291 | [Boring String](docs/strings/BORSTR.md) | 1566 | Longest repeated run | $O(N)$ per test case |
+| 335 | [Attendance](docs/strings/ATTND.md) | 1148 | Frequency of a key field | $O(N)$ per test case |
 
 </details>
 
