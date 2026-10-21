@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**372 of 486 solved problems documented.**
+**378 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 68 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 74 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **372** |
+| | **Total** | **502** | **761** | **378** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,7 +26,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 72 |
+| 4 | 100 | 78 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
@@ -230,7 +230,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (9)</summary>
+<details open><summary><b>Combinatorics</b> (10)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -243,10 +243,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 301 | [Break Free](docs/combinatorics/REMOSET.md) | 1612 | A condition pinned down by its singletons | $O(N)$ per test case |
 | 336 | [Chef In Infinite Plane](docs/combinatorics/CHFPLN.md) | 1582 | Capacity per value | $O(N)$ per test case |
 | 356 | [Chef and Good Subsequences](docs/combinatorics/GDSUB.md) | 1999 | Elementary symmetric polynomials by DP | $O(m \min(K, m))$ after an $O(N)$ tally, where $m$ is the number of distinct values |
+| 375 | [Nice Pairs ](docs/combinatorics/NPAIRS.md) | 1564 | Counting pairs that share an invariant key | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Conditionals & Case Work</b> (22)</summary>
+<details open><summary><b>Conditionals & Case Work</b> (24)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -272,6 +273,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 156 | [Bear and Ladder](docs/conditionals-case-work/BRLADDER.md) | 999 | Deriving an adjacency rule from an edge list | $O(1)$ per query |
 | 158 | [Vaccine Dates ](docs/conditionals-case-work/VDATES.md) | 938 | Classifying a value against an interval | $O(1)$ per test case |
 | 163 | [Problem Category](docs/conditionals-case-work/PROBCAT.md) | 860 | Ordered threshold ladder | $O(1)$ per test case |
+| 373 | [Say No To Drugs](docs/conditionals-case-work/NODRUGS.md) | 1425 | Monotone objective, so only an endpoint dose matters | $O(N)$ per test case |
+| 378 | [K-MEX](docs/conditionals-case-work/KMEX.md) | 1450 | Feasibility as a counting interval | $O(N)$ per test case |
 
 </details>
 
@@ -329,7 +332,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (35)</summary>
+<details open><summary><b>Greedy</b> (37)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -368,6 +371,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 340 | [IPC Trainers](docs/greedy/IPCTRAIN.md) | 1500 | Exchange argument with a max-heap | $O((N + D) \log N)$ per test case |
 | 342 | [Iron, Magnet and Wall](docs/greedy/FEMA2.md) | 1725 | Interval bipartite matching with two queues | $O(N)$ per test case |
 | 372 | [Sleepy Chef](docs/greedy/FILL01.md) | 1445 | Independent runs, each packed by division | $O(N)$ per test case |
+| 374 | [The Nights Watch](docs/greedy/WTCH.md) | 1441 | Leftmost-feasible placement | $O(N)$ per test case |
+| 377 | [High Frequency](docs/greedy/HIGHFREQ.md) | 1443 | Halving the top frequency against the runner-up | $O(N)$ per test case |
 
 </details>
 
@@ -379,7 +384,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (45)</summary>
+<details open><summary><b>Number Theory</b> (46)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -428,6 +433,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 366 | [Appy and Contest](docs/number-theory/HMAPPY2.md) | 1358 | Counting multiples with inclusion-exclusion | $O(\log \min(A,B))$ per test case |
 | 367 | [Chef and Keyboard](docs/number-theory/CHEFKEY.md) | 1323 | Divisor pairs under a box constraint | $O(\sqrt{c})$ per test case |
 | 370 | [Yet Another Cute Girl](docs/number-theory/PRETNUM.md) | 1850 | Segmented sieve plus prime-power exponents | $O(\sqrt{R} \log\log \sqrt{R} + (R-L))$ per test case |
+| 376 | [Cakewalk](docs/number-theory/CKWLK.md) | 1474 | Prime factorisation into a two-variable range test | $O(\log N)$ per test case |
 
 </details>
 
