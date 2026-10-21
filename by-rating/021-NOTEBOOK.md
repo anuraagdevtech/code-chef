@@ -2,8 +2,6 @@
 
 > [`NOTEBOOK`](https://www.codechef.com/problems/NOTEBOOK) &middot; difficulty **563** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -95,6 +93,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$N = 1$**: one kilogram gives $10$ notebooks, which is the conversion factor itself.
+- **Largest input** ($N = 100$): $1000$ notebooks.
+- **The two conversions compose exactly.** $1000$ pages per kilogram divided by $100$ pages per notebook is exactly $10$, so no rounding enters anywhere. Had the numbers not divided evenly, the chain would need a floor at the end and *only* at the end — flooring each step separately loses paper.
+- Nothing here can be fractional, so there is no ceiling-versus-floor decision to make.
+
+## Dry run
+
+| $N$ (kg) | pages $1000N$ | notebooks $/100$ | output |
+|---:|---:|---:|---:|
+| 1 | 1000 | 10 | `10` |
+| 100 | 100000 | 1000 | `1000` |
+| 50 | 50000 | 500 | `500` |
+
+The code folds both steps into the single multiplier $10$.
 
 ---
 

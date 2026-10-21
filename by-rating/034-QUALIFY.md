@@ -2,8 +2,6 @@
 
 > [`QUALIFY`](https://www.codechef.com/problems/QUALIFY) &middot; difficulty **594** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -101,6 +99,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Exactly the threshold** ($X = 15$ with $A = 9$, $B = 3$: score $9 + 6 = 15$): the requirement is "at least", so `Qualify`. The sample's first row is this case.
+- **No problems solved** ($A = B = 0$): score $0$, and since $X \geq 1$ the answer is always `NotQualify`.
+- **Input order is $X$ first**, then $A$ then $B$. Reading them as $A, B, X$ silently changes the answer — the sample's second row, $5\,3\,0$, would then score $3 + 0$ against a threshold of $0$ and wrongly qualify.
+- **The weights differ**: a hard problem is worth $2$ and an easy one $1$, so the score is $A + 2B$ and not $A + B$.
+
+## Dry run
+
+| $X$ | $A$ (easy) | $B$ (hard) | score $A + 2B$ | $\geq X$? | output |
+|---:|---:|---:|---:|:---:|---|
+| 15 | 9 | 3 | 15 | yes (equal) | `Qualify` |
+| 5 | 3 | 0 | 3 | no | `NotQualify` |
+| 6 | 2 | 8 | 18 | yes | `Qualify` |
+
+Row 1 lands exactly on the threshold; row 3 clears it on hard problems alone.
 
 ---
 

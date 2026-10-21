@@ -2,8 +2,6 @@
 
 > [`CHEFGAMES`](https://www.codechef.com/problems/CHEFGAMES) &middot; difficulty **550** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -104,6 +102,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **All four zero**: the only way to answer `IN`, since every rating must be inside its limit.
+- **A single one anywhere**: `OUT`. The sample puts it in the last position ($0\,0\,0\,1$) precisely because a check that only inspects the first value or two would pass it.
+- **All four one**: `OUT`.
+- **The polarity is inverted** from the obvious reading: a $1$ marks a *violation*, not a pass, so `IN` is the all-zero case. Reading it the other way flips every answer.
+- Summing the flags turns a four-way AND into one comparison against zero, which is harder to get subtly wrong than four chained conditions.
+
+## Dry run
+
+| $R_1$ | $R_2$ | $R_3$ | $R_4$ | sum | sum $= 0$? | output |
+|---:|---:|---:|---:|---:|:---:|---|
+| 1 | 1 | 0 | 0 | 2 | no | `OUT` |
+| 0 | 0 | 0 | 0 | 0 | yes | `IN` |
+| 0 | 0 | 0 | 1 | 1 | no | `OUT` |
+| 1 | 1 | 1 | 1 | 4 | no | `OUT` |
+
+Only row 2 clears every limit.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`ACTEMP`](https://www.codechef.com/problems/ACTEMP) &middot; difficulty **584** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -113,6 +111,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The binding lower bound equals the upper bound** ($30\,35\,35$): $\max(30,35) = 35 \leq 35$, so `Yes`. The comparison is non-strict and the sample tests it.
+- **Either lower bound can be the binding one.** In $30\,35\,40$ it is $C$ that breaks the range; in $30\,25\,35$ it is $A$ (and $C$ too). Checking only one of them passes half the failing cases.
+- **$A = B = C$**: a single feasible temperature, so `Yes`.
+- Collapsing the two lower bounds into their maximum is what removes the case analysis: two constraints of the same direction only ever bind through the tighter one.
+
+## Dry run
+
+| $A$ | $B$ | $C$ | $\max(A, C)$ | $\leq B$? | output |
+|---:|---:|---:|---:|:---:|---|
+| 30 | 35 | 25 | 30 | yes | `Yes` |
+| 30 | 35 | 40 | 40 | no | `No` |
+| 30 | 35 | 35 | 35 | yes (equal) | `Yes` |
+| 30 | 25 | 35 | 35 | no | `No` |
+
+Row 3 is the tight fit; row 4 fails on both lower bounds at once.
 
 ---
 

@@ -15,3 +15,22 @@ This is the same "strict majority" shape that appeared in the Mahasena problem �
 Strictness matters at the boundary: if the largest exactly equals the sum of the others, $2M = S_{\text{total}}$ and the answer is `NO`. All profits are at least $1$, so no company can dominate by default.
 
 Sample case 2 ($30, 20, 6, 4$) has $M = 30$ against a total of $60$, exactly the tie, and correctly answers `NO`.
+
+## Edge cases
+
+- **Exact tie**, $2\max = \text{sum}$: the sample's $30\,20\,6\,4$ has max $30$ and sum $60$, so $60 > 60$ fails and the answer is `NO`. The comparison must be **strict**, and this row is there to catch `>=`.
+- **Two values tied for largest** ($5\,5\,1\,1$): max $5$, sum $12$, so `NO` — neither copy can dominate, and taking "the maximum" rather than "a maximum" causes no trouble because the test only uses its value.
+- **All four equal** ($1\,1\,1\,1$): $2 > 4$ fails, `NO`.
+- **One value dominating** ($1\,1\,1\,10$): $20 > 13$, `YES`.
+- **Only the largest can possibly dominate**, so checking the maximum alone is sufficient — there is no need to test all four.
+
+## Dry run
+
+| $P$ | $Q$ | $R$ | $S$ | max | sum | $2\max > \text{sum}$ | output |
+|---:|---:|---:|---:|---:|---:|:---:|---|
+| 1 | 1 | 1 | 10 | 10 | 13 | $20 > 13$ yes | `YES` |
+| 30 | 20 | 6 | 4 | 30 | 60 | $60 > 60$ no | `NO` |
+| 100 | 90 | 3 | 4 | 100 | 197 | $200 > 197$ yes | `YES` |
+| 14 | 15 | 16 | 17 | 17 | 62 | $34 > 62$ no | `NO` |
+
+Row 2 is the exact tie; row 3 is a narrow win by three.

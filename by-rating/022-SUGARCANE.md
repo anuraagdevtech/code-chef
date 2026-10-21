@@ -2,8 +2,6 @@
 
 > [`SUGARCANE`](https://www.codechef.com/problems/SUGARCANE) &middot; difficulty **563** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -105,6 +103,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$N = 1$**: $15$ rupees of profit — the per-litre margin itself.
+- **Largest input** ($N = 10^6$): $1.5 \times 10^7$, well inside integer range.
+- **The percentages cancel exactly.** Income is $50N$ and costs take $20 + 20 + 30 = 70\%$ of it, leaving $30\%$; and $30\%$ of $50$ is exactly $15$, an integer. So no rounding question arises at any $N$. Had the margin not divided evenly, the answer would have to settle whether paise are rounded or truncated.
+- There is nothing to clamp: the margin is positive, so the profit never goes negative.
+
+## Dry run
+
+| $N$ | income $50N$ | costs $70\%$ | profit $15N$ | output |
+|---:|---:|---:|---:|---:|
+| 2 | 100 | 70 | 30 | `30` |
+| 4 | 200 | 140 | 60 | `60` |
+| 5 | 250 | 175 | 75 | `75` |
+| 10 | 500 | 350 | 150 | `150` |
+
+The code jumps straight to the last column; the middle two are only there to show the rate collapsing to $15$.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`TRAVELFAST`](https://www.codechef.com/problems/TRAVELFAST) &middot; difficulty **571** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -98,6 +96,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Equal times** ($6$ and $6$): neither is faster, so `SAME` needs its own branch — a plain two-way `if/else` would wrongly pick a winner. The sample tests it.
+- **Extremes** ($1$ against $10$): the gap does not matter, only the direction.
+- $X$ is the bike's time and $Y$ the car's, which the sample's first row pins down: $X = 1 < Y = 5$ answers `BIKE`.
+- Both bounds are small positive integers, so there is no zero-time or negative case to consider.
+
+## Dry run
+
+| $X$ (bike) | $Y$ (car) | comparison | output |
+|---:|---:|---|---|
+| 1 | 5 | $X < Y$ | `BIKE` |
+| 4 | 2 | $Y < X$ | `CAR` |
+| 6 | 6 | equal | `SAME` |
+
+The three rows walk through all three branches.
 
 ---
 

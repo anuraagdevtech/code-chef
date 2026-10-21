@@ -2,8 +2,6 @@
 
 > [`TODOLIST`](https://www.codechef.com/problems/TODOLIST) &middot; difficulty **580** &middot; time limit **4s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -123,6 +121,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A rating of exactly $1000$ counts as removed.** The list keeps problems *strictly below* $1000$, so the comparison is $\geq 1000$. The sample's fourth case is five ratings of exactly $1000$ and the answer is $5$ — an off-by-one here returns $0$.
+- **Nothing to remove** (all ratings below $1000$): answer $0$, as in the last sample case.
+- **Largest rating** ($D_i = 5000$): counted, like any other value at or above the threshold.
+- **$N = 1$**: a single problem, removed or not.
+- Only a count is needed, so the array never has to be stored or sorted — one pass with a running total suffices.
+
+## Dry run
+
+| ratings | at or above $1000$ | output |
+|---|---|---:|
+| $800, 1200, 900$ | $1200$ | `1` |
+| $999, 1000, 1001, 1002$ | $1000, 1001, 1002$ | `3` |
+| $1, 2, 2, 2, 5000$ | $5000$ | `1` |
+| $1000 \times 5$ | all five | `5` |
+| $900, 700, 800$ | none | `0` |
+
+Row 2 shows $999$ staying and $1000$ going — the boundary in one line.
 
 ---
 

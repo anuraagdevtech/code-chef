@@ -2,8 +2,6 @@
 
 > [`NIBBLE`](https://www.codechef.com/problems/NIBBLE) &middot; difficulty **593** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -110,6 +108,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$N = 4$**: the smallest good size, exactly one nibble.
+- **$N = 1, 2, 3$**: smaller than a single nibble, so `Not Good` — the answer is about divisibility, not about being large enough.
+- **Largest input** ($N = 1000$, which is $4 \times 250$): `Good`.
+- **A nibble is $4$ bits, not $8$.** Testing divisibility by $8$ would wrongly reject $4$, $12$, $20$ and so on; the sample's $52 = 4 \times 13$ is good but not a multiple of $8$.
+
+## Dry run
+
+| $N$ | $N \bmod 4$ | output |
+|---:|---:|---|
+| 8 | 0 | `Good` |
+| 17 | 1 | `Not Good` |
+| 52 | 0 | `Good` |
+| 3 | 3 | `Not Good` |
+
+$52$ is the row that separates "multiple of $4$" from "multiple of $8$".
 
 ---
 

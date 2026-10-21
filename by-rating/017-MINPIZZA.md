@@ -2,8 +2,6 @@
 
 > [`MINPIZZA`](https://www.codechef.com/problems/MINPIZZA) &middot; difficulty **546** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -103,6 +101,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Slices an exact multiple of $4$** ($N = 2$, $X = 6$ gives $12$): the $+3$ must not buy a spare pizza — $(12+3)//4 = 3$, not $4$.
+- **A single slice** ($N = X = 1$): $\lceil 1/4 \rceil = 1$, because a lone slice still needs a whole pizza.
+- **Largest input** ($N = X = 10$): $100$ slices, so $25$ pizzas with nothing wasted.
+- **Multiply before dividing.** The need is $N \cdot X$ slices in total; computing $\lceil X/4 \rceil$ per person and multiplying by $N$ over-orders whenever $X$ is not a multiple of four — for $N = 4$, $X = 3$ that would give $4$ pizzas instead of $3$.
+
+## Dry run
+
+| $N$ | $X$ | slices $NX$ | $NX + 3$ | $//\,4$ | output |
+|---:|---:|---:|---:|---:|---|
+| 1 | 5 | 5 | 8 | 2 | `2` |
+| 2 | 6 | 12 | 15 | 3 | `3` |
+| 4 | 3 | 12 | 15 | 3 | `3` |
+| 3 | 5 | 15 | 18 | 4 | `4` |
+
+Rows 2 and 3 need the same $12$ slices by different routes, and both round to $3$ rather than $4$.
 
 ---
 

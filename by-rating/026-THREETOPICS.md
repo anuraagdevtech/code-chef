@@ -2,8 +2,6 @@
 
 > [`THREETOPICS`](https://www.codechef.com/problems/THREETOPICS) &middot; difficulty **573** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -109,6 +107,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$X$ matching each position in turn** — the first, middle or last of $A, B, C$ — must all answer `Yes`, so the test has to cover all three and not just one.
+- **$X$ matching none** ($A,B,C = 4,6,8$ with $X = 5$): `No`.
+- **$A, B, C$ are guaranteed distinct**, so there are no duplicates to deduplicate and the membership test needs no counting.
+- **Input shape**: a single test case — one line of four integers with *no* leading $T$. The two sample blocks are two separate runs, not two cases in one run.
+
+## Dry run
+
+Sample 1: $A,B,C = 2,3,7$ and $X = 3$.
+
+| step | value |
+|---|---|
+| topics | $\{2, 3, 7\}$ |
+| $X$ | $3$ |
+| $X$ in topics? | yes (matches $B$) |
+| output | `Yes` |
+
+Sample 2: $A,B,C = 4,6,8$ and $X = 5$ — $5$ is in none of them, so `No`.
 
 ---
 

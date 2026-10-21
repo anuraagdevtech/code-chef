@@ -2,8 +2,6 @@
 
 > [`HOWMANY`](https://www.codechef.com/problems/HOWMANY) &middot; difficulty **520** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -85,6 +83,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$N = 0$**: read as the text `0`, which is one character, so the answer is $1$. Counting digits arithmetically with $\lfloor \log_{10} N \rfloor + 1$ divides by zero here, and a `while n: n //= 10` loop would count zero digits — reading the token as text sidesteps both.
+- **$N = 999$**: three digits, so the number $3$ is printed.
+- **$N = 1000$**: four digits, so the message `More than 3 digits` is printed instead. This is the boundary the problem is built around.
+- **Largest input** ($N = 10^6$): seven digits, so again the message.
+- **Input shape**: a single value with no test-case count, so reading a count first would consume $N$ itself.
+
+## Dry run
+
+Input is the single value $N = 9$.
+
+| step | value |
+|---|---|
+| token read | `"9"` |
+| digit count | $1$ |
+| $1 \leq 3$? | yes |
+| output | `1` |
 
 ---
 

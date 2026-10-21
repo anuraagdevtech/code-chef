@@ -2,8 +2,6 @@
 
 > [`EXPERT`](https://www.codechef.com/problems/EXPERT) &middot; difficulty **561** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -105,6 +103,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Exactly half approved** ($X = 2$, $Y = 1$): $2Y = X$, and the requirement is "at least half", so the answer is `YES`. The comparison must be `>=` — this is the opposite convention to the strictly-greater percentage problems, and the sample tests it.
+- **Everything approved** ($Y = X$): $2X \geq X$ holds for every $X \geq 1$, so always `YES`.
+- **Just under half** ($X = 4$, $Y = 1$): $2 \geq 4$ fails, so `NO`.
+- **Smallest input** ($X = Y = 1$): $2 \geq 1$, so `YES`.
+- $Y \leq X$ is guaranteed, so there is no need to guard against more approvals than submissions.
+- $X \leq 10^6$ makes $2Y$ at most $2 \times 10^6$, so nothing overflows even in fixed-width arithmetic.
+
+## Dry run
+
+| $X$ | $Y$ | $2Y$ | $2Y \geq X$ | output |
+|---:|---:|---:|:---:|---|
+| 5 | 3 | 6 | yes | `YES` |
+| 1 | 1 | 2 | yes | `YES` |
+| 4 | 1 | 2 | no | `NO` |
+| 2 | 1 | 2 | yes (equality) | `YES` |
+
+The last row is the tight case: exactly half still counts.
 
 ---
 

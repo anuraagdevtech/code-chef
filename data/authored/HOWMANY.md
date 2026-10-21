@@ -20,3 +20,22 @@ That zero is the trap here. The constraint $0 \leq N \leq 10^6$ deliberately adm
 The upper end matters too: $N$ may be $1000000$, which has seven digits and must print the string rather than a number. So the output type is not uniform — three of the four branches emit an integer and one emits a sentence, which has to be spelled exactly as given.
 
 There is **no $T$**: a single number is the whole input. The sample `9` is a one-digit number, giving `1`.
+
+## Edge cases
+
+- **$N = 0$**: read as the text `0`, which is one character, so the answer is $1$. Counting digits arithmetically with $\lfloor \log_{10} N \rfloor + 1$ divides by zero here, and a `while n: n //= 10` loop would count zero digits — reading the token as text sidesteps both.
+- **$N = 999$**: three digits, so the number $3$ is printed.
+- **$N = 1000$**: four digits, so the message `More than 3 digits` is printed instead. This is the boundary the problem is built around.
+- **Largest input** ($N = 10^6$): seven digits, so again the message.
+- **Input shape**: a single value with no test-case count, so reading a count first would consume $N$ itself.
+
+## Dry run
+
+Input is the single value $N = 9$.
+
+| step | value |
+|---|---|
+| token read | `"9"` |
+| digit count | $1$ |
+| $1 \leq 3$? | yes |
+| output | `1` |

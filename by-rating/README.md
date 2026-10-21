@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **12 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **35 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -10,8 +10,8 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 
 | Band | Problems | Written | Most common topic |
 |---|---:|---:|---|
-| [400&ndash;599](#400599) | 34 | 12 | Basic Math (18) |
-| [600&ndash;799](#600799) | 60 | 0 | Basic Math (31) |
+| [400&ndash;599](#400599) | 34 | 34 | Basic Math (18) |
+| [600&ndash;799](#600799) | 60 | 1 | Basic Math (31) |
 | [800&ndash;999](#800999) | 69 | 0 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 0 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 0 | Number Theory (7) |
@@ -27,8 +27,8 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 001 | [Small factorials](001-FCTRL2.md) `FCTRL2` | 420 | Big Integers | Arbitrary-precision arithmetic | &ndash; |
-| 002 | [Reverse The Number](002-FLOW007.md) `FLOW007` | 420 | Strings | Digit reversal and leading zeros | &ndash; |
+| 001 | [Small factorials](001-FCTRL2.md) `FCTRL2` | 420 | Big Integers | Arbitrary-precision arithmetic | yes |
+| 002 | [Reverse The Number](002-FLOW007.md) `FLOW007` | 420 | Strings | Digit reversal and leading zeros | yes |
 | 003 | [Finding Square Roots](003-FSQRT.md) `FSQRT` | 420 | Basic Math | Exact integer square root | yes |
 | 004 | [Greater Average](004-AVGPROBLEM.md) `AVGPROBLEM` | 500 | Basic Math | Integer arithmetic, avoiding floats | yes |
 | 005 | [Subscriptions](005-SUBSCRIBE_.md) `SUBSCRIBE_` | 504 | Basic Math | Ceiling division | yes |
@@ -37,36 +37,36 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 008 | [Chef And Operators](008-CHOPRT.md) `CHOPRT` | 520 | Conditionals & Case Work | Three-way comparison | yes |
 | 009 | [Decrement OR Increment](009-DECINC.md) `DECINC` | 520 | Conditionals & Case Work | Single divisibility branch | yes |
 | 010 | [Second Largest](010-FLOW017.md) `FLOW017` | 520 | Sorting | Median of three | yes |
-| 011 | [HOW MANY DIGITS DO I HAVE](011-HOWMANY.md) `HOWMANY` | 520 | Basic Math | Counting digits | &ndash; |
+| 011 | [HOW MANY DIGITS DO I HAVE](011-HOWMANY.md) `HOWMANY` | 520 | Basic Math | Counting digits | yes |
 | 012 | [Is it a VOWEL or CONSONANT](012-VOWELTB.md) `VOWELTB` | 520 | Strings | Membership test against a small set | yes |
 | 013 | [Chef in his Office](013-OFFICE.md) `OFFICE` | 532 | Basic Math | Direct formula | yes |
 | 014 | [CRED Coins](014-CREDCOINS.md) `CREDCOINS` | 539 | Basic Math | Floor division | yes |
 | 015 | [Sale Season](015-SALESEASON.md) `SALESEASON` | 541 | Conditionals & Case Work | Ordered threshold ladder | yes |
-| 016 | [Water Filling](016-WATERFILLING.md) `WATERFILLING` | 541 | Conditionals & Case Work | Counting flags instead of enumerating cases | &ndash; |
-| 017 | [Minimum Pizzas](017-MINPIZZA.md) `MINPIZZA` | 546 | Basic Math | Ceiling division | &ndash; |
-| 018 | [Chefland Games](018-CHEFGAMES.md) `CHEFGAMES` | 550 | Conditionals & Case Work | Reducing an AND over flags to a sum | &ndash; |
-| 019 | [Expert Setter](019-EXPERT.md) `EXPERT` | 561 | Basic Math | Percentage comparison without division | &ndash; |
-| 020 | [Chef and NextGen](020-HELIUM3.md) `HELIUM3` | 562 | Basic Math | Comparing two products | &ndash; |
-| 021 | [Count the Notebooks](021-NOTEBOOK.md) `NOTEBOOK` | 563 | Basic Math | Chaining unit conversions | &ndash; |
-| 022 | [Sugarcane Juice Business](022-SUGARCANE.md) `SUGARCANE` | 563 | Basic Math | Percentages that cancel | &ndash; |
-| 023 | [Chef and Candies](023-CHEFCAND.md) `CHEFCAND` | 570 | Basic Math | Clamping before a ceiling division | &ndash; |
-| 024 | [Car or Bike](024-TRAVELFAST.md) `TRAVELFAST` | 571 | Conditionals & Case Work | Three-way comparison | &ndash; |
-| 025 | [Is the Score Consistent](025-TRUESCORE.md) `TRUESCORE` | 572 | Conditionals & Case Work | Monotonic quantities | &ndash; |
-| 026 | [The Three Topics](026-THREETOPICS.md) `THREETOPICS` | 573 | Conditionals & Case Work | Membership test | &ndash; |
-| 027 | [Monopoly](027-MONOPOLY2.md) `MONOPOLY2` | 578 | Basic Math | Maximum against the sum of the rest | &ndash; |
-| 028 | [Problems in your to-do list](028-TODOLIST.md) `TODOLIST` | 580 | Arrays | Counting with a predicate | &ndash; |
-| 029 | [Air Conditioner Temperature](029-ACTEMP.md) `ACTEMP` | 584 | Conditionals & Case Work | Intersecting interval constraints | &ndash; |
-| 030 | [Nearest Exit](030-NEARESTEXIT.md) `NEARESTEXIT` | 585 | Basic Math | Comparing distances to two endpoints | &ndash; |
-| 031 | [Area OR Perimeter](031-AREAPERI.md) `AREAPERI` | 590 | Geometry | Comparing area against perimeter | &ndash; |
-| 032 | [Sasta Shark Tank](032-SST.md) `SST` | 592 | Basic Math | Recovering a whole from a percentage | &ndash; |
-| 033 | [Good Program](033-NIBBLE.md) `NIBBLE` | 593 | Number Theory | Divisibility test | &ndash; |
-| 034 | [Qualify the round](034-QUALIFY.md) `QUALIFY` | 594 | Basic Math | Weighted sum against a threshold | &ndash; |
+| 016 | [Water Filling](016-WATERFILLING.md) `WATERFILLING` | 541 | Conditionals & Case Work | Counting flags instead of enumerating cases | yes |
+| 017 | [Minimum Pizzas](017-MINPIZZA.md) `MINPIZZA` | 546 | Basic Math | Ceiling division | yes |
+| 018 | [Chefland Games](018-CHEFGAMES.md) `CHEFGAMES` | 550 | Conditionals & Case Work | Reducing an AND over flags to a sum | yes |
+| 019 | [Expert Setter](019-EXPERT.md) `EXPERT` | 561 | Basic Math | Percentage comparison without division | yes |
+| 020 | [Chef and NextGen](020-HELIUM3.md) `HELIUM3` | 562 | Basic Math | Comparing two products | yes |
+| 021 | [Count the Notebooks](021-NOTEBOOK.md) `NOTEBOOK` | 563 | Basic Math | Chaining unit conversions | yes |
+| 022 | [Sugarcane Juice Business](022-SUGARCANE.md) `SUGARCANE` | 563 | Basic Math | Percentages that cancel | yes |
+| 023 | [Chef and Candies](023-CHEFCAND.md) `CHEFCAND` | 570 | Basic Math | Clamping before a ceiling division | yes |
+| 024 | [Car or Bike](024-TRAVELFAST.md) `TRAVELFAST` | 571 | Conditionals & Case Work | Three-way comparison | yes |
+| 025 | [Is the Score Consistent](025-TRUESCORE.md) `TRUESCORE` | 572 | Conditionals & Case Work | Monotonic quantities | yes |
+| 026 | [The Three Topics](026-THREETOPICS.md) `THREETOPICS` | 573 | Conditionals & Case Work | Membership test | yes |
+| 027 | [Monopoly](027-MONOPOLY2.md) `MONOPOLY2` | 578 | Basic Math | Maximum against the sum of the rest | yes |
+| 028 | [Problems in your to-do list](028-TODOLIST.md) `TODOLIST` | 580 | Arrays | Counting with a predicate | yes |
+| 029 | [Air Conditioner Temperature](029-ACTEMP.md) `ACTEMP` | 584 | Conditionals & Case Work | Intersecting interval constraints | yes |
+| 030 | [Nearest Exit](030-NEARESTEXIT.md) `NEARESTEXIT` | 585 | Basic Math | Comparing distances to two endpoints | yes |
+| 031 | [Area OR Perimeter](031-AREAPERI.md) `AREAPERI` | 590 | Geometry | Comparing area against perimeter | yes |
+| 032 | [Sasta Shark Tank](032-SST.md) `SST` | 592 | Basic Math | Recovering a whole from a percentage | yes |
+| 033 | [Good Program](033-NIBBLE.md) `NIBBLE` | 593 | Number Theory | Divisibility test | yes |
+| 034 | [Qualify the round](034-QUALIFY.md) `QUALIFY` | 594 | Basic Math | Weighted sum against a threshold | yes |
 
 ## 600&ndash;799
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 035 | [Elections in Chefland](035-ELECTN.md) `ELECTN` | 604 | Arrays | Counting with a predicate | &ndash; |
+| 035 | [Elections in Chefland](035-ELECTN.md) `ELECTN` | 604 | Arrays | Counting with a predicate | yes |
 | 036 | [Minimum Cars required](036-MINCARS.md) `MINCARS` | 608 | Basic Math | Ceiling division | &ndash; |
 | 037 | [Test Score](037-CHEFSCORE.md) `CHEFSCORE` | 610 | Number Theory | Divisibility with an upper bound | &ndash; |
 | 038 | [Jenga Night](038-JENGA.md) `JENGA` | 613 | Number Theory | Divisibility as an exact-fit condition | &ndash; |
