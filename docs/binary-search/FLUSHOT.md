@@ -30,7 +30,10 @@ For each test case, you should output the minimum value of D with exactly 4 deci
 
 ## Constraints
 
-_Not published for this problem._
+- $1 \leq K \leq 30$
+- $1 \leq N \leq 10{,}000$
+- $T$ and every $x_i$ lies between $0$ and $1{,}000{,}000$, given with at most 3 decimals of precision
+- the $x_i$ appear in non-decreasing order
 
 ## Sample
 

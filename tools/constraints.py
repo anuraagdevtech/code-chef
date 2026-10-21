@@ -60,14 +60,16 @@ def from_body(body):
 
 def resolve(raw, code):
     """Best available constraints text for a problem payload."""
+    # A hand-written override is a deliberate fix, so it wins outright: it is
+    # also how problems whose own constraints block is boilerplate get repaired.
+    manual = overrides().get(code, '')
+    if manual:
+        return manual
     pc = raw.get('problemComponents') or {}
     direct = (pc.get('constraints') or '').strip()
     if direct:
         return direct.replace('\r\n', '\n')
-    found = from_body(raw.get('body') or '')
-    if found:
-        return found
-    return overrides().get(code, '')
+    return from_body(raw.get('body') or '')
 
 
 if __name__ == '__main__':

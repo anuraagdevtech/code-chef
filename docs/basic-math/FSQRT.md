@@ -33,8 +33,8 @@ For each line of the input, output the square root of the input integer, rounded
 
 ## Constraints
 
-1<=T<=20
-1<=N<=10000
+- $1 \leq T \leq 20$
+- $1 \leq N \leq 10^4$
 
 ## Sample
 

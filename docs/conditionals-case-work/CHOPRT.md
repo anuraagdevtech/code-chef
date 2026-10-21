@@ -38,8 +38,8 @@ For each line of input produce one line of output. This line contains any one of
 
 ## Constraints
 
-- 1 ≤ T ≤ 10000
-- 1 ≤ A, B ≤ 1000000001
+- $1 \leq T \leq 10^4$
+- $1 \leq A, B \leq 10^9 + 1$
 
 ## Sample
 

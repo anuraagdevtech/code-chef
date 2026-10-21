@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**336 of 486 solved problems documented.**
+**342 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 32 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 38 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **336** |
+| | **Total** | **502** | **761** | **342** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,7 +26,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 36 |
+| 4 | 100 | 42 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
@@ -185,7 +185,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (11)</summary>
+<details open><summary><b>Bit Manipulation</b> (12)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -200,6 +200,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 293 | [Yet Another Constructive Problem](docs/bit-manipulation/ORANDCON.md) | 1580 | The expression computes a bitwise majority | $O(1)$ per test case |
 | 303 | [Consecutive Xor](docs/bit-manipulation/XOR2.md) | 1611 | The total XOR is invariant | $O(N)$ per test case |
 | 313 | [Missing a Point](docs/bit-manipulation/PTMSSNG.md) | -1 | XOR cancels everything that appears twice | $O(N)$ per test case |
+| 341 | [Hussain Set](docs/bit-manipulation/COOK82C.md) | 2608 | Grouping a halving process by bit length | $O(N \log N + L)$, where $L$ is the number of moves reached |
 
 </details>
 
@@ -302,7 +303,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (32)</summary>
+<details open><summary><b>Greedy</b> (34)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -338,6 +339,16 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 302 | [Chef And Adjacent Sums](docs/greedy/CHFADJSUM.md) | 1604 | Keeping the heaviest elements apart | $O(N)$ per test case |
 | 304 | [Positive array](docs/greedy/CIREQ.md) | 1620 | Hall's condition on value-capped positions | $O(N)$ per test case |
 | 315 | [Max Mex](docs/greedy/MEX.md) | 1478 | Spending a budget on the smallest gaps first | $O(N + V)$ per test case |
+| 340 | [IPC Trainers](docs/greedy/IPCTRAIN.md) | 1500 | Exchange argument with a max-heap | $O((N + D) \log N)$ per test case |
+| 342 | [Iron, Magnet and Wall](docs/greedy/FEMA2.md) | 1725 | Interval bipartite matching with two queues | $O(N)$ per test case |
+
+</details>
+
+<details open><summary><b>Heaps</b> (1)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 339 | [Lowest Sum](docs/heaps/LOWSUM.md) | 2302 | $k$ smallest pairwise sums | $O(K \log K + n \log n)$ per test case, where $n = \max q_i$ |
 
 </details>
 
@@ -399,7 +410,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sets</b> (11)</summary>
+<details open><summary><b>Sets</b> (12)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -414,6 +425,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 208 | [Devu and friendship testing](docs/sets/CFRTEST.md) | 1061 | Distinct values as a capacity bound | $O(n)$ per test case |
 | 215 | [Points and Lines](docs/sets/POLIN.md) | 1296 | Counting distinct coordinates independently | $O(N)$ per test case |
 | 314 | [Count Distinct Values](docs/sets/CNTDIST.md) | -1 | Replacing a linear scan with a hash set | $O(n)$ overall |
+| 337 | [Version Control System](docs/sets/VCS.md) | 1217 | Intersection and complement of a union | $O(M + K)$ per test case |
 
 </details>
 
@@ -454,6 +466,14 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 322 | [Chef Restaurant ](docs/sorting/CHEFRES.md) | 1776 | Binary search over disjoint intervals | $O((N + M) \log N)$ per test case |
 | 323 | [Sort by Adjacent Swaps](docs/sorting/ADJSRT.md) | -1 | Insertion sort performs exactly the inversions | $O(n + \text{inversions})$ |
 | 324 | [Stable Quick Sort](docs/sorting/QCKSRT2.md) | -1 | Which pivot choices preserve stability | $O(n)$ |
+
+</details>
+
+<details open><summary><b>Stacks</b> (1)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 338 | [Book Exercises](docs/stacks/BEX.md) | 1728 | Prefix minimum carried alongside a stack | $O(1)$ amortised per action, $O(N)$ overall |
 
 </details>
 

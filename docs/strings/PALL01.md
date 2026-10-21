@@ -32,8 +32,8 @@ For each input output "wins" if the number is a palindrome and "loses" if not, i
 
 ## Constraints
 
-1<=T<=20
-1<=N<=20000
+- $1 \leq T \leq 20$
+- $1 \leq N \leq 20000$
 
 ## Sample
 

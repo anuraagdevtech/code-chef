@@ -30,8 +30,8 @@ The first line contains an integer **T**, total number of testcases. Then follow
 
 ## Constraints
 
-- 1 ≤ T ≤ 1000
-- 1 ≤ N ≤ 1000000
+- $1 \leq T \leq 1000$
+- $1 \leq N \leq 10^6$
 
 ## Sample
 
