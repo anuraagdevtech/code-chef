@@ -370,6 +370,45 @@ def _advitiya5(inp, got):
     return True, "valid"
 
 
+def _makediv3(inp, got):
+    """MAKEDIV3: an N-digit odd number divisible by 3 but not 9, no leading zero."""
+    toks = inp.split()
+    t = int(toks[0])
+    sizes = [int(toks[1 + i]) for i in range(t)]
+    lines = [ln.strip() for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for n, s in zip(sizes, lines):
+        if len(s) != n:
+            return False, f"n={n}: wrong digit count {len(s)}"
+        if s[0] == "0":
+            return False, f"n={n}: leading zero"
+        if int(s[-1]) % 2 == 0:
+            return False, f"n={n}: not odd"
+        ds = sum(int(c) for c in s)
+        if ds % 3 or ds % 9 == 0:
+            return False, f"n={n}: digit sum {ds} is not 3-but-not-9"
+    return True, "valid"
+
+
+def _indiperm(inp, got):
+    """INDIPERM: a permutation with i not dividing P_i for every i >= 2."""
+    toks = inp.split()
+    t = int(toks[0])
+    sizes = [int(toks[1 + i]) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for n, line in zip(sizes, lines):
+        p = list(map(int, line.split()))
+        if sorted(p) != list(range(1, n + 1)):
+            return False, f"n={n}: not a permutation"
+        for i in range(2, n + 1):
+            if p[i - 1] % i == 0:
+                return False, f"n={n}: index {i} divides {p[i - 1]}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -385,5 +424,7 @@ CHECKERS = {
     "AMMEAT2": _ammeat2,
     "DIVCOL": _divcol,
     "ADVITIYA5": _advitiya5,
+    "MAKEDIV3": _makediv3,
+    "INDIPERM": _indiperm,
     "GCDSUBARRAYS": _gcdsubarrays,
 }

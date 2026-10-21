@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**300 of 486 solved problems documented.**
+**306 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -10,12 +10,12 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
-| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 81 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 0 |
+| 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 2 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **300** |
+| | **Total** | **502** | **761** | **306** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,7 +26,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 0 |
+| 4 | 100 | 6 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
@@ -169,7 +169,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (9)</summary>
+<details open><summary><b>Bit Manipulation</b> (10)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -182,6 +182,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 281 | [Positive or Negative Subarrays](docs/bit-manipulation/POSITNEG.md) | 1526 | One power of two dominates all the lower ones | $O(N)$ per test case |
 | 289 | [XxOoRr](docs/bit-manipulation/XXOORR.md) | 1551 | Bits are independent, so count per column | $O(N \log \max A)$ per test case |
 | 293 | [Yet Another Constructive Problem](docs/bit-manipulation/ORANDCON.md) | 1580 | The expression computes a bitwise majority | $O(1)$ per test case |
+| 303 | [Consecutive Xor](docs/bit-manipulation/XOR2.md) | 1611 | The total XOR is invariant | $O(N)$ per test case |
 
 </details>
 
@@ -200,7 +201,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (6)</summary>
+<details open><summary><b>Combinatorics</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -210,6 +211,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 237 | [Maximum Angriness](docs/combinatorics/MAXAGRY.md) | 1432 | Maximising inversions with limited swaps | $O(1)$ per test case |
 | 244 | [Counting Flags](docs/combinatorics/FLAGS.md) | 1446 | Chromatic polynomials of small graphs | $O(1)$ per test case |
 | 251 | [Magic Set](docs/combinatorics/MGCSET.md) | 1472 | A condition that reduces to its singletons | $O(n)$ per test case |
+| 301 | [Break Free](docs/combinatorics/REMOSET.md) | 1612 | A condition pinned down by its singletons | $O(N)$ per test case |
 
 </details>
 
@@ -242,7 +244,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (10)</summary>
+<details open><summary><b>Constructive</b> (12)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -256,6 +258,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 284 | [Prefix Permutation](docs/constructive/PREFPERM.md) | 1532 | Blocks that only close at the right moment | $O(N)$ per test case |
 | 292 | [Chef and squares](docs/constructive/CHSQR.md) | 1576 | A shifted cyclic Latin square | $O(K^2)$ per test case |
 | 300 | [K Odd Sum](docs/constructive/ADVITIYA5.md) | 1614 | Parity blocks and the number of switches | $O(N)$ per test case |
+| 305 | [Make it Divisible](docs/constructive/MAKEDIV3.md) | 1379 | Fixing the digit sum, then the last digit | $O(N)$ per test case |
+| 306 | [Indivisible Permutation](docs/constructive/INDIPERM.md) | 1329 | A single cyclic shift | $O(N)$ per test case |
 
 </details>
 
@@ -280,7 +284,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (29)</summary>
+<details open><summary><b>Greedy</b> (31)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -313,6 +317,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 283 | [Admins and Shopping](docs/greedy/ADMINSHOP.md) | 1529 | The larger of two independent lower bounds | $O(N)$ per test case |
 | 286 | [Let us play with rank list](docs/greedy/RANKLIST.md) | 1543 | How much deficit a given number of edits can absorb | $O(\sqrt{S})$ per test case |
 | 296 | [The One On The Last Night](docs/greedy/S06E06.md) | 1596 | Raise the smallest digit first | $O(d \log d)$ per test case with $d \leq 7$ digits |
+| 302 | [Chef And Adjacent Sums](docs/greedy/CHFADJSUM.md) | 1604 | Keeping the heaviest elements apart | $O(N)$ per test case |
+| 304 | [Positive array](docs/greedy/CIREQ.md) | 1620 | Hall's condition on value-capped positions | $O(N)$ per test case |
 
 </details>
 
