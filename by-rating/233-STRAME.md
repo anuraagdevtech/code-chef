@@ -2,8 +2,6 @@
 
 > [`STRAME`](https://www.codechef.com/problems/STRAME) &middot; difficulty **1413** &middot; time limit **4.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -131,6 +129,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The move count is forced, so there is no strategy to analyse.** Every move deletes one `0` and one `1`, and while both characters remain some adjacent unequal pair must exist — so exactly $\min(\#0, \#1)$ moves happen whatever either player does, and only its parity matters.
+- **A string of one character** (rows $1$, $2$ and $4$): no move exists, so Zlatan loses immediately and Ramos wins with zero moves played.
+- **$N = 1$**: always Ramos, for the same reason.
+- **Zlatan moves first**, so an odd move count means he makes the last one and Ramos is stuck — hence `Zlatan` on odd parity.
+- **Unequal counts** (the fifth row, one `0` against two `1`s): the smaller count caps the moves, and the leftover `1`s are unusable.
+- **Sum of $N \leq 3 \cdot 10^5$**: a single `count` call per case on the byte string, with no per-character Python loop.
+
+## Dry run
+
+| $S$ | zeros | ones | moves $\min$ | parity | winner |
+|---|---:|---:|---:|---|---|
+| `0` | 1 | 0 | 0 | even | `Ramos` |
+| `11` | 0 | 2 | 0 | even | `Ramos` |
+| `10` | 1 | 1 | 1 | odd | `Zlatan` |
+| `111` | 0 | 3 | 0 | even | `Ramos` |
+| `101` | 1 | 2 | 1 | odd | `Zlatan` |
+
+In the last row Zlatan deletes either `10` or `01`, leaving a single `1` that Ramos cannot touch.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`HOTEL`](https://www.codechef.com/problems/HOTEL) &middot; difficulty **1405** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -121,6 +119,30 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A departure at time $x$ frees the room for an arrival at $x$.** Sorting by `(time, delta)` puts $-1$ before $+1$ since $-1 < 1$, which is the entire reason the second sample answers $1$ and not $2$ — every departure there coincides with the next arrival.
+- **All stays overlapping** (the first row) → the answer is $N$.
+- **The peak can be in the middle** — the third row reaches $3$ twice, once around time $8$ and again at $13$ — so the running maximum has to be tracked rather than read off the end.
+- **Arrivals and departures are on separate lines**, $N$ values each, not interleaved as pairs; reading them as pairs scrambles every case.
+- **Times are confined to $1 \dots 1000$**, so a counting array would work too, but the event sweep needs no such bound.
+- **$N \leq 100$**: the sort is trivial, and correctness rests entirely on the tie-break.
+
+## Dry run
+
+Second sample: arrivals $1,2,3,4,5$ and departures $2,3,4,5,6$.
+
+| time | event | occupancy | peak |
+|---:|---|---:|---:|
+| 1 | arrive | 1 | 1 |
+| 2 | **depart first** | 0 | 1 |
+| 2 | arrive | 1 | 1 |
+| 3 | depart | 0 | 1 |
+| 3 | arrive | 1 | 1 |
+| … | alternating | … | 1 |
+
+Output `1`. Reversing the tie-break makes every pair overlap and reports `2`.
 
 ---
 

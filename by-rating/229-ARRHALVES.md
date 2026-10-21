@@ -2,8 +2,6 @@
 
 > [`ARRHALVES`](https://www.codechef.com/problems/ARRHALVES) &middot; difficulty **1407** &middot; time limit **3s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -122,6 +120,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The first half must hold exactly $1 \dots N$** — not merely be separated from the second. The third row, $6,5,4,3,2,1$, already has the small values grouped in the *second* half, yet the answer is $9$, because they must be moved to the front.
+- **Only which half a value lands in matters**, not its order within that half, so the cost is the number of cross-class inversions rather than a full sort.
+- **Already good** (the second row) → $0$.
+- **Fully reversed** (the third row) → the maximum, $N^2 = 9$.
+- **The target pointer advances only when a small value is placed**, so each small value is charged exactly the number of large values preceding it — which is the minimum, since adjacent swaps can fix one such inversion at a time.
+- **$P$ is a permutation of $1 \dots 2N$**, so exactly $N$ values are at most $N$ and the pointer ends at $N$.
+- **Sum of $N \leq 2 \cdot 10^5$**: one pass, with the threshold test done on converted integers since byte comparison would order `10` before `9`.
+
+## Dry run
+
+First sample: $N = 2$, $P = 3, 2, 1, 4$. Small values are $1$ and $2$.
+
+| index | value | small? | target slot | cost added |
+|---:|---:|:---:|---:|---:|
+| 0 | 3 | no | 0 | — |
+| 1 | 2 | yes | 0 | $1 - 0 = 1$ |
+| 2 | 1 | yes | 1 | $2 - 1 = 1$ |
+| 3 | 4 | no | 2 | — |
+
+Total `2`: swap $3$ with $2$, then $3$ with $1$, giving $2,1,3,4$.
 
 ---
 

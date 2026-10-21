@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **219 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **233 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -14,8 +14,8 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [600&ndash;799](#600799) | 60 | 60 | Basic Math (31) |
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
-| [1200&ndash;1399](#12001399) | 46 | 41 | Number Theory (7) |
-| [1400&ndash;1599](#14001599) | 118 | 0 | Greedy (18) |
+| [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
+| [1400&ndash;1599](#14001599) | 118 | 9 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
@@ -266,25 +266,25 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 217 | [Appy and Contest](217-HMAPPY2.md) `HMAPPY2` | 1358 | Number Theory | Counting multiples with inclusion-exclusion | yes |
 | 218 | [Maximize the Minimum](218-MAXTHEMIN.md) `MAXTHEMIN` | 1358 | Sorting | The (K+1)-th smallest survives | yes |
 | 219 | [Gift Shop and Coupon](219-GFTSHP.md) `GFTSHP` | 1364 | Prefix Sums | Prefix sums with a single discount | yes |
-| 220 | [Chocolate Monger](220-CM164364.md) `CM164364` | 1369 | Sets | Distinct count capped by a budget | &ndash; |
-| 221 | [Nobel Prize](221-NOBEL.md) `NOBEL` | 1372 | Sets | Counting distinct values against a capacity | &ndash; |
-| 222 | [Make it Divisible](222-MAKEDIV3.md) `MAKEDIV3` | 1379 | Constructive | Fixing the digit sum, then the last digit | &ndash; |
-| 223 | [Tom And Jerry 1](223-TANDJ1.md) `TANDJ1` | 1379 | Basic Math | Grid reachability by distance and parity | &ndash; |
-| 224 | [Daanish and Problems](224-DIV03.md) `DIV03` | 1388 | Greedy | Spending a budget from the top down | &ndash; |
+| 220 | [Chocolate Monger](220-CM164364.md) `CM164364` | 1369 | Sets | Distinct count capped by a budget | yes |
+| 221 | [Nobel Prize](221-NOBEL.md) `NOBEL` | 1372 | Sets | Counting distinct values against a capacity | yes |
+| 222 | [Make it Divisible](222-MAKEDIV3.md) `MAKEDIV3` | 1379 | Constructive | Fixing the digit sum, then the last digit | yes |
+| 223 | [Tom And Jerry 1](223-TANDJ1.md) `TANDJ1` | 1379 | Basic Math | Grid reachability by distance and parity | yes |
+| 224 | [Daanish and Problems](224-DIV03.md) `DIV03` | 1388 | Greedy | Spending a budget from the top down | yes |
 
 ## 1400&ndash;1599
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 225 | [Chef and Chefina](225-CHFNA.md) `CHFNA` | 1400 | Bit Manipulation | Independent bits give a closed form | &ndash; |
-| 226 | [Average Permutation](226-AVGPERM.md) `AVGPERM` | 1401 | Greedy | Pair large values with small weights | &ndash; |
-| 227 | [Hotel Bytelandia](227-HOTEL.md) `HOTEL` | 1405 | Sorting | Event sweep | &ndash; |
-| 228 | [Mighty Friend](228-MTYFRI.md) `MTYFRI` | 1406 | Greedy | Exchange the largest for the smallest | &ndash; |
-| 229 | [Array Halves](229-ARRHALVES.md) `ARRHALVES` | 1407 | Arrays | Minimum adjacent swaps to gather a set | &ndash; |
-| 230 | [Bella ciao](230-CHFHEIST.md) `CHFHEIST` | 1410 | Basic Math | Summing an arithmetic progression | &ndash; |
-| 231 | [Guessing Game](231-GUESS.md) `GUESS` | 1410 | Basic Math | Counting by parity, reduced to lowest terms | &ndash; |
-| 232 | [Plusle and Minun on Array](232-PMA.md) `PMA` | 1412 | Greedy | Best single swap | &ndash; |
-| 233 | [String Game ](233-STRAME.md) `STRAME` | 1413 | Game Theory | Counting the forced number of moves | &ndash; |
+| 225 | [Chef and Chefina](225-CHFNA.md) `CHFNA` | 1400 | Bit Manipulation | Independent bits give a closed form | yes |
+| 226 | [Average Permutation](226-AVGPERM.md) `AVGPERM` | 1401 | Greedy | Pair large values with small weights | yes |
+| 227 | [Hotel Bytelandia](227-HOTEL.md) `HOTEL` | 1405 | Sorting | Event sweep | yes |
+| 228 | [Mighty Friend](228-MTYFRI.md) `MTYFRI` | 1406 | Greedy | Exchange the largest for the smallest | yes |
+| 229 | [Array Halves](229-ARRHALVES.md) `ARRHALVES` | 1407 | Arrays | Minimum adjacent swaps to gather a set | yes |
+| 230 | [Bella ciao](230-CHFHEIST.md) `CHFHEIST` | 1410 | Basic Math | Summing an arithmetic progression | yes |
+| 231 | [Guessing Game](231-GUESS.md) `GUESS` | 1410 | Basic Math | Counting by parity, reduced to lowest terms | yes |
+| 232 | [Plusle and Minun on Array](232-PMA.md) `PMA` | 1412 | Greedy | Best single swap | yes |
+| 233 | [String Game ](233-STRAME.md) `STRAME` | 1413 | Game Theory | Counting the forced number of moves | yes |
 | 234 | [Maximize Colours](234-COLOUR.md) `COLOUR` | 1415 | Brute Force | Enumerating a tiny decision space | &ndash; |
 | 235 | [Remove Element](235-REMELEM.md) `REMELEM` | 1415 | Greedy | The smallest element as universal partner | &ndash; |
 | 236 | [Equality](236-EQUALITY.md) `EQUALITY` | 1419 | Basic Math | Solving a symmetric linear system by summing | &ndash; |

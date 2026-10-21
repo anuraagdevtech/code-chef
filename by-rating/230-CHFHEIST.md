@@ -2,8 +2,6 @@
 
 > [`CHFHEIST`](https://www.codechef.com/problems/CHFHEIST) &middot; difficulty **1410** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -127,6 +125,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$D$ not a multiple of $d$** (the second and third rows): the leftover days run at the *next* rate up, $p + \mathrm{full} \cdot q$, which the trailing term supplies — dropping it loses those days entirely.
+- **$D$ an exact multiple of $d$** (the first row): the remainder is $0$ and the trailing term vanishes on its own.
+- **$d > D$**: there are no complete blocks, so the series term is $0$ and the whole period runs at the base rate $p$, giving $D \cdot p$.
+- **$q$ is added per *block*, not per day**, which is why the series is over $\mathrm{full}$ terms and each is multiplied by $d$.
+- **The triangular factor must be integer-divided after multiplying**, `full * (full - 1) // 2`, to stay exact.
+- **Magnitudes**: with $D \leq 10^6$, $d = 1$, $p, q \leq 10^6$ the total reaches about $5 \cdot 10^{17}$ — past 32-bit and close to the 64-bit ceiling, though native in Python.
+
+## Dry run
+
+Third sample: $D = 5$, $d = 2$, $p = 1$, $q = 2$. Two complete blocks, one day left over.
+
+| days | rate | earned |
+|---|---:|---:|
+| 1–2 | $p = 1$ | 2 |
+| 3–4 | $p + q = 3$ | 6 |
+| 5 | $p + 2q = 5$ | 5 |
+
+Total `13`. The formula gives $2(2 \cdot 1 + 2 \cdot 1) + 1 \cdot 5 = 8 + 5$.
 
 ---
 

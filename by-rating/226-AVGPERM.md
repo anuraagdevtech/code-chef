@@ -2,8 +2,6 @@
 
 > [`AVGPERM`](https://www.codechef.com/problems/AVGPERM) &middot; difficulty **1401** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -112,6 +110,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The weight of a position is how many triplets cover it**, which runs $1, 2, 3, \ldots, 3, 2, 1$ across the array and is capped at $3$ and at $N - 2$. The whole objective is $\frac{1}{3}\sum_j w_j P_j$, so minimising it is a weighted-sum problem.
+- **The rearrangement inequality decides the assignment**: pairing the largest values with the smallest weights minimises the sum, so the permutation is built by sorting positions by weight and filling in descending value.
+- **$N = 3$** (the second sample row): every position has weight $1$, so *every* permutation is optimal — the sorted-by-weight order happens to reproduce the sample exactly.
+- **$N = 4$**: weights are $1, 2, 2, 1$, so the two ends take $4$ and $3$ and the middle takes $2$ and $1$. This answer is `4 2 1 3` where the sample shows `3 2 1 4`; both sum to $13$ in weighted terms, and the statement allows any optimal permutation.
+- **$N - 2$ in the cap matters for small $N$**, since there are only $N - 2$ triplets in total and no position can be covered more often than that.
+- **Sum of $N \leq 3 \cdot 10^5$**: the sort by weight is the dominant cost, and the weight array is computed in closed form rather than by counting windows.
+
+## Dry run
+
+$N = 4$: triplets are $(1,2,3)$ and $(2,3,4)$.
+
+| position | covered by | weight | rank by weight | value assigned |
+|---:|---|---:|---:|---:|
+| 1 | one triplet | 1 | 1st | **4** |
+| 2 | both | 2 | 3rd | 2 |
+| 3 | both | 2 | 4th | 1 |
+| 4 | one triplet | 1 | 2nd | **3** |
+
+Weighted sum $4(1) + 2(2) + 1(2) + 3(1) = 13$, the minimum; the sample's `3 2 1 4` also gives $13$.
 
 ---
 

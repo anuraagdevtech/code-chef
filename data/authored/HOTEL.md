@@ -15,3 +15,27 @@ Sample case 1 has three guests whose stays overlap completely, giving $3$, and c
 The alternative here, given times bounded by $1000$, is a difference array over the timeline: add $+1$ at arrival, $-1$ at departure, then prefix-sum and take the maximum. That is $O(\text{maxtime} + N)$ and sidesteps the sort — but it still needs the same half-open convention, marking the interval as $[\text{arrival}, \text{departure})$.
 
 The event sweep is the shape worth knowing, since it keeps working when times are large or unbounded.
+
+## Edge cases
+
+- **A departure at time $x$ frees the room for an arrival at $x$.** Sorting by `(time, delta)` puts $-1$ before $+1$ since $-1 < 1$, which is the entire reason the second sample answers $1$ and not $2$ — every departure there coincides with the next arrival.
+- **All stays overlapping** (the first row) → the answer is $N$.
+- **The peak can be in the middle** — the third row reaches $3$ twice, once around time $8$ and again at $13$ — so the running maximum has to be tracked rather than read off the end.
+- **Arrivals and departures are on separate lines**, $N$ values each, not interleaved as pairs; reading them as pairs scrambles every case.
+- **Times are confined to $1 \dots 1000$**, so a counting array would work too, but the event sweep needs no such bound.
+- **$N \leq 100$**: the sort is trivial, and correctness rests entirely on the tie-break.
+
+## Dry run
+
+Second sample: arrivals $1,2,3,4,5$ and departures $2,3,4,5,6$.
+
+| time | event | occupancy | peak |
+|---:|---|---:|---:|
+| 1 | arrive | 1 | 1 |
+| 2 | **depart first** | 0 | 1 |
+| 2 | arrive | 1 | 1 |
+| 3 | depart | 0 | 1 |
+| 3 | arrive | 1 | 1 |
+| … | alternating | … | 1 |
+
+Output `1`. Reversing the tie-break makes every pair overlap and reports `2`.
