@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**406 of 486 solved problems documented.**
+**413 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -12,10 +12,10 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 84 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 18 |
+| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 25 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **406** |
+| | **Total** | **502** | **761** | **413** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -27,11 +27,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
 | 4 | 100 | 100 |
-| 5 | 86 | 6 |
+| 5 | 86 | 13 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (39)</summary>
+<details open><summary><b>Arrays</b> (40)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -74,6 +74,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 352 | [Count Subarrays](docs/arrays/SUBINC.md) | 1478 | Counting subarrays by maximal runs | $O(N)$ per test case |
 | 363 | [Maximal crosses](docs/arrays/MAXCROSS.md) | 1570 | Maximal runs along rows, columns and both diagonals | $O(n^2)$ |
 | 406 | [Charges](docs/arrays/CHARGES.md) | 1645 | Local update of an adjacency count | $O(N + K)$ per test case |
+| 412 | [OR Matrix](docs/arrays/ORMATRIX.md) | 1656 | Case analysis on the nearest reachable one | $O(NM)$ per test case |
 
 </details>
 
@@ -235,7 +236,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (12)</summary>
+<details open><summary><b>Combinatorics</b> (13)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -251,10 +252,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 375 | [Nice Pairs ](docs/combinatorics/NPAIRS.md) | 1564 | Counting pairs that share an invariant key | $O(N)$ per test case |
 | 398 | [MaxEdges](docs/combinatorics/MAXEDGES.md) | 1618 | Complete layered DAG minus the forbidden pairs | $O(1)$ per test case |
 | 403 | [Bitwise Tuples](docs/combinatorics/BITTUP.md) | 1634 | Independent bits, each a complement count | $O(\log N + \log M)$ per test case |
+| 407 | [Chef and Interesting Subsequences ](docs/combinatorics/CHEFINSQ.md) | 1646 | Choosing among the tied boundary value | $O(N \log N)$ per test case |
 
 </details>
 
-<details open><summary><b>Conditionals & Case Work</b> (24)</summary>
+<details open><summary><b>Conditionals & Case Work</b> (25)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -282,6 +284,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 163 | [Problem Category](docs/conditionals-case-work/PROBCAT.md) | 860 | Ordered threshold ladder | $O(1)$ per test case |
 | 373 | [Say No To Drugs](docs/conditionals-case-work/NODRUGS.md) | 1425 | Monotone objective, so only an endpoint dose matters | $O(N)$ per test case |
 | 378 | [K-MEX](docs/conditionals-case-work/KMEX.md) | 1450 | Feasibility as a counting interval | $O(N)$ per test case |
+| 408 | [Range Assign, Number of Distinct Elements Minimize](docs/conditionals-case-work/RANGEASSIGN.md) | 1648 | Fixed endpoints bound what the operation can reach | $O(N)$ per test case |
 
 </details>
 
@@ -345,7 +348,15 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (44)</summary>
+<details open><summary><b>Graphs</b> (1)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 413 | [Fire Escape Routes](docs/graphs/FIRESC.md) | 1671 | Connected components by DSU, then a product of sizes | $O((N + M)\,\alpha(N))$ per test case |
+
+</details>
+
+<details open><summary><b>Greedy</b> (45)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -393,6 +404,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 392 | [Bench Press](docs/greedy/BENCHP.md) | 1611 | Frequency pairing for a symmetric load | $O(N)$ per test case |
 | 394 | [Maximum Subarray ](docs/greedy/MAXSUBARR.md) | 1613 | Kadane plus a freely orderable block | $O(N + M)$ per test case |
 | 401 | [Zebra Crossing](docs/greedy/ZEBRA.md) | 1626 | Earliest hops, then one long final leap | $O(N)$ per test case |
+| 411 | [Frequency Array Retrieval](docs/greedy/FREQARRRET.md) | 1654 | Lexicographic labelling of equal-frequency groups | $O(N)$ per test case |
 
 </details>
 
@@ -405,7 +417,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (47)</summary>
+<details open><summary><b>Number Theory</b> (48)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -456,6 +468,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 370 | [Yet Another Cute Girl](docs/number-theory/PRETNUM.md) | 1850 | Segmented sieve plus prime-power exponents | $O(\sqrt{R} \log\log \sqrt{R} + (R-L))$ per test case |
 | 376 | [Cakewalk](docs/number-theory/CKWLK.md) | 1474 | Prime factorisation into a two-variable range test | $O(\log N)$ per test case |
 | 395 | [Chef And The Hiring Event](docs/number-theory/CHEARMY.md) | 1613 | Product expansion for parity, then base-5 indexing | $O(\log K)$ per test case |
+| 410 | [Find eX](docs/number-theory/FIND_X.md) | 1651 | Shared remainder forces a multiple of the LCM | $O(\log \min(B,D))$ per test case |
 
 </details>
 
@@ -548,7 +561,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (29)</summary>
+<details open><summary><b>Strings</b> (30)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -581,6 +594,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 290 | [Chef and Sign Sequences](docs/strings/CHEFSIGN.md) | 1563 | Run lengths scanned from both directions | $O(|s|)$ per test case |
 | 291 | [Boring String](docs/strings/BORSTR.md) | 1566 | Longest repeated run | $O(N)$ per test case |
 | 335 | [Attendance](docs/strings/ATTND.md) | 1148 | Frequency of a key field | $O(N)$ per test case |
+| 409 | [Permutation and Palindrome](docs/strings/PERMPAL.md) | 1651 | Pairing equal letters inward from both ends | $O(n)$ per test case |
 
 </details>
 

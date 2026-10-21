@@ -667,6 +667,33 @@ def _constrray(inp, got):
     return True, "valid"
 
 
+def _permpal(inp, got):
+    """PERMPAL: any permutation of indices that turns s into a palindrome."""
+    from collections import Counter
+    toks = inp.split()
+    t = int(toks[0])
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for word, line in zip(toks[1:1 + t], lines):
+        s = word.decode() if isinstance(word, bytes) else word
+        n = len(s)
+        odd = sum(c % 2 for c in Counter(s).values())
+        vals = [int(x) for x in line.split()]
+        if vals == [-1]:
+            if odd > 1:
+                continue
+            return False, f"{s}: -1 but a palindrome permutation exists"
+        if odd > 1:
+            return False, f"{s}: gave a permutation but none exists"
+        if sorted(vals) != list(range(1, n + 1)):
+            return False, f"{s}: not a permutation of 1..{n}"
+        out = "".join(s[v - 1] for v in vals)
+        if out != out[::-1]:
+            return False, f"{s}: produces {out}, which is not a palindrome"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -694,4 +721,5 @@ CHECKERS = {
     "DIFSTR": _difstr,
     "GCDPRF": _gcdprf,
     "CONSTRRAY": _constrray,
+    "PERMPAL": _permpal,
 }
