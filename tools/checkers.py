@@ -795,6 +795,46 @@ def _sumprodseg(inp, got):
     return True, "valid"
 
 
+def _evenxor(inp, got):
+    """EVENXOR: any distinct values whose every subset XOR has even popcount."""
+    toks = inp.split()
+    t = int(toks[0])
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for tok, line in zip(toks[1:1 + t], lines):
+        n = int(tok)
+        vals = [int(x) for x in line.split()]
+        if len(vals) != n:
+            return False, f"n={n}: got {len(vals)} values"
+        if len(set(vals)) != n:
+            return False, f"n={n}: values are not distinct"
+        if any(not 0 <= v < (1 << 20) for v in vals):
+            return False, f"n={n}: a value is outside [0, 2^20)"
+        # Popcount parity is linear over XOR, so even generators suffice.
+        for v in vals:
+            if bin(v).count("1") % 2:
+                return False, f"{v} has odd popcount, so the singleton is bad"
+    return True, "valid"
+
+
+def _sumdiv2(inp, got):
+    """SUMDIV2: any N in range with X | (N+Y) and Y | (N+X)."""
+    toks = inp.split()
+    t = int(toks[0])
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for i, line in enumerate(lines):
+        x, y = int(toks[1 + 2 * i]), int(toks[2 + 2 * i])
+        n = int(line)
+        if not 1 <= n <= 10 ** 18:
+            return False, f"X={x} Y={y}: {n} is outside [1, 10^18]"
+        if (n + y) % x or (n + x) % y:
+            return False, f"X={x} Y={y}: {n} fails the divisibility"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -825,5 +865,7 @@ CHECKERS = {
     "PERMPAL": _permpal,
     "BITEQU": _bitequ,
     "MINCOLOR": _mincolor,
+    "EVENXOR": _evenxor,
+    "SUMDIV2": _sumdiv2,
     "SUMPRODSEG": _sumprodseg,
 }
