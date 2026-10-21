@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**420 of 486 solved problems documented.**
+**427 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -12,10 +12,10 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 84 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 32 |
+| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 39 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **420** |
+| | **Total** | **502** | **761** | **427** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -27,7 +27,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
 | 4 | 100 | 100 |
-| 5 | 86 | 20 |
+| 5 | 86 | 27 |
 
 ## Problems by topic
 
@@ -196,7 +196,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (20)</summary>
+<details open><summary><b>Bit Manipulation</b> (21)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -220,6 +220,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 349 | [XOR Engine](docs/bit-manipulation/ENGXOR.md) | 1632 | Popcount parity is additive under XOR | $O(N + Q)$ per test case |
 | 351 | [XOR with Subset](docs/bit-manipulation/XORSUB.md) | 1879 | XOR linear basis over GF(2) | $O(N \log V + \log^2 V)$ per test case |
 | 420 | [ALIEN-OR](docs/bit-manipulation/ALIENOR.md) | 1639 | Single-bit values are necessary and sufficient | $O(NK)$ per test case |
+| 426 | [Boxes](docs/bit-manipulation/BOX95.md) | 1688 | The top bit caps a box at two elements | $O(N)$ per test case |
 
 </details>
 
@@ -359,7 +360,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (46)</summary>
+<details open><summary><b>Greedy</b> (49)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -409,6 +410,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 401 | [Zebra Crossing](docs/greedy/ZEBRA.md) | 1626 | Earliest hops, then one long final leap | $O(N)$ per test case |
 | 411 | [Frequency Array Retrieval](docs/greedy/FREQARRRET.md) | 1654 | Lexicographic labelling of equal-frequency groups | $O(N)$ per test case |
 | 415 | [Chef and Water Car](docs/greedy/CHEFCAR.md) | 1683 | Pricing each litre by its earliest legal purchase | $O(1)$ per test case |
+| 422 | [Encrypt Value](docs/greedy/ENV.md) | 1633 | Choosing which elements to add rather than multiply | $O(N)$ per test case |
+| 423 | [Minimise Maximum Subarray Sum](docs/greedy/MINIMISEMAX.md) | 1649 | Two independent lower bounds that are jointly attainable | $O(1)$ per test case |
+| 427 | [Stamps 100](docs/greedy/S100.md) | 1631 | A right-to-left cascade zeroes everything after one position | $O(N)$ per test case |
 
 </details>
 
@@ -421,7 +425,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (49)</summary>
+<details open><summary><b>Number Theory</b> (50)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -474,6 +478,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 395 | [Chef And The Hiring Event](docs/number-theory/CHEARMY.md) | 1613 | Product expansion for parity, then base-5 indexing | $O(\log K)$ per test case |
 | 410 | [Find eX](docs/number-theory/FIND_X.md) | 1651 | Shared remainder forces a multiple of the LCM | $O(\log \min(B,D))$ per test case |
 | 419 | [Number Hunt](docs/number-theory/NUMHUNT.md) | 1638 | Product of the two smallest admissible primes | $O(g \log^3 X)$ per test case, where $g$ is the local prime gap |
+| 424 | [Chef Product](docs/number-theory/CHEFPRODUCT.md) | 1658 | Size feasibility from a square bound and a parity | $O(\sqrt[2]{N})$-free, $O(1)$ per test case |
 
 </details>
 
@@ -528,7 +533,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (25)</summary>
+<details open><summary><b>Sorting</b> (26)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -557,6 +562,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 385 | [Median of adjacent maximum numbers](docs/sorting/MXMEDIAN.md) | 1523 | Pairing extremes to lift the median | $O(N \log N)$ per test case |
 | 399 | [Max Out](docs/sorting/IOPC17C.md) | 1621 | The second largest distinct value is the answer | $O(N)$ per test case |
 | 405 | [Concat Sort](docs/sorting/CONCATSORT.md) | 1637 | Counting descents in the sorted order's position sequence | $O(N \log N)$ per test case |
+| 421 | [Powered Parameters](docs/sorting/POWPM.md) | 1673 | Bounding the exponent, then counting by integer root | $O(N \log N + 30 \log N)$ per test case |
 
 </details>
 
@@ -568,7 +574,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (30)</summary>
+<details open><summary><b>Strings</b> (31)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -602,6 +608,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 291 | [Boring String](docs/strings/BORSTR.md) | 1566 | Longest repeated run | $O(N)$ per test case |
 | 335 | [Attendance](docs/strings/ATTND.md) | 1148 | Frequency of a key field | $O(N)$ per test case |
 | 409 | [Permutation and Palindrome](docs/strings/PERMPAL.md) | 1651 | Pairing equal letters inward from both ends | $O(n)$ per test case |
+| 425 | [3-Blast Palindrome](docs/strings/BLAST3.md) | 1699 | Residue classes of the surviving positions | $O(N)$ per test case |
 
 </details>
 
