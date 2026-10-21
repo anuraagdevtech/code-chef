@@ -45,4 +45,4 @@ Third sample: $A = 1, 2, 3, 4$.
 | 1 | 1 | 4 | 3 | — |
 | 2 | 2 | 3 | 1 | $1 \leq 3$ ✓ |
 
-Valid, so the answer is the first gap, `3`: three operations on prefixes of lengths $1$, $2$ and $2$ turn $A$ into $4, 4, 3, 4$… more precisely $c = (3, 2, 0, 0)$ gives $4, 4, 3, 4$ — wait, the coverage $c = (3,1,0,0)$ yields $4,3,3,4$, a palindrome.
+Valid, so the answer is the first gap, `3`. Three operations — on prefixes of lengths $2$, $1$ and $1$ — give coverage $c = (3, 1, 0, 0)$ and turn $A$ into $4, 3, 3, 4$, a palindrome.
