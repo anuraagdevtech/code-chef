@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **331 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **345 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -15,8 +15,8 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
-| [1400&ndash;1599](#14001599) | 118 | 107 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
+| [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
+| [1600&ndash;1799](#16001799) | 120 | 3 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
@@ -383,25 +383,25 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 329 | [Chef and Sign Sequences](329-CHEFSIGN.md) `CHEFSIGN` | 1563 | Strings | Run lengths scanned from both directions | yes |
 | 330 | [Nice Pairs ](330-NPAIRS.md) `NPAIRS` | 1564 | Combinatorics | Counting pairs that share an invariant key | yes |
 | 331 | [Boring String](331-BORSTR.md) `BORSTR` | 1566 | Strings | Longest repeated run | yes |
-| 332 | [List of Lists](332-LISTLIST.md) `LISTLIST` | 1567 | Greedy | Counting how many singletons can survive | &ndash; |
-| 333 | [Gravity Guy](333-GRGUY.md) `GRGUY` | 1568 | Dynamic Programming | Two-state DP with a zero-cost move | &ndash; |
-| 334 | [Maximal crosses](334-MAXCROSS.md) `MAXCROSS` | 1570 | Arrays | Maximal runs along rows, columns and both diagonals | &ndash; |
-| 335 | [Chef and squares](335-CHSQR.md) `CHSQR` | 1576 | Constructive | A shifted cyclic Latin square | &ndash; |
-| 336 | [Yet Another Constructive Problem](336-ORANDCON.md) `ORANDCON` | 1580 | Bit Manipulation | The expression computes a bitwise majority | &ndash; |
-| 337 | [Chef In Infinite Plane](337-CHFPLN.md) `CHFPLN` | 1582 | Combinatorics | Capacity per value | &ndash; |
-| 338 | [Yet Another Palindrome Problem](338-ARRPAL.md) `ARRPAL` | 1594 | Arrays | Prefix increments force a non-increasing profile | &ndash; |
-| 339 | [Missing Numbers](339-MISS_NUM.md) `MISS_NUM` | 1594 | Brute Force | Guessing which two values are the sum and difference | &ndash; |
-| 340 | [Dish Distribution](340-DISHDIS.md) `DISHDIS` | 1596 | Dynamic Programming | Bounded compositions via a prefix-sum convolution | &ndash; |
-| 341 | [The One On The Last Night](341-S06E06.md) `S06E06` | 1596 | Greedy | Raise the smallest digit first | &ndash; |
-| 342 | [Andrew and the Meatballs again](342-AMMEAT2.md) `AMMEAT2` | 1597 | Number Theory | A shared prime factor guarantees non-coprimality | &ndash; |
+| 332 | [List of Lists](332-LISTLIST.md) `LISTLIST` | 1567 | Greedy | Counting how many singletons can survive | yes |
+| 333 | [Gravity Guy](333-GRGUY.md) `GRGUY` | 1568 | Dynamic Programming | Two-state DP with a zero-cost move | yes |
+| 334 | [Maximal crosses](334-MAXCROSS.md) `MAXCROSS` | 1570 | Arrays | Maximal runs along rows, columns and both diagonals | yes |
+| 335 | [Chef and squares](335-CHSQR.md) `CHSQR` | 1576 | Constructive | A shifted cyclic Latin square | yes |
+| 336 | [Yet Another Constructive Problem](336-ORANDCON.md) `ORANDCON` | 1580 | Bit Manipulation | The expression computes a bitwise majority | yes |
+| 337 | [Chef In Infinite Plane](337-CHFPLN.md) `CHFPLN` | 1582 | Combinatorics | Capacity per value | yes |
+| 338 | [Yet Another Palindrome Problem](338-ARRPAL.md) `ARRPAL` | 1594 | Arrays | Prefix increments force a non-increasing profile | yes |
+| 339 | [Missing Numbers](339-MISS_NUM.md) `MISS_NUM` | 1594 | Brute Force | Guessing which two values are the sum and difference | yes |
+| 340 | [Dish Distribution](340-DISHDIS.md) `DISHDIS` | 1596 | Dynamic Programming | Bounded compositions via a prefix-sum convolution | yes |
+| 341 | [The One On The Last Night](341-S06E06.md) `S06E06` | 1596 | Greedy | Raise the smallest digit first | yes |
+| 342 | [Andrew and the Meatballs again](342-AMMEAT2.md) `AMMEAT2` | 1597 | Number Theory | A shared prime factor guarantees non-coprimality | yes |
 
 ## 1600&ndash;1799
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 343 | [Odd Sum](343-ODDSUM.md) `ODDSUM` | 1600 | Basic Math | Parity of consecutive prefix sums | &ndash; |
-| 344 | [Chef And Adjacent Sums](344-CHFADJSUM.md) `CHFADJSUM` | 1604 | Greedy | Keeping the heaviest elements apart | &ndash; |
-| 345 | [Bouncing Ball](345-BOUNCE_BALL.md) `BOUNCE_BALL` | 1607 | Prefix Sums | Alternating hits balance two totals | &ndash; |
+| 343 | [Odd Sum](343-ODDSUM.md) `ODDSUM` | 1600 | Basic Math | Parity of consecutive prefix sums | yes |
+| 344 | [Chef And Adjacent Sums](344-CHFADJSUM.md) `CHFADJSUM` | 1604 | Greedy | Keeping the heaviest elements apart | yes |
+| 345 | [Bouncing Ball](345-BOUNCE_BALL.md) `BOUNCE_BALL` | 1607 | Prefix Sums | Alternating hits balance two totals | yes |
 | 346 | [Chef and Bulb Invention](346-CHFINVNT.md) `CHFINVNT` | 1607 | Basic Math | Counting residues below a threshold in closed form | &ndash; |
 | 347 | [ChefWatson uses Social Network](347-BOOKCHEF.md) `BOOKCHEF` | 1610 | Sorting | Sorting on a composite key | &ndash; |
 | 348 | [Bench Press](348-BENCHP.md) `BENCHP` | 1611 | Greedy | Frequency pairing for a symmetric load | &ndash; |

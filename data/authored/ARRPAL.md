@@ -25,3 +25,24 @@ When both hold, the construction is immediate: set $d_j = \delta_j$ on the first
 $$d_1 = \delta_1 = A_N - A_1$$
 
 Sample case 3, $[1,2,3,4]$, has $\delta = (3, 1)$ — non-negative and non-increasing — giving $3$. Sample case 1 is already a palindrome with $\delta = (0,0)$, so zero operations.
+
+## Edge cases
+
+- **Prefix increments force a non-increasing coverage profile.** If $c_j$ counts the operations covering index $j$, then $c_1 \geq c_2 \geq \dots \geq c_N$ — so the mirror gaps $A_{n+1-j} - A_j$ must be non-negative *and* non-increasing in $j$.
+- **A negative gap is immediately fatal**, since the later half can only be raised less than the earlier half. The second row, $5,4,3,2,1$, fails at the very first pair.
+- **Non-negative gaps are not enough** — they must also be ordered. An input like $1, 5, 5, 4$ has gaps $3$ then $0$: fine. Reversed, $4, 5, 5, 1$ gives gaps $-3$ and $0$ and fails on sign, while $1, 2, 9, 4$ gives $3$ then $7$, which is non-negative but increasing, so `-1`.
+- **The answer is $A_N - A_1$**, which is the first gap: setting $c_N = 0$ makes $c_1$ exactly that, and every operation covers index $1$ so $c_1$ is the operation count.
+- **Already a palindrome** → all gaps $0$ → $0$ operations (the first row).
+- **An odd $N$ leaves the middle element unconstrained**, which is why the loop runs over $\lfloor N/2 \rfloor$ pairs.
+- **Sum of $N \leq 3 \cdot 10^5$**: one pass with an early break.
+
+## Dry run
+
+Third sample: $A = 1, 2, 3, 4$.
+
+| pair $j$ | $A_j$ | mirror $A_{n+1-j}$ | gap | non-increasing? |
+|---:|---:|---:|---:|:---:|
+| 1 | 1 | 4 | 3 | — |
+| 2 | 2 | 3 | 1 | $1 \leq 3$ ✓ |
+
+Valid, so the answer is the first gap, `3`: three operations on prefixes of lengths $1$, $2$ and $2$ turn $A$ into $4, 4, 3, 4$… more precisely $c = (3, 2, 0, 0)$ gives $4, 4, 3, 4$ — wait, the coverage $c = (3,1,0,0)$ yields $4,3,3,4$, a palindrome.

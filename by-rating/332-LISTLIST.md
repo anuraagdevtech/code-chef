@@ -2,8 +2,6 @@
 
 > [`LISTLIST`](https://www.codechef.com/problems/LISTLIST) &middot; difficulty **1567** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -131,6 +129,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The two conditions pull in opposite directions.** Every list must start and end with the same value, *and* all lists must start with the same value — so one value $v$ is chosen, every list begins and ends with $v$, and everything else must be buried in the middle of some list.
+- **That needs two copies of $v$**, one at each end of the list holding the foreign elements. So a value appearing only once can never serve, and an array of all-distinct values is impossible: `-1`.
+- **All elements equal** → $0$ operations, since each singleton already starts and ends with the same value and they all agree.
+- **The count $n - \text{top} + 1$** builds one list of $n - \text{top} + 2$ elements (a $v$, the $n - \text{top}$ others, another $v$), costing one merge fewer than its length, and leaves the remaining $\text{top} - 2$ copies as singletons.
+- **Using fewer merges fails** even when the lists look plausible. For $[1,1,2]$, merging the two $1$s gives $[1,1]$ and $[2]$, whose first elements disagree — so the answer is $2$ and not $1$.
+- **Only the most frequent value matters**, so a single `Counter` maximum decides everything.
+
+## Dry run
+
+Third sample: $A = 1, 1, 2$, so the most frequent value is $1$ with two copies.
+
+| step | lists |
+|---:|---|
+| start | $[1]$, $[1]$, $[2]$ |
+| merge $[2]$ into the first $[1]$ | $[1,2]$, $[1]$ |
+| merge the remaining $[1]$ into it | $[1,2,1]$ |
+
+One list, starting and ending with $1$. Output `2` $= n - \text{top} + 1 = 3 - 2 + 1$.
 
 ---
 
