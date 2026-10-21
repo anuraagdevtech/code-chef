@@ -2,8 +2,6 @@
 
 > [`MKGPLNKS`](https://www.codechef.com/problems/MKGPLNKS) &middot; difficulty **1467** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -136,6 +134,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **One operation removes two runs, not one.** Painting a plank repaints its whole run and the propagation merges it with the runs on both sides, turning three runs into one — so the answer is $\lceil (\text{runs} - 1)/2 \rceil$, which equals $\lfloor \text{runs}/2 \rfloor$.
+- **The chosen run must be interior to get the full benefit.** Painting the first or last run merges only two runs into one, so $4$ runs would take three operations instead of two; always picking an interior run is what achieves the bound.
+- **Already uniform** (the third row, `BB`) → one run and $0$ operations.
+- **Even and odd run counts behave differently**: $3$ runs need $1$ operation and $4$ need $2$, which the floor division captures.
+- **Only two colours exist**, so runs strictly alternate and the run count is one more than the number of adjacent mismatches.
+- **Sum of $N \leq 10^5$**: a single pass counting mismatches, with the length token skipped.
+
+## Dry run
+
+| $S$ | runs | $\lfloor \text{runs}/2 \rfloor$ |
+|---|---|---:|
+| `BBWWWB` | `BB`, `WWW`, `B` → 3 | `1` |
+| `WWBWB` | `WW`, `B`, `W`, `B` → 4 | `2` |
+| `BB` | `BB` → 1 | `0` |
+| `WWBBBBBWW` | `WW`, `BBBBB`, `WW` → 3 | `1` |
+
+In the last row, painting any of the five `B`s white turns the whole string white in one move.
 
 ---
 

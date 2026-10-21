@@ -19,3 +19,21 @@ Spotting that the strongest constraints are the smallest ones — the singletons
 Sample case 1 has $a = [1, 2]$ with $m = 3$: neither element is a multiple of $3$, so $c = 0$ and the answer is $2^0 - 1 = 0$. Sample case 2 has $a = [1, 3]$: only the $3$ qualifies, giving $2^1 - 1 = 1$ — the subsequence $[3]$ alone.
 
 With $n \leq 30$ the count fits comfortably in $2^{30}$, so no modular arithmetic is needed.
+
+## Edge cases
+
+- **The singletons carry the whole condition.** Every non-empty subsequence must have a sum divisible by $m$, and the one-element subsequences force each chosen $a_i \equiv 0 \pmod m$ — after which every larger sum is a sum of multiples and is automatically divisible. So the condition collapses to a per-element test.
+- **No divisible element** (the first row, $m = 3$ with values $1, 2$) → $0$ good subsequences, since even a single element fails.
+- **The subsequence must be non-empty**, hence the $-1$: with $c$ divisible elements there are $2^c$ subsets but the empty one does not count.
+- **Duplicates count as distinct positions**, so two copies of a divisible value give $3$ good subsequences, not $1$.
+- **$m = 1$** would make every element divisible and the answer $2^n - 1$.
+- **$n \leq 30$** keeps $2^c$ inside 32 bits, and the shift is exact in Python regardless.
+
+## Dry run
+
+| $n$ | $m$ | values | divisible by $m$ | $c$ | $2^c - 1$ |
+|---:|---:|---|---|---:|---:|
+| 2 | 3 | $1, 2$ | none | 0 | `0` |
+| 2 | 3 | $1, 3$ | $3$ | 1 | `1` |
+
+The only good subsequence in the second row is $[3]$ itself.

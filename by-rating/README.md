@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **261 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **275 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -15,7 +15,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
-| [1400&ndash;1599](#14001599) | 118 | 37 | Greedy (18) |
+| [1400&ndash;1599](#14001599) | 118 | 51 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
@@ -313,20 +313,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 259 | [Control the Pollution](259-SMOKE.md) `SMOKE` | 1450 | Brute Force | Searching one variable over a small range | yes |
 | 260 | [Yet another SOD problem](260-SOD3.md) `SOD3` | 1459 | Number Theory | Digit sum congruent to the value mod 3 | yes |
 | 261 | [Polygon Relationship](261-POLYREL.md) `POLYREL` | 1460 | Geometry | Halving the vertex count down to a triangle | yes |
-| 262 | [Chef and Adventures](262-CHEFADV.md) `CHEFADV` | 1462 | Number Theory | Divisibility with an optional one-off offset | &ndash; |
-| 263 | [GCD operations](263-GCDOPS.md) `GCDOPS` | 1462 | Constructive | Each reduction has a self-fixing pivot | &ndash; |
-| 264 | [Triangle Classification](264-TRIANGCL.md) `TRIANGCL` | 1462 | Geometry | Classifying with squared lengths | &ndash; |
-| 265 | [Magical Planks](265-MKGPLNKS.md) `MKGPLNKS` | 1467 | Strings | Counting runs | &ndash; |
-| 266 | [Good Pairs](266-GOODPAIRS.md) `GOODPAIRS` | 1469 | Sets | One-pass tally of mirrored keys | &ndash; |
-| 267 | [Password](267-PASSWD.md) `PASSWD` | 1470 | Strings | Several predicates, one with a positional restriction | &ndash; |
-| 268 | [Approximately II](268-APPROX2.md) `APPROX2` | 1471 | Sorting | Two pointers, then counting by value | &ndash; |
-| 269 | [Dense Bracket Sequence](269-DENSE.md) `DENSE` | 1472 | Prefix Sums | Best split between an open prefix and a close suffix | &ndash; |
-| 270 | [Magic Set](270-MGCSET.md) `MGCSET` | 1472 | Combinatorics | A condition that reduces to its singletons | &ndash; |
-| 271 | [Chef and Three Dogs](271-CHDOGS.md) `CHDOGS` | 1473 | Geometry | Pursuit curve by relative closing speed | &ndash; |
-| 272 | [Cakewalk](272-CKWLK.md) `CKWLK` | 1474 | Number Theory | Prime factorisation into a two-variable range test | &ndash; |
-| 273 | [Order by XOR](273-XOR_ORDER.md) `XOR_ORDER` | 1476 | Bit Manipulation | The highest differing bit decides an XOR comparison | &ndash; |
-| 274 | [Chef and Numbers](274-CHEFFED.md) `CHEFFED` | 1477 | Brute Force | Bounding the search window | &ndash; |
-| 275 | [Majin Vegeta](275-VEGETA.md) `VEGETA` | 1477 | Number Theory | Sieve counting distinct prime factors | &ndash; |
+| 262 | [Chef and Adventures](262-CHEFADV.md) `CHEFADV` | 1462 | Number Theory | Divisibility with an optional one-off offset | yes |
+| 263 | [GCD operations](263-GCDOPS.md) `GCDOPS` | 1462 | Constructive | Each reduction has a self-fixing pivot | yes |
+| 264 | [Triangle Classification](264-TRIANGCL.md) `TRIANGCL` | 1462 | Geometry | Classifying with squared lengths | yes |
+| 265 | [Magical Planks](265-MKGPLNKS.md) `MKGPLNKS` | 1467 | Strings | Counting runs | yes |
+| 266 | [Good Pairs](266-GOODPAIRS.md) `GOODPAIRS` | 1469 | Sets | One-pass tally of mirrored keys | yes |
+| 267 | [Password](267-PASSWD.md) `PASSWD` | 1470 | Strings | Several predicates, one with a positional restriction | yes |
+| 268 | [Approximately II](268-APPROX2.md) `APPROX2` | 1471 | Sorting | Two pointers, then counting by value | yes |
+| 269 | [Dense Bracket Sequence](269-DENSE.md) `DENSE` | 1472 | Prefix Sums | Best split between an open prefix and a close suffix | yes |
+| 270 | [Magic Set](270-MGCSET.md) `MGCSET` | 1472 | Combinatorics | A condition that reduces to its singletons | yes |
+| 271 | [Chef and Three Dogs](271-CHDOGS.md) `CHDOGS` | 1473 | Geometry | Pursuit curve by relative closing speed | yes |
+| 272 | [Cakewalk](272-CKWLK.md) `CKWLK` | 1474 | Number Theory | Prime factorisation into a two-variable range test | yes |
+| 273 | [Order by XOR](273-XOR_ORDER.md) `XOR_ORDER` | 1476 | Bit Manipulation | The highest differing bit decides an XOR comparison | yes |
+| 274 | [Chef and Numbers](274-CHEFFED.md) `CHEFFED` | 1477 | Brute Force | Bounding the search window | yes |
+| 275 | [Majin Vegeta](275-VEGETA.md) `VEGETA` | 1477 | Number Theory | Sieve counting distinct prime factors | yes |
 | 276 | [Max Mex](276-MEX.md) `MEX` | 1478 | Greedy | Spending a budget on the smallest gaps first | &ndash; |
 | 277 | [Count Subarrays](277-SUBINC.md) `SUBINC` | 1478 | Arrays | Counting subarrays by maximal runs | &ndash; |
 | 278 | [Distinct Pair Sums](278-MANYSUMS.md) `MANYSUMS` | 1480 | Basic Math | Range of achievable sums | &ndash; |

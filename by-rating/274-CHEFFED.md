@@ -2,8 +2,6 @@
 
 > [`CHEFFED`](https://www.codechef.com/problems/CHEFFED) &middot; difficulty **1477** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -126,6 +124,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The search window is provable, not a guess.** For $X \leq 10^9$ the digit sum is at most $81$ and the digit sum of that at most $16$, so any solution satisfies $X \geq N - 97$. Scanning $200$ values back therefore cannot miss one.
+- **$X$ must be positive**, which `max(1, n - 200)` enforces for small $N$.
+- **$X = N$ is never a solution** for $N \geq 1$, since the two digit-sum terms are both positive — but including it costs nothing and keeps the range simple.
+- **The answer can exceed $1$.** $N = 9939$ has four solutions ($9898$, $9907$, $9910$, $9913$), so the loop must count rather than stop at the first hit.
+- **The answer can be $0$** for many $N$, as the map $X \mapsto X + S(X) + S(S(X))$ is not onto.
+- **There is no test-case count** — the input is a single integer.
+
+## Dry run
+
+$N = 6$: scan $X$ from $1$ upward.
+
+| $X$ | $S(X)$ | $S(S(X))$ | total |
+|---:|---:|---:|---:|
+| 1 | 1 | 1 | 3 |
+| 2 | 2 | 2 | **6** |
+| 3 | 3 | 3 | 9 |
+| 4 | 4 | 4 | 12 |
+| 5 | 5 | 5 | 15 |
+
+Exactly one solution, so the output is `1`.
 
 ---
 

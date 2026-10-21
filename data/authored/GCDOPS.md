@@ -21,3 +21,21 @@ The one ordering subtlety: the pivot $p$ must still hold its original value $p$.
 Sample 2 is this construction in one step: $B = [1,2,3,2]$ needs only index $4$ lowered to $2$, and operating on indices $4$ and $2$ gives $\gcd(4,2) = 2$, leaving $A_2$ at $2$. Sample 1 fails the divisibility test outright.
 
 Note $B_1 = 1$ is forced by the constraints, which is consistent — $A_1$ can never move.
+
+## Edge cases
+
+- **$A_i \mid i$ is invariant**, since each operation replaces a value by a gcd involving it and therefore only ever shrinks it to a divisor. So $B_i \nmid i$ is immediately fatal — the first row's $B_3 = 2$ does not divide $3$.
+- **The condition is also sufficient, thanks to a self-fixing pivot.** To set $A_i$ to a divisor $d$ of $i$, pair index $i$ with index $d$: at that moment $A_d = d$, so the gcd is $d$ and index $d$ is left exactly as it was. Each target can therefore be realised independently, in order of $i$.
+- **The pivot always exists**, because $d \mid i \leq N$ means $d \leq N$ is a valid index.
+- **$B_i = i$ needs no operation at all**, so the identity sequence is always reachable.
+- **$B_i \leq i$ is given by the constraints**, so the only thing left to test is divisibility, not range.
+- **Sum of $N \leq 10^5$**: one modulo per element, with `all` short-circuiting on the first failure.
+
+## Dry run
+
+| $N$ | $B$ | divisibility checks | output |
+|---:|---|---|---|
+| 3 | $1, 2, 2$ | $1 \mid 1$ ✓, $2 \mid 2$ ✓, $2 \mid 3$ **✗** | `NO` |
+| 4 | $1, 2, 3, 2$ | $1 \mid 1$, $2 \mid 2$, $3 \mid 3$, $2 \mid 4$ — all ✓ | `YES` |
+
+For the second row, $A_4$ is set by pairing index $4$ with index $2$: $\gcd(4, 2) = 2$, and index $2$ stays at $2$.
