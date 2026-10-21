@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **345 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **359 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -16,7 +16,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 3 | Greedy (22) |
+| [1600&ndash;1799](#16001799) | 120 | 17 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
@@ -402,20 +402,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 343 | [Odd Sum](343-ODDSUM.md) `ODDSUM` | 1600 | Basic Math | Parity of consecutive prefix sums | yes |
 | 344 | [Chef And Adjacent Sums](344-CHFADJSUM.md) `CHFADJSUM` | 1604 | Greedy | Keeping the heaviest elements apart | yes |
 | 345 | [Bouncing Ball](345-BOUNCE_BALL.md) `BOUNCE_BALL` | 1607 | Prefix Sums | Alternating hits balance two totals | yes |
-| 346 | [Chef and Bulb Invention](346-CHFINVNT.md) `CHFINVNT` | 1607 | Basic Math | Counting residues below a threshold in closed form | &ndash; |
-| 347 | [ChefWatson uses Social Network](347-BOOKCHEF.md) `BOOKCHEF` | 1610 | Sorting | Sorting on a composite key | &ndash; |
-| 348 | [Bench Press](348-BENCHP.md) `BENCHP` | 1611 | Greedy | Frequency pairing for a symmetric load | &ndash; |
-| 349 | [Chain of Doughnuts](349-DONUTS.md) `DONUTS` | 1611 | Greedy | Trading sacrificed chains against links needed | &ndash; |
-| 350 | [Squirrel and chestnut](350-SQUIRREL.md) `SQUIRREL` | 1611 | Binary Search | Searching time, with a greedy capacity check | &ndash; |
-| 351 | [Consecutive Xor](351-XOR2.md) `XOR2` | 1611 | Bit Manipulation | The total XOR is invariant | &ndash; |
-| 352 | [Different String](352-DIFSTR.md) `DIFSTR` | 1612 | Constructive | Cantor diagonalisation | &ndash; |
-| 353 | [Break Free](353-REMOSET.md) `REMOSET` | 1612 | Combinatorics | A condition pinned down by its singletons | &ndash; |
-| 354 | [Chef And The Hiring Event](354-CHEARMY.md) `CHEARMY` | 1613 | Number Theory | Product expansion for parity, then base-5 indexing | &ndash; |
-| 355 | [Maximum Subarray ](355-MAXSUBARR.md) `MAXSUBARR` | 1613 | Greedy | Kadane plus a freely orderable block | &ndash; |
-| 356 | [K Odd Sum](356-ADVITIYA5.md) `ADVITIYA5` | 1614 | Constructive | Parity blocks and the number of switches | &ndash; |
-| 357 | [Survive in ChocoLand](357-SURVIVE.md) `SURVIVE` | 1616 | Basic Math | Ceiling division with a running feasibility check | &ndash; |
-| 358 | [GCD of Prefixes](358-GCDPRF.md) `GCDPRF` | 1617 | Constructive | Divisibility chain, realised by the array itself | &ndash; |
-| 359 | [MaxEdges](359-MAXEDGES.md) `MAXEDGES` | 1618 | Combinatorics | Complete layered DAG minus the forbidden pairs | &ndash; |
+| 346 | [Chef and Bulb Invention](346-CHFINVNT.md) `CHFINVNT` | 1607 | Basic Math | Counting residues below a threshold in closed form | yes |
+| 347 | [ChefWatson uses Social Network](347-BOOKCHEF.md) `BOOKCHEF` | 1610 | Sorting | Sorting on a composite key | yes |
+| 348 | [Bench Press](348-BENCHP.md) `BENCHP` | 1611 | Greedy | Frequency pairing for a symmetric load | yes |
+| 349 | [Chain of Doughnuts](349-DONUTS.md) `DONUTS` | 1611 | Greedy | Trading sacrificed chains against links needed | yes |
+| 350 | [Squirrel and chestnut](350-SQUIRREL.md) `SQUIRREL` | 1611 | Binary Search | Searching time, with a greedy capacity check | yes |
+| 351 | [Consecutive Xor](351-XOR2.md) `XOR2` | 1611 | Bit Manipulation | The total XOR is invariant | yes |
+| 352 | [Different String](352-DIFSTR.md) `DIFSTR` | 1612 | Constructive | Cantor diagonalisation | yes |
+| 353 | [Break Free](353-REMOSET.md) `REMOSET` | 1612 | Combinatorics | A condition pinned down by its singletons | yes |
+| 354 | [Chef And The Hiring Event](354-CHEARMY.md) `CHEARMY` | 1613 | Number Theory | Product expansion for parity, then base-5 indexing | yes |
+| 355 | [Maximum Subarray ](355-MAXSUBARR.md) `MAXSUBARR` | 1613 | Greedy | Kadane plus a freely orderable block | yes |
+| 356 | [K Odd Sum](356-ADVITIYA5.md) `ADVITIYA5` | 1614 | Constructive | Parity blocks and the number of switches | yes |
+| 357 | [Survive in ChocoLand](357-SURVIVE.md) `SURVIVE` | 1616 | Basic Math | Ceiling division with a running feasibility check | yes |
+| 358 | [GCD of Prefixes](358-GCDPRF.md) `GCDPRF` | 1617 | Constructive | Divisibility chain, realised by the array itself | yes |
+| 359 | [MaxEdges](359-MAXEDGES.md) `MAXEDGES` | 1618 | Combinatorics | Complete layered DAG minus the forbidden pairs | yes |
 | 360 | [Positive array](360-CIREQ.md) `CIREQ` | 1620 | Greedy | Hall's condition on value-capped positions | &ndash; |
 | 361 | [Max Out](361-IOPC17C.md) `IOPC17C` | 1621 | Sorting | The second largest distinct value is the answer | &ndash; |
 | 362 | [XOR-ORED](362-XORORED.md) `XORORED` | 1621 | Bit Manipulation | Choosing X bit by bit against an OR | &ndash; |

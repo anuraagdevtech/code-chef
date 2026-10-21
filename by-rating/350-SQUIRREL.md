@@ -2,8 +2,6 @@
 
 > [`SQUIRREL`](https://www.codechef.com/problems/SQUIRREL) &middot; difficulty **1611** &middot; time limit **0.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -138,6 +136,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The answer is monotone in time**, so binary search applies: once enough chestnuts have fallen by second $s$, the same holds for every later second.
+- **Tree $i$ has dropped $\lfloor (s - T_i)/P_i \rfloor + 1$ chestnuts by second $s$**, once $s \geq T_i$ — the $+1$ is the first chestnut at $T_i$ itself, and forgetting it undercounts every tree.
+- **Trees not yet dropping must be excluded**, which the `if s >= ti` filter does; $(s - T_i)$ would otherwise go negative and the floor division would produce a nonsense count.
+- **The squirrels occupy $n$ distinct trees**, so only the $n$ most productive count — summing all $m$ would overcount whenever $m > n$.
+- **$n$ may exceed $m$**, in which case every tree is used and `nlargest` simply returns all of them.
+- **The two samples differ only in one period** ($P_3 = 2$ against $1$), which shifts the answer from $4$ to $3$ — so the per-tree arithmetic has to be exact.
+- **The upper bound must be generous**: with $k$ up to $10^7$ and a single slow tree, the answer can reach $10^9$, so the search starts there.
+
+## Dry run
+
+First sample: $n = 2$ squirrels, $k = 5$ chestnuts, trees $(T, P) = (5,1), (1,2), (2,1)$.
+
+| $s$ | tree 1 | tree 2 | tree 3 | best two | total |
+|---:|---:|---:|---:|---|---:|
+| 3 | — (not started) | $\lfloor 2/2 \rfloor + 1 = 2$ | $\lfloor 1/1 \rfloor + 1 = 2$ | $2, 2$ | 4 |
+| 4 | — | $\lfloor 3/2 \rfloor + 1 = 2$ | $\lfloor 2/1 \rfloor + 1 = 3$ | $3, 2$ | **5** |
+
+Output `4`.
 
 ---
 

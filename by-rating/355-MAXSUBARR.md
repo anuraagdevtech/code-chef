@@ -2,8 +2,6 @@
 
 > [`MAXSUBARR`](https://www.codechef.com/problems/MAXSUBARR) &middot; difficulty **1613** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -156,6 +154,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The order within $B$ never matters, only which side each element lands on.** Every element can be routed to the front or the back of $A$ independently, so the best plan sends all the positive elements of $B$ to one end and all the negatives to the other, where they sit outside the chosen subarray.
+- **Three candidates cover everything**: the best interior run of $A$ alone, or the positive total plus the best prefix, or the positive total plus the best suffix.
+- **Taking the whole array is already covered**, because the best prefix is a maximum over *all* prefixes including $A$ itself — so `gain + sum(A)` never needs its own candidate.
+- **Kadane alone can win** when the best run is strictly interior: with $A = -5, 10, -5$ and no positive $B$, the answer is $10$ while every prefix and suffix maxes out at $5$.
+- **Negative elements of $B$ are simply discarded** from the gain, since they can always be parked on the far side.
+- **An all-negative $B$ contributes nothing** (the second sample row), and the answer is just the best run of $A$.
+- **The empty subarray is allowed**, which is why every maximum starts at $0$.
+
+## Dry run
+
+First sample: $A = 3, 26, -79, 72, 23$ and $B = 66, 44$, so the positive gain is $110$.
+
+| candidate | value |
+|---|---:|
+| best interior run of $A$ (Kadane) | 95 |
+| gain $+$ best prefix of $A$ | $110 + 45 = 155$ |
+| gain $+$ best suffix of $A$ | $110 + 95 = $ **205** |
+
+Output `205`: send both of $B$'s elements to the back of $A$ and take the subarray $72, 23, 66, 44$ — or equivalently the whole suffix plus the block.
 
 ---
 

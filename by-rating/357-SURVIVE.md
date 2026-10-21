@@ -2,8 +2,6 @@
 
 > [`SURVIVE`](https://www.codechef.com/problems/SURVIVE) &middot; difficulty **1616** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -115,6 +113,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Sundays make the supply uneven, so a total count is not enough.** By day $d$ only $d - \lfloor d/7 \rfloor$ open days have passed, capping the chocolates available at $(d - \lfloor d/7 \rfloor) N$ against the $dK$ eaten — and this must hold for *every* prefix, not just for $S$.
+- **Checking only the final day is wrong**, because a shortfall can occur mid-way and be hidden by later open days. The feasibility test is a running one.
+- **The count starts on Monday**, so the Sundays among the first $d$ days number exactly $\lfloor d/7 \rfloor$ — day $7$ is the first.
+- **Buying and eating on the same day is allowed**, which is what makes day $1$ survivable whenever $N \geq K$.
+- **The answer is $\lceil SK/N \rceil$** when feasible, computed as `-(-s * k // n)` to stay in exact integers.
+- **The second sample fails on day $7$**: six open days supply $300$ chocolates against $336$ needed, so `-1` — even though days $1$ through $6$ are each fine.
+- **$S \leq 1000$** makes the day-by-day check trivially cheap.
+
+## Dry run
+
+First sample: $N = 16$ per box, $K = 2$ per day, $S = 10$ days.
+
+| day $d$ | open days so far | chocolates available | eaten by then | ok? |
+|---:|---:|---:|---:|:---:|
+| 1 | 1 | 16 | 2 | ✓ |
+| 6 | 6 | 96 | 12 | ✓ |
+| 7 | 6 | 96 | 14 | ✓ |
+| 10 | 9 | 144 | 20 | ✓ |
+
+Feasible, so the answer is $\lceil 10 \cdot 2 / 16 \rceil = $ `2` buying days.
 
 ---
 

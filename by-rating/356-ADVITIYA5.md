@@ -2,8 +2,6 @@
 
 > [`ADVITIYA5`](https://www.codechef.com/problems/ADVITIYA5) &middot; difficulty **1614** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -132,6 +130,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **An adjacent pair sums to an odd number exactly when its parities differ**, so $K$ such indices means $K$ parity switches — which means the permutation splits into $K+1$ maximal blocks of one parity each, alternating.
+- **Padding a block adds no switches**, which is what makes the surplus placement free: all the extra odds go into the first odd block and all the extra evens into the first even block.
+- **The block counts must match the available numbers.** With $K+1$ blocks, $\lceil (K+1)/2 \rceil$ are odd-parity and $\lfloor (K+1)/2 \rfloor$ even, and each needs at least one number of that parity — which $K \leq N-1$ guarantees.
+- **$K = N - 1$ forces full alternation**, with every block a singleton and no surplus to place.
+- **$K = 1$** gives two blocks: all the odds then all the evens (or the reverse).
+- **Starting with the odd parity is a choice, not a requirement** — this construction always leads with odds, which is why its output differs from the sample's (`1 2` against `2 1`) while having the same switch count. A special judge counts the odd sums.
+- **Sum of $N \leq 2 \cdot 10^5$**: the odds and evens are built as ranges and sliced.
+
+## Dry run
+
+$N = 4$, $K = 2$: odds $\{1, 3\}$, evens $\{2, 4\}$, and $K + 1 = 3$ blocks (two odd-parity, one even).
+
+| block | parity | numbers taken |
+|---:|---|---|
+| 1 | odd | $1$ (one of the two odds) |
+| 2 | even | $2, 4$ (both evens, the surplus) |
+| 3 | odd | $3$ |
+
+Permutation `1 2 4 3`, with adjacent sums $3$ (odd), $6$ (even), $7$ (odd) — exactly $K = 2$ odd sums.
 
 ---
 

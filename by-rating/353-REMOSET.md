@@ -2,8 +2,6 @@
 
 > [`REMOSET`](https://www.codechef.com/problems/REMOSET) &middot; difficulty **1612** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -129,6 +127,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The singletons carry the condition.** Every subarray sum of $B$ must be even, and the length-one subarrays force every element of $B$ to be even — after which all longer sums are automatically even.
+- **So every odd element must be removed**, and each even element is a free choice: keep it or remove it. That gives $2^{\text{evens}}$ removals.
+- **The removal must be non-empty**, which only bites when there are no odd elements at all: then "remove nothing" is one of the $2^{\text{evens}}$ options and has to be subtracted. The second sample row has one even and two odds, so nothing is subtracted.
+- **$B$ may be empty.** Removing everything is a valid good removal, since an empty array has no subarrays to violate the condition — which is why the count is $2^{\text{evens}}$ and not $2^{\text{evens}} - 1$ in general.
+- **$A_i = 0$ counts as even**, so a zero is a free choice like any other even value.
+- **The modular subtraction needs a final `%`**, since $2^{\text{evens}} \bmod p$ can be $0$ and $0 - 1$ would be negative.
+- **Sum of $N \leq 2 \cdot 10^5$**: one pass counting evens, then one modular power.
+
+## Dry run
+
+| $N$ | array | evens | odds | $2^{\text{evens}}$ | subtract 1? | output |
+|---:|---|---:|---:|---:|:---:|---:|
+| 3 | $2, 1, 4$ | 2 | 1 | 4 | no | `4` |
+| 3 | $1, 2, 3$ | 1 | 2 | 2 | no | `2` |
+
+For the first row the odd $1$ must go, and the two evens give four choices: keep both, keep either, or keep neither.
 
 ---
 
