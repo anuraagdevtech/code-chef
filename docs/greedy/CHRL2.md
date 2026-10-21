@@ -1,0 +1,134 @@
+# 481. Chef and String
+
+> CodeChef problem code [`CHRL2`](https://www.codechef.com/problems/CHRL2) &middot; difficulty **1751** &middot; time limit **2s**
+
+| | |
+|---|---|
+| **Topic** | Greedy |
+| **Technique** | Pipelined counters along a fixed pattern |
+| **Time** | $O(|S|)$ |
+| **Space** | $O(1)$ |
+| **Roadmap course** | 1600 to 1800 difficulty problems (Level 3) |
+
+## Question
+
+** Read problems statements in [Russian](https://www.codechef.com/download/translated/LTIME08/russian/CHRL2.pdf) also.**
+
+Chef likes playing with strings. The most interesting game are named "CHEF in string". The move of the game consists of the following: Chef takes a **subsequence** of string's letters that form the word "CHEF" and then he removes that symbols. The goal of the game is to make the maximal number of moves. Please, help Chef and tell him the maximal possible number of moves that he is able to make for the given string **S**.
+
+**Input**
+
+ The first line of each test case contains a given string. This string consists of uppercase letters from the set {"C", "H", "E", "F"}.
+
+**Output**
+
+Output a single line containing the maximal possible number of moves.
+
+**Constraints**
+
+- **1 ** ≤ **|S|** ≤ **100000**
+
+**Scoring**
+
+Subtask 1 (25 points): **|S|** ≤ 2000
+
+Subtask 2 (75 points):  See the constraints.
+
+## Constraints
+
+- 1  ≤ |S| ≤ 100000
+
+## Sample
+
+**Sample 1 input**
+
+```
+CHEFCHEFFFF
+```
+
+**Sample 1 output**
+
+```
+2
+```
+
+<details><summary>Explanation</summary>
+
+- In the first move, Chef can pick the subsequence $[1, 2, 3, 4]$. Thus the characters at these indices are `C`, `H`, `E`, and `F`. Chef removes this subsequence. The remaining string is `CHEFFFF`.
+- In the second move, Chef can pick the indices $[1, 2, 3, 4]$ of the remaining string `CHEFFFF` as the subsequence. The characters at these indices are `C`, `H`, `E`, and `F`. Chef removes this subsequence. The remaining string is `FFF`.
+- Chef cannot make any more valid moves.
+
+</details>
+
+**Sample 2 input**
+
+```
+CHHHEEEFFCC
+```
+
+**Sample 2 output**
+
+```
+1
+```
+
+<details><summary>Explanation</summary>
+
+- In the first move, Chef can pick the subsequence $[1, 2, 5, 8]$. Thus the characters at these indices are `C`, `H`, `E`, and `F`. Chef removes this subsequence. The remaining string is `HHEEFCC`.
+- Chef cannot make any more valid moves.
+
+</details>
+
+## Approach
+
+Each move deletes a subsequence spelling `CHEF`, and the moves are disjoint, so the question is how many disjoint `CHEF` subsequences the string admits. Scanning left to right, maintain three counters — partial matches that have reached `C`, `CH` and `CHE` — and promote greedily:
+
+- `C`: start a new partial match.
+- `H`: if some match is waiting at `C`, advance it.
+- `E`: if some match is waiting at `CH`, advance it.
+- `F`: if some match is waiting at `CHE`, complete it and score.
+
+Promoting as early as possible is optimal because the letters are interchangeable within their stage: if an optimal solution uses a later `C` where the greedy used an earlier one, swapping them keeps the solution valid, since the earlier `C` leaves at least as much room to the right. The same exchange applies at each stage, so the greedy never loses a match.
+
+A letter that finds no waiting match is simply discarded, which is why the trailing `FFF` in the sample contributes nothing — there are no `CHE` prefixes left to close.
+
+$$\text{answer} = \text{number of } \texttt{F}\text{s that find a waiting } \texttt{CHE}$$
+
+Note the input has **no leading $T$**: the whole input is one string.
+
+For `CHEFCHEFFFF` the first four characters complete one match and the next four complete a second; the remaining three `F`s are wasted, giving $2$. Were the string `CCHHEEFF`, the counters would pipeline two matches out of the same letters — which is why the counters must be kept per stage rather than just counting occurrences of each letter.
+
+## Solution (Python)
+
+```python
+import sys
+
+
+def main() -> None:
+    s = sys.stdin.buffer.read().strip()
+    waiting_c = waiting_h = waiting_e = 0
+    moves = 0
+    for ch in s:
+        if ch == 0x43:                 # 'C'
+            waiting_c += 1
+        elif ch == 0x48 and waiting_c:  # 'H'
+            waiting_c -= 1
+            waiting_h += 1
+        elif ch == 0x45 and waiting_h:  # 'E'
+            waiting_h -= 1
+            waiting_e += 1
+        elif ch == 0x46 and waiting_e:  # 'F'
+            waiting_e -= 1
+            moves += 1
+    sys.stdout.write(f"{moves}\n")
+
+
+main()
+```
+
+## Complexity
+
+- **Time:** $O(|S|)$
+- **Space:** $O(1)$
+
+> CodeChef tags: `Algorithms`, `Constructive`

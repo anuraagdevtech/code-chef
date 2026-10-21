@@ -1,0 +1,162 @@
+# 486. Maximum Size
+
+> CodeChef problem code [`RISK`](https://www.codechef.com/problems/RISK) &middot; difficulty **2113** &middot; time limit **2.5s**
+
+| | |
+|---|---|
+| **Topic** | Graphs |
+| **Technique** | Connected components, then alternating greedy picks |
+| **Time** | $O(NM)$ per test case |
+| **Space** | $O(NM)$ |
+| **Roadmap course** | Rise from 3* to 4* (Level 4) |
+
+## Question
+
+Chef is playing an easier variation of the board game ‘Risk’ with his friend Mike. There is an $N * M$ grid, depicting the world map. Each cell of the grid is either $1$ or $0$ where $1$ denotes that there is land on this cell, while $0$ denotes water.
+
+In a turn, a player can capture an uncaptured cell that has land, and keep capturing neighbouring cells that share a side with it if they are on land. A cell once captured by a player can't be captured again by another player. The game continues till no uncaptured cell has land. Each player wants to be in control of as many cells of land as possible in total when the game finishes. Find the maximum number of cells of land that Chef can capture if he plays second, and both players play optimally.
+
+###Input:
+
+- First line will contain $T$, number of testcases. Then the testcases follow.
+- Each testcase contains $N + 1$ lines of input.
+- First line will contain $2$ space separated integers $N$ and $M$ denoting the size of the grid.
+- Each of the next $N$ lines contains a binary string of length $M$ depicting the map.
+
+###Output:
+For each testcase, output in a single line answer to the problem.
+
+###Constraints
+- $1 \leq N, M \leq 10^5$
+- Each character in the grid is either $0$ or $1$
+- There's atleast $1$ land on the grid
+- Sum of $N * M$ over all testcases is almost $10^6$.
+
+## Constraints
+
+- $1 \leq N, M \leq 10^5$
+- Each character in the grid is either $0$ or $1$
+- There's atleast $1$ land on the grid
+- Sum of $N * M$ over all testcases is almost $10^6$.
+
+## Sample
+
+**Sample input**
+
+```
+3
+4 4
+1001
+0110
+0110
+1001
+2 2
+11
+11
+3 3
+100
+010
+001
+```
+
+**Sample output**
+
+```
+2
+0
+1
+```
+
+<details><summary>Explanation</summary>
+
+In **test case 1**, if both players play optimally, it takes $5$ steps to finish the game:
+
+**Step 1:** First Mike chooses the cells $\{(2, 2), (2, 3), (3, 2), (3, 3)\}$ adding $4$ to his score.
+
+**Step 2:** Second Chef chooses the cell $\{(1, 1)\}$ adding $1$ to his score.
+
+**Step 3:** Next Mike chooses the cell $\{(1, 4)\}$ adding $1$ to his score.
+
+**Step 4:** Next Chef chooses the cell $\{(4, 1)\}$ adding $1$ to his score.
+
+**Step 5:** Finally, Mike chooses the cell $\{(4, 4)\}$ adding $1$ to his score.
+
+Hence total score of Chef is $1 + 1 = 2$.
+
+</details>
+
+## Approach
+
+A turn captures one whole connected region of land — the cell chosen plus everything reachable from it through side-adjacent land. So the board is just a **multiset of component sizes**, and the game is "players alternately take one item, each wanting the largest total".
+
+With independent items taken whole, both players simply take the biggest remaining component: swapping any choice for a larger available one strictly helps the chooser and never helps the opponent, so the greedy is the unique optimum. Sorting the sizes descending, Chef (first) takes positions $0, 2, 4, \ldots$ and Mike takes $1, 3, 5, \ldots$, so the answer — Mike's total — is
+
+$$\sum_{j \text{ odd}} \text{size}_{(j)}$$
+
+Finding the components is a flood fill over the grid. $N$ and $M$ reach $10^5$ individually, but $\sum NM \leq 10^6$, so the grid is always narrow in one direction and a flat array indexed by $r \cdot M + c$ with an explicit stack handles it without recursion depth trouble.
+
+The samples show the three shapes. The $4 \times 4$ board has sizes $4, 1, 1, 1, 1$: Chef takes the block of four and then a corner, Mike takes two corners, so $2$. The $2 \times 2$ board is one component of four — Chef takes everything and Mike gets $0$. And the diagonal board has three singletons, giving Mike exactly $1$.
+
+Note that it is the *sorted* order that matters, not the layout: the four corners of the first board are symmetric, so only their count enters the answer.
+
+## Solution (Python)
+
+```python
+import sys
+
+LAND = 0x31
+
+
+def main() -> None:
+    data = sys.stdin.buffer.read().split()
+    t = int(data[0])
+    pos = 1
+    out = []
+    for _ in range(t):
+        n, m = int(data[pos]), int(data[pos + 1])
+        rows = data[pos + 2:pos + 2 + n]
+        pos += 2 + n
+        grid = bytearray(n * m)
+        for r in range(n):
+            base = r * m
+            row = rows[r]
+            for c in range(m):
+                if row[c] == LAND:
+                    grid[base + c] = 1
+        sizes = []
+        for start in range(n * m):
+            if not grid[start]:
+                continue
+            grid[start] = 0
+            stack = [start]
+            size = 0
+            while stack:                      # explicit stack, no recursion
+                cell = stack.pop()
+                size += 1
+                r, c = divmod(cell, m)
+                if c and grid[cell - 1]:
+                    grid[cell - 1] = 0
+                    stack.append(cell - 1)
+                if c + 1 < m and grid[cell + 1]:
+                    grid[cell + 1] = 0
+                    stack.append(cell + 1)
+                if r and grid[cell - m]:
+                    grid[cell - m] = 0
+                    stack.append(cell - m)
+                if r + 1 < n and grid[cell + m]:
+                    grid[cell + m] = 0
+                    stack.append(cell + m)
+            sizes.append(size)
+        sizes.sort(reverse=True)
+        # Both players take the largest left, so Mike gets the odd positions.
+        out.append(str(sum(sizes[1::2])))
+    sys.stdout.write("\n".join(out) + "\n")
+
+
+main()
+```
+
+## Complexity
+
+- **Time:** $O(NM)$ per test case
+- **Space:** $O(NM)$
