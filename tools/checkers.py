@@ -694,6 +694,30 @@ def _permpal(inp, got):
     return True, "valid"
 
 
+def _bitequ(inp, got):
+    """BITEQU: any four distinct positive integers solving the equation."""
+    toks = inp.split()
+    t = int(toks[0])
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for tok, line in zip(toks[1:1 + t], lines):
+        n = int(tok)
+        vals = [int(x) for x in line.split()]
+        if vals == [-1]:
+            return False, f"N={n}: -1, but a solution always exists"
+        if len(vals) != 4:
+            return False, f"expected four integers, got {line!r}"
+        a, b, c, d = vals
+        if len(set(vals)) != 4:
+            return False, f"N={n}: values are not distinct"
+        if any(not 1 <= v <= 10 ** 18 for v in vals):
+            return False, f"N={n}: a value is outside [1, 10^18]"
+        if ((a & b) | c) ^ d != n:
+            return False, f"N={n}: equation gives {((a & b) | c) ^ d}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -722,4 +746,5 @@ CHECKERS = {
     "GCDPRF": _gcdprf,
     "CONSTRRAY": _constrray,
     "PERMPAL": _permpal,
+    "BITEQU": _bitequ,
 }

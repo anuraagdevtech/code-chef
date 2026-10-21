@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**427 of 486 solved problems documented.**
+**435 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -12,10 +12,10 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 84 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 39 |
+| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 47 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **427** |
+| | **Total** | **502** | **761** | **435** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -27,11 +27,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
 | 4 | 100 | 100 |
-| 5 | 86 | 27 |
+| 5 | 86 | 35 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (40)</summary>
+<details open><summary><b>Arrays</b> (41)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -75,10 +75,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 363 | [Maximal crosses](docs/arrays/MAXCROSS.md) | 1570 | Maximal runs along rows, columns and both diagonals | $O(n^2)$ |
 | 406 | [Charges](docs/arrays/CHARGES.md) | 1645 | Local update of an adjacency count | $O(N + K)$ per test case |
 | 412 | [OR Matrix](docs/arrays/ORMATRIX.md) | 1656 | Case analysis on the nearest reachable one | $O(NM)$ per test case |
+| 433 | [Subarrays with length](docs/arrays/SUBARRAYLEN.md) | 1691 | Grouping by length, then a union of intervals | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Basic Math</b> (89)</summary>
+<details open><summary><b>Basic Math</b> (90)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -171,6 +172,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 390 | [Chef and Bulb Invention](docs/basic-math/CHFINVNT.md) | 1607 | Counting residues below a threshold in closed form | $O(1)$ per test case |
 | 396 | [Survive in ChocoLand](docs/basic-math/SURVIVE.md) | 1616 | Ceiling division with a running feasibility check | $O(S)$ per test case |
 | 414 | [Three Numbers](docs/basic-math/THREENUMBERS.md) | 1675 | Parity invariant plus a counting identity | $O(1)$ per test case |
+| 429 | [Gritty Grid](docs/basic-math/GRITGRID.md) | 1691 | Checkerboard parity across alternating moves | $O(1)$ per test case |
 
 </details>
 
@@ -292,7 +294,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (19)</summary>
+<details open><summary><b>Constructive</b> (20)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -315,6 +317,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 393 | [Different String](docs/constructive/DIFSTR.md) | 1612 | Cantor diagonalisation | $O(N)$ per test case |
 | 397 | [GCD of Prefixes](docs/constructive/GCDPRF.md) | 1617 | Divisibility chain, realised by the array itself | $O(N \log A)$ per test case |
 | 400 | [Construct Array](docs/constructive/CONSTRRAY.md) | 1624 | A symmetry that forces the parity of N | $O(N)$ per test case |
+| 428 | [Bitwise Equation](docs/constructive/BITEQU.md) | 1679 | Neutralising the AND to reduce to one XOR | $O(1)$ per test case |
 
 </details>
 
@@ -360,7 +363,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (49)</summary>
+<details open><summary><b>Greedy</b> (52)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -413,6 +416,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 422 | [Encrypt Value](docs/greedy/ENV.md) | 1633 | Choosing which elements to add rather than multiply | $O(N)$ per test case |
 | 423 | [Minimise Maximum Subarray Sum](docs/greedy/MINIMISEMAX.md) | 1649 | Two independent lower bounds that are jointly attainable | $O(1)$ per test case |
 | 427 | [Stamps 100](docs/greedy/S100.md) | 1631 | A right-to-left cascade zeroes everything after one position | $O(N)$ per test case |
+| 430 | [K-Subarrays](docs/greedy/KSUB.md) | 1663 | Earliest cut maximises the number of GCD-$G$ pieces | $O(N \log A)$ per test case |
+| 431 | [Maximum Median Matching](docs/greedy/MEDMAXMATCH.md) | 1647 | Opposite pairing of the top halves | $O(N \log N)$ per test case |
+| 432 | [Building Towers](docs/greedy/TOWERTOP.md) | 1693 | Doubling to the first tower, then one per operation | $O(1)$ per test case |
 
 </details>
 
@@ -425,7 +431,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (50)</summary>
+<details open><summary><b>Number Theory</b> (52)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -479,6 +485,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 410 | [Find eX](docs/number-theory/FIND_X.md) | 1651 | Shared remainder forces a multiple of the LCM | $O(\log \min(B,D))$ per test case |
 | 419 | [Number Hunt](docs/number-theory/NUMHUNT.md) | 1638 | Product of the two smallest admissible primes | $O(g \log^3 X)$ per test case, where $g$ is the local prime gap |
 | 424 | [Chef Product](docs/number-theory/CHEFPRODUCT.md) | 1658 | Size feasibility from a square bound and a parity | $O(\sqrt[2]{N})$-free, $O(1)$ per test case |
+| 434 | [The Optimal Pairs](docs/number-theory/OPTPAIRS.md) | 1666 | The minimum is always N, attained by a divisor family | $O(\sqrt{N})$ per test case |
+| 435 | [Array sorting](docs/number-theory/ARRSORT.md) | 1681 | GCD of the displacements | $O(N \log N)$ per test case |
 
 </details>
 
