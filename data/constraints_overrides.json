@@ -13,5 +13,6 @@
  "CHEFTOWN": "- $1 \\leq N \\leq 400000$\n- $1 \\leq W \\leq N$\n- $H$ is a permutation of $1 \\ldots N$: for every $i$ there is exactly one building of height $i$\n- the input holds a single case (there is no leading $T$)",
  "E1": "- $t \\approx 10$ (the statement says \"about 10\")\n- $4 \\leq N \\leq 1000$\n- each cell is '.', 'K' or 'P', and there is exactly one 'K' on the board",
  "MAXCROSS": "- $0 < n \\leq 1000$\n- each cell of $A$ is 'X' or '.'\n- the input holds a single case (there is no leading $T$), and each output line separates its integers by exactly one space",
- "GCDQ": "- $2 \\leq T, N \\leq 10^5$\n- $1 \\leq Q \\leq N$\n- $1 \\leq A_i \\leq 10^5$\n- $1 \\leq L \\leq R \\leq N$ and $L \\leq R$\n- the sum of $N$ over all test cases is at most $10^6$\n- the array remaining after the exclusion is guaranteed non-empty\n- the I/O is large, so buffered reading and writing is required"
+ "GCDQ": "- $2 \\leq T, N \\leq 10^5$\n- $1 \\leq Q \\leq N$\n- $1 \\leq A_i \\leq 10^5$\n- $1 \\leq L \\leq R \\leq N$ and $L \\leq R$\n- the sum of $N$ over all test cases is at most $10^6$\n- the array remaining after the exclusion is guaranteed non-empty\n- the I/O is large, so buffered reading and writing is required",
+ "DONUTS": "- $1 \\leq T \\leq 200$\n- $1 \\leq N \\leq 2 \\cdot 10^9$\n- $1 \\leq M \\leq 2 \\cdot 10^4$\n- $1 \\leq A_i \\leq 10^5$\n- $N$ is guaranteed to equal $\\sum_{i=1}^{M} A_i$"
 }

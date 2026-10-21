@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**385 of 486 solved problems documented.**
+**392 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 81 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 84 |
+| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 4 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **385** |
+| | **Total** | **502** | **761** | **392** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,7 +26,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 85 |
+| 4 | 100 | 92 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
@@ -76,7 +76,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Basic Math</b> (85)</summary>
+<details open><summary><b>Basic Math</b> (87)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -165,6 +165,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 265 | [Chef Goes to the Cinema](docs/basic-math/CO92SUBW.md) | 1493 | Triangular numbers and a local search | $O(1)$ per test case |
 | 275 | [Chef Drinks Coke](docs/basic-math/COKE.md) | 1511 | Closed form for a drift-to-target process | $O(N)$ per test case |
 | 371 | [Guessing Game](docs/basic-math/GUESS.md) | 1410 | Counting by parity, reduced to lowest terms | $O(\log \min(N,M))$ per test case |
+| 389 | [Odd Sum](docs/basic-math/ODDSUM.md) | 1600 | Parity of consecutive prefix sums | $O(1)$ per test case |
+| 390 | [Chef and Bulb Invention](docs/basic-math/CHFINVNT.md) | 1607 | Counting residues below a threshold in closed form | $O(1)$ per test case |
 
 </details>
 
@@ -176,7 +178,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Binary Search</b> (6)</summary>
+<details open><summary><b>Binary Search</b> (7)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -186,6 +188,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 329 | [Snake Eating](docs/binary-search/SNAKEEAT.md) | 1940 | Feasibility check with prefix sums | $O((N + Q) \log N)$ per test case |
 | 331 | [Squirrel and chestnut](docs/binary-search/SQUIRREL.md) | 1611 | Searching time, with a greedy capacity check | $O(m \log m \log(\text{time}))$ per test case |
 | 333 | [Flu Shot Lineup](docs/binary-search/FLUSHOT.md) | 1692 | Binary search on a real-valued answer | $O(N \log \frac{1}{\varepsilon})$ per test case |
+| 387 | [Sheokand and Number](docs/binary-search/SHKNUM.md) | 1534 | Precomputed candidate set with a bisect | $O(\log C)$ per test case after an $O(C \log C)$ precomputation |
 
 </details>
 
@@ -335,7 +338,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (39)</summary>
+<details open><summary><b>Greedy</b> (42)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -378,6 +381,9 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 377 | [High Frequency](docs/greedy/HIGHFREQ.md) | 1443 | Halving the top frequency against the runner-up | $O(N)$ per test case |
 | 380 | [Largest Family](docs/greedy/LARGEFAM.md) | 1532 | Maximising a set size under a sum budget | $O(N \log N)$ per test case |
 | 381 | [Sticks and Rectangles](docs/greedy/RECSTI.md) | 1555 | Pairing by length, then pairing the pairs | $O(N + \max L)$ per test case |
+| 388 | [List of Lists](docs/greedy/LISTLIST.md) | 1567 | Counting how many singletons can survive | $O(N)$ per test case |
+| 391 | [Chain of Doughnuts](docs/greedy/DONUTS.md) | 1611 | Trading sacrificed chains against links needed | $O(M \log M)$ per test case |
+| 392 | [Bench Press](docs/greedy/BENCHP.md) | 1611 | Frequency pairing for a symmetric load | $O(N)$ per test case |
 
 </details>
 
@@ -458,7 +464,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sets</b> (12)</summary>
+<details open><summary><b>Sets</b> (13)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -474,6 +480,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 215 | [Points and Lines](docs/sets/POLIN.md) | 1296 | Counting distinct coordinates independently | $O(N)$ per test case |
 | 314 | [Count Distinct Values](docs/sets/CNTDIST.md) | -1 | Replacing a linear scan with a hash set | $O(n)$ overall |
 | 337 | [Version Control System](docs/sets/VCS.md) | 1217 | Intersection and complement of a union | $O(M + K)$ per test case |
+| 386 | [Good Pairs](docs/sets/GOODPAIRS.md) | 1469 | One-pass tally of mirrored keys | $O(N)$ per test case |
 
 </details>
 
