@@ -835,6 +835,36 @@ def _sumdiv2(inp, got):
     return True, "valid"
 
 
+def _xormul(inp, got):
+    """XORMUL: any X in range attaining the maximum product."""
+    toks = inp.split()
+    t = int(toks[0])
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for i, line in enumerate(lines):
+        n = int(toks[1 + 3 * i])
+        a, b = int(toks[2 + 3 * i]), int(toks[3 + 3 * i])
+        x = int(line)
+        if not 0 <= x < (1 << n):
+            return False, f"N={n}: {x} is outside [0, 2^N)"
+        # Agreeing bits can both become 1; the differing ones split, and a
+        # product with a fixed sum peaks when the halves are closest.
+        common = ((1 << n) - 1) ^ (a | b) | (a & b)
+        base = ((1 << n) - 1) ^ (a ^ b)
+        diff = a ^ b
+        best = 0
+        if diff:
+            top = 1 << (diff.bit_length() - 1)
+            best = (base + top) * (base + diff - top)
+        else:
+            best = base * base
+        got_val = (a ^ x) * (b ^ x)
+        if got_val != best:
+            return False, f"N={n} A={a} B={b}: product {got_val}, optimum {best}"
+    return True, "optimal"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -867,5 +897,6 @@ CHECKERS = {
     "MINCOLOR": _mincolor,
     "EVENXOR": _evenxor,
     "SUMDIV2": _sumdiv2,
+    "XORMUL": _xormul,
     "SUMPRODSEG": _sumprodseg,
 }

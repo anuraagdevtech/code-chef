@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**467 of 486 solved problems documented.**
+**477 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -12,10 +12,10 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 84 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 79 |
+| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 89 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **467** |
+| | **Total** | **502** | **761** | **477** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -27,11 +27,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
 | 4 | 100 | 100 |
-| 5 | 86 | 67 |
+| 5 | 86 | 77 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (43)</summary>
+<details open><summary><b>Arrays</b> (44)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -78,6 +78,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 433 | [Subarrays with length](docs/arrays/SUBARRAYLEN.md) | 1691 | Grouping by length, then a union of intervals | $O(N)$ per test case |
 | 453 | [Matchsticks](docs/arrays/MSTICK.md) | 1714 | Sparse-table range min and max with end aggregates | $O(N \log N + Q)$ |
 | 460 | [Box of Chocolates](docs/arrays/CHCBOX.md) | 1730 | Fitting a window into the gaps between maxima | $O(N)$ per test case |
+| 470 | [Weird Subarrays](docs/arrays/WEIRDSUBARR.md) | 1739 | Counting valley subarrays from run lengths | $O(N)$ per test case |
 
 </details>
 
@@ -203,7 +204,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (24)</summary>
+<details open><summary><b>Bit Manipulation</b> (25)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -231,6 +232,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 436 | [MEX-OR](docs/bit-manipulation/MEXOR.md) | 1650 | OR of a prefix of the integers | $O(1)$ per test case |
 | 452 | [Even Subset Xor](docs/bit-manipulation/EVENXOR.md) | 1714 | Even-popcount numbers form a linear subspace | $O(N)$ per test case |
 | 461 | [XOR Equal](docs/bit-manipulation/PALINT.md) | 1731 | XOR pairs values into two-element orbits | $O(N)$ per test case |
+| 468 | [Xor and Multiply](docs/bit-manipulation/XORMUL.md) | 1739 | Lift the shared bits, then balance the differing ones | $O(N)$ per test case |
 
 </details>
 
@@ -377,7 +379,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (57)</summary>
+<details open><summary><b>Greedy</b> (58)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -438,6 +440,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 455 | [Team Formation](docs/greedy/TEAMFOR.md) | 1715 | Pair the specialists first, then spend the all-rounders | $O(N)$ per test case |
 | 462 | [Bon Appetit](docs/greedy/FGFS.md) | 1734 | Independent activity selection per compartment | $O(N \log N)$ per test case |
 | 465 | [Prefixing](docs/greedy/FIX.md) | 1736 | Forced slots, and the maximum everywhere else | $O(N)$ per test case |
+| 474 | [One Dimensional Kingdoms](docs/greedy/ONEKING.md) | 1743 | Stabbing intervals at earliest right endpoints | $O(N \log N)$ per test case |
 
 </details>
 
@@ -450,7 +453,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (57)</summary>
+<details open><summary><b>Number Theory</b> (59)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -511,10 +514,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 454 | [Find an integer](docs/number-theory/SUMDIV2.md) | 1714 | Simultaneous congruences solved by inspection | $O(\log \min(X,Y))$ per test case |
 | 457 | [Chef and Prime Divisors](docs/number-theory/CHAPD.md) | 1720 | Stripping shared factors with repeated GCDs | $O(\log^2 \max(A,B))$ per test case |
 | 464 | [Crushed Apples and a Balance Scale](docs/number-theory/APP_BAL_SCA.md) | 1736 | Halving only reaches the odd part | $O(\log M)$ per test case |
+| 472 | [Modular GCD](docs/number-theory/GCDMOD.md) | 1741 | Reducing the big operand modulo the small one | $O(\log N)$ per test case |
+| 477 | [Eugene and function](docs/number-theory/KFUNC.md) | 1746 | Digital roots are periodic along an arithmetic progression | $O(\log R)$ per test case |
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (13)</summary>
+<details open><summary><b>Prefix Sums</b> (15)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -531,6 +536,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 440 | [Mystical Numbers](docs/prefix-sums/XORGAND.md) | 1702 | The comparison reduces to equal bit lengths | $O(N + Q)$ per test case |
 | 447 | [Summary Power](docs/prefix-sums/SUMPOWER.md) | 1709 | Counting each boundary's contribution | $O(N)$ per test case |
 | 456 | [Maximise Sum](docs/prefix-sums/MAXIMISESUM.md) | 1715 | Per-position ceiling from prefix and suffix maxima | $O(N)$ per test case |
+| 471 | [Fair Distribution](docs/prefix-sums/FAIR_DISTRIB.md) | 1741 | Reparametrising by gaps turns it into suffix sums | $O(N)$ per test case |
+| 476 | [Copy and Paste](docs/prefix-sums/NCOPIES.md) | 1745 | Splitting a repeated string's running total | $O(N + M)$ per test case |
 
 </details>
 
@@ -571,7 +578,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Sorting</b> (26)</summary>
+<details open><summary><b>Sorting</b> (28)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -601,6 +608,8 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 399 | [Max Out](docs/sorting/IOPC17C.md) | 1621 | The second largest distinct value is the answer | $O(N)$ per test case |
 | 405 | [Concat Sort](docs/sorting/CONCATSORT.md) | 1637 | Counting descents in the sorted order's position sequence | $O(N \log N)$ per test case |
 | 421 | [Powered Parameters](docs/sorting/POWPM.md) | 1673 | Bounding the exponent, then counting by integer root | $O(N \log N + 30 \log N)$ per test case |
+| 469 | [Pokemon Battles](docs/sorting/PBATTLE.md) | 1739 | Counting Pareto maxima of two orderings | $O(N \log N)$ per test case |
+| 473 | [Army Training](docs/sorting/ARMTRN.md) | 1742 | Sorted split maximising a product of two sums | $O(N \log N)$ per test case |
 
 </details>
 
@@ -612,7 +621,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Strings</b> (33)</summary>
+<details open><summary><b>Strings</b> (34)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -649,6 +658,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 425 | [3-Blast Palindrome](docs/strings/BLAST3.md) | 1699 | Residue classes of the surviving positions | $O(N)$ per test case |
 | 445 | [Spreading Charges](docs/strings/CHRGES.md) | 1708 | Runs of zeros classified by their bounding charges | $O(N)$ per test case |
 | 458 | [Oracle Devu and Longest Common Subsequence](docs/strings/ORACLCS.md) | 1726 | Binary alphabet reduces the LCS to two letter counts | $O(nm)$ per test case |
+| 475 | [Lucky Palin](docs/strings/LUCKPAL.md) | 1744 | Placing a block and its mirror, costed in O(1) | $O(|S|)$ per test case for the cost scan, plus $O(|S|)$ per tied placement |
 
 </details>
 
