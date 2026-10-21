@@ -15,3 +15,19 @@ One subtlety deserves a mention: a valid number should not have leading zeros. I
 Sample case 2 ($103$) relies on the $0$; case 1 ($115$) on the $5$; case 3 ($119$) has neither and fails.
 
 The $D$ given on its own line is redundant for Python, since the string carries its own length, but the token must still be consumed.
+
+## Edge cases
+
+- **Any digit $0$ or $5$ suffices**, because it can be moved to the last position and the rest arranged freely.
+- **Leading zeros are not a problem**, which is worth checking. $N = 50$ has digits $\{5, 0\}$: putting the $5$ last would give `05`, but putting the $0$ last gives `50`, so a valid arrangement always exists. Since $N \geq 1$ has no leading zeros, at least one nonzero digit is available to lead.
+- **A single digit** ($N = 5$): already a multiple of $5$.
+- **Neither digit present** ($119$): no rearrangement can end in $0$ or $5$, so `No`.
+- **$N$ can have up to $1000$ digits**, so it must be handled as text; and the length line $D$ has to be consumed even though Python never needs it.
+
+## Dry run
+
+| $N$ | digits | contains $0$ or $5$? | a working arrangement | output |
+|---:|---|:---:|---|---|
+| 115 | $1,1,5$ | yes ($5$) | $115$ | `Yes` |
+| 103 | $1,0,3$ | yes ($0$) | $130$ | `Yes` |
+| 119 | $1,1,9$ | no | — | `No` |

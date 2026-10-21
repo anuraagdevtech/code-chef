@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **149 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **163 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -12,7 +12,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 |---|---:|---:|---|
 | [400&ndash;599](#400599) | 34 | 34 | Basic Math (18) |
 | [600&ndash;799](#600799) | 60 | 60 | Basic Math (31) |
-| [800&ndash;999](#800999) | 69 | 55 | Basic Math (26) |
+| [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 0 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 0 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 0 | Greedy (18) |
@@ -186,20 +186,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 147 | [Two vs Ten](147-TWOVSTEN.md) `TWOVSTEN` | 936 | Number Theory | Which prime factors an operation can supply | yes |
 | 148 | [Car Range](148-CARRANGE.md) `CARRANGE` | 938 | Basic Math | Reading an off-by-one from the statement | yes |
 | 149 | [Vaccine Dates ](149-VDATES.md) `VDATES` | 938 | Conditionals & Case Work | Classifying a value against an interval | yes |
-| 150 | [ Am I Lucky!](150-SPCP4.md) `SPCP4` | 941 | Basic Math | Remainders paired off | &ndash; |
-| 151 | [Janmansh at Fruit Market](151-JMARKET.md) `JMARKET` | 947 | Greedy | Cheapest choice under a diversity constraint | &ndash; |
-| 152 | [Non-Negative Product](152-NONNEGPROD.md) `NONNEGPROD` | 948 | Arrays | Sign of a product from the count of negatives | &ndash; |
-| 153 | [Rearranging digits to get a multiple of 5](153-DIGARR.md) `DIGARR` | 949 | Strings | Divisibility decided by one digit | &ndash; |
-| 154 | [Kitchen Timetable](154-KTTABLE.md) `KTTABLE` | 950 | Arrays | Consecutive differences as a window | &ndash; |
-| 155 | [Marathon](155-MARARUN.md) `MARARUN` | 955 | Conditionals & Case Work | Largest achievable tier | &ndash; |
-| 156 | [La Liga](156-COOK82A.md) `COOK82A` | 956 | Conditionals & Case Work | Parsing labelled input, then a single logical condition | &ndash; |
-| 157 | [Chef and Cook-Off](157-CCOOK.md) `CCOOK` | 961 | Arrays | Sum of flags mapped to a label | &ndash; |
-| 158 | [Chef and Spells](158-CHFSPL.md) `CHFSPL` | 965 | Basic Math | Total minus the extremum | &ndash; |
-| 159 | [Mutated Minions](159-CHN15A.md) `CHN15A` | 970 | Number Theory | Divisibility after a uniform shift | &ndash; |
-| 160 | [Joining Date](160-JOINING.md) `JOINING` | 970 | Number Theory | Counting residues in a range | &ndash; |
-| 161 | [Playing with Matches](161-MATCHES.md) `MATCHES` | 986 | Basic Math | Per-digit lookup table | &ndash; |
-| 162 | [Keplers Law](162-KEPLERSLAW.md) `KEPLERSLAW` | 992 | Basic Math | Testing proportionality by cross-multiplication | &ndash; |
-| 163 | [Bear and Ladder](163-BRLADDER.md) `BRLADDER` | 999 | Conditionals & Case Work | Deriving an adjacency rule from an edge list | &ndash; |
+| 150 | [ Am I Lucky!](150-SPCP4.md) `SPCP4` | 941 | Basic Math | Remainders paired off | yes |
+| 151 | [Janmansh at Fruit Market](151-JMARKET.md) `JMARKET` | 947 | Greedy | Cheapest choice under a diversity constraint | yes |
+| 152 | [Non-Negative Product](152-NONNEGPROD.md) `NONNEGPROD` | 948 | Arrays | Sign of a product from the count of negatives | yes |
+| 153 | [Rearranging digits to get a multiple of 5](153-DIGARR.md) `DIGARR` | 949 | Strings | Divisibility decided by one digit | yes |
+| 154 | [Kitchen Timetable](154-KTTABLE.md) `KTTABLE` | 950 | Arrays | Consecutive differences as a window | yes |
+| 155 | [Marathon](155-MARARUN.md) `MARARUN` | 955 | Conditionals & Case Work | Largest achievable tier | yes |
+| 156 | [La Liga](156-COOK82A.md) `COOK82A` | 956 | Conditionals & Case Work | Parsing labelled input, then a single logical condition | yes |
+| 157 | [Chef and Cook-Off](157-CCOOK.md) `CCOOK` | 961 | Arrays | Sum of flags mapped to a label | yes |
+| 158 | [Chef and Spells](158-CHFSPL.md) `CHFSPL` | 965 | Basic Math | Total minus the extremum | yes |
+| 159 | [Mutated Minions](159-CHN15A.md) `CHN15A` | 970 | Number Theory | Divisibility after a uniform shift | yes |
+| 160 | [Joining Date](160-JOINING.md) `JOINING` | 970 | Number Theory | Counting residues in a range | yes |
+| 161 | [Playing with Matches](161-MATCHES.md) `MATCHES` | 986 | Basic Math | Per-digit lookup table | yes |
+| 162 | [Keplers Law](162-KEPLERSLAW.md) `KEPLERSLAW` | 992 | Basic Math | Testing proportionality by cross-multiplication | yes |
+| 163 | [Bear and Ladder](163-BRLADDER.md) `BRLADDER` | 999 | Conditionals & Case Work | Deriving an adjacency rule from an edge list | yes |
 
 ## 1000&ndash;1199
 

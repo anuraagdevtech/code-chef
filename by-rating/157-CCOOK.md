@@ -2,8 +2,6 @@
 
 > [`CCOOK`](https://www.codechef.com/problems/CCOOK) &middot; difficulty **961** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -124,6 +122,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Both extremes appear**: zero solved gives `Beginner` and all five gives `Jeff Dean`, so the table must cover indices $0$ through $5$ inclusive — six entries for five problems.
+- **The same count always gives the same label**, regardless of *which* problems were solved: the last two sample contestants both solved four and both get `Hacker`.
+- **The labels are a direct index**, so the table has to be in the exact order the statement lists — there is no arithmetic to fall back on if it is permuted.
+- **Input shape**: the first number is the contestant count, not a test-case count.
+
+## Dry run
+
+| flags | solved | label |
+|---|---:|---|
+| $0\,0\,0\,0\,0$ | 0 | `Beginner` |
+| $0\,1\,0\,1\,0$ | 2 | `Middle Developer` |
+| $0\,0\,1\,0\,0$ | 1 | `Junior Developer` |
+| $1\,1\,1\,1\,1$ | 5 | `Jeff Dean` |
+| $0\,1\,1\,1\,0$ | 3 | `Senior Developer` |
+| $0\,1\,1\,1\,1$ | 4 | `Hacker` |
+| $1\,1\,1\,1\,0$ | 4 | `Hacker` |
+
+The last two rows differ in which problems were solved and not in the label.
 
 ---
 

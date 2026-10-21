@@ -17,3 +17,17 @@ Note the word **exactly** — Chef must use two spells, not "at most two". Since
 Sample case 1 drops the $2$ from $\{4, 2, 8\}$ for $12$; case 2 drops the $10$ for $32$.
 
 Powers reach $10^8$, so the sum of two reaches $2 \times 10^8$ — inside 32 bits, but worth a glance in a fixed-width language.
+
+## Edge cases
+
+- **Two tied for weakest**: only one is dropped, so the total loses a single copy.
+- **All three equal**: the answer is twice the value.
+- **The weakest is discarded, not the strongest** — exactly two of the three spells are used, so inverting that gives $\text{sum} - \max$ and a much smaller answer.
+- **Largest inputs** ($10^8$ each): the sum reaches $3 \times 10^8$, still inside 32-bit range but worth noting.
+
+## Dry run
+
+| spells | total | weakest | total $-$ min | output |
+|---|---:|---:|---:|---|
+| $4, 2, 8$ | 14 | 2 | 12 | `12` |
+| $10, 14, 18$ | 42 | 10 | 32 | `32` |

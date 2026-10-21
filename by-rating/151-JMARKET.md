@@ -2,8 +2,6 @@
 
 > [`JMARKET`](https://www.codechef.com/problems/JMARKET) &middot; difficulty **947** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -102,6 +100,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **All prices equal** ($1,1,1$): the answer is simply $X$ times the price, since the diversity requirement costs nothing.
+- **$X = 2$** (the minimum): one of the cheapest and one of the second cheapest.
+- **Exactly one unit must be a different kind**, which is the whole constraint. Buying all $X$ at the cheapest price would give $6$ on the second row instead of $7$.
+- **The odd unit should be the *second* cheapest**, not the dearest: sorting and taking `lo` and `mid` is what makes it minimal.
+- **Largest input** ($X = 1000$ with prices up to $100$): under $10^5$.
+
+## Dry run
+
+| $X$ | prices | sorted | $(X-1) \times \text{lo}$ | $+\,\text{mid}$ | output |
+|---:|---|---|---:|---:|---|
+| 2 | $1,1,1$ | $1,1,1$ | 1 | 2 | `2` |
+| 3 | $4,3,2$ | $2,3,4$ | 4 | 7 | `7` |
+
+Row 2 pays $3$ for the mandatory second kind rather than another $2$.
 
 ---
 
