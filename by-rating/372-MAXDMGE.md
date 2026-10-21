@@ -2,8 +2,6 @@
 
 > [`MAXDMGE`](https://www.codechef.com/problems/MAXDMGE) &middot; difficulty **1636** &middot; time limit **0.5 - 1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -125,6 +123,35 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **AND never gains bits**, so extending a subarray can only lower its value — meaning the best subarray containing shop $i$ is as small as the rules allow.
+- **The size must be strictly larger than $1$**, so the smallest candidate is a pair — and the best pair containing $i$ is either $\{i-1, i\}$ or $\{i, i+1\}$. That reduces the whole problem to $N-1$ pairwise ANDs.
+- **The ends have only one neighbour**, so shop $1$ takes the first pair and shop $N$ the last, with no maximum to compute.
+- **A single shop is never a valid answer** even when its own value is large — the sample's first shop holds $29$ but its damage is $28$, the AND with its neighbour.
+- **$A_i$ may be $0$**, which zeroes both pairs it belongs to.
+- **$N \geq 2$ is guaranteed**, so at least one pair exists and `pairs` is never empty.
+- **Sum of $N \leq 2 \cdot 10^5$**: one pass for the pairs and one for the maxima.
+
+## Dry run
+
+First sample: $A = 29, 412, 671, 255, 912$.
+
+| pair | AND |
+|---|---:|
+| $29 \,\&\, 412$ | 28 |
+| $412 \,\&\, 671$ | 156 |
+| $671 \,\&\, 255$ | 159 |
+| $255 \,\&\, 912$ | 144 |
+
+| shop | pairs available | damage |
+|---:|---|---:|
+| 1 | 28 | 28 |
+| 2 | 28, 156 | 156 |
+| 3 | 156, 159 | 159 |
+| 4 | 159, 144 | 159 |
+| 5 | 144 | 144 |
 
 ---
 

@@ -17,3 +17,27 @@ Ranking is then a lexicographic sort by $(\text{points}, \text{goal difference})
 In the first sample, `manutd` is unbeaten with $4$ wins and $2$ draws, and `fcbarca` edges the rest on goal difference. The second sample is the reason the goal-difference key matters: `d` tops the group on it, which a points-only sort would get wrong.
 
 The group always has exactly four teams and twelve matches — each ordered pair plays once — so the sizes are fixed and no validation of the schedule is needed. A dictionary keyed by name collects both tallies in a single pass over the twelve lines.
+
+## Edge cases
+
+- **Twelve matches per group**, because four teams each play every other team twice — so the match count is fixed and needs no reading.
+- **The literal `vs.` occupies a token**, so each match line is five whitespace-separated tokens and the stride must be five; treating it as four desynchronises the whole case.
+- **Goal difference counts home and away goals alike**, as the statement insists, so each match updates both teams symmetrically.
+- **A draw awards one point to each**, not zero, which the three-way branch handles.
+- **Points come first and goal difference only breaks ties**, which the tuple key $(-\text{points}, -\text{difference})$ encodes in one sort.
+- **Teams must be registered before their first result** — the `setdefault` pair — or a team that only ever draws would be missing from the table.
+- **Only the top two are printed**, on one line, separated by a space.
+- **No further tie-break is specified** beyond goal difference, so two teams level on both are not distinguished by the statement.
+
+## Dry run
+
+First sample group, after all twelve matches:
+
+| team | points | goal difference |
+|---|---:|---:|
+| manutd | 16 | +13 |
+| fcbarca | 8 | +4 |
+| arsenal | 5 | $-5$ |
+| lyon | 4 | $-12$ |
+
+Sorted by points then difference, the top two are `manutd fcbarca`.

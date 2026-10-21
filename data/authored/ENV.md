@@ -22,3 +22,26 @@ Ones are the interesting case, because multiplying by $1$ wastes an element whil
 The samples show two of these. $[4,2,5,2]$ has no ones, so the answer is $4 \cdot 2 \cdot 5 \cdot 2 = 80$. $[1,2,1]$ has $c = 2$, giving $2 \cdot 2 = 4$ — the same as adding everything, and better than the $3$ that multiplying by a one would waste.
 
 The case analysis is exact, so the modulus is applied only at the end; comparisons are never made on reduced values.
+
+## Edge cases
+
+- **$S$ starts at $0$, so the first element must be added** — multiplying leaves $S$ at zero forever. Something has to seed the product.
+- **Ones are worthless as multipliers**, since $S \times 1$ does nothing, so every $1$ should be added instead.
+- **Two or more ones make a free seed**: add all of them and multiply by everything else. The second sample's two ones seed $2$, then $\times 2$ gives $4$.
+- **With no ones, adding exactly one element is optimal** and *which* one does not matter: $a \times \prod(\text{rest}) = \prod(\text{all})$ either way. Adding two instead gives $(a+b)\prod(\text{rest})$, which is worse because $a + b \leq ab$ for $a, b \geq 2$.
+- **With exactly one 1, adding the smallest other element too is strictly better.** The seed becomes $1 + a$ and the answer $\frac{1+a}{a}\prod(\text{all})$, maximised by the smallest $a$ — better than adding the $1$ alone, which gives just $\prod(\text{all})$.
+- **All ones** means nothing is worth multiplying, and the answer is simply $N$.
+- **The modulus is applied to the product**, but the comparisons that drive the choice are made on the true values — which is safe here because the decisions depend only on counts and the smallest element, never on the reduced product.
+
+## Dry run
+
+First sample: $A = 4, 2, 5, 2$ — no ones.
+
+| step | value |
+|---|---:|
+| smallest element, added as the seed | 2 |
+| remaining factors | $4, 5, 2$ |
+| product of the rest | 40 |
+| total | **80** |
+
+Output `80`, which equals $\prod A$. Adding two elements instead — say $2 + 2 = 4$ then $\times 4 \times 5$ — gives only $80$… in fact $4 \cdot 20 = 80$ here too, but on $A = 3, 3$ adding both gives $6$ against the product's $9$.

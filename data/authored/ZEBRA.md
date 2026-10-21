@@ -16,3 +16,26 @@ If any step finds no such index, exactly $K$ jumps are impossible and the answer
 The samples cover the three behaviours. In `100101` with $K = 2$, Chef starts on white at block $1$, hops minimally to the black block $2$, then leaps to the last white block, $6$. In `10111` with $K = 1$ the single jump must land on black, and the only black block is $2$ — so the answer is $2$ even though blocks $3, 4, 5$ lie further on. And `000000` offers no colour change at all, so even one jump is impossible.
 
 Greedily minimising the early jumps is what makes the one-leap-at-the-end optimal; doing it the other way round — jumping far immediately — would strand Chef with no room left.
+
+## Edge cases
+
+- **The first $K-1$ jumps should land as early as possible**, which keeps the most blocks in reach for the ones that follow — and the earliest legal landing from block $i$ is the end of $i$'s own colour run.
+- **The final jump should go as far as possible**, to the *last* block of the opposite colour. Splitting the strategy this way is the whole solution: greedy-early for all but the last jump, greedy-far for the last.
+- **Running out of blocks mid-way gives $-1$** (the `at == n` break), which is how an all-one-colour crossing fails.
+- **A single colour throughout** (the third row, all zeros) admits no jump at all, so even $K = 1$ answers $-1$.
+- **Exactly $K$ jumps are required**, not at most $K$ — so a crossing that allows fewer is a failure, not a partial success.
+- **The run-end table is built right to left**, with `nxt[i] = i + 1` when the colours differ and inherited otherwise, which gives every start its earliest landing in one pass.
+- **The last-occurrence map is also built right to left** with `setdefault`, so each colour records its final position.
+- **$S_i \neq S_j$ is the only colour rule**, so the alternation follows automatically from jumping to a different colour each time.
+
+## Dry run
+
+First sample: $N = 6$, $K = 2$, $S = $ `100101`.
+
+| step | at block | colour | action |
+|---|---:|---|---|
+| start | 1 | white | — |
+| jump 1 (early) | 2 | black | earliest differing block |
+| jump 2 (far) | 6 | white | last white block |
+
+Output `6`. Jumping far on the first move instead would land on block $4$ or $6$ and leave no legal second jump to a black block beyond.

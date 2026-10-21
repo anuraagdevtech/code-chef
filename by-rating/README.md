@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **359 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **373 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -16,7 +16,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 17 | Greedy (22) |
+| [1600&ndash;1799](#16001799) | 120 | 31 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
@@ -416,20 +416,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 357 | [Survive in ChocoLand](357-SURVIVE.md) `SURVIVE` | 1616 | Basic Math | Ceiling division with a running feasibility check | yes |
 | 358 | [GCD of Prefixes](358-GCDPRF.md) `GCDPRF` | 1617 | Constructive | Divisibility chain, realised by the array itself | yes |
 | 359 | [MaxEdges](359-MAXEDGES.md) `MAXEDGES` | 1618 | Combinatorics | Complete layered DAG minus the forbidden pairs | yes |
-| 360 | [Positive array](360-CIREQ.md) `CIREQ` | 1620 | Greedy | Hall's condition on value-capped positions | &ndash; |
-| 361 | [Max Out](361-IOPC17C.md) `IOPC17C` | 1621 | Sorting | The second largest distinct value is the answer | &ndash; |
-| 362 | [XOR-ORED](362-XORORED.md) `XORORED` | 1621 | Bit Manipulation | Choosing X bit by bit against an OR | &ndash; |
-| 363 | [Non-Divisor Array](363-DIVCOL.md) `DIVCOL` | 1623 | Number Theory | Colouring the divisibility order by prime-factor count | &ndash; |
-| 364 | [Construct Array](364-CONSTRRAY.md) `CONSTRRAY` | 1624 | Constructive | A symmetry that forces the parity of N | &ndash; |
-| 365 | [Zebra Crossing](365-ZEBRA.md) `ZEBRA` | 1626 | Greedy | Earliest hops, then one long final leap | &ndash; |
-| 366 | [Stamps 100](366-S100.md) `S100` | 1631 | Greedy | A right-to-left cascade zeroes everything after one position | &ndash; |
-| 367 | [XOR Engine](367-ENGXOR.md) `ENGXOR` | 1632 | Bit Manipulation | Popcount parity is additive under XOR | &ndash; |
-| 368 | [Encrypt Value](368-ENV.md) `ENV` | 1633 | Greedy | Choosing which elements to add rather than multiply | &ndash; |
-| 369 | [UEFA Champions League](369-UCL.md) `UCL` | 1633 | Simulation | Building a league table and sorting by two keys | &ndash; |
-| 370 | [Bitwise Tuples](370-BITTUP.md) `BITTUP` | 1634 | Combinatorics | Independent bits, each a complement count | &ndash; |
-| 371 | [XOR with smallest element](371-SMALLXOR.md) `SMALLXOR` | 1635 | Heaps | Detecting the two-cycle that ends the process | &ndash; |
-| 372 | [Maximum Damage](372-MAXDMGE.md) `MAXDMGE` | 1636 | Bit Manipulation | AND is monotone, so only adjacent pairs matter | &ndash; |
-| 373 | [Concat Sort](373-CONCATSORT.md) `CONCATSORT` | 1637 | Sorting | Counting descents in the sorted order's position sequence | &ndash; |
+| 360 | [Positive array](360-CIREQ.md) `CIREQ` | 1620 | Greedy | Hall's condition on value-capped positions | yes |
+| 361 | [Max Out](361-IOPC17C.md) `IOPC17C` | 1621 | Sorting | The second largest distinct value is the answer | yes |
+| 362 | [XOR-ORED](362-XORORED.md) `XORORED` | 1621 | Bit Manipulation | Choosing X bit by bit against an OR | yes |
+| 363 | [Non-Divisor Array](363-DIVCOL.md) `DIVCOL` | 1623 | Number Theory | Colouring the divisibility order by prime-factor count | yes |
+| 364 | [Construct Array](364-CONSTRRAY.md) `CONSTRRAY` | 1624 | Constructive | A symmetry that forces the parity of N | yes |
+| 365 | [Zebra Crossing](365-ZEBRA.md) `ZEBRA` | 1626 | Greedy | Earliest hops, then one long final leap | yes |
+| 366 | [Stamps 100](366-S100.md) `S100` | 1631 | Greedy | A right-to-left cascade zeroes everything after one position | yes |
+| 367 | [XOR Engine](367-ENGXOR.md) `ENGXOR` | 1632 | Bit Manipulation | Popcount parity is additive under XOR | yes |
+| 368 | [Encrypt Value](368-ENV.md) `ENV` | 1633 | Greedy | Choosing which elements to add rather than multiply | yes |
+| 369 | [UEFA Champions League](369-UCL.md) `UCL` | 1633 | Simulation | Building a league table and sorting by two keys | yes |
+| 370 | [Bitwise Tuples](370-BITTUP.md) `BITTUP` | 1634 | Combinatorics | Independent bits, each a complement count | yes |
+| 371 | [XOR with smallest element](371-SMALLXOR.md) `SMALLXOR` | 1635 | Heaps | Detecting the two-cycle that ends the process | yes |
+| 372 | [Maximum Damage](372-MAXDMGE.md) `MAXDMGE` | 1636 | Bit Manipulation | AND is monotone, so only adjacent pairs matter | yes |
+| 373 | [Concat Sort](373-CONCATSORT.md) `CONCATSORT` | 1637 | Sorting | Counting descents in the sorted order's position sequence | yes |
 | 374 | [Number Hunt](374-NUMHUNT.md) `NUMHUNT` | 1638 | Number Theory | Product of the two smallest admissible primes | &ndash; |
 | 375 | [ALIEN-OR](375-ALIENOR.md) `ALIENOR` | 1639 | Bit Manipulation | Single-bit values are necessary and sufficient | &ndash; |
 | 376 | [Exam Cheating](376-EXAMCHT.md) `EXAMCHT` | 1639 | Number Theory | Counting divisors of a difference | &ndash; |
