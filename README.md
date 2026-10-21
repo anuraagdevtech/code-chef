@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**366 of 486 solved problems documented.**
+**372 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -11,11 +11,11 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 62 |
+| 3 | Jump from 2* to 3* | 96 | 96 | 68 |
 | 3 | 1600 to 1800 difficulty problems | 98 | 128 | 0 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **366** |
+| | **Total** | **502** | **761** | **372** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,7 +26,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 66 |
+| 4 | 100 | 72 |
 | 5 | 86 | 0 |
 
 ## Problems by topic
@@ -76,7 +76,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Basic Math</b> (84)</summary>
+<details open><summary><b>Basic Math</b> (85)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -164,6 +164,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 230 | [Equality](docs/basic-math/EQUALITY.md) | 1419 | Solving a symmetric linear system by summing | $O(N)$ per test case |
 | 265 | [Chef Goes to the Cinema](docs/basic-math/CO92SUBW.md) | 1493 | Triangular numbers and a local search | $O(1)$ per test case |
 | 275 | [Chef Drinks Coke](docs/basic-math/COKE.md) | 1511 | Closed form for a drift-to-target process | $O(N)$ per test case |
+| 371 | [Guessing Game](docs/basic-math/GUESS.md) | 1410 | Counting by parity, reduced to lowest terms | $O(\log \min(N,M))$ per test case |
 
 </details>
 
@@ -274,7 +275,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (13)</summary>
+<details open><summary><b>Constructive</b> (14)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -291,6 +292,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 305 | [Make it Divisible](docs/constructive/MAKEDIV3.md) | 1379 | Fixing the digit sum, then the last digit | $O(N)$ per test case |
 | 306 | [Indivisible Permutation](docs/constructive/INDIPERM.md) | 1329 | A single cyclic shift | $O(N)$ per test case |
 | 355 | [Digit Longest Increasing Subsequences 2](docs/constructive/LISDIGIT.md) | 1297 | Using the LIS value itself as the digit | $O(n)$ per test case |
+| 368 | [GCD operations](docs/constructive/GCDOPS.md) | 1462 | Each reduction has a self-fixing pivot | $O(N)$ per test case |
 
 </details>
 
@@ -327,7 +329,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (34)</summary>
+<details open><summary><b>Greedy</b> (35)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -365,6 +367,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 315 | [Max Mex](docs/greedy/MEX.md) | 1478 | Spending a budget on the smallest gaps first | $O(N + V)$ per test case |
 | 340 | [IPC Trainers](docs/greedy/IPCTRAIN.md) | 1500 | Exchange argument with a max-heap | $O((N + D) \log N)$ per test case |
 | 342 | [Iron, Magnet and Wall](docs/greedy/FEMA2.md) | 1725 | Interval bipartite matching with two queues | $O(N)$ per test case |
+| 372 | [Sleepy Chef](docs/greedy/FILL01.md) | 1445 | Independent runs, each packed by division | $O(N)$ per test case |
 
 </details>
 
@@ -376,7 +379,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (43)</summary>
+<details open><summary><b>Number Theory</b> (45)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -423,10 +426,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 364 | [Chef and GCD](docs/number-theory/CHFGCD.md) | 1481 | Case analysis on parity | $O(\log \min(X,Y))$ per test case |
 | 365 | [Arranging Cup-cakes](docs/number-theory/RESQ.md) | 1322 | Divisor nearest the square root | $O(\sqrt{N})$ per test case |
 | 366 | [Appy and Contest](docs/number-theory/HMAPPY2.md) | 1358 | Counting multiples with inclusion-exclusion | $O(\log \min(A,B))$ per test case |
+| 367 | [Chef and Keyboard](docs/number-theory/CHEFKEY.md) | 1323 | Divisor pairs under a box constraint | $O(\sqrt{c})$ per test case |
+| 370 | [Yet Another Cute Girl](docs/number-theory/PRETNUM.md) | 1850 | Segmented sieve plus prime-power exponents | $O(\sqrt{R} \log\log \sqrt{R} + (R-L))$ per test case |
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (7)</summary>
+<details open><summary><b>Prefix Sums</b> (8)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -437,6 +442,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 328 | [Shortest Route](docs/prefix-sums/SHROUTE.md) | 1756 | Nearest qualifying index from each side | $O(N + M)$ per test case |
 | 350 | [Chef and Easy Problem](docs/prefix-sums/XXOR.md) | 1810 | Per-bit prefix counts, decided bit by bit | $O(31(N + Q))$ |
 | 361 | [W String](docs/prefix-sums/WSTRING.md) | 1809 | Per-letter counts over hash-delimited blocks | $O(|S| + 26 h)$ per test case, where $h$ is the number of '#' |
+| 369 | [Gcd Queries](docs/prefix-sums/GCDQ.md) | 1674 | Prefix and suffix GCD arrays | $O(N \log A + Q \log A)$ per test case |
 
 </details>
 
