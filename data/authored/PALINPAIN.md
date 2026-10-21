@@ -17,3 +17,24 @@ When both conditions hold, build two halves that differ: one with the `a`s first
 Sample case 1, $X=2, Y=4$: the half holds one `a` and two `b`s, so `abb` and `bab` are two distinct halves, giving `abbbba` and `babbab` — exactly the published answer, though **any** valid pair is accepted and this is judged by a checker.
 
 Note that both counts being even is fine and both being odd is fatal; exactly one odd simply places that letter in the centre.
+
+## Edge cases
+
+- **Both counts odd → no palindrome at all.** A palindrome admits at most one character with an odd count, so $X$ and $Y$ both odd is hopeless — the second sample row, $3$ and $3$.
+- **Fewer than two of either letter → only one palindrome exists.** With $X = 1$ and $Y = 4$ the lone `a` must sit at the centre and the `b`s are forced symmetric, giving `bbabb` and nothing else — so two *distinct* strings are impossible.
+- **The second palindrome moves a `b` to the front of the half**, which changes the half and hence the whole string while preserving both letter counts: the half $a^{h_a} b^{h_b}$ becomes $b\,a^{h_a} b^{h_b - 1}$.
+- **The two halves genuinely differ**, because the first starts with `a` (possible since $X \geq 2$ gives $h_a \geq 1$) and the second starts with `b`.
+- **One odd count is fine** and that letter takes the centre position, which the `middle` string handles for either letter.
+- **Both counts even** leaves the centre empty, as in the first sample row.
+- **Two lines of output per solvable case**, one per string, and a single `-1` otherwise.
+
+## Dry run
+
+First sample: $X = 2$, $Y = 4$ — both even, both at least $2$.
+
+| | half | centre | full palindrome |
+|---|---|---|---|
+| $S_1$ | `abb` | — | `abbbba` |
+| $S_2$ | `bab` | — | `babbab` |
+
+Each contains two `a`s and four `b`s, both read the same forwards and backwards, and they differ.

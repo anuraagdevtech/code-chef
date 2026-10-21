@@ -22,3 +22,23 @@ Case 3, $[1,2,1,2]$, is the tie: the largest frequency is $2$ and the two-elemen
 The $\min(N, 2)$ guard matters for $N = 1$, where only one element exists to keep.
 
 A `Counter` gives the modal frequency in one pass. Values reach $10^9$, so hashing rather than an indexed array is the right structure, and with $\sum N = 5 \times 10^5$ the single pass is what keeps this comfortable.
+
+## Edge cases
+
+- **Three or more elements force them all to be equal.** For three distinct values the widest difference equals the sum of the other two, so they cannot all match — which means any surviving set of size $\geq 3$ is a single repeated value.
+- **Two elements always qualify**, whatever they are: there is exactly one pairwise difference, so "all equal" is vacuous. The first row keeps both of $1, 2$ and deletes nothing.
+- **A frequent value can beat the keep-two option.** The second row keeps all three $2$s and deletes $2$ elements, where keeping two would have deleted $3$.
+- **The two options must both be considered**, and the answer takes whichever keeps more: `max(max count, min(n, 2))`.
+- **The `min(n, 2)` guard matters at $n = 1$**, where only one element exists and keeping "two" is impossible.
+- **A tie** (the third row: two $1$s and two $2$s) resolves to keeping $2$ either way, deleting $2$.
+- **$A_i$ up to $10^9$**: the `Counter` is keyed on raw byte tokens with no integer conversion.
+
+## Dry run
+
+| $N$ | array | counts | best single value | keep two | kept | deleted |
+|---:|---|---|---:|---:|---:|---:|
+| 2 | $1, 2$ | $1, 1$ | 1 | 2 | 2 | `0` |
+| 5 | $2,5,1,2,2$ | $3, 1, 1$ | **3** | 2 | 3 | `2` |
+| 4 | $1,2,1,2$ | $2, 2$ | 2 | 2 | 2 | `2` |
+
+Row 2 keeps $\{2,2,2\}$, whose only pairwise difference is $0$.

@@ -23,3 +23,25 @@ Sample case 1 has $A = [4,5,6]$ and $B = [1,2,3]$: one odd in $A$ against two in
 Sample case 2 totals $48$ with two forced mismatches, giving $23$.
 
 Heights reach $10^9$ with $N$ up to $10^5$, so the sums reach $10^{14}$ — **64-bit territory** outside Python.
+
+## Edge cases
+
+- **Only parity matters.** Each pair contributes $\lfloor (A_i + B_j)/2 \rfloor$, which loses exactly $\tfrac12$ when the sum is odd — so the total is $(\sum A + \sum B - \#\text{odd-sum pairs})/2$ and the magnitudes never need comparing. No sorting is required.
+- **Maximising means minimising mismatched parities**, which is a two-group matching: pair odds with odds and evens with evens as far as the counts allow.
+- **The mismatch count is $|{\#\text{odd }A} - {\#\text{odd }B}|$**, and it has the same parity as $\sum A + \sum B$ — which is why the final halving is always exact and the floor division never truncates anything real.
+- **Perfectly matching parities** gives the clean $(\sum A + \sum B)/2$ with no loss.
+- **All the same parity on one side** forces the leftovers to mismatch, as in the second sample where $A$ has one odd and $B$ has three.
+- **$A_i, B_i$ up to $10^9$ with $N$ up to $10^5$** puts the sums near $10^{14}$, past 32-bit.
+
+## Dry run
+
+First sample: $A = 4, 5, 6$ and $B = 1, 2, 3$.
+
+| | odd | even |
+|---|---:|---:|
+| $A$ | 1 (the $5$) | 2 |
+| $B$ | 2 | 1 |
+
+Matched pairs: $\min(1,2) + \min(2,1) = 1 + 1 = 2$, so one pair mismatches.
+
+$\sum A = 15$, $\sum B = 6$, giving $(21 - 1)/2 = $ `10`. For instance $5{+}1$, $4{+}2$ and $6{+}3$ → $3 + 3 + 4$.

@@ -2,8 +2,6 @@
 
 > [`IPCTRAIN`](https://www.codechef.com/problems/IPCTRAIN) &middot; difficulty **1500** &middot; time limit **2.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -152,6 +150,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A trainer cannot teach before arriving**, which is why each is pushed into the heap on their arrival day rather than all at once; they stay to the end, so nothing is ever removed for being too late.
+- **Taking the highest-sadness available trainer each day is optimal** by exchange: swapping any day to a trainer with greater sadness never increases the total, so the greedy is safe.
+- **A day with nobody available is simply idle.** The third sample has no trainer present on day $2$ — the only one who has arrived is already finished — so that day is wasted.
+- **Demand can outlast the camp.** The first sample has four lectures wanted across three days, so at least one is missed whatever the schedule.
+- **Mutating the quota inside the heap entry is safe** because the ordering key (the negated sadness) never changes; mutating the key itself would silently break the heap invariant.
+- **The answer is computed as total sadness minus what was avoided**, so the baseline assumes every lecture is missed and each taught day refunds that trainer's $S_i$.
+- **$T_i$ and $D_i$ both lie in $[1, D]$**, so the arrival buckets need exactly $D+1$ slots.
+
+## Dry run
+
+First sample: trainer A arrives day $1$, wants $2$, sadness $300$; trainer B arrives day $2$, wants $2$, sadness $100$. Baseline sadness $2(300) + 2(100) = 800$.
+
+| day | available | taught by | avoided | remaining quota |
+|---:|---|---|---:|---|
+| 1 | A | **A** (300) | 300 | A: 1 |
+| 2 | A, B | **A** (300) | 600 | A: 0 (done), B: 2 |
+| 3 | B | **B** (100) | 700 | B: 1 |
+
+Output $800 - 700 = $ `100` — one of B's lectures is missed.
 
 ---
 

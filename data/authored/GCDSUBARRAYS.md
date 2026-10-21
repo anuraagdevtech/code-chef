@@ -23,3 +23,24 @@ The bound holds: $x = K - B + 1 \leq K \leq 10^{18}$, and $x \geq 1$ precisely w
 Sample case 2 is a good check: $N = 2$ gives $B = 3$ and $x = 4 - 3 + 1 = 2$, so $A = [1, 2]$ with subarray gcds $1$, $2$ and $\gcd(1,2) = 1$, totalling $4$. Sample case 3 asks for $K = 1$ with $N = 3$, below the floor of $6$, so $-1$.
 
 **Any valid array is accepted**, so this is judged by a checker.
+
+## Edge cases
+
+- **$n(n+1)/2$ is the unavoidable floor**, since every one of the $n(n+1)/2$ subarrays has a gcd of at least $1$. If $K$ is below it, the answer is $-1$ — the third row needs $K \geq 6$ and has $K = 1$.
+- **A neighbouring $1$ collapses every wider subarray.** Any subarray containing one of the $n-1$ ones has gcd exactly $1$, so the only subarray that can carry the slack is the singleton holding $x$ — which is what makes the arithmetic a single subtraction.
+- **$n = 1$** has no ones at all, and the single element simply equals $K$ (the first row).
+- **Exactly at the floor** ($K = n(n+1)/2$) gives $x = 1$, an array of all ones — valid, and the boundary is inclusive.
+- **$x \leq 10^{18}$ holds automatically**, because $x = K - n(n+1)/2 + 1 \leq K \leq 10^{18}$.
+- **$K$ up to $10^{18}$** demands exact integers, and the triangular number at $n = 100$ is only $5050$, so no overflow risk arises.
+
+## Dry run
+
+Second sample: $n = 2$, $K = 4$. Floor is $2 \cdot 3/2 = 3$, so $x = 4 - 3 + 1 = 2$ and $A = [1, 2]$.
+
+| subarray | gcd |
+|---|---:|
+| $[1]$ | 1 |
+| $[2]$ | **2** |
+| $[1, 2]$ | 1 |
+
+Total $1 + 2 + 1 = 4 = K$ ✓

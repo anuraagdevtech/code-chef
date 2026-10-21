@@ -2,8 +2,6 @@
 
 > [`TOTCRT`](https://www.codechef.com/problems/TOTCRT) &middot; difficulty **1499** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -133,6 +131,35 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A problem code may appear in several divisions and its counts add** — that is the whole point of the problem. The second case has `AB` in divisions $1$ and $2$ and `AC` in divisions $2$ and $3$, each summing to $2$.
+- **Codes are pairwise distinct within a division**, so no double-counting happens inside a single block and the three blocks can be read as one flat run of $3N$ pairs.
+- **The division boundaries are irrelevant** once the totals are keyed by code, which is why the reading loop never tracks which block it is in.
+- **The output is the sorted list of totals**, not keyed by code and not in input order.
+- **The same code in all three divisions** (the third case, `Z` three times) collapses to one entry of $300$ — so the output can be shorter than $3N$ and even shorter than $N$.
+- **$C_i$ up to $5 \times 10^8$ across three divisions** puts a total at $1.5 \times 10^9$, past 32-bit signed.
+- **Codes are up to eight uppercase letters**, so the raw byte tokens serve directly as dictionary keys.
+
+## Dry run
+
+Second sample, $N = 2$.
+
+| division | entries |
+|---:|---|
+| 1 | `AA 1`, `AB 1` |
+| 2 | `AB 1`, `AC 1` |
+| 3 | `AC 1`, `AD 1` |
+
+| code | total |
+|---|---:|
+| `AA` | 1 |
+| `AB` | 2 |
+| `AC` | 2 |
+| `AD` | 1 |
+
+Sorted: `1 1 2 2`.
 
 ---
 

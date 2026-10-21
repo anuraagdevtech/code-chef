@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **289 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **303 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -15,7 +15,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
-| [1400&ndash;1599](#14001599) | 118 | 65 | Greedy (18) |
+| [1400&ndash;1599](#14001599) | 118 | 79 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
@@ -341,20 +341,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 287 | [Interesting XOR!](287-IRSTXOR.md) `IRSTXOR` | 1487 | Bit Manipulation | Maximising a product under a fixed XOR | yes |
 | 288 | [Anti Palindrome](288-ANTIPALINDR.md) `ANTIPALINDR` | 1488 | Strings | Forcing a palindrome to be impossible | yes |
 | 289 | [CAO Stage-1](289-CAOS1.md) `CAOS1` | 1488 | Arrays | Contiguous runs in four directions | yes |
-| 290 | [Chef Goes to the Cinema](290-CO92SUBW.md) `CO92SUBW` | 1493 | Basic Math | Triangular numbers and a local search | &ndash; |
-| 291 | [Harrenhal](291-HHAL.md) `HHAL` | 1495 | Strings | Covering a two-letter string with palindromes | &ndash; |
-| 292 | [Exactly N plus 1 Values](292-N1VALUES.md) `N1VALUES` | 1495 | Constructive | Building a sum from a run plus a remainder | &ndash; |
-| 293 | [Gcd of Subarrays](293-GCDSUBARRAYS.md) `GCDSUBARRAYS` | 1498 | Constructive | Starting from the minimum and adding the slack | &ndash; |
-| 294 | [Total Correct Submissions](294-TOTCRT.md) `TOTCRT` | 1499 | Arrays | Aggregating by key, then sorting | &ndash; |
-| 295 | [Equal Difference](295-EQDIFFER.md) `EQDIFFER` | 1500 | Arrays | Which multisets have all pairwise differences equal | &ndash; |
-| 296 | [IPC Trainers](296-IPCTRAIN.md) `IPCTRAIN` | 1500 | Greedy | Exchange argument with a max-heap | &ndash; |
-| 297 | [Subarray permutations](297-SUBPERM.md) `SUBPERM` | 1502 | Constructive | Forcing every good subsegment to be a prefix | &ndash; |
-| 298 | [Subarray Removal](298-SUBARRAYREM.md) `SUBARRAYREM` | 1505 | Greedy | Budgeting two resources | &ndash; |
-| 299 | [Palindrome Pain](299-PALINPAIN.md) `PALINPAIN` | 1506 | Constructive | Counting distinct palindrome halves | &ndash; |
-| 300 | [Equal by XORing](300-EQBYXOR.md) `EQBYXOR` | 1507 | Bit Manipulation | The XOR span of an initial segment | &ndash; |
-| 301 | [Reduce to One](301-REDONE.md) `REDONE` | 1507 | Number Theory | A telescoping product in disguise | &ndash; |
-| 302 | [Magda and Silly Pairs](302-SILLYPRS.md) `SILLYPRS` | 1507 | Greedy | Matching by parity | &ndash; |
-| 303 | [Chef Drinks Coke](303-COKE.md) `COKE` | 1511 | Basic Math | Closed form for a drift-to-target process | &ndash; |
+| 290 | [Chef Goes to the Cinema](290-CO92SUBW.md) `CO92SUBW` | 1493 | Basic Math | Triangular numbers and a local search | yes |
+| 291 | [Harrenhal](291-HHAL.md) `HHAL` | 1495 | Strings | Covering a two-letter string with palindromes | yes |
+| 292 | [Exactly N plus 1 Values](292-N1VALUES.md) `N1VALUES` | 1495 | Constructive | Building a sum from a run plus a remainder | yes |
+| 293 | [Gcd of Subarrays](293-GCDSUBARRAYS.md) `GCDSUBARRAYS` | 1498 | Constructive | Starting from the minimum and adding the slack | yes |
+| 294 | [Total Correct Submissions](294-TOTCRT.md) `TOTCRT` | 1499 | Arrays | Aggregating by key, then sorting | yes |
+| 295 | [Equal Difference](295-EQDIFFER.md) `EQDIFFER` | 1500 | Arrays | Which multisets have all pairwise differences equal | yes |
+| 296 | [IPC Trainers](296-IPCTRAIN.md) `IPCTRAIN` | 1500 | Greedy | Exchange argument with a max-heap | yes |
+| 297 | [Subarray permutations](297-SUBPERM.md) `SUBPERM` | 1502 | Constructive | Forcing every good subsegment to be a prefix | yes |
+| 298 | [Subarray Removal](298-SUBARRAYREM.md) `SUBARRAYREM` | 1505 | Greedy | Budgeting two resources | yes |
+| 299 | [Palindrome Pain](299-PALINPAIN.md) `PALINPAIN` | 1506 | Constructive | Counting distinct palindrome halves | yes |
+| 300 | [Equal by XORing](300-EQBYXOR.md) `EQBYXOR` | 1507 | Bit Manipulation | The XOR span of an initial segment | yes |
+| 301 | [Reduce to One](301-REDONE.md) `REDONE` | 1507 | Number Theory | A telescoping product in disguise | yes |
+| 302 | [Magda and Silly Pairs](302-SILLYPRS.md) `SILLYPRS` | 1507 | Greedy | Matching by parity | yes |
+| 303 | [Chef Drinks Coke](303-COKE.md) `COKE` | 1511 | Basic Math | Closed form for a drift-to-target process | yes |
 | 304 | [One-XOR Deletions](304-DELXORONE.md) `DELXORONE` | 1516 | Bit Manipulation | Grouping by the value with its low bit dropped | &ndash; |
 | 305 | [College Life 2](305-COLGLF2.md) `COLGLF2` | 1519 | Arrays | Group total with a per-group adjustment | &ndash; |
 | 306 | [Concat Palindrome](306-CONCATPAL.md) `CONCATPAL` | 1520 | Strings | Multiset containment forced by mirroring | &ndash; |

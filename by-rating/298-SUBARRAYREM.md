@@ -2,8 +2,6 @@
 
 > [`SUBARRAYREM`](https://www.codechef.com/problems/SUBARRAYREM) &middot; difficulty **1505** &middot; time limit **4.5s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -121,6 +119,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **An operation needs at least two elements** ($L < R$), so a lone $1$ cannot be scored by itself — it needs either a $0$ to accompany it or two more $1$s.
+- **Zeros are a consumable resource.** Each `1 0` or `0 1` pair scores one point and spends one zero, which is why the cheap operation count is $\min(\text{ones}, \text{zeros})$.
+- **With no zeros left, three $1$s are needed per point** (the second row: three $1$s score $1$, and two would score $0$), since the XOR must be odd and the subarray must have at least two elements.
+- **No $1$s at all** (the third row) → $0$, because every XOR is zero.
+- **Leftover $1$s are wasted** when fewer than three remain after the pairing.
+- **Removal re-joins the array**, so the elements chosen need not have been adjacent originally — any $1$ can be matched with any $0$, which is what lets the counting ignore positions entirely.
+- **Sum of $N \leq 2 \cdot 10^5$**: one pass counting ones.
+
+## Dry run
+
+| array | ones | zeros | cheap ops $\min$ | ones left | triples | total |
+|---|---:|---:|---:|---:|---:|---:|
+| $1,0,0,0,1$ | 2 | 3 | 2 | 0 | 0 | `2` |
+| $1,1,1$ | 3 | 0 | 0 | 3 | 1 | `1` |
+| $0,0,0$ | 0 | 3 | 0 | 0 | 0 | `0` |
+
+Row 1 takes $[1,0]$ and then $[0,1]$, leaving a single $0$ that scores nothing.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`GCDSUBARRAYS`](https://www.codechef.com/problems/GCDSUBARRAYS) &middot; difficulty **1498** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -127,6 +125,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$n(n+1)/2$ is the unavoidable floor**, since every one of the $n(n+1)/2$ subarrays has a gcd of at least $1$. If $K$ is below it, the answer is $-1$ — the third row needs $K \geq 6$ and has $K = 1$.
+- **A neighbouring $1$ collapses every wider subarray.** Any subarray containing one of the $n-1$ ones has gcd exactly $1$, so the only subarray that can carry the slack is the singleton holding $x$ — which is what makes the arithmetic a single subtraction.
+- **$n = 1$** has no ones at all, and the single element simply equals $K$ (the first row).
+- **Exactly at the floor** ($K = n(n+1)/2$) gives $x = 1$, an array of all ones — valid, and the boundary is inclusive.
+- **$x \leq 10^{18}$ holds automatically**, because $x = K - n(n+1)/2 + 1 \leq K \leq 10^{18}$.
+- **$K$ up to $10^{18}$** demands exact integers, and the triangular number at $n = 100$ is only $5050$, so no overflow risk arises.
+
+## Dry run
+
+Second sample: $n = 2$, $K = 4$. Floor is $2 \cdot 3/2 = 3$, so $x = 4 - 3 + 1 = 2$ and $A = [1, 2]$.
+
+| subarray | gcd |
+|---|---:|
+| $[1]$ | 1 |
+| $[2]$ | **2** |
+| $[1, 2]$ | 1 |
+
+Total $1 + 2 + 1 = 4 = K$ ✓
 
 ---
 

@@ -13,3 +13,25 @@ The greedy is: on each day give the lecture to the available trainer with the la
 Because availability is a suffix, a trainer once available never becomes unavailable, so a **max-heap keyed on $S_i$** is enough: bucket trainers by arrival day, push them as that day comes round, and each day serve the heap's top, decrementing its remaining lectures and popping when it hits zero.
 
 The three samples show the three shapes. In the first, the $300$-trainer takes days 1 and 2 and the $100$-trainer gets only day 3, leaving one missed $100$-lecture. In the second, there is just enough room for everyone, so the answer is $0$. In the third, the $150$-trainer only arrives on day 3, so day 2 goes **unused** even though lectures are still wanted — a greedy that tried to pack days densely without respecting arrival would wrongly report $0$.
+
+## Edge cases
+
+- **A trainer cannot teach before arriving**, which is why each is pushed into the heap on their arrival day rather than all at once; they stay to the end, so nothing is ever removed for being too late.
+- **Taking the highest-sadness available trainer each day is optimal** by exchange: swapping any day to a trainer with greater sadness never increases the total, so the greedy is safe.
+- **A day with nobody available is simply idle.** The third sample has no trainer present on day $2$ — the only one who has arrived is already finished — so that day is wasted.
+- **Demand can outlast the camp.** The first sample has four lectures wanted across three days, so at least one is missed whatever the schedule.
+- **Mutating the quota inside the heap entry is safe** because the ordering key (the negated sadness) never changes; mutating the key itself would silently break the heap invariant.
+- **The answer is computed as total sadness minus what was avoided**, so the baseline assumes every lecture is missed and each taught day refunds that trainer's $S_i$.
+- **$T_i$ and $D_i$ both lie in $[1, D]$**, so the arrival buckets need exactly $D+1$ slots.
+
+## Dry run
+
+First sample: trainer A arrives day $1$, wants $2$, sadness $300$; trainer B arrives day $2$, wants $2$, sadness $100$. Baseline sadness $2(300) + 2(100) = 800$.
+
+| day | available | taught by | avoided | remaining quota |
+|---:|---|---|---:|---|
+| 1 | A | **A** (300) | 300 | A: 1 |
+| 2 | A, B | **A** (300) | 600 | A: 0 (done), B: 2 |
+| 3 | B | **B** (100) | 700 | B: 1 |
+
+Output $800 - 700 = $ `100` — one of B's lectures is missed.

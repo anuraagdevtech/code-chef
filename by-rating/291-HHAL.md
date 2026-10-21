@@ -2,8 +2,6 @@
 
 > [`HHAL`](https://www.codechef.com/problems/HHAL) &middot; difficulty **1495** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -128,6 +126,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Two troops always suffice.** The alphabet has only two letters, so all the `a`s form one palindromic subsequence and all the `b`s another — meaning the answer is never more than $2$, whatever the string.
+- **One troop suffices exactly when $H$ is a palindrome**, since a single troop deletes one palindromic subsequence and must take the whole string.
+- **Zero is impossible**, because $|H| \geq 1$ is guaranteed — an empty castle is already ruined and never appears as input.
+- **The deleted part is a *subsequence*, not a substring**, so the characters need not be adjacent — which is what makes "all the `a`s" a legal single move.
+- **A single character** is a palindrome, so $|H| = 1$ answers $1$.
+- **Subtask 1 guarantees every $H$ is a palindrome**, so it tests only the easy branch; the reversal check handles both subtasks identically.
+- **$|H|$ up to $10^5$**: the reversal and comparison happen on bytes at C speed.
+
+## Dry run
+
+| $H$ | reversed | palindrome? | output |
+|---|---|:---:|---:|
+| `abbabaab` | `baababba` | no | `2` |
+| `aba` | `aba` | yes | `1` |
+
+For the first row, one troop takes `aaaa` (positions $1, 4, 7, 8$) and a second takes the remaining `bbbb`.
 
 ---
 
