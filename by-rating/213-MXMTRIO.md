@@ -2,8 +2,6 @@
 
 > [`MXMTRIO`](https://www.codechef.com/problems/MXMTRIO) &middot; difficulty **1349** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -113,6 +111,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The obvious alternative is never better.** Using the second-largest in the difference and the largest as the multiplier gives $(a_{n-1} - a_1) \cdot a_n$, and the chosen form beats it by $a_1 (a_n - a_{n-1}) \geq 0$ — non-negative because every value is positive. The third row shows the gap concretely: $126$ against $92$.
+- **All values positive is essential.** With negatives the largest product could come from quite different positions, and this two-line argument collapses.
+- **$N = 3$** (the first row): the three elements are forced, and the multiplier is simply the middle one.
+- **Duplicates at the top** (the second row, two $4$s): the maximum and second-maximum are equal, which sorted indices handle without a tie-break.
+- **All values equal** → the difference is $0$ and so is the answer.
+- **Products reach $10^6 \times 10^6 = 10^{12}$**, past 32-bit signed.
+
+## Dry run
+
+Third sample: $23, 17, 21, 18, 19$ sorted to $17, 18, 19, 21, 23$.
+
+| choice | difference | multiplier | product |
+|---|---:|---:|---:|
+| max $-$ min, times second-max | $23 - 17 = 6$ | 21 | **126** |
+| second-max $-$ min, times max | $21 - 17 = 4$ | 23 | 92 |
+
+Output `126`, and the margin is $a_1(a_n - a_{n-1}) = 17 \cdot 2 = 34$.
 
 ---
 

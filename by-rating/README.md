@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **205 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **219 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -14,7 +14,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [600&ndash;799](#600799) | 60 | 60 | Basic Math (31) |
 | [800&ndash;999](#800999) | 69 | 69 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
-| [1200&ndash;1399](#12001399) | 46 | 27 | Number Theory (7) |
+| [1200&ndash;1399](#12001399) | 46 | 41 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 0 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 0 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
@@ -252,20 +252,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 203 | [Sudhanva and Books](203-SUDBOOKS.md) `SUDBOOKS` | 1300 | Simulation | A stack, with an empty-pop guard | yes |
 | 204 | [Smallest Possible Whole Number](204-SMOL.md) `SMOL` | 1306 | Number Theory | Modulo, with a zero-divisor guard | yes |
 | 205 | [Maximum Weight Difference](205-MAXDIFF.md) `MAXDIFF` | 1308 | Sorting | Taking an extreme K-subset | yes |
-| 206 | [Maximise the Subsequence Sum](206-SIGNFLIP.md) `SIGNFLIP` | 1308 | Greedy | Flip the largest magnitudes first | &ndash; |
-| 207 | [Chopsticks](207-TACHSTCK.md) `TACHSTCK` | 1320 | Greedy | Pairing adjacent elements after sorting | &ndash; |
-| 208 | [Arranging Cup-cakes](208-RESQ.md) `RESQ` | 1322 | Number Theory | Divisor nearest the square root | &ndash; |
-| 209 | [Chef and Keyboard](209-CHEFKEY.md) `CHEFKEY` | 1323 | Number Theory | Divisor pairs under a box constraint | &ndash; |
-| 210 | [Cooking Machine](210-COOKMACH.md) `COOKMACH` | 1329 | Bit Manipulation | Halving and doubling toward a power of two | &ndash; |
-| 211 | [Indivisible Permutation](211-INDIPERM.md) `INDIPERM` | 1329 | Constructive | A single cyclic shift | &ndash; |
-| 212 | [Count Substrings](212-CSUB.md) `CSUB` | 1330 | Combinatorics | Counting pairs from a tally | &ndash; |
-| 213 | [Maximum Trio](213-MXMTRIO.md) `MXMTRIO` | 1349 | Sorting | Choosing extremes for a product | &ndash; |
-| 214 | [Turn It](214-NFS.md) `NFS` | 1350 | Basic Math | Rearranging a kinematic inequality | &ndash; |
-| 215 | [The Smallest Pair](215-SMPAIR.md) `SMPAIR` | 1352 | Sorting | The two smallest elements | &ndash; |
-| 216 | [Magical Doors](216-MAGDOORS.md) `MAGDOORS` | 1355 | Greedy | Tracking a global flip as parity | &ndash; |
-| 217 | [Appy and Contest](217-HMAPPY2.md) `HMAPPY2` | 1358 | Number Theory | Counting multiples with inclusion-exclusion | &ndash; |
-| 218 | [Maximize the Minimum](218-MAXTHEMIN.md) `MAXTHEMIN` | 1358 | Sorting | The (K+1)-th smallest survives | &ndash; |
-| 219 | [Gift Shop and Coupon](219-GFTSHP.md) `GFTSHP` | 1364 | Prefix Sums | Prefix sums with a single discount | &ndash; |
+| 206 | [Maximise the Subsequence Sum](206-SIGNFLIP.md) `SIGNFLIP` | 1308 | Greedy | Flip the largest magnitudes first | yes |
+| 207 | [Chopsticks](207-TACHSTCK.md) `TACHSTCK` | 1320 | Greedy | Pairing adjacent elements after sorting | yes |
+| 208 | [Arranging Cup-cakes](208-RESQ.md) `RESQ` | 1322 | Number Theory | Divisor nearest the square root | yes |
+| 209 | [Chef and Keyboard](209-CHEFKEY.md) `CHEFKEY` | 1323 | Number Theory | Divisor pairs under a box constraint | yes |
+| 210 | [Cooking Machine](210-COOKMACH.md) `COOKMACH` | 1329 | Bit Manipulation | Halving and doubling toward a power of two | yes |
+| 211 | [Indivisible Permutation](211-INDIPERM.md) `INDIPERM` | 1329 | Constructive | A single cyclic shift | yes |
+| 212 | [Count Substrings](212-CSUB.md) `CSUB` | 1330 | Combinatorics | Counting pairs from a tally | yes |
+| 213 | [Maximum Trio](213-MXMTRIO.md) `MXMTRIO` | 1349 | Sorting | Choosing extremes for a product | yes |
+| 214 | [Turn It](214-NFS.md) `NFS` | 1350 | Basic Math | Rearranging a kinematic inequality | yes |
+| 215 | [The Smallest Pair](215-SMPAIR.md) `SMPAIR` | 1352 | Sorting | The two smallest elements | yes |
+| 216 | [Magical Doors](216-MAGDOORS.md) `MAGDOORS` | 1355 | Greedy | Tracking a global flip as parity | yes |
+| 217 | [Appy and Contest](217-HMAPPY2.md) `HMAPPY2` | 1358 | Number Theory | Counting multiples with inclusion-exclusion | yes |
+| 218 | [Maximize the Minimum](218-MAXTHEMIN.md) `MAXTHEMIN` | 1358 | Sorting | The (K+1)-th smallest survives | yes |
+| 219 | [Gift Shop and Coupon](219-GFTSHP.md) `GFTSHP` | 1364 | Prefix Sums | Prefix sums with a single discount | yes |
 | 220 | [Chocolate Monger](220-CM164364.md) `CM164364` | 1369 | Sets | Distinct count capped by a budget | &ndash; |
 | 221 | [Nobel Prize](221-NOBEL.md) `NOBEL` | 1372 | Sets | Counting distinct values against a capacity | &ndash; |
 | 222 | [Make it Divisible](222-MAKEDIV3.md) `MAKEDIV3` | 1379 | Constructive | Fixing the digit sum, then the last digit | &ndash; |

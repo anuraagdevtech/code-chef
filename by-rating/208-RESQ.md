@@ -2,8 +2,6 @@
 
 > [`RESQ`](https://www.codechef.com/problems/RESQ) &middot; difficulty **1322** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -113,6 +111,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A perfect square** ($N = 4$) gives $0$, and that is the only way to reach $0$ — rows and columns are equal.
+- **A prime** ($N = 13$) forces the $1 \times N$ arrangement and the worst possible answer, $N - 1$.
+- **$N = 1$**: $\mathrm{isqrt}(1) = 1$, the divisor $1$ is found, and the answer is $1 - 1 = 0$.
+- **$N/d - d$ decreases as $d$ rises** over $(0, \sqrt{N}]$, so the *largest* divisor not exceeding $\sqrt{N}$ is optimal; searching from the other side gives the same pair, since each divisor below the root has exactly one partner above it.
+- **`isqrt` must be exact.** `int(math.sqrt(n))` can come out one too small on a large perfect square, and at $N = 10^8$ that would miss the divisor $10^4$ and report $10^4 - 1$ instead of $0$.
+- **$N$ up to $10^8$** means $10^4$ trial divisions per case and $10^6$ across the file — fine, but a full factorisation would not be.
+
+## Dry run
+
+| $N$ | $\mathrm{isqrt}(N)$ | divisors $\leq$ root | best $d$ | $N/d$ | output |
+|---:|---:|---|---:|---:|---:|
+| 20 | 4 | $1, 2, 4$ | 4 | 5 | `1` |
+| 13 | 3 | $1$ | 1 | 13 | `12` |
+| 8 | 2 | $1, 2$ | 2 | 4 | `2` |
+| 4 | 2 | $1, 2$ | 2 | 2 | `0` |
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`GFTSHP`](https://www.codechef.com/problems/GFTSHP) &middot; difficulty **1364** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -127,6 +125,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The coupon belongs on the dearest item in the chosen set**, which after sorting is the one just added — so the discount is $\lfloor a_{m-1}/2 \rfloor$ and not $\lfloor a_0/2 \rfloor$. Halving the cheapest item instead fails the third sample row.
+- **The discount floors**, so an odd price loses the half: a price of $5$ saves only $2$, which is exactly what the first row turns on ($5 - 2 = 3 \leq 4$).
+- **Buying the cheapest items first maximises the count**, so sorting comes before anything else.
+- **The early `break` is sound** because the discounted cost is non-decreasing in $m$: adding item $m$ raises it by $\lceil a_m/2 \rceil + \lfloor a_{m-1}/2 \rfloor \geq 0$, so once the budget is exceeded it stays exceeded.
+- **$K = 0$**: nothing is affordable, since $A_i \geq 1$ leaves every discounted price at $1$ or more, so the answer is $0$.
+- **The coupon is optional but never harmful**, so it is always spent — there is no case where declining it buys more.
+
+## Dry run
+
+Third sample: $K = 10$, prices $6, 7, 4$ sorted to $4, 6, 7$.
+
+| $m$ | items | raw prefix | coupon on dearest | cost | $\leq 10$? | best |
+|---:|---|---:|---:|---:|:---:|---:|
+| 1 | $4$ | 4 | $-2$ | 2 | yes | 1 |
+| 2 | $4, 6$ | 10 | $-3$ | 7 | yes | 2 |
+| 3 | $4, 6, 7$ | 17 | $-3$ | 14 | **no** | 2 |
+
+Output `2`.
 
 ---
 

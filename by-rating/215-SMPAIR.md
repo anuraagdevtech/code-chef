@@ -2,8 +2,6 @@
 
 > [`SMPAIR`](https://www.codechef.com/problems/SMPAIR) &middot; difficulty **1352** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -110,6 +108,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Equal values are a valid pair**, because the problem asks for two distinct *positions*, not two distinct values — $[2, 2]$ answers $4$.
+- **$N = 2$**: the only pair, which the $13$- and $16$-point subtasks hammer at $T = 10^5$.
+- **`nsmallest(2, …)` is linear**, not $O(N \log N)$, which matters for the $40$-point subtask at $N = 10^5$ while keeping the per-case overhead tiny for the $T = 10^5$ subtasks.
+- **The subtasks have very different shapes** — many tiny cases versus a few large ones — so both the per-case cost and the per-element cost have to stay low, hence a single buffered read for the whole file.
+- **$a_i$ up to $10^6$**, so the sum reaches $2 \cdot 10^6$ and fits anywhere.
+- **The two smallest need not be adjacent** in the input, so a scan comparing neighbours is wrong; the sample's $1$ and $3$ sit either side of a larger value.
+
+## Dry run
+
+Input $5, 1, 3, 4$.
+
+| rank | value |
+|---|---:|
+| smallest | 1 |
+| second smallest | 3 |
+
+Output `4`. The $5$ and $4$ are never considered.
 
 ---
 

@@ -17,3 +17,26 @@ So the algorithm is: hold a parity bit, and for each character, if `S[i] ^ parit
 Sample case 2, `010`, is the worst case: every door is closed when reached, so the wand is used three times — once per door. Sample case 1, `111`, never needs it. Sample case 3, `10011`, needs two waves, matching the statement's own walkthrough.
 
 Note that a wave is counted even if it happens immediately before the first door, so the answer can equal the string length. With the sum of $|S|$ reaching $2 \times 10^6$, the $O(1)$-per-character pass and bulk input reading are both necessary.
+
+## Edge cases
+
+- **A wave flips every door at once**, so a door's effective state is its written digit XOR the number of waves cast so far. Only the *parity* of that count matters, so the string is never mutated and the scan stays $O(|S|)$.
+- **All doors already open** (`111`) → $0$ waves.
+- **Alternating** (`010`) → every door needs a wave, giving $|S| = 3$: each wave opens the current door but closes the next one, which is the worst case.
+- **The greedy is forced, not a choice.** A closed door must be opened to pass it, and the only way is a wave; so the count is determined and no search is needed.
+- **A wave is cast only when standing at a closed door**, so after it the door is open and progress is guaranteed.
+- **Sum of $|S|$ up to $2 \cdot 10^6$**: bytes are iterated as integer codes with `ch - 48`, with no decoding to `str`.
+
+## Dry run
+
+Third sample: `10011`.
+
+| door | written | wave parity | effective | wave cast? | waves |
+|---:|---:|---:|---:|:---:|---:|
+| 1 | 1 | 0 | 1 | no | 0 |
+| 2 | 0 | 0 | 0 | **yes** | 1 |
+| 3 | 0 | 1 | 1 | no | 1 |
+| 4 | 1 | 1 | 0 | **yes** | 2 |
+| 5 | 1 | 0 | 1 | no | 2 |
+
+Output `2`. Note door $3$ is open only because of the wave cast at door $2$.

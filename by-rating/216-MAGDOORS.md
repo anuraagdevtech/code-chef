@@ -2,8 +2,6 @@
 
 > [`MAGDOORS`](https://www.codechef.com/problems/MAGDOORS) &middot; difficulty **1355** &middot; time limit **1.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -107,6 +105,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A wave flips every door at once**, so a door's effective state is its written digit XOR the number of waves cast so far. Only the *parity* of that count matters, so the string is never mutated and the scan stays $O(|S|)$.
+- **All doors already open** (`111`) → $0$ waves.
+- **Alternating** (`010`) → every door needs a wave, giving $|S| = 3$: each wave opens the current door but closes the next one, which is the worst case.
+- **The greedy is forced, not a choice.** A closed door must be opened to pass it, and the only way is a wave; so the count is determined and no search is needed.
+- **A wave is cast only when standing at a closed door**, so after it the door is open and progress is guaranteed.
+- **Sum of $|S|$ up to $2 \cdot 10^6$**: bytes are iterated as integer codes with `ch - 48`, with no decoding to `str`.
+
+## Dry run
+
+Third sample: `10011`.
+
+| door | written | wave parity | effective | wave cast? | waves |
+|---:|---:|---:|---:|:---:|---:|
+| 1 | 1 | 0 | 1 | no | 0 |
+| 2 | 0 | 0 | 0 | **yes** | 1 |
+| 3 | 0 | 1 | 1 | no | 1 |
+| 4 | 1 | 1 | 0 | **yes** | 2 |
+| 5 | 1 | 0 | 1 | no | 2 |
+
+Output `2`. Note door $3$ is open only because of the wave cast at door $2$.
 
 ---
 

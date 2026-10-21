@@ -2,8 +2,6 @@
 
 > [`CHEFKEY`](https://www.codechef.com/problems/CHEFKEY) &middot; difficulty **1323** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -120,6 +118,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Both orientations are distinct sections.** The first row's answer of $3$ is $2 \times 6$, $3 \times 4$ and $4 \times 3$ — the same divisor pair $\{3, 4\}$ counted twice, once each way.
+- **A square section must not be double-counted**, which the `other != d` guard handles; at $c = 1$ the single $1 \times 1$ section is counted once.
+- **An orientation can fit while its mirror does not.** $2 \times 6$ fits in $4 \times 6$ but $6 \times 2$ does not, since $6 > n = 4$ — so each orientation needs its own pair of comparisons.
+- **No valid section** (the second row): $0$.
+- **$c$ may exceed $n \cdot m$**, in which case nothing fits and the loop finds nothing.
+- **The loop to $\mathrm{isqrt}(c)$ visits each divisor pair exactly once**, which keeps the work at $10^3$ per case for $c \leq 10^6$.
+
+## Dry run
+
+First sample: $n = 4$, $m = 6$, $c = 12$.
+
+| $d$ | $c/d$ | $d \times (c/d)$ fits $4 \times 6$? | mirror fits? | running count |
+|---:|---:|:---:|:---:|---:|
+| 1 | 12 | no ($12 > 6$) | no ($12 > 4$) | 0 |
+| 2 | 6 | **yes** | no ($6 > 4$) | 1 |
+| 3 | 4 | **yes** | **yes** | 3 |
+
+Output `3`.
 
 ---
 

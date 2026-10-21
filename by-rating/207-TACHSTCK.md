@@ -2,8 +2,6 @@
 
 > [`TACHSTCK`](https://www.codechef.com/problems/TACHSTCK) &middot; difficulty **1320** &middot; time limit **7s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -112,6 +110,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **No test-case count**: the first line holds $N$ and $D$ together, then $N$ lines of lengths — reading a leading $T$ consumes the first stick.
+- **The smallest remaining stick pairs with its nearest neighbour or not at all.** Any stick it could pair with is at least as far away as its immediate successor, so pairing it with the successor never forecloses a better option — the exchange argument behind the greedy.
+- **$D = 0$**: only exactly equal lengths pair, which still works — the two $3$s in the sample would pair at $D = 0$.
+- **An unpairable stick advances the index by one, not two**, so the next stick keeps its chance: with $D = 2$ on $1, 9, 10$, skipping the $1$ lets $9$ and $10$ pair.
+- **$N = 1$**: the loop never runs and the answer is $0$.
+- **Odd $N$** always leaves at least one stick over, which falls out of the two-step walk without a special case.
+- Lengths and $D$ up to $10^9$; differences stay well inside the integer range.
+
+## Dry run
+
+$N = 5$, $D = 2$, lengths $1, 3, 3, 9, 4$ sorted to $1, 3, 3, 4, 9$.
+
+| $i$ | pair considered | difference | $\leq D$? | pairs | next $i$ |
+|---:|---|---:|:---:|---:|---:|
+| 0 | $1, 3$ | 2 | yes | 1 | 2 |
+| 2 | $3, 4$ | 1 | yes | 2 | 4 |
+| 4 | — | — | — | 2 | stop |
+
+The $9$ is left unpaired. Output `2`.
 
 ---
 
