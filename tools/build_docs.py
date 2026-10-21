@@ -17,6 +17,7 @@ import html, json, os, re, sys
 from collections import Counter, defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import complexity as X
 import constraints as C
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,6 +26,7 @@ AUTH = os.path.join(ROOT, 'data', 'authored')
 SOLN = os.path.join(ROOT, 'solutions')
 DOCS = os.path.join(ROOT, 'docs')
 RATED = os.path.join(ROOT, 'by-rating')
+BYCPX = os.path.join(ROOT, 'by-complexity')
 
 META = json.load(open(os.path.join(ROOT, 'data', 'problem_meta.json')))
 IDX = json.load(open(os.path.join(ROOT, 'data', 'roadmap_index.json')))
@@ -37,6 +39,7 @@ def slugify(s):
 
 
 def parse_authored(path):
+    """Front matter, the approach prose, and any extra `## Name` sections."""
     text = open(path, encoding='utf-8').read()
     m = re.match(r'^---\n(.*?)\n---\n?(.*)$', text, flags=re.S)
     if not m:
@@ -47,7 +50,10 @@ def parse_authored(path):
             continue
         k, _, v = line.partition(':')
         meta[k.strip()] = v.strip()
-    return meta, m.group(2).strip()
+    parts = re.split(r'^## +(.+?)\s*$', m.group(2), flags=re.M)
+    sections = {parts[i].strip().lower(): parts[i + 1].strip()
+                for i in range(1, len(parts) - 1, 2)}
+    return meta, parts[0].strip(), sections
 
 
 def html_to_md(h):
@@ -121,7 +127,7 @@ def chef_tags(raw):
 
 def load(code):
     raw = json.load(open(os.path.join(RAW, f'{code}.json'), encoding='utf-8'))
-    meta, approach = parse_authored(os.path.join(AUTH, f'{code}.md'))
+    meta, approach, sections = parse_authored(os.path.join(AUTH, f'{code}.md'))
     solution = open(os.path.join(SOLN, f'{code}.py'), encoding='utf-8').read().rstrip()
     pm = META[code]
     pc = raw.get('problemComponents') or {}
@@ -133,6 +139,7 @@ def load(code):
     return {
         'code': code, 'raw': raw, 'pc': pc, 'meta': meta, 'approach': approach,
         'solution': solution, 'pm': pm, 'cons': cons,
+        'sections': sections,
         'name': raw.get('problem_name') or code,
         'rating': rating,
         'timelimit': raw.get('max_timelimit') or '?',
@@ -231,6 +238,122 @@ def render_rated(d):
     return '\n'.join(P).rstrip() + '\n'
 
 
+def render_complexity(d, seq):
+    """The by-complexity view: the six sections asked for, in order."""
+    meta, pm, sec = d['meta'], d['pm'], d['sections']
+    key, note = X.classify(meta['time'])
+    rating = d['rating'] if d['rating'] > 0 else 'unrated'
+    P = []
+    A = P.append
+    A(f'# {seq:03d}. {d["name"]}\n')
+    A(f'> [`{d["code"]}`](https://www.codechef.com/problems/{d["code"]}) '
+      f'&middot; difficulty **{rating}** '
+      f'&middot; complexity class **{X.LABEL[key]}** {X.CANON[key]}'
+      f'{" (" + note + ")" if note else ""}\n')
+
+    A('## Topic used\n')
+    A('| | |')
+    A('|---|---|')
+    A(f'| **Topic** | {meta["topic"]} |')
+    A(f'| **Technique** | {meta.get("subtopic", "-")} |')
+    if d['tags']:
+        A(f'| **CodeChef tags** | {", ".join(f"`{t}`" for t in d["tags"])} |')
+    A(f'| **Time** | {meta["time"]} |')
+    A(f'| **Space** | {meta["space"]} |')
+    A('')
+
+    A('## Problem\n')
+    A(d['statement'] + '\n')
+
+    A('## Problem constraints\n')
+    A((d['cons'] or '_Not published for this problem._') + '\n')
+
+    A('## Approach\n')
+    A(d['approach'] + '\n')
+
+    A('## Solution\n')
+    A('```python')
+    A(d['solution'])
+    A('```\n')
+
+    A('## Edge cases\n')
+    A(sec['edge cases'] + '\n')
+
+    A('## Dry run\n')
+    A(sec['dry run'] + '\n')
+
+    rel = os.path.join('..', 'docs', slugify(meta['topic']), f'{d["code"]}.md')
+    A(f'---\n')
+    A(f'Same problem grouped by topic: [{rel}]({rel})\n')
+    return '\n'.join(P).rstrip() + '\n'
+
+
+def complexity_order(codes):
+    """seq number per code: cheapest class first, then easiest rating."""
+    rows = []
+    for c in codes:
+        key, _ = X.classify(X.time_of(c))
+        raw = json.load(open(os.path.join(RAW, f'{c}.json'), encoding='utf-8'))
+        r = raw.get('difficulty_rating')
+        r = int(r) if str(r).lstrip('-').isdigit() else -1
+        rows.append((X.RANK[key], r if r > 0 else 10 ** 6, c, key))
+    rows.sort()
+    return {c: (i + 1, key) for i, (_, _, c, key) in enumerate(rows)}
+
+
+def write_complexity_index(rows, order):
+    """by-complexity/README.md, grouped by class in increasing cost."""
+    done = {r['code'] for r in rows}
+    by_class = defaultdict(list)
+    for code, (seq, key) in order.items():
+        by_class[key].append((seq, code))
+    L = []
+    A = L.append
+    A('# Problems in order of complexity\n')
+    A('Every problem ordered by the time complexity of its solution, cheapest '
+      'first, and numbered so a plain directory listing follows that order. '
+      'Each file carries the topic used, the problem constraints, the '
+      'approach, the solution, its edge cases and a dry run.\n')
+    A('How a problem lands in a class is set out in `tools/complexity.py`: the '
+      'class is the cost of **one test case** in the bounds the problem '
+      'states, so a cost quoted per query or per item is multiplied up, and a '
+      'one-off sieve is flagged rather than counted.\n')
+    A(f'**{len(done)} of {len(order)} written.**\n')
+    A('| # | Class | Problems | Written |')
+    A('|---|---|---:|---:|')
+    for rank, key, canon, label in X.CLASSES:
+        rows_k = by_class.get(key, [])
+        if not rows_k:
+            continue
+        n = sum(1 for _, c in rows_k if c in done)
+        A(f'| {rank} | [{label} {canon}](#{rank}-{slugify(label)}) '
+          f'| {len(rows_k)} | {n} |')
+    A('')
+    meta_by_code = {r['code']: r for r in rows}
+    for rank, key, canon, label in X.CLASSES:
+        rows_k = sorted(by_class.get(key, []))
+        if not rows_k:
+            continue
+        A(f'## {rank}. {label}\n')
+        A(f'{canon} &mdash; {len(rows_k)} problems\n')
+        A('| # | Problem | Difficulty | Topic | Technique |')
+        A('|---:|---|---:|---|---|')
+        for seq, code in rows_k:
+            r = meta_by_code.get(code)
+            if r is None:
+                A(f'| {seq:03d} | `{code}` _(not written yet)_ | | | |')
+                continue
+            shown = r['num_rating'] if r['num_rating'] > 0 else '&ndash;'
+            A(f'| {seq:03d} | [{r["name"]}]({seq:03d}-{code}.md) `{code}` '
+              f'| {shown} | {r["topic"]} | {r["subtopic"]} |')
+        A('')
+    A('---\n')
+    A('Generated by `python3 tools/build_docs.py`.\n')
+    os.makedirs(BYCPX, exist_ok=True)
+    with open(os.path.join(BYCPX, 'README.md'), 'w', encoding='utf-8') as f:
+        f.write('\n'.join(L).rstrip() + '\n')
+
+
 def build_one(code):
     d = load(code)
     raw, meta, pm = d['raw'], d['meta'], d['pm']
@@ -266,6 +389,13 @@ def build_one(code):
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(P).rstrip() + '\n')
 
+    seq = CPX_ORDER[code][0] if code in CPX_ORDER else None
+    if seq and {'edge cases', 'dry run'} <= set(d['sections']):
+        os.makedirs(BYCPX, exist_ok=True)
+        with open(os.path.join(BYCPX, f'{seq:03d}-{code}.md'),
+                  'w', encoding='utf-8') as f:
+            f.write(render_complexity(d, seq))
+
     os.makedirs(RATED, exist_ok=True)
     rated_path = os.path.join(RATED, rated_name(d))
     with open(rated_path, 'w', encoding='utf-8') as f:
@@ -276,7 +406,8 @@ def build_one(code):
             'level': pm['level'], 'path': os.path.relpath(out_path, ROOT),
             'time': meta['time'], 'num_rating': d['rating'],
             'rated_file': rated_name(d), 'tags': d['tags'],
-            'best_tag': d['best_tag']}
+            'best_tag': d['best_tag'],
+            'has_extras': {'edge cases', 'dry run'} <= set(d['sections'])}
 
 
 BAND = 200
@@ -436,14 +567,22 @@ def write_index(built, codes):
         f.write('\n'.join(L).rstrip() + '\n')
 
 
+CPX_ORDER = {}
+
+
 def main():
+    global CPX_ORDER
     codes = open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
+    CPX_ORDER = complexity_order(codes)
     built = [build_one(c) for c in codes
              if os.path.exists(os.path.join(AUTH, f'{c}.md'))
              and os.path.exists(os.path.join(SOLN, f'{c}.py'))]
     write_index(built, codes)
     write_rating_index(built)
-    print(f'built {len(built)} / {len(codes)} docs in two views')
+    cpx = [b for b in built if b['has_extras']]
+    write_complexity_index(cpx, CPX_ORDER)
+    print(f'built {len(built)} / {len(codes)} docs; '
+          f'by-complexity written for {len(cpx)}')
 
 
 if __name__ == '__main__':

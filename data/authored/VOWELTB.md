@@ -13,3 +13,21 @@ Either way this beats a five-way `or` chain, which is longer and easy to mistype
 The constraints promise an uppercase English letter, so there is no need to normalise case or reject digits and punctuation. If that guarantee were absent, `c.upper() in "AEIOU"` would be the defensive form.
 
 There is **no $T$** here — the input is a single character on one line, one test case. The expected output is `Vowel` or `Consonant`, capitalised exactly as shown, with the sample's `Z` producing `Consonant`.
+
+## Edge cases
+
+- **Each of the five vowels** `A E I O U`: all must print `Vowel`.
+- **`Y`**: a consonant under this problem's definition, since the set is exactly those five letters.
+- **`A` and `Z`**, the two ends of the alphabet: one of each class, confirming the test is membership and not a range comparison.
+- **Input shape**: one character and no test-case count. Reading with `.split()` discards the trailing newline, which a raw `read()` would keep and turn into a two-character token.
+- The input is guaranteed upper case, so no case folding is needed — but that guarantee is the only reason.
+
+## Dry run
+
+Input is the single character `Z`.
+
+| step | value |
+|---|---|
+| token read | `"Z"` |
+| in $\{A, E, I, O, U\}$? | no |
+| output | `Consonant` |

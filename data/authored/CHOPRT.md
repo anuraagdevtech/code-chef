@@ -13,3 +13,20 @@ Two practical notes for this particular problem. $A$ and $B$ reach $1000000001$,
 With $T$ up to $10^4$, reading the whole stream at once and joining the output into a single write is worth doing; per-line `input()` and `print()` calls dominate the runtime in Python at this volume, even though the comparison itself is free.
 
 The symbols must be printed bare, with no surrounding quotes — the problem statement quotes them only for clarity.
+
+## Edge cases
+
+- **$A = B$**: must print `=`, so the chain needs all three branches and not just a two-way test. Sample case 3 covers it.
+- **Both at the bound** $A = B = 10^9 + 1$: equal, so `=`. Note the limit is $10^9 + 1$, one past the usual $10^9$ — still inside 32-bit range, but it is a deliberate nudge past the round number.
+- **Both minimal** ($A = B = 1$): `=`.
+- Only the *sign* of $A - B$ matters, so no subtraction overflow is possible even in a fixed-width language; comparing directly avoids the question entirely.
+
+## Dry run
+
+| $A$ | $B$ | relation | output |
+|---:|---:|---|---|
+| 10 | 20 | $A < B$ | `<` |
+| 20 | 10 | $A > B$ | `>` |
+| 10 | 10 | equal | `=` |
+
+The three sample rows exercise all three branches in turn.
