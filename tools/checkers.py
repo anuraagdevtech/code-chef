@@ -586,6 +586,58 @@ def _mxmedian(inp, got):
     return True, "optimal"
 
 
+def _difstr(inp, got):
+    """DIFSTR: any binary string of length N unlike all N given strings."""
+    toks = inp.split()
+    t = int(toks[0])
+    pos = 1
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for line in lines:
+        n = int(toks[pos])
+        given = toks[pos + 1:pos + 1 + n]
+        pos += 1 + n
+        ours = line.strip()
+        if len(ours) != n or set(ours) - {"0", "1"}:
+            return False, f"{ours!r} is not a binary string of length {n}"
+        if ours in given:
+            return False, f"{ours} matches one of the given strings"
+    return True, "valid"
+
+
+def _gcdprf(inp, got):
+    """GCDPRF: any array whose prefix GCDs are B."""
+    from math import gcd
+    toks = inp.split()
+    t = int(toks[0])
+    pos = 1
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for line in lines:
+        n = int(toks[pos])
+        b = [int(x) for x in toks[pos + 1:pos + 1 + n]]
+        pos += 1 + n
+        # Prefix GCDs must form a divisibility chain.
+        feasible = all(b[i - 1] % b[i] == 0 for i in range(1, n))
+        vals = [int(x) for x in line.split()]
+        if vals == [-1]:
+            if feasible:
+                return False, f"-1 but {b} is realisable"
+            continue
+        if not feasible:
+            return False, f"gave an array but {b} is impossible"
+        if len(vals) != n or any(not 1 <= v <= 10 ** 9 for v in vals):
+            return False, "array is the wrong length or out of range"
+        run = 0
+        for i, v in enumerate(vals):
+            run = gcd(run, v)
+            if run != b[i]:
+                return False, f"prefix gcd at {i + 1} is {run}, wanted {b[i]}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -610,4 +662,6 @@ CHECKERS = {
     "SUBPERM": _subperm,
     "INCRDEC": _incrdec,
     "MXMEDIAN": _mxmedian,
+    "DIFSTR": _difstr,
+    "GCDPRF": _gcdprf,
 }
