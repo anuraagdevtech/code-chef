@@ -2,8 +2,6 @@
 
 > [`CYCLICQD`](https://www.codechef.com/problems/CYCLICQD) &middot; difficulty **735** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -106,6 +104,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The angles arrive in perimeter order**, so $A$ and $C$ are *opposite*, as are $B$ and $D$. Testing an adjacent pair such as $A + B$ is the trap, and it gives a different answer on every sample row.
+- **Only one check is needed.** Since $A + B + C + D = 360$ is guaranteed, $A + C = 180$ forces $B + D = 180$ automatically — verifying both is harmless but redundant.
+- **Equal opposite angles are not the condition**: the sample's third row has $A = C = 179$, summing to $358$, so `NO`.
+- **The bounds** $1 \leq A, B, C, D \leq 357$ keep every angle positive, so there is no degenerate quadrilateral to reject separately.
+
+## Dry run
+
+| $A$ | $B$ | $C$ | $D$ | $A + C$ | $= 180$? | output |
+|---:|---:|---:|---:|---:|:---:|---|
+| 10 | 20 | 30 | 300 | 40 | no | `NO` |
+| 10 | 20 | 170 | 160 | 180 | yes | `YES` |
+| 179 | 1 | 179 | 1 | 358 | no | `NO` |
+
+In row 2, $B + D = 20 + 160 = 180$ as well, which the fixed total guarantees.
 
 ---
 

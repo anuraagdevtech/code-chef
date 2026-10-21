@@ -2,8 +2,6 @@
 
 > [`PRESENTS`](https://www.codechef.com/problems/PRESENTS) &middot; difficulty **757** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -95,6 +93,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Exactly one block** ($N = 5$): one gift is free, so four are paid for. The sample's first row sits on this boundary.
+- **One short of a block** ($N = 4$): nothing is free, so four are paid for. Taken together with $N = 5$ these two rows show that the answer is *not* injective — both give $4$.
+- **$N = 9$** gives $8$ and **$N = 10$** also gives $8$, for the same reason: only complete blocks of five earn a free gift.
+- **Largest input** ($N = 10^9$): $8 \times 10^8$.
+- A partial block earns nothing, so this is a floor and not a ceiling.
+
+## Dry run
+
+| $N$ | free $N // 5$ | paid $N - {\cdot}$ | output |
+|---:|---:|---:|---|
+| 5 | 1 | 4 | `4` |
+| 4 | 0 | 4 | `4` |
+
+The two sample rows differ by one gift and cost the same, which is the whole point of the offer.
 
 ---
 

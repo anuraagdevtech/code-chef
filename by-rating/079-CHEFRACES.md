@@ -2,8 +2,6 @@
 
 > [`CHEFRACES`](https://www.codechef.com/problems/CHEFRACES) &middot; difficulty **745** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -107,6 +105,22 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **No overlap** ($\{4,3\}$ against $\{1,2\}$): both races are won, so $2$.
+- **Complete overlap** ($\{2,1\}$ against $\{1,2\}$): neither, so $0$. This row also shows that order inside a pair is irrelevant — the sets are equal even though the numbers are listed in the opposite order.
+- **Partial overlap**: exactly $1$.
+- **$X \neq Y$ and $A \neq B$ are guaranteed**, so each pair really has two distinct members and the answer is $2$ minus the overlap size — no deduplication inside a pair is needed.
+- The answer is always $0$, $1$ or $2$.
+
+## Dry run
+
+| Chef's races | rival's races | difference | output |
+|---|---|---|---:|
+| $\{4, 3\}$ | $\{1, 2\}$ | $\{4, 3\}$ | `2` |
+| $\{4, 2\}$ | $\{1, 2\}$ | $\{4\}$ | `1` |
+| $\{2, 1\}$ | $\{1, 2\}$ | $\varnothing$ | `0` |
 
 ---
 

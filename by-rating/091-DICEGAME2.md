@@ -2,8 +2,6 @@
 
 > [`DICEGAME2`](https://www.codechef.com/problems/DICEGAME2) &middot; difficulty **789** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -102,6 +100,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The totals mislead.** In the sample's second row Alice rolls $4, 4, 5$ for a total of $13$ against Bob's $6, 4, 1$ totalling $11$ — yet **Bob wins**, because dropping each player's lowest roll leaves $9$ against $10$. Comparing raw totals gives the wrong winner here, which is the whole point of the row.
+- **A tie** ($12$ each in the third row): needs its own branch.
+- **All three rolls equal** ($6, 6, 6$): one of the tied minima is dropped, giving $12$.
+- **The lowest roll is discarded, not the highest** — inverting that flips most answers.
+- With exactly three dice, "best two" is simply the total minus the single minimum, so no sorting is needed.
+
+## Dry run
+
+| Alice | total | $-\min$ | Bob | total | $-\min$ | output |
+|---|---:|---:|---|---:|---:|---|
+| $3, 2, 5$ | 10 | 8 | $6, 1, 1$ | 8 | 7 | `Alice` |
+| $4, 4, 5$ | 13 | 9 | $6, 4, 1$ | 11 | 10 | `Bob` |
+| $6, 6, 6$ | 18 | 12 | $6, 6, 1$ | 13 | 12 | `Tie` |
+
+Row 2 reverses on the discard; row 3 ties despite very different totals.
 
 ---
 

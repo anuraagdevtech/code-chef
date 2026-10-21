@@ -2,8 +2,6 @@
 
 > [`CHEAT`](https://www.codechef.com/problems/CHEAT) &middot; difficulty **763** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -120,6 +118,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$N = 1$**: today is Monday, so no Tuesday has arrived yet and the answer is $0$. The sample's first row.
+- **$N = 2$**: the first Tuesday, giving $1$.
+- **$N = 15$ against $N = 16$**: $2$ then $3$. The sample has both, and they straddle the third Tuesday on day $16$ — an off-by-one in the offset moves this step by a day.
+- **Largest input** ($N = 1000$): $143$ Tuesdays.
+- **The convention that day $1$ is Monday is what fixes the $+5$.** Tuesdays are the days congruent to $2 \bmod 7$, so the count is $\lfloor (N + 5)/7 \rfloor$; starting the week anywhere else shifts every answer.
+
+## Dry run
+
+| $N$ | $N + 5$ | $//\,7$ | Tuesdays (days $2, 9, 16, \ldots$) | output |
+|---:|---:|---:|---|---|
+| 1 | 6 | 0 | none yet | `0` |
+| 10 | 15 | 2 | $2, 9$ | `2` |
+| 15 | 20 | 2 | $2, 9$ | `2` |
+| 16 | 21 | 3 | $2, 9, 16$ | `3` |
+
+Rows 3 and 4 are consecutive days either side of the third Tuesday.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`POLYBAGS`](https://www.codechef.com/problems/POLYBAGS) &middot; difficulty **738** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -95,6 +93,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **An exact multiple of $10$** ($N = 20$): two bags, and the $+9$ must not demand a third.
+- **One short of a multiple** ($N = 99$): ten bags, the last holding nine items.
+- **Smallest input** ($N = 1$): one bag — a single item still needs one.
+- **Largest input** ($N = 1000$): exactly $100$ bags.
+- Every item must be carried, so this rounds up; there is no option to leave a remainder behind.
+
+## Dry run
+
+| $N$ | $N + 9$ | $//\,10$ | output |
+|---:|---:|---:|---|
+| 20 | 29 | 2 | `2` |
+| 24 | 33 | 3 | `3` |
+| 99 | 108 | 10 | `10` |
+
+Row 1 fills both bags exactly; row 3's tenth bag carries nine.
 
 ---
 

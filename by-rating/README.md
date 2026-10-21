@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **73 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **93 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -11,7 +11,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | Band | Problems | Written | Most common topic |
 |---|---:|---:|---|
 | [400&ndash;599](#400599) | 34 | 34 | Basic Math (18) |
-| [600&ndash;799](#600799) | 60 | 39 | Basic Math (31) |
+| [600&ndash;799](#600799) | 60 | 59 | Basic Math (31) |
 | [800&ndash;999](#800999) | 69 | 0 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 0 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 0 | Number Theory (7) |
@@ -105,26 +105,26 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 071 | [Mahasena](071-AMR15A.md) `AMR15A` | 720 | Arrays | Parity counting in a single pass | yes |
 | 072 | [The Block Game](072-PALL01.md) `PALL01` | 720 | Strings | Palindrome check by reversal | yes |
 | 073 | [A or B](073-AORB.md) `AORB` | 728 | Greedy | Scheduling order and the exchange argument | yes |
-| 074 | [Pass or Fail](074-PASSORFAIL.md) `PASSORFAIL` | 730 | Basic Math | Scoring with a penalty | &ndash; |
-| 075 | [Cyclic Quadrilateral](075-CYCLICQD.md) `CYCLICQD` | 735 | Geometry | Cyclic quadrilateral angle condition | &ndash; |
-| 076 | [Too many items](076-POLYBAGS.md) `POLYBAGS` | 738 | Basic Math | Ceiling division | &ndash; |
-| 077 | [Building Race](077-BUILDINGRACE.md) `BUILDINGRACE` | 739 | Basic Math | Comparing ratios by cross-multiplication | &ndash; |
-| 078 | [Chef Fantasy 11](078-FIZZBUZZ2303.md) `FIZZBUZZ2303` | 739 | Combinatorics | Ordered pairs (permutations) | &ndash; |
-| 079 | [Chef and Races](079-CHEFRACES.md) `CHEFRACES` | 745 | Sets | Set difference | &ndash; |
-| 080 | [Smallest Numbers of Notes](080-FLOW005.md) `FLOW005` | 750 | Greedy | Greedy change-making in a canonical system | &ndash; |
-| 081 | [Endless Appetizers](081-MOZZ.md) `MOZZ` | 752 | Basic Math | Inverting a reward, then a ceiling division | &ndash; |
-| 082 | [Presents for Cheffina](082-PRESENTS.md) `PRESENTS` | 757 | Basic Math | Counting free items in a repeating group | &ndash; |
-| 083 | [Dracula Eats](083-CHEAT.md) `CHEAT` | 763 | Number Theory | Counting residues in a range | &ndash; |
-| 084 | [Possible Victory](084-T20MCH.md) `T20MCH` | 769 | Basic Math | Best-case bound | &ndash; |
-| 085 | [Lucky Four](085-LUCKFOUR.md) `LUCKFOUR` | 775 | Strings | Counting a digit | &ndash; |
-| 086 | [Reach fast](086-REACHFAST.md) `REACHFAST` | 777 | Basic Math | Ceiling division over a distance | &ndash; |
-| 087 | [Single-use Attack](087-SINGLEUSE.md) `SINGLEUSE` | 777 | Greedy | Comparing both strategies explicitly | &ndash; |
-| 088 | [Get Lowest Free](088-SALE.md) `SALE` | 778 | Basic Math | Total minus the extremum | &ndash; |
-| 089 | [Minimum number of Flips](089-MINFLIPS.md) `MINFLIPS` | 781 | Arrays | Feasibility by parity, then distance to the target count | &ndash; |
-| 090 | [Binary Battles](090-BIN_BAT.md) `BIN_BAT` | 786 | Basic Math | Tournament rounds, and separators between them | &ndash; |
-| 091 | [Best of Two](091-DICEGAME2.md) `DICEGAME2` | 789 | Basic Math | Total minus the extremum, then compare | &ndash; |
-| 092 | [Degree of Polynomial](092-DPOLY.md) `DPOLY` | 793 | Arrays | Last index satisfying a predicate | &ndash; |
-| 093 | [Recent contest problems](093-RECENTCONT.md) `RECENTCONT` | 793 | Arrays | Counting two categories in one pass | &ndash; |
+| 074 | [Pass or Fail](074-PASSORFAIL.md) `PASSORFAIL` | 730 | Basic Math | Scoring with a penalty | yes |
+| 075 | [Cyclic Quadrilateral](075-CYCLICQD.md) `CYCLICQD` | 735 | Geometry | Cyclic quadrilateral angle condition | yes |
+| 076 | [Too many items](076-POLYBAGS.md) `POLYBAGS` | 738 | Basic Math | Ceiling division | yes |
+| 077 | [Building Race](077-BUILDINGRACE.md) `BUILDINGRACE` | 739 | Basic Math | Comparing ratios by cross-multiplication | yes |
+| 078 | [Chef Fantasy 11](078-FIZZBUZZ2303.md) `FIZZBUZZ2303` | 739 | Combinatorics | Ordered pairs (permutations) | yes |
+| 079 | [Chef and Races](079-CHEFRACES.md) `CHEFRACES` | 745 | Sets | Set difference | yes |
+| 080 | [Smallest Numbers of Notes](080-FLOW005.md) `FLOW005` | 750 | Greedy | Greedy change-making in a canonical system | yes |
+| 081 | [Endless Appetizers](081-MOZZ.md) `MOZZ` | 752 | Basic Math | Inverting a reward, then a ceiling division | yes |
+| 082 | [Presents for Cheffina](082-PRESENTS.md) `PRESENTS` | 757 | Basic Math | Counting free items in a repeating group | yes |
+| 083 | [Dracula Eats](083-CHEAT.md) `CHEAT` | 763 | Number Theory | Counting residues in a range | yes |
+| 084 | [Possible Victory](084-T20MCH.md) `T20MCH` | 769 | Basic Math | Best-case bound | yes |
+| 085 | [Lucky Four](085-LUCKFOUR.md) `LUCKFOUR` | 775 | Strings | Counting a digit | yes |
+| 086 | [Reach fast](086-REACHFAST.md) `REACHFAST` | 777 | Basic Math | Ceiling division over a distance | yes |
+| 087 | [Single-use Attack](087-SINGLEUSE.md) `SINGLEUSE` | 777 | Greedy | Comparing both strategies explicitly | yes |
+| 088 | [Get Lowest Free](088-SALE.md) `SALE` | 778 | Basic Math | Total minus the extremum | yes |
+| 089 | [Minimum number of Flips](089-MINFLIPS.md) `MINFLIPS` | 781 | Arrays | Feasibility by parity, then distance to the target count | yes |
+| 090 | [Binary Battles](090-BIN_BAT.md) `BIN_BAT` | 786 | Basic Math | Tournament rounds, and separators between them | yes |
+| 091 | [Best of Two](091-DICEGAME2.md) `DICEGAME2` | 789 | Basic Math | Total minus the extremum, then compare | yes |
+| 092 | [Degree of Polynomial](092-DPOLY.md) `DPOLY` | 793 | Arrays | Last index satisfying a predicate | yes |
+| 093 | [Recent contest problems](093-RECENTCONT.md) `RECENTCONT` | 793 | Arrays | Counting two categories in one pass | yes |
 | 094 | [The Cooler Dilemma 2](094-WATERCOOLER2.md) `WATERCOOLER2` | 798 | Basic Math | Strict inequality turned into a floor | &ndash; |
 
 ## 800&ndash;999

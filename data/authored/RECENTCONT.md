@@ -13,3 +13,21 @@ For a general partition into many categories, `collections.Counter` would be the
 Output order is fixed by the statement: `START38` count first, then `LTIME108`, regardless of which appears first in the input. Sample case 2 leads with `LTIME108` three times yet still prints `1 3`.
 
 The codes are compared as whole tokens. Matching on a prefix such as `S` would work for these two particular strings but is the kind of shortcut that breaks the moment a third contest code appears.
+
+## Edge cases
+
+- **All problems from one contest** (the sample's third case, which has no `START38` at all): the answer is `0 2`, so a zero count is legitimate output.
+- **Only two categories exist**, so counting one determines the other — $N$ minus the first count. Tallying both separately is harmless but redundant, and risks disagreeing if a code were ever misspelled.
+- **$N = 1$**: a single problem, counted on one side.
+- **Output is two numbers on one line** in a fixed order, `START38` first, so swapping them silently fails every mixed case.
+
+## Dry run
+
+| codes | `START38` | `LTIME108` ($N -$ first) | output |
+|---|---:|---:|---|
+| S, L, S | 2 | 1 | `2 1` |
+| L, L, L, S | 1 | 3 | `1 3` |
+| L, L | 0 | 2 | `0 2` |
+| S, L, L, L, S, L | 2 | 4 | `2 4` |
+
+(`S` is `START38`, `L` is `LTIME108`.)

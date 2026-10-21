@@ -2,8 +2,6 @@
 
 > [`SALE`](https://www.codechef.com/problems/SALE) &middot; difficulty **778** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -99,6 +97,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Several items tie for cheapest** ($3, 3, 3$ and $8, 4, 4$): **exactly one** item is free, so only a single minimum is subtracted. Removing every tied minimum would give $3$ and $8$ instead of $6$ and $12$, and both sample rows test this.
+- **All three prices equal**: the answer is twice the price.
+- **The cheapest item in any position** — first, middle or last — must be found, so a hard-coded position fails.
+- The answer is the total minus one extremum, which is why no sorting is needed.
+
+## Dry run
+
+| prices | total | cheapest | total $-$ min | output |
+|---|---:|---:|---:|---|
+| $6, 2, 4$ | 12 | 2 | 10 | `10` |
+| $3, 3, 3$ | 9 | 3 | 6 | `6` |
+| $8, 4, 4$ | 16 | 4 | 12 | `12` |
+
+Rows 2 and 3 have ties for cheapest, and only one copy is discounted.
 
 ---
 

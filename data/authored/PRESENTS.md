@@ -15,3 +15,20 @@ The two samples pin down the boundary. With $N = 5$ exactly one gift is free, so
 A tempting alternative is $4 \lceil N/5 \rceil$, reasoning that each started block costs four coins. That over-charges a partial block: for $N = 6$ it gives $8$ when the true cost is $6 - 1 = 5$, since Chef pays for the sixth gift but has not reached another free one. Counting the *free* items and subtracting is the formulation that handles partial blocks correctly.
 
 With $N$ up to $10^9$, iterating over the gifts is out of the question — but the closed form is $O(1)$ and Python's integers handle the magnitude without comment.
+
+## Edge cases
+
+- **Exactly one block** ($N = 5$): one gift is free, so four are paid for. The sample's first row sits on this boundary.
+- **One short of a block** ($N = 4$): nothing is free, so four are paid for. Taken together with $N = 5$ these two rows show that the answer is *not* injective — both give $4$.
+- **$N = 9$** gives $8$ and **$N = 10$** also gives $8$, for the same reason: only complete blocks of five earn a free gift.
+- **Largest input** ($N = 10^9$): $8 \times 10^8$.
+- A partial block earns nothing, so this is a floor and not a ceiling.
+
+## Dry run
+
+| $N$ | free $N // 5$ | paid $N - {\cdot}$ | output |
+|---:|---:|---:|---|
+| 5 | 1 | 4 | `4` |
+| 4 | 0 | 4 | `4` |
+
+The two sample rows differ by one gift and cost the same, which is the whole point of the offer.

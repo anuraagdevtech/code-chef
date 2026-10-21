@@ -2,8 +2,6 @@
 
 > [`SINGLEUSE`](https://www.codechef.com/problems/SINGLEUSE) &middot; difficulty **777** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -114,6 +112,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The special attack finishes the job alone** ($H = 78$, $Y = 78$): one attack. The `max(0, H - Y)` clamp is what allows this — without it the remaining health goes negative and the ceiling division gives a nonsense extra attack.
+- **The special saves nothing** ($H = 100$, $X = 25$, $Y = 40$): both routes cost $4$, so using it is optional. A solution that *always* fires the special happens to get this row right, but the comparison is what makes it right in general.
+- **$X < Y$ is guaranteed**, so the special always hits harder — and yet it may still not reduce the attack count, because what matters is whether it saves a whole plain attack rather than how much damage it does.
+- **The weakest possible plain attack** ($X = 1$, $H = 46$): $45$ attacks with the special, $46$ without.
+- Both strategies are evaluated and the smaller taken, since "hits harder" does not imply "finishes sooner".
+
+## Dry run
+
+| $H$ | $X$ | $Y$ | plain only $\lceil H/X \rceil$ | with special $1 + \lceil (H-Y)^+/X \rceil$ | output |
+|---:|---:|---:|---:|---:|---|
+| 100 | 25 | 40 | 4 | $1 + \lceil 60/25 \rceil = 4$ | `4` |
+| 100 | 29 | 45 | 4 | $1 + \lceil 55/29 \rceil = 3$ | `3` |
+| 46 | 1 | 2 | 46 | $1 + 44 = 45$ | `45` |
+| 78 | 15 | 78 | 6 | $1 + 0 = 1$ | `1` |
+
+Row 1 is the tie, row 4 the one-shot kill.
 
 ---
 
