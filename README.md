@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**413 of 486 solved problems documented.**
+**420 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -12,10 +12,10 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 84 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 25 |
+| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 32 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **413** |
+| | **Total** | **502** | **761** | **420** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -27,7 +27,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
 | 4 | 100 | 100 |
-| 5 | 86 | 13 |
+| 5 | 86 | 20 |
 
 ## Problems by topic
 
@@ -78,7 +78,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Basic Math</b> (88)</summary>
+<details open><summary><b>Basic Math</b> (89)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -170,6 +170,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 389 | [Odd Sum](docs/basic-math/ODDSUM.md) | 1600 | Parity of consecutive prefix sums | $O(1)$ per test case |
 | 390 | [Chef and Bulb Invention](docs/basic-math/CHFINVNT.md) | 1607 | Counting residues below a threshold in closed form | $O(1)$ per test case |
 | 396 | [Survive in ChocoLand](docs/basic-math/SURVIVE.md) | 1616 | Ceiling division with a running feasibility check | $O(S)$ per test case |
+| 414 | [Three Numbers](docs/basic-math/THREENUMBERS.md) | 1675 | Parity invariant plus a counting identity | $O(1)$ per test case |
 
 </details>
 
@@ -195,7 +196,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (19)</summary>
+<details open><summary><b>Bit Manipulation</b> (20)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -218,6 +219,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 348 | [Maximum Damage](docs/bit-manipulation/MAXDMGE.md) | 1636 | AND is monotone, so only adjacent pairs matter | $O(N)$ per test case |
 | 349 | [XOR Engine](docs/bit-manipulation/ENGXOR.md) | 1632 | Popcount parity is additive under XOR | $O(N + Q)$ per test case |
 | 351 | [XOR with Subset](docs/bit-manipulation/XORSUB.md) | 1879 | XOR linear basis over GF(2) | $O(N \log V + \log^2 V)$ per test case |
+| 420 | [ALIEN-OR](docs/bit-manipulation/ALIENOR.md) | 1639 | Single-bit values are necessary and sufficient | $O(NK)$ per test case |
 
 </details>
 
@@ -236,7 +238,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (13)</summary>
+<details open><summary><b>Combinatorics</b> (14)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -253,6 +255,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 398 | [MaxEdges](docs/combinatorics/MAXEDGES.md) | 1618 | Complete layered DAG minus the forbidden pairs | $O(1)$ per test case |
 | 403 | [Bitwise Tuples](docs/combinatorics/BITTUP.md) | 1634 | Independent bits, each a complement count | $O(\log N + \log M)$ per test case |
 | 407 | [Chef and Interesting Subsequences ](docs/combinatorics/CHEFINSQ.md) | 1646 | Choosing among the tied boundary value | $O(N \log N)$ per test case |
+| 416 | [The Vowel Matrix](docs/combinatorics/VOWMTRX.md) | 1694 | Independent cut choices between vowel blocks | $O(N)$ per test case |
 
 </details>
 
@@ -356,7 +359,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (45)</summary>
+<details open><summary><b>Greedy</b> (46)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -405,6 +408,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 394 | [Maximum Subarray ](docs/greedy/MAXSUBARR.md) | 1613 | Kadane plus a freely orderable block | $O(N + M)$ per test case |
 | 401 | [Zebra Crossing](docs/greedy/ZEBRA.md) | 1626 | Earliest hops, then one long final leap | $O(N)$ per test case |
 | 411 | [Frequency Array Retrieval](docs/greedy/FREQARRRET.md) | 1654 | Lexicographic labelling of equal-frequency groups | $O(N)$ per test case |
+| 415 | [Chef and Water Car](docs/greedy/CHEFCAR.md) | 1683 | Pricing each litre by its earliest legal purchase | $O(1)$ per test case |
 
 </details>
 
@@ -417,7 +421,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Number Theory</b> (48)</summary>
+<details open><summary><b>Number Theory</b> (49)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -469,10 +473,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 376 | [Cakewalk](docs/number-theory/CKWLK.md) | 1474 | Prime factorisation into a two-variable range test | $O(\log N)$ per test case |
 | 395 | [Chef And The Hiring Event](docs/number-theory/CHEARMY.md) | 1613 | Product expansion for parity, then base-5 indexing | $O(\log K)$ per test case |
 | 410 | [Find eX](docs/number-theory/FIND_X.md) | 1651 | Shared remainder forces a multiple of the LCM | $O(\log \min(B,D))$ per test case |
+| 419 | [Number Hunt](docs/number-theory/NUMHUNT.md) | 1638 | Product of the two smallest admissible primes | $O(g \log^3 X)$ per test case, where $g$ is the local prime gap |
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (9)</summary>
+<details open><summary><b>Prefix Sums</b> (10)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -485,10 +490,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 361 | [W String](docs/prefix-sums/WSTRING.md) | 1809 | Per-letter counts over hash-delimited blocks | $O(|S| + 26 h)$ per test case, where $h$ is the number of '#' |
 | 369 | [Gcd Queries](docs/prefix-sums/GCDQ.md) | 1674 | Prefix and suffix GCD arrays | $O(N \log A + Q \log A)$ per test case |
 | 384 | [Dense Bracket Sequence](docs/prefix-sums/DENSE.md) | 1472 | Best split between an open prefix and a close suffix | $O(N)$ per test case |
+| 418 | [Anti-Palindrome Queries](docs/prefix-sums/ANTIPALQ.md) | 1688 | Reducing a rotation condition to one count | $O(N + Q)$ per test case |
 
 </details>
 
-<details open><summary><b>Sets</b> (13)</summary>
+<details open><summary><b>Sets</b> (14)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -505,6 +511,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 314 | [Count Distinct Values](docs/sets/CNTDIST.md) | -1 | Replacing a linear scan with a hash set | $O(n)$ overall |
 | 337 | [Version Control System](docs/sets/VCS.md) | 1217 | Intersection and complement of a union | $O(M + K)$ per test case |
 | 386 | [Good Pairs](docs/sets/GOODPAIRS.md) | 1469 | One-pass tally of mirrored keys | $O(N)$ per test case |
+| 417 | [Fencing](docs/sets/FENCE.md) | 1696 | Perimeter as sides minus shared edges | $O(K)$ per test case |
 
 </details>
 
