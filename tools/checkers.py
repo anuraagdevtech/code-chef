@@ -305,6 +305,71 @@ def _orandcon(inp, got):
     return True, "valid"
 
 
+def _ammeat2(inp, got):
+    """AMMEAT2: K plates from 1..N, pairwise non-coprime, or -1."""
+    from math import gcd
+    toks = inp.split()
+    t = int(toks[0])
+    cases = [(int(toks[1 + 2 * i]), int(toks[2 + 2 * i])) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for (n, k), line in zip(cases, lines):
+        vals = list(map(int, line.split()))
+        if vals == [-1]:
+            if k == 1 or 2 * k <= n:
+                return False, f"n={n},k={k}: claimed impossible but is not"
+            continue
+        if len(vals) != k or len(set(vals)) != k:
+            return False, f"n={n},k={k}: need {k} distinct plates"
+        if any(v < 1 or v > n for v in vals):
+            return False, f"n={n},k={k}: plate out of range"
+        for x in range(len(vals)):
+            for y in range(x + 1, len(vals)):
+                if gcd(vals[x], vals[y]) == 1:
+                    return False, f"n={n}: {vals[x]} and {vals[y]} are coprime"
+    return True, "valid"
+
+
+def _divcol(inp, got):
+    """DIVCOL: minimal C and a valid colouring of the divisibility order."""
+    toks = inp.split()
+    t = int(toks[0])
+    sizes = [int(toks[1 + i]) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    idx = 0
+    for n in sizes:
+        c = int(lines[idx]); idx += 1
+        a = list(map(int, lines[idx].split())); idx += 1
+        if c != n.bit_length():
+            return False, f"n={n}: C={c}, optimum is {n.bit_length()}"
+        if len(a) != n or any(v < 1 or v > c for v in a):
+            return False, f"n={n}: values outside 1..{c}"
+        for x in range(1, n + 1):
+            for y in range(2 * x, n + 1, x):
+                if a[x - 1] == a[y - 1]:
+                    return False, f"n={n}: {x} divides {y} but colours match"
+    return True, "optimal"
+
+
+def _advitiya5(inp, got):
+    """ADVITIYA5: a permutation with exactly K odd adjacent sums."""
+    toks = inp.split()
+    t = int(toks[0])
+    cases = [(int(toks[1 + 2 * i]), int(toks[2 + 2 * i])) for i in range(t)]
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for (n, k), line in zip(cases, lines):
+        p = list(map(int, line.split()))
+        if sorted(p) != list(range(1, n + 1)):
+            return False, f"n={n}: not a permutation"
+        odd = sum(1 for i in range(n - 1) if (p[i] + p[i + 1]) % 2)
+        if odd != k:
+            return False, f"n={n}: {odd} odd sums, wanted {k}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -317,5 +382,8 @@ CHECKERS = {
     "PREFPERM": _prefperm,
     "CHSQR": _chsqr,
     "ORANDCON": _orandcon,
+    "AMMEAT2": _ammeat2,
+    "DIVCOL": _divcol,
+    "ADVITIYA5": _advitiya5,
     "GCDSUBARRAYS": _gcdsubarrays,
 }
