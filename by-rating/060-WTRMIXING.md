@@ -2,8 +2,6 @@
 
 > [`WTRMIXING`](https://www.codechef.com/problems/WTRMIXING) &middot; difficulty **694** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -114,6 +112,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Already at the target** ($A = B = 37$): no mixing needed, so `YES`. The sample's second row.
+- **No warming available** ($X = 0$ with a target above $A$): the reachable range collapses on that side, so `NO`. The sample's fourth row is exactly this.
+- **Short by one** ($A = 30$, $B = 20$, cold supply $Y = 9$ but $10$ is needed): `NO`. The sample's third row, which a solution ignoring the supply sizes would pass wrongly.
+- **Exactly on a boundary** ($B = A + X$ or $B = A - Y$): reachable, so the comparisons are non-strict.
+- **The supplies are one-sided**: hot water only raises the temperature and cold only lowers it, so the reachable set is the asymmetric interval $[A - Y,\ A + X]$ rather than a symmetric window.
+
+## Dry run
+
+| $A$ | $B$ | $X$ (hot) | $Y$ (cold) | reachable $[A-Y,\ A+X]$ | $B$ inside? | output |
+|---:|---:|---:|---:|---|:---:|---|
+| 24 | 25 | 2 | 0 | $[24, 26]$ | yes | `YES` |
+| 37 | 37 | 2 | 9 | $[28, 39]$ | yes | `YES` |
+| 30 | 20 | 10 | 9 | $[21, 40]$ | no, by one | `NO` |
+| 30 | 31 | 0 | 20 | $[10, 30]$ | no | `NO` |
+
+Row 3 misses by a single degree; row 4 has no warming at all.
 
 ---
 

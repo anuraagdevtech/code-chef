@@ -2,8 +2,6 @@
 
 > [`VALENTINE`](https://www.codechef.com/problems/VALENTINE) &middot; difficulty **691** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -101,6 +99,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Cannot afford even one** ($X = 5$, $Y = 10$): the answer is $0$.
+- **An exact multiple** ($X = 35$, $Y = 7$): five items with no change left.
+- **$Y = 1$**: $X$ items.
+- **Change is wasted**, so this rounds *down* — the mirror image of the ceiling problems, where every leftover forced another unit. Here a leftover buys nothing.
+
+## Dry run
+
+| $X$ (money) | $Y$ (price) | $X // Y$ | change | output |
+|---:|---:|---:|---:|---|
+| 5 | 10 | 0 | 5 | `0` |
+| 16 | 5 | 3 | 1 | `3` |
+| 35 | 7 | 5 | 0 | `5` |
+| 100 | 1 | 100 | 0 | `100` |
+
+Row 2 strands one rupee, which is simply lost.
 
 ---
 

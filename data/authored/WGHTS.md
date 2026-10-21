@@ -17,3 +17,21 @@ Rather than hard-coding seven expressions, the code uses `itertools.combinations
 It is worth noting what the problem does *not* ask. In classic balance-scale puzzles, weights may be placed on either pan, which allows **differences** such as $Y - X$ and turns this into a different question. Here weights only add. Sample case 4 confirms it: $20$ is unreachable from $\{10, 11, 12\}$ by addition, even though $10 + 12 - 11 = 11$ and other signed combinations exist.
 
 For a larger weight set this approach would become $O(2^k)$ and a subset-sum DP would take over; at $k = 3$ enumeration is exactly right.
+
+## Edge cases
+
+- **A single weight equals $W$** ($W = 7$ with weights $9, 7, 2$): reachable by a one-element subset, so subsets of size $1$ must be included and not just pairs and triples.
+- **Only all three together work**: the size-$3$ subset must be considered too.
+- **Nothing works** ($W = 20$ from $10, 11, 12$: the reachable sums are $10, 11, 12, 21, 22, 23, 33$): `NO`.
+- **Weights only add.** They all go on one pan, so differences are unavailable — this is why $W = 5$ is unreachable from $2, 1, 6$ even though $6 - 1 = 5$. The sample's first row is that trap.
+- With three weights there are only $7$ non-empty subsets, so brute force is exact and trivially fast.
+
+## Dry run
+
+Row 1: $W = 5$ with weights $2, 1, 6$. All seven subset sums:
+
+| subset | $\{2\}$ | $\{1\}$ | $\{6\}$ | $\{2,1\}$ | $\{2,6\}$ | $\{1,6\}$ | $\{2,1,6\}$ |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| sum | 2 | 1 | 6 | 3 | 8 | 7 | 9 |
+
+$5$ appears nowhere, so `NO`. Row 2 ($W = 7$ from $9, 7, 2$) matches the singleton $\{7\}$, and row 3 ($W = 20$ from $8, 10, 12$) matches $\{8, 12\}$.

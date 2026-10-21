@@ -2,8 +2,6 @@
 
 > [`CRICUP`](https://www.codechef.com/problems/CRICUP) &middot; difficulty **716** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -96,6 +94,21 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Equal strengths with zero tolerance** ($X = Y = 5$, $D = 0$): the gap is $0$, which is within $0$, so `YES`. The sample's third row sits on this boundary.
+- **The gap exactly equals $D$**: `YES`, since the comparison is non-strict.
+- **Either team may be stronger.** The absolute value is essential — a one-sided $X - Y \leq D$ accepts every case where $X < Y$ regardless of how far apart they are.
+- **Off by one** ($X = 5$, $Y = 3$, $D = 1$): a gap of $2$ against a tolerance of $1$, so `NO`. The sample's second row.
+
+## Dry run
+
+| $X$ | $Y$ | $|X - Y|$ | $D$ | within? | output |
+|---:|---:|---:|---:|:---:|---|
+| 5 | 3 | 2 | 4 | yes | `YES` |
+| 5 | 3 | 2 | 1 | no | `NO` |
+| 5 | 5 | 0 | 0 | yes (equal) | `YES` |
 
 ---
 

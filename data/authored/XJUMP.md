@@ -15,3 +15,21 @@ The remainder is where the "exactly" matters. Chef cannot overshoot and come bac
 The degenerate case $Y = 1$ falls out correctly without a guard: the formula gives $X + 0 = X$ single steps, which is right. And when $Y > X$, as in sample case 3, there are no big jumps at all and the answer is $X$ — $0 + 3 = 3$.
 
 Sample case 2 shows both parts working: $8$ stairs with $Y = 3$ gives $2$ jumps covering $6$, then $2$ single steps, for $4$ moves.
+
+## Edge cases
+
+- **The long jump does not fit at all** ($X = 3$, $Y = 4$): no jump of length $Y$ is usable, so the answer is $X$ single steps. The sample's third row.
+- **$Y = 1$**: the long jump *is* a single step, so both routes cost the same and the formula still gives $X$.
+- **$Y$ divides $X$** ($X = 4$, $Y = 2$): no remainder, so only long jumps.
+- Taking a long jump is never worse than $Y$ single steps whenever $Y \geq 1$, so the greedy needs no comparison — it is strictly better for $Y \geq 2$ and exactly equal at $Y = 1$.
+
+## Dry run
+
+| $X$ | $Y$ | long jumps $X // Y$ | steps $X \bmod Y$ | total | output |
+|---:|---:|---:|---:|---:|---|
+| 4 | 2 | 2 | 0 | 2 | `2` |
+| 8 | 3 | 2 | 2 | 4 | `4` |
+| 3 | 4 | 0 | 3 | 3 | `3` |
+| 2 | 1 | 2 | 0 | 2 | `2` |
+
+Row 3 never uses the long jump; row 4 is the case where both options coincide.

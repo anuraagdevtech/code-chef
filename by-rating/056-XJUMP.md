@@ -2,8 +2,6 @@
 
 > [`XJUMP`](https://www.codechef.com/problems/XJUMP) &middot; difficulty **686** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -102,6 +100,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The long jump does not fit at all** ($X = 3$, $Y = 4$): no jump of length $Y$ is usable, so the answer is $X$ single steps. The sample's third row.
+- **$Y = 1$**: the long jump *is* a single step, so both routes cost the same and the formula still gives $X$.
+- **$Y$ divides $X$** ($X = 4$, $Y = 2$): no remainder, so only long jumps.
+- Taking a long jump is never worse than $Y$ single steps whenever $Y \geq 1$, so the greedy needs no comparison — it is strictly better for $Y \geq 2$ and exactly equal at $Y = 1$.
+
+## Dry run
+
+| $X$ | $Y$ | long jumps $X // Y$ | steps $X \bmod Y$ | total | output |
+|---:|---:|---:|---:|---:|---|
+| 4 | 2 | 2 | 0 | 2 | `2` |
+| 8 | 3 | 2 | 2 | 4 | `4` |
+| 3 | 4 | 0 | 3 | 3 | `3` |
+| 2 | 1 | 2 | 0 | 2 | `2` |
+
+Row 3 never uses the long jump; row 4 is the case where both options coincide.
 
 ---
 

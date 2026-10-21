@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **53 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **73 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -11,7 +11,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | Band | Problems | Written | Most common topic |
 |---|---:|---:|---|
 | [400&ndash;599](#400599) | 34 | 34 | Basic Math (18) |
-| [600&ndash;799](#600799) | 60 | 19 | Basic Math (31) |
+| [600&ndash;799](#600799) | 60 | 39 | Basic Math (31) |
 | [800&ndash;999](#800999) | 69 | 0 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 0 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 0 | Number Theory (7) |
@@ -85,26 +85,26 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 051 | [Chef and Water Bottles](051-CHEFBOTTLE.md) `CHEFBOTTLE` | 662 | Basic Math | Two competing limits | yes |
 | 052 | [Candy Distribution](052-CANDYDIST.md) `CANDYDIST` | 668 | Number Theory | Divisibility by a composite modulus | yes |
 | 053 | [The Last Levels](053-LASTLEVELS.md) `LASTLEVELS` | 679 | Basic Math | Counting separators, not groups | yes |
-| 054 | [Blackjack](054-BLACKJACK.md) `BLACKJACK` | 681 | Basic Math | Solving for the unknown, then range checking | &ndash; |
-| 055 | [Fill Candies](055-FILLCANDIES.md) `FILLCANDIES` | 681 | Basic Math | Ceiling division by a composite capacity | &ndash; |
-| 056 | [X Jumps](056-XJUMP.md) `XJUMP` | 686 | Greedy | Prefer the large step, then settle the remainder | &ndash; |
-| 057 | [Chessboard Distance](057-CHESSDIST.md) `CHESSDIST` | 690 | Geometry | Chebyshev distance | &ndash; |
-| 058 | [It is My Serve](058-MYSERVE.md) `MYSERVE` | 691 | Number Theory | Block index parity via modulo | &ndash; |
-| 059 | [Valentine is Coming](059-VALENTINE.md) `VALENTINE` | 691 | Basic Math | Floor division | &ndash; |
-| 060 | [Water Mixing](060-WTRMIXING.md) `WTRMIXING` | 694 | Conditionals & Case Work | Signed difference against one-sided supplies | &ndash; |
-| 061 | [Weights](061-WGHTS.md) `WGHTS` | 697 | Brute Force | Enumerating every non-empty subset | &ndash; |
-| 062 | [Small Factorial](062-FLOW018.md) `FLOW018` | 700 | Basic Math | Factorials within fixed-width limits | &ndash; |
-| 063 | [Chef and his Apps](063-CHEFAPPS.md) `CHEFAPPS` | 702 | Greedy | Remove the largest item first | &ndash; |
-| 064 | [Chef Eren](064-CHEFEREN.md) `CHEFEREN` | 706 | Basic Math | Counting odd and even positions | &ndash; |
-| 065 | [Minimum number of coins](065-MINCOINS.md) `MINCOINS` | 711 | Greedy | Largest denomination first | &ndash; |
-| 066 | [Airlines](066-SPCP2.md) `SPCP2` | 712 | Basic Math | Ceiling division with a clamp | &ndash; |
-| 067 | [Cup Finals](067-CRICUP.md) `CRICUP` | 716 | Basic Math | Absolute difference against a tolerance | &ndash; |
-| 068 | [Self Defence Training](068-SELFDEF.md) `SELFDEF` | 716 | Arrays | Counting values inside a closed range | &ndash; |
-| 069 | [Too many Floors](069-FLOORS.md) `FLOORS` | 717 | Basic Math | Mapping an index to its block | &ndash; |
-| 070 | [Speed Limit Test](070-SPEEDTEST.md) `SPEEDTEST` | 718 | Basic Math | Comparing ratios by cross-multiplication | &ndash; |
-| 071 | [Mahasena](071-AMR15A.md) `AMR15A` | 720 | Arrays | Parity counting in a single pass | &ndash; |
-| 072 | [The Block Game](072-PALL01.md) `PALL01` | 720 | Strings | Palindrome check by reversal | &ndash; |
-| 073 | [A or B](073-AORB.md) `AORB` | 728 | Greedy | Scheduling order and the exchange argument | &ndash; |
+| 054 | [Blackjack](054-BLACKJACK.md) `BLACKJACK` | 681 | Basic Math | Solving for the unknown, then range checking | yes |
+| 055 | [Fill Candies](055-FILLCANDIES.md) `FILLCANDIES` | 681 | Basic Math | Ceiling division by a composite capacity | yes |
+| 056 | [X Jumps](056-XJUMP.md) `XJUMP` | 686 | Greedy | Prefer the large step, then settle the remainder | yes |
+| 057 | [Chessboard Distance](057-CHESSDIST.md) `CHESSDIST` | 690 | Geometry | Chebyshev distance | yes |
+| 058 | [It is My Serve](058-MYSERVE.md) `MYSERVE` | 691 | Number Theory | Block index parity via modulo | yes |
+| 059 | [Valentine is Coming](059-VALENTINE.md) `VALENTINE` | 691 | Basic Math | Floor division | yes |
+| 060 | [Water Mixing](060-WTRMIXING.md) `WTRMIXING` | 694 | Conditionals & Case Work | Signed difference against one-sided supplies | yes |
+| 061 | [Weights](061-WGHTS.md) `WGHTS` | 697 | Brute Force | Enumerating every non-empty subset | yes |
+| 062 | [Small Factorial](062-FLOW018.md) `FLOW018` | 700 | Basic Math | Factorials within fixed-width limits | yes |
+| 063 | [Chef and his Apps](063-CHEFAPPS.md) `CHEFAPPS` | 702 | Greedy | Remove the largest item first | yes |
+| 064 | [Chef Eren](064-CHEFEREN.md) `CHEFEREN` | 706 | Basic Math | Counting odd and even positions | yes |
+| 065 | [Minimum number of coins](065-MINCOINS.md) `MINCOINS` | 711 | Greedy | Largest denomination first | yes |
+| 066 | [Airlines](066-SPCP2.md) `SPCP2` | 712 | Basic Math | Ceiling division with a clamp | yes |
+| 067 | [Cup Finals](067-CRICUP.md) `CRICUP` | 716 | Basic Math | Absolute difference against a tolerance | yes |
+| 068 | [Self Defence Training](068-SELFDEF.md) `SELFDEF` | 716 | Arrays | Counting values inside a closed range | yes |
+| 069 | [Too many Floors](069-FLOORS.md) `FLOORS` | 717 | Basic Math | Mapping an index to its block | yes |
+| 070 | [Speed Limit Test](070-SPEEDTEST.md) `SPEEDTEST` | 718 | Basic Math | Comparing ratios by cross-multiplication | yes |
+| 071 | [Mahasena](071-AMR15A.md) `AMR15A` | 720 | Arrays | Parity counting in a single pass | yes |
+| 072 | [The Block Game](072-PALL01.md) `PALL01` | 720 | Strings | Palindrome check by reversal | yes |
+| 073 | [A or B](073-AORB.md) `AORB` | 728 | Greedy | Scheduling order and the exchange argument | yes |
 | 074 | [Pass or Fail](074-PASSORFAIL.md) `PASSORFAIL` | 730 | Basic Math | Scoring with a penalty | &ndash; |
 | 075 | [Cyclic Quadrilateral](075-CYCLICQD.md) `CYCLICQD` | 735 | Geometry | Cyclic quadrilateral angle condition | &ndash; |
 | 076 | [Too many items](076-POLYBAGS.md) `POLYBAGS` | 738 | Basic Math | Ceiling division | &ndash; |

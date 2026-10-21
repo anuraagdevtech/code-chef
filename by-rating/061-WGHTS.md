@@ -2,8 +2,6 @@
 
 > [`WGHTS`](https://www.codechef.com/problems/WGHTS) &middot; difficulty **697** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -110,6 +108,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A single weight equals $W$** ($W = 7$ with weights $9, 7, 2$): reachable by a one-element subset, so subsets of size $1$ must be included and not just pairs and triples.
+- **Only all three together work**: the size-$3$ subset must be considered too.
+- **Nothing works** ($W = 20$ from $10, 11, 12$: the reachable sums are $10, 11, 12, 21, 22, 23, 33$): `NO`.
+- **Weights only add.** They all go on one pan, so differences are unavailable — this is why $W = 5$ is unreachable from $2, 1, 6$ even though $6 - 1 = 5$. The sample's first row is that trap.
+- With three weights there are only $7$ non-empty subsets, so brute force is exact and trivially fast.
+
+## Dry run
+
+Row 1: $W = 5$ with weights $2, 1, 6$. All seven subset sums:
+
+| subset | $\{2\}$ | $\{1\}$ | $\{6\}$ | $\{2,1\}$ | $\{2,6\}$ | $\{1,6\}$ | $\{2,1,6\}$ |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| sum | 2 | 1 | 6 | 3 | 8 | 7 | 9 |
+
+$5$ appears nowhere, so `NO`. Row 2 ($W = 7$ from $9, 7, 2$) matches the singleton $\{7\}$, and row 3 ($W = 20$ from $8, 10, 12$) matches $\{8, 12\}$.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`CHESSDIST`](https://www.codechef.com/problems/CHESSDIST) &middot; difficulty **690** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -108,6 +106,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Same square**: distance $0$.
+- **Pure rank or file move** ($(5,5)$ to $(5,3)$): one gap is zero, so the answer is simply the other. The sample's second row.
+- **Pure diagonal** (both gaps equal): the answer is that single value, not their sum — this is exactly where Manhattan distance would double the count, and it is the reason the metric is a maximum.
+- **Opposite corners** ($(1,1)$ to $(10^5, 10^5)$): $99999$ moves.
+- The king closes both gaps at once on a diagonal step, so the larger gap alone determines the move count.
+
+## Dry run
+
+| from | to | $|\Delta x|$ | $|\Delta y|$ | $\max$ | output |
+|---|---|---:|---:|---:|---|
+| $(2,4)$ | $(5,1)$ | 3 | 3 | 3 | `3` |
+| $(5,5)$ | $(5,3)$ | 0 | 2 | 2 | `2` |
+| $(1,4)$ | $(3,3)$ | 2 | 1 | 2 | `2` |
+
+Row 1 is pure diagonal: three moves, not the six Manhattan would suggest.
 
 ---
 

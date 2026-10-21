@@ -2,8 +2,6 @@
 
 > [`MINCOINS`](https://www.codechef.com/problems/MINCOINS) &middot; difficulty **711** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -104,6 +102,22 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Not a multiple of $5$** ($X = 8$): the only coins are $5$ and $10$, so no combination reaches it and the answer is $-1$. The sample's third row.
+- **An odd multiple of $5$** ($X = 15$): one $10$ and one $5$, so two coins.
+- **A multiple of $10$** ($X = 50$): all tens, five coins, no fives needed.
+- **Smallest payable amount** ($X = 5$): a single coin.
+- **Greedy is safe here because $5$ divides $10$.** With nested denominations, taking as many tens as possible never strands an unpayable remainder — the leftover is either $0$ or exactly $5$. That would not hold for a set like $\{1, 3, 4\}$.
+
+## Dry run
+
+| $X$ | $X \bmod 5$ | tens $X // 10$ | a five left? | output |
+|---:|---:|---:|:---:|---|
+| 50 | 0 | 5 | no | `5` |
+| 15 | 0 | 1 | yes | `2` |
+| 8 | 3 | — | — | `-1` |
 
 ---
 

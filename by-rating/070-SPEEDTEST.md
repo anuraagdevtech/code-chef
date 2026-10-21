@@ -2,8 +2,6 @@
 
 > [`SPEEDTEST`](https://www.codechef.com/problems/SPEEDTEST) &middot; difficulty **718** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -105,6 +103,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Equal speeds** ($10/3$ against $20/6$): the cross-products match, so `EQUAL`. The sample's second row, and it needs its own branch.
+- **Cross-multiplication keeps it exact.** Comparing $A/X$ with $B/Y$ as floats invites a rounding error precisely at the tie, which is the case the problem cares about; multiplying out uses only integers.
+- **No overflow risk**: both products are at most $1000 \times 1000 = 10^6$.
+- **Only the ratios matter**, not the raw distances: $10/3$ and $20/6$ are different pairs of numbers with the same speed.
+- **Output case is free.** The statement asks for `ALICE`, `BOB` and `EQUAL` and adds that any mix of upper and lower case is accepted, which is why the sample display shows `Bob` while the solution prints `BOB`.
+
+## Dry run
+
+| $A$ | $X$ | $B$ | $Y$ | Alice $A \cdot Y$ | Bob $B \cdot X$ | output |
+|---:|---:|---:|---:|---:|---:|---|
+| 20 | 6 | 20 | 5 | 100 | 120 | `BOB` |
+| 10 | 3 | 20 | 6 | 60 | 60 | `EQUAL` |
+| 9 | 1 | 1 | 1 | 9 | 1 | `ALICE` |
+
+Row 2 is the exact tie that floating point would put at risk.
 
 ---
 

@@ -15,3 +15,21 @@ This is the canonical "how many whole things fit in a fixed budget" question, an
 Python's `//` is floor division on non-negative integers, so `x // y` is the whole solution. Avoid `int(x / y)` — it routes through a float and begins to misreport once the operands exceed $2^{53}$, even though it happens to agree here.
 
 Sample case 1 is the can't-afford-one case: $5$ rupees against a $10$-rupee chocolate gives $0$, not an error and not $1$. Case 4 is the other extreme, where a unit price of $1$ means the budget is spent exactly.
+
+## Edge cases
+
+- **Cannot afford even one** ($X = 5$, $Y = 10$): the answer is $0$.
+- **An exact multiple** ($X = 35$, $Y = 7$): five items with no change left.
+- **$Y = 1$**: $X$ items.
+- **Change is wasted**, so this rounds *down* — the mirror image of the ceiling problems, where every leftover forced another unit. Here a leftover buys nothing.
+
+## Dry run
+
+| $X$ (money) | $Y$ (price) | $X // Y$ | change | output |
+|---:|---:|---:|---:|---|
+| 5 | 10 | 0 | 5 | `0` |
+| 16 | 5 | 3 | 1 | `3` |
+| 35 | 7 | 5 | 0 | `5` |
+| 100 | 1 | 100 | 0 | `100` |
+
+Row 2 strands one rupee, which is simply lost.

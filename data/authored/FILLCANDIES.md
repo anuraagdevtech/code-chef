@@ -15,3 +15,22 @@ Composing the capacity before dividing is the key move. Dividing by $K$ and then
 It is also worth seeing that the pockets impose no extra constraint. Candies are interchangeable and may be spread freely across pockets, so a bag is simply a container of size $KM$; nothing is wasted by an awkward split. Had each pocket needed to be filled completely, or had candies come in indivisible groups, the pocket structure would have mattered.
 
 Sample case 2 is the ragged one: $3$ candies into bags of capacity $2$ needs $2$ bags, the second holding a single candy.
+
+## Edge cases
+
+- **An exact fit** ($N = 6$ with capacity $2 \times 3 = 6$): one trip, and the rounding must not add a second.
+- **Capacity $1$** ($K = M = 1$): $N$ trips, one candy at a time.
+- **A partial last load** ($N = 25$, capacity $8$): four trips, the last carrying a single candy.
+- **The capacity is the product $K \cdot M$.** Dividing by $K$ or $M$ alone is the trap here — it silently reports $M$ or $K$ times too many trips.
+- Composing the capacity first and rounding up once keeps the arithmetic in integers throughout.
+
+## Dry run
+
+| $N$ | $K$ | $M$ | capacity $KM$ | $\lceil N / KM \rceil$ | output |
+|---:|---:|---:|---:|---:|---|
+| 6 | 2 | 3 | 6 | 1 | `1` |
+| 3 | 1 | 2 | 2 | 2 | `2` |
+| 8 | 4 | 1 | 4 | 2 | `2` |
+| 25 | 4 | 2 | 8 | 4 | `4` |
+
+Row 1 is the exact fit; row 4's fourth trip carries just one candy.
