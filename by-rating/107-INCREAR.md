@@ -2,8 +2,6 @@
 
 > [`INCREAR`](https://www.codechef.com/problems/INCREAR) &middot; difficulty **852** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -114,6 +112,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Already equal** ($5, 5$): zero operations.
+- **$X < Y$**: only the $+1$ move narrows the gap, so it costs $Y - X$ operations — one per unit, which can be the dearer direction in absolute terms even though each step is "cheaper".
+- **$X > Y$ with an even gap** ($7, 3$: gap $4$): exactly $\text{gap}/2$ steps of $+2$.
+- **$X > Y$ with an odd gap** ($5, 2$: gap $3$) costs **three**, not two. The $+2$ steps preserve the gap's parity, so an odd gap can never be closed by them alone: two $+2$ steps overshoot to a gap of $1$ the other way, and a $+1$ then settles it. The formula $(d+3)/2$ encodes those two extra moves, and the sample's fourth row is the case that catches $(d+1)/2$.
+
+## Dry run
+
+| $X$ | $Y$ | direction | gap | reasoning | output |
+|---:|---:|---|---:|---|---|
+| 3 | 4 | $X < Y$ | 1 | one $+1$ on $X$ | `1` |
+| 5 | 5 | equal | 0 | nothing to do | `0` |
+| 7 | 3 | $X > Y$ | 4 | two $+2$ on $Y$ | `2` |
+| 5 | 2 | $X > Y$ | 3 | odd gap: two $+2$ then one $+1$ | `3` |
+| 7 | 12 | $X < Y$ | 5 | five $+1$ on $X$ | `5` |
+
+Row 4 is the parity case that costs an extra move.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`SUPCHEF`](https://www.codechef.com/problems/SUPCHEF) &middot; difficulty **823** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -102,6 +100,22 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Finishing exactly at minute $M$** ($M = 10$, $N = 1$, $K = 10$): too late, because the requirement is *strictly* before. The sample's first row exists to catch `<=`.
+- **Comfortably in time** ($20 < 25$): `YES`.
+- **Over the deadline** ($20$ against $15$): `NO`.
+- **Largest work** ($N = K = 10^4$): the product is $10^8$, well within range alongside $M \leq 10^9$.
+- The total work is the product $N \cdot K$, so both numbers have to be combined before comparing — neither alone decides it.
+
+## Dry run
+
+| $M$ | $N$ | $K$ | work $NK$ | $< M$? | output |
+|---:|---:|---:|---:|:---:|---|
+| 10 | 1 | 10 | 10 | no (equal) | `NO` |
+| 25 | 2 | 10 | 20 | yes | `YES` |
+| 15 | 2 | 10 | 20 | no | `NO` |
 
 ---
 

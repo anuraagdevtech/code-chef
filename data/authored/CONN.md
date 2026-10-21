@@ -19,3 +19,20 @@ $$\text{YES} \iff N \text{ is even, or } N \geq 7$$
 The only `NO` answers are the odd numbers below $7$: $1, 3, 5$. Sample case 2 is $N = 5$, and $N = 1$ and $N = 3$ fail the same way.
 
 This is a small instance of the **Chicken McNugget / Frobenius** problem. Because $\gcd(2, 7) = 1$, all sufficiently large $N$ are representable, and the largest unrepresentable value is $2 \cdot 7 - 2 - 7 = 5$ — exactly matching the analysis above. With $N$ up to $10^8$, a search over $Y$ would be needlessly slow; the closed condition is $O(1)$.
+
+## Edge cases
+
+- **$N = 7$**, the smallest odd value that works: one $7$ and nothing else, so `YES`. This is the boundary.
+- **$N = 5$**, the largest odd failure: too small to contain a $7$, and no combination of even parts can reach an odd total, so `NO`. The sample has both sides of the boundary.
+- **$N = 1, 3$**: `NO` for the same reason.
+- **$N = 2$**: a single $2$, so `YES`.
+- The reasoning in one line: an even $N$ splits entirely into $2$s, while an odd $N$ needs at least one odd part — and the only odd part available is $7$, leaving an even remainder. So odd $N$ works exactly when $N \geq 7$.
+
+## Dry run
+
+| $N$ | parity | reaches 7? | construction | output |
+|---:|---|:---:|---|---|
+| 2 | even | — | $2$ | `YES` |
+| 5 | odd | no | impossible | `NO` |
+| 7 | odd | yes | $7$ | `YES` |
+| 11 | odd | yes | $7 + 2 + 2$ | `YES` |

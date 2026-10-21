@@ -2,8 +2,6 @@
 
 > [`TYRES`](https://www.codechef.com/problems/TYRES) &middot; difficulty **809** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -106,6 +104,21 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$N = 2$** (the minimum): two tyres make exactly one bike, so `YES`.
+- **$N$ a multiple of $4$** ($N = 8$): everything goes into cars with nothing left over, so `NO`.
+- **$N$ is guaranteed even**, so the remainder modulo $4$ is only ever $0$ or $2$ — there is no odd case to reject, and that guarantee is what lets a single modulo decide it.
+- **Largest input** ($N = 1000$, a multiple of $4$): `NO`.
+
+## Dry run
+
+| $N$ | $N \bmod 4$ | leftover tyres | output |
+|---:|---:|---:|---|
+| 8 | 0 | 0 | `NO` |
+| 2 | 2 | 2 | `YES` |
+| 6 | 2 | 2 | `YES` |
 
 ---
 

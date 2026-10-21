@@ -2,8 +2,6 @@
 
 > [`CHFRICH`](https://www.codechef.com/problems/CHFRICH) &middot; difficulty **878** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -109,6 +107,22 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$X$ is guaranteed to divide $B - A$**, so the division is exact and there is no rounding decision to make. Without that guarantee the problem would have to settle whether a partial step counts.
+- **$A < B$ is guaranteed**, so the difference is always positive and no absolute value is needed.
+- **The smallest qualifying gap** (the third row: a gap of $10$ with $X = 10$): one step.
+- **$X = 1$**: the answer is the full difference $B - A$.
+- **Largest gap** ($A = 100$, $B = 200$ with $X = 1$): $100$.
+
+## Dry run
+
+| $A$ | $B$ | gap $B-A$ | $X$ | $\text{gap}/X$ | output |
+|---:|---:|---:|---:|---:|---|
+| 100 | 200 | 100 | 10 | 10 | `10` |
+| 111 | 199 | 88 | 11 | 8 | `8` |
+| 190 | 200 | 10 | 10 | 1 | `1` |
 
 ---
 

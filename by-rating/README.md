@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **93 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **121 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -11,8 +11,8 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | Band | Problems | Written | Most common topic |
 |---|---:|---:|---|
 | [400&ndash;599](#400599) | 34 | 34 | Basic Math (18) |
-| [600&ndash;799](#600799) | 60 | 59 | Basic Math (31) |
-| [800&ndash;999](#800999) | 69 | 0 | Basic Math (26) |
+| [600&ndash;799](#600799) | 60 | 60 | Basic Math (31) |
+| [800&ndash;999](#800999) | 69 | 27 | Basic Math (26) |
 | [1000&ndash;1199](#10001199) | 15 | 0 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 0 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 0 | Greedy (18) |
@@ -125,39 +125,39 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 091 | [Best of Two](091-DICEGAME2.md) `DICEGAME2` | 789 | Basic Math | Total minus the extremum, then compare | yes |
 | 092 | [Degree of Polynomial](092-DPOLY.md) `DPOLY` | 793 | Arrays | Last index satisfying a predicate | yes |
 | 093 | [Recent contest problems](093-RECENTCONT.md) `RECENTCONT` | 793 | Arrays | Counting two categories in one pass | yes |
-| 094 | [The Cooler Dilemma 2](094-WATERCOOLER2.md) `WATERCOOLER2` | 798 | Basic Math | Strict inequality turned into a floor | &ndash; |
+| 094 | [The Cooler Dilemma 2](094-WATERCOOLER2.md) `WATERCOOLER2` | 798 | Basic Math | Strict inequality turned into a floor | yes |
 
 ## 800&ndash;999
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 095 | [Wordle](095-WORDLE.md) `WORDLE` | 804 | Strings | Position-wise comparison | &ndash; |
-| 096 | [Cars and Bikes](096-TYRES.md) `TYRES` | 809 | Number Theory | Remainder modulo 4 | &ndash; |
-| 097 | [Buy 2 Get 1 Free](097-SALE2.md) `SALE2` | 821 | Basic Math | Counting free items in a repeating group | &ndash; |
-| 098 | [Equalizing Numbers](098-EQLZING.md) `EQLZING` | 823 | Number Theory | Finding the invariant | &ndash; |
-| 099 | [The Preparations](099-SUPCHEF.md) `SUPCHEF` | 823 | Basic Math | Strict comparison against a deadline | &ndash; |
-| 100 | [Genes](100-GENE01.md) `GENE01` | 826 | Conditionals & Case Work | Ranking by priority | &ndash; |
-| 101 | [Best of N Sets](101-BESTOFTENNIS.md) `BESTOFTENNIS` | 830 | Basic Math | Inverting a stopping condition | &ndash; |
-| 102 | [Mileage matters](102-MILEAGE.md) `MILEAGE` | 831 | Basic Math | Comparing ratios by cross-multiplication | &ndash; |
-| 103 | [Melt Gold](103-MELTGOLD.md) `MELTGOLD` | 835 | Basic Math | Triangular numbers and their inverse | &ndash; |
-| 104 | [Circular Track](104-LOOP.md) `LOOP` | 838 | Basic Math | Distance on a circle | &ndash; |
-| 105 | [Primality Test](105-PRB01.md) `PRB01` | 850 | Number Theory | Trial division to the square root | &ndash; |
-| 106 | [Summer Heat](106-COCONUT.md) `COCONUT` | 852 | Basic Math | Independent requirements summed | &ndash; |
-| 107 | [Equal Integers](107-INCREAR.md) `INCREAR` | 852 | Basic Math | Asymmetric step sizes | &ndash; |
-| 108 | [Devendra and Water Sports](108-DEVSPORTS.md) `DEVSPORTS` | 859 | Basic Math | Remaining budget against a total cost | &ndash; |
-| 109 | [Construct N](109-CONN.md) `CONN` | 860 | Number Theory | Parity plus a threshold | &ndash; |
-| 110 | [Highest Divisor](110-HDIVISR.md) `HDIVISR` | 860 | Brute Force | Searching a small range downward | &ndash; |
-| 111 | [Problem Category](111-PROBCAT.md) `PROBCAT` | 860 | Conditionals & Case Work | Ordered threshold ladder | &ndash; |
-| 112 | [Car Choice](112-CARCHOICE.md) `CARCHOICE` | 861 | Basic Math | Comparing ratios by cross-multiplication | &ndash; |
-| 113 | [Which Division](113-WHICHDIV.md) `WHICHDIV` | 867 | Conditionals & Case Work | Ordered threshold ladder | &ndash; |
-| 114 | [Badminton Serves](114-BADMINTON.md) `BADMINTON` | 869 | Basic Math | Counting even values in a range | &ndash; |
-| 115 | [Chef and Contest](115-CHEFCONTEST.md) `CHEFCONTEST` | 872 | Basic Math | Weighted penalty, then a three-way comparison | &ndash; |
-| 116 | [Group Assignment](116-GROUPASSGN.md) `GROUPASSGN` | 872 | Basic Math | Pairing by reflection | &ndash; |
-| 117 | [Relativity](117-RELATIVE.md) `RELATIVE` | 872 | Basic Math | Rearranging a given formula | &ndash; |
-| 118 | [Counting Pretty Numbers](118-NUM239.md) `NUM239` | 873 | Number Theory | Counting residues with a prefix function | &ndash; |
-| 119 | [Drunk Alcoholic](119-DRUNKALK.md) `DRUNKALK` | 874 | Basic Math | Net progress per cycle, with an odd remainder | &ndash; |
-| 120 | [Chef On Island](120-CCISLAND.md) `CCISLAND` | 878 | Basic Math | Two independent supply checks | &ndash; |
-| 121 | [Richie Rich](121-CHFRICH.md) `CHFRICH` | 878 | Basic Math | Exact division from a guaranteed divisor | &ndash; |
+| 095 | [Wordle](095-WORDLE.md) `WORDLE` | 804 | Strings | Position-wise comparison | yes |
+| 096 | [Cars and Bikes](096-TYRES.md) `TYRES` | 809 | Number Theory | Remainder modulo 4 | yes |
+| 097 | [Buy 2 Get 1 Free](097-SALE2.md) `SALE2` | 821 | Basic Math | Counting free items in a repeating group | yes |
+| 098 | [Equalizing Numbers](098-EQLZING.md) `EQLZING` | 823 | Number Theory | Finding the invariant | yes |
+| 099 | [The Preparations](099-SUPCHEF.md) `SUPCHEF` | 823 | Basic Math | Strict comparison against a deadline | yes |
+| 100 | [Genes](100-GENE01.md) `GENE01` | 826 | Conditionals & Case Work | Ranking by priority | yes |
+| 101 | [Best of N Sets](101-BESTOFTENNIS.md) `BESTOFTENNIS` | 830 | Basic Math | Inverting a stopping condition | yes |
+| 102 | [Mileage matters](102-MILEAGE.md) `MILEAGE` | 831 | Basic Math | Comparing ratios by cross-multiplication | yes |
+| 103 | [Melt Gold](103-MELTGOLD.md) `MELTGOLD` | 835 | Basic Math | Triangular numbers and their inverse | yes |
+| 104 | [Circular Track](104-LOOP.md) `LOOP` | 838 | Basic Math | Distance on a circle | yes |
+| 105 | [Primality Test](105-PRB01.md) `PRB01` | 850 | Number Theory | Trial division to the square root | yes |
+| 106 | [Summer Heat](106-COCONUT.md) `COCONUT` | 852 | Basic Math | Independent requirements summed | yes |
+| 107 | [Equal Integers](107-INCREAR.md) `INCREAR` | 852 | Basic Math | Asymmetric step sizes | yes |
+| 108 | [Devendra and Water Sports](108-DEVSPORTS.md) `DEVSPORTS` | 859 | Basic Math | Remaining budget against a total cost | yes |
+| 109 | [Construct N](109-CONN.md) `CONN` | 860 | Number Theory | Parity plus a threshold | yes |
+| 110 | [Highest Divisor](110-HDIVISR.md) `HDIVISR` | 860 | Brute Force | Searching a small range downward | yes |
+| 111 | [Problem Category](111-PROBCAT.md) `PROBCAT` | 860 | Conditionals & Case Work | Ordered threshold ladder | yes |
+| 112 | [Car Choice](112-CARCHOICE.md) `CARCHOICE` | 861 | Basic Math | Comparing ratios by cross-multiplication | yes |
+| 113 | [Which Division](113-WHICHDIV.md) `WHICHDIV` | 867 | Conditionals & Case Work | Ordered threshold ladder | yes |
+| 114 | [Badminton Serves](114-BADMINTON.md) `BADMINTON` | 869 | Basic Math | Counting even values in a range | yes |
+| 115 | [Chef and Contest](115-CHEFCONTEST.md) `CHEFCONTEST` | 872 | Basic Math | Weighted penalty, then a three-way comparison | yes |
+| 116 | [Group Assignment](116-GROUPASSGN.md) `GROUPASSGN` | 872 | Basic Math | Pairing by reflection | yes |
+| 117 | [Relativity](117-RELATIVE.md) `RELATIVE` | 872 | Basic Math | Rearranging a given formula | yes |
+| 118 | [Counting Pretty Numbers](118-NUM239.md) `NUM239` | 873 | Number Theory | Counting residues with a prefix function | yes |
+| 119 | [Drunk Alcoholic](119-DRUNKALK.md) `DRUNKALK` | 874 | Basic Math | Net progress per cycle, with an odd remainder | yes |
+| 120 | [Chef On Island](120-CCISLAND.md) `CCISLAND` | 878 | Basic Math | Two independent supply checks | yes |
+| 121 | [Richie Rich](121-CHFRICH.md) `CHFRICH` | 878 | Basic Math | Exact division from a guaranteed divisor | yes |
 | 122 | [Find the Direction](122-FACEDIR.md) `FACEDIR` | 880 | Number Theory | Cyclic state via modulo | &ndash; |
 | 123 | [Farmers League](123-LEAGUE.md) `LEAGUE` | 883 | Combinatorics | Extremal construction in a round robin | &ndash; |
 | 124 | [Utkarsh and Placement tests](124-UTKPLC.md) `UTKPLC` | 886 | Conditionals & Case Work | Ranking by a given priority order | &ndash; |

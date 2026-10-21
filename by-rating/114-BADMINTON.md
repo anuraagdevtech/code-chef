@@ -2,8 +2,6 @@
 
 > [`BADMINTON`](https://www.codechef.com/problems/BADMINTON) &middot; difficulty **869** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -106,6 +104,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$P = 0$**: the answer is $1$, the serve made at a score of zero. The constraints allow $P = 0$, and the $+1$ is exactly what covers it — dropping it returns $0$.
+- **$P$ even** ($P = 2$: scores $0$ and $2$): two serves.
+- **$P$ odd** ($P = 9$: scores $0, 2, 4, 6, 8$): five serves, since $9$ itself is not even.
+- **Largest input** ($P = 10^9$): $5 \times 10^8 + 1$.
+- The count is of *even values in $[0, P]$ inclusive*, which is $\lfloor P/2 \rfloor + 1$ — the inclusive zero is what makes it a $+1$ rather than a plain halving.
+
+## Dry run
+
+| $P$ | even scores $0, 2, \ldots$ | count $P//2 + 1$ | output |
+|---:|---|---:|---|
+| 2 | $0, 2$ | 2 | `2` |
+| 9 | $0, 2, 4, 6, 8$ | 5 | `5` |
+| 53 | $0, 2, \ldots, 52$ | 27 | `27` |
+| 746 | $0, 2, \ldots, 746$ | 374 | `374` |
 
 ---
 

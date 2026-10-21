@@ -2,8 +2,6 @@
 
 > [`EQLZING`](https://www.codechef.com/problems/EQLZING) &middot; difficulty **823** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -99,6 +97,20 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Already equal** ($3, 3$): `Yes` with no moves needed.
+- **Both odd** ($1, 3$): the sum $4$ is even, so `Yes` — oddness of the individual values is not the test.
+- **One odd, one even** ($1, 2$): the sum is odd, so `No`.
+- **The sum is invariant** under every move, so the only reachable equal pair is $\frac{A+B}{2}$ each, and that has to be a whole number. Parity of the *total* is therefore the entire question, and no simulation is needed.
+
+## Dry run
+
+| $A$ | $B$ | $A + B$ | even? | target each | output |
+|---:|---:|---:|:---:|---:|---|
+| 3 | 3 | 6 | yes | 3 | `Yes` |
+| 1 | 2 | 3 | no | — | `No` |
 
 ---
 

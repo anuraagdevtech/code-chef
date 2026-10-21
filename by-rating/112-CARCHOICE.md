@@ -2,8 +2,6 @@
 
 > [`CARCHOICE`](https://www.codechef.com/problems/CARCHOICE) &middot; difficulty **861** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -115,6 +113,22 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A tie** ($7, 2, 7, 2$): the answer is `0`, so the equality branch is needed.
+- **The output encoding is easy to invert**: `-1` means the *first* car is cheaper, `1` the second, `0` neither. Swapping them passes the tie row and fails both others.
+- **Cost per kilometre is $y/x$**, so a car with a larger absolute cost can still be cheaper per km — comparing $y_1$ with $y_2$ alone is wrong.
+- **Cross-multiplication keeps the tie exact**, where float division would risk a rounding error at precisely the case that distinguishes `0` from $\pm 1$.
+- All values are at most $50$, so the products stay small.
+
+## Dry run
+
+| $x_1$ | $x_2$ | $y_1$ | $y_2$ | car 1 $y_1 x_2$ | car 2 $y_2 x_1$ | cheaper | output |
+|---:|---:|---:|---:|---:|---:|---|---|
+| 10 | 5 | 3 | 20 | 15 | 200 | first | `-1` |
+| 7 | 2 | 7 | 2 | 14 | 14 | neither | `0` |
+| 1 | 5 | 3 | 2 | 15 | 2 | second | `1` |
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`MILEAGE`](https://www.codechef.com/problems/MILEAGE) &middot; difficulty **831** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -115,6 +113,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A tie** ($3 \times 40 = 15 \times 8 = 120$): `ANY`, so the equality branch is needed. The sample's third row.
+- **$N$ cancels out entirely.** Both costs scale with the distance, so it never affects the comparison — and multiplying it in first would needlessly inflate the operands in a fixed-width language.
+- **Equal prices, different mileages** (the second row has $x = y = 12$): the mileage alone decides, so comparing prices without mileage is wrong.
+- **Cross-multiplication keeps it exact**: comparing $x/a$ against $y/b$ as floats puts the tie row at risk of a rounding error.
+- All values are at most $100$, so the products stay tiny.
+
+## Dry run
+
+| $x$ | $y$ | $a$ | $b$ | petrol $x \cdot b$ | diesel $y \cdot a$ | cheaper | output |
+|---:|---:|---:|---:|---:|---:|---|---|
+| 10 | 8 | 2 | 4 | 40 | 16 | diesel | `DIESEL` |
+| 12 | 12 | 4 | 3 | 36 | 48 | petrol | `PETROL` |
+| 3 | 15 | 8 | 40 | 120 | 120 | neither | `ANY` |
+| 9 | 9 | 2 | 9 | 81 | 18 | diesel | `DIESEL` |
+
+$N$ appears in none of the columns, because it cancels.
 
 ---
 

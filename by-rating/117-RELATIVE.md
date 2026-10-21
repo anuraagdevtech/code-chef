@@ -2,8 +2,6 @@
 
 > [`RELATIVE`](https://www.codechef.com/problems/RELATIVE) &middot; difficulty **872** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -104,6 +102,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$2g$ is guaranteed to divide $c^2$**, so the division is exact and no rounding decision arises. Without that guarantee the problem would have to say which way to round.
+- **$g = 1$**: the height is $c^2/2$.
+- **Largest $c$** ($3000$): $c^2 = 9 \times 10^6$, comfortably in range.
+- **The rearrangement is the whole content.** From $v^2 = 2gH$ with $v = c$ the answer is $H = c^2/(2g)$; multiplying instead of dividing, or forgetting the factor of $2$, gives a plausible-looking but wrong number — and the sample's last two rows differ only in $g$, which catches it.
+
+## Dry run
+
+| $g$ | $c$ | $c^2$ | $2g$ | $c^2/(2g)$ | output |
+|---:|---:|---:|---:|---:|---|
+| 7 | 1400 | 1960000 | 14 | 140000 | `140000` |
+| 5 | 1000 | 1000000 | 10 | 100000 | `100000` |
+| 10 | 1000 | 1000000 | 20 | 50000 | `50000` |
+
+Rows 2 and 3 share $c$ and differ only through $g$.
 
 ---
 

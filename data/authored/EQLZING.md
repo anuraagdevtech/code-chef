@@ -17,3 +17,17 @@ Looking for a quantity the operations cannot change is the standard opening move
 Note that $d$ is unrestricted: it may be negative, zero, or larger than either number, and the problem never requires the values to stay positive. That generality is what makes a single move always sufficient; a constraint keeping both numbers non-negative would make this a harder question.
 
 Since $A$ and $B$ have the same parity exactly when their sum is even, `(a + b) % 2 == 0` and `a % 2 == b % 2` are interchangeable here. Sample case 1 has equal numbers already ($d = 0$ works); sample case 2 has an odd sum and is impossible.
+
+## Edge cases
+
+- **Already equal** ($3, 3$): `Yes` with no moves needed.
+- **Both odd** ($1, 3$): the sum $4$ is even, so `Yes` — oddness of the individual values is not the test.
+- **One odd, one even** ($1, 2$): the sum is odd, so `No`.
+- **The sum is invariant** under every move, so the only reachable equal pair is $\frac{A+B}{2}$ each, and that has to be a whole number. Parity of the *total* is therefore the entire question, and no simulation is needed.
+
+## Dry run
+
+| $A$ | $B$ | $A + B$ | even? | target each | output |
+|---:|---:|---:|:---:|---:|---|
+| 3 | 3 | 6 | yes | 3 | `Yes` |
+| 1 | 2 | 3 | no | — | `No` |

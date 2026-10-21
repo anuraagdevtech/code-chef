@@ -17,3 +17,23 @@ The thing to notice is what this problem deliberately leaves out. Real Wordle ha
 Sample case 1 makes that concrete: `ABCDE` against `EDCBA` shares every letter, yet only the middle `C` sits in the right place, so the mask is `BBGBB` rather than all green. An implementation that checked membership with `in` instead of comparing positions would wrongly report five matches.
 
 Both strings are guaranteed to be length $5$ and uppercase, so no validation or case folding is needed. Each test case spans two lines, read as two consecutive tokens.
+
+## Edge cases
+
+- **Nothing in common** (`ABCDE` against `EDCBA`): only the middle letter aligns, giving `BBGBB` — note that `A` and `E` both *appear* in the other word, yet score black, because this variant has no "right letter, wrong place" state.
+- **Repeated letters** (`START` against `STUNT`): the `T` at index $1$ matches and the `T` at index $4$ matches, each judged on its own. Because there is no yellow state, duplicates need no tallying — the usual Wordle difficulty disappears.
+- **Identical words**: all `G`.
+- **No match anywhere**: all `B`.
+- Both strings are exactly five characters, so no length handling is needed.
+
+## Dry run
+
+`START` against the guess `STUNT`, index by index:
+
+| index | 0 | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|---|
+| answer | `S` | `T` | `A` | `R` | `T` |
+| guess | `S` | `T` | `U` | `N` | `T` |
+| result | `G` | `G` | `B` | `B` | `G` |
+
+Output `GGBBG`.

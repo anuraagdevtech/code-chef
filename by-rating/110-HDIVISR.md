@@ -2,8 +2,6 @@
 
 > [`HDIVISR`](https://www.codechef.com/problems/HDIVISR) &middot; difficulty **860** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -107,6 +105,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$d = 1$ always divides**, so the search can never come up empty — a prime above $10$ such as $11$ or $13$ returns $1$.
+- **Counting downward is essential.** The first divisor found is then the largest; iterating $1$ upward and returning the first hit would answer $1$ for every input.
+- **$N = 10$**: the answer is $10$, the top of the search range.
+- **$N = 2$** (the minimum): $2$.
+- The range is fixed at $1 \ldots 10$ regardless of $N$, so this is a constant-time search of at most ten tests.
+
+## Dry run
+
+Sample 1, $N = 91$, counting down:
+
+| $d$ | 10 | 9 | 8 | 7 |
+|---:|---:|---:|---:|---:|
+| $91 \bmod d$ | 1 | 1 | 3 | **0** |
+
+The first zero is at $d = 7$, so the output is `7`. Sample 2, $N = 24$, stops earlier: $10$ and $9$ fail, $8$ divides, so `8`.
 
 ---
 

@@ -20,3 +20,21 @@ The bound should be computed as `math.isqrt(n)` rather than `int(n ** 0.5)`, for
 With $T \leq 20$ and $N \leq 10^5$ this is instant. For many queries over a fixed range, a Sieve of Eratosthenes precomputing all primes up to $10^5$ once would be the better structure — which is what the problem's own tags point at.
 
 The expected output is lowercase `yes` / `no`.
+
+## Edge cases
+
+- **$N = 1$**: not prime, and it needs an explicit guard — trial division alone finds no divisor and would wrongly say yes.
+- **$N = 2$**: prime, and the only even one. The `n < 4` shortcut passes it before the even test can reject it, which is the ordering that matters.
+- **$N = 4$**: the smallest composite, caught by the even test.
+- **A large prime** ($99991$): the loop runs up to $\lfloor\sqrt{99991}\rfloor = 316$, so roughly $157$ odd divisors are tried — the square-root bound is what keeps this cheap.
+- Testing only odd divisors after the even check halves the work, and stopping at $\sqrt N$ is safe because a composite always has a factor at or below its square root.
+
+## Dry run
+
+| $N$ | guards | divisors tried | first divisor found | output |
+|---:|---|---|---:|---|
+| 23 | odd, $\geq 4$ | $3$ | none to $\lfloor\sqrt{23}\rfloor = 4$ | `yes` |
+| 13 | odd, $\geq 4$ | $3$ | none to $3$ | `yes` |
+| 20 | even | — | $2$ | `no` |
+| 1000 | even | — | $2$ | `no` |
+| 99991 | odd, $\geq 4$ | $3, 5, \ldots, 315$ | none | `yes` |

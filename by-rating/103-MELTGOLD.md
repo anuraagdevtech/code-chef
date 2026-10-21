@@ -2,8 +2,6 @@
 
 > [`MELTGOLD`](https://www.codechef.com/problems/MELTGOLD) &middot; difficulty **835** &middot; time limit **1.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -124,6 +122,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The smallest gap** ($d = 1$): one step, since $1 \cdot 2/2 = 1$ already covers it.
+- **$d$ exactly triangular** ($d = 3 \to k = 2$, $d = 6 \to k = 3$): the closed-form estimate lands exactly and the correction loop never fires.
+- **The estimate can come out one too low**, which is why the `while` loop follows it: inverting $k(k+1)/2 \geq d$ through an integer square root is off by one near the boundary, and the loop repairs that without any floating point.
+- **$Y < X$ is guaranteed**, so $d \geq 1$ and there is no zero case.
+- **Largest gap** ($d \approx 10^5$): $k \approx 446$, so the loop runs at most a step or two.
+
+## Dry run
+
+| $X$ | $Y$ | gap $d$ | triangular numbers | smallest $k$ with $\frac{k(k+1)}{2} \geq d$ | output |
+|---:|---:|---:|---|---:|---|
+| 3 | 2 | 1 | $1, 3, 6, \ldots$ | 1 | `1` |
+| 5 | 3 | 2 | $1, 3, 6, \ldots$ | 2 | `2` |
+| 10 | 5 | 5 | $1, 3, 6, \ldots$ | 3 | `3` |
+
+Row 3 needs $6 \geq 5$, so three steps rather than the two that $3$ would allow.
 
 ---
 

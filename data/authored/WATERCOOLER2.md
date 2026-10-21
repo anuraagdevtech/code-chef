@@ -21,3 +21,17 @@ Sample case 1 confirms the non-dividing case: $Y = 12$ at $X = 5$ gives $\lfloor
 The "output $0$ if Chef should not rent at all" instruction needs no separate branch — the formula already returns $0$ whenever $X \geq Y$, since $Y - 1 < X$ then.
 
 With $X, Y$ up to $10^9$ the arithmetic stays well inside integer range, and Python has no limit regardless.
+
+## Edge cases
+
+- **$Y$ an exact multiple of $X$** ($X = Y = 5$): the answer is $0$, because $1 \times 5 < 5$ is false. The $-1$ in $(Y-1)//X$ is exactly what makes the inequality strict, and the sample's second row catches an implementation that drops it.
+- **$Y < X$**: nothing fits, so $0$.
+- **Largest inputs** ($10^9$): no overflow concern in Python, and the expression stays in integers throughout.
+- Writing $\lfloor (Y-1)/X \rfloor$ rather than $\lfloor Y/X \rfloor$ is the whole content: the first counts multiples *strictly below* $Y$, the second includes $Y$ itself.
+
+## Dry run
+
+| $X$ | $Y$ | $Y - 1$ | $//\,X$ | check | output |
+|---:|---:|---:|---:|---|---|
+| 5 | 12 | 11 | 2 | $2 \times 5 = 10 < 12$ | `2` |
+| 5 | 5 | 4 | 0 | $1 \times 5 = 5 \not< 5$ | `0` |

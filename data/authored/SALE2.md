@@ -15,3 +15,22 @@ The phrase "at least $N$ items" invites a worry: could buying *more* than $N$ ev
 The samples check both residues. $N = 3$ gives one free item, paying for $2$; $N = 4$ still gives one free, paying for $3$; $N = 6$ gives two free, paying for $4$. The free count advances only on complete blocks, which is exactly what the floor expresses.
 
 Multiplying by $X$ at the end keeps everything in integers — the per-item price never participates in the rounding.
+
+## Edge cases
+
+- **Exactly one block** ($N = 3$): one item free, two paid.
+- **$N = 4$ and $N = 5$**: still only one free, since a partial block earns nothing — both sample rows confirm the step does not move until $N = 6$.
+- **$N = 6$**: two free.
+- **$N = 1$ or $2$**: nothing free.
+- The price multiplies only *after* counting paid items; multiplying first and then discounting would need the same division anyway.
+
+## Dry run
+
+| $N$ | free $N//3$ | paid | $X$ | total | output |
+|---:|---:|---:|---:|---:|---|
+| 3 | 1 | 2 | 4 | 8 | `8` |
+| 4 | 1 | 3 | 2 | 6 | `6` |
+| 5 | 1 | 4 | 3 | 12 | `12` |
+| 6 | 2 | 4 | 1 | 4 | `4` |
+
+Rows 2 and 3 show the free count stalling at one across $N = 4, 5$.

@@ -15,3 +15,19 @@ Sample case 3 is the straightforward overrun ($20$ minutes of episodes against a
 On magnitudes: $M$ reaches $10^9$ while $N$ and $K$ each reach $10^4$, so the product $NK$ can reach $10^8$ — comfortably inside a 32-bit signed integer, though a C solution multiplying before checking would want to be sure. In Python the question does not arise.
 
 With $T$ up to $10^4$, reading the stream in one go and writing one joined block is worth doing; the arithmetic itself is free.
+
+## Edge cases
+
+- **Finishing exactly at minute $M$** ($M = 10$, $N = 1$, $K = 10$): too late, because the requirement is *strictly* before. The sample's first row exists to catch `<=`.
+- **Comfortably in time** ($20 < 25$): `YES`.
+- **Over the deadline** ($20$ against $15$): `NO`.
+- **Largest work** ($N = K = 10^4$): the product is $10^8$, well within range alongside $M \leq 10^9$.
+- The total work is the product $N \cdot K$, so both numbers have to be combined before comparing — neither alone decides it.
+
+## Dry run
+
+| $M$ | $N$ | $K$ | work $NK$ | $< M$? | output |
+|---:|---:|---:|---:|:---:|---|
+| 10 | 1 | 10 | 10 | no (equal) | `NO` |
+| 25 | 2 | 10 | 20 | yes | `YES` |
+| 15 | 2 | 10 | 20 | no | `NO` |

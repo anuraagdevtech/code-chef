@@ -15,3 +15,18 @@ In words: an even number that is *not* a multiple of four leaves exactly two tyr
 The evenness guarantee is what makes this clean, and it is worth seeing why. Without it, $N = 7$ would leave $3$ tyres, still enough for one bike, and the test would have to be $N \bmod 4 \geq 2$. That more general form is also correct here, just redundant.
 
 The samples cover both residues: $N = 8$ is $0 \bmod 4$ and yields no bike, while $N = 2$ and $N = 6$ are both $2 \bmod 4$ and yield one. Note $N = 2$ produces zero cars and a single bike — building cars first does not mean a car is always built.
+
+## Edge cases
+
+- **$N = 2$** (the minimum): two tyres make exactly one bike, so `YES`.
+- **$N$ a multiple of $4$** ($N = 8$): everything goes into cars with nothing left over, so `NO`.
+- **$N$ is guaranteed even**, so the remainder modulo $4$ is only ever $0$ or $2$ — there is no odd case to reject, and that guarantee is what lets a single modulo decide it.
+- **Largest input** ($N = 1000$, a multiple of $4$): `NO`.
+
+## Dry run
+
+| $N$ | $N \bmod 4$ | leftover tyres | output |
+|---:|---:|---:|---|
+| 8 | 0 | 0 | `NO` |
+| 2 | 2 | 2 | `YES` |
+| 6 | 2 | 2 | `YES` |

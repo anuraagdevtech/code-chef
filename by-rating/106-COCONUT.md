@@ -2,8 +2,6 @@
 
 > [`COCONUT`](https://www.codechef.com/problems/COCONUT) &middot; difficulty **852** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -108,6 +106,21 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Both divisions are guaranteed exact** ($x_a$ divides $X_a$ and $x_b$ divides $X_b$), so no rounding decision arises. Without that guarantee each would need a ceiling, since a part-used coconut still has to be bought.
+- **The two requirements are independent**: water and pulp come from different coconuts, so the counts *add*. Taking the maximum — as one would for two demands met from the same source — under-orders.
+- **The same total from different splits**: the first two sample rows both answer $13$ through different numbers.
+- The bounds keep every quantity positive, so neither term can vanish.
+
+## Dry run
+
+| $x_a$ | $x_b$ | $X_a$ | $X_b$ | for water $X_a/x_a$ | for pulp $X_b/x_b$ | total | output |
+|---:|---:|---:|---:|---:|---:|---:|---|
+| 100 | 400 | 1000 | 1200 | 10 | 3 | 13 | `13` |
+| 100 | 450 | 1000 | 1350 | 10 | 3 | 13 | `13` |
+| 150 | 400 | 1200 | 1200 | 8 | 3 | 11 | `11` |
 
 ---
 

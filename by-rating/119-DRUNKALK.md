@@ -2,8 +2,6 @@
 
 > [`DRUNKALK`](https://www.codechef.com/problems/DRUNKALK) &middot; difficulty **874** &middot; time limit **0.5 - 1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -113,6 +111,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$k = 0$**: the answer is $0$, and the constraints do allow it.
+- **$k$ even**: exactly $k$, since each two-second cycle of $+3$ then $-1$ nets $+2$ — the position equals the elapsed time.
+- **$k$ odd**: $k + 2$. The final second is a $+3$ with no matching $-1$ yet, so the walker is caught mid-stagger two units ahead of the steady rate. For $k = 1$ that is $3$, and for $k = 3$ it is $+3, -1, +3 = 5$.
+- **Largest input** ($k = 10^5$, with the sum of $k$ bounded at $10^6$): the closed form means the bound never bites, where simulating second by second would.
+
+## Dry run
+
+| $k$ | parity | steps | position | output |
+|---:|---|---|---:|---|
+| 5 | odd | $+3, -1, +3, -1, +3$ | 7 | `7` |
+| 11 | odd | five full cycles then $+3$ | 13 | `13` |
+| 23 | odd | eleven full cycles then $+3$ | 25 | `25` |
+
+All three samples are odd; an even $k$ such as $4$ would give $+3,-1,+3,-1 = 4$.
 
 ---
 

@@ -21,3 +21,21 @@ Rather than taking a float square root and rounding — where a value landing a 
 A plain loop adding $1, 2, 3, \ldots$ until the target is reached would also be fast enough here, since $t$ never exceeds about $450$ when $d \leq 10^5$. But with $T$ up to $10^5$ that is $10^7$ iterations in Python, which is the kind of thing that turns a correct solution into a timeout. The closed form avoids the question.
 
 The note that only end-of-minute temperatures count is what makes this a discrete search over integers rather than a continuous one. Checking sample 3: $d = 5$, and the triangular numbers run $1, 3, 6$ — so $t = 3$ is the first to reach it.
+
+## Edge cases
+
+- **The smallest gap** ($d = 1$): one step, since $1 \cdot 2/2 = 1$ already covers it.
+- **$d$ exactly triangular** ($d = 3 \to k = 2$, $d = 6 \to k = 3$): the closed-form estimate lands exactly and the correction loop never fires.
+- **The estimate can come out one too low**, which is why the `while` loop follows it: inverting $k(k+1)/2 \geq d$ through an integer square root is off by one near the boundary, and the loop repairs that without any floating point.
+- **$Y < X$ is guaranteed**, so $d \geq 1$ and there is no zero case.
+- **Largest gap** ($d \approx 10^5$): $k \approx 446$, so the loop runs at most a step or two.
+
+## Dry run
+
+| $X$ | $Y$ | gap $d$ | triangular numbers | smallest $k$ with $\frac{k(k+1)}{2} \geq d$ | output |
+|---:|---:|---:|---|---:|---|
+| 3 | 2 | 1 | $1, 3, 6, \ldots$ | 1 | `1` |
+| 5 | 3 | 2 | $1, 3, 6, \ldots$ | 2 | `2` |
+| 10 | 5 | 5 | $1, 3, 6, \ldots$ | 3 | `3` |
+
+Row 3 needs $6 \geq 5$, so three steps rather than the two that $3$ would allow.

@@ -2,8 +2,6 @@
 
 > [`GROUPASSGN`](https://www.codechef.com/problems/GROUPASSGN) &middot; difficulty **872** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -104,6 +102,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The extremes pair with each other**: $X = 1$ gets $2N$, and $X = 2N$ gets $1$.
+- **The middle pair** ($X = N$ and $X = N+1$): $2N + 1 - N = N + 1$ and vice versa, so the two central students are partners.
+- **$N = 1$**: only students $1$ and $2$ exist and they pair together.
+- **The map is an involution** — applying it twice returns $X$ — which is a useful check that the formula is the right reflection.
+- **Largest input** ($N = 10^8$): $2N + 1 \approx 2 \times 10^8$, no overflow concern.
+
+## Dry run
+
+| $N$ | $X$ | pair total $2N+1$ | partner | output |
+|---:|---:|---:|---:|---|
+| 2 | 2 | 5 | 3 | `3` |
+| 3 | 1 | 7 | 6 | `6` |
+| 3 | 4 | 7 | 3 | `3` |
+
+Rows 2 and 3 are two different students in the same group of six.
 
 ---
 

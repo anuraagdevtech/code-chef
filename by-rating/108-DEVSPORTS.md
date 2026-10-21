@@ -2,8 +2,6 @@
 
 > [`DEVSPORTS`](https://www.codechef.com/problems/DEVSPORTS) &middot; difficulty **859** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -103,6 +101,23 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Spending down to exactly zero** (the third row leaves $10000$ against a cost of $10000$): still affordable, so the comparison is non-strict.
+- **Nothing spent yet** ($Y = 0$): the whole budget is available.
+- **Everything already spent** ($Y = Z$): nothing remains, and since each activity costs at least $100$ the answer is `NO`.
+- **All three activities are required**, so their costs *add*. Comparing the remaining budget against the largest single cost would pass the first sample row wrongly.
+
+## Dry run
+
+| $Z$ | $Y$ | left $Z-Y$ | $A+B+C$ | affordable? | output |
+|---:|---:|---:|---:|:---:|---|
+| 25000 | 22000 | 3000 | 3200 | no | `NO` |
+| 10000 | 7000 | 3000 | 900 | yes | `YES` |
+| 15000 | 5000 | 10000 | 10000 | yes (equal) | `YES` |
+
+Row 3 spends the remainder exactly.
 
 ---
 

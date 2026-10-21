@@ -15,3 +15,20 @@ The comparison is inclusive: spending his remaining money down to exactly zero s
 Sample case 1 is the near miss — $3000$ left against $3200$ of sports — and shows that the already-spent $Y$ must be subtracted first. Comparing $Z$ against the total instead would wrongly pass every case here, since $Z \geq 10^4$ while the three sports cost at most $15000$ but usually far less.
 
 All quantities are small integers, so there is nothing to watch for numerically; the whole problem is reading the five values in the right order, $Z, Y, A, B, C$.
+
+## Edge cases
+
+- **Spending down to exactly zero** (the third row leaves $10000$ against a cost of $10000$): still affordable, so the comparison is non-strict.
+- **Nothing spent yet** ($Y = 0$): the whole budget is available.
+- **Everything already spent** ($Y = Z$): nothing remains, and since each activity costs at least $100$ the answer is `NO`.
+- **All three activities are required**, so their costs *add*. Comparing the remaining budget against the largest single cost would pass the first sample row wrongly.
+
+## Dry run
+
+| $Z$ | $Y$ | left $Z-Y$ | $A+B+C$ | affordable? | output |
+|---:|---:|---:|---:|:---:|---|
+| 25000 | 22000 | 3000 | 3200 | no | `NO` |
+| 10000 | 7000 | 3000 | 900 | yes | `YES` |
+| 15000 | 5000 | 10000 | 10000 | yes (equal) | `YES` |
+
+Row 3 spends the remainder exactly.
