@@ -638,6 +638,35 @@ def _gcdprf(inp, got):
     return True, "valid"
 
 
+def _constrray(inp, got):
+    """CONSTRRAY: any array whose prefix/suffix sums alternate as required."""
+    toks = inp.split()
+    t = int(toks[0])
+    lines = [ln for ln in got.strip().splitlines() if ln.strip()]
+    if len(lines) != t:
+        return False, f"expected {t} lines, got {len(lines)}"
+    for i, line in enumerate(lines):
+        n = int(toks[1 + i])
+        vals = [int(x) for x in line.split()]
+        if vals == [-1]:
+            # P_i - S_i equals P_{N-i} - S_{N-i}, so N must be even.
+            if n % 2:
+                continue
+            return False, f"n={n}: -1 but an array exists"
+        if n % 2:
+            return False, f"n={n}: gave an array but none exists"
+        if len(vals) != n or any(abs(v) > 10 ** 9 for v in vals):
+            return False, "wrong length or out of range"
+        for k in range(1, n):
+            pre = sum(vals[:k])
+            suf = sum(vals[n - k:])
+            if k % 2 and not pre > suf:
+                return False, f"n={n}: P_{k} = {pre} is not above S_{k} = {suf}"
+            if k % 2 == 0 and not pre < suf:
+                return False, f"n={n}: P_{k} = {pre} is not below S_{k} = {suf}"
+    return True, "valid"
+
+
 CHECKERS = {
     "AVGPERM": _avgperm,
     "AVGARR": _avgarr,
@@ -664,4 +693,5 @@ CHECKERS = {
     "MXMEDIAN": _mxmedian,
     "DIFSTR": _difstr,
     "GCDPRF": _gcdprf,
+    "CONSTRRAY": _constrray,
 }

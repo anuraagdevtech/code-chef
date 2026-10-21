@@ -2,7 +2,7 @@
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
 
-**399 of 486 solved problems documented.**
+**406 of 486 solved problems documented.**
 
 ## Roadmap progress
 
@@ -12,10 +12,10 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
 | 3 | Jump from 2* to 3* | 96 | 96 | 84 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 11 |
+| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 18 |
 | 4 | Rise from 3* to 4* | 1 | 118 | 0 |
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **399** |
+| | **Total** | **502** | **761** | **406** |
 
 The roadmap counts 502 solved entries across its seven courses; 486 of those are distinct problems (a few appear in two courses) and that is what is documented here.
 
@@ -26,12 +26,12 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 1 | 100 | 100 |
 | 2 | 100 | 100 |
 | 3 | 100 | 100 |
-| 4 | 100 | 99 |
-| 5 | 86 | 0 |
+| 4 | 100 | 100 |
+| 5 | 86 | 6 |
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (38)</summary>
+<details open><summary><b>Arrays</b> (39)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -73,6 +73,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 343 | [ChefTown Parade](docs/arrays/CHEFTOWN.md) | 1882 | Sliding-window maximum and minimum with deques | $O(N)$ |
 | 352 | [Count Subarrays](docs/arrays/SUBINC.md) | 1478 | Counting subarrays by maximal runs | $O(N)$ per test case |
 | 363 | [Maximal crosses](docs/arrays/MAXCROSS.md) | 1570 | Maximal runs along rows, columns and both diagonals | $O(n^2)$ |
+| 406 | [Charges](docs/arrays/CHARGES.md) | 1645 | Local update of an adjacency count | $O(N + K)$ per test case |
 
 </details>
 
@@ -234,7 +235,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (11)</summary>
+<details open><summary><b>Combinatorics</b> (12)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -249,6 +250,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 356 | [Chef and Good Subsequences](docs/combinatorics/GDSUB.md) | 1999 | Elementary symmetric polynomials by DP | $O(m \min(K, m))$ after an $O(N)$ tally, where $m$ is the number of distinct values |
 | 375 | [Nice Pairs ](docs/combinatorics/NPAIRS.md) | 1564 | Counting pairs that share an invariant key | $O(N)$ per test case |
 | 398 | [MaxEdges](docs/combinatorics/MAXEDGES.md) | 1618 | Complete layered DAG minus the forbidden pairs | $O(1)$ per test case |
+| 403 | [Bitwise Tuples](docs/combinatorics/BITTUP.md) | 1634 | Independent bits, each a complement count | $O(\log N + \log M)$ per test case |
 
 </details>
 
@@ -283,7 +285,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Constructive</b> (18)</summary>
+<details open><summary><b>Constructive</b> (19)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -305,6 +307,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 382 | [Increasing Decreasing](docs/constructive/INCRDEC.md) | 1557 | Multiplicity bounds for a bitonic arrangement | $O(N \log N)$ per test case |
 | 393 | [Different String](docs/constructive/DIFSTR.md) | 1612 | Cantor diagonalisation | $O(N)$ per test case |
 | 397 | [GCD of Prefixes](docs/constructive/GCDPRF.md) | 1617 | Divisibility chain, realised by the array itself | $O(N \log A)$ per test case |
+| 400 | [Construct Array](docs/constructive/CONSTRRAY.md) | 1624 | A symmetry that forces the parity of N | $O(N)$ per test case |
 
 </details>
 
@@ -342,7 +345,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Greedy</b> (43)</summary>
+<details open><summary><b>Greedy</b> (44)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -389,14 +392,16 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 391 | [Chain of Doughnuts](docs/greedy/DONUTS.md) | 1611 | Trading sacrificed chains against links needed | $O(M \log M)$ per test case |
 | 392 | [Bench Press](docs/greedy/BENCHP.md) | 1611 | Frequency pairing for a symmetric load | $O(N)$ per test case |
 | 394 | [Maximum Subarray ](docs/greedy/MAXSUBARR.md) | 1613 | Kadane plus a freely orderable block | $O(N + M)$ per test case |
+| 401 | [Zebra Crossing](docs/greedy/ZEBRA.md) | 1626 | Earliest hops, then one long final leap | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Heaps</b> (1)</summary>
+<details open><summary><b>Heaps</b> (2)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 339 | [Lowest Sum](docs/heaps/LOWSUM.md) | 2302 | $k$ smallest pairwise sums | $O(K \log K + n \log n)$ per test case, where $n = \max q_i$ |
+| 404 | [XOR with smallest element](docs/heaps/SMALLXOR.md) | 1635 | Detecting the two-cycle that ends the process | $O(N \log N)$ per test case |
 
 </details>
 
@@ -490,7 +495,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 
 </details>
 
-<details open><summary><b>Simulation</b> (5)</summary>
+<details open><summary><b>Simulation</b> (6)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -499,10 +504,11 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 235 | [Full Barrier Alchemist](docs/simulation/PIPSQUIK.md) | 1426 | Walking a sequence with a consumable resource | $O(N)$ per test case |
 | 278 | [When to take medicine](docs/simulation/MEDIC.md) | 1522 | Where a parity rule breaks at month boundaries | $O(1)$ per test case |
 | 334 | [Sudhanva and Books](docs/simulation/SUDBOOKS.md) | 1300 | A stack, with an empty-pop guard | $O(1)$ per query |
+| 402 | [UEFA Champions League](docs/simulation/UCL.md) | 1633 | Building a league table and sorting by two keys | $O(1)$ per test case (12 fixed matches) |
 
 </details>
 
-<details open><summary><b>Sorting</b> (24)</summary>
+<details open><summary><b>Sorting</b> (25)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -530,6 +536,7 @@ The roadmap counts 502 solved entries across its seven courses; 486 of those are
 | 354 | [Chef and Frogs](docs/sorting/FROGV.md) | 1668 | Connected components from gaps in sorted order | $O(N \log N + P)$ |
 | 385 | [Median of adjacent maximum numbers](docs/sorting/MXMEDIAN.md) | 1523 | Pairing extremes to lift the median | $O(N \log N)$ per test case |
 | 399 | [Max Out](docs/sorting/IOPC17C.md) | 1621 | The second largest distinct value is the answer | $O(N)$ per test case |
+| 405 | [Concat Sort](docs/sorting/CONCATSORT.md) | 1637 | Counting descents in the sorted order's position sequence | $O(N \log N)$ per test case |
 
 </details>
 
