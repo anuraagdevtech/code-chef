@@ -2,8 +2,6 @@
 
 > [`FGFS`](https://www.codechef.com/problems/FGFS) &middot; difficulty **1734** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -140,6 +138,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The compartments are completely independent**, since a customer insists on exactly one of them — so the problem splits into $K$ separate activity-selection instances.
+- **Earliest finishing time first is the classic optimum** for each compartment, and sorting the tuples as $(f, s)$ makes that the natural order.
+- **The intervals are half-open $[s, f)$**, so a customer may start exactly when the previous one leaves — which is why the test is `s >= free_at` rather than a strict inequality. The second sample row relies on it.
+- **$K$ is read but never used**: only the compartments that actually appear matter, so a dictionary beats an array of size $K$ at $K \leq 10^9$.
+- **$N$ may be $0$**, giving an answer of $0$ with no intervals to read.
+- **A customer who finds the compartment busy simply leaves**, which is why rejecting one is free — the chef may disallow customers at will.
+- **$s_i < f_i$ is guaranteed**, so no zero-length visit needs special thought.
+
+## Dry run
+
+Second sample: $N = 4$ customers.
+
+| compartment | intervals (sorted by finish) | accepted |
+|---:|---|---:|
+| 1 | $[10, 100)$ | 1 |
+| 2 | $[100, 200)$, $[200, 300)$, $[150, 500)$ | 2 |
+
+In compartment $2$, the first two chain exactly at time $200$; the third starts at $150$, which is already busy. Total `3`.
 
 ---
 

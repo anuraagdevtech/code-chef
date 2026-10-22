@@ -19,3 +19,29 @@ Cutting back to $j - 1$ is why the prefix-minimum array beats the obvious **mono
 Books arriving with $0$ remaining exercises are never added — Harry only piles up books that still have work left in them.
 
 In the sample, `mathematics` (6) beats `english` (9) and `geography` (8), so one book is removed; the pile is then cut to just `english`, and the new `graphics` (3) immediately becomes the minimum with nothing above it.
+
+## Edge cases
+
+- **A tie goes to the highest book in the pile**, since that one needs the fewest removals — which is why the running minimum updates on `<=` rather than `<`. The sample turns on this only indirectly, but a strict `<` would report the deeper copy and the wrong removal count.
+- **The pick and everything above it leave the pile**: the books above are returned to the floor and the picked book is trashed, so the size drops to `j - 1` rather than just losing one.
+- **A book with zero exercises never joins the pile**, so it must be skipped on arrival — counting it would inflate every later removal count.
+- **The removal count is $\text{size} - j$**, the number of books strictly above the pick.
+- **`best[i]` is the argmin over the bottom $i$ books**, which survives the truncation for free: shrinking the pile to $j-1$ leaves `best[j-1]` already correct, so no recomputation is needed.
+- **The pile is guaranteed non-empty when a pick is requested**, so no underflow check is needed.
+- **Book names may repeat**, so the answer must carry the name of the specific copy picked, not a lookup by name.
+- **$N$ up to $10^6$** with a single pass, which is why the stack is three parallel arrays rather than tuples.
+
+## Dry run
+
+The sample's six actions.
+
+| action | pile (bottom → top) | argmin | output |
+|---|---|---:|---|
+| `9 english` | $9$ | 1 | — |
+| `6 mathematics` | $9, 6$ | 2 | — |
+| `8 geography` | $9, 6, 8$ | 2 | — |
+| `-1` | pick position 2 | — | `1 mathematics` |
+| `3 graphics` | $9, 3$ | 2 | — |
+| `-1` | pick position 2 | — | `0 graphics` |
+
+The first pick removes the one book above `mathematics`; the second picks the top book, so nothing is removed.

@@ -2,8 +2,6 @@
 
 > [`PBATTLE`](https://www.codechef.com/problems/PBATTLE) &middot; difficulty **1739** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -134,6 +132,30 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The top strength is always $N-1$**, so the question is which trainers achieve it. A Pokemon fails to beat another only when that other wins *both* arenas, so strength $N-1$ means nobody dominates it in both — a Pareto maximum.
+- **Such a trainer always exists** (the one with the highest ground power is undominated), which is why the maximum strength is $N-1$ rather than something that must be computed.
+- **Sorting by descending ground power turns domination into a running maximum**: a trainer qualifies iff its water power beats every trainer already seen, all of which have greater ground power.
+- **Both arenas can produce a winner** (the second sample row, where each beats the other in one arena): then both have strength $1 = N-1$ and both qualify.
+- **Total domination** (the first row) leaves exactly one qualifier.
+- **The powers are distinct within each arena**, so no tie-break is needed and the strict `>` is safe.
+- **Sum of $N \leq 2 \cdot 10^5$**: one sort and one pass.
+
+## Dry run
+
+Fourth sample: ground powers $2, 3, 5, 4, 1$ and water powers $4, 2, 1, 5, 6$.
+
+| trainer (by descending ground) | ground | water | beats every water so far? | qualified |
+|---:|---:|---:|:---:|---:|
+| 3 | 5 | 1 | yes (nothing before) | 1 |
+| 4 | 4 | 5 | yes | 2 |
+| 2 | 3 | 2 | no | 2 |
+| 1 | 2 | 4 | no | 2 |
+| 5 | 1 | 6 | yes | **3** |
+
+Output `3`. Trainer $5$ is weakest on the ground but strongest in the water, so nobody dominates it in both.
 
 ---
 

@@ -19,3 +19,26 @@ Fixing the tie-break by index is what makes repeated values correct: the problem
 The modular subtraction can go negative, so add the modulus before reducing.
 
 The other samples check the formula: $\{1,2\}$ gives $(1 + 4) - (2 + 2) = 1$; $\{1,2,3\}$ gives $(1 + 4 + 12) - (4 + 4 + 3) = 6$; and $\{1,2,3,4\}$ gives $49 - 26 = 23$.
+
+## Edge cases
+
+- **Each element's contribution is counted by how often it is the extreme.** In sorted order, $a_i$ is the maximum of the $2^i$ subsets drawn from the smaller elements plus itself, and the minimum of $2^{n-1-i}$ — so the total is $\sum a_i (2^i - 2^{n-1-i})$ with no subset enumeration.
+- **The two powers are maintained incrementally**, one doubling and one halving — the halving by multiplying by the modular inverse of $2$, since there is no integer division under a modulus.
+- **The inverse of $2$ is $(p+1)/2$** for an odd prime modulus, which is exact and needs no `pow` call.
+- **Duplicates are handled by position, not value.** Sorting breaks ties arbitrarily but consistently, so every subset is still counted exactly once — the fourth sample row has two $2$s and answers $3$.
+- **Singleton subsets contribute $0$**, since the maximum and minimum coincide — which the formula gets right because the two counts cancel for them.
+- **The subtraction can go negative before reduction**, so the final `% MOD` is needed to bring it back into range.
+- **$N$ up to $10^5$** with values to $10^9$, so the sum must be taken modulo throughout rather than at the end.
+
+## Dry run
+
+Third sample: $S = \{1, 2, 3, 4\}$, so $n = 4$.
+
+| $i$ | $a_i$ | times it is the max ($2^i$) | times it is the min ($2^{n-1-i}$) | contribution |
+|---:|---:|---:|---:|---:|
+| 0 | 1 | 1 | 8 | $-7$ |
+| 1 | 2 | 2 | 4 | $-4$ |
+| 2 | 3 | 4 | 2 | $+6$ |
+| 3 | 4 | 8 | 1 | $+28$ |
+
+Total `23`.

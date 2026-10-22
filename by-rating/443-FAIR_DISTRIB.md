@@ -2,8 +2,6 @@
 
 > [`FAIR_DISTRIB`](https://www.codechef.com/problems/FAIR_DISTRIB) &middot; difficulty **1741** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -144,6 +142,30 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Reparametrising by gaps is what makes this one scan.** Writing $v_i = \sum_{j \leq i} d_j$ with $d_j \geq 0$ turns the difference into $\sum_j d_j \cdot (\text{suffix sum of signs from } j)$, while the maximum value is $\sum_j d_j$.
+- **So fairness means every suffix sum of signs lies in $[-1, 1]$.** Concentrating all the value in one gap shows each bound is necessary, and the triangle inequality shows they suffice.
+- **The scan runs right to left**, accumulating $+1$ for Alice and $-1$ for Bob, and fails the moment the running total leaves the band.
+- **A single toy** (the first row) has suffix sum $\pm 1$ and is always fair.
+- **Two toys to the same kid** (the second row, `00`) gives a suffix sum of $-2$ and fails — even though the values are unknown, the adversary can make both toys expensive and equal.
+- **Alternating assignments are fair** (the fifth row), since the running total never leaves $\{-1, 0, 1\}$.
+- **Trailing imbalance is what the last row catches**: `00001` starts fine but accumulates $-2$ once the three leading zeros are reached.
+- **The toys are given in ascending value order**, which is exactly what makes the gaps non-negative and the reparametrisation valid.
+
+## Dry run
+
+Last sample: $S = $ `00001`, scanned from the right.
+
+| position | owner | running suffix sum |
+|---:|---|---:|
+| 5 | Alice | $+1$ |
+| 4 | Bob | $0$ |
+| 3 | Bob | $-1$ |
+| 2 | Bob | **$-2$** |
+
+The band is breached at position $2$, so `NO`. Concretely, with all five toys worth $1$ Bob holds $4$ against Alice's $1$, a difference of $3$ above the maximum value of $1$.
 
 ---
 

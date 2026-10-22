@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **429 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **443 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -16,7 +16,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 87 | Greedy (22) |
+| [1600&ndash;1799](#16001799) | 120 | 101 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
@@ -486,20 +486,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 427 | [Chef and Prime Divisors](427-CHAPD.md) `CHAPD` | 1720 | Number Theory | Stripping shared factors with repeated GCDs | yes |
 | 428 | [Iron, Magnet and Wall](428-FEMA2.md) `FEMA2` | 1725 | Greedy | Interval bipartite matching with two queues | yes |
 | 429 | [Oracle Devu and Longest Common Subsequence](429-ORACLCS.md) `ORACLCS` | 1726 | Strings | Binary alphabet reduces the LCS to two letter counts | yes |
-| 430 | [Book Exercises](430-BEX.md) `BEX` | 1728 | Stacks | Prefix minimum carried alongside a stack | &ndash; |
-| 431 | [Set Difference ](431-SETDIFF.md) `SETDIFF` | 1729 | Combinatorics | Counting how often each element is the extreme | &ndash; |
-| 432 | [Box of Chocolates](432-CHCBOX.md) `CHCBOX` | 1730 | Arrays | Fitting a window into the gaps between maxima | &ndash; |
-| 433 | [XOR Equal](433-PALINT.md) `PALINT` | 1731 | Bit Manipulation | XOR pairs values into two-element orbits | &ndash; |
-| 434 | [Bon Appetit](434-FGFS.md) `FGFS` | 1734 | Greedy | Independent activity selection per compartment | &ndash; |
-| 435 | [Penalty Shoot-Out II](435-PSHOT.md) `PSHOT` | 1735 | Simulation | Best and worst completions of a prefix | &ndash; |
-| 436 | [Crushed Apples and a Balance Scale](436-APP_BAL_SCA.md) `APP_BAL_SCA` | 1736 | Number Theory | Halving only reaches the odd part | &ndash; |
-| 437 | [Prefixing](437-FIX.md) `FIX` | 1736 | Greedy | Forced slots, and the maximum everywhere else | &ndash; |
-| 438 | [Add to Subsequence](438-SUBSEQDIST.md) `SUBSEQDIST` | 1737 | Combinatorics | Operations as bits of a distinguishing code | &ndash; |
-| 439 | [Maximum Value](439-MVALUE.md) `MVALUE` | 1738 | Basic Math | Factoring the expression, then checking the extremes | &ndash; |
-| 440 | [Pokemon Battles](440-PBATTLE.md) `PBATTLE` | 1739 | Sorting | Counting Pareto maxima of two orderings | &ndash; |
-| 441 | [Weird Subarrays](441-WEIRDSUBARR.md) `WEIRDSUBARR` | 1739 | Arrays | Counting valley subarrays from run lengths | &ndash; |
-| 442 | [Xor and Multiply](442-XORMUL.md) `XORMUL` | 1739 | Bit Manipulation | Lift the shared bits, then balance the differing ones | &ndash; |
-| 443 | [Fair Distribution](443-FAIR_DISTRIB.md) `FAIR_DISTRIB` | 1741 | Prefix Sums | Reparametrising by gaps turns it into suffix sums | &ndash; |
+| 430 | [Book Exercises](430-BEX.md) `BEX` | 1728 | Stacks | Prefix minimum carried alongside a stack | yes |
+| 431 | [Set Difference ](431-SETDIFF.md) `SETDIFF` | 1729 | Combinatorics | Counting how often each element is the extreme | yes |
+| 432 | [Box of Chocolates](432-CHCBOX.md) `CHCBOX` | 1730 | Arrays | Fitting a window into the gaps between maxima | yes |
+| 433 | [XOR Equal](433-PALINT.md) `PALINT` | 1731 | Bit Manipulation | XOR pairs values into two-element orbits | yes |
+| 434 | [Bon Appetit](434-FGFS.md) `FGFS` | 1734 | Greedy | Independent activity selection per compartment | yes |
+| 435 | [Penalty Shoot-Out II](435-PSHOT.md) `PSHOT` | 1735 | Simulation | Best and worst completions of a prefix | yes |
+| 436 | [Crushed Apples and a Balance Scale](436-APP_BAL_SCA.md) `APP_BAL_SCA` | 1736 | Number Theory | Halving only reaches the odd part | yes |
+| 437 | [Prefixing](437-FIX.md) `FIX` | 1736 | Greedy | Forced slots, and the maximum everywhere else | yes |
+| 438 | [Add to Subsequence](438-SUBSEQDIST.md) `SUBSEQDIST` | 1737 | Combinatorics | Operations as bits of a distinguishing code | yes |
+| 439 | [Maximum Value](439-MVALUE.md) `MVALUE` | 1738 | Basic Math | Factoring the expression, then checking the extremes | yes |
+| 440 | [Pokemon Battles](440-PBATTLE.md) `PBATTLE` | 1739 | Sorting | Counting Pareto maxima of two orderings | yes |
+| 441 | [Weird Subarrays](441-WEIRDSUBARR.md) `WEIRDSUBARR` | 1739 | Arrays | Counting valley subarrays from run lengths | yes |
+| 442 | [Xor and Multiply](442-XORMUL.md) `XORMUL` | 1739 | Bit Manipulation | Lift the shared bits, then balance the differing ones | yes |
+| 443 | [Fair Distribution](443-FAIR_DISTRIB.md) `FAIR_DISTRIB` | 1741 | Prefix Sums | Reparametrising by gaps turns it into suffix sums | yes |
 | 444 | [Modular GCD](444-GCDMOD.md) `GCDMOD` | 1741 | Number Theory | Reducing the big operand modulo the small one | &ndash; |
 | 445 | [Army Training](445-ARMTRN.md) `ARMTRN` | 1742 | Sorting | Sorted split maximising a product of two sums | &ndash; |
 | 446 | [One Dimensional Kingdoms](446-ONEKING.md) `ONEKING` | 1743 | Greedy | Stabbing intervals at earliest right endpoints | &ndash; |

@@ -2,8 +2,6 @@
 
 > [`PSHOT`](https://www.codechef.com/problems/PSHOT) &middot; difficulty **1735** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -117,6 +115,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The result is certain once one score exceeds the other team's best possible finish.** After $k$ shots, team A has $N - \lceil k/2 \rceil$ kicks left and team B has $N - \lfloor k/2 \rfloor$, so the two conditions compare each score against the opponent's maximum attainable total.
+- **The two remaining counts differ**, because A shoots on the odd-numbered kicks — getting them the same way round is the main hazard here.
+- **A draw runs the full distance**, so the answer defaults to $2N$ — the second sample ends $1$–$1$ and nothing is decided early.
+- **The check must come after the current shot is applied**, since that shot can itself be the decisive one.
+- **The earliest decisive shot is reported**, hence the break on the first success.
+- **A shutout decides fastest**: the first sample is settled after $4$ of $6$ kicks, with A at $2$ and B unable to exceed $1$.
+- **Sum of $N \leq 10^6$**, so the scan is over bytes with no per-character decoding.
+
+## Dry run
+
+First sample: $N = 3$ and the shots are `101011`.
+
+| shot $k$ | taker | scored? | A | B | A's kicks left | B's kicks left | decided? |
+|---:|---|:---:|---:|---:|---:|---:|---|
+| 1 | A | yes | 1 | 0 | 2 | 3 | no |
+| 2 | B | no | 1 | 0 | 2 | 2 | no |
+| 3 | A | yes | 2 | 0 | 1 | 2 | no |
+| 4 | B | no | 2 | 0 | 1 | **1** | $2 > 0 + 1$ ✓ |
+
+Output `4`.
 
 ---
 
