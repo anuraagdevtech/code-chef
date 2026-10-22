@@ -2,8 +2,6 @@
 
 > [`VOWMTRX`](https://www.codechef.com/problems/VOWMTRX) &middot; difficulty **1694** &middot; time limit **2s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -118,6 +116,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Only the cut positions between consecutive vowel blocks are free.** A piece must hold exactly $K$ vowels, so the cut after the $j$-th block may sit anywhere strictly between the $jK$-th vowel and the $(jK+1)$-th — giving as many choices as the index gap between them.
+- **The choices are independent**, so the answer is the product of those gaps.
+- **Consonants between two vowels widen the gap**, and consonants at the very ends contribute nothing — they are glued to the first or last piece whatever happens.
+- **One block means no cuts**, so the answer is $1$ — the first sample row, where $K = 1$ and the two vowels sit adjacent, also gives a gap of $1$.
+- **The vowel count is guaranteed to be a multiple of $K$**, so the blocks divide evenly and no leftover case arises.
+- **The loop starts at $j = K$ and steps by $K$**, which visits exactly the block boundaries and skips the final block (there is no cut after the last piece).
+- **Sum of $N \leq 10^6$**, so the vowel positions are collected in one pass and the product is taken modulo $10^9+7$.
+
+## Dry run
+
+Second sample: $S = $ `babylonian` with $K = 2$. Vowels sit at indices $1$ (`a`), $5$ (`o`), $7$ (`i`), $8$ (`a`).
+
+| block | vowels | boundary |
+|---:|---|---|
+| 1 | indices $1, 5$ | cut after vowel 2 |
+| 2 | indices $7, 8$ | — (last block) |
+
+The single cut may fall anywhere between index $5$ and index $7$, which is $7 - 5 = 2$ positions. Output `2`.
 
 ---
 

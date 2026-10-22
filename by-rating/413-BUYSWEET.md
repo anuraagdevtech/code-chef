@@ -2,8 +2,6 @@
 
 > [`BUYSWEET`](https://www.codechef.com/problems/BUYSWEET) &middot; difficulty **1706** &middot; time limit **2s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -134,6 +132,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Two numbers govern each sweet**: the price $A_i$ that must be on hand to buy it, and the net burn $A_i - B_i$ that the purchase actually costs. The cheapest burn among the sweets currently affordable is the one to repeat.
+- **Prefix minima over the price-sorted order** give, for every budget, the smallest burn available and the price that achieves it — so the greedy never needs to rescan.
+- **Purchases are batched, not simulated one at a time.** Buying $\lfloor (\text{money} - A)/b \rfloor + 1$ copies drives the budget just below $A$, which forces the affordable prefix to shrink — so the outer loop runs at most $O(N)$ times rather than once per sweet.
+- **$B_i < A_i$ is guaranteed**, so every burn is positive and the budget strictly decreases — the loop always terminates.
+- **A cheaper sweet can have a worse burn**, which is why the prefix minimum is over burns while the prefix itself is bounded by price. The third sample turns on exactly this: the dearest affordable sweet has the best burn.
+- **Running out happens when nothing is affordable**, detected by an empty prefix.
+- **Sum of $N \leq 2 \cdot 10^5$** with one sort and a bisect per batch.
+
+## Dry run
+
+Third sample: $R = 10$, prices $4, 4, 5, 5$ with cashbacks $1, 2, 4, 2$, so the burns are $3, 2, 1, 3$.
+
+| money | affordable prefix | best burn (its price) | bought | money after |
+|---:|---|---|---:|---:|
+| 10 | all four | 1 (price 5) | $(10-5)/1 + 1 = 6$ | 4 |
+| 4 | the two priced 4 | 2 (price 4) | $(4-4)/2 + 1 = 1$ | 2 |
+| 2 | none | — | — | stop |
+
+Total `7`.
 
 ---
 

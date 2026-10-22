@@ -2,8 +2,6 @@
 
 > [`AVGGIFT`](https://www.codechef.com/problems/AVGGIFT) &middot; difficulty **1701** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -127,6 +125,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The array may be any finite length with repeats**, so the reachable means are exactly the weighted averages of elements of $S$ — which fill the whole closed interval $[\min S, \max S]$ at every integer point.
+- **So the test is just $\min S \leq X \leq \max S$**, and nothing between the extremes matters. The second row fails because $X = 5$ sits above the only element, $3$.
+- **The construction is explicit**: taking $\max S - X$ copies of $\min S$ and $X - \min S$ copies of $\max S$ gives a mean of exactly $X$, with both counts non-negative integers.
+- **$X$ itself being in $S$** makes a one-element array work (the fourth row).
+- **$N = 1$** forces $X$ to equal that single element, which both bounds then demand.
+- **Both ends are inclusive**, so $X = \min S$ or $X = \max S$ succeeds.
+- **The elements are distinct and positive**, so the interval is non-degenerate whenever $N \geq 2$.
+
+## Dry run
+
+| $N$ | $X$ | $S$ | $\min$ | $\max$ | in range? | output |
+|---:|---:|---|---:|---:|:---:|---|
+| 3 | 2 | $1,2,3$ | 1 | 3 | yes | `YES` |
+| 1 | 5 | $3$ | 3 | 3 | no | `NO` |
+| 2 | 5 | $4,6$ | 4 | 6 | yes | `YES` |
+| 1 | 5 | $5$ | 5 | 5 | yes | `YES` |
+
+Row 3 is realised by $[4, 6]$: one of each, mean $5$.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`XORGAND`](https://www.codechef.com/problems/XORGAND) &middot; difficulty **1702** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -147,6 +145,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$(M \oplus X) > (M \mathbin{\&} X)$ holds exactly when $M$ and $X$ have different bit lengths.** If they share a top bit, that bit is set in the AND and cleared in the XOR, so the AND wins outright; if one is strictly wider, its top bit appears in the XOR and in neither the AND nor anything above, so the XOR wins.
+- **That reduces each query to a count by bit length**, which a prefix table answers in constant time — no per-query scan of the range.
+- **$M = X$ is never mystical**, since equal values share a bit length (and the XOR is $0$).
+- **$M = 0$ is mystical against any $X \geq 1$**, because a bit length of $0$ differs from everything positive; and $0$ against $0$ is not.
+- **The answer is the complement**: the range size minus the count sharing $X$'s bit length, which is cheaper than summing over the $32$ other widths.
+- **$A_i, X < 2^{31}$** so bit lengths run $0 \dots 31$, and the table is sized $33$ rows to index them all safely.
+- **Sum of $N$ and $Q$ each up to $2 \cdot 10^5$**, so the $33 \times N$ table is built once per case.
+
+## Dry run
+
+Sample: $A = 1, 2, 3, 4, 5$ with bit lengths $1, 2, 2, 3, 3$.
+
+| query | $X$ | $X$'s bit length | matches in range | range size | answer |
+|---|---:|---:|---:|---:|---:|
+| $1\ 5$ | 4 | 3 | $4, 5$ → 2 | 5 | `3` |
+| $2\ 5$ | 2 | 2 | $2, 3$ → 2 | 4 | `2` |
+
+Checking one: $M = 1$, $X = 4$ gives $1 \oplus 4 = 5 > 1 \mathbin{\&} 4 = 0$ ✓, and the bit lengths $1$ and $3$ do differ.
 
 ---
 

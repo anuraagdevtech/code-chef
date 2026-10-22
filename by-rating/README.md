@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **401 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **415 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -16,7 +16,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 59 | Greedy (22) |
+| [1600&ndash;1799](#16001799) | 120 | 73 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
@@ -458,20 +458,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 399 | [Boxes](399-BOX95.md) `BOX95` | 1688 | Bit Manipulation | The top bit caps a box at two elements | yes |
 | 400 | [Gritty Grid](400-GRITGRID.md) `GRITGRID` | 1691 | Basic Math | Checkerboard parity across alternating moves | yes |
 | 401 | [Subarrays with length](401-SUBARRAYLEN.md) `SUBARRAYLEN` | 1691 | Arrays | Grouping by length, then a union of intervals | yes |
-| 402 | [Flu Shot Lineup](402-FLUSHOT.md) `FLUSHOT` | 1692 | Binary Search | Binary search on a real-valued answer | &ndash; |
-| 403 | [Building Towers](403-TOWERTOP.md) `TOWERTOP` | 1693 | Greedy | Doubling to the first tower, then one per operation | &ndash; |
-| 404 | [The Vowel Matrix](404-VOWMTRX.md) `VOWMTRX` | 1694 | Combinatorics | Independent cut choices between vowel blocks | &ndash; |
-| 405 | [Fencing](405-FENCE.md) `FENCE` | 1696 | Sets | Perimeter as sides minus shared edges | &ndash; |
-| 406 | [3-Blast Palindrome](406-BLAST3.md) `BLAST3` | 1699 | Strings | Residue classes of the surviving positions | &ndash; |
-| 407 | [Remove One Element](407-REMONE.md) `REMONE` | 1700 | Sorting | Two candidate offsets, verified by a merge | &ndash; |
-| 408 | [Chef and Football Match](408-WATCHFB.md) `WATCHFB` | 1700 | Simulation | Tracking the at-most-two consistent states | &ndash; |
-| 409 | [Average Gift](409-AVGGIFT.md) `AVGGIFT` | 1701 | Basic Math | Mean reachability as a sign condition | &ndash; |
-| 410 | [Mystical Numbers](410-XORGAND.md) `XORGAND` | 1702 | Prefix Sums | The comparison reduces to equal bit lengths | &ndash; |
-| 411 | [OR Tuples](411-ORTUPLES.md) `ORTUPLES` | 1703 | Combinatorics | Independent bits with an eight-case table | &ndash; |
-| 412 | [Game on a Strip](412-ARRGAME.md) `ARRGAME` | 1705 | Game Theory | Largest free run against the runner-up | &ndash; |
-| 413 | [Buying Sweets](413-BUYSWEET.md) `BUYSWEET` | 1706 | Greedy | Batching purchases of the cheapest net-cost sweet | &ndash; |
-| 414 | [Spreading Charges](414-CHRGES.md) `CHRGES` | 1708 | Strings | Runs of zeros classified by their bounding charges | &ndash; |
-| 415 | [Devu and Perfume](415-DEVPERF.md) `DEVPERF` | 1708 | Geometry | Manhattan 1-centre via rotated coordinates | &ndash; |
+| 402 | [Flu Shot Lineup](402-FLUSHOT.md) `FLUSHOT` | 1692 | Binary Search | Binary search on a real-valued answer | yes |
+| 403 | [Building Towers](403-TOWERTOP.md) `TOWERTOP` | 1693 | Greedy | Doubling to the first tower, then one per operation | yes |
+| 404 | [The Vowel Matrix](404-VOWMTRX.md) `VOWMTRX` | 1694 | Combinatorics | Independent cut choices between vowel blocks | yes |
+| 405 | [Fencing](405-FENCE.md) `FENCE` | 1696 | Sets | Perimeter as sides minus shared edges | yes |
+| 406 | [3-Blast Palindrome](406-BLAST3.md) `BLAST3` | 1699 | Strings | Residue classes of the surviving positions | yes |
+| 407 | [Remove One Element](407-REMONE.md) `REMONE` | 1700 | Sorting | Two candidate offsets, verified by a merge | yes |
+| 408 | [Chef and Football Match](408-WATCHFB.md) `WATCHFB` | 1700 | Simulation | Tracking the at-most-two consistent states | yes |
+| 409 | [Average Gift](409-AVGGIFT.md) `AVGGIFT` | 1701 | Basic Math | Mean reachability as a sign condition | yes |
+| 410 | [Mystical Numbers](410-XORGAND.md) `XORGAND` | 1702 | Prefix Sums | The comparison reduces to equal bit lengths | yes |
+| 411 | [OR Tuples](411-ORTUPLES.md) `ORTUPLES` | 1703 | Combinatorics | Independent bits with an eight-case table | yes |
+| 412 | [Game on a Strip](412-ARRGAME.md) `ARRGAME` | 1705 | Game Theory | Largest free run against the runner-up | yes |
+| 413 | [Buying Sweets](413-BUYSWEET.md) `BUYSWEET` | 1706 | Greedy | Batching purchases of the cheapest net-cost sweet | yes |
+| 414 | [Spreading Charges](414-CHRGES.md) `CHRGES` | 1708 | Strings | Runs of zeros classified by their bounding charges | yes |
+| 415 | [Devu and Perfume](415-DEVPERF.md) `DEVPERF` | 1708 | Geometry | Manhattan 1-centre via rotated coordinates | yes |
 | 416 | [Lumpy - The Bus Driver](416-LUMPYBUS.md) `LUMPYBUS` | 1708 | Greedy | Cheapest refunds first, paid with coins of the larger denomination | &ndash; |
 | 417 | [Summary Power](417-SUMPOWER.md) `SUMPOWER` | 1709 | Prefix Sums | Counting each boundary's contribution | &ndash; |
 | 418 | [Ceiling Sum](418-CEILSUM.md) `CEILSUM` | 1712 | Basic Math | Parity bonus on a fixed total | &ndash; |

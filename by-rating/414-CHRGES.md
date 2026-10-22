@@ -2,8 +2,6 @@
 
 > [`CHRGES`](https://www.codechef.com/problems/CHRGES) &middot; difficulty **1708** &middot; time limit **4s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -145,6 +143,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Two charged neighbours of the same sign still charge the cell**, but **opposite** signs leave it neutral — that single rule is what lets anything survive at all.
+- **So a run of zeros survives only when squeezed between opposite charges, and then only its centre**, which exists exactly when the run has odd length. Both fronts advance one cell per second and meet at the middle cell, which receives a `+` and a `-` simultaneously.
+- **An even run between opposite charges is fully consumed**, since the two fronts pass each other between cells with nothing left in the middle.
+- **A run bounded on one side only is fully charged**, which is why the leading and trailing runs never contribute — the third sample's `00+-00` answers $0$ despite having four zeros.
+- **A run between same-sign charges is fully charged** too, so the bounding signs must be compared, not merely counted.
+- **An all-zero string never changes**, so every character stays neutral and the answer is $N$ — checked up front.
+- **The trailing run is deliberately not counted** after the loop, since it has no closing charge.
+
+## Dry run
+
+Fourth sample: $S = $ `0-0+000-`.
+
+| run of zeros | left charge | right charge | opposite? | length | survivors |
+|---|---|---|:---:|---:|---:|
+| position 1 | none | `-` | — | 1 | 0 |
+| position 3 | `-` | `+` | yes | 1 (odd) | **1** |
+| positions 5–7 | `+` | `-` | yes | 3 (odd) | **1** |
+
+Output `2`. After infinite time the string is `--0++0--`, with the two centres left neutral.
 
 ---
 
