@@ -150,17 +150,18 @@ main()
 
 ## Dry run
 
-First sample: $S = $ `abcb` repeated $K = 2$ times.
+First sample: $S = $ `abcb` repeated $K = 2$ times, giving `abcbabcb`.
 
-| step | value |
+| quantity | value |
 |---|---:|
 | `a`s in one copy | 1 |
 | `b`s in one copy | 2 |
-| pairs inside one copy | 2 (the `a` with each `b`) |
-| within-copy total: $K \times 2$ | 4 |
-| across-copy total: $1 \times 2 \times \binom{2}{2}$… $\binom{2}{2}$ is $1$ ordered pair | 2 |
+| `ab` pairs inside one copy | 2 |
+| within-copy total, $K \times 2$ | 4 |
+| copy pairs, $K(K-1)/2$ | 1 |
+| across-copy total, $1 \times 2 \times 1$ | 2 |
 
-Total `6`, matching `abcbabcb` where the first `a` pairs with three `b`s and the second with two… in fact $4 + 2 = 6$ ✓
+Total `6`.
 
 ---
 
