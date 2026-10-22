@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **443 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **457 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -16,7 +16,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 101 | Greedy (22) |
+| [1600&ndash;1799](#16001799) | 120 | 115 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
@@ -500,20 +500,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 441 | [Weird Subarrays](441-WEIRDSUBARR.md) `WEIRDSUBARR` | 1739 | Arrays | Counting valley subarrays from run lengths | yes |
 | 442 | [Xor and Multiply](442-XORMUL.md) `XORMUL` | 1739 | Bit Manipulation | Lift the shared bits, then balance the differing ones | yes |
 | 443 | [Fair Distribution](443-FAIR_DISTRIB.md) `FAIR_DISTRIB` | 1741 | Prefix Sums | Reparametrising by gaps turns it into suffix sums | yes |
-| 444 | [Modular GCD](444-GCDMOD.md) `GCDMOD` | 1741 | Number Theory | Reducing the big operand modulo the small one | &ndash; |
-| 445 | [Army Training](445-ARMTRN.md) `ARMTRN` | 1742 | Sorting | Sorted split maximising a product of two sums | &ndash; |
-| 446 | [One Dimensional Kingdoms](446-ONEKING.md) `ONEKING` | 1743 | Greedy | Stabbing intervals at earliest right endpoints | &ndash; |
-| 447 | [Lucky Palin](447-LUCKPAL.md) `LUCKPAL` | 1744 | Strings | Placing a block and its mirror, costed in O(1) | &ndash; |
-| 448 | [Copy and Paste](448-NCOPIES.md) `NCOPIES` | 1745 | Prefix Sums | Splitting a repeated string's running total | &ndash; |
-| 449 | [Eugene and function](449-KFUNC.md) `KFUNC` | 1746 | Number Theory | Digital roots are periodic along an arithmetic progression | &ndash; |
-| 450 | [Same Parity Swaps in Binary Strings](450-MAX01EVSWP.md) `MAX01EVSWP` | 1747 | Constructive | Matching on a path, with a parity-forced shortfall | &ndash; |
-| 451 | [The One Who Knocks!](451-EOOPR.md) `EOOPR` | 1749 | Conditionals & Case Work | Reachability of a difference by odd and even steps | &ndash; |
-| 452 | [Save People](452-FIZZBUZZ2306.md) `FIZZBUZZ2306` | 1750 | Basic Math | Manhattan bisector from an adjacent placement | &ndash; |
-| 453 | [Chef and String](453-CHRL2.md) `CHRL2` | 1751 | Greedy | Pipelined counters along a fixed pattern | &ndash; |
-| 454 | [Bear and AB](454-ABREPEAT.md) `ABREPEAT` | 1754 | Combinatorics | Splitting pairs into within-copy and across-copy | &ndash; |
-| 455 | [Digit Removal](455-DIGITREM.md) `DIGITREM` | 1754 | Basic Math | Digit-position candidates for the next clean number | &ndash; |
-| 456 | [Too Many Candies](456-ICL1903.md) `ICL1903` | 1754 | Number Theory | Linear congruence solved with the extended GCD | &ndash; |
-| 457 | [Shortest Route](457-SHROUTE.md) `SHROUTE` | 1756 | Prefix Sums | Nearest qualifying index from each side | &ndash; |
+| 444 | [Modular GCD](444-GCDMOD.md) `GCDMOD` | 1741 | Number Theory | Reducing the big operand modulo the small one | yes |
+| 445 | [Army Training](445-ARMTRN.md) `ARMTRN` | 1742 | Sorting | Sorted split maximising a product of two sums | yes |
+| 446 | [One Dimensional Kingdoms](446-ONEKING.md) `ONEKING` | 1743 | Greedy | Stabbing intervals at earliest right endpoints | yes |
+| 447 | [Lucky Palin](447-LUCKPAL.md) `LUCKPAL` | 1744 | Strings | Placing a block and its mirror, costed in O(1) | yes |
+| 448 | [Copy and Paste](448-NCOPIES.md) `NCOPIES` | 1745 | Prefix Sums | Splitting a repeated string's running total | yes |
+| 449 | [Eugene and function](449-KFUNC.md) `KFUNC` | 1746 | Number Theory | Digital roots are periodic along an arithmetic progression | yes |
+| 450 | [Same Parity Swaps in Binary Strings](450-MAX01EVSWP.md) `MAX01EVSWP` | 1747 | Constructive | Matching on a path, with a parity-forced shortfall | yes |
+| 451 | [The One Who Knocks!](451-EOOPR.md) `EOOPR` | 1749 | Conditionals & Case Work | Reachability of a difference by odd and even steps | yes |
+| 452 | [Save People](452-FIZZBUZZ2306.md) `FIZZBUZZ2306` | 1750 | Basic Math | Manhattan bisector from an adjacent placement | yes |
+| 453 | [Chef and String](453-CHRL2.md) `CHRL2` | 1751 | Greedy | Pipelined counters along a fixed pattern | yes |
+| 454 | [Bear and AB](454-ABREPEAT.md) `ABREPEAT` | 1754 | Combinatorics | Splitting pairs into within-copy and across-copy | yes |
+| 455 | [Digit Removal](455-DIGITREM.md) `DIGITREM` | 1754 | Basic Math | Digit-position candidates for the next clean number | yes |
+| 456 | [Too Many Candies](456-ICL1903.md) `ICL1903` | 1754 | Number Theory | Linear congruence solved with the extended GCD | yes |
+| 457 | [Shortest Route](457-SHROUTE.md) `SHROUTE` | 1756 | Prefix Sums | Nearest qualifying index from each side | yes |
 | 458 | [Compare those strings](458-STRCOMPARE.md) `STRCOMPARE` | 1756 | Strings | Suffix comparison answered by one backward pass | &ndash; |
 | 459 | [Modular Equation](459-MODEQ.md) `MODEQ` | 1761 | Number Theory | Reducing a nested modulo to a divisibility test | &ndash; |
 | 460 | [Chef Restaurant ](460-CHEFRES.md) `CHEFRES` | 1776 | Sorting | Binary search over disjoint intervals | &ndash; |

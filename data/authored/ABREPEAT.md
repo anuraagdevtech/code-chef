@@ -17,3 +17,27 @@ The decomposition works precisely because position order between copies is total
 The magnitudes are the real trap: with $NK \leq 10^9$ the answer reaches about $10^{17}$, so C++ needs `long long` (the statement says as much), while Python's integers are unbounded.
 
 The samples check both terms. `abcb` with $K = 2$ has $P = 2$ and $a \cdot b = 1 \cdot 2 = 2$, giving $2 \cdot 2 + 2 \cdot 1 = 6$. `aayzbaa` with $K = 1$ has no cross term at all, leaving $P = 2$ — only the two leading `a`s precede the single `b`. And the third sample's $K \approx 8 \times 10^7$ makes the cross term dominate completely.
+
+## Edge cases
+
+- **The pairs split into two kinds**: both characters inside one copy, or the `a` in an earlier copy and the `b` in a later one.
+- **Within-copy pairs are counted once per copy**, so the single-copy count multiplies by $K$.
+- **Across-copy pairs multiply by $\binom{K}{2}$**, since *every* `a` of the earlier copy precedes *every* `b` of the later one — giving $(\text{total } a) \times (\text{total } b)$ per ordered pair of copies.
+- **$K = 1$ leaves only the within-copy term**, as $\binom{1}{2} = 0$ (the second sample row).
+- **The answer is huge**: at $NK \leq 10^9$ the count reaches about $6 \times 10^{16}$, past 32-bit and into the upper reaches of 64-bit.
+- **Characters other than `a` and `b` are ignored**, but they still occupy positions — which is why the counting is by letter rather than by index.
+- **A string with no `a` or no `b`** gives $0$ from both terms.
+
+## Dry run
+
+First sample: $S = $ `abcb` repeated $K = 2$ times.
+
+| step | value |
+|---|---:|
+| `a`s in one copy | 1 |
+| `b`s in one copy | 2 |
+| pairs inside one copy | 2 (the `a` with each `b`) |
+| within-copy total: $K \times 2$ | 4 |
+| across-copy total: $1 \times 2 \times \binom{2}{2}$… $\binom{2}{2}$ is $1$ ordered pair | 2 |
+
+Total `6`, matching `abcbabcb` where the first `a` pairs with three `b`s and the second with two… in fact $4 + 2 = 6$ ✓

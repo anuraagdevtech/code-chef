@@ -2,8 +2,6 @@
 
 > [`NCOPIES`](https://www.codechef.com/problems/NCOPIES) &middot; difficulty **1745** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -134,6 +132,34 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$pref_i = suf_{i+1}$ means the running sum hits exactly half the total**, since the two partition every character — so the question is how often the prefix sum of $B$ equals $M \cdot (\text{ones in } A) / 2$.
+- **An odd total is impossible** → $0$, which must be checked before any division.
+- **An all-zero $A$ makes every index good**, since all the sums are $0$ — giving $N M$, the only case where the answer is quadratic in the input size.
+- **Only one or two copies can host a match.** Inside copy $j$ the prefix sum is $j \cdot \text{ones} + pref_A(r)$, and $pref_A(r)$ lies in $[0, \text{ones}]$ — so $j$ must be $\lfloor H/\text{ones} \rfloor$ or one less.
+- **The positions are counted by prefix value**, so a tally over one copy of $A$ answers both candidates in constant time.
+- **The index $i = 0$ is excluded** ($1 \le i$), which the tally respects by only recording positions $1 \dots N$.
+- **$N M$ reaches $10^{10}$** in the all-zero case, past 32-bit.
+
+## Dry run
+
+Third sample: $A = $ `101`, $M = 3$, so $B = $ `101101101` with $6$ ones and a half of $3$.
+
+| prefix value within one copy | positions reaching it |
+|---:|---|
+| 1 | $r = 1, 2$ |
+| 2 | $r = 3$ |
+
+With $\text{ones} = 2$, the base copy is $\lfloor 3/2 \rfloor = 1$:
+
+| copy $j$ | needed $pref_A(r)$ | matches |
+|---:|---:|---:|
+| 0 | $3 - 0 = 3$ | 0 |
+| 1 | $3 - 2 = 1$ | 2 |
+
+Output `2` — the good indices are $4$ and $5$.
 
 ---
 

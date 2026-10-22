@@ -2,8 +2,6 @@
 
 > [`LUCKPAL`](https://www.codechef.com/problems/LUCKPAL) &middot; difficulty **1744** &middot; time limit **0.5s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -134,6 +132,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Placing `lucky` forces its mirror image too.** A palindrome containing `lucky` at position $p$ must contain `ykcul` at the mirrored position $n-5-p$, so both five-character blocks are fixed together.
+- **The two blocks can overlap, and then the shared cell must not be charged twice.** When $|p - q| = 4$ exactly one position belongs to both blocks, and the duplicate cost is subtracted; when they are closer than that the letters conflict outright and the placement is skipped.
+- **Positions outside the blocks cost by mirror pair, not by character.** A pair already matching is free; a mismatched pair costs one edit. The prefix array of pair mismatches lets each placement be priced in constant time rather than by rescanning.
+- **A string shorter than five characters can never work** → `unlucky`, which the empty candidate loop produces.
+- **`aaaaaaaa` is `unlucky` for a different reason**: at length $8$ the two blocks would have to overlap by two, which conflicts — so no placement exists at all.
+- **Ties are broken lexicographically**, which is why every minimal-cost placement is rebuilt and the smallest string chosen; free pairs take the smaller of the two letters.
+- **An odd length leaves a centre character** that is its own mirror and costs nothing to keep.
+
+## Dry run
+
+Second sample: `luckycodechef`, length $13$, so the mirror of a block at $p$ sits at $q = 8 - p$.
+
+| $p$ | $q$ | blocks | cost |
+|---:|---:|---|---:|
+| 0 | 8 | `lucky` already at $0$; `ykcul` needs writing at $8$ | 6 |
+
+With $p = 0$ the first block is free and the second costs five edits, plus one more from the remaining mirror pairs — $6$ in total, giving `luckycocykcul`.
 
 ---
 

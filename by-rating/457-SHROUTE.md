@@ -2,8 +2,6 @@
 
 > [`SHROUTE`](https://www.codechef.com/problems/SHROUTE) &middot; difficulty **1756** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -152,6 +150,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Teleporting is free, so only the ride matters.** A traveller bound for city $B$ can take a right-moving train from any city $j \leq B$, arriving at time $B - j$, or a left-moving train from any $j \geq B$, arriving at $j - B$.
+- **So the best choice is the nearest qualifying train on each side**, and the answer is the smaller of the two distances — which two prefix scans supply in constant time per query.
+- **The direction must match the side.** A right-moving train beyond $B$ never arrives, and neither does a left-moving train before it — using the nearest train of *either* direction is the easy mistake.
+- **No usable train at all** → $-1$ (the third sample's first query, where the only right-mover is past the destination and the only left-mover is before it).
+- **A train originating at $B$ itself gives $0$**, which the inclusive bounds produce — the third sample's second query, with a left-moving train at city $1$ and destination $1$.
+- **Teleportation happens at time $0$**, so all trains are still at their origins when the traveller boards.
+- **Sum of $N$ and $M$ each up to $10^6$**, so the queries are answered from the two arrays with no per-query scan.
+
+## Dry run
+
+Second sample: $A = 1, 0, 0, 0, 2$ with the destination $B = 4$.
+
+| option | source city | arrival time |
+|---|---:|---:|
+| nearest right-mover at or before $4$ | 1 | $4 - 1 = 3$ |
+| nearest left-mover at or after $4$ | 5 | $5 - 4 = $ **1** |
+
+Output `1` — teleport to city $5$ and ride the left-moving train one stop.
 
 ---
 

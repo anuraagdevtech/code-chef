@@ -2,8 +2,6 @@
 
 > [`DIGITREM`](https://www.codechef.com/problems/DIGITREM) &middot; difficulty **1754** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -127,6 +125,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$M$ must first differ from $N$ at some position at or before the leftmost bad digit**, since everything to the left of that is already fine and copying it is cheapest. So the candidates are indexed by that position.
+- **At the chosen position the digit is raised by one** — and if that lands on $D$, by one more. Overflowing past $9$ kills the candidate.
+- **The tail is filled with the smallest safe digit**: `0` normally, or `1` when $D = 0$ — which is what makes $N = 100$, $D = 0$ answer $111$ rather than $101$.
+- **No bad digit at all** → $0$, the answer is $N$ itself.
+- **Every position may overflow**, in which case $M$ needs an extra digit: the smallest leading digit is `1`, or `2` when $D = 1$.
+- **The leftmost bad digit bounds the search**, so at most $\log N$ candidates are built — a linear scan upward from $N$ would be hopeless at $N = 10^9$.
+- **$N = 5925$ with $D = 9$** shows the overflow: raising the $9$ is impossible, so the search falls back to the digit before it, giving $6000$.
+
+## Dry run
+
+Fourth sample: $N = 5925$, $D = 9$. The leftmost $9$ is at position $1$, and the filler digit is `0`.
+
+| position $j$ | digit raised | lands on $D$? | candidate |
+|---:|---|:---:|---:|
+| 1 | $9 \to 10$ | — | overflow, skipped |
+| 0 | $5 \to 6$ | no | `6000` |
+
+Best is $6000$, so the answer is $6000 - 5925 = $ `75`.
 
 ---
 

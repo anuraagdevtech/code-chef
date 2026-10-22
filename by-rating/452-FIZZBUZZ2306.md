@@ -2,8 +2,6 @@
 
 > [`FIZZBUZZ2306`](https://www.codechef.com/problems/FIZZBUZZ2306) &middot; difficulty **1750** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -128,6 +126,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The infection moves first each round**, so the vaccine is always one step behind — which means it can never get around the infection, only block one side of it.
+- **Placing the vaccine adjacent to the source claims that entire half-grid.** From $(x+1, y)$ the vaccine spreads across rows $x+1 \dots N$ before the infection can reach them, saving $M(N-x)$ cells.
+- **So the answer is the largest of the four half-grids**, one per direction — and the best direction is simply the one with the most cells beyond the source.
+- **A source on an edge kills one direction**, making the opposite side the obvious choice: the second sample's $(1,1)$ has nothing above or to the left.
+- **The vaccine must go on a non-infected cell**, which an adjacent cell always is at time $0$.
+- **$N, M \geq 2$** guarantees at least one adjacent cell exists in some direction.
+- **Products reach $10^{10}$** at $N = M = 10^5$, past 32-bit.
+
+## Dry run
+
+First sample: a $3 \times 3$ grid with the infection at $(1, 2)$.
+
+| vaccine direction | cells claimed |
+|---|---:|
+| below, at $(2,2)$ | $3 \times (3-1) = $ **6** |
+| above | $3 \times 0 = 0$ |
+| right, at $(1,3)$ | $3 \times (3-2) = 3$ |
+| left, at $(1,1)$ | $3 \times (2-1) = 3$ |
+
+Output `6` — the whole bottom two rows are saved.
 
 ---
 

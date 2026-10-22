@@ -2,8 +2,6 @@
 
 > [`GCDMOD`](https://www.codechef.com/problems/GCDMOD) &middot; difficulty **1741** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -115,6 +113,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$A \equiv B \pmod{A-B}$, so $A^N + B^N$ collapses to $2B^N$** modulo the difference — which means the whole gcd can be computed inside a modulus of at most $10^{12}$ rather than on numbers with $10^{12}$ digits.
+- **$A = B$ needs its own branch.** The difference is $0$, and the statement's convention $\gcd(0, a) = a$ makes the answer $A^N + B^N = 2A^N$ — which must then be reduced modulo $10^9+7$ rather than by the (non-existent) difference.
+- **The two moduli are different and must not be confused**: the reduction of $B^N$ happens modulo $A-B$, while only the final answer is reduced modulo $10^9+7$.
+- **Reducing modulo $10^9+7$ first would be wrong**, since a gcd is not preserved under an unrelated modulus — the order of operations is the whole trick.
+- **$B \leq A$ is guaranteed**, so the difference is non-negative and no absolute value is needed.
+- **$A, B, N$ up to $10^{12}$**: `pow` with a modulus keeps the exponentiation at $O(\log N)$.
+- **The gcd can exceed the modulus** when $A = B$, which is exactly why that branch reduces at the end.
+
+## Dry run
+
+Second sample: $A = 9$, $B = 1$, $N = 5$, so the difference is $8$.
+
+| step | value |
+|---|---:|
+| $B^N \bmod 8 = 1^5 \bmod 8$ | 1 |
+| $2 B^N \bmod 8$ | 2 |
+| $\gcd(2, 8)$ | **2** |
+
+Output `2`. Directly, $9^5 + 1^5 = 59050$ and $\gcd(59050, 8) = 2$ ✓
 
 ---
 
