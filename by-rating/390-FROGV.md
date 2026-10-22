@@ -2,8 +2,6 @@
 
 > [`FROGV`](https://www.codechef.com/problems/FROGV) &middot; difficulty **1668** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -117,6 +115,30 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Messages relay through intermediate frogs**, so the question is connectivity rather than a single distance check — the sample's frogs $1$ and $3$ sit $8$ apart with $K = 3$ and still communicate, via the frogs at $3$ and $5$.
+- **Sorting turns connectivity into a scan.** Two frogs are connected exactly when no gap above $K$ separates them in sorted order, so one pass assigns component labels and every query becomes a comparison.
+- **A gap of exactly $K$ still connects** (the sample has consecutive gaps of $3$ with $K = 3$), so the cut test is strictly greater than $K$.
+- **Several frogs may share a position**, giving a gap of $0$ — always connected.
+- **$K = 0$** connects only frogs at identical positions.
+- **The component labels must be stored by original index**, not by rank, since the queries name frogs by their input position.
+- **There is no test-case count**: the first line holds $N$, $K$ and $P$ together.
+
+## Dry run
+
+Sample: positions $0, 3, 8, 5, 12$ for frogs $1 \dots 5$, with $K = 3$.
+
+| sorted position | frog | gap from previous | component |
+|---:|---:|---:|---:|
+| 0 | 1 | — | 0 |
+| 3 | 2 | 3 | 0 |
+| 5 | 4 | 2 | 0 |
+| 8 | 3 | 3 | 0 |
+| 12 | 5 | **4** | 1 |
+
+Queries: $(1,2)$ same component → `Yes`; $(1,3)$ same → `Yes`; $(2,5)$ differ → `No`.
 
 ---
 

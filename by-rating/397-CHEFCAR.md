@@ -2,8 +2,6 @@
 
 > [`CHEFCAR`](https://www.codechef.com/problems/CHEFCAR) &middot; difficulty **1683** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -113,6 +111,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Each litre is priced by where it is bought**, and the litre burned on leg $i$ must be bought at a checkpoint between $\max(1, i - V + 1)$ and $i$ — the tank only holds $V$ litres, so it cannot be bought too early.
+- **The minimum therefore prices each litre at $\max(1, i - V + 1)$**, which gives $V$ litres at price $1$ and then prices $2, 3, \dots, N-V$ for the rest.
+- **A large tank makes everything cost $1$.** When $N - 1 \leq V$ the whole trip can be fuelled at checkpoint $1$, so the minimum is just the number of legs (the third sample).
+- **The maximum buys each litre as late as possible**, one at every checkpoint $1 \dots N-1$, costing $1 + 2 + \dots + (N-1) = N(N-1)/2$ — independent of $V$, since one litre always fits.
+- **Per-litre accounting is what makes this clean**; reasoning stop by stop invites the wrong greedy, as "fill up only when empty" overpays.
+- **No water may be left at the end and none poured out**, which is why exactly $N-1$ litres are bought in total.
+- **$N, V$ up to $10^9$** put the maximum near $5 \times 10^{17}$ — past 32-bit, so the closed forms must stay in exact integers.
+
+## Dry run
+
+Second sample: $N = 4$ checkpoints (three legs), tank $V = 2$.
+
+| leg | earliest checkpoint it can be bought at | cheapest price | dearest price |
+|---:|---:|---:|---:|
+| 1 | 1 | 1 | 1 |
+| 2 | 1 | 1 | 2 |
+| 3 | 2 | 2 | 3 |
+
+Minimum $1 + 1 + 2 = 4$, maximum $1 + 2 + 3 = 6$. Output `6 4`.
 
 ---
 

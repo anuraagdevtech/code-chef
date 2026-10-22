@@ -2,8 +2,6 @@
 
 > [`KSUB`](https://www.codechef.com/problems/KSUB) &middot; difficulty **1663** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -133,6 +131,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Every subarray's gcd is a multiple of $G$**, so each $g_i \geq G$ — and an average of exactly $G$ therefore forces *every* chosen subarray to have gcd exactly $G$. The averaging condition is a disguise for a counting one.
+- **So the question is "are there $K$ disjoint subarrays with gcd $G$"**, answered by cutting as early as possible: the moment the running gcd reaches $G$, close the piece and reset.
+- **The earliest cut is optimal**, since a longer piece can only use up elements that a later piece might have needed — the standard exchange argument.
+- **A single element equal to $G$ closes a piece immediately** (the third row's leading $1$, where $G = 1$).
+- **Resetting to $0$ rather than to the next element** is what makes `gcd(0, v) == v` start the next run correctly.
+- **A trailing partial run is discarded**, as in the last row where the final $24$ never reaches $6$ on its own — wait, it does: $\gcd(24) = 24 \neq 6$, so that run contributes nothing.
+- **$K$ may exceed what is achievable** even when $G$ divides everything; the fourth row manages only $2$ pieces against $K = 3$.
+
+## Dry run
+
+Fourth sample: $A = 6, 12, 18, 24$, so $G = \gcd = 6$ and $K = 3$.
+
+| element | running gcd | equals $G$? | pieces |
+|---:|---:|:---:|---:|
+| 6 | 6 | **yes** → cut | 1 |
+| 12 | 12 | no | 1 |
+| 18 | 6 | **yes** → cut | 2 |
+| 24 | 24 | no | 2 |
+
+Only $2$ disjoint pieces have gcd $6$, short of $K = 3$, so `NO`.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`GCDQ`](https://www.codechef.com/problems/GCDQ) &middot; difficulty **1674** &middot; time limit **3.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -139,6 +137,31 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **$\gcd(0, x) = x$ makes $0$ the identity**, so the prefix and suffix arrays can start from $0$ and the boundary cases need no special handling: excluding a prefix leaves `pre[0] = 0` to combine with the suffix.
+- **Excluding a range needs both sides**, so one prefix array is not enough — the answer is $\gcd$ of the part before $L$ and the part after $R$.
+- **The suffix array is indexed one past the end**, with `suf[n+1] = 0`, so a query ending at $N$ reads a clean identity rather than an out-of-range slot.
+- **The remaining array is guaranteed non-empty**, so at least one of the two sides contributes a real value and the answer is never the identity $0$.
+- **Excluding a single element** (the first two queries) is the common case, and it still needs both arrays.
+- **$A_i \leq 10^5$** keeps the gcds small, but the sum of $N$ reaching $10^6$ makes buffered reading essential — the statement says so explicitly.
+- **The queries are 1-based**, which is why the lookups are `pre[l-1]` and `suf[r+1]`.
+
+## Dry run
+
+Sample: $A = 2, 6, 9$.
+
+| array | values |
+|---|---|
+| prefix gcds `pre[0..3]` | $0, 2, 2, 1$ |
+| suffix gcds `suf[1..4]` | $1, 3, 9, 0$ |
+
+| query | excluded | $\gcd(\text{pre}[L-1], \text{suf}[R+1])$ | output |
+|---|---|---|---:|
+| $1\ 1$ | $A_1$ | $\gcd(0, 3) = 3$ | `3` |
+| $2\ 2$ | $A_2$ | $\gcd(2, 9) = 1$ | `1` |
+| $2\ 3$ | $A_2, A_3$ | $\gcd(2, 0) = 2$ | `2` |
 
 ---
 

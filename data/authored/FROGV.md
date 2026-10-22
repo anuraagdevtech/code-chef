@@ -17,3 +17,27 @@ Ties matter: frogs may share a position, giving a gap of $0$, which is always wi
 The sample sorts to $0, 3, 5, 8, 12$ with gaps $3, 2, 3, 4$. The last gap exceeds $K = 3$, so the components are $\{0,3,5,8\}$ and $\{12\}$. Hence frogs 1 and 2 (`Yes`), 1 and 3 (`Yes`, via the relay), and 2 and 5 (`No`, across the cut).
 
 Note a query may name the same frog twice, which is trivially `Yes` — the component test handles it without a special case.
+
+## Edge cases
+
+- **Messages relay through intermediate frogs**, so the question is connectivity rather than a single distance check — the sample's frogs $1$ and $3$ sit $8$ apart with $K = 3$ and still communicate, via the frogs at $3$ and $5$.
+- **Sorting turns connectivity into a scan.** Two frogs are connected exactly when no gap above $K$ separates them in sorted order, so one pass assigns component labels and every query becomes a comparison.
+- **A gap of exactly $K$ still connects** (the sample has consecutive gaps of $3$ with $K = 3$), so the cut test is strictly greater than $K$.
+- **Several frogs may share a position**, giving a gap of $0$ — always connected.
+- **$K = 0$** connects only frogs at identical positions.
+- **The component labels must be stored by original index**, not by rank, since the queries name frogs by their input position.
+- **There is no test-case count**: the first line holds $N$, $K$ and $P$ together.
+
+## Dry run
+
+Sample: positions $0, 3, 8, 5, 12$ for frogs $1 \dots 5$, with $K = 3$.
+
+| sorted position | frog | gap from previous | component |
+|---:|---:|---:|---:|
+| 0 | 1 | — | 0 |
+| 3 | 2 | 3 | 0 |
+| 5 | 4 | 2 | 0 |
+| 8 | 3 | 3 | 0 |
+| 12 | 5 | **4** | 1 |
+
+Queries: $(1,2)$ same component → `Yes`; $(1,3)$ same → `Yes`; $(2,5)$ differ → `No`.

@@ -17,3 +17,26 @@ Leftover elements at the end are simply discarded; the subarrays need not cover 
 The samples separate the two outcomes. $[1,2,3,4,5]$ has $G = 1$ and the greedy cuts at $[1]$, $[2,3]$, $[4,5]$ — three pieces, enough for $K = 3$. But $[2,2,3,3,2,2]$ also has $G = 1$ and yields only two pieces, $[2,2,3]$ and $[3,2]$, falling short of $K = 4$: the twos cannot reach GCD $1$ on their own.
 
 The last sample shows the same with a larger $G$: $[6,12,18,24]$ has $G = 6$, and only $[6]$ and $[12,18]$ qualify before the trailing $24$ is stranded, so $K = 3$ is impossible.
+
+## Edge cases
+
+- **Every subarray's gcd is a multiple of $G$**, so each $g_i \geq G$ — and an average of exactly $G$ therefore forces *every* chosen subarray to have gcd exactly $G$. The averaging condition is a disguise for a counting one.
+- **So the question is "are there $K$ disjoint subarrays with gcd $G$"**, answered by cutting as early as possible: the moment the running gcd reaches $G$, close the piece and reset.
+- **The earliest cut is optimal**, since a longer piece can only use up elements that a later piece might have needed — the standard exchange argument.
+- **A single element equal to $G$ closes a piece immediately** (the third row's leading $1$, where $G = 1$).
+- **Resetting to $0$ rather than to the next element** is what makes `gcd(0, v) == v` start the next run correctly.
+- **A trailing partial run is discarded**, as in the last row where the final $24$ never reaches $6$ on its own — wait, it does: $\gcd(24) = 24 \neq 6$, so that run contributes nothing.
+- **$K$ may exceed what is achievable** even when $G$ divides everything; the fourth row manages only $2$ pieces against $K = 3$.
+
+## Dry run
+
+Fourth sample: $A = 6, 12, 18, 24$, so $G = \gcd = 6$ and $K = 3$.
+
+| element | running gcd | equals $G$? | pieces |
+|---:|---:|:---:|---:|
+| 6 | 6 | **yes** → cut | 1 |
+| 12 | 12 | no | 1 |
+| 18 | 6 | **yes** → cut | 2 |
+| 24 | 24 | no | 2 |
+
+Only $2$ disjoint pieces have gcd $6$, short of $K = 3$, so `NO`.

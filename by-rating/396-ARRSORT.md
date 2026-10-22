@@ -2,8 +2,6 @@
 
 > [`ARRSORT`](https://www.codechef.com/problems/ARRSORT) &middot; difficulty **1681** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -116,6 +114,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Swaps at distance $K$ confine each element to its residue class mod $K$**, and within a class any permutation is reachable by repeated adjacent swaps — so $P$ is sortable exactly when every element already sits in the right class, i.e. $K \mid (P_i - i)$ for all $i$.
+- **So the maximum $K$ is $\gcd$ of all $|P_i - i|$**, since any valid $K$ divides every displacement.
+- **$\gcd(0, x) = x$ makes already-placed elements free.** An element with $P_i = i$ contributes $0$ and imposes no constraint, which the accumulator starting at $0$ handles.
+- **The permutation is guaranteed unsorted**, so at least one displacement is non-zero and the gcd is a real number rather than $0$.
+- **$K = 1$ always works** (any permutation is sortable by adjacent swaps), so the answer is never below $1$ — and the third row, $[2,1]$, is exactly that floor.
+- **A single transposition of distant elements** gives a large answer: $[4,2,3,1]$ has displacements $3,0,0,3$ and answer $3$.
+- **$K \leq N - 1$ implicitly**, since a displacement cannot exceed $N-1$.
+
+## Dry run
+
+First sample: $P = 4, 2, 3, 1$.
+
+| $i$ | $P_i$ | $|P_i - i|$ |
+|---:|---:|---:|
+| 1 | 4 | 3 |
+| 2 | 2 | 0 |
+| 3 | 3 | 0 |
+| 4 | 1 | 3 |
+
+$\gcd(3, 0, 0, 3) = 3$, so the answer is `3`: one swap of positions $1$ and $4$ sorts it.
 
 ---
 

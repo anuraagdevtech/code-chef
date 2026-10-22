@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **387 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **401 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -16,7 +16,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 45 | Greedy (22) |
+| [1600&ndash;1799](#16001799) | 120 | 59 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
@@ -444,20 +444,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 385 | [Frequency Array Retrieval](385-FREQARRRET.md) `FREQARRRET` | 1654 | Greedy | Lexicographic labelling of equal-frequency groups | yes |
 | 386 | [OR Matrix](386-ORMATRIX.md) `ORMATRIX` | 1656 | Arrays | Case analysis on the nearest reachable one | yes |
 | 387 | [Chef Product](387-CHEFPRODUCT.md) `CHEFPRODUCT` | 1658 | Number Theory | Size feasibility from a square bound and a parity | yes |
-| 388 | [K-Subarrays](388-KSUB.md) `KSUB` | 1663 | Greedy | Earliest cut maximises the number of GCD-$G$ pieces | &ndash; |
-| 389 | [The Optimal Pairs](389-OPTPAIRS.md) `OPTPAIRS` | 1666 | Number Theory | The minimum is always N, attained by a divisor family | &ndash; |
-| 390 | [Chef and Frogs](390-FROGV.md) `FROGV` | 1668 | Sorting | Connected components from gaps in sorted order | &ndash; |
-| 391 | [Fire Escape Routes](391-FIRESC.md) `FIRESC` | 1671 | Graphs | Connected components by DSU, then a product of sizes | &ndash; |
-| 392 | [Powered Parameters](392-POWPM.md) `POWPM` | 1673 | Sorting | Bounding the exponent, then counting by integer root | &ndash; |
-| 393 | [Gcd Queries](393-GCDQ.md) `GCDQ` | 1674 | Prefix Sums | Prefix and suffix GCD arrays | &ndash; |
-| 394 | [Three Numbers](394-THREENUMBERS.md) `THREENUMBERS` | 1675 | Basic Math | Parity invariant plus a counting identity | &ndash; |
-| 395 | [Bitwise Equation](395-BITEQU.md) `BITEQU` | 1679 | Constructive | Neutralising the AND to reduce to one XOR | &ndash; |
-| 396 | [Array sorting](396-ARRSORT.md) `ARRSORT` | 1681 | Number Theory | GCD of the displacements | &ndash; |
-| 397 | [Chef and Water Car](397-CHEFCAR.md) `CHEFCAR` | 1683 | Greedy | Pricing each litre by its earliest legal purchase | &ndash; |
-| 398 | [Anti-Palindrome Queries](398-ANTIPALQ.md) `ANTIPALQ` | 1688 | Prefix Sums | Reducing a rotation condition to one count | &ndash; |
-| 399 | [Boxes](399-BOX95.md) `BOX95` | 1688 | Bit Manipulation | The top bit caps a box at two elements | &ndash; |
-| 400 | [Gritty Grid](400-GRITGRID.md) `GRITGRID` | 1691 | Basic Math | Checkerboard parity across alternating moves | &ndash; |
-| 401 | [Subarrays with length](401-SUBARRAYLEN.md) `SUBARRAYLEN` | 1691 | Arrays | Grouping by length, then a union of intervals | &ndash; |
+| 388 | [K-Subarrays](388-KSUB.md) `KSUB` | 1663 | Greedy | Earliest cut maximises the number of GCD-$G$ pieces | yes |
+| 389 | [The Optimal Pairs](389-OPTPAIRS.md) `OPTPAIRS` | 1666 | Number Theory | The minimum is always N, attained by a divisor family | yes |
+| 390 | [Chef and Frogs](390-FROGV.md) `FROGV` | 1668 | Sorting | Connected components from gaps in sorted order | yes |
+| 391 | [Fire Escape Routes](391-FIRESC.md) `FIRESC` | 1671 | Graphs | Connected components by DSU, then a product of sizes | yes |
+| 392 | [Powered Parameters](392-POWPM.md) `POWPM` | 1673 | Sorting | Bounding the exponent, then counting by integer root | yes |
+| 393 | [Gcd Queries](393-GCDQ.md) `GCDQ` | 1674 | Prefix Sums | Prefix and suffix GCD arrays | yes |
+| 394 | [Three Numbers](394-THREENUMBERS.md) `THREENUMBERS` | 1675 | Basic Math | Parity invariant plus a counting identity | yes |
+| 395 | [Bitwise Equation](395-BITEQU.md) `BITEQU` | 1679 | Constructive | Neutralising the AND to reduce to one XOR | yes |
+| 396 | [Array sorting](396-ARRSORT.md) `ARRSORT` | 1681 | Number Theory | GCD of the displacements | yes |
+| 397 | [Chef and Water Car](397-CHEFCAR.md) `CHEFCAR` | 1683 | Greedy | Pricing each litre by its earliest legal purchase | yes |
+| 398 | [Anti-Palindrome Queries](398-ANTIPALQ.md) `ANTIPALQ` | 1688 | Prefix Sums | Reducing a rotation condition to one count | yes |
+| 399 | [Boxes](399-BOX95.md) `BOX95` | 1688 | Bit Manipulation | The top bit caps a box at two elements | yes |
+| 400 | [Gritty Grid](400-GRITGRID.md) `GRITGRID` | 1691 | Basic Math | Checkerboard parity across alternating moves | yes |
+| 401 | [Subarrays with length](401-SUBARRAYLEN.md) `SUBARRAYLEN` | 1691 | Arrays | Grouping by length, then a union of intervals | yes |
 | 402 | [Flu Shot Lineup](402-FLUSHOT.md) `FLUSHOT` | 1692 | Binary Search | Binary search on a real-valued answer | &ndash; |
 | 403 | [Building Towers](403-TOWERTOP.md) `TOWERTOP` | 1693 | Greedy | Doubling to the first tower, then one per operation | &ndash; |
 | 404 | [The Vowel Matrix](404-VOWMTRX.md) `VOWMTRX` | 1694 | Combinatorics | Independent cut choices between vowel blocks | &ndash; |

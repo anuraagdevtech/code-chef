@@ -2,8 +2,6 @@
 
 > [`OPTPAIRS`](https://www.codechef.com/problems/OPTPAIRS) &middot; difficulty **1666** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -117,6 +115,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The minimum of $g(a,b)$ is always exactly $N$.** Writing $d = \gcd(a,b)$, $a = dx$, $b = dy$ with $x + y = N/d$ and $\gcd(x,y) = 1$ gives $g = d(1 + xy)$, which is minimised at $x = 1$ — yielding $d \cdot (N/d) = N$. And $g \geq N$ always, since $xy \geq x + y - 1$ for coprime positive $x, y$.
+- **So the pairs to count are those with $x = 1$ or $y = 1$**, i.e. $a$ or $b$ equal to a divisor of $N$.
+- **No divisor lies strictly between $N/2$ and $N$**, which is why counting the divisors below $N/2$ and doubling covers every ordered pair.
+- **$d = N/2$ is self-paired.** When $N$ is even, $(N/2, N/2)$ is a single ordered pair rather than two — hence the lone `+1` for even $N$, and the first sample's answer of $3$ rather than $2$.
+- **$d = N$ is excluded**, since $a$ and $b$ must both be positive.
+- **An odd $N$ contributes no self-pair** (the second row, $N = 105$, answers an even $14$).
+- **$N$ up to $10^9$**: trial division to $\sqrt{N}$, with the square root case counted once.
+
+## Dry run
+
+First sample: $N = 4$.
+
+| $a$ | $b$ | $\gcd$ | $\operatorname{lcm}$ | $g(a,b)$ |
+|---:|---:|---:|---:|---:|
+| 1 | 3 | 1 | 3 | **4** |
+| 2 | 2 | 2 | 2 | **4** |
+| 3 | 1 | 1 | 3 | **4** |
+
+The minimum $f(4) = 4 = N$, attained by all three ordered pairs, so the output is `3`.
 
 ---
 
