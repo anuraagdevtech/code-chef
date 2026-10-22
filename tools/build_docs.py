@@ -291,9 +291,11 @@ def write_study_index(built, order):
       'per problem, each carrying the topic used, the problem and its '
       'constraints, the approach, the solution, its edge cases and a dry '
       'run.\n')
+    written = ('**every one** carrying edge cases and a dry run'
+               if done == len(rows)
+               else f'**{done} of them** carrying edge cases and a dry run')
     A(f'**{len(rows)} problems** &middot; ratings '
-      f'{by_code[rows[0][1]]["num_rating"]} upward &middot; '
-      f'**{done} with edge cases and a dry run written so far**. Problems '
+      f'{by_code[rows[0][1]]["num_rating"]} upward &middot; {written}. Problems '
       'CodeChef has not rated carry no place on the ladder, so they sit at '
       'the end.\n')
     A('Same write-ups grouped by topic instead: [`../docs`](../docs).\n')
