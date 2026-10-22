@@ -2,8 +2,6 @@
 
 > [`GDSUB`](https://www.codechef.com/problems/GDSUB) &middot; difficulty **1999** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -105,6 +103,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A good subsequence picks at most one copy of each distinct value**, so the count of good subsequences of size $j$ is the $j$-th elementary symmetric polynomial in the multiplicities — and the answer sums those up to $K$.
+- **$K$ can be clamped to the number of distinct values**, since no good subsequence is longer than that — which is what keeps the DP small when $K$ is large.
+- **The empty subsequence counts**, which is the $j = 0$ term and the reason `dp[0]` starts at $1$.
+- **The inner loop must run downward**, so each value contributes to at most one chosen slot — an upward loop would let a single value be picked twice.
+- **The multiplicity is the weight**, not $1$: a value appearing $c$ times offers $c$ distinguishable choices for its slot, which is where the sample's $18$ comes from.
+- **The values are primes**, which matters only in that they are distinct as values — the algorithm never uses primality.
+- **$A_i \leq 8000$** bounds the distinct count, and the answer is taken modulo $10^9+7$.
+
+## Dry run
+
+Sample: $A = 2, 2, 3, 3, 5$ with $K = 3$, so the multiplicities are $2, 2, 1$ over three distinct values.
+
+| after processing | $j=0$ | $j=1$ | $j=2$ | $j=3$ |
+|---|---:|---:|---:|---:|
+| start | 1 | 0 | 0 | 0 |
+| the two $2$s | 1 | 2 | 0 | 0 |
+| the two $3$s | 1 | 4 | 4 | 0 |
+| the single $5$ | 1 | 5 | 8 | 4 |
+
+Sum $1 + 5 + 8 + 4 = $ `18`.
 
 ---
 

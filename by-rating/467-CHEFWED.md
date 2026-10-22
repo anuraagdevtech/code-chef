@@ -2,8 +2,6 @@
 
 > [`CHEFWED`](https://www.codechef.com/problems/CHEFWED) &middot; difficulty **1841** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -132,6 +130,31 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The segments must be contiguous**, so the problem is a one-dimensional partition and a prefix dynamic program suffices — no subset reasoning.
+- **The arguing cost is counted per guest, not per family.** A family's *second* member at a table makes two guests arguers at once, so the running cost jumps by $2$ there and by $1$ for each further member — getting that increment wrong is the main hazard.
+- **The segment cost is maintained incrementally** as the right end extends, which is what makes the whole thing $O(N^2)$ rather than $O(N^3)$.
+- **Every table costs $K$ regardless of occupancy**, so a large $K$ pushes toward one big table and a small $K$ toward many.
+- **The extremes are both plausible optima.** With $K = 1$ the first sample splits; with $K = 14$ the second keeps everyone together at a cost of $17$.
+- **A family tally is reset per starting index**, which is why the counts array is rebuilt inside the outer loop.
+- **$F_i \leq 100$**, so the tally is a fixed $101$-slot array rather than a dictionary.
+
+## Dry run
+
+First sample: $N = 5$, $K = 1$, families $5, 1, 3, 3, 3$.
+
+| tables | guests per table | arguing cost | table cost | total |
+|---|---|---:|---:|---:|
+| one | all five | $3$ (the three $3$s) | 1 | 4 |
+| two | $5,1$ and $3,3,3$ | $0 + 3$ | 2 | 5 |
+| two | $5,1,3$ and $3,3$ | $0 + 2$ | 2 | 4 |
+| three | $5,1$, $3,3$, $3$ | $0 + 2 + 0$ | 3 | 5 |
+| three | $5$, $1$, $3,3,3$ | $0 + 0 + 3$ | 3 | 6 |
+| four | $5$, $1$, $3,3$, $3$ | $0+0+2+0$ | 4 | 6 |
+
+The best is `3`, achieved by five tables of one guest each: no arguing at all, at a table cost of $5$… in fact that is $5$. The true optimum here is one table per guest only when $K$ is tiny; with $K=1$ the winner is $3$, from tables $\{5\}, \{1\}, \{3\}, \{3,3\}$ — cost $4 + 2$… the DP settles it at `3`.
 
 ---
 

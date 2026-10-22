@@ -2,8 +2,6 @@
 
 > [`STACKS`](https://www.codechef.com/problems/STACKS) &middot; difficulty **1799** &middot; time limit **4s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -158,6 +156,31 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Mike's rule is exactly a patience-stacking step**: the new disk goes on the stack whose top is the *smallest radius strictly greater* than it, which is the first top above the disk in sorted order — a `bisect_right`.
+- **The list of tops stays sorted automatically.** Overwriting the found position with a smaller value keeps the order, because the replaced top was the first one above it and the one before it is at most the disk. So the list never needs re-sorting.
+- **A disk larger than every top starts a new stack**, which the append handles when the search runs off the end.
+- **Equal radii start new stacks**, because the rule demands a *strictly* greater top — the sample's two $1$s end up on separate stacks, which is why the answer has two tops of $1$.
+- **The answer is the count followed by the final tops**, which the sorted list supplies directly.
+- **A strictly increasing input** gives one stack per disk, since each is larger than every existing top.
+- **$N \leq 10^5$** with one bisect per disk.
+
+## Dry run
+
+First sample: disks $3, 4, 5, 1, 1, 2$.
+
+| disk | first top strictly greater | action | tops after |
+|---:|---|---|---|
+| 3 | none | new stack | $3$ |
+| 4 | none | new stack | $3, 4$ |
+| 5 | none | new stack | $3, 4, 5$ |
+| 1 | $3$ | place on it | $1, 4, 5$ |
+| 1 | $4$ | place on it | $1, 1, 5$ |
+| 2 | $5$ | place on it | $1, 1, 2$ |
+
+Output `3 1 1 2`.
 
 ---
 

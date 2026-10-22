@@ -2,8 +2,6 @@
 
 > [`PRETNUM`](https://www.codechef.com/problems/PRETNUM) &middot; difficulty **1850** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -146,6 +144,31 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A prime divisor count forces a prime power.** If $n$ had two distinct primes its divisor count would factor as a product of two factors above $1$, hence be composite — so $n = p^e$ with $e+1$ prime.
+- **That splits into three regimes**: $e = 1$ (the primes themselves), $e = 2$ (prime squares, since $3$ is prime), and $e \geq 4$ with $e+1$ prime — $e = 3$ is excluded because $4$ is composite.
+- **The primes in the range need a segmented sieve**, since $R$ reaches $10^{12}$ while the window is at most $10^6$ wide — sieving by the base primes up to $10^6$ is what makes it feasible.
+- **$1$ must be excluded**, as $d(1) = 1$ is not prime; the window explicitly clears it when $L = 1$.
+- **Prime squares are counted through the base prime list**, by taking integer square roots of the range bounds — exact `isqrt`, since a float root can land one off at $10^{12}$.
+- **The high exponents are few.** Only $e \in \{4, 6, 10, 12, 16, 18, 22, 28, 30, 36, 40\}$ have $e+1$ prime and $2^e \leq 10^{12}$, so that part is a short double loop.
+- **$R - L$ may be $0$**, giving a single-element window.
+
+## Dry run
+
+Sample: the range $1 \dots 10$.
+
+| $n$ | form | divisor count | prime? |
+|---:|---|---:|:---:|
+| 2 | $2^1$ | 2 | yes |
+| 3 | $3^1$ | 2 | yes |
+| 4 | $2^2$ | 3 | yes |
+| 5 | $5^1$ | 2 | yes |
+| 7 | $7^1$ | 2 | yes |
+| 9 | $3^2$ | 3 | yes |
+
+Six such numbers, so the output is `6`. Note $6, 8, 10$ all have four divisors.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`CHEFRES`](https://www.codechef.com/problems/CHEFRES) &middot; difficulty **1776** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -152,6 +150,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The intervals are pairwise disjoint**, so sorting them by start and binary searching gives at most one candidate containing $P$ — the last interval starting at or before it.
+- **The intervals are half-open $[L, R)$**, which the statement spells out: someone arriving exactly at closing time must wait for the next opening. So the open test is the strict $P < R$.
+- **Arrival at exactly $R$ is the trap.** The sample's $P = 7$ finds the window $[5,7)$ just closed, so the answer is not $0$ but the two-unit wait until $9$.
+- **Arriving before every window** waits for the earliest opening, which the search handles with $k = 0$ (the sample's $P = 1$, waiting until $2$).
+- **Arriving after the last window closes** gives $-1$, with no interval ahead — the sample's $P = 35$.
+- **A wait of $0$ is reported when inside a window**, not the time until it closes.
+- **Sum of $N$ and $M$ each up to $3 \cdot 10^5$**: one sort per case and a bisect per query.
+
+## Dry run
+
+Sample: windows $[2,3)$, $[5,7)$, $[9,10)$, $[20,30)$ after sorting.
+
+| $P$ | last window starting $\leq P$ | inside it? | answer |
+|---:|---|:---:|---:|
+| 5 | $[5,7)$ | yes | `0` |
+| 6 | $[5,7)$ | yes | `0` |
+| 7 | $[5,7)$ | **no** ($7 \not< 7$) | `2` (wait for $9$) |
+| 35 | $[20,30)$ | no | `-1` |
+| 1 | none | — | `1` (wait for $2$) |
 
 ---
 

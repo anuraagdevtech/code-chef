@@ -2,8 +2,6 @@
 
 > [`WSTRING`](https://www.codechef.com/problems/WSTRING) &middot; difficulty **1809** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -174,6 +172,30 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **A `W` needs three `#` as its angular points**, so fewer than three gives $0$ immediately.
+- **The four arms are a prefix, two gaps and a suffix**, each contributing a run of one repeated letter — so the best arm in each region is the most frequent single letter there.
+- **Every arm must be non-empty**, which is why a zero in any of the four kills that placement; the three `#` plus four arms are all required.
+- **The prefix and suffix are measured from the ends of the whole string**, not just between the chosen `#`s, so a prefix maximum and a suffix maximum are precomputed per `#`.
+- **The two middle arms live strictly between consecutive `#`s**, so their best letters are computed per gap.
+- **The total length adds the three `#` themselves**, hence the $+3$.
+- **More than three `#` means several placements to try**, taking the best — the third sample has four and needs the choice.
+- **$|S| \leq 10^4$ with $26$ counters per region**, so the gap scan is linear overall.
+
+## Dry run
+
+First sample: `aaaaa#bb#cc#dddd`, with `#` at positions $5$, $8$ and $11$ (0-based).
+
+| arm | region | best letter | length |
+|---|---|---|---:|
+| 1 | before the first `#` | `a` | 5 |
+| 2 | between `#` 1 and 2 | `b` | 2 |
+| 3 | between `#` 2 and 3 | `c` | 2 |
+| 4 | after the third `#` | `d` | 4 |
+
+Total $3 + 5 + 2 + 2 + 4 = $ `16`.
 
 ---
 

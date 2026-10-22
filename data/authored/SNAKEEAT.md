@@ -25,3 +25,24 @@ The eating rule $L_i \geq L_j$ is automatically respected, since every kept snak
 Sample case 1 with $K = 10$ keeps $[9,10,21]$: only the $9$ falls short, by $1$, and two meals are available — so $3$ snakes. Pushing to $m = 4$ would need $3$ meals with only $1$ left. At $K = 15$ even $m = 2$ needs $5$ meals against $3$, so the answer drops to $1$.
 
 Sample case 2 asks for length $100$ from snakes topping out at $5$, needing $95$ meals from four — so $0$.
+
+## Edge cases
+
+- **Keeping the longest snakes is optimal**, so for a target count $m$ the survivors are the top $m$ after sorting — and everything else becomes food.
+- **The feasibility check is a prefix sum.** Among the survivors, those still below $K$ need $K - L_i$ feeds each, and the total must not exceed the $n - m$ snakes available as food.
+- **The predicate is monotone in $m$** — fewer survivors means more food and less demand — so the answer is binary searched.
+- **Survivors already at or above $K$ need nothing**, which is why the demand is summed only over the prefix below $K$, found by one `bisect_left`.
+- **Every survivor may already be long enough**, in which case the demand is zero and the check short-circuits — the second case, where $K = 100$ is unreachable and the answer is $0$… in fact there the demand is unaffordable, so the answer is $0$.
+- **A feed gives exactly $+1$**, so the demand is linear in the shortfall and no scheduling subtlety arises.
+- **$L_i$ and $K$ reach $10^9$ with $n$ at $10^5$**, so the demand can reach $10^{14}$ — past 32-bit.
+
+## Dry run
+
+First query of the first sample: lengths sorted to $5, 8, 9, 10, 21$ with $K = 10$.
+
+| survivors $m$ | kept snakes | those below $10$ | feeds needed | food available | feasible? |
+|---:|---|---|---:|---:|:---:|
+| 3 | $9, 10, 21$ | just the $9$ | 1 | 2 | yes |
+| 4 | $8, 9, 10, 21$ | $8$ and $9$ | $2 + 1 = 3$ | 1 | no |
+
+So `3` snakes can reach length $10$.

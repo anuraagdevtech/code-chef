@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **457 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **472 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -16,8 +16,8 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 115 | Greedy (22) |
-| [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
+| [1600&ndash;1799](#16001799) | 120 | 120 | Greedy (22) |
+| [1800&ndash;1999](#18001999) | 10 | 10 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
 | [2600&ndash;2799](#26002799) | 1 | 0 | Bit Manipulation (1) |
@@ -514,26 +514,26 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 455 | [Digit Removal](455-DIGITREM.md) `DIGITREM` | 1754 | Basic Math | Digit-position candidates for the next clean number | yes |
 | 456 | [Too Many Candies](456-ICL1903.md) `ICL1903` | 1754 | Number Theory | Linear congruence solved with the extended GCD | yes |
 | 457 | [Shortest Route](457-SHROUTE.md) `SHROUTE` | 1756 | Prefix Sums | Nearest qualifying index from each side | yes |
-| 458 | [Compare those strings](458-STRCOMPARE.md) `STRCOMPARE` | 1756 | Strings | Suffix comparison answered by one backward pass | &ndash; |
-| 459 | [Modular Equation](459-MODEQ.md) `MODEQ` | 1761 | Number Theory | Reducing a nested modulo to a divisibility test | &ndash; |
-| 460 | [Chef Restaurant ](460-CHEFRES.md) `CHEFRES` | 1776 | Sorting | Binary search over disjoint intervals | &ndash; |
-| 461 | [Minion Chef and Bananas](461-MINEAT.md) `MINEAT` | 1781 | Binary Search | Searching the answer on a monotonic predicate | &ndash; |
-| 462 | [Stacks](462-STACKS.md) `STACKS` | 1799 | Binary Search | Patience stacking with a sorted top list | &ndash; |
+| 458 | [Compare those strings](458-STRCOMPARE.md) `STRCOMPARE` | 1756 | Strings | Suffix comparison answered by one backward pass | yes |
+| 459 | [Modular Equation](459-MODEQ.md) `MODEQ` | 1761 | Number Theory | Reducing a nested modulo to a divisibility test | yes |
+| 460 | [Chef Restaurant ](460-CHEFRES.md) `CHEFRES` | 1776 | Sorting | Binary search over disjoint intervals | yes |
+| 461 | [Minion Chef and Bananas](461-MINEAT.md) `MINEAT` | 1781 | Binary Search | Searching the answer on a monotonic predicate | yes |
+| 462 | [Stacks](462-STACKS.md) `STACKS` | 1799 | Binary Search | Patience stacking with a sorted top list | yes |
 
 ## 1800&ndash;1999
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 463 | [A temple of Snakes](463-SNTEMPLE.md) `SNTEMPLE` | 1800 | Arrays | Runs computed from both directions | &ndash; |
-| 464 | [W String](464-WSTRING.md) `WSTRING` | 1809 | Prefix Sums | Per-letter counts over hash-delimited blocks | &ndash; |
-| 465 | [Chef and Easy Problem](465-XXOR.md) `XXOR` | 1810 | Prefix Sums | Per-bit prefix counts, decided bit by bit | &ndash; |
-| 466 | [Forest Gathering](466-FORESTGA.md) `FORESTGA` | 1829 | Binary Search | Searching time on a monotonic yield | &ndash; |
-| 467 | [Chef and Wedding Arrangements](467-CHEFWED.md) `CHEFWED` | 1841 | Dynamic Programming | Partition DP with an incrementally maintained segment cost | &ndash; |
-| 468 | [Yet Another Cute Girl](468-PRETNUM.md) `PRETNUM` | 1850 | Number Theory | Segmented sieve plus prime-power exponents | &ndash; |
-| 469 | [XOR with Subset](469-XORSUB.md) `XORSUB` | 1879 | Bit Manipulation | XOR linear basis over GF(2) | &ndash; |
-| 470 | [ChefTown Parade](470-CHEFTOWN.md) `CHEFTOWN` | 1882 | Arrays | Sliding-window maximum and minimum with deques | &ndash; |
-| 471 | [Snake Eating](471-SNAKEEAT.md) `SNAKEEAT` | 1940 | Binary Search | Feasibility check with prefix sums | &ndash; |
-| 472 | [Chef and Good Subsequences](472-GDSUB.md) `GDSUB` | 1999 | Combinatorics | Elementary symmetric polynomials by DP | &ndash; |
+| 463 | [A temple of Snakes](463-SNTEMPLE.md) `SNTEMPLE` | 1800 | Arrays | Runs computed from both directions | yes |
+| 464 | [W String](464-WSTRING.md) `WSTRING` | 1809 | Prefix Sums | Per-letter counts over hash-delimited blocks | yes |
+| 465 | [Chef and Easy Problem](465-XXOR.md) `XXOR` | 1810 | Prefix Sums | Per-bit prefix counts, decided bit by bit | yes |
+| 466 | [Forest Gathering](466-FORESTGA.md) `FORESTGA` | 1829 | Binary Search | Searching time on a monotonic yield | yes |
+| 467 | [Chef and Wedding Arrangements](467-CHEFWED.md) `CHEFWED` | 1841 | Dynamic Programming | Partition DP with an incrementally maintained segment cost | yes |
+| 468 | [Yet Another Cute Girl](468-PRETNUM.md) `PRETNUM` | 1850 | Number Theory | Segmented sieve plus prime-power exponents | yes |
+| 469 | [XOR with Subset](469-XORSUB.md) `XORSUB` | 1879 | Bit Manipulation | XOR linear basis over GF(2) | yes |
+| 470 | [ChefTown Parade](470-CHEFTOWN.md) `CHEFTOWN` | 1882 | Arrays | Sliding-window maximum and minimum with deques | yes |
+| 471 | [Snake Eating](471-SNAKEEAT.md) `SNAKEEAT` | 1940 | Binary Search | Feasibility check with prefix sums | yes |
+| 472 | [Chef and Good Subsequences](472-GDSUB.md) `GDSUB` | 1999 | Combinatorics | Elementary symmetric polynomials by DP | yes |
 
 ## 2000&ndash;2199
 

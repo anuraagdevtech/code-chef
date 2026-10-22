@@ -15,3 +15,26 @@ Both window extremes come from **monotonic deques**. For the maximum, hold indic
 Note the input format is unusual for CodeChef: there is **no leading $T$**, just $N$ and $W$ followed by the heights.
 
 In the sample $N = 2$ and $W = 1$. Every single-element window trivially has span $0 = W - 1$, so both positions count and the answer is $2$. The degenerate $W = 1$ case needs no special handling — the formula covers it.
+
+## Edge cases
+
+- **$H$ is a permutation, so every window holds distinct heights** — which means a window of length $W$ has consecutive values exactly when its maximum minus its minimum equals $W - 1$. No sorting or counting is needed.
+- **Both a sliding maximum and a sliding minimum are required**, each maintained by a monotone deque so that every window is answered in amortised constant time.
+- **The deques hold indices, not values**, so the expiry check can compare against the window's left edge.
+- **Expiry must be checked after pushing**, and only the front can expire — which is why a single `if` suffices rather than a loop.
+- **Windows before the array is full are skipped**, hence the early continue until the left edge reaches $0$.
+- **$W = 1$ makes every window interesting**, since the maximum and minimum coincide and $W - 1 = 0$ — the first sample counts both positions.
+- **$W = N$ leaves one window**, which is interesting precisely because $H$ is a permutation of $1 \dots N$.
+- **There is no test-case count**, and $N$ reaches $4 \cdot 10^5$, so the deque approach is what keeps it linear.
+
+## Dry run
+
+Second sample: $H = 1, 2, 3, 4$ with $W = 2$.
+
+| window | maximum | minimum | difference | interesting? |
+|---|---:|---:|---:|:---:|
+| $1, 2$ | 2 | 1 | 1 | yes |
+| $2, 3$ | 3 | 2 | 1 | yes |
+| $3, 4$ | 4 | 3 | 1 | yes |
+
+Output `3`.
