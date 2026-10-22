@@ -1,3 +1,5 @@
+[&larr; 388. K-Subarrays](388-KSUB.md) &middot; [Index](README.md) &middot; [390. Chef and Frogs &rarr;](390-FROGV.md)
+
 # 389. The Optimal Pairs
 
 > [`OPTPAIRS`](https://www.codechef.com/problems/OPTPAIRS) &middot; difficulty **1666** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

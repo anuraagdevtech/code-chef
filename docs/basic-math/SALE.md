@@ -1,3 +1,5 @@
+[&larr; 81. Reach fast](REACHFAST.md) &middot; [Index](../../README.md) &middot; [85. Binary Battles &rarr;](BIN_BAT.md)
+
 # 83. Get Lowest Free
 
 > CodeChef problem code [`SALE`](https://www.codechef.com/problems/SALE) &middot; difficulty **778** &middot; time limit **1s**

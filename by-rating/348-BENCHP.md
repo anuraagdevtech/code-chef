@@ -1,3 +1,5 @@
+[&larr; 347. ChefWatson uses Social Network](347-BOOKCHEF.md) &middot; [Index](README.md) &middot; [349. Chain of Doughnuts &rarr;](349-DONUTS.md)
+
 # 348. Bench Press
 
 > [`BENCHP`](https://www.codechef.com/problems/BENCHP) &middot; difficulty **1611** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

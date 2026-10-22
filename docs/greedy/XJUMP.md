@@ -1,3 +1,5 @@
+[&larr; 34. Maximise the Tastiness](MAXTASTE.md) &middot; [Index](../../README.md) &middot; [57. Chef and his Apps &rarr;](CHEFAPPS.md)
+
 # 51. X Jumps
 
 > CodeChef problem code [`XJUMP`](https://www.codechef.com/problems/XJUMP) &middot; difficulty **686** &middot; time limit **1s**

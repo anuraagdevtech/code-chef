@@ -1,3 +1,5 @@
+[&larr; 396. Survive in ChocoLand](SURVIVE.md) &middot; [Index](../../README.md) &middot; [429. Gritty Grid &rarr;](GRITGRID.md)
+
 # 414. Three Numbers
 
 > CodeChef problem code [`THREENUMBERS`](https://www.codechef.com/problems/THREENUMBERS) &middot; difficulty **1675** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 044. Flip the cards](044-FLIPCARDS.md) &middot; [Index](README.md) &middot; [046. Finding Shoes &rarr;](046-FINDSHOES.md)
+
 # 045. Bath in Winters
 
 > [`BATH`](https://www.codechef.com/problems/BATH) &middot; difficulty **643** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 349. Chain of Doughnuts](349-DONUTS.md) &middot; [Index](README.md) &middot; [351. Consecutive Xor &rarr;](351-XOR2.md)
+
 # 350. Squirrel and chestnut
 
 > [`SQUIRREL`](https://www.codechef.com/problems/SQUIRREL) &middot; difficulty **1611** &middot; time limit **0.5s** &middot; Jump from 2* to 3* (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 46. Candy Distribution](CANDYDIST.md) &middot; [Index](../../README.md) &middot; [77. Dracula Eats &rarr;](CHEAT.md)
+
 # 54. It is My Serve
 
 > CodeChef problem code [`MYSERVE`](https://www.codechef.com/problems/MYSERVE) &middot; difficulty **691** &middot; time limit **0.5s**

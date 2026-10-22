@@ -1,3 +1,5 @@
+[&larr; 295. Equal Difference](295-EQDIFFER.md) &middot; [Index](README.md) &middot; [297. Subarray permutations &rarr;](297-SUBPERM.md)
+
 # 296. IPC Trainers
 
 > [`IPCTRAIN`](https://www.codechef.com/problems/IPCTRAIN) &middot; difficulty **1500** &middot; time limit **2.5s** &middot; Jump from 2* to 3* (Level 3)

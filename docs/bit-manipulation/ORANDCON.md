@@ -1,3 +1,5 @@
+[&larr; 289. XxOoRr](XXOORR.md) &middot; [Index](../../README.md) &middot; [303. Consecutive Xor &rarr;](XOR2.md)
+
 # 293. Yet Another Constructive Problem
 
 > CodeChef problem code [`ORANDCON`](https://www.codechef.com/problems/ORANDCON) &middot; difficulty **1580** &middot; time limit **1s**

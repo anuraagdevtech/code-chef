@@ -1,3 +1,5 @@
+[&larr; 161. Motivation](IMDB.md) &middot; [Index](../../README.md) &middot; [174. Chef and IPC Certificates &rarr;](IPCCERT.md)
+
 # 173. Chef in Vaccination Queue
 
 > CodeChef problem code [`VACCINQ`](https://www.codechef.com/problems/VACCINQ) &middot; difficulty **1016** &middot; time limit **1s**

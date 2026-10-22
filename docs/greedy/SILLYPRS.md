@@ -1,3 +1,5 @@
+[&larr; 270. Subarray Removal](SUBARRAYREM.md) &middot; [Index](../../README.md) &middot; [283. Admins and Shopping &rarr;](ADMINSHOP.md)
+
 # 272. Magda and Silly Pairs
 
 > CodeChef problem code [`SILLYPRS`](https://www.codechef.com/problems/SILLYPRS) &middot; difficulty **1507** &middot; time limit **1.5s**

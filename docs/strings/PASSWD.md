@@ -1,3 +1,5 @@
+[&larr; 194. Snake Procession](SNAKPROC.md) &middot; [Index](../../README.md) &middot; [205. Lucky Four &rarr;](LUCKFOUR.md)
+
 # 195. Password
 
 > CodeChef problem code [`PASSWD`](https://www.codechef.com/problems/PASSWD) &middot; difficulty **1470** &middot; time limit **1s**

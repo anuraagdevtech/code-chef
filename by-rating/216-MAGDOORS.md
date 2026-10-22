@@ -1,3 +1,5 @@
+[&larr; 215. The Smallest Pair](215-SMPAIR.md) &middot; [Index](README.md) &middot; [217. Appy and Contest &rarr;](217-HMAPPY2.md)
+
 # 216. Magical Doors
 
 > [`MAGDOORS`](https://www.codechef.com/problems/MAGDOORS) &middot; difficulty **1355** &middot; time limit **1.5s** &middot; Level up from 1* to 2* (Level 2)

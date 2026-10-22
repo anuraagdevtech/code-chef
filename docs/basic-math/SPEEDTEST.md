@@ -1,3 +1,5 @@
+[&larr; 63. Too many Floors](FLOORS.md) &middot; [Index](../../README.md) &middot; [68. Pass or Fail &rarr;](PASSORFAIL.md)
+
 # 64. Speed Limit Test
 
 > CodeChef problem code [`SPEEDTEST`](https://www.codechef.com/problems/SPEEDTEST) &middot; difficulty **718** &middot; time limit **1s**

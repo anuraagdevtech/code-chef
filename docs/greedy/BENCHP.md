@@ -1,3 +1,5 @@
+[&larr; 391. Chain of Doughnuts](DONUTS.md) &middot; [Index](../../README.md) &middot; [394. Maximum Subarray  &rarr;](MAXSUBARR.md)
+
 # 392. Bench Press
 
 > CodeChef problem code [`BENCHP`](https://www.codechef.com/problems/BENCHP) &middot; difficulty **1611** &middot; time limit **1.5s**

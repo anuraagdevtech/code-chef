@@ -1,3 +1,5 @@
+[&larr; 426. Team Formation](426-TEAMFOR.md) &middot; [Index](README.md) &middot; [428. Iron, Magnet and Wall &rarr;](428-FEMA2.md)
+
 # 427. Chef and Prime Divisors
 
 > [`CHAPD`](https://www.codechef.com/problems/CHAPD) &middot; difficulty **1720** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

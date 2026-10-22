@@ -1,3 +1,5 @@
+[&larr; 074. Pass or Fail](074-PASSORFAIL.md) &middot; [Index](README.md) &middot; [076. Too many items &rarr;](076-POLYBAGS.md)
+
 # 075. Cyclic Quadrilateral
 
 > [`CYCLICQD`](https://www.codechef.com/problems/CYCLICQD) &middot; difficulty **735** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

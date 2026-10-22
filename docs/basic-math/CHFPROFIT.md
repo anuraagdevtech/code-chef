@@ -1,3 +1,5 @@
+[&larr; 124. Secret Recipe](CHEFRUN.md) &middot; [Index](../../README.md) &middot; [133. HOW MANY DIGITS DO I HAVE &rarr;](HOWMANY.md)
+
 # 125. Chef and Profits
 
 > CodeChef problem code [`CHFPROFIT`](https://www.codechef.com/problems/CHFPROFIT) &middot; difficulty **889** &middot; time limit **1s**

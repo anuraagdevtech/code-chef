@@ -1,3 +1,5 @@
+[&larr; 325. Minion Chef and Bananas](MINEAT.md) &middot; [Index](../../README.md) &middot; [327. Forest Gathering &rarr;](FORESTGA.md)
+
 # 326. Stacks
 
 > CodeChef problem code [`STACKS`](https://www.codechef.com/problems/STACKS) &middot; difficulty **1799** &middot; time limit **4s**

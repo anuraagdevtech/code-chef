@@ -1,3 +1,5 @@
+[&larr; 240. HTML Tags](HTMLTAGS.md) &middot; [Index](../../README.md) &middot; [259. Correct Sentence &rarr;](CORTSENT.md)
+
 # 249. Magical Planks
 
 > CodeChef problem code [`MKGPLNKS`](https://www.codechef.com/problems/MKGPLNKS) &middot; difficulty **1467** &middot; time limit **0.5s**

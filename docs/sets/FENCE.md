@@ -1,3 +1,5 @@
+[&larr; 386. Good Pairs](GOODPAIRS.md) &middot; [Index](../../README.md) &middot; [451. Max Mex &rarr;](MAXMEX.md)
+
 # 417. Fencing
 
 > CodeChef problem code [`FENCE`](https://www.codechef.com/problems/FENCE) &middot; difficulty **1696** &middot; time limit **3s**

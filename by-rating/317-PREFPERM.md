@@ -1,3 +1,5 @@
+[&larr; 316. Minimum Number of Pizzas](316-MINPIZZAS.md) &middot; [Index](README.md) &middot; [318. Sheokand and Number &rarr;](318-SHKNUM.md)
+
 # 317. Prefix Permutation
 
 > [`PREFPERM`](https://www.codechef.com/problems/PREFPERM) &middot; difficulty **1532** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

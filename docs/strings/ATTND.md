@@ -1,3 +1,5 @@
+[&larr; 291. Boring String](BORSTR.md) &middot; [Index](../../README.md) &middot; [409. Permutation and Palindrome &rarr;](PERMPAL.md)
+
 # 335. Attendance
 
 > CodeChef problem code [`ATTND`](https://www.codechef.com/problems/ATTND) &middot; difficulty **1148** &middot; time limit **1s**

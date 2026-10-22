@@ -1,3 +1,5 @@
+[&larr; 234. Reversing directions](DIRECTI.md) &middot; [Index](../../README.md) &middot; [249. Magical Planks &rarr;](MKGPLNKS.md)
+
 # 240. HTML Tags
 
 > CodeChef problem code [`HTMLTAGS`](https://www.codechef.com/problems/HTMLTAGS) &middot; difficulty **1441** &middot; time limit **0.5s**

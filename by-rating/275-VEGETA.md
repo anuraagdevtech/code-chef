@@ -1,3 +1,5 @@
+[&larr; 274. Chef and Numbers](274-CHEFFED.md) &middot; [Index](README.md) &middot; [276. Max Mex &rarr;](276-MEX.md)
+
 # 275. Majin Vegeta
 
 > [`VEGETA`](https://www.codechef.com/problems/VEGETA) &middot; difficulty **1477** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

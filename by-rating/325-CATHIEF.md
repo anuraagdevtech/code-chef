@@ -1,3 +1,5 @@
+[&larr; 324. Count K-Primes](324-KPRIME.md) &middot; [Index](README.md) &middot; [326. XxOoRr &rarr;](326-XXOORR.md)
+
 # 325. Catch the Thief
 
 > [`CATHIEF`](https://www.codechef.com/problems/CATHIEF) &middot; difficulty **1550** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 20. Monopoly](MONOPOLY2.md) &middot; [Index](../../README.md) &middot; [25. Sasta Shark Tank &rarr;](SST.md)
+
 # 23. Nearest Exit
 
 > CodeChef problem code [`NEARESTEXIT`](https://www.codechef.com/problems/NEARESTEXIT) &middot; difficulty **585** &middot; time limit **1s**

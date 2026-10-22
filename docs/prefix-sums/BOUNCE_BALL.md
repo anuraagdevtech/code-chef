@@ -1,3 +1,5 @@
+[&larr; 233. Parallel Processing](PLPROCESS.md) &middot; [Index](../../README.md) &middot; [328. Shortest Route &rarr;](SHROUTE.md)
+
 # 298. Bouncing Ball
 
 > CodeChef problem code [`BOUNCE_BALL`](https://www.codechef.com/problems/BOUNCE_BALL) &middot; difficulty **1607** &middot; time limit **1s**

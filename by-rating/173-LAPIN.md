@@ -1,3 +1,5 @@
+[&larr; 172. Attendance](172-ATTND.md) &middot; [Index](README.md) &middot; [174. Lazy Salesman &rarr;](174-HOLIDAYS.md)
+
 # 173. Lapindromes
 
 > [`LAPIN`](https://www.codechef.com/problems/LAPIN) &middot; difficulty **1159** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

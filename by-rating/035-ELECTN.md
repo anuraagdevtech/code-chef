@@ -1,3 +1,5 @@
+[&larr; 034. Qualify the round](034-QUALIFY.md) &middot; [Index](README.md) &middot; [036. Minimum Cars required &rarr;](036-MINCARS.md)
+
 # 035. Elections in Chefland
 
 > [`ELECTN`](https://www.codechef.com/problems/ELECTN) &middot; difficulty **604** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

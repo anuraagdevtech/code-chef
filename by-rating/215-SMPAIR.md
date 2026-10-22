@@ -1,3 +1,5 @@
+[&larr; 214. Turn It](214-NFS.md) &middot; [Index](README.md) &middot; [216. Magical Doors &rarr;](216-MAGDOORS.md)
+
 # 215. The Smallest Pair
 
 > [`SMPAIR`](https://www.codechef.com/problems/SMPAIR) &middot; difficulty **1352** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

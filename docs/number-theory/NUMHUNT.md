@@ -1,3 +1,5 @@
+[&larr; 410. Find eX](FIND_X.md) &middot; [Index](../../README.md) &middot; [424. Chef Product &rarr;](CHEFPRODUCT.md)
+
 # 419. Number Hunt
 
 > CodeChef problem code [`NUMHUNT`](https://www.codechef.com/problems/NUMHUNT) &middot; difficulty **1638** &middot; time limit **1s**

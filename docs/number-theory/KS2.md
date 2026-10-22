@@ -1,3 +1,5 @@
+[&larr; 279. Split Sums](SPSUM.md) &middot; [Index](../../README.md) &middot; [282. Monsters &rarr;](SPCP5.md)
+
 # 280. Guddu on a Date
 
 > CodeChef problem code [`KS2`](https://www.codechef.com/problems/KS2) &middot; difficulty **1525** &middot; time limit **1s**

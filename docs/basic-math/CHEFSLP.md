@@ -1,3 +1,5 @@
+[&larr; 133. HOW MANY DIGITS DO I HAVE](HOWMANY.md) &middot; [Index](../../README.md) &middot; [144. Car Range &rarr;](CARRANGE.md)
+
 # 137. Chef and Pairing Slippers
 
 > CodeChef problem code [`CHEFSLP`](https://www.codechef.com/problems/CHEFSLP) &middot; difficulty **930** &middot; time limit **1s**

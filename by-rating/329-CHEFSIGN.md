@@ -1,3 +1,5 @@
+[&larr; 328. Increasing Decreasing](328-INCRDEC.md) &middot; [Index](README.md) &middot; [330. Nice Pairs  &rarr;](330-NPAIRS.md)
+
 # 329. Chef and Sign Sequences
 
 > [`CHEFSIGN`](https://www.codechef.com/problems/CHEFSIGN) &middot; difficulty **1563** &middot; time limit **2s** &middot; 1400 to 1600 difficulty problems (Level 2)

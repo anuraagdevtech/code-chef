@@ -1,3 +1,5 @@
+[&larr; 14. Sugarcane Juice Business](SUGARCANE.md) &middot; [Index](../../README.md) &middot; [16. Chef and Candies &rarr;](CHEFCAND.md)
+
 # 15. Count the Notebooks
 
 > CodeChef problem code [`NOTEBOOK`](https://www.codechef.com/problems/NOTEBOOK) &middot; difficulty **563** &middot; time limit **1s**

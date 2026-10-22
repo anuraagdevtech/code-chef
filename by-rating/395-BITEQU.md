@@ -1,3 +1,5 @@
+[&larr; 394. Three Numbers](394-THREENUMBERS.md) &middot; [Index](README.md) &middot; [396. Array sorting &rarr;](396-ARRSORT.md)
+
 # 395. Bitwise Equation
 
 > [`BITEQU`](https://www.codechef.com/problems/BITEQU) &middot; difficulty **1679** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

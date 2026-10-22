@@ -1,3 +1,5 @@
+[&larr; 82. Single-use Attack](SINGLEUSE.md) &middot; [Index](../../README.md) &middot; [127. Peaceful Party &rarr;](MAYOR_PARTY.md)
+
 # 104. Smallest Numbers of Notes
 
 > CodeChef problem code [`FLOW005`](https://www.codechef.com/problems/FLOW005) &middot; difficulty **750** &middot; time limit **1s**

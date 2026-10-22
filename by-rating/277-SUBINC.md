@@ -1,3 +1,5 @@
+[&larr; 276. Max Mex](276-MEX.md) &middot; [Index](README.md) &middot; [278. Distinct Pair Sums &rarr;](278-MANYSUMS.md)
+
 # 277. Count Subarrays
 
 > [`SUBINC`](https://www.codechef.com/problems/SUBINC) &middot; difficulty **1478** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

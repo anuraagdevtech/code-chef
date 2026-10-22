@@ -1,3 +1,5 @@
+[&larr; 185. Pawri Meme](PAWRI.md) &middot; [Index](../../README.md) &middot; [188. Chef and Feedback &rarr;](ERROR.md)
+
 # 186. Chef and the Wildcard Matching
 
 > CodeChef problem code [`TWOSTR`](https://www.codechef.com/problems/TWOSTR) &middot; difficulty **1254** &middot; time limit **1s**

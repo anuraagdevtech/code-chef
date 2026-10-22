@@ -1,3 +1,5 @@
+[&larr; 335. Attendance](ATTND.md) &middot; [Index](../../README.md) &middot; [425. 3-Blast Palindrome &rarr;](BLAST3.md)
+
 # 409. Permutation and Palindrome
 
 > CodeChef problem code [`PERMPAL`](https://www.codechef.com/problems/PERMPAL) &middot; difficulty **1651** &middot; time limit **2s**

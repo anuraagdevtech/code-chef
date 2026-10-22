@@ -1,3 +1,5 @@
+[&larr; 017. Minimum Pizzas](017-MINPIZZA.md) &middot; [Index](README.md) &middot; [019. Expert Setter &rarr;](019-EXPERT.md)
+
 # 018. Chefland Games
 
 > [`CHEFGAMES`](https://www.codechef.com/problems/CHEFGAMES) &middot; difficulty **550** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 308. Median of adjacent maximum numbers](308-MXMEDIAN.md) &middot; [Index](README.md) &middot; [310. Guddu on a Date &rarr;](310-KS2.md)
+
 # 309. Split Sums
 
 > [`SPSUM`](https://www.codechef.com/problems/SPSUM) &middot; difficulty **1524** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

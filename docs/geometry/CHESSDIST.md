@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [69. Cyclic Quadrilateral &rarr;](CYCLICQD.md)
+
 # 52. Chessboard Distance
 
 > CodeChef problem code [`CHESSDIST`](https://www.codechef.com/problems/CHESSDIST) &middot; difficulty **690** &middot; time limit **1s**

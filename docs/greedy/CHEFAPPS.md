@@ -1,3 +1,5 @@
+[&larr; 51. X Jumps](XJUMP.md) &middot; [Index](../../README.md) &middot; [59. Minimum number of coins &rarr;](MINCOINS.md)
+
 # 57. Chef and his Apps
 
 > CodeChef problem code [`CHEFAPPS`](https://www.codechef.com/problems/CHEFAPPS) &middot; difficulty **702** &middot; time limit **0.5s**

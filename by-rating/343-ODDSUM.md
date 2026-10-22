@@ -1,3 +1,5 @@
+[&larr; 342. Andrew and the Meatballs again](342-AMMEAT2.md) &middot; [Index](README.md) &middot; [344. Chef And Adjacent Sums &rarr;](344-CHFADJSUM.md)
+
 # 343. Odd Sum
 
 > [`ODDSUM`](https://www.codechef.com/problems/ODDSUM) &middot; difficulty **1600** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 051. Chef and Water Bottles](051-CHEFBOTTLE.md) &middot; [Index](README.md) &middot; [053. The Last Levels &rarr;](053-LASTLEVELS.md)
+
 # 052. Candy Distribution
 
 > [`CANDYDIST`](https://www.codechef.com/problems/CANDYDIST) &middot; difficulty **668** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

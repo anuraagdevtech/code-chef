@@ -1,3 +1,5 @@
+[&larr; 203. Sudhanva and Books](203-SUDBOOKS.md) &middot; [Index](README.md) &middot; [205. Maximum Weight Difference &rarr;](205-MAXDIFF.md)
+
 # 204. Smallest Possible Whole Number
 
 > [`SMOL`](https://www.codechef.com/problems/SMOL) &middot; difficulty **1306** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

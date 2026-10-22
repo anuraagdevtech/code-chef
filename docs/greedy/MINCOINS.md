@@ -1,3 +1,5 @@
+[&larr; 57. Chef and his Apps](CHEFAPPS.md) &middot; [Index](../../README.md) &middot; [66. A or B &rarr;](AORB.md)
+
 # 59. Minimum number of coins
 
 > CodeChef problem code [`MINCOINS`](https://www.codechef.com/problems/MINCOINS) &middot; difficulty **711** &middot; time limit **1s**

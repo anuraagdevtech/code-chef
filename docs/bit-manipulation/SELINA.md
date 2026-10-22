@@ -1,3 +1,5 @@
+[&larr; 344. Prajit and bits](ADDI.md) &middot; [Index](../../README.md) &middot; [346. Chef and Chefina &rarr;](CHFNA.md)
+
 # 345. Jon and Selina
 
 > CodeChef problem code [`SELINA`](https://www.codechef.com/problems/SELINA) &middot; difficulty **unrated** &middot; time limit **1s**

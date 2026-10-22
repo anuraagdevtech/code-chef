@@ -1,3 +1,5 @@
+[&larr; 098. Equalizing Numbers](098-EQLZING.md) &middot; [Index](README.md) &middot; [100. Genes &rarr;](100-GENE01.md)
+
 # 099. The Preparations
 
 > [`SUPCHEF`](https://www.codechef.com/problems/SUPCHEF) &middot; difficulty **823** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

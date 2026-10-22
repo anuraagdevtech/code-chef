@@ -1,3 +1,5 @@
+[&larr; 442. Xor and Multiply](442-XORMUL.md) &middot; [Index](README.md) &middot; [444. Modular GCD &rarr;](444-GCDMOD.md)
+
 # 443. Fair Distribution
 
 > [`FAIR_DISTRIB`](https://www.codechef.com/problems/FAIR_DISTRIB) &middot; difficulty **1741** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

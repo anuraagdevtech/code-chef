@@ -1,3 +1,5 @@
+[&larr; 448. Ceiling Sum](CEILSUM.md) &middot; [Index](../../README.md) &middot; [480. Save People &rarr;](FIZZBUZZ2306.md)
+
 # 467. Maximum Value
 
 > CodeChef problem code [`MVALUE`](https://www.codechef.com/problems/MVALUE) &middot; difficulty **1738** &middot; time limit **0.5s**

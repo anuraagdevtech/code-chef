@@ -1,3 +1,5 @@
+[&larr; 181. Watson asks Does Permutation Exist](181-PERMEXIS.md) &middot; [Index](README.md) &middot; [183. Version Control System &rarr;](183-VCS.md)
+
 # 182. A Subtask Problem
 
 > [`SUBTASK`](https://www.codechef.com/problems/SUBTASK) &middot; difficulty **1217** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

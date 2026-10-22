@@ -1,3 +1,5 @@
+[&larr; 239. Decreasing Srrnmieeda](239-DECREM.md) &middot; [Index](README.md) &middot; [241. Say No To Drugs &rarr;](241-NODRUGS.md)
+
 # 240. Average Array
 
 > [`AVGARR`](https://www.codechef.com/problems/AVGARR) &middot; difficulty **1424** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 467. Maximum Value](MVALUE.md) &middot; [Index](../../README.md) &middot; [483. Digit Removal &rarr;](DIGITREM.md)
+
 # 480. Save People
 
 > CodeChef problem code [`FIZZBUZZ2306`](https://www.codechef.com/problems/FIZZBUZZ2306) &middot; difficulty **1750** &middot; time limit **1s**

@@ -234,6 +234,8 @@ def render_study(d, seq):
     ready = {'edge cases', 'dry run'} <= set(sec)
     P = []
     A = P.append
+    prev, nxt = NAV_RATED.get(d['code'], (None, None))
+    A(nav_line(prev, nxt, 'README.md') + '\n')
     A(f'# {seq:03d}. {d["name"]}\n')
     A(f'> [`{d["code"]}`](https://www.codechef.com/problems/{d["code"]}) '
       f'&middot; difficulty **{rating}** '
@@ -290,6 +292,10 @@ def write_study_index(built, order):
 
     L = []
     A = L.append
+    f_seq, f_code = rows[0]
+    A(f'[&larr; Repository index](../README.md) &middot; '
+      f'[{f_seq:03d}. {by_code[f_code]["name"]} &rarr;]'
+      f'({f_seq:03d}-{f_code}.md)\n')
     A('# Problems in rating order\n')
     A('Every solved problem, ordered by CodeChef difficulty rating and '
       'numbered so a plain directory listing follows the same order: '
@@ -350,6 +356,56 @@ def write_study_index(built, order):
         f.write('\n'.join(L).rstrip() + '\n')
 
 
+NAV_RATED = {}
+NAV_TOPIC = {}
+
+
+def nav_line(prev, nxt, index_href):
+    """A 'back | index | next' row. prev/nxt are (label, href) or None."""
+    parts = []
+    if prev:
+        parts.append(f'[&larr; {prev[0]}]({prev[1]})')
+    parts.append(f'[Index]({index_href})')
+    if nxt:
+        parts.append(f'[{nxt[0]} &rarr;]({nxt[1]})')
+    return ' &middot; '.join(parts)
+
+
+def build_nav(codes):
+    """Neighbour links for both views: rating order, and order within topic."""
+    name, topic = {}, {}
+    for c in codes:
+        raw = json.load(open(os.path.join(RAW, f'{c}.json'), encoding='utf-8'))
+        name[c] = raw.get('problem_name') or c
+        topic[c] = parse_authored(os.path.join(AUTH, f'{c}.md'))[0]['topic']
+
+    ladder = sorted(codes, key=lambda c: SEQ[c])
+
+    def rated_ref(j):
+        if not 0 <= j < len(ladder):
+            return None
+        o = ladder[j]
+        return (f'{SEQ[o]:03d}. {name[o]}', f'{SEQ[o]:03d}-{o}.md')
+
+    for i, c in enumerate(ladder):
+        NAV_RATED[c] = (rated_ref(i - 1), rated_ref(i + 1))
+
+    groups = defaultdict(list)
+    for c in codes:
+        groups[topic[c]].append(c)
+    for members in groups.values():
+        members.sort(key=lambda c: META[c]['order'])
+
+        def topic_ref(j, members=members):
+            if not 0 <= j < len(members):
+                return None
+            o = members[j]
+            return (f'{META[o]["order"]}. {name[o]}', f'{o}.md')
+
+        for i, c in enumerate(members):
+            NAV_TOPIC[c] = (topic_ref(i - 1), topic_ref(i + 1))
+
+
 def build_one(code):
     d = load(code)
     raw, meta, pm = d['raw'], d['meta'], d['pm']
@@ -361,6 +417,8 @@ def build_one(code):
     topic = meta['topic']
     P = []
     A = P.append
+    prev, nxt = NAV_TOPIC.get(code, (None, None))
+    A(nav_line(prev, nxt, os.path.join('..', '..', 'README.md')) + '\n')
     A(f'# {pm["order"]}. {name}\n')
     A(f'> CodeChef problem code [`{code}`]'
       f'(https://www.codechef.com/problems/{code}) &middot; '
@@ -412,6 +470,13 @@ def write_index(built, codes):
     done = {b['code'] for b in built}
     L = []
     A = L.append
+    ladder = sorted(done, key=lambda c: SEQ[c])
+    if ladder:
+        first = ladder[0]
+        name = next(b['name'] for b in built if b['code'] == first)
+        A(f'[Rating-ordered index](by-rating/README.md) &middot; '
+          f'[{SEQ[first]:03d}. {name} &rarr;]'
+          f'(by-rating/{SEQ[first]:03d}-{first}.md)\n')
     A('# CodeChef - Become 5 Star roadmap\n')
     A('Worked documentation for every problem I have solved on the CodeChef '
       '[Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: '
@@ -504,6 +569,10 @@ def main():
     global SEQ
     codes = open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
     SEQ = rating_order(codes)
+    have = [c for c in codes
+            if os.path.exists(os.path.join(AUTH, f'{c}.md'))
+            and os.path.exists(os.path.join(SOLN, f'{c}.py'))]
+    build_nav(have)
     built = [build_one(c) for c in codes
              if os.path.exists(os.path.join(AUTH, f'{c}.md'))
              and os.path.exists(os.path.join(SOLN, f'{c}.py'))]

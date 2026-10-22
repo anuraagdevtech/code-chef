@@ -1,3 +1,5 @@
+[&larr; 038. Jenga Night](038-JENGA.md) &middot; [Index](README.md) &middot; [040. Discus Throw &rarr;](040-DISCUS.md)
+
 # 039. Bus  Seat Numbering
 
 > [`SEATNUMBER`](https://www.codechef.com/problems/SEATNUMBER) &middot; difficulty **613** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

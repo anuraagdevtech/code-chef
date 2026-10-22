@@ -1,3 +1,5 @@
+[&larr; 298. Subarray Removal](298-SUBARRAYREM.md) &middot; [Index](README.md) &middot; [300. Equal by XORing &rarr;](300-EQBYXOR.md)
+
 # 299. Palindrome Pain
 
 > [`PALINPAIN`](https://www.codechef.com/problems/PALINPAIN) &middot; difficulty **1506** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

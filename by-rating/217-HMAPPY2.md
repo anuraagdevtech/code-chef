@@ -1,3 +1,5 @@
+[&larr; 216. Magical Doors](216-MAGDOORS.md) &middot; [Index](README.md) &middot; [218. Maximize the Minimum &rarr;](218-MAXTHEMIN.md)
+
 # 217. Appy and Contest
 
 > [`HMAPPY2`](https://www.codechef.com/problems/HMAPPY2) &middot; difficulty **1358** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

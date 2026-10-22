@@ -1,3 +1,5 @@
+[&larr; 221. Hotel Bytelandia](HOTEL.md) &middot; [Index](../../README.md) &middot; [309. Sort Checker &rarr;](SRTCHK.md)
+
 # 250. Approximately II
 
 > CodeChef problem code [`APPROX2`](https://www.codechef.com/problems/APPROX2) &middot; difficulty **1471** &middot; time limit **1.5s**

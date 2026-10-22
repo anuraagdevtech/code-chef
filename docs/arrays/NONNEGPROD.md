@@ -1,3 +1,5 @@
+[&larr; 141. First and Last](FIRSTANDLAST.md) &middot; [Index](../../README.md) &middot; [151. Chef and Cook-Off &rarr;](CCOOK.md)
+
 # 147. Non-Negative Product
 
 > CodeChef problem code [`NONNEGPROD`](https://www.codechef.com/problems/NONNEGPROD) &middot; difficulty **948** &middot; time limit **1s**

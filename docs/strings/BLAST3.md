@@ -1,3 +1,5 @@
+[&larr; 409. Permutation and Palindrome](PERMPAL.md) &middot; [Index](../../README.md) &middot; [445. Spreading Charges &rarr;](CHRGES.md)
+
 # 425. 3-Blast Palindrome
 
 > CodeChef problem code [`BLAST3`](https://www.codechef.com/problems/BLAST3) &middot; difficulty **1699** &middot; time limit **1s**

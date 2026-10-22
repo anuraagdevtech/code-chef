@@ -1,3 +1,5 @@
+[&larr; 102. Mileage matters](102-MILEAGE.md) &middot; [Index](README.md) &middot; [104. Circular Track &rarr;](104-LOOP.md)
+
 # 103. Melt Gold
 
 > [`MELTGOLD`](https://www.codechef.com/problems/MELTGOLD) &middot; difficulty **835** &middot; time limit **1.5s** &middot; 500 to 1000 difficulty rating (Level 1)

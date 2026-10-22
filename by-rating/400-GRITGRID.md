@@ -1,3 +1,5 @@
+[&larr; 399. Boxes](399-BOX95.md) &middot; [Index](README.md) &middot; [401. Subarrays with length &rarr;](401-SUBARRAYLEN.md)
+
 # 400. Gritty Grid
 
 > [`GRITGRID`](https://www.codechef.com/problems/GRITGRID) &middot; difficulty **1691** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

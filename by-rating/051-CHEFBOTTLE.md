@@ -1,3 +1,5 @@
+[&larr; 050. Complementary Strand in a DNA](050-DNASTRAND.md) &middot; [Index](README.md) &middot; [052. Candy Distribution &rarr;](052-CANDYDIST.md)
+
 # 051. Chef and Water Bottles
 
 > [`CHEFBOTTLE`](https://www.codechef.com/problems/CHEFBOTTLE) &middot; difficulty **662** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

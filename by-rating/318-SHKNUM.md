@@ -1,3 +1,5 @@
+[&larr; 317. Prefix Permutation](317-PREFPERM.md) &middot; [Index](README.md) &middot; [319. Flip the String &rarr;](319-FLIP.md)
+
 # 318. Sheokand and Number
 
 > [`SHKNUM`](https://www.codechef.com/problems/SHKNUM) &middot; difficulty **1534** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

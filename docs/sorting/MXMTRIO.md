@@ -1,3 +1,5 @@
+[&larr; 213. Maximize the Minimum](MAXTHEMIN.md) &middot; [Index](../../README.md) &middot; [221. Hotel Bytelandia &rarr;](HOTEL.md)
+
 # 214. Maximum Trio
 
 > CodeChef problem code [`MXMTRIO`](https://www.codechef.com/problems/MXMTRIO) &middot; difficulty **1349** &middot; time limit **1s**

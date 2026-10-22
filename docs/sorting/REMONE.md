@@ -1,3 +1,5 @@
+[&larr; 318. ChefWatson uses Social Network](BOOKCHEF.md) &middot; [Index](../../README.md) &middot; [320. Pair Sort Version 3 &rarr;](PSORT3.md)
+
 # 319. Remove One Element
 
 > CodeChef problem code [`REMONE`](https://www.codechef.com/problems/REMONE) &middot; difficulty **1700** &middot; time limit **1.5s**

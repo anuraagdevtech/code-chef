@@ -1,3 +1,5 @@
+[&larr; 397. Chef and Water Car](397-CHEFCAR.md) &middot; [Index](README.md) &middot; [399. Boxes &rarr;](399-BOX95.md)
+
 # 398. Anti-Palindrome Queries
 
 > [`ANTIPALQ`](https://www.codechef.com/problems/ANTIPALQ) &middot; difficulty **1688** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 174. Lazy Salesman](174-HOLIDAYS.md) &middot; [Index](README.md) &middot; [176. Pawri Meme &rarr;](176-PAWRI.md)
+
 # 175. Play Piano
 
 > [`PLAYPIAN`](https://www.codechef.com/problems/PLAYPIAN) &middot; difficulty **1180** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

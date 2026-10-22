@@ -1,3 +1,5 @@
+[&larr; 319. Remove One Element](REMONE.md) &middot; [Index](../../README.md) &middot; [321. Sort by swaps &rarr;](SWPSRT1.md)
+
 # 320. Pair Sort Version 3
 
 > CodeChef problem code [`PSORT3`](https://www.codechef.com/problems/PSORT3) &middot; difficulty **unrated** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 350. Chef and Easy Problem](XXOR.md) &middot; [Index](../../README.md) &middot; [369. Gcd Queries &rarr;](GCDQ.md)
+
 # 361. W String
 
 > CodeChef problem code [`WSTRING`](https://www.codechef.com/problems/WSTRING) &middot; difficulty **1809** &middot; time limit **1s**

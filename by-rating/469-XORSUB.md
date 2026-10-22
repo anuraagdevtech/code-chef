@@ -1,3 +1,5 @@
+[&larr; 468. Yet Another Cute Girl](468-PRETNUM.md) &middot; [Index](README.md) &middot; [470. ChefTown Parade &rarr;](470-CHEFTOWN.md)
+
 # 469. XOR with Subset
 
 > [`XORSUB`](https://www.codechef.com/problems/XORSUB) &middot; difficulty **1879** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

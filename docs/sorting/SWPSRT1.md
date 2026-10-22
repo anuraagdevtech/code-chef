@@ -1,3 +1,5 @@
+[&larr; 320. Pair Sort Version 3](PSORT3.md) &middot; [Index](../../README.md) &middot; [322. Chef Restaurant  &rarr;](CHEFRES.md)
+
 # 321. Sort by swaps
 
 > CodeChef problem code [`SWPSRT1`](https://www.codechef.com/problems/SWPSRT1) &middot; difficulty **unrated** &middot; time limit **1s**

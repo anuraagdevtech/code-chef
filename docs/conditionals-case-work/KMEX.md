@@ -1,3 +1,5 @@
+[&larr; 373. Say No To Drugs](NODRUGS.md) &middot; [Index](../../README.md) &middot; [408. Range Assign, Number of Distinct Elements Minimize &rarr;](RANGEASSIGN.md)
+
 # 378. K-MEX
 
 > CodeChef problem code [`KMEX`](https://www.codechef.com/problems/KMEX) &middot; difficulty **1450** &middot; time limit **1s**

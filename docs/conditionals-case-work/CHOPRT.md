@@ -1,3 +1,5 @@
+[&larr; 65. Decrement OR Increment](DECINC.md) &middot; [Index](../../README.md) &middot; [97. Genes &rarr;](GENE01.md)
+
 # 79. Chef And Operators
 
 > CodeChef problem code [`CHOPRT`](https://www.codechef.com/problems/CHOPRT) &middot; difficulty **520** &middot; time limit **1s**

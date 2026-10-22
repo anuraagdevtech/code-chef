@@ -1,3 +1,5 @@
+[&larr; 169. Motivation](169-IMDB.md) &middot; [Index](README.md) &middot; [171. Two Dishes &rarr;](171-TWODISH.md)
+
 # 170. Studying Alphabet
 
 > [`ALPHABET`](https://www.codechef.com/problems/ALPHABET) &middot; difficulty **1123** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

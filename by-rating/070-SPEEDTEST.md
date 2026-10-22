@@ -1,3 +1,5 @@
+[&larr; 069. Too many Floors](069-FLOORS.md) &middot; [Index](README.md) &middot; [071. Mahasena &rarr;](071-AMR15A.md)
+
 # 070. Speed Limit Test
 
 > [`SPEEDTEST`](https://www.codechef.com/problems/SPEEDTEST) &middot; difficulty **718** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

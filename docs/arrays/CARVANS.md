@@ -1,3 +1,5 @@
+[&larr; 176. A Subtask Problem](SUBTASK.md) &middot; [Index](../../README.md) &middot; [181. Average Flex &rarr;](AVGFLEX.md)
+
 # 179. Carvans
 
 > CodeChef problem code [`CARVANS`](https://www.codechef.com/problems/CARVANS) &middot; difficulty **1264** &middot; time limit **3s**

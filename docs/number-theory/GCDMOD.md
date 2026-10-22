@@ -1,3 +1,5 @@
+[&larr; 464. Crushed Apples and a Balance Scale](APP_BAL_SCA.md) &middot; [Index](../../README.md) &middot; [477. Eugene and function &rarr;](KFUNC.md)
+
 # 472. Modular GCD
 
 > CodeChef problem code [`GCDMOD`](https://www.codechef.com/problems/GCDMOD) &middot; difficulty **1741** &middot; time limit **1s**

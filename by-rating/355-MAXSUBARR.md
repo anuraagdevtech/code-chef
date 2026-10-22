@@ -1,3 +1,5 @@
+[&larr; 354. Chef And The Hiring Event](354-CHEARMY.md) &middot; [Index](README.md) &middot; [356. K Odd Sum &rarr;](356-ADVITIYA5.md)
+
 # 355. Maximum Subarray 
 
 > [`MAXSUBARR`](https://www.codechef.com/problems/MAXSUBARR) &middot; difficulty **1613** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

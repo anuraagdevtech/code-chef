@@ -1,3 +1,5 @@
+[&larr; 235. Remove Element](235-REMELEM.md) &middot; [Index](README.md) &middot; [237. Mix the Colors &rarr;](237-MIXCOLOR.md)
+
 # 236. Equality
 
 > [`EQUALITY`](https://www.codechef.com/problems/EQUALITY) &middot; difficulty **1419** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

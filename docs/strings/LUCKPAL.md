@@ -1,3 +1,5 @@
+[&larr; 458. Oracle Devu and Longest Common Subsequence](ORACLCS.md) &middot; [Index](../../README.md) &middot; [485. Compare those strings &rarr;](STRCOMPARE.md)
+
 # 475. Lucky Palin
 
 > CodeChef problem code [`LUCKPAL`](https://www.codechef.com/problems/LUCKPAL) &middot; difficulty **1744** &middot; time limit **0.5s**

@@ -1,3 +1,5 @@
+[&larr; 281. Positive or Negative Subarrays](POSITNEG.md) &middot; [Index](../../README.md) &middot; [293. Yet Another Constructive Problem &rarr;](ORANDCON.md)
+
 # 289. XxOoRr
 
 > CodeChef problem code [`XXOORR`](https://www.codechef.com/problems/XXOORR) &middot; difficulty **1551** &middot; time limit **1s**

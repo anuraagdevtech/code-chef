@@ -1,3 +1,5 @@
+[&larr; 322. Chef Restaurant ](CHEFRES.md) &middot; [Index](../../README.md) &middot; [324. Stable Quick Sort &rarr;](QCKSRT2.md)
+
 # 323. Sort by Adjacent Swaps
 
 > CodeChef problem code [`ADJSRT`](https://www.codechef.com/problems/ADJSRT) &middot; difficulty **unrated** &middot; time limit **1s**

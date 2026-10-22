@@ -1,3 +1,5 @@
+[&larr; 4. Exams](EXAMCHEF.md) &middot; [Index](../../README.md) &middot; [7. CRED Coins &rarr;](CREDCOINS.md)
+
 # 5. Chef in his Office
 
 > CodeChef problem code [`OFFICE`](https://www.codechef.com/problems/OFFICE) &middot; difficulty **532** &middot; time limit **0.5s**

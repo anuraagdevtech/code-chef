@@ -1,3 +1,5 @@
+[&larr; 247. Permutation Xority](247-PERMXORITY.md) &middot; [Index](README.md) &middot; [249. HTML Tags &rarr;](249-HTMLTAGS.md)
+
 # 248. Akash and Dinner
 
 > [`CHEFDINE`](https://www.codechef.com/problems/CHEFDINE) &middot; difficulty **1438** &middot; time limit **2.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

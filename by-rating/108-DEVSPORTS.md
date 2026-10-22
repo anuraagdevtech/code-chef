@@ -1,3 +1,5 @@
+[&larr; 107. Equal Integers](107-INCREAR.md) &middot; [Index](README.md) &middot; [109. Construct N &rarr;](109-CONN.md)
+
 # 108. Devendra and Water Sports
 
 > [`DEVSPORTS`](https://www.codechef.com/problems/DEVSPORTS) &middot; difficulty **859** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 142. World Chess Championship](WCC.md) &middot; [Index](../../README.md) &middot; [153. Play Piano &rarr;](PLAYPIAN.md)
+
 # 148. Rearranging digits to get a multiple of 5
 
 > CodeChef problem code [`DIGARR`](https://www.codechef.com/problems/DIGARR) &middot; difficulty **949** &middot; time limit **1s**

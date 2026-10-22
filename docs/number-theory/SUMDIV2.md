@@ -1,3 +1,5 @@
+[&larr; 450. Sum Product Segments](SUMPRODSEG.md) &middot; [Index](../../README.md) &middot; [457. Chef and Prime Divisors &rarr;](CHAPD.md)
+
 # 454. Find an integer
 
 > CodeChef problem code [`SUMDIV2`](https://www.codechef.com/problems/SUMDIV2) &middot; difficulty **1714** &middot; time limit **1s**

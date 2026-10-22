@@ -1,3 +1,5 @@
+[&larr; 251. Average Flex](251-AVGFLEX.md) &middot; [Index](README.md) &middot; [253. High Frequency &rarr;](253-HIGHFREQ.md)
+
 # 252. Chef and Coins Game
 
 > [`CHCOINSG`](https://www.codechef.com/problems/CHCOINSG) &middot; difficulty **1442** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

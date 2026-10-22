@@ -1,3 +1,5 @@
+[&larr; 306. Indivisible Permutation](INDIPERM.md) &middot; [Index](../../README.md) &middot; [368. GCD operations &rarr;](GCDOPS.md)
+
 # 355. Digit Longest Increasing Subsequences 2
 
 > CodeChef problem code [`LISDIGIT`](https://www.codechef.com/problems/LISDIGIT) &middot; difficulty **1297** &middot; time limit **3s**

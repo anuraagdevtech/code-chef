@@ -1,3 +1,5 @@
+[&larr; 33. Discus Throw](DISCUS.md) &middot; [Index](../../README.md) &middot; [36. Police and Thief &rarr;](POLTHIEF.md)
+
 # 35. Watching Movies at 2x
 
 > CodeChef problem code [`MOVIE2X`](https://www.codechef.com/problems/MOVIE2X) &middot; difficulty **628** &middot; time limit **1s**

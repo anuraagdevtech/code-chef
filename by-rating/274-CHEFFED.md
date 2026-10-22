@@ -1,3 +1,5 @@
+[&larr; 273. Order by XOR](273-XOR_ORDER.md) &middot; [Index](README.md) &middot; [275. Majin Vegeta &rarr;](275-VEGETA.md)
+
 # 274. Chef and Numbers
 
 > [`CHEFFED`](https://www.codechef.com/problems/CHEFFED) &middot; difficulty **1477** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

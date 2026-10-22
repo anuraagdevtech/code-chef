@@ -1,3 +1,5 @@
+[&larr; 47. Finding Square Roots](FSQRT.md) &middot; [Index](../../README.md) &middot; [49. Blackjack &rarr;](BLACKJACK.md)
+
 # 48. The Last Levels
 
 > CodeChef problem code [`LASTLEVELS`](https://www.codechef.com/problems/LASTLEVELS) &middot; difficulty **679** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 317. Javelin Qualification](JAVELIN.md) &middot; [Index](../../README.md) &middot; [319. Remove One Element &rarr;](REMONE.md)
+
 # 318. ChefWatson uses Social Network
 
 > CodeChef problem code [`BOOKCHEF`](https://www.codechef.com/problems/BOOKCHEF) &middot; difficulty **1610** &middot; time limit **1s**

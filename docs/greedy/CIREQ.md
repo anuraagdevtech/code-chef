@@ -1,3 +1,5 @@
+[&larr; 302. Chef And Adjacent Sums](CHFADJSUM.md) &middot; [Index](../../README.md) &middot; [315. Max Mex &rarr;](MEX.md)
+
 # 304. Positive array
 
 > CodeChef problem code [`CIREQ`](https://www.codechef.com/problems/CIREQ) &middot; difficulty **1620** &middot; time limit **2s**

@@ -1,3 +1,5 @@
+[&larr; 364. Chef and GCD](CHFGCD.md) &middot; [Index](../../README.md) &middot; [366. Appy and Contest &rarr;](HMAPPY2.md)
+
 # 365. Arranging Cup-cakes
 
 > CodeChef problem code [`RESQ`](https://www.codechef.com/problems/RESQ) &middot; difficulty **1322** &middot; time limit **2s**

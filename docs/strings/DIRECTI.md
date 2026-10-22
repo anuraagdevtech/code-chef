@@ -1,3 +1,5 @@
+[&larr; 216. Even Splits](EVENSPLIT.md) &middot; [Index](../../README.md) &middot; [240. HTML Tags &rarr;](HTMLTAGS.md)
+
 # 234. Reversing directions
 
 > CodeChef problem code [`DIRECTI`](https://www.codechef.com/problems/DIRECTI) &middot; difficulty **1426** &middot; time limit **1s**

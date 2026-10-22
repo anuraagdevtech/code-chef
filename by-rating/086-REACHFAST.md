@@ -1,3 +1,5 @@
+[&larr; 085. Lucky Four](085-LUCKFOUR.md) &middot; [Index](README.md) &middot; [087. Single-use Attack &rarr;](087-SINGLEUSE.md)
+
 # 086. Reach fast
 
 > [`REACHFAST`](https://www.codechef.com/problems/REACHFAST) &middot; difficulty **777** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

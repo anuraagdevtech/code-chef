@@ -1,3 +1,5 @@
+[&larr; 237. Mix the Colors](237-MIXCOLOR.md) &middot; [Index](README.md) &middot; [239. Decreasing Srrnmieeda &rarr;](239-DECREM.md)
+
 # 238. Fit to Play
 
 > [`PLAYFIT`](https://www.codechef.com/problems/PLAYFIT) &middot; difficulty **1419** &middot; time limit **1.64548s** &middot; 1400 to 1600 difficulty problems (Level 2)

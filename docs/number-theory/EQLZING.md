@@ -1,3 +1,5 @@
+[&larr; 93. Cars and Bikes](TYRES.md) &middot; [Index](../../README.md) &middot; [111. Construct N &rarr;](CONN.md)
+
 # 95. Equalizing Numbers
 
 > CodeChef problem code [`EQLZING`](https://www.codechef.com/problems/EQLZING) &middot; difficulty **823** &middot; time limit **1s**

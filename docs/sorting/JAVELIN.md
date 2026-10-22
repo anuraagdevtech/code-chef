@@ -1,3 +1,5 @@
+[&larr; 312. Fair distribution](SUBS.md) &middot; [Index](../../README.md) &middot; [318. ChefWatson uses Social Network &rarr;](BOOKCHEF.md)
+
 # 317. Javelin Qualification
 
 > CodeChef problem code [`JAVELIN`](https://www.codechef.com/problems/JAVELIN) &middot; difficulty **1538** &middot; time limit **1s**

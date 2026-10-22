@@ -1,3 +1,5 @@
+[&larr; 231. Decreasing Srrnmieeda](DECREM.md) &middot; [Index](../../README.md) &middot; [246. Yet another SOD problem &rarr;](SOD3.md)
+
 # 243. Cutting Pizza
 
 > CodeChef problem code [`CUTPIZ`](https://www.codechef.com/problems/CUTPIZ) &middot; difficulty **1446** &middot; time limit **1s**

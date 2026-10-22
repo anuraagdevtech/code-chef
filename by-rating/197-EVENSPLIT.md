@@ -1,3 +1,5 @@
+[&larr; 196. Equinox Strings](196-EQUINOX.md) &middot; [Index](README.md) &middot; [198. Reversal Sorting &rarr;](198-REVSORT.md)
+
 # 197. Even Splits
 
 > [`EVENSPLIT`](https://www.codechef.com/problems/EVENSPLIT) &middot; difficulty **1282** &middot; time limit **1.5s** &middot; Level up from 1* to 2* (Level 2)

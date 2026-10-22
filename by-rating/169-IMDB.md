@@ -1,3 +1,5 @@
+[&larr; 168. Chef and Stock Prices ](168-CSTOCK.md) &middot; [Index](README.md) &middot; [170. Studying Alphabet &rarr;](170-ALPHABET.md)
+
 # 169. Motivation
 
 > [`IMDB`](https://www.codechef.com/problems/IMDB) &middot; difficulty **1098** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

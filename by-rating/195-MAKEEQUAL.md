@@ -1,3 +1,5 @@
+[&larr; 194. Pushpa ](194-PUSH7PA.md) &middot; [Index](README.md) &middot; [196. Equinox Strings &rarr;](196-EQUINOX.md)
+
 # 195. Make them equal
 
 > [`MAKEEQUAL`](https://www.codechef.com/problems/MAKEEQUAL) &middot; difficulty **1267** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

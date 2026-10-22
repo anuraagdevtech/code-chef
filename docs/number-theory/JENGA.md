@@ -1,3 +1,5 @@
+[&larr; 30. Test Score](CHEFSCORE.md) &middot; [Index](../../README.md) &middot; [41. Mario and Transformation &rarr;](TRANSFORM.md)
+
 # 31. Jenga Night
 
 > CodeChef problem code [`JENGA`](https://www.codechef.com/problems/JENGA) &middot; difficulty **613** &middot; time limit **1s**

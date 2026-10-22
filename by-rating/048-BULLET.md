@@ -1,3 +1,5 @@
+[&larr; 047. Mario and Transformation](047-TRANSFORM.md) &middot; [Index](README.md) &middot; [049. Chess Ratings &rarr;](049-C_RATING.md)
+
 # 048. Mario and Bullet
 
 > [`BULLET`](https://www.codechef.com/problems/BULLET) &middot; difficulty **650** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 072. The Block Game](072-PALL01.md) &middot; [Index](README.md) &middot; [074. Pass or Fail &rarr;](074-PASSORFAIL.md)
+
 # 073. A or B
 
 > [`AORB`](https://www.codechef.com/problems/AORB) &middot; difficulty **728** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

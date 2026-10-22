@@ -1,3 +1,5 @@
+[&larr; 168. Chef and Stock Prices ](CSTOCK.md) &middot; [Index](../../README.md) &middot; [171. Distinct Pair Sums &rarr;](MANYSUMS.md)
+
 # 169. Turn It
 
 > CodeChef problem code [`NFS`](https://www.codechef.com/problems/NFS) &middot; difficulty **1350** &middot; time limit **1s**

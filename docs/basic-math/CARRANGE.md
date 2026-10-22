@@ -1,3 +1,5 @@
+[&larr; 137. Chef and Pairing Slippers](CHEFSLP.md) &middot; [Index](../../README.md) &middot; [145.  Am I Lucky! &rarr;](SPCP4.md)
+
 # 144. Car Range
 
 > CodeChef problem code [`CARRANGE`](https://www.codechef.com/problems/CARRANGE) &middot; difficulty **938** &middot; time limit **0.5s**

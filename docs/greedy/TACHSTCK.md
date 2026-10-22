@@ -1,3 +1,5 @@
+[&larr; 200. Daanish and Problems](DIV03.md) &middot; [Index](../../README.md) &middot; [203. Sticks &rarr;](STICKS.md)
+
 # 202. Chopsticks
 
 > CodeChef problem code [`TACHSTCK`](https://www.codechef.com/problems/TACHSTCK) &middot; difficulty **1320** &middot; time limit **7s**

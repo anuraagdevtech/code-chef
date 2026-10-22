@@ -1,3 +1,5 @@
+[&larr; 358. GCD of Prefixes](358-GCDPRF.md) &middot; [Index](README.md) &middot; [360. Positive array &rarr;](360-CIREQ.md)
+
 # 359. MaxEdges
 
 > [`MAXEDGES`](https://www.codechef.com/problems/MAXEDGES) &middot; difficulty **1618** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

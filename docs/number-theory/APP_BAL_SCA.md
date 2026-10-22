@@ -1,3 +1,5 @@
+[&larr; 457. Chef and Prime Divisors](CHAPD.md) &middot; [Index](../../README.md) &middot; [472. Modular GCD &rarr;](GCDMOD.md)
+
 # 464. Crushed Apples and a Balance Scale
 
 > CodeChef problem code [`APP_BAL_SCA`](https://www.codechef.com/problems/APP_BAL_SCA) &middot; difficulty **1736** &middot; time limit **1.5s**

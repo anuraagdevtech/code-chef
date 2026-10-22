@@ -1,3 +1,5 @@
+[&larr; 106. Equal Integers](INCREAR.md) &middot; [Index](../../README.md) &middot; [109. Devendra and Water Sports &rarr;](DEVSPORTS.md)
+
 # 107. Summer Heat
 
 > CodeChef problem code [`COCONUT`](https://www.codechef.com/problems/COCONUT) &middot; difficulty **852** &middot; time limit **0.5s**

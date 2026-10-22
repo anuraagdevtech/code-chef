@@ -1,3 +1,5 @@
+[&larr; 132. Problem](PR0BLEM.md) &middot; [Index](../../README.md) &middot; [143. Two vs Ten &rarr;](TWOVSTEN.md)
+
 # 139. Akash and Missing Class
 
 > CodeChef problem code [`CHFCLASS`](https://www.codechef.com/problems/CHFCLASS) &middot; difficulty **931** &middot; time limit **1s**

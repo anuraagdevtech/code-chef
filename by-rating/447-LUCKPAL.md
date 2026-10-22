@@ -1,3 +1,5 @@
+[&larr; 446. One Dimensional Kingdoms](446-ONEKING.md) &middot; [Index](README.md) &middot; [448. Copy and Paste &rarr;](448-NCOPIES.md)
+
 # 447. Lucky Palin
 
 > [`LUCKPAL`](https://www.codechef.com/problems/LUCKPAL) &middot; difficulty **1744** &middot; time limit **0.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

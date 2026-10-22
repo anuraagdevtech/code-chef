@@ -1,3 +1,5 @@
+[&larr; 149. Marathon](MARARUN.md) &middot; [Index](../../README.md) &middot; [156. Bear and Ladder &rarr;](BRLADDER.md)
+
 # 150. La Liga
 
 > CodeChef problem code [`COOK82A`](https://www.codechef.com/problems/COOK82A) &middot; difficulty **956** &middot; time limit **1s**

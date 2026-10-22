@@ -1,3 +1,5 @@
+[&larr; 306. Concat Palindrome](306-CONCATPAL.md) &middot; [Index](README.md) &middot; [308. Median of adjacent maximum numbers &rarr;](308-MXMEDIAN.md)
+
 # 307. When to take medicine
 
 > [`MEDIC`](https://www.codechef.com/problems/MEDIC) &middot; difficulty **1522** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

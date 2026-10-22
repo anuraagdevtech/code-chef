@@ -1,3 +1,5 @@
+[&larr; 218. Maximize the Minimum](218-MAXTHEMIN.md) &middot; [Index](README.md) &middot; [220. Chocolate Monger &rarr;](220-CM164364.md)
+
 # 219. Gift Shop and Coupon
 
 > [`GFTSHP`](https://www.codechef.com/problems/GFTSHP) &middot; difficulty **1364** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

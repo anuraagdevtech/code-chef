@@ -1,3 +1,5 @@
+[&larr; 23. Nearest Exit](NEARESTEXIT.md) &middot; [Index](../../README.md) &middot; [27. Qualify the round &rarr;](QUALIFY.md)
+
 # 25. Sasta Shark Tank
 
 > CodeChef problem code [`SST`](https://www.codechef.com/problems/SST) &middot; difficulty **592** &middot; time limit **1s**

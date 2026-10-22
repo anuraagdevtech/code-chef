@@ -1,3 +1,5 @@
+[&larr; 56. Weights](WGHTS.md) &middot; [Index](../../README.md) &middot; [128. Chef and Battery  &rarr;](FIFTYPE.md)
+
 # 110. Highest Divisor
 
 > CodeChef problem code [`HDIVISR`](https://www.codechef.com/problems/HDIVISR) &middot; difficulty **860** &middot; time limit **1s**

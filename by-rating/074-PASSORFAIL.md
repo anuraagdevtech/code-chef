@@ -1,3 +1,5 @@
+[&larr; 073. A or B](073-AORB.md) &middot; [Index](README.md) &middot; [075. Cyclic Quadrilateral &rarr;](075-CYCLICQD.md)
+
 # 074. Pass or Fail
 
 > [`PASSORFAIL`](https://www.codechef.com/problems/PASSORFAIL) &middot; difficulty **730** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 156. La Liga](156-COOK82A.md) &middot; [Index](README.md) &middot; [158. Chef and Spells &rarr;](158-CHFSPL.md)
+
 # 157. Chef and Cook-Off
 
 > [`CCOOK`](https://www.codechef.com/problems/CCOOK) &middot; difficulty **961** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

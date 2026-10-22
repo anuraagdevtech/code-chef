@@ -1,3 +1,5 @@
+[&larr; 346. Chef and Bulb Invention](346-CHFINVNT.md) &middot; [Index](README.md) &middot; [348. Bench Press &rarr;](348-BENCHP.md)
+
 # 347. ChefWatson uses Social Network
 
 > [`BOOKCHEF`](https://www.codechef.com/problems/BOOKCHEF) &middot; difficulty **1610** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

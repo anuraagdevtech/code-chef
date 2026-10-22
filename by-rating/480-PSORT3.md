@@ -1,3 +1,5 @@
+[&larr; 479. Counting Sort](479-CNTSORT.md) &middot; [Index](README.md) &middot; [481. Missing a Point &rarr;](481-PTMSSNG.md)
+
 # 480. Pair Sort Version 3
 
 > [`PSORT3`](https://www.codechef.com/problems/PSORT3) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

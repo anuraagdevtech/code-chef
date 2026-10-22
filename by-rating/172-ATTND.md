@@ -1,3 +1,5 @@
+[&larr; 171. Two Dishes](171-TWODISH.md) &middot; [Index](README.md) &middot; [173. Lapindromes &rarr;](173-LAPIN.md)
+
 # 172. Attendance
 
 > [`ATTND`](https://www.codechef.com/problems/ATTND) &middot; difficulty **1148** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

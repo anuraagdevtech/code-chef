@@ -1,3 +1,5 @@
+[&larr; 286. Weird Palindrome Making](286-MAKEPAL.md) &middot; [Index](README.md) &middot; [288. Anti Palindrome &rarr;](288-ANTIPALINDR.md)
+
 # 287. Interesting XOR!
 
 > [`IRSTXOR`](https://www.codechef.com/problems/IRSTXOR) &middot; difficulty **1487** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 437. Exam Cheating](EXAMCHT.md) &middot; [Index](../../README.md) &middot; [454. Find an integer &rarr;](SUMDIV2.md)
+
 # 450. Sum Product Segments
 
 > CodeChef problem code [`SUMPRODSEG`](https://www.codechef.com/problems/SUMPRODSEG) &middot; difficulty **1713** &middot; time limit **1s**

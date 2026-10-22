@@ -1,3 +1,5 @@
+[&larr; 382. Increasing Decreasing](INCRDEC.md) &middot; [Index](../../README.md) &middot; [397. GCD of Prefixes &rarr;](GCDPRF.md)
+
 # 393. Different String
 
 > CodeChef problem code [`DIFSTR`](https://www.codechef.com/problems/DIFSTR) &middot; difficulty **1612** &middot; time limit **1s**

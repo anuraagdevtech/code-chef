@@ -1,3 +1,5 @@
+[&larr; 232. Average Array](AVGARR.md) &middot; [Index](../../README.md) &middot; [238. Permutation Xority &rarr;](PERMXORITY.md)
+
 # 236. Balanced and Unique Arrays
 
 > CodeChef problem code [`UNQEQ`](https://www.codechef.com/problems/UNQEQ) &middot; difficulty **1431** &middot; time limit **1s**

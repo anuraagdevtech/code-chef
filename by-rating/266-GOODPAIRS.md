@@ -1,3 +1,5 @@
+[&larr; 265. Magical Planks](265-MKGPLNKS.md) &middot; [Index](README.md) &middot; [267. Password &rarr;](267-PASSWD.md)
+
 # 266. Good Pairs
 
 > [`GOODPAIRS`](https://www.codechef.com/problems/GOODPAIRS) &middot; difficulty **1469** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

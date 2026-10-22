@@ -1,3 +1,5 @@
+[&larr; 422. Encrypt Value](ENV.md) &middot; [Index](../../README.md) &middot; [427. Stamps 100 &rarr;](S100.md)
+
 # 423. Minimise Maximum Subarray Sum
 
 > CodeChef problem code [`MINIMISEMAX`](https://www.codechef.com/problems/MINIMISEMAX) &middot; difficulty **1649** &middot; time limit **1s**

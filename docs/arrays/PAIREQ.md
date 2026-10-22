@@ -1,3 +1,5 @@
+[&larr; 183. College Life 2](COLGLF2.md) &middot; [Index](../../README.md) &middot; [218. Pushpa  &rarr;](PUSH7PA.md)
+
 # 207. Make all equal using Pairs
 
 > CodeChef problem code [`PAIREQ`](https://www.codechef.com/problems/PAIREQ) &middot; difficulty **928** &middot; time limit **1s**

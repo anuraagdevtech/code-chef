@@ -1,3 +1,5 @@
+[&larr; 331. Boring String](331-BORSTR.md) &middot; [Index](README.md) &middot; [333. Gravity Guy &rarr;](333-GRGUY.md)
+
 # 332. List of Lists
 
 > [`LISTLIST`](https://www.codechef.com/problems/LISTLIST) &middot; difficulty **1567** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

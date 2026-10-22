@@ -1,3 +1,5 @@
+[&larr; 461. XOR Equal](PALINT.md) &middot; [Index](../../README.md)
+
 # 468. Xor and Multiply
 
 > CodeChef problem code [`XORMUL`](https://www.codechef.com/problems/XORMUL) &middot; difficulty **1739** &middot; time limit **1s**

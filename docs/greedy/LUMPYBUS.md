@@ -1,3 +1,5 @@
+[&larr; 443. Buying Sweets](BUYSWEET.md) &middot; [Index](../../README.md) &middot; [455. Team Formation &rarr;](TEAMFOR.md)
+
 # 444. Lumpy - The Bus Driver
 
 > CodeChef problem code [`LUMPYBUS`](https://www.codechef.com/problems/LUMPYBUS) &middot; difficulty **1708** &middot; time limit **2.5s**

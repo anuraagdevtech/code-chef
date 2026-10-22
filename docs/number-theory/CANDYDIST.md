@@ -1,3 +1,5 @@
+[&larr; 41. Mario and Transformation](TRANSFORM.md) &middot; [Index](../../README.md) &middot; [54. It is My Serve &rarr;](MYSERVE.md)
+
 # 46. Candy Distribution
 
 > CodeChef problem code [`CANDYDIST`](https://www.codechef.com/problems/CANDYDIST) &middot; difficulty **668** &middot; time limit **1s**

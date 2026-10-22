@@ -1,3 +1,5 @@
+[&larr; 257. Counting Flags](257-FLAGS.md) &middot; [Index](README.md) &middot; [259. Control the Pollution &rarr;](259-SMOKE.md)
+
 # 258. K-MEX
 
 > [`KMEX`](https://www.codechef.com/problems/KMEX) &middot; difficulty **1450** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

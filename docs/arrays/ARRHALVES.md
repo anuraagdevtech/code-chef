@@ -1,3 +1,5 @@
+[&larr; 219. Reversal Sorting](REVSORT.md) &middot; [Index](../../README.md) &middot; [229. Fit to Play &rarr;](PLAYFIT.md)
+
 # 223. Array Halves
 
 > CodeChef problem code [`ARRHALVES`](https://www.codechef.com/problems/ARRHALVES) &middot; difficulty **1407** &middot; time limit **3s**

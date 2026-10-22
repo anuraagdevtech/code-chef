@@ -1,3 +1,5 @@
+[&larr; 321. Magic Rankings](321-MGCRNK.md) &middot; [Index](README.md) &middot; [323. Unstable Subarray &rarr;](323-COUNTSUB.md)
+
 # 322. Let us play with rank list
 
 > [`RANKLIST`](https://www.codechef.com/problems/RANKLIST) &middot; difficulty **1543** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

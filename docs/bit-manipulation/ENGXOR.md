@@ -1,3 +1,5 @@
+[&larr; 348. Maximum Damage](MAXDMGE.md) &middot; [Index](../../README.md) &middot; [351. XOR with Subset &rarr;](XORSUB.md)
+
 # 349. XOR Engine
 
 > CodeChef problem code [`ENGXOR`](https://www.codechef.com/problems/ENGXOR) &middot; difficulty **1632** &middot; time limit **1.5s**

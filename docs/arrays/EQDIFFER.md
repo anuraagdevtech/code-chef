@@ -1,3 +1,5 @@
+[&larr; 311. Mix the Colors](MIXCOLOR.md) &middot; [Index](../../README.md) &middot; [330. A temple of Snakes &rarr;](SNTEMPLE.md)
+
 # 316. Equal Difference
 
 > CodeChef problem code [`EQDIFFER`](https://www.codechef.com/problems/EQDIFFER) &middot; difficulty **1500** &middot; time limit **2.5s**

@@ -1,3 +1,5 @@
+[&larr; 52. Chessboard Distance](CHESSDIST.md) &middot; [Index](../../README.md) &middot; [108. Area OR Perimeter &rarr;](AREAPERI.md)
+
 # 69. Cyclic Quadrilateral
 
 > CodeChef problem code [`CYCLICQD`](https://www.codechef.com/problems/CYCLICQD) &middot; difficulty **735** &middot; time limit **0.5s**

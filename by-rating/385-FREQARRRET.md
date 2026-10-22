@@ -1,3 +1,5 @@
+[&larr; 384. Permutation and Palindrome](384-PERMPAL.md) &middot; [Index](README.md) &middot; [386. OR Matrix &rarr;](386-ORMATRIX.md)
+
 # 385. Frequency Array Retrieval
 
 > [`FREQARRRET`](https://www.codechef.com/problems/FREQARRRET) &middot; difficulty **1654** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 236. Balanced and Unique Arrays](UNQEQ.md) &middot; [Index](../../README.md) &middot; [257. Alternating Divisibility &rarr;](ALTERNATEDIV.md)
+
 # 238. Permutation Xority
 
 > CodeChef problem code [`PERMXORITY`](https://www.codechef.com/problems/PERMXORITY) &middot; difficulty **1437** &middot; time limit **1s**

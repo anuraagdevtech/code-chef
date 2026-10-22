@@ -1,3 +1,5 @@
+[&larr; 369. UEFA Champions League](369-UCL.md) &middot; [Index](README.md) &middot; [371. XOR with smallest element &rarr;](371-SMALLXOR.md)
+
 # 370. Bitwise Tuples
 
 > [`BITTUP`](https://www.codechef.com/problems/BITTUP) &middot; difficulty **1634** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

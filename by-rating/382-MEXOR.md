@@ -1,3 +1,5 @@
+[&larr; 381. Minimise Maximum Subarray Sum](381-MINIMISEMAX.md) &middot; [Index](README.md) &middot; [383. Find eX &rarr;](383-FIND_X.md)
+
 # 382. MEX-OR
 
 > [`MEXOR`](https://www.codechef.com/problems/MEXOR) &middot; difficulty **1650** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

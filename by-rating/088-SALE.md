@@ -1,3 +1,5 @@
+[&larr; 087. Single-use Attack](087-SINGLEUSE.md) &middot; [Index](README.md) &middot; [089. Minimum number of Flips &rarr;](089-MINFLIPS.md)
+
 # 088. Get Lowest Free
 
 > [`SALE`](https://www.codechef.com/problems/SALE) &middot; difficulty **778** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

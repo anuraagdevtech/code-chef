@@ -1,3 +1,5 @@
+[&larr; 293. Gcd of Subarrays](293-GCDSUBARRAYS.md) &middot; [Index](README.md) &middot; [295. Equal Difference &rarr;](295-EQDIFFER.md)
+
 # 294. Total Correct Submissions
 
 > [`TOTCRT`](https://www.codechef.com/problems/TOTCRT) &middot; difficulty **1499** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

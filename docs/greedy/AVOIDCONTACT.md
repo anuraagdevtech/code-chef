@@ -1,3 +1,5 @@
+[&larr; 127. Peaceful Party](MAYOR_PARTY.md) &middot; [Index](../../README.md) &middot; [146. Janmansh at Fruit Market &rarr;](JMARKET.md)
+
 # 131. Avoid Contact
 
 > CodeChef problem code [`AVOIDCONTACT`](https://www.codechef.com/problems/AVOIDCONTACT) &middot; difficulty **907** &middot; time limit **0.5s**

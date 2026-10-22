@@ -1,3 +1,5 @@
+[&larr; 100. Mileage matters](MILEAGE.md) &middot; [Index](../../README.md) &middot; [102. Circular Track &rarr;](LOOP.md)
+
 # 101. Melt Gold
 
 > CodeChef problem code [`MELTGOLD`](https://www.codechef.com/problems/MELTGOLD) &middot; difficulty **835** &middot; time limit **1.5s**

@@ -1,3 +1,5 @@
+[&larr; 378. K-MEX](KMEX.md) &middot; [Index](../../README.md) &middot; [479. The One Who Knocks! &rarr;](EOOPR.md)
+
 # 408. Range Assign, Number of Distinct Elements Minimize
 
 > CodeChef problem code [`RANGEASSIGN`](https://www.codechef.com/problems/RANGEASSIGN) &middot; difficulty **1648** &middot; time limit **1s**

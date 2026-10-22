@@ -1,3 +1,5 @@
+[&larr; 186. Racing Horses](186-HORSES.md) &middot; [Index](README.md) &middot; [188. The Two Dishes &rarr;](188-MAX_DIFF.md)
+
 # 187. Cops and the Thief Devu
 
 > [`COPS`](https://www.codechef.com/problems/COPS) &middot; difficulty **1242** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

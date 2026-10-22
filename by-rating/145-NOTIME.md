@@ -1,3 +1,5 @@
+[&larr; 144. First and Last](144-FIRSTANDLAST.md) &middot; [Index](README.md) &middot; [146. World Chess Championship &rarr;](146-WCC.md)
+
 # 145. No Time to Wait
 
 > [`NOTIME`](https://www.codechef.com/problems/NOTIME) &middot; difficulty **932** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

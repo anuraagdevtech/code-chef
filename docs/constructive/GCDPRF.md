@@ -1,3 +1,5 @@
+[&larr; 393. Different String](DIFSTR.md) &middot; [Index](../../README.md) &middot; [400. Construct Array &rarr;](CONSTRRAY.md)
+
 # 397. GCD of Prefixes
 
 > CodeChef problem code [`GCDPRF`](https://www.codechef.com/problems/GCDPRF) &middot; difficulty **1617** &middot; time limit **0.5s**

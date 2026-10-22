@@ -1,3 +1,5 @@
+[&larr; 110. Highest Divisor](110-HDIVISR.md) &middot; [Index](README.md) &middot; [112. Car Choice &rarr;](112-CARCHOICE.md)
+
 # 111. Problem Category
 
 > [`PROBCAT`](https://www.codechef.com/problems/PROBCAT) &middot; difficulty **860** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

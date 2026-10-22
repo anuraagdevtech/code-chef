@@ -1,3 +1,5 @@
+[&larr; 304. One-XOR Deletions](304-DELXORONE.md) &middot; [Index](README.md) &middot; [306. Concat Palindrome &rarr;](306-CONCATPAL.md)
+
 # 305. College Life 2
 
 > [`COLGLF2`](https://www.codechef.com/problems/COLGLF2) &middot; difficulty **1519** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

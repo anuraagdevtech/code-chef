@@ -1,3 +1,5 @@
+[&larr; 243. Cutting Pizza](CUTPIZ.md) &middot; [Index](../../README.md) &middot; [248. Chef and Adventures &rarr;](CHEFADV.md)
+
 # 246. Yet another SOD problem
 
 > CodeChef problem code [`SOD3`](https://www.codechef.com/problems/SOD3) &middot; difficulty **1459** &middot; time limit **0.5s**

@@ -1,3 +1,5 @@
+[&larr; 250. The Nights Watch](250-WTCH.md) &middot; [Index](README.md) &middot; [252. Chef and Coins Game &rarr;](252-CHCOINSG.md)
+
 # 251. Average Flex
 
 > [`AVGFLEX`](https://www.codechef.com/problems/AVGFLEX) &middot; difficulty **1442** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

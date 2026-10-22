@@ -1,3 +1,5 @@
+[&larr; 103. Melt Gold](103-MELTGOLD.md) &middot; [Index](README.md) &middot; [105. Primality Test &rarr;](105-PRB01.md)
+
 # 104. Circular Track
 
 > [`LOOP`](https://www.codechef.com/problems/LOOP) &middot; difficulty **838** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

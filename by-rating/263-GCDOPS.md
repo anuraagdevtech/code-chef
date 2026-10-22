@@ -1,3 +1,5 @@
+[&larr; 262. Chef and Adventures](262-CHEFADV.md) &middot; [Index](README.md) &middot; [264. Triangle Classification &rarr;](264-TRIANGCL.md)
+
 # 263. GCD operations
 
 > [`GCDOPS`](https://www.codechef.com/problems/GCDOPS) &middot; difficulty **1462** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

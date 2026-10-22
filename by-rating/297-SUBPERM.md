@@ -1,3 +1,5 @@
+[&larr; 296. IPC Trainers](296-IPCTRAIN.md) &middot; [Index](README.md) &middot; [298. Subarray Removal &rarr;](298-SUBARRAYREM.md)
+
 # 297. Subarray permutations
 
 > [`SUBPERM`](https://www.codechef.com/problems/SUBPERM) &middot; difficulty **1502** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 380. Largest Family](LARGEFAM.md) &middot; [Index](../../README.md) &middot; [388. List of Lists &rarr;](LISTLIST.md)
+
 # 381. Sticks and Rectangles
 
 > CodeChef problem code [`RECSTI`](https://www.codechef.com/problems/RECSTI) &middot; difficulty **1555** &middot; time limit **1s**

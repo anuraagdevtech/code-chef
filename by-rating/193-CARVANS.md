@@ -1,3 +1,5 @@
+[&larr; 192. Gasoline Introduction](192-BEGGASOL.md) &middot; [Index](README.md) &middot; [194. Pushpa  &rarr;](194-PUSH7PA.md)
+
 # 193. Carvans
 
 > [`CARVANS`](https://www.codechef.com/problems/CARVANS) &middot; difficulty **1264** &middot; time limit **3s** &middot; Level up from 1* to 2* (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 221. Nobel Prize](221-NOBEL.md) &middot; [Index](README.md) &middot; [223. Tom And Jerry 1 &rarr;](223-TANDJ1.md)
+
 # 222. Make it Divisible
 
 > [`MAKEDIV3`](https://www.codechef.com/problems/MAKEDIV3) &middot; difficulty **1379** &middot; time limit **0.5 - 1s** &middot; Jump from 2* to 3* (Level 3)

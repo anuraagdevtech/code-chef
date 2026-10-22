@@ -1,3 +1,5 @@
+[&larr; 215. Points and Lines](POLIN.md) &middot; [Index](../../README.md) &middot; [337. Version Control System &rarr;](VCS.md)
+
 # 314. Count Distinct Values
 
 > CodeChef problem code [`CNTDIST`](https://www.codechef.com/problems/CNTDIST) &middot; difficulty **unrated** &middot; time limit **1s**

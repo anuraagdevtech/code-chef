@@ -1,3 +1,5 @@
+[&larr; 179. Chef and Linear Chess](179-LINCHESS.md) &middot; [Index](README.md) &middot; [181. Watson asks Does Permutation Exist &rarr;](181-PERMEXIS.md)
+
 # 180. ICPC Balloons
 
 > [`BALLOON`](https://www.codechef.com/problems/BALLOON) &middot; difficulty **1205** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

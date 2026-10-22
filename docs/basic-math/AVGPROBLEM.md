@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [2. Subscriptions &rarr;](SUBSCRIBE_.md)
+
 # 1. Greater Average
 
 > CodeChef problem code [`AVGPROBLEM`](https://www.codechef.com/problems/AVGPROBLEM) &middot; difficulty **500** &middot; time limit **1s**

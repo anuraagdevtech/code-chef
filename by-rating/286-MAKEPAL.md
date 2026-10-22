@@ -1,3 +1,5 @@
+[&larr; 285. Chef Odd](285-CHEFODD.md) &middot; [Index](README.md) &middot; [287. Interesting XOR! &rarr;](287-IRSTXOR.md)
+
 # 286. Weird Palindrome Making
 
 > [`MAKEPAL`](https://www.codechef.com/problems/MAKEPAL) &middot; difficulty **1486** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 202. Hard Cash](202-CASH.md) &middot; [Index](README.md) &middot; [204. Smallest Possible Whole Number &rarr;](204-SMOL.md)
+
 # 203. Sudhanva and Books
 
 > [`SUDBOOKS`](https://www.codechef.com/problems/SUDBOOKS) &middot; difficulty **1300** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 417. Summary Power](417-SUMPOWER.md) &middot; [Index](README.md) &middot; [419. Minimum Coloring &rarr;](419-MINCOLOR.md)
+
 # 418. Ceiling Sum
 
 > [`CEILSUM`](https://www.codechef.com/problems/CEILSUM) &middot; difficulty **1712** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

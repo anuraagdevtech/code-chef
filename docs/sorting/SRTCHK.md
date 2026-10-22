@@ -1,3 +1,5 @@
+[&larr; 250. Approximately II](APPROX2.md) &middot; [Index](../../README.md) &middot; [310. Counting Sort &rarr;](CNTSORT.md)
+
 # 309. Sort Checker
 
 > CodeChef problem code [`SRTCHK`](https://www.codechef.com/problems/SRTCHK) &middot; difficulty **unrated** &middot; time limit **1s**

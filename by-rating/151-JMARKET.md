@@ -1,3 +1,5 @@
+[&larr; 150.  Am I Lucky!](150-SPCP4.md) &middot; [Index](README.md) &middot; [152. Non-Negative Product &rarr;](152-NONNEGPROD.md)
+
 # 151. Janmansh at Fruit Market
 
 > [`JMARKET`](https://www.codechef.com/problems/JMARKET) &middot; difficulty **947** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 164. Programming Languages](164-PROGLANG.md) &middot; [Index](README.md) &middot; [166. Weight Balance &rarr;](166-WEIGHTBL.md)
+
 # 165. Chef in Vaccination Queue
 
 > [`VACCINQ`](https://www.codechef.com/problems/VACCINQ) &middot; difficulty **1016** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

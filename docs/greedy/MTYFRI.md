@@ -1,3 +1,5 @@
+[&larr; 220. Average Permutation](AVGPERM.md) &middot; [Index](../../README.md) &middot; [225. Plusle and Minun on Array &rarr;](PMA.md)
+
 # 222. Mighty Friend
 
 > CodeChef problem code [`MTYFRI`](https://www.codechef.com/problems/MTYFRI) &middot; difficulty **1406** &middot; time limit **2.5s**

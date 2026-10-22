@@ -1,3 +1,5 @@
+[&larr; 396. Array sorting](396-ARRSORT.md) &middot; [Index](README.md) &middot; [398. Anti-Palindrome Queries &rarr;](398-ANTIPALQ.md)
+
 # 397. Chef and Water Car
 
 > [`CHEFCAR`](https://www.codechef.com/problems/CHEFCAR) &middot; difficulty **1683** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

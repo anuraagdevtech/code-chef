@@ -1,3 +1,5 @@
+[&larr; 170. Studying Alphabet](170-ALPHABET.md) &middot; [Index](README.md) &middot; [172. Attendance &rarr;](172-ATTND.md)
+
 # 171. Two Dishes
 
 > [`TWODISH`](https://www.codechef.com/problems/TWODISH) &middot; difficulty **1140** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

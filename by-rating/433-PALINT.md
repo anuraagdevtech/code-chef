@@ -1,3 +1,5 @@
+[&larr; 432. Box of Chocolates](432-CHCBOX.md) &middot; [Index](README.md) &middot; [434. Bon Appetit &rarr;](434-FGFS.md)
+
 # 433. XOR Equal
 
 > [`PALINT`](https://www.codechef.com/problems/PALINT) &middot; difficulty **1731** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 326. XxOoRr](326-XXOORR.md) &middot; [Index](README.md) &middot; [328. Increasing Decreasing &rarr;](328-INCRDEC.md)
+
 # 327. Sticks and Rectangles
 
 > [`RECSTI`](https://www.codechef.com/problems/RECSTI) &middot; difficulty **1555** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

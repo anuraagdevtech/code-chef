@@ -1,3 +1,5 @@
+[&larr; 341. Hussain Set](COOK82C.md) &middot; [Index](../../README.md) &middot; [345. Jon and Selina &rarr;](SELINA.md)
+
 # 344. Prajit and bits
 
 > CodeChef problem code [`ADDI`](https://www.codechef.com/problems/ADDI) &middot; difficulty **unrated** &middot; time limit **1s**

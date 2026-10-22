@@ -1,3 +1,5 @@
+[&larr; 351. Consecutive Xor](351-XOR2.md) &middot; [Index](README.md) &middot; [353. Break Free &rarr;](353-REMOSET.md)
+
 # 352. Different String
 
 > [`DIFSTR`](https://www.codechef.com/problems/DIFSTR) &middot; difficulty **1612** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

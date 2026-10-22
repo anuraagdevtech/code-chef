@@ -1,3 +1,5 @@
+[&larr; 367. Chef and Keyboard](CHEFKEY.md) &middot; [Index](../../README.md) &middot; [376. Cakewalk &rarr;](CKWLK.md)
+
 # 370. Yet Another Cute Girl
 
 > CodeChef problem code [`PRETNUM`](https://www.codechef.com/problems/PRETNUM) &middot; difficulty **1850** &middot; time limit **2s**

@@ -1,3 +1,5 @@
+[&larr; 239. Akash and Dinner](CHEFDINE.md) &middot; [Index](../../README.md) &middot; [272. Magda and Silly Pairs &rarr;](SILLYPRS.md)
+
 # 270. Subarray Removal
 
 > CodeChef problem code [`SUBARRAYREM`](https://www.codechef.com/problems/SUBARRAYREM) &middot; difficulty **1505** &middot; time limit **4.5s**

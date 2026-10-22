@@ -1,3 +1,5 @@
+[&larr; 198. Maximum Weight Difference](MAXDIFF.md) &middot; [Index](../../README.md) &middot; [212. Watson asks Does Permutation Exist &rarr;](PERMEXIS.md)
+
 # 210. Simple Statistics
 
 > CodeChef problem code [`SIMPSTAT`](https://www.codechef.com/problems/SIMPSTAT) &middot; difficulty **1222** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 016. Water Filling](016-WATERFILLING.md) &middot; [Index](README.md) &middot; [018. Chefland Games &rarr;](018-CHEFGAMES.md)
+
 # 017. Minimum Pizzas
 
 > [`MINPIZZA`](https://www.codechef.com/problems/MINPIZZA) &middot; difficulty **546** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 80. Mutated Minions](CHN15A.md) &middot; [Index](../../README.md) &middot; [93. Cars and Bikes &rarr;](TYRES.md)
+
 # 90. Primality Test
 
 > CodeChef problem code [`PRB01`](https://www.codechef.com/problems/PRB01) &middot; difficulty **850** &middot; time limit **1s**

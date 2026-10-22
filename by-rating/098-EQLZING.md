@@ -1,3 +1,5 @@
+[&larr; 097. Buy 2 Get 1 Free](097-SALE2.md) &middot; [Index](README.md) &middot; [099. The Preparations &rarr;](099-SUPCHEF.md)
+
 # 098. Equalizing Numbers
 
 > [`EQLZING`](https://www.codechef.com/problems/EQLZING) &middot; difficulty **823** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

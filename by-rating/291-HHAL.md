@@ -1,3 +1,5 @@
+[&larr; 290. Chef Goes to the Cinema](290-CO92SUBW.md) &middot; [Index](README.md) &middot; [292. Exactly N plus 1 Values &rarr;](292-N1VALUES.md)
+
 # 291. Harrenhal
 
 > [`HHAL`](https://www.codechef.com/problems/HHAL) &middot; difficulty **1495** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

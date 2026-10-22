@@ -1,3 +1,5 @@
+[&larr; 329. Snake Eating](SNAKEEAT.md) &middot; [Index](../../README.md) &middot; [333. Flu Shot Lineup &rarr;](FLUSHOT.md)
+
 # 331. Squirrel and chestnut
 
 > CodeChef problem code [`SQUIRREL`](https://www.codechef.com/problems/SQUIRREL) &middot; difficulty **1611** &middot; time limit **0.5s**

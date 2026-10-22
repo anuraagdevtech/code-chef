@@ -1,3 +1,5 @@
+[&larr; 58. Chef Eren](CHEFEREN.md) &middot; [Index](../../README.md) &middot; [62. Cup Finals &rarr;](CRICUP.md)
+
 # 60. Airlines
 
 > CodeChef problem code [`SPCP2`](https://www.codechef.com/problems/SPCP2) &middot; difficulty **712** &middot; time limit **1s**

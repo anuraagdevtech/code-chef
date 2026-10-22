@@ -1,3 +1,5 @@
+[&larr; 297. Andrew and the Meatballs again](AMMEAT2.md) &middot; [Index](../../README.md) &middot; [307. Minimum Number of Pizzas &rarr;](MINPIZZAS.md)
+
 # 299. Non-Divisor Array
 
 > CodeChef problem code [`DIVCOL`](https://www.codechef.com/problems/DIVCOL) &middot; difficulty **1623** &middot; time limit **1s**

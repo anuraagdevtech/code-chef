@@ -1,3 +1,5 @@
+[&larr; 302. Magda and Silly Pairs](302-SILLYPRS.md) &middot; [Index](README.md) &middot; [304. One-XOR Deletions &rarr;](304-DELXORONE.md)
+
 # 303. Chef Drinks Coke
 
 > [`COKE`](https://www.codechef.com/problems/COKE) &middot; difficulty **1511** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

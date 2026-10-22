@@ -1,3 +1,5 @@
+[&larr; 477. Sort by Adjacent Swaps](477-ADJSRT.md) &middot; [Index](README.md) &middot; [479. Counting Sort &rarr;](479-CNTSORT.md)
+
 # 478. Count Distinct Values
 
 > [`CNTDIST`](https://www.codechef.com/problems/CNTDIST) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

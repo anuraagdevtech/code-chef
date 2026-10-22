@@ -1,3 +1,5 @@
+[&larr; 155. Kitchen Timetable](KTTABLE.md) &middot; [Index](../../README.md) &middot; [173. Chef in Vaccination Queue &rarr;](VACCINQ.md)
+
 # 161. Motivation
 
 > CodeChef problem code [`IMDB`](https://www.codechef.com/problems/IMDB) &middot; difficulty **1098** &middot; time limit **1s**

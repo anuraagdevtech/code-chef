@@ -1,3 +1,5 @@
+[&larr; 010. Second Largest](010-FLOW017.md) &middot; [Index](README.md) &middot; [012. Is it a VOWEL or CONSONANT &rarr;](012-VOWELTB.md)
+
 # 011. HOW MANY DIGITS DO I HAVE
 
 > [`HOWMANY`](https://www.codechef.com/problems/HOWMANY) &middot; difficulty **520** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

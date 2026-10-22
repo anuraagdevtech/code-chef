@@ -1,3 +1,5 @@
+[&larr; 383. Find eX](383-FIND_X.md) &middot; [Index](README.md) &middot; [385. Frequency Array Retrieval &rarr;](385-FREQARRRET.md)
+
 # 384. Permutation and Palindrome
 
 > [`PERMPAL`](https://www.codechef.com/problems/PERMPAL) &middot; difficulty **1651** &middot; time limit **2s** &middot; 1600 to 1800 difficulty problems (Level 3)

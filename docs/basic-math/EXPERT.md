@@ -1,3 +1,5 @@
+[&larr; 10. Minimum Pizzas](MINPIZZA.md) &middot; [Index](../../README.md) &middot; [13. Chef and NextGen &rarr;](HELIUM3.md)
+
 # 12. Expert Setter
 
 > CodeChef problem code [`EXPERT`](https://www.codechef.com/problems/EXPERT) &middot; difficulty **561** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 227. Remove Element](REMELEM.md) &middot; [Index](../../README.md) &middot; [270. Subarray Removal &rarr;](SUBARRAYREM.md)
+
 # 239. Akash and Dinner
 
 > CodeChef problem code [`CHEFDINE`](https://www.codechef.com/problems/CHEFDINE) &middot; difficulty **1438** &middot; time limit **2.5s**

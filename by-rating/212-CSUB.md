@@ -1,3 +1,5 @@
+[&larr; 211. Indivisible Permutation](211-INDIPERM.md) &middot; [Index](README.md) &middot; [213. Maximum Trio &rarr;](213-MXMTRIO.md)
+
 # 212. Count Substrings
 
 > [`CSUB`](https://www.codechef.com/problems/CSUB) &middot; difficulty **1330** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 166. Weight Balance](166-WEIGHTBL.md) &middot; [Index](README.md) &middot; [168. Chef and Stock Prices  &rarr;](168-CSTOCK.md)
+
 # 167. Devu and friendship testing
 
 > [`CFRTEST`](https://www.codechef.com/problems/CFRTEST) &middot; difficulty **1061** &middot; time limit **1.5s** &middot; Level up from 1* to 2* (Level 2)

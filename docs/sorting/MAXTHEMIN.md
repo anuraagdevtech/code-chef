@@ -1,3 +1,5 @@
+[&larr; 212. Watson asks Does Permutation Exist](PERMEXIS.md) &middot; [Index](../../README.md) &middot; [214. Maximum Trio &rarr;](MXMTRIO.md)
+
 # 213. Maximize the Minimum
 
 > CodeChef problem code [`MAXTHEMIN`](https://www.codechef.com/problems/MAXTHEMIN) &middot; difficulty **1358** &middot; time limit **0.5s**

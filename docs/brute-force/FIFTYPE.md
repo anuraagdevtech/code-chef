@@ -1,3 +1,5 @@
+[&larr; 110. Highest Divisor](HDIVISR.md) &middot; [Index](../../README.md) &middot; [228. Maximize Colours &rarr;](COLOUR.md)
+
 # 128. Chef and Battery 
 
 > CodeChef problem code [`FIFTYPE`](https://www.codechef.com/problems/FIFTYPE) &middot; difficulty **901** &middot; time limit **1s**

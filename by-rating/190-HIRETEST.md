@@ -1,3 +1,5 @@
+[&larr; 189. Chef and the Wildcard Matching](189-TWOSTR.md) &middot; [Index](README.md) &middot; [191. Sticks &rarr;](191-STICKS.md)
+
 # 190. Hiring Test
 
 > [`HIRETEST`](https://www.codechef.com/problems/HIRETEST) &middot; difficulty **1260** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

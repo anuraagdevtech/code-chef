@@ -1,3 +1,5 @@
+[&larr; 193. Equinox Strings](EQUINOX.md) &middot; [Index](../../README.md) &middot; [195. Password &rarr;](PASSWD.md)
+
 # 194. Snake Procession
 
 > CodeChef problem code [`SNAKPROC`](https://www.codechef.com/problems/SNAKPROC) &middot; difficulty **1290** &middot; time limit **1s**

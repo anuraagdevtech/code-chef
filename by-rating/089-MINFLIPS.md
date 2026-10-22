@@ -1,3 +1,5 @@
+[&larr; 088. Get Lowest Free](088-SALE.md) &middot; [Index](README.md) &middot; [090. Binary Battles &rarr;](090-BIN_BAT.md)
+
 # 089. Minimum number of Flips
 
 > [`MINFLIPS`](https://www.codechef.com/problems/MINFLIPS) &middot; difficulty **781** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

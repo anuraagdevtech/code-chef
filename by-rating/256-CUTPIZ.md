@@ -1,3 +1,5 @@
+[&larr; 255. Make Array Odd](255-MAKEARRAYODD.md) &middot; [Index](README.md) &middot; [257. Counting Flags &rarr;](257-FLAGS.md)
+
 # 256. Cutting Pizza
 
 > [`CUTPIZ`](https://www.codechef.com/problems/CUTPIZ) &middot; difficulty **1446** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

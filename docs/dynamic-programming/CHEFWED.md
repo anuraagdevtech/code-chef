@@ -1,3 +1,5 @@
+[&larr; 359. Gravity Guy](GRGUY.md) &middot; [Index](../../README.md) &middot; [362. Dish Distribution &rarr;](DISHDIS.md)
+
 # 360. Chef and Wedding Arrangements
 
 > CodeChef problem code [`CHEFWED`](https://www.codechef.com/problems/CHEFWED) &middot; difficulty **1841** &middot; time limit **1.5s**

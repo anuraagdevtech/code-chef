@@ -1,3 +1,5 @@
+[&larr; 156. Bear and Ladder](BRLADDER.md) &middot; [Index](../../README.md) &middot; [163. Problem Category &rarr;](PROBCAT.md)
+
 # 158. Vaccine Dates 
 
 > CodeChef problem code [`VDATES`](https://www.codechef.com/problems/VDATES) &middot; difficulty **938** &middot; time limit **1s**

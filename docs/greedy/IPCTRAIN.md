@@ -1,3 +1,5 @@
+[&larr; 315. Max Mex](MEX.md) &middot; [Index](../../README.md) &middot; [342. Iron, Magnet and Wall &rarr;](FEMA2.md)
+
 # 340. IPC Trainers
 
 > CodeChef problem code [`IPCTRAIN`](https://www.codechef.com/problems/IPCTRAIN) &middot; difficulty **1500** &middot; time limit **2.5s**

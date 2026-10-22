@@ -1,3 +1,5 @@
+[&larr; 203. Sticks](STICKS.md) &middot; [Index](../../README.md) &middot; [220. Average Permutation &rarr;](AVGPERM.md)
+
 # 209. Lazy Salesman
 
 > CodeChef problem code [`HOLIDAYS`](https://www.codechef.com/problems/HOLIDAYS) &middot; difficulty **1161** &middot; time limit **0.5s**

@@ -1,3 +1,5 @@
+[&larr; 193. Carvans](193-CARVANS.md) &middot; [Index](README.md) &middot; [195. Make them equal &rarr;](195-MAKEEQUAL.md)
+
 # 194. Pushpa 
 
 > [`PUSH7PA`](https://www.codechef.com/problems/PUSH7PA) &middot; difficulty **1266** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

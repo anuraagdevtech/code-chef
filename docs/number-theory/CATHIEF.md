@@ -1,3 +1,5 @@
+[&larr; 282. Monsters](SPCP5.md) &middot; [Index](../../README.md) &middot; [297. Andrew and the Meatballs again &rarr;](AMMEAT2.md)
+
 # 288. Catch the Thief
 
 > CodeChef problem code [`CATHIEF`](https://www.codechef.com/problems/CATHIEF) &middot; difficulty **1550** &middot; time limit **1.5s**

@@ -1,3 +1,5 @@
+[&larr; 460. Chef Restaurant ](460-CHEFRES.md) &middot; [Index](README.md) &middot; [462. Stacks &rarr;](462-STACKS.md)
+
 # 461. Minion Chef and Bananas
 
 > [`MINEAT`](https://www.codechef.com/problems/MINEAT) &middot; difficulty **1781** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

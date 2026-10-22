@@ -1,3 +1,5 @@
+[&larr; 435. Penalty Shoot-Out II](435-PSHOT.md) &middot; [Index](README.md) &middot; [437. Prefixing &rarr;](437-FIX.md)
+
 # 436. Crushed Apples and a Balance Scale
 
 > [`APP_BAL_SCA`](https://www.codechef.com/problems/APP_BAL_SCA) &middot; difficulty **1736** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

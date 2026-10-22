@@ -1,3 +1,5 @@
+[&larr; 154. Keplers Law](KEPLERSLAW.md) &middot; [Index](../../README.md) &middot; [159. Hoop Jump &rarr;](HOOPS.md)
+
 # 157. Richie Rich
 
 > CodeChef problem code [`CHFRICH`](https://www.codechef.com/problems/CHFRICH) &middot; difficulty **878** &middot; time limit **0.5s**

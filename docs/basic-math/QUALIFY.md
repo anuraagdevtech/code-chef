@@ -1,3 +1,5 @@
+[&larr; 25. Sasta Shark Tank](SST.md) &middot; [Index](../../README.md) &middot; [29. Minimum Cars required &rarr;](MINCARS.md)
+
 # 27. Qualify the round
 
 > CodeChef problem code [`QUALIFY`](https://www.codechef.com/problems/QUALIFY) &middot; difficulty **594** &middot; time limit **1s**

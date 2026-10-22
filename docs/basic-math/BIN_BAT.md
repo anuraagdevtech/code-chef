@@ -1,3 +1,5 @@
+[&larr; 83. Get Lowest Free](SALE.md) &middot; [Index](../../README.md) &middot; [86. Best of Two &rarr;](DICEGAME2.md)
+
 # 85. Binary Battles
 
 > CodeChef problem code [`BIN_BAT`](https://www.codechef.com/problems/BIN_BAT) &middot; difficulty **786** &middot; time limit **1.5s**

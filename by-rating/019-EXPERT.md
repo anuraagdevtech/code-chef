@@ -1,3 +1,5 @@
+[&larr; 018. Chefland Games](018-CHEFGAMES.md) &middot; [Index](README.md) &middot; [020. Chef and NextGen &rarr;](020-HELIUM3.md)
+
 # 019. Expert Setter
 
 > [`EXPERT`](https://www.codechef.com/problems/EXPERT) &middot; difficulty **561** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

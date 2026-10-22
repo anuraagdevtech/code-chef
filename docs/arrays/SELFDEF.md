@@ -1,3 +1,5 @@
+[&larr; 28. Elections in Chefland](ELECTN.md) &middot; [Index](../../README.md) &middot; [84. Minimum number of Flips &rarr;](MINFLIPS.md)
+
 # 61. Self Defence Training
 
 > CodeChef problem code [`SELFDEF`](https://www.codechef.com/problems/SELFDEF) &middot; difficulty **716** &middot; time limit **1s**

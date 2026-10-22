@@ -1,3 +1,5 @@
+[&larr; 158. Vaccine Dates ](VDATES.md) &middot; [Index](../../README.md) &middot; [373. Say No To Drugs &rarr;](NODRUGS.md)
+
 # 163. Problem Category
 
 > CodeChef problem code [`PROBCAT`](https://www.codechef.com/problems/PROBCAT) &middot; difficulty **860** &middot; time limit **0.5s**

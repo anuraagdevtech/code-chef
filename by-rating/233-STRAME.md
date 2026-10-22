@@ -1,3 +1,5 @@
+[&larr; 232. Plusle and Minun on Array](232-PMA.md) &middot; [Index](README.md) &middot; [234. Maximize Colours &rarr;](234-COLOUR.md)
+
 # 233. String Game 
 
 > [`STRAME`](https://www.codechef.com/problems/STRAME) &middot; difficulty **1413** &middot; time limit **4.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

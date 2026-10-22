@@ -1,3 +1,5 @@
+[&larr; 310. Guddu on a Date](310-KS2.md) &middot; [Index](README.md) &middot; [312. Monsters &rarr;](312-SPCP5.md)
+
 # 311. Positive or Negative Subarrays
 
 > [`POSITNEG`](https://www.codechef.com/problems/POSITNEG) &middot; difficulty **1526** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

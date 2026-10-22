@@ -1,3 +1,5 @@
+[&larr; 454. Find an integer](SUMDIV2.md) &middot; [Index](../../README.md) &middot; [464. Crushed Apples and a Balance Scale &rarr;](APP_BAL_SCA.md)
+
 # 457. Chef and Prime Divisors
 
 > CodeChef problem code [`CHAPD`](https://www.codechef.com/problems/CHAPD) &middot; difficulty **1720** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 444. Modular GCD](444-GCDMOD.md) &middot; [Index](README.md) &middot; [446. One Dimensional Kingdoms &rarr;](446-ONEKING.md)
+
 # 445. Army Training
 
 > [`ARMTRN`](https://www.codechef.com/problems/ARMTRN) &middot; difficulty **1742** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 19. The Three Topics](THREETOPICS.md) &middot; [Index](../../README.md) &middot; [32. Bus  Seat Numbering &rarr;](SEATNUMBER.md)
+
 # 22. Air Conditioner Temperature
 
 > CodeChef problem code [`ACTEMP`](https://www.codechef.com/problems/ACTEMP) &middot; difficulty **584** &middot; time limit **1s**

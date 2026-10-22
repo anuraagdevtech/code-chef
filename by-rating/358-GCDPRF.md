@@ -1,3 +1,5 @@
+[&larr; 357. Survive in ChocoLand](357-SURVIVE.md) &middot; [Index](README.md) &middot; [359. MaxEdges &rarr;](359-MAXEDGES.md)
+
 # 358. GCD of Prefixes
 
 > [`GCDPRF`](https://www.codechef.com/problems/GCDPRF) &middot; difficulty **1617** &middot; time limit **0.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

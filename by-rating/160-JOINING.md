@@ -1,3 +1,5 @@
+[&larr; 159. Mutated Minions](159-CHN15A.md) &middot; [Index](README.md) &middot; [161. Playing with Matches &rarr;](161-MATCHES.md)
+
 # 160. Joining Date
 
 > [`JOINING`](https://www.codechef.com/problems/JOINING) &middot; difficulty **970** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

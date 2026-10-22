@@ -1,3 +1,5 @@
+[&larr; 284. Alternating Work Days](284-ALTER.md) &middot; [Index](README.md) &middot; [286. Weird Palindrome Making &rarr;](286-MAKEPAL.md)
+
 # 285. Chef Odd
 
 > [`CHEFODD`](https://www.codechef.com/problems/CHEFODD) &middot; difficulty **1486** &middot; time limit **2.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

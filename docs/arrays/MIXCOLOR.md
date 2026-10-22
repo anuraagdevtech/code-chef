@@ -1,3 +1,5 @@
+[&larr; 295. Yet Another Palindrome Problem](ARRPAL.md) &middot; [Index](../../README.md) &middot; [316. Equal Difference &rarr;](EQDIFFER.md)
+
 # 311. Mix the Colors
 
 > CodeChef problem code [`MIXCOLOR`](https://www.codechef.com/problems/MIXCOLOR) &middot; difficulty **1419** &middot; time limit **2s**

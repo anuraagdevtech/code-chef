@@ -1,3 +1,5 @@
+[&larr; 389. The Optimal Pairs](389-OPTPAIRS.md) &middot; [Index](README.md) &middot; [391. Fire Escape Routes &rarr;](391-FIRESC.md)
+
 # 390. Chef and Frogs
 
 > [`FROGV`](https://www.codechef.com/problems/FROGV) &middot; difficulty **1668** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

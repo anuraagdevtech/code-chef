@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [51. X Jumps &rarr;](XJUMP.md)
+
 # 34. Maximise the Tastiness
 
 > CodeChef problem code [`MAXTASTE`](https://www.codechef.com/problems/MAXTASTE) &middot; difficulty **627** &middot; time limit **1s**

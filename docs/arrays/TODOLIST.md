@@ -1,3 +1,5 @@
+[&larr; 6. Mahasena](AMR15A.md) &middot; [Index](../../README.md) &middot; [28. Elections in Chefland &rarr;](ELECTN.md)
+
 # 21. Problems in your to-do list
 
 > CodeChef problem code [`TODOLIST`](https://www.codechef.com/problems/TODOLIST) &middot; difficulty **580** &middot; time limit **4s**

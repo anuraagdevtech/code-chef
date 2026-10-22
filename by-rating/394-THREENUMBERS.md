@@ -1,3 +1,5 @@
+[&larr; 393. Gcd Queries](393-GCDQ.md) &middot; [Index](README.md) &middot; [395. Bitwise Equation &rarr;](395-BITEQU.md)
+
 # 394. Three Numbers
 
 > [`THREENUMBERS`](https://www.codechef.com/problems/THREENUMBERS) &middot; difficulty **1675** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

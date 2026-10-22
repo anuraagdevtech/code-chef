@@ -1,3 +1,5 @@
+[&larr; 143. Chef and Price Control](143-PRICECON.md) &middot; [Index](README.md) &middot; [145. No Time to Wait &rarr;](145-NOTIME.md)
+
 # 144. First and Last
 
 > [`FIRSTANDLAST`](https://www.codechef.com/problems/FIRSTANDLAST) &middot; difficulty **932** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 418. Ceiling Sum](418-CEILSUM.md) &middot; [Index](README.md) &middot; [420. Sum Product Segments &rarr;](420-SUMPRODSEG.md)
+
 # 419. Minimum Coloring
 
 > [`MINCOLOR`](https://www.codechef.com/problems/MINCOLOR) &middot; difficulty **1713** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

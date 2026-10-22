@@ -1,3 +1,5 @@
+[&larr; 201. Chocolate Monger](CM164364.md) &middot; [Index](../../README.md) &middot; [215. Points and Lines &rarr;](POLIN.md)
+
 # 208. Devu and friendship testing
 
 > CodeChef problem code [`CFRTEST`](https://www.codechef.com/problems/CFRTEST) &middot; difficulty **1061** &middot; time limit **1.5s**

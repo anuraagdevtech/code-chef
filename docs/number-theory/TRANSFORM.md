@@ -1,3 +1,5 @@
+[&larr; 31. Jenga Night](JENGA.md) &middot; [Index](../../README.md) &middot; [46. Candy Distribution &rarr;](CANDYDIST.md)
+
 # 41. Mario and Transformation
 
 > CodeChef problem code [`TRANSFORM`](https://www.codechef.com/problems/TRANSFORM) &middot; difficulty **649** &middot; time limit **1s**

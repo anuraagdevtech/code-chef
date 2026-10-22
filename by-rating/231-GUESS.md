@@ -1,3 +1,5 @@
+[&larr; 230. Bella ciao](230-CHFHEIST.md) &middot; [Index](README.md) &middot; [232. Plusle and Minun on Array &rarr;](232-PMA.md)
+
 # 231. Guessing Game
 
 > [`GUESS`](https://www.codechef.com/problems/GUESS) &middot; difficulty **1410** &middot; time limit **3.5s** &middot; Jump from 2* to 3* (Level 3)

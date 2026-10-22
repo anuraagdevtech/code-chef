@@ -1,3 +1,5 @@
+[&larr; 283. Admins and Shopping](ADMINSHOP.md) &middot; [Index](../../README.md) &middot; [296. The One On The Last Night &rarr;](S06E06.md)
+
 # 286. Let us play with rank list
 
 > CodeChef problem code [`RANKLIST`](https://www.codechef.com/problems/RANKLIST) &middot; difficulty **1543** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 118. Counting Pretty Numbers](118-NUM239.md) &middot; [Index](README.md) &middot; [120. Chef On Island &rarr;](120-CCISLAND.md)
+
 # 119. Drunk Alcoholic
 
 > [`DRUNKALK`](https://www.codechef.com/problems/DRUNKALK) &middot; difficulty **874** &middot; time limit **0.5 - 1s** &middot; 500 to 1000 difficulty rating (Level 1)

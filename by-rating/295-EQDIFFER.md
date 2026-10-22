@@ -1,3 +1,5 @@
+[&larr; 294. Total Correct Submissions](294-TOTCRT.md) &middot; [Index](README.md) &middot; [296. IPC Trainers &rarr;](296-IPCTRAIN.md)
+
 # 295. Equal Difference
 
 > [`EQDIFFER`](https://www.codechef.com/problems/EQDIFFER) &middot; difficulty **1500** &middot; time limit **2.5s** &middot; Jump from 2* to 3* (Level 3)

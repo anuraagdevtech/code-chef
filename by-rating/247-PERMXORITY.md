@@ -1,3 +1,5 @@
+[&larr; 246. Maximum Angriness](246-MAXAGRY.md) &middot; [Index](README.md) &middot; [248. Akash and Dinner &rarr;](248-CHEFDINE.md)
+
 # 247. Permutation Xority
 
 > [`PERMXORITY`](https://www.codechef.com/problems/PERMXORITY) &middot; difficulty **1437** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

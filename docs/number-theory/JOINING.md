@@ -1,3 +1,5 @@
+[&larr; 143. Two vs Ten](TWOVSTEN.md) &middot; [Index](../../README.md) &middot; [166. Smallest Possible Whole Number &rarr;](SMOL.md)
+
 # 152. Joining Date
 
 > CodeChef problem code [`JOINING`](https://www.codechef.com/problems/JOINING) &middot; difficulty **970** &middot; time limit **1s**

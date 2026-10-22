@@ -1,3 +1,5 @@
+[&larr; 289. CAO Stage-1](289-CAOS1.md) &middot; [Index](README.md) &middot; [291. Harrenhal &rarr;](291-HHAL.md)
+
 # 290. Chef Goes to the Cinema
 
 > [`CO92SUBW`](https://www.codechef.com/problems/CO92SUBW) &middot; difficulty **1493** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

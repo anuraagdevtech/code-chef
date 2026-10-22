@@ -1,3 +1,5 @@
+[&larr; 417. Fencing](FENCE.md) &middot; [Index](../../README.md)
+
 # 451. Max Mex
 
 > CodeChef problem code [`MAXMEX`](https://www.codechef.com/problems/MAXMEX) &middot; difficulty **1714** &middot; time limit **1s**

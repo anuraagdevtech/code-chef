@@ -1,3 +1,5 @@
+[&larr; 13. Chef and NextGen](HELIUM3.md) &middot; [Index](../../README.md) &middot; [15. Count the Notebooks &rarr;](NOTEBOOK.md)
+
 # 14. Sugarcane Juice Business
 
 > CodeChef problem code [`SUGARCANE`](https://www.codechef.com/problems/SUGARCANE) &middot; difficulty **563** &middot; time limit **1s**

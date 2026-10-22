@@ -1,3 +1,5 @@
+[&larr; 319. Flip the String](319-FLIP.md) &middot; [Index](README.md) &middot; [321. Magic Rankings &rarr;](321-MGCRNK.md)
+
 # 320. Javelin Qualification
 
 > [`JAVELIN`](https://www.codechef.com/problems/JAVELIN) &middot; difficulty **1538** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

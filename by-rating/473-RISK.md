@@ -1,3 +1,5 @@
+[&larr; 472. Chef and Good Subsequences](472-GDSUB.md) &middot; [Index](README.md) &middot; [474. Lowest Sum &rarr;](474-LOWSUM.md)
+
 # 473. Maximum Size
 
 > [`RISK`](https://www.codechef.com/problems/RISK) &middot; difficulty **2113** &middot; time limit **2.5s** &middot; Rise from 3* to 4* (Level 4)

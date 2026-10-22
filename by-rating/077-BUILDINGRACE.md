@@ -1,3 +1,5 @@
+[&larr; 076. Too many items](076-POLYBAGS.md) &middot; [Index](README.md) &middot; [078. Chef Fantasy 11 &rarr;](078-FIZZBUZZ2303.md)
+
 # 077. Building Race
 
 > [`BUILDINGRACE`](https://www.codechef.com/problems/BUILDINGRACE) &middot; difficulty **739** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

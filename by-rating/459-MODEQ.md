@@ -1,3 +1,5 @@
+[&larr; 458. Compare those strings](458-STRCOMPARE.md) &middot; [Index](README.md) &middot; [460. Chef Restaurant  &rarr;](460-CHEFRES.md)
+
 # 459. Modular Equation
 
 > [`MODEQ`](https://www.codechef.com/problems/MODEQ) &middot; difficulty **1761** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

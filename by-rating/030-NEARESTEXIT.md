@@ -1,3 +1,5 @@
+[&larr; 029. Air Conditioner Temperature](029-ACTEMP.md) &middot; [Index](README.md) &middot; [031. Area OR Perimeter &rarr;](031-AREAPERI.md)
+
 # 030. Nearest Exit
 
 > [`NEARESTEXIT`](https://www.codechef.com/problems/NEARESTEXIT) &middot; difficulty **585** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 274. Reduce to One](REDONE.md) &middot; [Index](../../README.md) &middot; [280. Guddu on a Date &rarr;](KS2.md)
+
 # 279. Split Sums
 
 > CodeChef problem code [`SPSUM`](https://www.codechef.com/problems/SPSUM) &middot; difficulty **1524** &middot; time limit **1s**

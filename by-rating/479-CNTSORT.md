@@ -1,3 +1,5 @@
+[&larr; 478. Count Distinct Values](478-CNTDIST.md) &middot; [Index](README.md) &middot; [480. Pair Sort Version 3 &rarr;](480-PSORT3.md)
+
 # 479. Counting Sort
 
 > [`CNTSORT`](https://www.codechef.com/problems/CNTSORT) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

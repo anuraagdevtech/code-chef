@@ -1,3 +1,5 @@
+[&larr; 387. Chef Product](387-CHEFPRODUCT.md) &middot; [Index](README.md) &middot; [389. The Optimal Pairs &rarr;](389-OPTPAIRS.md)
+
 # 388. K-Subarrays
 
 > [`KSUB`](https://www.codechef.com/problems/KSUB) &middot; difficulty **1663** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

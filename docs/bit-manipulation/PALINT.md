@@ -1,3 +1,5 @@
+[&larr; 452. Even Subset Xor](EVENXOR.md) &middot; [Index](../../README.md) &middot; [468. Xor and Multiply &rarr;](XORMUL.md)
+
 # 461. XOR Equal
 
 > CodeChef problem code [`PALINT`](https://www.codechef.com/problems/PALINT) &middot; difficulty **1731** &middot; time limit **1s**

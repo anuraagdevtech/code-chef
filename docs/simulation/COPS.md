@@ -1,3 +1,5 @@
+[&larr; 178. Gasoline Introduction](BEGGASOL.md) &middot; [Index](../../README.md) &middot; [235. Full Barrier Alchemist &rarr;](PIPSQUIK.md)
+
 # 184. Cops and the Thief Devu
 
 > CodeChef problem code [`COPS`](https://www.codechef.com/problems/COPS) &middot; difficulty **1242** &middot; time limit **1s**

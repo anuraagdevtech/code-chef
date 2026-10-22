@@ -1,3 +1,5 @@
+[&larr; 371. XOR with smallest element](371-SMALLXOR.md) &middot; [Index](README.md) &middot; [373. Concat Sort &rarr;](373-CONCATSORT.md)
+
 # 372. Maximum Damage
 
 > [`MAXDMGE`](https://www.codechef.com/problems/MAXDMGE) &middot; difficulty **1636** &middot; time limit **0.5 - 1s** &middot; Jump from 2* to 3* (Level 3)

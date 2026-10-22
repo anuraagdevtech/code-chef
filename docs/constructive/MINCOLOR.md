@@ -1,3 +1,5 @@
+[&larr; 428. Bitwise Equation](BITEQU.md) &middot; [Index](../../README.md) &middot; [478. Same Parity Swaps in Binary Strings &rarr;](MAX01EVSWP.md)
+
 # 449. Minimum Coloring
 
 > CodeChef problem code [`MINCOLOR`](https://www.codechef.com/problems/MINCOLOR) &middot; difficulty **1713** &middot; time limit **1s**

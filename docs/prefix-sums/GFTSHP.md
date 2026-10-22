@@ -1,3 +1,5 @@
+[&larr; 126. Inside The Stadium](INSTDUM.md) &middot; [Index](../../README.md) &middot; [233. Parallel Processing &rarr;](PLPROCESS.md)
+
 # 211. Gift Shop and Coupon
 
 > CodeChef problem code [`GFTSHP`](https://www.codechef.com/problems/GFTSHP) &middot; difficulty **1364** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 266. Good Pairs](266-GOODPAIRS.md) &middot; [Index](README.md) &middot; [268. Approximately II &rarr;](268-APPROX2.md)
+
 # 267. Password
 
 > [`PASSWD`](https://www.codechef.com/problems/PASSWD) &middot; difficulty **1470** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

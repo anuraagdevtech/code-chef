@@ -1,3 +1,5 @@
+[&larr; 305. College Life 2](305-COLGLF2.md) &middot; [Index](README.md) &middot; [307. When to take medicine &rarr;](307-MEDIC.md)
+
 # 306. Concat Palindrome
 
 > [`CONCATPAL`](https://www.codechef.com/problems/CONCATPAL) &middot; difficulty **1520** &middot; time limit **2.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

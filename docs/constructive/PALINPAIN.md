@@ -1,3 +1,5 @@
+[&larr; 268. Gcd of Subarrays](GCDSUBARRAYS.md) &middot; [Index](../../README.md) &middot; [284. Prefix Permutation &rarr;](PREFPERM.md)
+
 # 271. Palindrome Pain
 
 > CodeChef problem code [`PALINPAIN`](https://www.codechef.com/problems/PALINPAIN) &middot; difficulty **1506** &middot; time limit **1s**

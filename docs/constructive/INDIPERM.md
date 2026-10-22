@@ -1,3 +1,5 @@
+[&larr; 305. Make it Divisible](MAKEDIV3.md) &middot; [Index](../../README.md) &middot; [355. Digit Longest Increasing Subsequences 2 &rarr;](LISDIGIT.md)
+
 # 306. Indivisible Permutation
 
 > CodeChef problem code [`INDIPERM`](https://www.codechef.com/problems/INDIPERM) &middot; difficulty **1329** &middot; time limit **0.5s**

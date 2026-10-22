@@ -1,3 +1,5 @@
+[&larr; 287. Unstable Subarray](COUNTSUB.md) &middot; [Index](../../README.md) &middot; [311. Mix the Colors &rarr;](MIXCOLOR.md)
+
 # 295. Yet Another Palindrome Problem
 
 > CodeChef problem code [`ARRPAL`](https://www.codechef.com/problems/ARRPAL) &middot; difficulty **1594** &middot; time limit **1.5s**

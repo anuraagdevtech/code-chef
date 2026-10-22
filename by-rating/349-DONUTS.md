@@ -1,3 +1,5 @@
+[&larr; 348. Bench Press](348-BENCHP.md) &middot; [Index](README.md) &middot; [350. Squirrel and chestnut &rarr;](350-SQUIRREL.md)
+
 # 349. Chain of Doughnuts
 
 > [`DONUTS`](https://www.codechef.com/problems/DONUTS) &middot; difficulty **1611** &middot; time limit **2s** &middot; 1600 to 1800 difficulty problems (Level 3)

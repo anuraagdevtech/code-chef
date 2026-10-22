@@ -1,3 +1,5 @@
+[&larr; Repository index](../README.md) &middot; [001. Small factorials &rarr;](001-FCTRL2.md)
+
 # Problems in rating order
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.

@@ -1,3 +1,5 @@
+[&larr; 066. Airlines](066-SPCP2.md) &middot; [Index](README.md) &middot; [068. Self Defence Training &rarr;](068-SELFDEF.md)
+
 # 067. Cup Finals
 
 > [`CRICUP`](https://www.codechef.com/problems/CRICUP) &middot; difficulty **716** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 263. GCD operations](263-GCDOPS.md) &middot; [Index](README.md) &middot; [265. Magical Planks &rarr;](265-MKGPLNKS.md)
+
 # 264. Triangle Classification
 
 > [`TRIANGCL`](https://www.codechef.com/problems/TRIANGCL) &middot; difficulty **1462** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 377. High Frequency](HIGHFREQ.md) &middot; [Index](../../README.md) &middot; [381. Sticks and Rectangles &rarr;](RECSTI.md)
+
 # 380. Largest Family
 
 > CodeChef problem code [`LARGEFAM`](https://www.codechef.com/problems/LARGEFAM) &middot; difficulty **1532** &middot; time limit **1s**

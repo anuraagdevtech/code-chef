@@ -1,3 +1,5 @@
+[&larr; 181. Average Flex](AVGFLEX.md) &middot; [Index](../../README.md) &middot; [207. Make all equal using Pairs &rarr;](PAIREQ.md)
+
 # 183. College Life 2
 
 > CodeChef problem code [`COLGLF2`](https://www.codechef.com/problems/COLGLF2) &middot; difficulty **1519** &middot; time limit **0.5s**

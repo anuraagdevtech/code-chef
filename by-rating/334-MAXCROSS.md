@@ -1,3 +1,5 @@
+[&larr; 333. Gravity Guy](333-GRGUY.md) &middot; [Index](README.md) &middot; [335. Chef and squares &rarr;](335-CHSQR.md)
+
 # 334. Maximal crosses
 
 > [`MAXCROSS`](https://www.codechef.com/problems/MAXCROSS) &middot; difficulty **1570** &middot; time limit **0.5s** &middot; Jump from 2* to 3* (Level 3)

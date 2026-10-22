@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [486. Maximum Size &rarr;](RISK.md)
+
 # 413. Fire Escape Routes
 
 > CodeChef problem code [`FIRESC`](https://www.codechef.com/problems/FIRESC) &middot; difficulty **1671** &middot; time limit **3s**

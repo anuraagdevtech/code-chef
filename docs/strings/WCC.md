@@ -1,3 +1,5 @@
+[&larr; 105. Is it a VOWEL or CONSONANT](VOWELTB.md) &middot; [Index](../../README.md) &middot; [148. Rearranging digits to get a multiple of 5 &rarr;](DIGARR.md)
+
 # 142. World Chess Championship
 
 > CodeChef problem code [`WCC`](https://www.codechef.com/problems/WCC) &middot; difficulty **935** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 79. Chef And Operators](CHOPRT.md) &middot; [Index](../../README.md) &middot; [103. Grade The Steel &rarr;](FLOW014.md)
+
 # 97. Genes
 
 > CodeChef problem code [`GENE01`](https://www.codechef.com/problems/GENE01) &middot; difficulty **826** &middot; time limit **0.5s**

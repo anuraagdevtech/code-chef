@@ -1,3 +1,5 @@
+[&larr; 62. Cup Finals](CRICUP.md) &middot; [Index](../../README.md) &middot; [64. Speed Limit Test &rarr;](SPEEDTEST.md)
+
 # 63. Too many Floors
 
 > CodeChef problem code [`FLOORS`](https://www.codechef.com/problems/FLOORS) &middot; difficulty **717** &middot; time limit **1s**

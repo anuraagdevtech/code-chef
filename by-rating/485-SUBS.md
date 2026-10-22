@@ -1,3 +1,5 @@
+[&larr; 484. Sort Checker](484-SRTCHK.md) &middot; [Index](README.md) &middot; [486. Sort by swaps &rarr;](486-SWPSRT1.md)
+
 # 485. Fair distribution
 
 > [`SUBS`](https://www.codechef.com/problems/SUBS) &middot; difficulty **unrated** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 261. Weird Palindrome Making](MAKEPAL.md) &middot; [Index](../../README.md) &middot; [269. Total Correct Submissions &rarr;](TOTCRT.md)
+
 # 263. CAO Stage-1
 
 > CodeChef problem code [`CAOS1`](https://www.codechef.com/problems/CAOS1) &middot; difficulty **1488** &middot; time limit **1s**

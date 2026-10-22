@@ -1,3 +1,5 @@
+[&larr; 439. Average Gift](AVGGIFT.md) &middot; [Index](../../README.md) &middot; [467. Maximum Value &rarr;](MVALUE.md)
+
 # 448. Ceiling Sum
 
 > CodeChef problem code [`CEILSUM`](https://www.codechef.com/problems/CEILSUM) &middot; difficulty **1712** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 129. Grade The Steel](129-FLOW014.md) &middot; [Index](README.md) &middot; [131. Passing Marks &rarr;](131-PSGRADE.md)
+
 # 130. Chef and Battery 
 
 > [`FIFTYPE`](https://www.codechef.com/problems/FIFTYPE) &middot; difficulty **901** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 343. ChefTown Parade](CHEFTOWN.md) &middot; [Index](../../README.md) &middot; [363. Maximal crosses &rarr;](MAXCROSS.md)
+
 # 352. Count Subarrays
 
 > CodeChef problem code [`SUBINC`](https://www.codechef.com/problems/SUBINC) &middot; difficulty **1478** &middot; time limit **1s**

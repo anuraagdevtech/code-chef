@@ -1,3 +1,5 @@
+[&larr; 471. Snake Eating](471-SNAKEEAT.md) &middot; [Index](README.md) &middot; [473. Maximum Size &rarr;](473-RISK.md)
+
 # 472. Chef and Good Subsequences
 
 > [`GDSUB`](https://www.codechef.com/problems/GDSUB) &middot; difficulty **1999** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 261. Polygon Relationship](261-POLYREL.md) &middot; [Index](README.md) &middot; [263. GCD operations &rarr;](263-GCDOPS.md)
+
 # 262. Chef and Adventures
 
 > [`CHEFADV`](https://www.codechef.com/problems/CHEFADV) &middot; difficulty **1462** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

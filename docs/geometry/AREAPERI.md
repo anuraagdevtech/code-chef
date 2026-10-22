@@ -1,3 +1,5 @@
+[&larr; 69. Cyclic Quadrilateral](CYCLICQD.md) &middot; [Index](../../README.md) &middot; [247. Triangle Classification &rarr;](TRIANGCL.md)
+
 # 108. Area OR Perimeter
 
 > CodeChef problem code [`AREAPERI`](https://www.codechef.com/problems/AREAPERI) &middot; difficulty **590** &middot; time limit **1s**

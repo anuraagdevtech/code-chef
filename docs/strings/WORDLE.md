@@ -1,3 +1,5 @@
+[&larr; 44. Complementary Strand in a DNA](DNASTRAND.md) &middot; [Index](../../README.md) &middot; [99. The Block Game &rarr;](PALL01.md)
+
 # 92. Wordle
 
 > CodeChef problem code [`WORDLE`](https://www.codechef.com/problems/WORDLE) &middot; difficulty **804** &middot; time limit **1s**

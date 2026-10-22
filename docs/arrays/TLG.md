@@ -1,3 +1,5 @@
+[&larr; 84. Minimum number of Flips](MINFLIPS.md) &middot; [Index](../../README.md) &middot; [88. Degree of Polynomial &rarr;](DPOLY.md)
+
 # 87. The Lead Game
 
 > CodeChef problem code [`TLG`](https://www.codechef.com/problems/TLG) &middot; difficulty **1190** &middot; time limit **1s**

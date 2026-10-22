@@ -1,3 +1,5 @@
+[&larr; 440. Pokemon Battles](440-PBATTLE.md) &middot; [Index](README.md) &middot; [442. Xor and Multiply &rarr;](442-XORMUL.md)
+
 # 441. Weird Subarrays
 
 > [`WEIRDSUBARR`](https://www.codechef.com/problems/WEIRDSUBARR) &middot; difficulty **1739** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

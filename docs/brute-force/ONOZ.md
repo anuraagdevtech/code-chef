@@ -1,3 +1,5 @@
+[&larr; 254. Chef and Numbers](CHEFFED.md) &middot; [Index](../../README.md) &middot; [294. Missing Numbers &rarr;](MISS_NUM.md)
+
 # 256. Digital clock
 
 > CodeChef problem code [`ONOZ`](https://www.codechef.com/problems/ONOZ) &middot; difficulty **1482** &middot; time limit **2s**

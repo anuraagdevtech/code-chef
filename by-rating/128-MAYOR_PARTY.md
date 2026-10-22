@@ -1,3 +1,5 @@
+[&larr; 127. Inside The Stadium](127-INSTDUM.md) &middot; [Index](README.md) &middot; [129. Grade The Steel &rarr;](129-FLOW014.md)
+
 # 128. Peaceful Party
 
 > [`MAYOR_PARTY`](https://www.codechef.com/problems/MAYOR_PARTY) &middot; difficulty **898** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

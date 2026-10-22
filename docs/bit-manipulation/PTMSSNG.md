@@ -1,3 +1,5 @@
+[&larr; 303. Consecutive Xor](XOR2.md) &middot; [Index](../../README.md) &middot; [341. Hussain Set &rarr;](COOK82C.md)
+
 # 313. Missing a Point
 
 > CodeChef problem code [`PTMSSNG`](https://www.codechef.com/problems/PTMSSNG) &middot; difficulty **unrated** &middot; time limit **2s**

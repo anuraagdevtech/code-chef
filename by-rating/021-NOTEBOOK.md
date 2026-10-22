@@ -1,3 +1,5 @@
+[&larr; 020. Chef and NextGen](020-HELIUM3.md) &middot; [Index](README.md) &middot; [022. Sugarcane Juice Business &rarr;](022-SUGARCANE.md)
+
 # 021. Count the Notebooks
 
 > [`NOTEBOOK`](https://www.codechef.com/problems/NOTEBOOK) &middot; difficulty **563** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

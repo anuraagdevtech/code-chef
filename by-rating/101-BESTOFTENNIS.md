@@ -1,3 +1,5 @@
+[&larr; 100. Genes](100-GENE01.md) &middot; [Index](README.md) &middot; [102. Mileage matters &rarr;](102-MILEAGE.md)
+
 # 101. Best of N Sets
 
 > [`BESTOFTENNIS`](https://www.codechef.com/problems/BESTOFTENNIS) &middot; difficulty **830** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 68. Pass or Fail](PASSORFAIL.md) &middot; [Index](../../README.md) &middot; [72. Building Race &rarr;](BUILDINGRACE.md)
+
 # 70. Too many items
 
 > CodeChef problem code [`POLYBAGS`](https://www.codechef.com/problems/POLYBAGS) &middot; difficulty **738** &middot; time limit **1s**

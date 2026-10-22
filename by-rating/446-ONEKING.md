@@ -1,3 +1,5 @@
+[&larr; 445. Army Training](445-ARMTRN.md) &middot; [Index](README.md) &middot; [447. Lucky Palin &rarr;](447-LUCKPAL.md)
+
 # 446. One Dimensional Kingdoms
 
 > [`ONEKING`](https://www.codechef.com/problems/ONEKING) &middot; difficulty **1743** &middot; time limit **3s** &middot; 1600 to 1800 difficulty problems (Level 3)

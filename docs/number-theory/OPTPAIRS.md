@@ -1,3 +1,5 @@
+[&larr; 424. Chef Product](CHEFPRODUCT.md) &middot; [Index](../../README.md) &middot; [435. Array sorting &rarr;](ARRSORT.md)
+
 # 434. The Optimal Pairs
 
 > CodeChef problem code [`OPTPAIRS`](https://www.codechef.com/problems/OPTPAIRS) &middot; difficulty **1666** &middot; time limit **1s**

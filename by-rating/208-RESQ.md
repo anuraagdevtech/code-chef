@@ -1,3 +1,5 @@
+[&larr; 207. Chopsticks](207-TACHSTCK.md) &middot; [Index](README.md) &middot; [209. Chef and Keyboard &rarr;](209-CHEFKEY.md)
+
 # 208. Arranging Cup-cakes
 
 > [`RESQ`](https://www.codechef.com/problems/RESQ) &middot; difficulty **1322** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

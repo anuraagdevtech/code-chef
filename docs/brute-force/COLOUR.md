@@ -1,3 +1,5 @@
+[&larr; 128. Chef and Battery ](FIFTYPE.md) &middot; [Index](../../README.md) &middot; [245. Control the Pollution &rarr;](SMOKE.md)
+
 # 228. Maximize Colours
 
 > CodeChef problem code [`COLOUR`](https://www.codechef.com/problems/COLOUR) &middot; difficulty **1415** &middot; time limit **1s**

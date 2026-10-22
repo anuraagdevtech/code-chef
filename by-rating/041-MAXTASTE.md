@@ -1,3 +1,5 @@
+[&larr; 040. Discus Throw](040-DISCUS.md) &middot; [Index](README.md) &middot; [042. Watching Movies at 2x &rarr;](042-MOVIE2X.md)
+
 # 041. Maximise the Tastiness
 
 > [`MAXTASTE`](https://www.codechef.com/problems/MAXTASTE) &middot; difficulty **627** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

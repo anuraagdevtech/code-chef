@@ -1,3 +1,5 @@
+[&larr; 191. Sticks](191-STICKS.md) &middot; [Index](README.md) &middot; [193. Carvans &rarr;](193-CARVANS.md)
+
 # 192. Gasoline Introduction
 
 > [`BEGGASOL`](https://www.codechef.com/problems/BEGGASOL) &middot; difficulty **1263** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

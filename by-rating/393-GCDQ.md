@@ -1,3 +1,5 @@
+[&larr; 392. Powered Parameters](392-POWPM.md) &middot; [Index](README.md) &middot; [394. Three Numbers &rarr;](394-THREENUMBERS.md)
+
 # 393. Gcd Queries
 
 > [`GCDQ`](https://www.codechef.com/problems/GCDQ) &middot; difficulty **1674** &middot; time limit **3.5s** &middot; Jump from 2* to 3* (Level 3)

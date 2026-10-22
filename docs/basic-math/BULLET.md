@@ -1,3 +1,5 @@
+[&larr; 39. Finding Shoes](FINDSHOES.md) &middot; [Index](../../README.md) &middot; [43. Chess Ratings &rarr;](C_RATING.md)
+
 # 42. Mario and Bullet
 
 > CodeChef problem code [`BULLET`](https://www.codechef.com/problems/BULLET) &middot; difficulty **650** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 146. World Chess Championship](146-WCC.md) &middot; [Index](README.md) &middot; [148. Car Range &rarr;](148-CARRANGE.md)
+
 # 147. Two vs Ten
 
 > [`TWOVSTEN`](https://www.codechef.com/problems/TWOVSTEN) &middot; difficulty **936** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

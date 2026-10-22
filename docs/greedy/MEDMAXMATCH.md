@@ -1,3 +1,5 @@
+[&larr; 430. K-Subarrays](KSUB.md) &middot; [Index](../../README.md) &middot; [432. Building Towers &rarr;](TOWERTOP.md)
+
 # 431. Maximum Median Matching
 
 > CodeChef problem code [`MEDMAXMATCH`](https://www.codechef.com/problems/MEDMAXMATCH) &middot; difficulty **1647** &middot; time limit **2s**

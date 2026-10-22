@@ -1,3 +1,5 @@
+[&larr; 449. Minimum Coloring](MINCOLOR.md) &middot; [Index](../../README.md)
+
 # 478. Same Parity Swaps in Binary Strings
 
 > CodeChef problem code [`MAX01EVSWP`](https://www.codechef.com/problems/MAX01EVSWP) &middot; difficulty **1747** &middot; time limit **8s**

@@ -1,3 +1,5 @@
+[&larr; 297. Subarray permutations](297-SUBPERM.md) &middot; [Index](README.md) &middot; [299. Palindrome Pain &rarr;](299-PALINPAIN.md)
+
 # 298. Subarray Removal
 
 > [`SUBARRAYREM`](https://www.codechef.com/problems/SUBARRAYREM) &middot; difficulty **1505** &middot; time limit **4.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

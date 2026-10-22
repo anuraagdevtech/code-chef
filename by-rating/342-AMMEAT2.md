@@ -1,3 +1,5 @@
+[&larr; 341. The One On The Last Night](341-S06E06.md) &middot; [Index](README.md) &middot; [343. Odd Sum &rarr;](343-ODDSUM.md)
+
 # 342. Andrew and the Meatballs again
 
 > [`AMMEAT2`](https://www.codechef.com/problems/AMMEAT2) &middot; difficulty **1597** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

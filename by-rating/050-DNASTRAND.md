@@ -1,3 +1,5 @@
+[&larr; 049. Chess Ratings](049-C_RATING.md) &middot; [Index](README.md) &middot; [051. Chef and Water Bottles &rarr;](051-CHEFBOTTLE.md)
+
 # 050. Complementary Strand in a DNA
 
 > [`DNASTRAND`](https://www.codechef.com/problems/DNASTRAND) &middot; difficulty **660** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

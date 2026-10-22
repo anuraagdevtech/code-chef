@@ -1,3 +1,5 @@
+[&larr; 042. Watching Movies at 2x](042-MOVIE2X.md) &middot; [Index](README.md) &middot; [044. Flip the cards &rarr;](044-FLIPCARDS.md)
+
 # 043. Police and Thief
 
 > [`POLTHIEF`](https://www.codechef.com/problems/POLTHIEF) &middot; difficulty **639** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

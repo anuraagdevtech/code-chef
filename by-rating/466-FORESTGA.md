@@ -1,3 +1,5 @@
+[&larr; 465. Chef and Easy Problem](465-XXOR.md) &middot; [Index](README.md) &middot; [467. Chef and Wedding Arrangements &rarr;](467-CHEFWED.md)
+
 # 466. Forest Gathering
 
 > [`FORESTGA`](https://www.codechef.com/problems/FORESTGA) &middot; difficulty **1829** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

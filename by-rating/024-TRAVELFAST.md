@@ -1,3 +1,5 @@
+[&larr; 023. Chef and Candies](023-CHEFCAND.md) &middot; [Index](README.md) &middot; [025. Is the Score Consistent &rarr;](025-TRUESCORE.md)
+
 # 024. Car or Bike
 
 > [`TRAVELFAST`](https://www.codechef.com/problems/TRAVELFAST) &middot; difficulty **571** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

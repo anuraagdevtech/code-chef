@@ -1,3 +1,5 @@
+[&larr; 279. Chef and GCD](279-CHFGCD.md) &middot; [Index](README.md) &middot; [281. Alternating Divisibility &rarr;](281-ALTERNATEDIV.md)
+
 # 280. Digital clock
 
 > [`ONOZ`](https://www.codechef.com/problems/ONOZ) &middot; difficulty **1482** &middot; time limit **2s** &middot; 1400 to 1600 difficulty problems (Level 2)

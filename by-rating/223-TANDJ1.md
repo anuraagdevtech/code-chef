@@ -1,3 +1,5 @@
+[&larr; 222. Make it Divisible](222-MAKEDIV3.md) &middot; [Index](README.md) &middot; [224. Daanish and Problems &rarr;](224-DIV03.md)
+
 # 223. Tom And Jerry 1
 
 > [`TANDJ1`](https://www.codechef.com/problems/TANDJ1) &middot; difficulty **1379** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

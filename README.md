@@ -1,3 +1,5 @@
+[Rating-ordered index](by-rating/README.md) &middot; [001. Small factorials &rarr;](by-rating/001-FCTRL2.md)
+
 # CodeChef - Become 5 Star roadmap
 
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, the topic or data structure it belongs to, the edge cases that decide the problem, and a dry run on a sample.

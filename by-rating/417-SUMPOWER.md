@@ -1,3 +1,5 @@
+[&larr; 416. Lumpy - The Bus Driver](416-LUMPYBUS.md) &middot; [Index](README.md) &middot; [418. Ceiling Sum &rarr;](418-CEILSUM.md)
+
 # 417. Summary Power
 
 > [`SUMPOWER`](https://www.codechef.com/problems/SUMPOWER) &middot; difficulty **1709** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

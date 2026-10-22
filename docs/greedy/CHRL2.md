@@ -1,3 +1,5 @@
+[&larr; 474. One Dimensional Kingdoms](ONEKING.md) &middot; [Index](../../README.md)
+
 # 481. Chef and String
 
 > CodeChef problem code [`CHRL2`](https://www.codechef.com/problems/CHRL2) &middot; difficulty **1751** &middot; time limit **2s**

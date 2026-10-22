@@ -1,3 +1,5 @@
+[&larr; 7. CRED Coins](CREDCOINS.md) &middot; [Index](../../README.md) &middot; [12. Expert Setter &rarr;](EXPERT.md)
+
 # 10. Minimum Pizzas
 
 > CodeChef problem code [`MINPIZZA`](https://www.codechef.com/problems/MINPIZZA) &middot; difficulty **546** &middot; time limit **1s**

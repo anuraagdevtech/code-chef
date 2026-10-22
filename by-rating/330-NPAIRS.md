@@ -1,3 +1,5 @@
+[&larr; 329. Chef and Sign Sequences](329-CHEFSIGN.md) &middot; [Index](README.md) &middot; [331. Boring String &rarr;](331-BORSTR.md)
+
 # 330. Nice Pairs 
 
 > [`NPAIRS`](https://www.codechef.com/problems/NPAIRS) &middot; difficulty **1564** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

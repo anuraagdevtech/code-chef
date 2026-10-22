@@ -1,3 +1,5 @@
+[&larr; 171. Distinct Pair Sums](MANYSUMS.md) &middot; [Index](../../README.md) &middot; [206. Playing with Matches &rarr;](MATCHES.md)
+
 # 172. Tom And Jerry 1
 
 > CodeChef problem code [`TANDJ1`](https://www.codechef.com/problems/TANDJ1) &middot; difficulty **1379** &middot; time limit **0.5s**

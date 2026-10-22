@@ -1,3 +1,5 @@
+[&larr; 084. Possible Victory](084-T20MCH.md) &middot; [Index](README.md) &middot; [086. Reach fast &rarr;](086-REACHFAST.md)
+
 # 085. Lucky Four
 
 > [`LUCKFOUR`](https://www.codechef.com/problems/LUCKFOUR) &middot; difficulty **775** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 313. Missing a Point](PTMSSNG.md) &middot; [Index](../../README.md) &middot; [344. Prajit and bits &rarr;](ADDI.md)
+
 # 341. Hussain Set
 
 > CodeChef problem code [`COOK82C`](https://www.codechef.com/problems/COOK82C) &middot; difficulty **2608** &middot; time limit **2.5s**

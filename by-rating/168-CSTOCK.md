@@ -1,3 +1,5 @@
+[&larr; 167. Devu and friendship testing](167-CFRTEST.md) &middot; [Index](README.md) &middot; [169. Motivation &rarr;](169-IMDB.md)
+
 # 168. Chef and Stock Prices 
 
 > [`CSTOCK`](https://www.codechef.com/problems/CSTOCK) &middot; difficulty **1069** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

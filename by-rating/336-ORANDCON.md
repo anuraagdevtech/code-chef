@@ -1,3 +1,5 @@
+[&larr; 335. Chef and squares](335-CHSQR.md) &middot; [Index](README.md) &middot; [337. Chef In Infinite Plane &rarr;](337-CHFPLN.md)
+
 # 336. Yet Another Constructive Problem
 
 > [`ORANDCON`](https://www.codechef.com/problems/ORANDCON) &middot; difficulty **1580** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

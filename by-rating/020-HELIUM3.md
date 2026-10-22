@@ -1,3 +1,5 @@
+[&larr; 019. Expert Setter](019-EXPERT.md) &middot; [Index](README.md) &middot; [021. Count the Notebooks &rarr;](021-NOTEBOOK.md)
+
 # 020. Chef and NextGen
 
 > [`HELIUM3`](https://www.codechef.com/problems/HELIUM3) &middot; difficulty **562** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 086. Reach fast](086-REACHFAST.md) &middot; [Index](README.md) &middot; [088. Get Lowest Free &rarr;](088-SALE.md)
+
 # 087. Single-use Attack
 
 > [`SINGLEUSE`](https://www.codechef.com/problems/SINGLEUSE) &middot; difficulty **777** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

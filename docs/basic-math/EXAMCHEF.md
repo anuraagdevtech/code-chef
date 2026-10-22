@@ -1,3 +1,5 @@
+[&larr; 3. Janmansh and Assignments](JASSIGNMENTS.md) &middot; [Index](../../README.md) &middot; [5. Chef in his Office &rarr;](OFFICE.md)
+
 # 4. Exams
 
 > CodeChef problem code [`EXAMCHEF`](https://www.codechef.com/problems/EXAMCHEF) &middot; difficulty **519** &middot; time limit **1s**

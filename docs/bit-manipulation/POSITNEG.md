@@ -1,3 +1,5 @@
+[&larr; 276. One-XOR Deletions](DELXORONE.md) &middot; [Index](../../README.md) &middot; [289. XxOoRr &rarr;](XXOORR.md)
+
 # 281. Positive or Negative Subarrays
 
 > CodeChef problem code [`POSITNEG`](https://www.codechef.com/problems/POSITNEG) &middot; difficulty **1526** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 410. Mystical Numbers](410-XORGAND.md) &middot; [Index](README.md) &middot; [412. Game on a Strip &rarr;](412-ARRGAME.md)
+
 # 411. OR Tuples
 
 > [`ORTUPLES`](https://www.codechef.com/problems/ORTUPLES) &middot; difficulty **1703** &middot; time limit **2s** &middot; 1600 to 1800 difficulty problems (Level 3)

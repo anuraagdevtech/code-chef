@@ -1,3 +1,5 @@
+[&larr; 71. Chef Fantasy 11](FIZZBUZZ2303.md) &middot; [Index](../../README.md) &middot; [192. Count Substrings &rarr;](CSUB.md)
+
 # 122. Farmers League
 
 > CodeChef problem code [`LEAGUE`](https://www.codechef.com/problems/LEAGUE) &middot; difficulty **883** &middot; time limit **2s**

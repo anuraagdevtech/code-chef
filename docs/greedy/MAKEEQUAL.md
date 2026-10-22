@@ -1,3 +1,5 @@
+[&larr; 162. Two Dishes](TWODISH.md) &middot; [Index](../../README.md) &middot; [187. Magical Doors &rarr;](MAGDOORS.md)
+
 # 175. Make them equal
 
 > CodeChef problem code [`MAKEEQUAL`](https://www.codechef.com/problems/MAKEEQUAL) &middot; difficulty **1267** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 483. Jon and Selina](483-SELINA.md) &middot; [Index](README.md) &middot; [485. Fair distribution &rarr;](485-SUBS.md)
+
 # 484. Sort Checker
 
 > [`SRTCHK`](https://www.codechef.com/problems/SRTCHK) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

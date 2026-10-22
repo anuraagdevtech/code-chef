@@ -1,3 +1,5 @@
+[&larr; 199. Snake Procession](199-SNAKPROC.md) &middot; [Index](README.md) &middot; [201. Digit Longest Increasing Subsequences 2 &rarr;](201-LISDIGIT.md)
+
 # 200. Points and Lines
 
 > [`POLIN`](https://www.codechef.com/problems/POLIN) &middot; difficulty **1296** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

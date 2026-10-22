@@ -1,3 +1,5 @@
+[&larr; 063. Chef and his Apps](063-CHEFAPPS.md) &middot; [Index](README.md) &middot; [065. Minimum number of coins &rarr;](065-MINCOINS.md)
+
 # 064. Chef Eren
 
 > [`CHEFEREN`](https://www.codechef.com/problems/CHEFEREN) &middot; difficulty **706** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

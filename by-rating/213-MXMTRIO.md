@@ -1,3 +1,5 @@
+[&larr; 212. Count Substrings](212-CSUB.md) &middot; [Index](README.md) &middot; [214. Turn It &rarr;](214-NFS.md)
+
 # 213. Maximum Trio
 
 > [`MXMTRIO`](https://www.codechef.com/problems/MXMTRIO) &middot; difficulty **1349** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

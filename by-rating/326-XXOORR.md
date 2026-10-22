@@ -1,3 +1,5 @@
+[&larr; 325. Catch the Thief](325-CATHIEF.md) &middot; [Index](README.md) &middot; [327. Sticks and Rectangles &rarr;](327-RECSTI.md)
+
 # 326. XxOoRr
 
 > [`XXOORR`](https://www.codechef.com/problems/XXOORR) &middot; difficulty **1551** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

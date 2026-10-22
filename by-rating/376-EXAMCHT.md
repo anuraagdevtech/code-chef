@@ -1,3 +1,5 @@
+[&larr; 375. ALIEN-OR](375-ALIENOR.md) &middot; [Index](README.md) &middot; [377. Charges &rarr;](377-CHARGES.md)
+
 # 376. Exam Cheating
 
 > [`EXAMCHT`](https://www.codechef.com/problems/EXAMCHT) &middot; difficulty **1639** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

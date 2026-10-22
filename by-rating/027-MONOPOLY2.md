@@ -1,3 +1,5 @@
+[&larr; 026. The Three Topics](026-THREETOPICS.md) &middot; [Index](README.md) &middot; [028. Problems in your to-do list &rarr;](028-TODOLIST.md)
+
 # 027. Monopoly
 
 > [`MONOPOLY2`](https://www.codechef.com/problems/MONOPOLY2) &middot; difficulty **578** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

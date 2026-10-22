@@ -1,3 +1,5 @@
+[&larr; 406. 3-Blast Palindrome](406-BLAST3.md) &middot; [Index](README.md) &middot; [408. Chef and Football Match &rarr;](408-WATCHFB.md)
+
 # 407. Remove One Element
 
 > [`REMONE`](https://www.codechef.com/problems/REMONE) &middot; difficulty **1700** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 238. Fit to Play](238-PLAYFIT.md) &middot; [Index](README.md) &middot; [240. Average Array &rarr;](240-AVGARR.md)
+
 # 239. Decreasing Srrnmieeda
 
 > [`DECREM`](https://www.codechef.com/problems/DECREM) &middot; difficulty **1423** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

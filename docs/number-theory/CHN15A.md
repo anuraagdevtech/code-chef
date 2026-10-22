@@ -1,3 +1,5 @@
+[&larr; 77. Dracula Eats](CHEAT.md) &middot; [Index](../../README.md) &middot; [90. Primality Test &rarr;](PRB01.md)
+
 # 80. Mutated Minions
 
 > CodeChef problem code [`CHN15A`](https://www.codechef.com/problems/CHN15A) &middot; difficulty **970** &middot; time limit **1s**

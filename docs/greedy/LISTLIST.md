@@ -1,3 +1,5 @@
+[&larr; 381. Sticks and Rectangles](RECSTI.md) &middot; [Index](../../README.md) &middot; [391. Chain of Doughnuts &rarr;](DONUTS.md)
+
 # 388. List of Lists
 
 > CodeChef problem code [`LISTLIST`](https://www.codechef.com/problems/LISTLIST) &middot; difficulty **1567** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 481. Missing a Point](481-PTMSSNG.md) &middot; [Index](README.md) &middot; [483. Jon and Selina &rarr;](483-SELINA.md)
+
 # 482. Stable Quick Sort
 
 > [`QCKSRT2`](https://www.codechef.com/problems/QCKSRT2) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

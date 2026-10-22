@@ -1,3 +1,5 @@
+[&larr; 113. Which Division](113-WHICHDIV.md) &middot; [Index](README.md) &middot; [115. Chef and Contest &rarr;](115-CHEFCONTEST.md)
+
 # 114. Badminton Serves
 
 > [`BADMINTON`](https://www.codechef.com/problems/BADMINTON) &middot; difficulty **869** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

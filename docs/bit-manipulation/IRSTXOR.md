@@ -1,3 +1,5 @@
+[&larr; 253. Order by XOR](XOR_ORDER.md) &middot; [Index](../../README.md) &middot; [273. Equal by XORing &rarr;](EQBYXOR.md)
+
 # 262. Interesting XOR!
 
 > CodeChef problem code [`IRSTXOR`](https://www.codechef.com/problems/IRSTXOR) &middot; difficulty **1487** &middot; time limit **1s**

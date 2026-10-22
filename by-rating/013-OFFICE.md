@@ -1,3 +1,5 @@
+[&larr; 012. Is it a VOWEL or CONSONANT](012-VOWELTB.md) &middot; [Index](README.md) &middot; [014. CRED Coins &rarr;](014-CREDCOINS.md)
+
 # 013. Chef in his Office
 
 > [`OFFICE`](https://www.codechef.com/problems/OFFICE) &middot; difficulty **532** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

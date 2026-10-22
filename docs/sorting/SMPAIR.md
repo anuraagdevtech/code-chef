@@ -1,3 +1,5 @@
+[&larr; 67. Second Largest](FLOW017.md) &middot; [Index](../../README.md) &middot; [197. Racing Horses &rarr;](HORSES.md)
+
 # 196. The Smallest Pair
 
 > CodeChef problem code [`SMPAIR`](https://www.codechef.com/problems/SMPAIR) &middot; difficulty **1352** &middot; time limit **1s**

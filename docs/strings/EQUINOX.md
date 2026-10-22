@@ -1,3 +1,5 @@
+[&larr; 191. Lapindromes](LAPIN.md) &middot; [Index](../../README.md) &middot; [194. Snake Procession &rarr;](SNAKPROC.md)
+
 # 193. Equinox Strings
 
 > CodeChef problem code [`EQUINOX`](https://www.codechef.com/problems/EQUINOX) &middot; difficulty **1272** &middot; time limit **0.5s**

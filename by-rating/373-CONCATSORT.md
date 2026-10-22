@@ -1,3 +1,5 @@
+[&larr; 372. Maximum Damage](372-MAXDMGE.md) &middot; [Index](README.md) &middot; [374. Number Hunt &rarr;](374-NUMHUNT.md)
+
 # 373. Concat Sort
 
 > [`CONCATSORT`](https://www.codechef.com/problems/CONCATSORT) &middot; difficulty **1637** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

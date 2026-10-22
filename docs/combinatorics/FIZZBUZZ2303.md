@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [122. Farmers League &rarr;](LEAGUE.md)
+
 # 71. Chef Fantasy 11
 
 > CodeChef problem code [`FIZZBUZZ2303`](https://www.codechef.com/problems/FIZZBUZZ2303) &middot; difficulty **739** &middot; time limit **1s**

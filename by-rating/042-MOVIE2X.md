@@ -1,3 +1,5 @@
+[&larr; 041. Maximise the Tastiness](041-MAXTASTE.md) &middot; [Index](README.md) &middot; [043. Police and Thief &rarr;](043-POLTHIEF.md)
+
 # 042. Watching Movies at 2x
 
 > [`MOVIE2X`](https://www.codechef.com/problems/MOVIE2X) &middot; difficulty **628** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

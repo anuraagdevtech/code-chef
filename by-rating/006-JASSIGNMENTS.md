@@ -1,3 +1,5 @@
+[&larr; 005. Subscriptions](005-SUBSCRIBE_.md) &middot; [Index](README.md) &middot; [007. Exams &rarr;](007-EXAMCHEF.md)
+
 # 006. Janmansh and Assignments
 
 > [`JASSIGNMENTS`](https://www.codechef.com/problems/JASSIGNMENTS) &middot; difficulty **513** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

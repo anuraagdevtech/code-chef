@@ -1,3 +1,5 @@
+[&larr; 119. Drunk Alcoholic](119-DRUNKALK.md) &middot; [Index](README.md) &middot; [121. Richie Rich &rarr;](121-CHFRICH.md)
+
 # 120. Chef On Island
 
 > [`CCISLAND`](https://www.codechef.com/problems/CCISLAND) &middot; difficulty **878** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 412. OR Matrix](ORMATRIX.md) &middot; [Index](../../README.md) &middot; [453. Matchsticks &rarr;](MSTICK.md)
+
 # 433. Subarrays with length
 
 > CodeChef problem code [`SUBARRAYLEN`](https://www.codechef.com/problems/SUBARRAYLEN) &middot; difficulty **1691** &middot; time limit **1.5s**

@@ -1,3 +1,5 @@
+[&larr; 400. Construct Array](CONSTRRAY.md) &middot; [Index](../../README.md) &middot; [449. Minimum Coloring &rarr;](MINCOLOR.md)
+
 # 428. Bitwise Equation
 
 > CodeChef problem code [`BITEQU`](https://www.codechef.com/problems/BITEQU) &middot; difficulty **1679** &middot; time limit **1s**

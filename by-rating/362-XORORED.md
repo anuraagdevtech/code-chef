@@ -1,3 +1,5 @@
+[&larr; 361. Max Out](361-IOPC17C.md) &middot; [Index](README.md) &middot; [363. Non-Divisor Array &rarr;](363-DIVCOL.md)
+
 # 362. XOR-ORED
 
 > [`XORORED`](https://www.codechef.com/problems/XORORED) &middot; difficulty **1621** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

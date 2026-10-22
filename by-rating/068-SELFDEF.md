@@ -1,3 +1,5 @@
+[&larr; 067. Cup Finals](067-CRICUP.md) &middot; [Index](README.md) &middot; [069. Too many Floors &rarr;](069-FLOORS.md)
+
 # 068. Self Defence Training
 
 > [`SELFDEF`](https://www.codechef.com/problems/SELFDEF) &middot; difficulty **716** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

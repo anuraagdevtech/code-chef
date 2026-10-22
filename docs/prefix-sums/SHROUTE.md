@@ -1,3 +1,5 @@
+[&larr; 298. Bouncing Ball](BOUNCE_BALL.md) &middot; [Index](../../README.md) &middot; [350. Chef and Easy Problem &rarr;](XXOR.md)
+
 # 328. Shortest Route
 
 > CodeChef problem code [`SHROUTE`](https://www.codechef.com/problems/SHROUTE) &middot; difficulty **1756** &middot; time limit **1.5s**

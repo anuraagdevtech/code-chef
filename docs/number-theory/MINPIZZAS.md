@@ -1,3 +1,5 @@
+[&larr; 299. Non-Divisor Array](DIVCOL.md) &middot; [Index](../../README.md) &middot; [308. Alternating Work Days &rarr;](ALTER.md)
+
 # 307. Minimum Number of Pizzas
 
 > CodeChef problem code [`MINPIZZAS`](https://www.codechef.com/problems/MINPIZZAS) &middot; difficulty **1532** &middot; time limit **1s**

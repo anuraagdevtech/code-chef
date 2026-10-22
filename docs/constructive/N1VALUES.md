@@ -1,3 +1,5 @@
+[&larr; 257. Alternating Divisibility](ALTERNATEDIV.md) &middot; [Index](../../README.md) &middot; [268. Gcd of Subarrays &rarr;](GCDSUBARRAYS.md)
+
 # 267. Exactly N plus 1 Values
 
 > CodeChef problem code [`N1VALUES`](https://www.codechef.com/problems/N1VALUES) &middot; difficulty **1495** &middot; time limit **1s**

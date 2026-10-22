@@ -1,3 +1,5 @@
+[&larr; 90. Primality Test](PRB01.md) &middot; [Index](../../README.md) &middot; [95. Equalizing Numbers &rarr;](EQLZING.md)
+
 # 93. Cars and Bikes
 
 > CodeChef problem code [`TYRES`](https://www.codechef.com/problems/TYRES) &middot; difficulty **809** &middot; time limit **0.5s**

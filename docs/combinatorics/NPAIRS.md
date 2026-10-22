@@ -1,3 +1,5 @@
+[&larr; 356. Chef and Good Subsequences](GDSUB.md) &middot; [Index](../../README.md) &middot; [398. MaxEdges &rarr;](MAXEDGES.md)
+
 # 375. Nice Pairs 
 
 > CodeChef problem code [`NPAIRS`](https://www.codechef.com/problems/NPAIRS) &middot; difficulty **1564** &middot; time limit **1s**

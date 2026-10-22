@@ -1,3 +1,5 @@
+[&larr; 172. Tom And Jerry 1](TANDJ1.md) &middot; [Index](../../README.md) &middot; [224. Bella ciao &rarr;](CHFHEIST.md)
+
 # 206. Playing with Matches
 
 > CodeChef problem code [`MATCHES`](https://www.codechef.com/problems/MATCHES) &middot; difficulty **986** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 251. Magic Set](MGCSET.md) &middot; [Index](../../README.md) &middot; [336. Chef In Infinite Plane &rarr;](CHFPLN.md)
+
 # 301. Break Free
 
 > CodeChef problem code [`REMOSET`](https://www.codechef.com/problems/REMOSET) &middot; difficulty **1612** &middot; time limit **1s**

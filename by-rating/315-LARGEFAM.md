@@ -1,3 +1,5 @@
+[&larr; 314. The White Knight](314-E1.md) &middot; [Index](README.md) &middot; [316. Minimum Number of Pizzas &rarr;](316-MINPIZZAS.md)
+
 # 315. Largest Family
 
 > [`LARGEFAM`](https://www.codechef.com/problems/LARGEFAM) &middot; difficulty **1532** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

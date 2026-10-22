@@ -1,3 +1,5 @@
+[&larr; 380. Range Assign, Number of Distinct Elements Minimize](380-RANGEASSIGN.md) &middot; [Index](README.md) &middot; [382. MEX-OR &rarr;](382-MEXOR.md)
+
 # 381. Minimise Maximum Subarray Sum
 
 > [`MINIMISEMAX`](https://www.codechef.com/problems/MINIMISEMAX) &middot; difficulty **1649** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

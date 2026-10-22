@@ -1,3 +1,5 @@
+[&larr; 43. Chess Ratings](C_RATING.md) &middot; [Index](../../README.md) &middot; [47. Finding Square Roots &rarr;](FSQRT.md)
+
 # 45. Chef and Water Bottles
 
 > CodeChef problem code [`CHEFBOTTLE`](https://www.codechef.com/problems/CHEFBOTTLE) &middot; difficulty **662** &middot; time limit **1s**

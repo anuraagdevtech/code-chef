@@ -1,3 +1,5 @@
+[&larr; 244. Counting Flags](FLAGS.md) &middot; [Index](../../README.md) &middot; [301. Break Free &rarr;](REMOSET.md)
+
 # 251. Magic Set
 
 > CodeChef problem code [`MGCSET`](https://www.codechef.com/problems/MGCSET) &middot; difficulty **1472** &middot; time limit **1s**

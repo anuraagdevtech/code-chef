@@ -1,3 +1,5 @@
+[&larr; 242. Make Array Odd](MAKEARRAYODD.md) &middot; [Index](../../README.md) &middot; [262. Interesting XOR! &rarr;](IRSTXOR.md)
+
 # 253. Order by XOR
 
 > CodeChef problem code [`XOR_ORDER`](https://www.codechef.com/problems/XOR_ORDER) &middot; difficulty **1476** &middot; time limit **1s**

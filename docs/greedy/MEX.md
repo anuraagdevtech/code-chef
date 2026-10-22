@@ -1,3 +1,5 @@
+[&larr; 304. Positive array](CIREQ.md) &middot; [Index](../../README.md) &middot; [340. IPC Trainers &rarr;](IPCTRAIN.md)
+
 # 315. Max Mex
 
 > CodeChef problem code [`MEX`](https://www.codechef.com/problems/MEX) &middot; difficulty **1478** &middot; time limit **1.5s**

@@ -1,3 +1,5 @@
+[&larr; 364. Construct Array](364-CONSTRRAY.md) &middot; [Index](README.md) &middot; [366. Stamps 100 &rarr;](366-S100.md)
+
 # 365. Zebra Crossing
 
 > [`ZEBRA`](https://www.codechef.com/problems/ZEBRA) &middot; difficulty **1626** &middot; time limit **0.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 226. Average Permutation](226-AVGPERM.md) &middot; [Index](README.md) &middot; [228. Mighty Friend &rarr;](228-MTYFRI.md)
+
 # 227. Hotel Bytelandia
 
 > [`HOTEL`](https://www.codechef.com/problems/HOTEL) &middot; difficulty **1405** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

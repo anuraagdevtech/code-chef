@@ -1,3 +1,5 @@
+[&larr; 140. Chef and Pairing Slippers](140-CHEFSLP.md) &middot; [Index](README.md) &middot; [142. Akash and Missing Class &rarr;](142-CHFCLASS.md)
+
 # 141. Hoop Jump
 
 > [`HOOPS`](https://www.codechef.com/problems/HOOPS) &middot; difficulty **930** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

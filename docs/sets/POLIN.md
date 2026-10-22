@@ -1,3 +1,5 @@
+[&larr; 208. Devu and friendship testing](CFRTEST.md) &middot; [Index](../../README.md) &middot; [314. Count Distinct Values &rarr;](CNTDIST.md)
+
 # 215. Points and Lines
 
 > CodeChef problem code [`POLIN`](https://www.codechef.com/problems/POLIN) &middot; difficulty **1296** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 12. Expert Setter](EXPERT.md) &middot; [Index](../../README.md) &middot; [14. Sugarcane Juice Business &rarr;](SUGARCANE.md)
+
 # 13. Chef and NextGen
 
 > CodeChef problem code [`HELIUM3`](https://www.codechef.com/problems/HELIUM3) &middot; difficulty **562** &middot; time limit **1s**

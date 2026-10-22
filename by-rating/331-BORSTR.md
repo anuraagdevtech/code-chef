@@ -1,3 +1,5 @@
+[&larr; 330. Nice Pairs ](330-NPAIRS.md) &middot; [Index](README.md) &middot; [332. List of Lists &rarr;](332-LISTLIST.md)
+
 # 331. Boring String
 
 > [`BORSTR`](https://www.codechef.com/problems/BORSTR) &middot; difficulty **1566** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

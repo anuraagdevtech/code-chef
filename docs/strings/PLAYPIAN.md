@@ -1,3 +1,5 @@
+[&larr; 148. Rearranging digits to get a multiple of 5](DIGARR.md) &middot; [Index](../../README.md) &middot; [185. Pawri Meme &rarr;](PAWRI.md)
+
 # 153. Play Piano
 
 > CodeChef problem code [`PLAYPIAN`](https://www.codechef.com/problems/PLAYPIAN) &middot; difficulty **1180** &middot; time limit **1s**

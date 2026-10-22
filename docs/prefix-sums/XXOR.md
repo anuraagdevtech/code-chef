@@ -1,3 +1,5 @@
+[&larr; 328. Shortest Route](SHROUTE.md) &middot; [Index](../../README.md) &middot; [361. W String &rarr;](WSTRING.md)
+
 # 350. Chef and Easy Problem
 
 > CodeChef problem code [`XXOR`](https://www.codechef.com/problems/XXOR) &middot; difficulty **1810** &middot; time limit **1s**

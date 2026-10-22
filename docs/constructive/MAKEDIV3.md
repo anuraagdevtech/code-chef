@@ -1,3 +1,5 @@
+[&larr; 300. K Odd Sum](ADVITIYA5.md) &middot; [Index](../../README.md) &middot; [306. Indivisible Permutation &rarr;](INDIPERM.md)
+
 # 305. Make it Divisible
 
 > CodeChef problem code [`MAKEDIV3`](https://www.codechef.com/problems/MAKEDIV3) &middot; difficulty **1379** &middot; time limit **0.5 - 1s**

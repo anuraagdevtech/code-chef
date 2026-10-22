@@ -1,3 +1,5 @@
+[&larr; 011. HOW MANY DIGITS DO I HAVE](011-HOWMANY.md) &middot; [Index](README.md) &middot; [013. Chef in his Office &rarr;](013-OFFICE.md)
+
 # 012. Is it a VOWEL or CONSONANT
 
 > [`VOWELTB`](https://www.codechef.com/problems/VOWELTB) &middot; difficulty **520** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

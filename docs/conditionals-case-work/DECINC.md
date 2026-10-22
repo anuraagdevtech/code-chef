@@ -1,3 +1,5 @@
+[&larr; 55. Water Mixing](WTRMIXING.md) &middot; [Index](../../README.md) &middot; [79. Chef And Operators &rarr;](CHOPRT.md)
+
 # 65. Decrement OR Increment
 
 > CodeChef problem code [`DECINC`](https://www.codechef.com/problems/DECINC) &middot; difficulty **520** &middot; time limit **1s**

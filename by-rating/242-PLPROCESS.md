@@ -1,3 +1,5 @@
+[&larr; 241. Say No To Drugs](241-NODRUGS.md) &middot; [Index](README.md) &middot; [243. Reversing directions &rarr;](243-DIRECTI.md)
+
 # 242. Parallel Processing
 
 > [`PLPROCESS`](https://www.codechef.com/problems/PLPROCESS) &middot; difficulty **1425** &middot; time limit **7.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

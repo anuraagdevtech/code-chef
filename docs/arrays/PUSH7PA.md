@@ -1,3 +1,5 @@
+[&larr; 207. Make all equal using Pairs](PAIREQ.md) &middot; [Index](../../README.md) &middot; [219. Reversal Sorting &rarr;](REVSORT.md)
+
 # 218. Pushpa 
 
 > CodeChef problem code [`PUSH7PA`](https://www.codechef.com/problems/PUSH7PA) &middot; difficulty **1266** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 205. Lucky Four](LUCKFOUR.md) &middot; [Index](../../README.md) &middot; [234. Reversing directions &rarr;](DIRECTI.md)
+
 # 216. Even Splits
 
 > CodeChef problem code [`EVENSPLIT`](https://www.codechef.com/problems/EVENSPLIT) &middot; difficulty **1282** &middot; time limit **1.5s**

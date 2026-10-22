@@ -1,3 +1,5 @@
+[&larr; 152. Joining Date](JOINING.md) &middot; [Index](../../README.md) &middot; [170. Maximum Length Even Subarray &rarr;](MXEVNSUB.md)
+
 # 166. Smallest Possible Whole Number
 
 > CodeChef problem code [`SMOL`](https://www.codechef.com/problems/SMOL) &middot; difficulty **1306** &middot; time limit **1s**

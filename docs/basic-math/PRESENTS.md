@@ -1,3 +1,5 @@
+[&larr; 74. Endless Appetizers](MOZZ.md) &middot; [Index](../../README.md) &middot; [76. Small Factorial &rarr;](FLOW018.md)
+
 # 75. Presents for Cheffina
 
 > CodeChef problem code [`PRESENTS`](https://www.codechef.com/problems/PRESENTS) &middot; difficulty **757** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 153. Play Piano](PLAYPIAN.md) &middot; [Index](../../README.md) &middot; [186. Chef and the Wildcard Matching &rarr;](TWOSTR.md)
+
 # 185. Pawri Meme
 
 > CodeChef problem code [`PAWRI`](https://www.codechef.com/problems/PAWRI) &middot; difficulty **1182** &middot; time limit **2s**

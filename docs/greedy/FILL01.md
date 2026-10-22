@@ -1,3 +1,5 @@
+[&larr; 342. Iron, Magnet and Wall](FEMA2.md) &middot; [Index](../../README.md) &middot; [374. The Nights Watch &rarr;](WTCH.md)
+
 # 372. Sleepy Chef
 
 > CodeChef problem code [`FILL01`](https://www.codechef.com/problems/FILL01) &middot; difficulty **1445** &middot; time limit **2s**

@@ -1,3 +1,5 @@
+[&larr; 469. XOR with Subset](469-XORSUB.md) &middot; [Index](README.md) &middot; [471. Snake Eating &rarr;](471-SNAKEEAT.md)
+
 # 470. ChefTown Parade
 
 > [`CHEFTOWN`](https://www.codechef.com/problems/CHEFTOWN) &middot; difficulty **1882** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

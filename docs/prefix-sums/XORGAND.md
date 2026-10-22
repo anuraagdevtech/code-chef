@@ -1,3 +1,5 @@
+[&larr; 418. Anti-Palindrome Queries](ANTIPALQ.md) &middot; [Index](../../README.md) &middot; [447. Summary Power &rarr;](SUMPOWER.md)
+
 # 440. Mystical Numbers
 
 > CodeChef problem code [`XORGAND`](https://www.codechef.com/problems/XORGAND) &middot; difficulty **1702** &middot; time limit **1.5s**

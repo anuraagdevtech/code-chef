@@ -1,3 +1,5 @@
+[&larr; 472. Modular GCD](GCDMOD.md) &middot; [Index](../../README.md) &middot; [482. Too Many Candies &rarr;](ICL1903.md)
+
 # 477. Eugene and function
 
 > CodeChef problem code [`KFUNC`](https://www.codechef.com/problems/KFUNC) &middot; difficulty **1746** &middot; time limit **1s**

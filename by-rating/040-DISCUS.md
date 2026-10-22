@@ -1,3 +1,5 @@
+[&larr; 039. Bus  Seat Numbering](039-SEATNUMBER.md) &middot; [Index](README.md) &middot; [041. Maximise the Tastiness &rarr;](041-MAXTASTE.md)
+
 # 040. Discus Throw
 
 > [`DISCUS`](https://www.codechef.com/problems/DISCUS) &middot; difficulty **622** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

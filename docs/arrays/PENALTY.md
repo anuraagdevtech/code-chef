@@ -1,3 +1,5 @@
+[&larr; 89. Recent contest problems](RECENTCONT.md) &middot; [Index](../../README.md) &middot; [138. Chef and Price Control &rarr;](PRICECON.md)
+
 # 135. Penalty Shots
 
 > CodeChef problem code [`PENALTY`](https://www.codechef.com/problems/PENALTY) &middot; difficulty **925** &middot; time limit **0.5s**

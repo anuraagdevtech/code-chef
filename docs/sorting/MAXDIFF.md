@@ -1,3 +1,5 @@
+[&larr; 197. Racing Horses](HORSES.md) &middot; [Index](../../README.md) &middot; [210. Simple Statistics &rarr;](SIMPSTAT.md)
+
 # 198. Maximum Weight Difference
 
 > CodeChef problem code [`MAXDIFF`](https://www.codechef.com/problems/MAXDIFF) &middot; difficulty **1308** &middot; time limit **2s**

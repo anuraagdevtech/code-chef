@@ -1,3 +1,5 @@
+[&larr; 131. Passing Marks](131-PSGRADE.md) &middot; [Index](README.md) &middot; [133. Count the Holidays &rarr;](133-SUNDAY.md)
+
 # 132. Avoid Contact
 
 > [`AVOIDCONTACT`](https://www.codechef.com/problems/AVOIDCONTACT) &middot; difficulty **907** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

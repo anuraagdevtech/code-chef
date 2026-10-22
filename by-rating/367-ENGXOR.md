@@ -1,3 +1,5 @@
+[&larr; 366. Stamps 100](366-S100.md) &middot; [Index](README.md) &middot; [368. Encrypt Value &rarr;](368-ENV.md)
+
 # 367. XOR Engine
 
 > [`ENGXOR`](https://www.codechef.com/problems/ENGXOR) &middot; difficulty **1632** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

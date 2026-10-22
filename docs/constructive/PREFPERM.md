@@ -1,3 +1,5 @@
+[&larr; 271. Palindrome Pain](PALINPAIN.md) &middot; [Index](../../README.md) &middot; [292. Chef and squares &rarr;](CHSQR.md)
+
 # 284. Prefix Permutation
 
 > CodeChef problem code [`PREFPERM`](https://www.codechef.com/problems/PREFPERM) &middot; difficulty **1532** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 180. Hard Cash](CASH.md) &middot; [Index](../../README.md) &middot; [231. Decreasing Srrnmieeda &rarr;](DECREM.md)
+
 # 204. Chef and Linear Chess
 
 > CodeChef problem code [`LINCHESS`](https://www.codechef.com/problems/LINCHESS) &middot; difficulty **1200** &middot; time limit **1s**

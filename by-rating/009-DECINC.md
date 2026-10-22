@@ -1,3 +1,5 @@
+[&larr; 008. Chef And Operators](008-CHOPRT.md) &middot; [Index](README.md) &middot; [010. Second Largest &rarr;](010-FLOW017.md)
+
 # 009. Decrement OR Increment
 
 > [`DECINC`](https://www.codechef.com/problems/DECINC) &middot; difficulty **520** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

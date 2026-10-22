@@ -1,3 +1,5 @@
+[&larr; 179. Carvans](CARVANS.md) &middot; [Index](../../README.md) &middot; [183. College Life 2 &rarr;](COLGLF2.md)
+
 # 181. Average Flex
 
 > CodeChef problem code [`AVGFLEX`](https://www.codechef.com/problems/AVGFLEX) &middot; difficulty **1442** &middot; time limit **0.5s**

@@ -1,3 +1,5 @@
+[&larr; 234. Maximize Colours](234-COLOUR.md) &middot; [Index](README.md) &middot; [236. Equality &rarr;](236-EQUALITY.md)
+
 # 235. Remove Element
 
 > [`REMELEM`](https://www.codechef.com/problems/REMELEM) &middot; difficulty **1415** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

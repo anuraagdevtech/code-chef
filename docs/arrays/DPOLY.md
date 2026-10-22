@@ -1,3 +1,5 @@
+[&larr; 87. The Lead Game](TLG.md) &middot; [Index](../../README.md) &middot; [89. Recent contest problems &rarr;](RECENTCONT.md)
+
 # 88. Degree of Polynomial
 
 > CodeChef problem code [`DPOLY`](https://www.codechef.com/problems/DPOLY) &middot; difficulty **793** &middot; time limit **1s**

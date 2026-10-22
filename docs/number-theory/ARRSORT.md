@@ -1,3 +1,5 @@
+[&larr; 434. The Optimal Pairs](OPTPAIRS.md) &middot; [Index](../../README.md) &middot; [437. Exam Cheating &rarr;](EXAMCHT.md)
+
 # 435. Array sorting
 
 > CodeChef problem code [`ARRSORT`](https://www.codechef.com/problems/ARRSORT) &middot; difficulty **1681** &middot; time limit **1s**

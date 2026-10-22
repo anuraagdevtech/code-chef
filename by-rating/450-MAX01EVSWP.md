@@ -1,3 +1,5 @@
+[&larr; 449. Eugene and function](449-KFUNC.md) &middot; [Index](README.md) &middot; [451. The One Who Knocks! &rarr;](451-EOOPR.md)
+
 # 450. Same Parity Swaps in Binary Strings
 
 > [`MAX01EVSWP`](https://www.codechef.com/problems/MAX01EVSWP) &middot; difficulty **1747** &middot; time limit **8s** &middot; 1600 to 1800 difficulty problems (Level 3)

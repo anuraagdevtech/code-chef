@@ -1,3 +1,5 @@
+[&larr; 436. MEX-OR](MEXOR.md) &middot; [Index](../../README.md) &middot; [461. XOR Equal &rarr;](PALINT.md)
+
 # 452. Even Subset Xor
 
 > CodeChef problem code [`EVENXOR`](https://www.codechef.com/problems/EVENXOR) &middot; difficulty **1714** &middot; time limit **1s**

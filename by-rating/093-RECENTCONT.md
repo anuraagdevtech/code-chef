@@ -1,3 +1,5 @@
+[&larr; 092. Degree of Polynomial](092-DPOLY.md) &middot; [Index](README.md) &middot; [094. The Cooler Dilemma 2 &rarr;](094-WATERCOOLER2.md)
+
 # 093. Recent contest problems
 
 > [`RECENTCONT`](https://www.codechef.com/problems/RECENTCONT) &middot; difficulty **793** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

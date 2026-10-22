@@ -1,3 +1,5 @@
+[&larr; 464. W String](464-WSTRING.md) &middot; [Index](README.md) &middot; [466. Forest Gathering &rarr;](466-FORESTGA.md)
+
 # 465. Chef and Easy Problem
 
 > [`XXOR`](https://www.codechef.com/problems/XXOR) &middot; difficulty **1810** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

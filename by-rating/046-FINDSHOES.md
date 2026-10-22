@@ -1,3 +1,5 @@
+[&larr; 045. Bath in Winters](045-BATH.md) &middot; [Index](README.md) &middot; [047. Mario and Transformation &rarr;](047-TRANSFORM.md)
+
 # 046. Finding Shoes
 
 > [`FINDSHOES`](https://www.codechef.com/problems/FINDSHOES) &middot; difficulty **646** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

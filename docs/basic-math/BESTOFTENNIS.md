@@ -1,3 +1,5 @@
+[&larr; 96. The Preparations](SUPCHEF.md) &middot; [Index](../../README.md) &middot; [100. Mileage matters &rarr;](MILEAGE.md)
+
 # 98. Best of N Sets
 
 > CodeChef problem code [`BESTOFTENNIS`](https://www.codechef.com/problems/BESTOFTENNIS) &middot; difficulty **830** &middot; time limit **1s**

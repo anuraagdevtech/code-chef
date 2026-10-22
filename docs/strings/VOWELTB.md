@@ -1,3 +1,5 @@
+[&larr; 99. The Block Game](PALL01.md) &middot; [Index](../../README.md) &middot; [142. World Chess Championship &rarr;](WCC.md)
+
 # 105. Is it a VOWEL or CONSONANT
 
 > CodeChef problem code [`VOWELTB`](https://www.codechef.com/problems/VOWELTB) &middot; difficulty **520** &middot; time limit **1s**

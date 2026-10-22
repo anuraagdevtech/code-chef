@@ -1,3 +1,5 @@
+[&larr; 173. Lapindromes](173-LAPIN.md) &middot; [Index](README.md) &middot; [175. Play Piano &rarr;](175-PLAYPIAN.md)
+
 # 174. Lazy Salesman
 
 > [`HOLIDAYS`](https://www.codechef.com/problems/HOLIDAYS) &middot; difficulty **1161** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

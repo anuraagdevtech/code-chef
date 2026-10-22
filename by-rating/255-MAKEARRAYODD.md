@@ -1,3 +1,5 @@
+[&larr; 254. Sleepy Chef](254-FILL01.md) &middot; [Index](README.md) &middot; [256. Cutting Pizza &rarr;](256-CUTPIZ.md)
+
 # 255. Make Array Odd
 
 > [`MAKEARRAYODD`](https://www.codechef.com/problems/MAKEARRAYODD) &middot; difficulty **1445** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

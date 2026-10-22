@@ -1,3 +1,5 @@
+[&larr; 331. Squirrel and chestnut](SQUIRREL.md) &middot; [Index](../../README.md) &middot; [387. Sheokand and Number &rarr;](SHKNUM.md)
+
 # 333. Flu Shot Lineup
 
 > CodeChef problem code [`FLUSHOT`](https://www.codechef.com/problems/FLUSHOT) &middot; difficulty **1692** &middot; time limit **0.567226s**

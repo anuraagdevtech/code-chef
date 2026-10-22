@@ -1,3 +1,5 @@
+[&larr; 118. Counting Pretty Numbers](NUM239.md) &middot; [Index](../../README.md) &middot; [132. Problem &rarr;](PR0BLEM.md)
+
 # 121. Find the Direction
 
 > CodeChef problem code [`FACEDIR`](https://www.codechef.com/problems/FACEDIR) &middot; difficulty **880** &middot; time limit **0.5s**

@@ -1,3 +1,5 @@
+[&larr; 59. Minimum number of coins](MINCOINS.md) &middot; [Index](../../README.md) &middot; [82. Single-use Attack &rarr;](SINGLEUSE.md)
+
 # 66. A or B
 
 > CodeChef problem code [`AORB`](https://www.codechef.com/problems/AORB) &middot; difficulty **728** &middot; time limit **0.5s**

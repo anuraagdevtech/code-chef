@@ -1,3 +1,5 @@
+[&larr; 339. Missing Numbers](339-MISS_NUM.md) &middot; [Index](README.md) &middot; [341. The One On The Last Night &rarr;](341-S06E06.md)
+
 # 340. Dish Distribution
 
 > [`DISHDIS`](https://www.codechef.com/problems/DISHDIS) &middot; difficulty **1596** &middot; time limit **0.5s** &middot; Jump from 2* to 3* (Level 3)

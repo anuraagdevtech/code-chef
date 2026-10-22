@@ -1,3 +1,5 @@
+[&larr; 094. The Cooler Dilemma 2](094-WATERCOOLER2.md) &middot; [Index](README.md) &middot; [096. Cars and Bikes &rarr;](096-TYRES.md)
+
 # 095. Wordle
 
 > [`WORDLE`](https://www.codechef.com/problems/WORDLE) &middot; difficulty **804** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

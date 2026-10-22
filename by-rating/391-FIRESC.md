@@ -1,3 +1,5 @@
+[&larr; 390. Chef and Frogs](390-FROGV.md) &middot; [Index](README.md) &middot; [392. Powered Parameters &rarr;](392-POWPM.md)
+
 # 391. Fire Escape Routes
 
 > [`FIRESC`](https://www.codechef.com/problems/FIRESC) &middot; difficulty **1671** &middot; time limit **3s** &middot; 1600 to 1800 difficulty problems (Level 3)

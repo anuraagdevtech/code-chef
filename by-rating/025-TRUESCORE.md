@@ -1,3 +1,5 @@
+[&larr; 024. Car or Bike](024-TRAVELFAST.md) &middot; [Index](README.md) &middot; [026. The Three Topics &rarr;](026-THREETOPICS.md)
+
 # 025. Is the Score Consistent
 
 > [`TRUESCORE`](https://www.codechef.com/problems/TRUESCORE) &middot; difficulty **572** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

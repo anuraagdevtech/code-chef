@@ -1,3 +1,5 @@
+[&larr; 307. When to take medicine](307-MEDIC.md) &middot; [Index](README.md) &middot; [309. Split Sums &rarr;](309-SPSUM.md)
+
 # 308. Median of adjacent maximum numbers
 
 > [`MXMEDIAN`](https://www.codechef.com/problems/MXMEDIAN) &middot; difficulty **1523** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

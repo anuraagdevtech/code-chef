@@ -1,3 +1,5 @@
+[&larr; 359. MaxEdges](359-MAXEDGES.md) &middot; [Index](README.md) &middot; [361. Max Out &rarr;](361-IOPC17C.md)
+
 # 360. Positive array
 
 > [`CIREQ`](https://www.codechef.com/problems/CIREQ) &middot; difficulty **1620** &middot; time limit **2s** &middot; 1400 to 1600 difficulty problems (Level 2)

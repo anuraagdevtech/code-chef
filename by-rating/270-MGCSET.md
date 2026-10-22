@@ -1,3 +1,5 @@
+[&larr; 269. Dense Bracket Sequence](269-DENSE.md) &middot; [Index](README.md) &middot; [271. Chef and Three Dogs &rarr;](271-CHDOGS.md)
+
 # 270. Magic Set
 
 > [`MGCSET`](https://www.codechef.com/problems/MGCSET) &middot; difficulty **1472** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

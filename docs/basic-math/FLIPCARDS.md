@@ -1,3 +1,5 @@
+[&larr; 36. Police and Thief](POLTHIEF.md) &middot; [Index](../../README.md) &middot; [38. Bath in Winters &rarr;](BATH.md)
+
 # 37. Flip the cards
 
 > CodeChef problem code [`FLIPCARDS`](https://www.codechef.com/problems/FLIPCARDS) &middot; difficulty **641** &middot; time limit **1s**

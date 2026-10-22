@@ -1,3 +1,5 @@
+[&larr; 208. Arranging Cup-cakes](208-RESQ.md) &middot; [Index](README.md) &middot; [210. Cooking Machine &rarr;](210-COOKMACH.md)
+
 # 209. Chef and Keyboard
 
 > [`CHEFKEY`](https://www.codechef.com/problems/CHEFKEY) &middot; difficulty **1323** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 356. K Odd Sum](356-ADVITIYA5.md) &middot; [Index](README.md) &middot; [358. GCD of Prefixes &rarr;](358-GCDPRF.md)
+
 # 357. Survive in ChocoLand
 
 > [`SURVIVE`](https://www.codechef.com/problems/SURVIVE) &middot; difficulty **1616** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

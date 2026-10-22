@@ -1,3 +1,5 @@
+[&larr; 014. CRED Coins](014-CREDCOINS.md) &middot; [Index](README.md) &middot; [016. Water Filling &rarr;](016-WATERFILLING.md)
+
 # 015. Sale Season
 
 > [`SALESEASON`](https://www.codechef.com/problems/SALESEASON) &middot; difficulty **541** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

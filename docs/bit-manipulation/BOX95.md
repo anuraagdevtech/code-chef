@@ -1,3 +1,5 @@
+[&larr; 420. ALIEN-OR](ALIENOR.md) &middot; [Index](../../README.md) &middot; [436. MEX-OR &rarr;](MEXOR.md)
+
 # 426. Boxes
 
 > CodeChef problem code [`BOX95`](https://www.codechef.com/problems/BOX95) &middot; difficulty **1688** &middot; time limit **2.5s**

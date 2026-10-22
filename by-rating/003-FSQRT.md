@@ -1,3 +1,5 @@
+[&larr; 002. Reverse The Number](002-FLOW007.md) &middot; [Index](README.md) &middot; [004. Greater Average &rarr;](004-AVGPROBLEM.md)
+
 # 003. Finding Square Roots
 
 > [`FSQRT`](https://www.codechef.com/problems/FSQRT) &middot; difficulty **420** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 476. Prajit and bits](476-ADDI.md) &middot; [Index](README.md) &middot; [478. Count Distinct Values &rarr;](478-CNTDIST.md)
+
 # 477. Sort by Adjacent Swaps
 
 > [`ADJSRT`](https://www.codechef.com/problems/ADJSRT) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

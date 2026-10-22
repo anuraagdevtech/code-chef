@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [242. Make Array Odd &rarr;](MAKEARRAYODD.md)
+
 # 217. Cooking Machine
 
 > CodeChef problem code [`COOKMACH`](https://www.codechef.com/problems/COOKMACH) &middot; difficulty **1329** &middot; time limit **1s**

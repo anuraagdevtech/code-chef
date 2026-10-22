@@ -1,3 +1,5 @@
+[&larr; 362. XOR-ORED](362-XORORED.md) &middot; [Index](README.md) &middot; [364. Construct Array &rarr;](364-CONSTRRAY.md)
+
 # 363. Non-Divisor Array
 
 > [`DIVCOL`](https://www.codechef.com/problems/DIVCOL) &middot; difficulty **1623** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

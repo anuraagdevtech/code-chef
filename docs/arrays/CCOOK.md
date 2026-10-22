@@ -1,3 +1,5 @@
+[&larr; 147. Non-Negative Product](NONNEGPROD.md) &middot; [Index](../../README.md) &middot; [155. Kitchen Timetable &rarr;](KTTABLE.md)
+
 # 151. Chef and Cook-Off
 
 > CodeChef problem code [`CCOOK`](https://www.codechef.com/problems/CCOOK) &middot; difficulty **961** &middot; time limit **0.5s**

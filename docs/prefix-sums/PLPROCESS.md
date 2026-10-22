@@ -1,3 +1,5 @@
+[&larr; 211. Gift Shop and Coupon](GFTSHP.md) &middot; [Index](../../README.md) &middot; [298. Bouncing Ball &rarr;](BOUNCE_BALL.md)
+
 # 233. Parallel Processing
 
 > CodeChef problem code [`PLPROCESS`](https://www.codechef.com/problems/PLPROCESS) &middot; difficulty **1425** &middot; time limit **7.5s**

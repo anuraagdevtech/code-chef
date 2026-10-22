@@ -1,3 +1,5 @@
+[&larr; 480. Save People](FIZZBUZZ2306.md) &middot; [Index](../../README.md)
+
 # 483. Digit Removal
 
 > CodeChef problem code [`DIGITREM`](https://www.codechef.com/problems/DIGITREM) &middot; difficulty **1754** &middot; time limit **1s**

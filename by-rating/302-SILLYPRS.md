@@ -1,3 +1,5 @@
+[&larr; 301. Reduce to One](301-REDONE.md) &middot; [Index](README.md) &middot; [303. Chef Drinks Coke &rarr;](303-COKE.md)
+
 # 302. Magda and Silly Pairs
 
 > [`SILLYPRS`](https://www.codechef.com/problems/SILLYPRS) &middot; difficulty **1507** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

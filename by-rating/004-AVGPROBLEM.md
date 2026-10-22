@@ -1,3 +1,5 @@
+[&larr; 003. Finding Square Roots](003-FSQRT.md) &middot; [Index](README.md) &middot; [005. Subscriptions &rarr;](005-SUBSCRIBE_.md)
+
 # 004. Greater Average
 
 > [`AVGPROBLEM`](https://www.codechef.com/problems/AVGPROBLEM) &middot; difficulty **500** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

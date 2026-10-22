@@ -1,3 +1,5 @@
+[&larr; 27. Qualify the round](QUALIFY.md) &middot; [Index](../../README.md) &middot; [33. Discus Throw &rarr;](DISCUS.md)
+
 # 29. Minimum Cars required
 
 > CodeChef problem code [`MINCARS`](https://www.codechef.com/problems/MINCARS) &middot; difficulty **608** &middot; time limit **0.5s**

@@ -1,3 +1,5 @@
+[&larr; 407. Chef and Interesting Subsequences ](CHEFINSQ.md) &middot; [Index](../../README.md) &middot; [441. OR Tuples &rarr;](ORTUPLES.md)
+
 # 416. The Vowel Matrix
 
 > CodeChef problem code [`VOWMTRX`](https://www.codechef.com/problems/VOWMTRX) &middot; difficulty **1694** &middot; time limit **2s**

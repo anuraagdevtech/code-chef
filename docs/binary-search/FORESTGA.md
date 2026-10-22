@@ -1,3 +1,5 @@
+[&larr; 326. Stacks](STACKS.md) &middot; [Index](../../README.md) &middot; [329. Snake Eating &rarr;](SNAKEEAT.md)
+
 # 327. Forest Gathering
 
 > CodeChef problem code [`FORESTGA`](https://www.codechef.com/problems/FORESTGA) &middot; difficulty **1829** &middot; time limit **1.5s**

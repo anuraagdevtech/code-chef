@@ -1,3 +1,5 @@
+[&larr; 9. Sale Season](SALESEASON.md) &middot; [Index](../../README.md) &middot; [17. Car or Bike &rarr;](TRAVELFAST.md)
+
 # 11. Chefland Games
 
 > CodeChef problem code [`CHEFGAMES`](https://www.codechef.com/problems/CHEFGAMES) &middot; difficulty **550** &middot; time limit **1s**

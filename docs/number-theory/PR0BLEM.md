@@ -1,3 +1,5 @@
+[&larr; 121. Find the Direction](FACEDIR.md) &middot; [Index](../../README.md) &middot; [139. Akash and Missing Class &rarr;](CHFCLASS.md)
+
 # 132. Problem
 
 > CodeChef problem code [`PR0BLEM`](https://www.codechef.com/problems/PR0BLEM) &middot; difficulty **908** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 377. Charges](377-CHARGES.md) &middot; [Index](README.md) &middot; [379. Maximum Median Matching &rarr;](379-MEDMAXMATCH.md)
+
 # 378. Chef and Interesting Subsequences 
 
 > [`CHEFINSQ`](https://www.codechef.com/problems/CHEFINSQ) &middot; difficulty **1646** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

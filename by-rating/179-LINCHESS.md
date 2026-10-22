@@ -1,3 +1,5 @@
+[&larr; 178. Chef and Feedback](178-ERROR.md) &middot; [Index](README.md) &middot; [180. ICPC Balloons &rarr;](180-BALLOON.md)
+
 # 179. Chef and Linear Chess
 
 > [`LINCHESS`](https://www.codechef.com/problems/LINCHESS) &middot; difficulty **1200** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 29. Minimum Cars required](MINCARS.md) &middot; [Index](../../README.md) &middot; [35. Watching Movies at 2x &rarr;](MOVIE2X.md)
+
 # 33. Discus Throw
 
 > CodeChef problem code [`DISCUS`](https://www.codechef.com/problems/DISCUS) &middot; difficulty **622** &middot; time limit **1s**

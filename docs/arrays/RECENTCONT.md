@@ -1,3 +1,5 @@
+[&larr; 88. Degree of Polynomial](DPOLY.md) &middot; [Index](../../README.md) &middot; [135. Penalty Shots &rarr;](PENALTY.md)
+
 # 89. Recent contest problems
 
 > CodeChef problem code [`RECENTCONT`](https://www.codechef.com/problems/RECENTCONT) &middot; difficulty **793** &middot; time limit **1s**

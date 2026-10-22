@@ -1,3 +1,5 @@
+[&larr; 091. Best of Two](091-DICEGAME2.md) &middot; [Index](README.md) &middot; [093. Recent contest problems &rarr;](093-RECENTCONT.md)
+
 # 092. Degree of Polynomial
 
 > [`DPOLY`](https://www.codechef.com/problems/DPOLY) &middot; difficulty **793** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 445. Spreading Charges](CHRGES.md) &middot; [Index](../../README.md) &middot; [475. Lucky Palin &rarr;](LUCKPAL.md)
+
 # 458. Oracle Devu and Longest Common Subsequence
 
 > CodeChef problem code [`ORACLCS`](https://www.codechef.com/problems/ORACLCS) &middot; difficulty **1726** &middot; time limit **1s**

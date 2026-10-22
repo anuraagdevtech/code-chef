@@ -1,3 +1,5 @@
+[&larr; 269. Total Correct Submissions](TOTCRT.md) &middot; [Index](../../README.md) &middot; [295. Yet Another Palindrome Problem &rarr;](ARRPAL.md)
+
 # 287. Unstable Subarray
 
 > CodeChef problem code [`COUNTSUB`](https://www.codechef.com/problems/COUNTSUB) &middot; difficulty **1545** &middot; time limit **2.5s**

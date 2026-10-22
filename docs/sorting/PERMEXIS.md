@@ -1,3 +1,5 @@
+[&larr; 210. Simple Statistics](SIMPSTAT.md) &middot; [Index](../../README.md) &middot; [213. Maximize the Minimum &rarr;](MAXTHEMIN.md)
+
 # 212. Watson asks Does Permutation Exist
 
 > CodeChef problem code [`PERMEXIS`](https://www.codechef.com/problems/PERMEXIS) &middot; difficulty **1207** &middot; time limit **1s**

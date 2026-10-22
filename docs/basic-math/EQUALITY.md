@@ -1,3 +1,5 @@
+[&larr; 224. Bella ciao](CHFHEIST.md) &middot; [Index](../../README.md) &middot; [265. Chef Goes to the Cinema &rarr;](CO92SUBW.md)
+
 # 230. Equality
 
 > CodeChef problem code [`EQUALITY`](https://www.codechef.com/problems/EQUALITY) &middot; difficulty **1419** &middot; time limit **1s**

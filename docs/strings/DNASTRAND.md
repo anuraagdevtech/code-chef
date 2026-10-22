@@ -1,3 +1,5 @@
+[&larr; 24. Reverse The Number](FLOW007.md) &middot; [Index](../../README.md) &middot; [92. Wordle &rarr;](WORDLE.md)
+
 # 44. Complementary Strand in a DNA
 
 > CodeChef problem code [`DNASTRAND`](https://www.codechef.com/problems/DNASTRAND) &middot; difficulty **660** &middot; time limit **1s**

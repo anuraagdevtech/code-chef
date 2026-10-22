@@ -1,3 +1,5 @@
+[&larr; 316. Equal Difference](EQDIFFER.md) &middot; [Index](../../README.md) &middot; [343. ChefTown Parade &rarr;](CHEFTOWN.md)
+
 # 330. A temple of Snakes
 
 > CodeChef problem code [`SNTEMPLE`](https://www.codechef.com/problems/SNTEMPLE) &middot; difficulty **1800** &middot; time limit **2s**

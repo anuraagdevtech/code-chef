@@ -1,3 +1,5 @@
+[&larr; 322. Let us play with rank list](322-RANKLIST.md) &middot; [Index](README.md) &middot; [324. Count K-Primes &rarr;](324-KPRIME.md)
+
 # 323. Unstable Subarray
 
 > [`COUNTSUB`](https://www.codechef.com/problems/COUNTSUB) &middot; difficulty **1545** &middot; time limit **2.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

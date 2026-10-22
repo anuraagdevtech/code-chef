@@ -1,3 +1,5 @@
+[&larr; 165. Chef and Spells](CHFSPL.md) &middot; [Index](../../README.md) &middot; [168. Chef and Stock Prices  &rarr;](CSTOCK.md)
+
 # 167. Weight Balance
 
 > CodeChef problem code [`WEIGHTBL`](https://www.codechef.com/problems/WEIGHTBL) &middot; difficulty **1045** &middot; time limit **0.5s**

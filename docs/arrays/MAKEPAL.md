@@ -1,3 +1,5 @@
+[&larr; 229. Fit to Play](PLAYFIT.md) &middot; [Index](../../README.md) &middot; [263. CAO Stage-1 &rarr;](CAOS1.md)
+
 # 261. Weird Palindrome Making
 
 > CodeChef problem code [`MAKEPAL`](https://www.codechef.com/problems/MAKEPAL) &middot; difficulty **1486** &middot; time limit **0.5s**

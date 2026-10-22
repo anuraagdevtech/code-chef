@@ -1,3 +1,5 @@
+[&larr; 129. Passing Marks](PSGRADE.md) &middot; [Index](../../README.md) &middot; [149. Marathon &rarr;](MARARUN.md)
+
 # 136. Shoe Fit
 
 > CodeChef problem code [`SHOEFIT`](https://www.codechef.com/problems/SHOEFIT) &middot; difficulty **925** &middot; time limit **0.5s**

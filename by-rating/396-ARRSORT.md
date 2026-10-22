@@ -1,3 +1,5 @@
+[&larr; 395. Bitwise Equation](395-BITEQU.md) &middot; [Index](README.md) &middot; [397. Chef and Water Car &rarr;](397-CHEFCAR.md)
+
 # 396. Array sorting
 
 > [`ARRSORT`](https://www.codechef.com/problems/ARRSORT) &middot; difficulty **1681** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

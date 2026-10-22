@@ -1,3 +1,5 @@
+[&larr; 004. Greater Average](004-AVGPROBLEM.md) &middot; [Index](README.md) &middot; [006. Janmansh and Assignments &rarr;](006-JASSIGNMENTS.md)
+
 # 005. Subscriptions
 
 > [`SUBSCRIBE_`](https://www.codechef.com/problems/SUBSCRIBE_) &middot; difficulty **504** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 443. Fair Distribution](443-FAIR_DISTRIB.md) &middot; [Index](README.md) &middot; [445. Army Training &rarr;](445-ARMTRN.md)
+
 # 444. Modular GCD
 
 > [`GCDMOD`](https://www.codechef.com/problems/GCDMOD) &middot; difficulty **1741** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

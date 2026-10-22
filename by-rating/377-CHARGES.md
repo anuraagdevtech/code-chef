@@ -1,3 +1,5 @@
+[&larr; 376. Exam Cheating](376-EXAMCHT.md) &middot; [Index](README.md) &middot; [378. Chef and Interesting Subsequences  &rarr;](378-CHEFINSQ.md)
+
 # 377. Charges
 
 > [`CHARGES`](https://www.codechef.com/problems/CHARGES) &middot; difficulty **1645** &middot; time limit **3s** &middot; 1600 to 1800 difficulty problems (Level 3)

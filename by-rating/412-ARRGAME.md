@@ -1,3 +1,5 @@
+[&larr; 411. OR Tuples](411-ORTUPLES.md) &middot; [Index](README.md) &middot; [413. Buying Sweets &rarr;](413-BUYSWEET.md)
+
 # 412. Game on a Strip
 
 > [`ARRGAME`](https://www.codechef.com/problems/ARRGAME) &middot; difficulty **1705** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

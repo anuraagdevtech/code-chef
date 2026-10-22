@@ -1,3 +1,5 @@
+[&larr; 382. MEX-OR](382-MEXOR.md) &middot; [Index](README.md) &middot; [384. Permutation and Palindrome &rarr;](384-PERMPAL.md)
+
 # 383. Find eX
 
 > [`FIND_X`](https://www.codechef.com/problems/FIND_X) &middot; difficulty **1651** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

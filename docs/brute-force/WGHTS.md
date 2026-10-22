@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [110. Highest Divisor &rarr;](HDIVISR.md)
+
 # 56. Weights
 
 > CodeChef problem code [`WGHTS`](https://www.codechef.com/problems/WGHTS) &middot; difficulty **697** &middot; time limit **1s**

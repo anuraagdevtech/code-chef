@@ -1,3 +1,5 @@
+[&larr; 338. Yet Another Palindrome Problem](338-ARRPAL.md) &middot; [Index](README.md) &middot; [340. Dish Distribution &rarr;](340-DISHDIS.md)
+
 # 339. Missing Numbers
 
 > [`MISS_NUM`](https://www.codechef.com/problems/MISS_NUM) &middot; difficulty **1594** &middot; time limit **2s** &middot; 1400 to 1600 difficulty problems (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 205. Maximum Weight Difference](205-MAXDIFF.md) &middot; [Index](README.md) &middot; [207. Chopsticks &rarr;](207-TACHSTCK.md)
+
 # 206. Maximise the Subsequence Sum
 
 > [`SIGNFLIP`](https://www.codechef.com/problems/SIGNFLIP) &middot; difficulty **1308** &middot; time limit **2.5s** &middot; Level up from 1* to 2* (Level 2)

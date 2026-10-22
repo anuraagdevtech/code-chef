@@ -1,3 +1,5 @@
+[&larr; 122. Farmers League](LEAGUE.md) &middot; [Index](../../README.md) &middot; [237. Maximum Angriness &rarr;](MAXAGRY.md)
+
 # 192. Count Substrings
 
 > CodeChef problem code [`CSUB`](https://www.codechef.com/problems/CSUB) &middot; difficulty **1330** &middot; time limit **1s**

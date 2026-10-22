@@ -1,3 +1,5 @@
+[&larr; 11. Chefland Games](CHEFGAMES.md) &middot; [Index](../../README.md) &middot; [18. Is the Score Consistent &rarr;](TRUESCORE.md)
+
 # 17. Car or Bike
 
 > CodeChef problem code [`TRAVELFAST`](https://www.codechef.com/problems/TRAVELFAST) &middot; difficulty **571** &middot; time limit **1s**

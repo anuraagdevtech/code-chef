@@ -1,3 +1,5 @@
+[&larr; 465. Prefixing](FIX.md) &middot; [Index](../../README.md) &middot; [481. Chef and String &rarr;](CHRL2.md)
+
 # 474. One Dimensional Kingdoms
 
 > CodeChef problem code [`ONEKING`](https://www.codechef.com/problems/ONEKING) &middot; difficulty **1743** &middot; time limit **3s**

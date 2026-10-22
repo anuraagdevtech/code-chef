@@ -1,3 +1,5 @@
+[&larr; 379. Maximum Median Matching](379-MEDMAXMATCH.md) &middot; [Index](README.md) &middot; [381. Minimise Maximum Subarray Sum &rarr;](381-MINIMISEMAX.md)
+
 # 380. Range Assign, Number of Distinct Elements Minimize
 
 > [`RANGEASSIGN`](https://www.codechef.com/problems/RANGEASSIGN) &middot; difficulty **1648** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

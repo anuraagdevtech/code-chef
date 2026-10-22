@@ -1,3 +1,5 @@
+[&larr; 98. Best of N Sets](BESTOFTENNIS.md) &middot; [Index](../../README.md) &middot; [101. Melt Gold &rarr;](MELTGOLD.md)
+
 # 100. Mileage matters
 
 > CodeChef problem code [`MILEAGE`](https://www.codechef.com/problems/MILEAGE) &middot; difficulty **831** &middot; time limit **1s**

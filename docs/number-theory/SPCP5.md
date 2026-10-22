@@ -1,3 +1,5 @@
+[&larr; 280. Guddu on a Date](KS2.md) &middot; [Index](../../README.md) &middot; [288. Catch the Thief &rarr;](CATHIEF.md)
+
 # 282. Monsters
 
 > CodeChef problem code [`SPCP5`](https://www.codechef.com/problems/SPCP5) &middot; difficulty **1527** &middot; time limit **1s**

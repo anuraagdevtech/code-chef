@@ -1,3 +1,5 @@
+[&larr; 237. Maximum Angriness](MAXAGRY.md) &middot; [Index](../../README.md) &middot; [251. Magic Set &rarr;](MGCSET.md)
+
 # 244. Counting Flags
 
 > CodeChef problem code [`FLAGS`](https://www.codechef.com/problems/FLAGS) &middot; difficulty **1446** &middot; time limit **1s**

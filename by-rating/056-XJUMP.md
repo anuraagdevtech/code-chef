@@ -1,3 +1,5 @@
+[&larr; 055. Fill Candies](055-FILLCANDIES.md) &middot; [Index](README.md) &middot; [057. Chessboard Distance &rarr;](057-CHESSDIST.md)
+
 # 056. X Jumps
 
 > [`XJUMP`](https://www.codechef.com/problems/XJUMP) &middot; difficulty **686** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

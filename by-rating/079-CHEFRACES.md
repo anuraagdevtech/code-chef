@@ -1,3 +1,5 @@
+[&larr; 078. Chef Fantasy 11](078-FIZZBUZZ2303.md) &middot; [Index](README.md) &middot; [080. Smallest Numbers of Notes &rarr;](080-FLOW005.md)
+
 # 079. Chef and Races
 
 > [`CHEFRACES`](https://www.codechef.com/problems/CHEFRACES) &middot; difficulty **745** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 006. Janmansh and Assignments](006-JASSIGNMENTS.md) &middot; [Index](README.md) &middot; [008. Chef And Operators &rarr;](008-CHOPRT.md)
+
 # 007. Exams
 
 > [`EXAMCHEF`](https://www.codechef.com/problems/EXAMCHEF) &middot; difficulty **519** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 077. Building Race](077-BUILDINGRACE.md) &middot; [Index](README.md) &middot; [079. Chef and Races &rarr;](079-CHEFRACES.md)
+
 # 078. Chef Fantasy 11
 
 > [`FIZZBUZZ2303`](https://www.codechef.com/problems/FIZZBUZZ2303) &middot; difficulty **739** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

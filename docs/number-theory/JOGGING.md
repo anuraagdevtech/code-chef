@@ -1,3 +1,5 @@
+[&larr; 255. Majin Vegeta](VEGETA.md) &middot; [Index](../../README.md) &middot; [260. Chef Odd &rarr;](CHEFODD.md)
+
 # 258. Jogging
 
 > CodeChef problem code [`JOGGING`](https://www.codechef.com/problems/JOGGING) &middot; difficulty **1484** &middot; time limit **1.5s**

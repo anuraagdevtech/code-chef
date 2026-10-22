@@ -1,3 +1,5 @@
+[&larr; 480. Pair Sort Version 3](480-PSORT3.md) &middot; [Index](README.md) &middot; [482. Stable Quick Sort &rarr;](482-QCKSRT2.md)
+
 # 481. Missing a Point
 
 > [`PTMSSNG`](https://www.codechef.com/problems/PTMSSNG) &middot; difficulty **unrated** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

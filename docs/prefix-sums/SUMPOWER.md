@@ -1,3 +1,5 @@
+[&larr; 440. Mystical Numbers](XORGAND.md) &middot; [Index](../../README.md) &middot; [456. Maximise Sum &rarr;](MAXIMISESUM.md)
+
 # 447. Summary Power
 
 > CodeChef problem code [`SUMPOWER`](https://www.codechef.com/problems/SUMPOWER) &middot; difficulty **1709** &middot; time limit **1s**

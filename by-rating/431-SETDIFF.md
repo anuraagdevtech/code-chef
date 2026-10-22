@@ -1,3 +1,5 @@
+[&larr; 430. Book Exercises](430-BEX.md) &middot; [Index](README.md) &middot; [432. Box of Chocolates &rarr;](432-CHCBOX.md)
+
 # 431. Set Difference 
 
 > [`SETDIFF`](https://www.codechef.com/problems/SETDIFF) &middot; difficulty **1729** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

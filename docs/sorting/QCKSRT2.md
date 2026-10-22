@@ -1,3 +1,5 @@
+[&larr; 323. Sort by Adjacent Swaps](ADJSRT.md) &middot; [Index](../../README.md) &middot; [354. Chef and Frogs &rarr;](FROGV.md)
+
 # 324. Stable Quick Sort
 
 > CodeChef problem code [`QCKSRT2`](https://www.codechef.com/problems/QCKSRT2) &middot; difficulty **unrated** &middot; time limit **1s**

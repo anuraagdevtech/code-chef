@@ -1,3 +1,5 @@
+[&larr; 49. Blackjack](BLACKJACK.md) &middot; [Index](../../README.md) &middot; [53. Valentine is Coming &rarr;](VALENTINE.md)
+
 # 50. Fill Candies
 
 > CodeChef problem code [`FILLCANDIES`](https://www.codechef.com/problems/FILLCANDIES) &middot; difficulty **681** &middot; time limit **1s**

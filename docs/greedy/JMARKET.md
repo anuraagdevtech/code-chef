@@ -1,3 +1,5 @@
+[&larr; 131. Avoid Contact](AVOIDCONTACT.md) &middot; [Index](../../README.md) &middot; [160. The Two Dishes &rarr;](MAX_DIFF.md)
+
 # 146. Janmansh at Fruit Market
 
 > CodeChef problem code [`JMARKET`](https://www.codechef.com/problems/JMARKET) &middot; difficulty **947** &middot; time limit **1s**

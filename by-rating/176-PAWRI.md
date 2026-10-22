@@ -1,3 +1,5 @@
+[&larr; 175. Play Piano](175-PLAYPIAN.md) &middot; [Index](README.md) &middot; [177. The Lead Game &rarr;](177-TLG.md)
+
 # 176. Pawri Meme
 
 > [`PAWRI`](https://www.codechef.com/problems/PAWRI) &middot; difficulty **1182** &middot; time limit **2s** &middot; Level up from 1* to 2* (Level 2)

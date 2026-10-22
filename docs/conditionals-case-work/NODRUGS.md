@@ -1,3 +1,5 @@
+[&larr; 163. Problem Category](PROBCAT.md) &middot; [Index](../../README.md) &middot; [378. K-MEX &rarr;](KMEX.md)
+
 # 373. Say No To Drugs
 
 > CodeChef problem code [`NODRUGS`](https://www.codechef.com/problems/NODRUGS) &middot; difficulty **1425** &middot; time limit **0.5s**

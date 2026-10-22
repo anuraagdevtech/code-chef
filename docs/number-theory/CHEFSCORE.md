@@ -1,3 +1,5 @@
+[&larr; 26. Good Program](NIBBLE.md) &middot; [Index](../../README.md) &middot; [31. Jenga Night &rarr;](JENGA.md)
+
 # 30. Test Score
 
 > CodeChef problem code [`CHEFSCORE`](https://www.codechef.com/problems/CHEFSCORE) &middot; difficulty **610** &middot; time limit **1s**

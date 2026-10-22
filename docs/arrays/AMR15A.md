@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [21. Problems in your to-do list &rarr;](TODOLIST.md)
+
 # 6. Mahasena
 
 > CodeChef problem code [`AMR15A`](https://www.codechef.com/problems/AMR15A) &middot; difficulty **720** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 095. Wordle](095-WORDLE.md) &middot; [Index](README.md) &middot; [097. Buy 2 Get 1 Free &rarr;](097-SALE2.md)
+
 # 096. Cars and Bikes
 
 > [`TYRES`](https://www.codechef.com/problems/TYRES) &middot; difficulty **809** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

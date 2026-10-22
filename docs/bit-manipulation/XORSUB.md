@@ -1,3 +1,5 @@
+[&larr; 349. XOR Engine](ENGXOR.md) &middot; [Index](../../README.md) &middot; [420. ALIEN-OR &rarr;](ALIENOR.md)
+
 # 351. XOR with Subset
 
 > CodeChef problem code [`XORSUB`](https://www.codechef.com/problems/XORSUB) &middot; difficulty **1879** &middot; time limit **1.5s**

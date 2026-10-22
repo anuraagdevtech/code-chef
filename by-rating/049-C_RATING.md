@@ -1,3 +1,5 @@
+[&larr; 048. Mario and Bullet](048-BULLET.md) &middot; [Index](README.md) &middot; [050. Complementary Strand in a DNA &rarr;](050-DNASTRAND.md)
+
 # 049. Chess Ratings
 
 > [`C_RATING`](https://www.codechef.com/problems/C_RATING) &middot; difficulty **651** &middot; time limit **1.5s** &middot; 500 to 1000 difficulty rating (Level 1)

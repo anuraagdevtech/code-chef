@@ -1,3 +1,5 @@
+[&larr; 405. Concat Sort](CONCATSORT.md) &middot; [Index](../../README.md) &middot; [469. Pokemon Battles &rarr;](PBATTLE.md)
+
 # 421. Powered Parameters
 
 > CodeChef problem code [`POWPM`](https://www.codechef.com/problems/POWPM) &middot; difficulty **1673** &middot; time limit **1s**

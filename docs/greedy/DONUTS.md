@@ -1,3 +1,5 @@
+[&larr; 388. List of Lists](LISTLIST.md) &middot; [Index](../../README.md) &middot; [392. Bench Press &rarr;](BENCHP.md)
+
 # 391. Chain of Doughnuts
 
 > CodeChef problem code [`DONUTS`](https://www.codechef.com/problems/DONUTS) &middot; difficulty **1611** &middot; time limit **2s**

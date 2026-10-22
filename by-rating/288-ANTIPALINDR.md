@@ -1,3 +1,5 @@
+[&larr; 287. Interesting XOR!](287-IRSTXOR.md) &middot; [Index](README.md) &middot; [289. CAO Stage-1 &rarr;](289-CAOS1.md)
+
 # 288. Anti Palindrome
 
 > [`ANTIPALINDR`](https://www.codechef.com/problems/ANTIPALINDR) &middot; difficulty **1488** &middot; time limit **4.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

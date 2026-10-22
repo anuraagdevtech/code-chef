@@ -1,3 +1,5 @@
+[&larr; 025. Is the Score Consistent](025-TRUESCORE.md) &middot; [Index](README.md) &middot; [027. Monopoly &rarr;](027-MONOPOLY2.md)
+
 # 026. The Three Topics
 
 > [`THREETOPICS`](https://www.codechef.com/problems/THREETOPICS) &middot; difficulty **573** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 378. Chef and Interesting Subsequences ](378-CHEFINSQ.md) &middot; [Index](README.md) &middot; [380. Range Assign, Number of Distinct Elements Minimize &rarr;](380-RANGEASSIGN.md)
+
 # 379. Maximum Median Matching
 
 > [`MEDMAXMATCH`](https://www.codechef.com/problems/MEDMAXMATCH) &middot; difficulty **1647** &middot; time limit **2s** &middot; 1600 to 1800 difficulty problems (Level 3)

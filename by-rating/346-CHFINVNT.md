@@ -1,3 +1,5 @@
+[&larr; 345. Bouncing Ball](345-BOUNCE_BALL.md) &middot; [Index](README.md) &middot; [347. ChefWatson uses Social Network &rarr;](347-BOOKCHEF.md)
+
 # 346. Chef and Bulb Invention
 
 > [`CHFINVNT`](https://www.codechef.com/problems/CHFINVNT) &middot; difficulty **1607** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

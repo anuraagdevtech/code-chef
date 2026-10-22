@@ -1,3 +1,5 @@
+[&larr; 169. Turn It](NFS.md) &middot; [Index](../../README.md) &middot; [172. Tom And Jerry 1 &rarr;](TANDJ1.md)
+
 # 171. Distinct Pair Sums
 
 > CodeChef problem code [`MANYSUMS`](https://www.codechef.com/problems/MANYSUMS) &middot; difficulty **1480** &middot; time limit **1s**

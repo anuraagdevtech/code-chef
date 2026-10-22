@@ -1,3 +1,5 @@
+[&larr; 95. Equalizing Numbers](EQLZING.md) &middot; [Index](../../README.md) &middot; [118. Counting Pretty Numbers &rarr;](NUM239.md)
+
 # 111. Construct N
 
 > CodeChef problem code [`CONN`](https://www.codechef.com/problems/CONN) &middot; difficulty **860** &middot; time limit **2s**

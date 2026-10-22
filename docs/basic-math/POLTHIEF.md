@@ -1,3 +1,5 @@
+[&larr; 35. Watching Movies at 2x](MOVIE2X.md) &middot; [Index](../../README.md) &middot; [37. Flip the cards &rarr;](FLIPCARDS.md)
+
 # 36. Police and Thief
 
 > CodeChef problem code [`POLTHIEF`](https://www.codechef.com/problems/POLTHIEF) &middot; difficulty **639** &middot; time limit **1s**

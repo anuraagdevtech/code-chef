@@ -1,3 +1,5 @@
+[&larr; 314. Count Distinct Values](CNTDIST.md) &middot; [Index](../../README.md) &middot; [386. Good Pairs &rarr;](GOODPAIRS.md)
+
 # 337. Version Control System
 
 > CodeChef problem code [`VCS`](https://www.codechef.com/problems/VCS) &middot; difficulty **1217** &middot; time limit **1s**

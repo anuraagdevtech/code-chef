@@ -1,3 +1,5 @@
+[&larr; 438. Add to Subsequence](438-SUBSEQDIST.md) &middot; [Index](README.md) &middot; [440. Pokemon Battles &rarr;](440-PBATTLE.md)
+
 # 439. Maximum Value
 
 > [`MVALUE`](https://www.codechef.com/problems/MVALUE) &middot; difficulty **1738** &middot; time limit **0.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

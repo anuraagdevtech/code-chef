@@ -1,3 +1,5 @@
+[&larr; 5. Chef in his Office](OFFICE.md) &middot; [Index](../../README.md) &middot; [10. Minimum Pizzas &rarr;](MINPIZZA.md)
+
 # 7. CRED Coins
 
 > CodeChef problem code [`CREDCOINS`](https://www.codechef.com/problems/CREDCOINS) &middot; difficulty **539** &middot; time limit **1s**

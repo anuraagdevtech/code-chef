@@ -1,3 +1,5 @@
+[&larr; 166. Smallest Possible Whole Number](SMOL.md) &middot; [Index](../../README.md) &middot; [180. Hard Cash &rarr;](CASH.md)
+
 # 170. Maximum Length Even Subarray
 
 > CodeChef problem code [`MXEVNSUB`](https://www.codechef.com/problems/MXEVNSUB) &middot; difficulty **1221** &middot; time limit **0.5s**

@@ -1,3 +1,5 @@
+[&larr; 284. Prefix Permutation](PREFPERM.md) &middot; [Index](../../README.md) &middot; [300. K Odd Sum &rarr;](ADVITIYA5.md)
+
 # 292. Chef and squares
 
 > CodeChef problem code [`CHSQR`](https://www.codechef.com/problems/CHSQR) &middot; difficulty **1576** &middot; time limit **1s**

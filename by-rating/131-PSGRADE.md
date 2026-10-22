@@ -1,3 +1,5 @@
+[&larr; 130. Chef and Battery ](130-FIFTYPE.md) &middot; [Index](README.md) &middot; [132. Avoid Contact &rarr;](132-AVOIDCONTACT.md)
+
 # 131. Passing Marks
 
 > [`PSGRADE`](https://www.codechef.com/problems/PSGRADE) &middot; difficulty **904** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

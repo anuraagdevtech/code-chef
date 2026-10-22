@@ -1,3 +1,5 @@
+[&larr; 225. Plusle and Minun on Array](PMA.md) &middot; [Index](../../README.md) &middot; [239. Akash and Dinner &rarr;](CHEFDINE.md)
+
 # 227. Remove Element
 
 > CodeChef problem code [`REMELEM`](https://www.codechef.com/problems/REMELEM) &middot; difficulty **1415** &middot; time limit **1s**

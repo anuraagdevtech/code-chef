@@ -1,3 +1,5 @@
+[&larr; 309. Sort Checker](SRTCHK.md) &middot; [Index](../../README.md) &middot; [312. Fair distribution &rarr;](SUBS.md)
+
 # 310. Counting Sort
 
 > CodeChef problem code [`CNTSORT`](https://www.codechef.com/problems/CNTSORT) &middot; difficulty **unrated** &middot; time limit **1s**

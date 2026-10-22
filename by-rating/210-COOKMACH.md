@@ -1,3 +1,5 @@
+[&larr; 209. Chef and Keyboard](209-CHEFKEY.md) &middot; [Index](README.md) &middot; [211. Indivisible Permutation &rarr;](211-INDIPERM.md)
+
 # 210. Cooking Machine
 
 > [`COOKMACH`](https://www.codechef.com/problems/COOKMACH) &middot; difficulty **1329** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

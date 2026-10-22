@@ -1,3 +1,5 @@
+[&larr; 435. Array sorting](ARRSORT.md) &middot; [Index](../../README.md) &middot; [450. Sum Product Segments &rarr;](SUMPRODSEG.md)
+
 # 437. Exam Cheating
 
 > CodeChef problem code [`EXAMCHT`](https://www.codechef.com/problems/EXAMCHT) &middot; difficulty **1639** &middot; time limit **1s**

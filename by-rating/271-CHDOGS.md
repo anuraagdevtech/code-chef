@@ -1,3 +1,5 @@
+[&larr; 270. Magic Set](270-MGCSET.md) &middot; [Index](README.md) &middot; [272. Cakewalk &rarr;](272-CKWLK.md)
+
 # 271. Chef and Three Dogs
 
 > [`CHDOGS`](https://www.codechef.com/problems/CHDOGS) &middot; difficulty **1473** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 217. Appy and Contest](217-HMAPPY2.md) &middot; [Index](README.md) &middot; [219. Gift Shop and Coupon &rarr;](219-GFTSHP.md)
+
 # 218. Maximize the Minimum
 
 > [`MAXTHEMIN`](https://www.codechef.com/problems/MAXTHEMIN) &middot; difficulty **1358** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

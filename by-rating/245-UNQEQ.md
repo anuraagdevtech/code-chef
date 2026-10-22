@@ -1,3 +1,5 @@
+[&larr; 244. Full Barrier Alchemist](244-PIPSQUIK.md) &middot; [Index](README.md) &middot; [246. Maximum Angriness &rarr;](246-MAXAGRY.md)
+
 # 245. Balanced and Unique Arrays
 
 > [`UNQEQ`](https://www.codechef.com/problems/UNQEQ) &middot; difficulty **1431** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

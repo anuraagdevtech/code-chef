@@ -1,3 +1,5 @@
+[&larr; 230. Equality](EQUALITY.md) &middot; [Index](../../README.md) &middot; [275. Chef Drinks Coke &rarr;](COKE.md)
+
 # 265. Chef Goes to the Cinema
 
 > CodeChef problem code [`CO92SUBW`](https://www.codechef.com/problems/CO92SUBW) &middot; difficulty **1493** &middot; time limit **1s**

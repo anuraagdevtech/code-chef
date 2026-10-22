@@ -1,3 +1,5 @@
+[&larr; 321. Sort by swaps](SWPSRT1.md) &middot; [Index](../../README.md) &middot; [323. Sort by Adjacent Swaps &rarr;](ADJSRT.md)
+
 # 322. Chef Restaurant 
 
 > CodeChef problem code [`CHEFRES`](https://www.codechef.com/problems/CHEFRES) &middot; difficulty **1776** &middot; time limit **1.5s**

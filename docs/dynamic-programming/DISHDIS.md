@@ -1,3 +1,5 @@
+[&larr; 360. Chef and Wedding Arrangements](CHEFWED.md) &middot; [Index](../../README.md)
+
 # 362. Dish Distribution
 
 > CodeChef problem code [`DISHDIS`](https://www.codechef.com/problems/DISHDIS) &middot; difficulty **1596** &middot; time limit **0.5s**

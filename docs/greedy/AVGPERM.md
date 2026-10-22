@@ -1,3 +1,5 @@
+[&larr; 209. Lazy Salesman](HOLIDAYS.md) &middot; [Index](../../README.md) &middot; [222. Mighty Friend &rarr;](MTYFRI.md)
+
 # 220. Average Permutation
 
 > CodeChef problem code [`AVGPERM`](https://www.codechef.com/problems/AVGPERM) &middot; difficulty **1401** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 260. Yet another SOD problem](260-SOD3.md) &middot; [Index](README.md) &middot; [262. Chef and Adventures &rarr;](262-CHEFADV.md)
+
 # 261. Polygon Relationship
 
 > [`POLYREL`](https://www.codechef.com/problems/POLYREL) &middot; difficulty **1460** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

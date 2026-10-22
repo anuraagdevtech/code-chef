@@ -1,3 +1,5 @@
+[&larr; 337. Version Control System](VCS.md) &middot; [Index](../../README.md) &middot; [417. Fencing &rarr;](FENCE.md)
+
 # 386. Good Pairs
 
 > CodeChef problem code [`GOODPAIRS`](https://www.codechef.com/problems/GOODPAIRS) &middot; difficulty **1469** &middot; time limit **1.5s**

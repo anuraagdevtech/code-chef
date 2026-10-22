@@ -1,3 +1,5 @@
+[&larr; 433. XOR Equal](433-PALINT.md) &middot; [Index](README.md) &middot; [435. Penalty Shoot-Out II &rarr;](435-PSHOT.md)
+
 # 434. Bon Appetit
 
 > [`FGFS`](https://www.codechef.com/problems/FGFS) &middot; difficulty **1734** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

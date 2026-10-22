@@ -1,3 +1,5 @@
+[&larr; 228. Mighty Friend](228-MTYFRI.md) &middot; [Index](README.md) &middot; [230. Bella ciao &rarr;](230-CHFHEIST.md)
+
 # 229. Array Halves
 
 > [`ARRHALVES`](https://www.codechef.com/problems/ARRHALVES) &middot; difficulty **1407** &middot; time limit **3s** &middot; 1400 to 1600 difficulty problems (Level 2)

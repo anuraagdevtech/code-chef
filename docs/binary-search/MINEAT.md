@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [326. Stacks &rarr;](STACKS.md)
+
 # 325. Minion Chef and Bananas
 
 > CodeChef problem code [`MINEAT`](https://www.codechef.com/problems/MINEAT) &middot; difficulty **1781** &middot; time limit **2s**

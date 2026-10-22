@@ -1,3 +1,5 @@
+[&larr; 223. Array Halves](ARRHALVES.md) &middot; [Index](../../README.md) &middot; [261. Weird Palindrome Making &rarr;](MAKEPAL.md)
+
 # 229. Fit to Play
 
 > CodeChef problem code [`PLAYFIT`](https://www.codechef.com/problems/PLAYFIT) &middot; difficulty **1419** &middot; time limit **1.64548s**

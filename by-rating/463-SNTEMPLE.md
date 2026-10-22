@@ -1,3 +1,5 @@
+[&larr; 462. Stacks](462-STACKS.md) &middot; [Index](README.md) &middot; [464. W String &rarr;](464-WSTRING.md)
+
 # 463. A temple of Snakes
 
 > [`SNTEMPLE`](https://www.codechef.com/problems/SNTEMPLE) &middot; difficulty **1800** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 139. Akash and Missing Class](CHFCLASS.md) &middot; [Index](../../README.md) &middot; [152. Joining Date &rarr;](JOINING.md)
+
 # 143. Two vs Ten
 
 > CodeChef problem code [`TWOVSTEN`](https://www.codechef.com/problems/TWOVSTEN) &middot; difficulty **936** &middot; time limit **0.5s**

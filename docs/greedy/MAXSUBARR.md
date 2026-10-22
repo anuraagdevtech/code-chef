@@ -1,3 +1,5 @@
+[&larr; 392. Bench Press](BENCHP.md) &middot; [Index](../../README.md) &middot; [401. Zebra Crossing &rarr;](ZEBRA.md)
+
 # 394. Maximum Subarray 
 
 > CodeChef problem code [`MAXSUBARR`](https://www.codechef.com/problems/MAXSUBARR) &middot; difficulty **1613** &middot; time limit **1s**

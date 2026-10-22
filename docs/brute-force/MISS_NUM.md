@@ -1,3 +1,5 @@
+[&larr; 256. Digital clock](ONOZ.md) &middot; [Index](../../README.md)
+
 # 294. Missing Numbers
 
 > CodeChef problem code [`MISS_NUM`](https://www.codechef.com/problems/MISS_NUM) &middot; difficulty **1594** &middot; time limit **2s**

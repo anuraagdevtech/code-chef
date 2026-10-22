@@ -1,3 +1,5 @@
+[&larr; 021. Count the Notebooks](021-NOTEBOOK.md) &middot; [Index](README.md) &middot; [023. Chef and Candies &rarr;](023-CHEFCAND.md)
+
 # 022. Sugarcane Juice Business
 
 > [`SUGARCANE`](https://www.codechef.com/problems/SUGARCANE) &middot; difficulty **563** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

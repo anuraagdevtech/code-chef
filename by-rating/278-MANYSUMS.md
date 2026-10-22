@@ -1,3 +1,5 @@
+[&larr; 277. Count Subarrays](277-SUBINC.md) &middot; [Index](README.md) &middot; [279. Chef and GCD &rarr;](279-CHFGCD.md)
+
 # 278. Distinct Pair Sums
 
 > [`MANYSUMS`](https://www.codechef.com/problems/MANYSUMS) &middot; difficulty **1480** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 18. Is the Score Consistent](TRUESCORE.md) &middot; [Index](../../README.md) &middot; [22. Air Conditioner Temperature &rarr;](ACTEMP.md)
+
 # 19. The Three Topics
 
 > CodeChef problem code [`THREETOPICS`](https://www.codechef.com/problems/THREETOPICS) &middot; difficulty **573** &middot; time limit **1s**

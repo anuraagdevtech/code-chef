@@ -1,3 +1,5 @@
+[&larr; 192. Count Substrings](CSUB.md) &middot; [Index](../../README.md) &middot; [244. Counting Flags &rarr;](FLAGS.md)
+
 # 237. Maximum Angriness
 
 > CodeChef problem code [`MAXAGRY`](https://www.codechef.com/problems/MAXAGRY) &middot; difficulty **1432** &middot; time limit **1s**

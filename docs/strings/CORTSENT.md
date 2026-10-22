@@ -1,3 +1,5 @@
+[&larr; 249. Magical Planks](MKGPLNKS.md) &middot; [Index](../../README.md) &middot; [264. Anti Palindrome &rarr;](ANTIPALINDR.md)
+
 # 259. Correct Sentence
 
 > CodeChef problem code [`CORTSENT`](https://www.codechef.com/problems/CORTSENT) &middot; difficulty **1485** &middot; time limit **0.5s**

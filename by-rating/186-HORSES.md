@@ -1,3 +1,5 @@
+[&larr; 185. Simple Statistics](185-SIMPSTAT.md) &middot; [Index](README.md) &middot; [187. Cops and the Thief Devu &rarr;](187-COPS.md)
+
 # 186. Racing Horses
 
 > [`HORSES`](https://www.codechef.com/problems/HORSES) &middot; difficulty **1231** &middot; time limit **1.5s** &middot; Level up from 1* to 2* (Level 2)

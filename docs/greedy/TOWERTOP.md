@@ -1,3 +1,5 @@
+[&larr; 431. Maximum Median Matching](MEDMAXMATCH.md) &middot; [Index](../../README.md) &middot; [443. Buying Sweets &rarr;](BUYSWEET.md)
+
 # 432. Building Towers
 
 > CodeChef problem code [`TOWERTOP`](https://www.codechef.com/problems/TOWERTOP) &middot; difficulty **1693** &middot; time limit **1s**

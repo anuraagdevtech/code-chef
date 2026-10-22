@@ -1,3 +1,5 @@
+[&larr; 370. Yet Another Cute Girl](PRETNUM.md) &middot; [Index](../../README.md) &middot; [395. Chef And The Hiring Event &rarr;](CHEARMY.md)
+
 # 376. Cakewalk
 
 > CodeChef problem code [`CKWLK`](https://www.codechef.com/problems/CKWLK) &middot; difficulty **1474** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 379. Subarray permutations](SUBPERM.md) &middot; [Index](../../README.md) &middot; [393. Different String &rarr;](DIFSTR.md)
+
 # 382. Increasing Decreasing
 
 > CodeChef problem code [`INCRDEC`](https://www.codechef.com/problems/INCRDEC) &middot; difficulty **1557** &middot; time limit **1s**

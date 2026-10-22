@@ -1,3 +1,5 @@
+[&larr; 315. Largest Family](315-LARGEFAM.md) &middot; [Index](README.md) &middot; [317. Prefix Permutation &rarr;](317-PREFPERM.md)
+
 # 316. Minimum Number of Pizzas
 
 > [`MINPIZZAS`](https://www.codechef.com/problems/MINPIZZAS) &middot; difficulty **1532** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

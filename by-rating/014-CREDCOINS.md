@@ -1,3 +1,5 @@
+[&larr; 013. Chef in his Office](013-OFFICE.md) &middot; [Index](README.md) &middot; [015. Sale Season &rarr;](015-SALESEASON.md)
+
 # 014. CRED Coins
 
 > [`CREDCOINS`](https://www.codechef.com/problems/CREDCOINS) &middot; difficulty **539** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

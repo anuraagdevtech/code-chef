@@ -1,3 +1,5 @@
+[&larr; 264. Triangle Classification](264-TRIANGCL.md) &middot; [Index](README.md) &middot; [266. Good Pairs &rarr;](266-GOODPAIRS.md)
+
 # 265. Magical Planks
 
 > [`MKGPLNKS`](https://www.codechef.com/problems/MKGPLNKS) &middot; difficulty **1467** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

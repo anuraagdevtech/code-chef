@@ -1,3 +1,5 @@
+[&larr; 206. Maximise the Subsequence Sum](206-SIGNFLIP.md) &middot; [Index](README.md) &middot; [208. Arranging Cup-cakes &rarr;](208-RESQ.md)
+
 # 207. Chopsticks
 
 > [`TACHSTCK`](https://www.codechef.com/problems/TACHSTCK) &middot; difficulty **1320** &middot; time limit **7s** &middot; Level up from 1* to 2* (Level 2)

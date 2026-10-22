@@ -1,3 +1,5 @@
+[&larr; 117. Relativity](RELATIVE.md) &middot; [Index](../../README.md) &middot; [120. Chef On Island &rarr;](CCISLAND.md)
+
 # 119. Drunk Alcoholic
 
 > CodeChef problem code [`DRUNKALK`](https://www.codechef.com/problems/DRUNKALK) &middot; difficulty **874** &middot; time limit **0.5 - 1s**

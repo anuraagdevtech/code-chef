@@ -1,3 +1,5 @@
+[&larr; 283. Correct Sentence](283-CORTSENT.md) &middot; [Index](README.md) &middot; [285. Chef Odd &rarr;](285-CHEFODD.md)
+
 # 284. Alternating Work Days
 
 > [`ALTER`](https://www.codechef.com/problems/ALTER) &middot; difficulty **1486** &middot; time limit **0.5s** &middot; Jump from 2* to 3* (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 70. Too many items](POLYBAGS.md) &middot; [Index](../../README.md) &middot; [74. Endless Appetizers &rarr;](MOZZ.md)
+
 # 72. Building Race
 
 > CodeChef problem code [`BUILDINGRACE`](https://www.codechef.com/problems/BUILDINGRACE) &middot; difficulty **739** &middot; time limit **1s**

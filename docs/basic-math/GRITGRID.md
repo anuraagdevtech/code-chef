@@ -1,3 +1,5 @@
+[&larr; 414. Three Numbers](THREENUMBERS.md) &middot; [Index](../../README.md) &middot; [439. Average Gift &rarr;](AVGGIFT.md)
+
 # 429. Gritty Grid
 
 > CodeChef problem code [`GRITGRID`](https://www.codechef.com/problems/GRITGRID) &middot; difficulty **1691** &middot; time limit **1s**

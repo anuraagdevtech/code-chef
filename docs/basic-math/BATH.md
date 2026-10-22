@@ -1,3 +1,5 @@
+[&larr; 37. Flip the cards](FLIPCARDS.md) &middot; [Index](../../README.md) &middot; [39. Finding Shoes &rarr;](FINDSHOES.md)
+
 # 38. Bath in Winters
 
 > CodeChef problem code [`BATH`](https://www.codechef.com/problems/BATH) &middot; difficulty **643** &middot; time limit **1s**

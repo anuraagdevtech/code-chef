@@ -1,3 +1,5 @@
+[&larr; 210. Cooking Machine](210-COOKMACH.md) &middot; [Index](README.md) &middot; [212. Count Substrings &rarr;](212-CSUB.md)
+
 # 211. Indivisible Permutation
 
 > [`INDIPERM`](https://www.codechef.com/problems/INDIPERM) &middot; difficulty **1329** &middot; time limit **0.5s** &middot; Jump from 2* to 3* (Level 3)

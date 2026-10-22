@@ -1,3 +1,5 @@
+[&larr; 397. GCD of Prefixes](GCDPRF.md) &middot; [Index](../../README.md) &middot; [428. Bitwise Equation &rarr;](BITEQU.md)
+
 # 400. Construct Array
 
 > CodeChef problem code [`CONSTRRAY`](https://www.codechef.com/problems/CONSTRRAY) &middot; difficulty **1624** &middot; time limit **2s**

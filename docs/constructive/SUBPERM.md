@@ -1,3 +1,5 @@
+[&larr; 368. GCD operations](GCDOPS.md) &middot; [Index](../../README.md) &middot; [382. Increasing Decreasing &rarr;](INCRDEC.md)
+
 # 379. Subarray permutations
 
 > CodeChef problem code [`SUBPERM`](https://www.codechef.com/problems/SUBPERM) &middot; difficulty **1502** &middot; time limit **1s**

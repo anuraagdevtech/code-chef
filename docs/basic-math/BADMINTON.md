@@ -1,3 +1,5 @@
+[&larr; 112. Car Choice](CARCHOICE.md) &middot; [Index](../../README.md) &middot; [115. Chef and Contest &rarr;](CHEFCONTEST.md)
+
 # 114. Badminton Serves
 
 > CodeChef problem code [`BADMINTON`](https://www.codechef.com/problems/BADMINTON) &middot; difficulty **869** &middot; time limit **1s**

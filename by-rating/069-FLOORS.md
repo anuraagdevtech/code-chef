@@ -1,3 +1,5 @@
+[&larr; 068. Self Defence Training](068-SELFDEF.md) &middot; [Index](README.md) &middot; [070. Speed Limit Test &rarr;](070-SPEEDTEST.md)
+
 # 069. Too many Floors
 
 > [`FLOORS`](https://www.codechef.com/problems/FLOORS) &middot; difficulty **717** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

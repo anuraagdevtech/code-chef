@@ -1,3 +1,5 @@
+[&larr; 395. Chef And The Hiring Event](CHEARMY.md) &middot; [Index](../../README.md) &middot; [419. Number Hunt &rarr;](NUMHUNT.md)
+
 # 410. Find eX
 
 > CodeChef problem code [`FIND_X`](https://www.codechef.com/problems/FIND_X) &middot; difficulty **1651** &middot; time limit **1.5s**

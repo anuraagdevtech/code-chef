@@ -1,3 +1,5 @@
+[&larr; 126. Chef and Profits](126-CHFPROFIT.md) &middot; [Index](README.md) &middot; [128. Peaceful Party &rarr;](128-MAYOR_PARTY.md)
+
 # 127. Inside The Stadium
 
 > [`INSTDUM`](https://www.codechef.com/problems/INSTDUM) &middot; difficulty **895** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

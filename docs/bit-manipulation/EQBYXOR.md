@@ -1,3 +1,5 @@
+[&larr; 262. Interesting XOR!](IRSTXOR.md) &middot; [Index](../../README.md) &middot; [276. One-XOR Deletions &rarr;](DELXORONE.md)
+
 # 273. Equal by XORing
 
 > CodeChef problem code [`EQBYXOR`](https://www.codechef.com/problems/EQBYXOR) &middot; difficulty **1507** &middot; time limit **1s**

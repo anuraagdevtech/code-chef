@@ -1,3 +1,5 @@
+[&larr; 157. Chef and Cook-Off](157-CCOOK.md) &middot; [Index](README.md) &middot; [159. Mutated Minions &rarr;](159-CHN15A.md)
+
 # 158. Chef and Spells
 
 > [`CHFSPL`](https://www.codechef.com/problems/CHFSPL) &middot; difficulty **965** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

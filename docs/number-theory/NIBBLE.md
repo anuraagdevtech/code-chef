@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [30. Test Score &rarr;](CHEFSCORE.md)
+
 # 26. Good Program
 
 > CodeChef problem code [`NIBBLE`](https://www.codechef.com/problems/NIBBLE) &middot; difficulty **593** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 140. No Time to Wait](NOTIME.md) &middot; [Index](../../README.md) &middot; [147. Non-Negative Product &rarr;](NONNEGPROD.md)
+
 # 141. First and Last
 
 > CodeChef problem code [`FIRSTANDLAST`](https://www.codechef.com/problems/FIRSTANDLAST) &middot; difficulty **932** &middot; time limit **1s**

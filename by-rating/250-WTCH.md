@@ -1,3 +1,5 @@
+[&larr; 249. HTML Tags](249-HTMLTAGS.md) &middot; [Index](README.md) &middot; [251. Average Flex &rarr;](251-AVGFLEX.md)
+
 # 250. The Nights Watch
 
 > [`WTCH`](https://www.codechef.com/problems/WTCH) &middot; difficulty **1441** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

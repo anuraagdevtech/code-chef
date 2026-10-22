@@ -1,3 +1,5 @@
+[&larr; 174. Chef and IPC Certificates](IPCCERT.md) &middot; [Index](../../README.md) &middot; [179. Carvans &rarr;](CARVANS.md)
+
 # 176. A Subtask Problem
 
 > CodeChef problem code [`SUBTASK`](https://www.codechef.com/problems/SUBTASK) &middot; difficulty **1217** &middot; time limit **0.5s**

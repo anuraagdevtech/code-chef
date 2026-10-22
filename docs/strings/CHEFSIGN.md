@@ -1,3 +1,5 @@
+[&larr; 285. Flip the String](FLIP.md) &middot; [Index](../../README.md) &middot; [291. Boring String &rarr;](BORSTR.md)
+
 # 290. Chef and Sign Sequences
 
 > CodeChef problem code [`CHEFSIGN`](https://www.codechef.com/problems/CHEFSIGN) &middot; difficulty **1563** &middot; time limit **2s**

@@ -1,3 +1,5 @@
+[&larr; 196. The Smallest Pair](SMPAIR.md) &middot; [Index](../../README.md) &middot; [198. Maximum Weight Difference &rarr;](MAXDIFF.md)
+
 # 197. Racing Horses
 
 > CodeChef problem code [`HORSES`](https://www.codechef.com/problems/HORSES) &middot; difficulty **1231** &middot; time limit **1.5s**

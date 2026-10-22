@@ -1,3 +1,5 @@
+[&larr; 247. Triangle Classification](TRIANGCL.md) &middot; [Index](../../README.md) &middot; [383. Polygon Relationship &rarr;](POLYREL.md)
+
 # 252. Chef and Three Dogs
 
 > CodeChef problem code [`CHDOGS`](https://www.codechef.com/problems/CHDOGS) &middot; difficulty **1473** &middot; time limit **1s**

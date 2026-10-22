@@ -1,3 +1,5 @@
+[&larr; 267. Exactly N plus 1 Values](N1VALUES.md) &middot; [Index](../../README.md) &middot; [271. Palindrome Pain &rarr;](PALINPAIN.md)
+
 # 268. Gcd of Subarrays
 
 > CodeChef problem code [`GCDSUBARRAYS`](https://www.codechef.com/problems/GCDSUBARRAYS) &middot; difficulty **1498** &middot; time limit **1s**

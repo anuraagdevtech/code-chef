@@ -1,3 +1,5 @@
+[&larr; 372. Sleepy Chef](FILL01.md) &middot; [Index](../../README.md) &middot; [377. High Frequency &rarr;](HIGHFREQ.md)
+
 # 374. The Nights Watch
 
 > CodeChef problem code [`WTCH`](https://www.codechef.com/problems/WTCH) &middot; difficulty **1441** &middot; time limit **1s**

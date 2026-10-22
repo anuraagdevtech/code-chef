@@ -1,3 +1,5 @@
+[&larr; 320. Javelin Qualification](320-JAVELIN.md) &middot; [Index](README.md) &middot; [322. Let us play with rank list &rarr;](322-RANKLIST.md)
+
 # 321. Magic Rankings
 
 > [`MGCRNK`](https://www.codechef.com/problems/MGCRNK) &middot; difficulty **1540** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

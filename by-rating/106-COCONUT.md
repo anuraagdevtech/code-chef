@@ -1,3 +1,5 @@
+[&larr; 105. Primality Test](105-PRB01.md) &middot; [Index](README.md) &middot; [107. Equal Integers &rarr;](107-INCREAR.md)
+
 # 106. Summer Heat
 
 > [`COCONUT`](https://www.codechef.com/problems/COCONUT) &middot; difficulty **852** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

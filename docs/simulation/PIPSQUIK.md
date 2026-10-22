@@ -1,3 +1,5 @@
+[&larr; 184. Cops and the Thief Devu](COPS.md) &middot; [Index](../../README.md) &middot; [278. When to take medicine &rarr;](MEDIC.md)
+
 # 235. Full Barrier Alchemist
 
 > CodeChef problem code [`PIPSQUIK`](https://www.codechef.com/problems/PIPSQUIK) &middot; difficulty **1426** &middot; time limit **1s**

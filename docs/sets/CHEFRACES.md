@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [130. Count the Holidays &rarr;](SUNDAY.md)
+
 # 73. Chef and Races
 
 > CodeChef problem code [`CHEFRACES`](https://www.codechef.com/problems/CHEFRACES) &middot; difficulty **745** &middot; time limit **1s**

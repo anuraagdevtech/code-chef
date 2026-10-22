@@ -1,3 +1,5 @@
+[&larr; 471. Fair Distribution](FAIR_DISTRIB.md) &middot; [Index](../../README.md)
+
 # 476. Copy and Paste
 
 > CodeChef problem code [`NCOPIES`](https://www.codechef.com/problems/NCOPIES) &middot; difficulty **1745** &middot; time limit **1s**

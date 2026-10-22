@@ -1,3 +1,5 @@
+[&larr; 409. Average Gift](409-AVGGIFT.md) &middot; [Index](README.md) &middot; [411. OR Tuples &rarr;](411-ORTUPLES.md)
+
 # 410. Mystical Numbers
 
 > [`XORGAND`](https://www.codechef.com/problems/XORGAND) &middot; difficulty **1702** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

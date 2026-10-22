@@ -1,3 +1,5 @@
+[&larr; 101. Melt Gold](MELTGOLD.md) &middot; [Index](../../README.md) &middot; [106. Equal Integers &rarr;](INCREAR.md)
+
 # 102. Circular Track
 
 > CodeChef problem code [`LOOP`](https://www.codechef.com/problems/LOOP) &middot; difficulty **838** &middot; time limit **1s**

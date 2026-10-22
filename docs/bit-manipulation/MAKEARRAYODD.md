@@ -1,3 +1,5 @@
+[&larr; 217. Cooking Machine](COOKMACH.md) &middot; [Index](../../README.md) &middot; [253. Order by XOR &rarr;](XOR_ORDER.md)
+
 # 242. Make Array Odd
 
 > CodeChef problem code [`MAKEARRAYODD`](https://www.codechef.com/problems/MAKEARRAYODD) &middot; difficulty **1445** &middot; time limit **1s**

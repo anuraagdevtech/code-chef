@@ -1,3 +1,5 @@
+[&larr; 227. Hotel Bytelandia](227-HOTEL.md) &middot; [Index](README.md) &middot; [229. Array Halves &rarr;](229-ARRHALVES.md)
+
 # 228. Mighty Friend
 
 > [`MTYFRI`](https://www.codechef.com/problems/MTYFRI) &middot; difficulty **1406** &middot; time limit **2.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

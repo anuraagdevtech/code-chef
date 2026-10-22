@@ -1,3 +1,5 @@
+[&larr; 66. A or B](AORB.md) &middot; [Index](../../README.md) &middot; [104. Smallest Numbers of Notes &rarr;](FLOW005.md)
+
 # 82. Single-use Attack
 
 > CodeChef problem code [`SINGLEUSE`](https://www.codechef.com/problems/SINGLEUSE) &middot; difficulty **777** &middot; time limit **1s**

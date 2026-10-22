@@ -1,3 +1,5 @@
+[&larr; 60. Airlines](SPCP2.md) &middot; [Index](../../README.md) &middot; [63. Too many Floors &rarr;](FLOORS.md)
+
 # 62. Cup Finals
 
 > CodeChef problem code [`CRICUP`](https://www.codechef.com/problems/CRICUP) &middot; difficulty **716** &middot; time limit **1s**

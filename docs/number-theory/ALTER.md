@@ -1,3 +1,5 @@
+[&larr; 307. Minimum Number of Pizzas](MINPIZZAS.md) &middot; [Index](../../README.md) &middot; [332. Modular Equation &rarr;](MODEQ.md)
+
 # 308. Alternating Work Days
 
 > CodeChef problem code [`ALTER`](https://www.codechef.com/problems/ALTER) &middot; difficulty **1486** &middot; time limit **0.5s**

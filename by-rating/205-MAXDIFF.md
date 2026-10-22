@@ -1,3 +1,5 @@
+[&larr; 204. Smallest Possible Whole Number](204-SMOL.md) &middot; [Index](README.md) &middot; [206. Maximise the Subsequence Sum &rarr;](206-SIGNFLIP.md)
+
 # 205. Maximum Weight Difference
 
 > [`MAXDIFF`](https://www.codechef.com/problems/MAXDIFF) &middot; difficulty **1308** &middot; time limit **2s** &middot; Level up from 1* to 2* (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 263. CAO Stage-1](CAOS1.md) &middot; [Index](../../README.md) &middot; [287. Unstable Subarray &rarr;](COUNTSUB.md)
+
 # 269. Total Correct Submissions
 
 > CodeChef problem code [`TOTCRT`](https://www.codechef.com/problems/TOTCRT) &middot; difficulty **1499** &middot; time limit **1.5s**

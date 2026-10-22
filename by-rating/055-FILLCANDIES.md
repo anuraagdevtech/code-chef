@@ -1,3 +1,5 @@
+[&larr; 054. Blackjack](054-BLACKJACK.md) &middot; [Index](README.md) &middot; [056. X Jumps &rarr;](056-XJUMP.md)
+
 # 055. Fill Candies
 
 > [`FILLCANDIES`](https://www.codechef.com/problems/FILLCANDIES) &middot; difficulty **681** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

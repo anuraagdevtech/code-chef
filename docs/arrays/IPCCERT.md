@@ -1,3 +1,5 @@
+[&larr; 173. Chef in Vaccination Queue](VACCINQ.md) &middot; [Index](../../README.md) &middot; [176. A Subtask Problem &rarr;](SUBTASK.md)
+
 # 174. Chef and IPC Certificates
 
 > CodeChef problem code [`IPCCERT`](https://www.codechef.com/problems/IPCCERT) &middot; difficulty **922** &middot; time limit **3s**

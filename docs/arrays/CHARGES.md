@@ -1,3 +1,5 @@
+[&larr; 363. Maximal crosses](MAXCROSS.md) &middot; [Index](../../README.md) &middot; [412. OR Matrix &rarr;](ORMATRIX.md)
+
 # 406. Charges
 
 > CodeChef problem code [`CHARGES`](https://www.codechef.com/problems/CHARGES) &middot; difficulty **1645** &middot; time limit **3s**

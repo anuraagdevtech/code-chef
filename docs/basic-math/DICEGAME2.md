@@ -1,3 +1,5 @@
+[&larr; 85. Binary Battles](BIN_BAT.md) &middot; [Index](../../README.md) &middot; [91. The Cooler Dilemma 2 &rarr;](WATERCOOLER2.md)
+
 # 86. Best of Two
 
 > CodeChef problem code [`DICEGAME2`](https://www.codechef.com/problems/DICEGAME2) &middot; difficulty **789** &middot; time limit **1s**

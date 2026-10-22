@@ -1,3 +1,5 @@
+[&larr; 370. Bitwise Tuples](370-BITTUP.md) &middot; [Index](README.md) &middot; [372. Maximum Damage &rarr;](372-MAXDMGE.md)
+
 # 371. XOR with smallest element
 
 > [`SMALLXOR`](https://www.codechef.com/problems/SMALLXOR) &middot; difficulty **1635** &middot; time limit **10s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [236. Balanced and Unique Arrays &rarr;](UNQEQ.md)
+
 # 232. Average Array
 
 > CodeChef problem code [`AVGARR`](https://www.codechef.com/problems/AVGARR) &middot; difficulty **1424** &middot; time limit **0.5s**

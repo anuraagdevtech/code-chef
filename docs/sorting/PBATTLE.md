@@ -1,3 +1,5 @@
+[&larr; 421. Powered Parameters](POWPM.md) &middot; [Index](../../README.md) &middot; [473. Army Training &rarr;](ARMTRN.md)
+
 # 469. Pokemon Battles
 
 > CodeChef problem code [`PBATTLE`](https://www.codechef.com/problems/PBATTLE) &middot; difficulty **1739** &middot; time limit **1.5s**

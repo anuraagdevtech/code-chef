@@ -1,3 +1,5 @@
+[&larr; 92. Wordle](WORDLE.md) &middot; [Index](../../README.md) &middot; [105. Is it a VOWEL or CONSONANT &rarr;](VOWELTB.md)
+
 # 99. The Block Game
 
 > CodeChef problem code [`PALL01`](https://www.codechef.com/problems/PALL01) &middot; difficulty **720** &middot; time limit **1s**

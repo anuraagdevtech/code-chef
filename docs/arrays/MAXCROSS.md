@@ -1,3 +1,5 @@
+[&larr; 352. Count Subarrays](SUBINC.md) &middot; [Index](../../README.md) &middot; [406. Charges &rarr;](CHARGES.md)
+
 # 363. Maximal crosses
 
 > CodeChef problem code [`MAXCROSS`](https://www.codechef.com/problems/MAXCROSS) &middot; difficulty **1570** &middot; time limit **0.5s**

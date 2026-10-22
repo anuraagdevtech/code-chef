@@ -1,3 +1,5 @@
+[&larr; 233. String Game ](233-STRAME.md) &middot; [Index](README.md) &middot; [235. Remove Element &rarr;](235-REMELEM.md)
+
 # 234. Maximize Colours
 
 > [`COLOUR`](https://www.codechef.com/problems/COLOUR) &middot; difficulty **1415** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

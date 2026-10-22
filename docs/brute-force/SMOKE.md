@@ -1,3 +1,5 @@
+[&larr; 228. Maximize Colours](COLOUR.md) &middot; [Index](../../README.md) &middot; [254. Chef and Numbers &rarr;](CHEFFED.md)
+
 # 245. Control the Pollution
 
 > CodeChef problem code [`SMOKE`](https://www.codechef.com/problems/SMOKE) &middot; difficulty **1450** &middot; time limit **1s**

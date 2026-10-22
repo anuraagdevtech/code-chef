@@ -1,3 +1,5 @@
+[&larr; 97. Genes](GENE01.md) &middot; [Index](../../README.md) &middot; [113. Which Division &rarr;](WHICHDIV.md)
+
 # 103. Grade The Steel
 
 > CodeChef problem code [`FLOW014`](https://www.codechef.com/problems/FLOW014) &middot; difficulty **900** &middot; time limit **1s**

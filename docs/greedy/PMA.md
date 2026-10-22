@@ -1,3 +1,5 @@
+[&larr; 222. Mighty Friend](MTYFRI.md) &middot; [Index](../../README.md) &middot; [227. Remove Element &rarr;](REMELEM.md)
+
 # 225. Plusle and Minun on Array
 
 > CodeChef problem code [`PMA`](https://www.codechef.com/problems/PMA) &middot; difficulty **1412** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[Index](../../README.md)
+
 # 40. Small factorials
 
 > CodeChef problem code [`FCTRL2`](https://www.codechef.com/problems/FCTRL2) &middot; difficulty **420** &middot; time limit **0.235294s**

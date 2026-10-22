@@ -1,3 +1,5 @@
+[&larr; 195. Password](PASSWD.md) &middot; [Index](../../README.md) &middot; [216. Even Splits &rarr;](EVENSPLIT.md)
+
 # 205. Lucky Four
 
 > CodeChef problem code [`LUCKFOUR`](https://www.codechef.com/problems/LUCKFOUR) &middot; difficulty **775** &middot; time limit **1s**

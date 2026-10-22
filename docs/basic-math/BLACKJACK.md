@@ -1,3 +1,5 @@
+[&larr; 48. The Last Levels](LASTLEVELS.md) &middot; [Index](../../README.md) &middot; [50. Fill Candies &rarr;](FILLCANDIES.md)
+
 # 49. Blackjack
 
 > CodeChef problem code [`BLACKJACK`](https://www.codechef.com/problems/BLACKJACK) &middot; difficulty **681** &middot; time limit **1s**

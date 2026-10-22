@@ -1,3 +1,5 @@
+[&larr; 2. Subscriptions](SUBSCRIBE_.md) &middot; [Index](../../README.md) &middot; [4. Exams &rarr;](EXAMCHEF.md)
+
 # 3. Janmansh and Assignments
 
 > CodeChef problem code [`JASSIGNMENTS`](https://www.codechef.com/problems/JASSIGNMENTS) &middot; difficulty **513** &middot; time limit **0.5s**

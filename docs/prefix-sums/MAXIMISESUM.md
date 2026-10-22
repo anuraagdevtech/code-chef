@@ -1,3 +1,5 @@
+[&larr; 447. Summary Power](SUMPOWER.md) &middot; [Index](../../README.md) &middot; [471. Fair Distribution &rarr;](FAIR_DISTRIB.md)
+
 # 456. Maximise Sum
 
 > CodeChef problem code [`MAXIMISESUM`](https://www.codechef.com/problems/MAXIMISESUM) &middot; difficulty **1715** &middot; time limit **1s**

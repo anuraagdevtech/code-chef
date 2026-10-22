@@ -1,3 +1,5 @@
+[&larr; 456. Maximise Sum](MAXIMISESUM.md) &middot; [Index](../../README.md) &middot; [476. Copy and Paste &rarr;](NCOPIES.md)
+
 # 471. Fair Distribution
 
 > CodeChef problem code [`FAIR_DISTRIB`](https://www.codechef.com/problems/FAIR_DISTRIB) &middot; difficulty **1741** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 214. Maximum Trio](MXMTRIO.md) &middot; [Index](../../README.md) &middot; [250. Approximately II &rarr;](APPROX2.md)
+
 # 221. Hotel Bytelandia
 
 > CodeChef problem code [`HOTEL`](https://www.codechef.com/problems/HOTEL) &middot; difficulty **1405** &middot; time limit **0.5s**

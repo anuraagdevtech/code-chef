@@ -1,3 +1,5 @@
+[&larr; 272. Magda and Silly Pairs](SILLYPRS.md) &middot; [Index](../../README.md) &middot; [286. Let us play with rank list &rarr;](RANKLIST.md)
+
 # 283. Admins and Shopping
 
 > CodeChef problem code [`ADMINSHOP`](https://www.codechef.com/problems/ADMINSHOP) &middot; difficulty **1529** &middot; time limit **1s**

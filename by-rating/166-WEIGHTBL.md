@@ -1,3 +1,5 @@
+[&larr; 165. Chef in Vaccination Queue](165-VACCINQ.md) &middot; [Index](README.md) &middot; [167. Devu and friendship testing &rarr;](167-CFRTEST.md)
+
 # 166. Weight Balance
 
 > [`WEIGHTBL`](https://www.codechef.com/problems/WEIGHTBL) &middot; difficulty **1045** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

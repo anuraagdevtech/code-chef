@@ -1,3 +1,5 @@
+[&larr; 1. Greater Average](AVGPROBLEM.md) &middot; [Index](../../README.md) &middot; [3. Janmansh and Assignments &rarr;](JASSIGNMENTS.md)
+
 # 2. Subscriptions
 
 > CodeChef problem code [`SUBSCRIBE_`](https://www.codechef.com/problems/SUBSCRIBE_) &middot; difficulty **504** &middot; time limit **0.5s**

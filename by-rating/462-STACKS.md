@@ -1,3 +1,5 @@
+[&larr; 461. Minion Chef and Bananas](461-MINEAT.md) &middot; [Index](README.md) &middot; [463. A temple of Snakes &rarr;](463-SNTEMPLE.md)
+
 # 462. Stacks
 
 > [`STACKS`](https://www.codechef.com/problems/STACKS) &middot; difficulty **1799** &middot; time limit **4s** &middot; Jump from 2* to 3* (Level 3)

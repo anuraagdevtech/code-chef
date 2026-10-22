@@ -1,3 +1,5 @@
+[Index](../../README.md)
+
 # 338. Book Exercises
 
 > CodeChef problem code [`BEX`](https://www.codechef.com/problems/BEX) &middot; difficulty **1728** &middot; time limit **1.5s**

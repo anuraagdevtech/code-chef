@@ -1,3 +1,5 @@
+[&larr; 292. Exactly N plus 1 Values](292-N1VALUES.md) &middot; [Index](README.md) &middot; [294. Total Correct Submissions &rarr;](294-TOTCRT.md)
+
 # 293. Gcd of Subarrays
 
 > [`GCDSUBARRAYS`](https://www.codechef.com/problems/GCDSUBARRAYS) &middot; difficulty **1498** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

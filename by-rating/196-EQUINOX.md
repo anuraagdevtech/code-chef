@@ -1,3 +1,5 @@
+[&larr; 195. Make them equal](195-MAKEEQUAL.md) &middot; [Index](README.md) &middot; [197. Even Splits &rarr;](197-EVENSPLIT.md)
+
 # 196. Equinox Strings
 
 > [`EQUINOX`](https://www.codechef.com/problems/EQUINOX) &middot; difficulty **1272** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

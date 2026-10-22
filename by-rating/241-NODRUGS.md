@@ -1,3 +1,5 @@
+[&larr; 240. Average Array](240-AVGARR.md) &middot; [Index](README.md) &middot; [242. Parallel Processing &rarr;](242-PLPROCESS.md)
+
 # 241. Say No To Drugs
 
 > [`NODRUGS`](https://www.codechef.com/problems/NODRUGS) &middot; difficulty **1425** &middot; time limit **0.5s** &middot; Jump from 2* to 3* (Level 3)

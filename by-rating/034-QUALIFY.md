@@ -1,3 +1,5 @@
+[&larr; 033. Good Program](033-NIBBLE.md) &middot; [Index](README.md) &middot; [035. Elections in Chefland &rarr;](035-ELECTN.md)
+
 # 034. Qualify the round
 
 > [`QUALIFY`](https://www.codechef.com/problems/QUALIFY) &middot; difficulty **594** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

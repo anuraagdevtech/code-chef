@@ -1,3 +1,5 @@
+[&larr; 135. Penalty Shots](PENALTY.md) &middot; [Index](../../README.md) &middot; [140. No Time to Wait &rarr;](NOTIME.md)
+
 # 138. Chef and Price Control
 
 > CodeChef problem code [`PRICECON`](https://www.codechef.com/problems/PRICECON) &middot; difficulty **931** &middot; time limit **1s**

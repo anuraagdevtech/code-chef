@@ -1,3 +1,5 @@
+[&larr; 136. Chef and IPC Certificates](136-IPCCERT.md) &middot; [Index](README.md) &middot; [138. Shoe Fit &rarr;](138-SHOEFIT.md)
+
 # 137. Penalty Shots
 
 > [`PENALTY`](https://www.codechef.com/problems/PENALTY) &middot; difficulty **925** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

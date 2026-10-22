@@ -1,3 +1,5 @@
+[&larr; 312. Monsters](312-SPCP5.md) &middot; [Index](README.md) &middot; [314. The White Knight &rarr;](314-E1.md)
+
 # 313. Admins and Shopping
 
 > [`ADMINSHOP`](https://www.codechef.com/problems/ADMINSHOP) &middot; difficulty **1529** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

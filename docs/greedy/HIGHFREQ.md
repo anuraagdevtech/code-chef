@@ -1,3 +1,5 @@
+[&larr; 374. The Nights Watch](WTCH.md) &middot; [Index](../../README.md) &middot; [380. Largest Family &rarr;](LARGEFAM.md)
+
 # 377. High Frequency
 
 > CodeChef problem code [`HIGHFREQ`](https://www.codechef.com/problems/HIGHFREQ) &middot; difficulty **1443** &middot; time limit **1s**

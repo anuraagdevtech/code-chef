@@ -1,3 +1,5 @@
+[&larr; 182. Nobel Prize](NOBEL.md) &middot; [Index](../../README.md) &middot; [201. Chocolate Monger &rarr;](CM164364.md)
+
 # 189. Studying Alphabet
 
 > CodeChef problem code [`ALPHABET`](https://www.codechef.com/problems/ALPHABET) &middot; difficulty **1123** &middot; time limit **1s**

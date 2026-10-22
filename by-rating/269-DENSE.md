@@ -1,3 +1,5 @@
+[&larr; 268. Approximately II](268-APPROX2.md) &middot; [Index](README.md) &middot; [270. Magic Set &rarr;](270-MGCSET.md)
+
 # 269. Dense Bracket Sequence
 
 > [`DENSE`](https://www.codechef.com/problems/DENSE) &middot; difficulty **1472** &middot; time limit **2.5s** &middot; Jump from 2* to 3* (Level 3)

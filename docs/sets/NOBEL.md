@@ -1,3 +1,5 @@
+[&larr; 177. ICPC Balloons](BALLOON.md) &middot; [Index](../../README.md) &middot; [189. Studying Alphabet &rarr;](ALPHABET.md)
+
 # 182. Nobel Prize
 
 > CodeChef problem code [`NOBEL`](https://www.codechef.com/problems/NOBEL) &middot; difficulty **1372** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 089. Minimum number of Flips](089-MINFLIPS.md) &middot; [Index](README.md) &middot; [091. Best of Two &rarr;](091-DICEGAME2.md)
+
 # 090. Binary Battles
 
 > [`BIN_BAT`](https://www.codechef.com/problems/BIN_BAT) &middot; difficulty **786** &middot; time limit **1.5s** &middot; 500 to 1000 difficulty rating (Level 1)

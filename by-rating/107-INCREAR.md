@@ -1,3 +1,5 @@
+[&larr; 106. Summer Heat](106-COCONUT.md) &middot; [Index](README.md) &middot; [108. Devendra and Water Sports &rarr;](108-DEVSPORTS.md)
+
 # 107. Equal Integers
 
 > [`INCREAR`](https://www.codechef.com/problems/INCREAR) &middot; difficulty **852** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

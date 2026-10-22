@@ -1,3 +1,5 @@
+[&larr; 151. Chef and Cook-Off](CCOOK.md) &middot; [Index](../../README.md) &middot; [161. Motivation &rarr;](IMDB.md)
+
 # 155. Kitchen Timetable
 
 > CodeChef problem code [`KTTABLE`](https://www.codechef.com/problems/KTTABLE) &middot; difficulty **950** &middot; time limit **1s**

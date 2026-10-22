@@ -1,3 +1,5 @@
+[&larr; 275. Chef Drinks Coke](COKE.md) &middot; [Index](../../README.md) &middot; [389. Odd Sum &rarr;](ODDSUM.md)
+
 # 371. Guessing Game
 
 > CodeChef problem code [`GUESS`](https://www.codechef.com/problems/GUESS) &middot; difficulty **1410** &middot; time limit **3.5s**

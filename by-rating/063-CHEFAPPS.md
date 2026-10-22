@@ -1,3 +1,5 @@
+[&larr; 062. Small Factorial](062-FLOW018.md) &middot; [Index](README.md) &middot; [064. Chef Eren &rarr;](064-CHEFEREN.md)
+
 # 063. Chef and his Apps
 
 > [`CHEFAPPS`](https://www.codechef.com/problems/CHEFAPPS) &middot; difficulty **702** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

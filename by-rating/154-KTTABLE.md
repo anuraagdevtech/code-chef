@@ -1,3 +1,5 @@
+[&larr; 153. Rearranging digits to get a multiple of 5](153-DIGARR.md) &middot; [Index](README.md) &middot; [155. Marathon &rarr;](155-MARARUN.md)
+
 # 154. Kitchen Timetable
 
 > [`KTTABLE`](https://www.codechef.com/problems/KTTABLE) &middot; difficulty **950** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

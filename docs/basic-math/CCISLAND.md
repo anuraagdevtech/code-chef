@@ -1,3 +1,5 @@
+[&larr; 119. Drunk Alcoholic](DRUNKALK.md) &middot; [Index](../../README.md) &middot; [124. Secret Recipe &rarr;](CHEFRUN.md)
+
 # 120. Chef On Island
 
 > CodeChef problem code [`CCISLAND`](https://www.codechef.com/problems/CCISLAND) &middot; difficulty **878** &middot; time limit **0.5s**

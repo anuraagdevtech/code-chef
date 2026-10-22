@@ -1,3 +1,5 @@
+[&larr; 180. ICPC Balloons](180-BALLOON.md) &middot; [Index](README.md) &middot; [182. A Subtask Problem &rarr;](182-SUBTASK.md)
+
 # 181. Watson asks Does Permutation Exist
 
 > [`PERMEXIS`](https://www.codechef.com/problems/PERMEXIS) &middot; difficulty **1207** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

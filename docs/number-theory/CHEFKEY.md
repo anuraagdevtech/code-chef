@@ -1,3 +1,5 @@
+[&larr; 366. Appy and Contest](HMAPPY2.md) &middot; [Index](../../README.md) &middot; [370. Yet Another Cute Girl &rarr;](PRETNUM.md)
+
 # 367. Chef and Keyboard
 
 > CodeChef problem code [`CHEFKEY`](https://www.codechef.com/problems/CHEFKEY) &middot; difficulty **1323** &middot; time limit **1s**

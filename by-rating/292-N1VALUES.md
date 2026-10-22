@@ -1,3 +1,5 @@
+[&larr; 291. Harrenhal](291-HHAL.md) &middot; [Index](README.md) &middot; [293. Gcd of Subarrays &rarr;](293-GCDSUBARRAYS.md)
+
 # 292. Exactly N plus 1 Values
 
 > [`N1VALUES`](https://www.codechef.com/problems/N1VALUES) &middot; difficulty **1495** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

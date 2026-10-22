@@ -1,3 +1,5 @@
+[&larr; 125. Secret Recipe](125-CHEFRUN.md) &middot; [Index](README.md) &middot; [127. Inside The Stadium &rarr;](127-INSTDUM.md)
+
 # 126. Chef and Profits
 
 > [`CHFPROFIT`](https://www.codechef.com/problems/CHFPROFIT) &middot; difficulty **889** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

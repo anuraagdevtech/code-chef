@@ -1,3 +1,5 @@
+[&larr; 419. Number Hunt](NUMHUNT.md) &middot; [Index](../../README.md) &middot; [434. The Optimal Pairs &rarr;](OPTPAIRS.md)
+
 # 424. Chef Product
 
 > CodeChef problem code [`CHEFPRODUCT`](https://www.codechef.com/problems/CHEFPRODUCT) &middot; difficulty **1658** &middot; time limit **1s**

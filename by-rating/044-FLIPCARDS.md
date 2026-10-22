@@ -1,3 +1,5 @@
+[&larr; 043. Police and Thief](043-POLTHIEF.md) &middot; [Index](README.md) &middot; [045. Bath in Winters &rarr;](045-BATH.md)
+
 # 044. Flip the cards
 
 > [`FLIPCARDS`](https://www.codechef.com/problems/FLIPCARDS) &middot; difficulty **641** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

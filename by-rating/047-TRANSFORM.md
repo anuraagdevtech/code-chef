@@ -1,3 +1,5 @@
+[&larr; 046. Finding Shoes](046-FINDSHOES.md) &middot; [Index](README.md) &middot; [048. Mario and Bullet &rarr;](048-BULLET.md)
+
 # 047. Mario and Transformation
 
 > [`TRANSFORM`](https://www.codechef.com/problems/TRANSFORM) &middot; difficulty **649** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

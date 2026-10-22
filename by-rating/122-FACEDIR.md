@@ -1,3 +1,5 @@
+[&larr; 121. Richie Rich](121-CHFRICH.md) &middot; [Index](README.md) &middot; [123. Farmers League &rarr;](123-LEAGUE.md)
+
 # 122. Find the Direction
 
 > [`FACEDIR`](https://www.codechef.com/problems/FACEDIR) &middot; difficulty **880** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

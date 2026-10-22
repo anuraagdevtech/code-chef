@@ -1,3 +1,5 @@
+[&larr; 78. Possible Victory](T20MCH.md) &middot; [Index](../../README.md) &middot; [83. Get Lowest Free &rarr;](SALE.md)
+
 # 81. Reach fast
 
 > CodeChef problem code [`REACHFAST`](https://www.codechef.com/problems/REACHFAST) &middot; difficulty **777** &middot; time limit **1s**

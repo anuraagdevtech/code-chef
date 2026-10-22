@@ -1,3 +1,5 @@
+[&larr; 064. Chef Eren](064-CHEFEREN.md) &middot; [Index](README.md) &middot; [066. Airlines &rarr;](066-SPCP2.md)
+
 # 065. Minimum number of coins
 
 > [`MINCOINS`](https://www.codechef.com/problems/MINCOINS) &middot; difficulty **711** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

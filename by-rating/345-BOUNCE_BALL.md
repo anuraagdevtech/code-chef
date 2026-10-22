@@ -1,3 +1,5 @@
+[&larr; 344. Chef And Adjacent Sums](344-CHFADJSUM.md) &middot; [Index](README.md) &middot; [346. Chef and Bulb Invention &rarr;](346-CHFINVNT.md)
+
 # 345. Bouncing Ball
 
 > [`BOUNCE_BALL`](https://www.codechef.com/problems/BOUNCE_BALL) &middot; difficulty **1607** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 475. Lucky Palin](LUCKPAL.md) &middot; [Index](../../README.md)
+
 # 485. Compare those strings
 
 > CodeChef problem code [`STRCOMPARE`](https://www.codechef.com/problems/STRCOMPARE) &middot; difficulty **1756** &middot; time limit **1s**

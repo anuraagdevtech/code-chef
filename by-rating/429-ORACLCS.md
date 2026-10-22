@@ -1,3 +1,5 @@
+[&larr; 428. Iron, Magnet and Wall](428-FEMA2.md) &middot; [Index](README.md) &middot; [430. Book Exercises &rarr;](430-BEX.md)
+
 # 429. Oracle Devu and Longest Common Subsequence
 
 > [`ORACLCS`](https://www.codechef.com/problems/ORACLCS) &middot; difficulty **1726** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

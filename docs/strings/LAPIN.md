@@ -1,3 +1,5 @@
+[&larr; 190. Hiring Test](HIRETEST.md) &middot; [Index](../../README.md) &middot; [193. Equinox Strings &rarr;](EQUINOX.md)
+
 # 191. Lapindromes
 
 > CodeChef problem code [`LAPIN`](https://www.codechef.com/problems/LAPIN) &middot; difficulty **1159** &middot; time limit **1s**

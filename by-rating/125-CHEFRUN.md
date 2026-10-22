@@ -1,3 +1,5 @@
+[&larr; 124. Utkarsh and Placement tests](124-UTKPLC.md) &middot; [Index](README.md) &middot; [126. Chef and Profits &rarr;](126-CHFPROFIT.md)
+
 # 125. Secret Recipe
 
 > [`CHEFRUN`](https://www.codechef.com/problems/CHEFRUN) &middot; difficulty **888** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

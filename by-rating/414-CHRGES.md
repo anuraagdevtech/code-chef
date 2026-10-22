@@ -1,3 +1,5 @@
+[&larr; 413. Buying Sweets](413-BUYSWEET.md) &middot; [Index](README.md) &middot; [415. Devu and Perfume &rarr;](415-DEVPERF.md)
+
 # 414. Spreading Charges
 
 > [`CHRGES`](https://www.codechef.com/problems/CHRGES) &middot; difficulty **1708** &middot; time limit **4s** &middot; 1600 to 1800 difficulty problems (Level 3)

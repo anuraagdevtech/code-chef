@@ -1,3 +1,5 @@
+[&larr; 243. Reversing directions](243-DIRECTI.md) &middot; [Index](README.md) &middot; [245. Balanced and Unique Arrays &rarr;](245-UNQEQ.md)
+
 # 244. Full Barrier Alchemist
 
 > [`PIPSQUIK`](https://www.codechef.com/problems/PIPSQUIK) &middot; difficulty **1426** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

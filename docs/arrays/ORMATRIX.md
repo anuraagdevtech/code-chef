@@ -1,3 +1,5 @@
+[&larr; 406. Charges](CHARGES.md) &middot; [Index](../../README.md) &middot; [433. Subarrays with length &rarr;](SUBARRAYLEN.md)
+
 # 412. OR Matrix
 
 > CodeChef problem code [`ORMATRIX`](https://www.codechef.com/problems/ORMATRIX) &middot; difficulty **1656** &middot; time limit **1s**

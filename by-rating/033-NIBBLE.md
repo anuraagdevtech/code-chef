@@ -1,3 +1,5 @@
+[&larr; 032. Sasta Shark Tank](032-SST.md) &middot; [Index](README.md) &middot; [034. Qualify the round &rarr;](034-QUALIFY.md)
+
 # 033. Good Program
 
 > [`NIBBLE`](https://www.codechef.com/problems/NIBBLE) &middot; difficulty **593** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

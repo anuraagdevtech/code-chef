@@ -1,3 +1,5 @@
+[&larr; 229. Array Halves](229-ARRHALVES.md) &middot; [Index](README.md) &middot; [231. Guessing Game &rarr;](231-GUESS.md)
+
 # 230. Bella ciao
 
 > [`CHFHEIST`](https://www.codechef.com/problems/CHFHEIST) &middot; difficulty **1410** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

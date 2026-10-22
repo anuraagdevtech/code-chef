@@ -1,3 +1,5 @@
+[&larr; 202. Chopsticks](TACHSTCK.md) &middot; [Index](../../README.md) &middot; [209. Lazy Salesman &rarr;](HOLIDAYS.md)
+
 # 203. Sticks
 
 > CodeChef problem code [`STICKS`](https://www.codechef.com/problems/STICKS) &middot; difficulty **1261** &middot; time limit **1s**

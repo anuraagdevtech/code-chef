@@ -1,3 +1,5 @@
+[&larr; 246. Yet another SOD problem](SOD3.md) &middot; [Index](../../README.md) &middot; [255. Majin Vegeta &rarr;](VEGETA.md)
+
 # 248. Chef and Adventures
 
 > CodeChef problem code [`CHEFADV`](https://www.codechef.com/problems/CHEFADV) &middot; difficulty **1462** &middot; time limit **0.5s**

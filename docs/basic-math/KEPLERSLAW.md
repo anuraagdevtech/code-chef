@@ -1,3 +1,5 @@
+[&larr; 145.  Am I Lucky!](SPCP4.md) &middot; [Index](../../README.md) &middot; [157. Richie Rich &rarr;](CHFRICH.md)
+
 # 154. Keplers Law
 
 > CodeChef problem code [`KEPLERSLAW`](https://www.codechef.com/problems/KEPLERSLAW) &middot; difficulty **992** &middot; time limit **0.5s**

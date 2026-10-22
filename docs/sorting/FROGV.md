@@ -1,3 +1,5 @@
+[&larr; 324. Stable Quick Sort](QCKSRT2.md) &middot; [Index](../../README.md) &middot; [385. Median of adjacent maximum numbers &rarr;](MXMEDIAN.md)
+
 # 354. Chef and Frogs
 
 > CodeChef problem code [`FROGV`](https://www.codechef.com/problems/FROGV) &middot; difficulty **1668** &middot; time limit **1s**

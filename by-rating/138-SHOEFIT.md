@@ -1,3 +1,5 @@
+[&larr; 137. Penalty Shots](137-PENALTY.md) &middot; [Index](README.md) &middot; [139. Make all equal using Pairs &rarr;](139-PAIREQ.md)
+
 # 138. Shoe Fit
 
 > [`SHOEFIT`](https://www.codechef.com/problems/SHOEFIT) &middot; difficulty **925** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

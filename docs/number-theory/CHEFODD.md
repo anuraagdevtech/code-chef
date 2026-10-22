@@ -1,3 +1,5 @@
+[&larr; 258. Jogging](JOGGING.md) &middot; [Index](../../README.md) &middot; [274. Reduce to One &rarr;](REDONE.md)
+
 # 260. Chef Odd
 
 > CodeChef problem code [`CHEFODD`](https://www.codechef.com/problems/CHEFODD) &middot; difficulty **1486** &middot; time limit **2.5s**

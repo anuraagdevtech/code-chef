@@ -1,3 +1,5 @@
+[&larr; 167. Weight Balance](WEIGHTBL.md) &middot; [Index](../../README.md) &middot; [169. Turn It &rarr;](NFS.md)
+
 # 168. Chef and Stock Prices 
 
 > CodeChef problem code [`CSTOCK`](https://www.codechef.com/problems/CSTOCK) &middot; difficulty **1069** &middot; time limit **0.5s**

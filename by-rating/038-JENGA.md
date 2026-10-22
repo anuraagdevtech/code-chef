@@ -1,3 +1,5 @@
+[&larr; 037. Test Score](037-CHEFSCORE.md) &middot; [Index](README.md) &middot; [039. Bus  Seat Numbering &rarr;](039-SEATNUMBER.md)
+
 # 038. Jenga Night
 
 > [`JENGA`](https://www.codechef.com/problems/JENGA) &middot; difficulty **613** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

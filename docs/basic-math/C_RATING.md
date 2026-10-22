@@ -1,3 +1,5 @@
+[&larr; 42. Mario and Bullet](BULLET.md) &middot; [Index](../../README.md) &middot; [45. Chef and Water Bottles &rarr;](CHEFBOTTLE.md)
+
 # 43. Chess Ratings
 
 > CodeChef problem code [`C_RATING`](https://www.codechef.com/problems/C_RATING) &middot; difficulty **651** &middot; time limit **1.5s**

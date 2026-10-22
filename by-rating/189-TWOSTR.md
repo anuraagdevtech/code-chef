@@ -1,3 +1,5 @@
+[&larr; 188. The Two Dishes](188-MAX_DIFF.md) &middot; [Index](README.md) &middot; [190. Hiring Test &rarr;](190-HIRETEST.md)
+
 # 189. Chef and the Wildcard Matching
 
 > [`TWOSTR`](https://www.codechef.com/problems/TWOSTR) &middot; difficulty **1254** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 120. Chef On Island](120-CCISLAND.md) &middot; [Index](README.md) &middot; [122. Find the Direction &rarr;](122-FACEDIR.md)
+
 # 121. Richie Rich
 
 > [`CHFRICH`](https://www.codechef.com/problems/CHFRICH) &middot; difficulty **878** &middot; time limit **0.5s** &middot; Level up from 1* to 2* (Level 2)

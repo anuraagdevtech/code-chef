@@ -1,3 +1,5 @@
+[&larr; 300. Equal by XORing](300-EQBYXOR.md) &middot; [Index](README.md) &middot; [302. Magda and Silly Pairs &rarr;](302-SILLYPRS.md)
+
 # 301. Reduce to One
 
 > [`REDONE`](https://www.codechef.com/problems/REDONE) &middot; difficulty **1507** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

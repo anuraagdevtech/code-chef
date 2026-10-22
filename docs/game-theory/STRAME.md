@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [241. Chef and Coins Game &rarr;](CHCOINSG.md)
+
 # 226. String Game 
 
 > CodeChef problem code [`STRAME`](https://www.codechef.com/problems/STRAME) &middot; difficulty **1413** &middot; time limit **4.5s**

@@ -1,3 +1,5 @@
+[&larr; 104. Smallest Numbers of Notes](FLOW005.md) &middot; [Index](../../README.md) &middot; [131. Avoid Contact &rarr;](AVOIDCONTACT.md)
+
 # 127. Peaceful Party
 
 > CodeChef problem code [`MAYOR_PARTY`](https://www.codechef.com/problems/MAYOR_PARTY) &middot; difficulty **898** &middot; time limit **0.5s**

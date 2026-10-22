@@ -1,3 +1,5 @@
+[&larr; 235. Full Barrier Alchemist](PIPSQUIK.md) &middot; [Index](../../README.md) &middot; [334. Sudhanva and Books &rarr;](SUDBOOKS.md)
+
 # 278. When to take medicine
 
 > CodeChef problem code [`MEDIC`](https://www.codechef.com/problems/MEDIC) &middot; difficulty **1522** &middot; time limit **1s**

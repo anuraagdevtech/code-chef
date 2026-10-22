@@ -1,3 +1,5 @@
+[&larr; 64. Speed Limit Test](SPEEDTEST.md) &middot; [Index](../../README.md) &middot; [70. Too many items &rarr;](POLYBAGS.md)
+
 # 68. Pass or Fail
 
 > CodeChef problem code [`PASSORFAIL`](https://www.codechef.com/problems/PASSORFAIL) &middot; difficulty **730** &middot; time limit **0.5s**

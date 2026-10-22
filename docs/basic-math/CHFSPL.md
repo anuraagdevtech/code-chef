@@ -1,3 +1,5 @@
+[&larr; 159. Hoop Jump](HOOPS.md) &middot; [Index](../../README.md) &middot; [167. Weight Balance &rarr;](WEIGHTBL.md)
+
 # 165. Chef and Spells
 
 > CodeChef problem code [`CHFSPL`](https://www.codechef.com/problems/CHFSPL) &middot; difficulty **965** &middot; time limit **0.5s**

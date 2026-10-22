@@ -1,3 +1,5 @@
+[&larr; 138. Chef and Price Control](PRICECON.md) &middot; [Index](../../README.md) &middot; [141. First and Last &rarr;](FIRSTANDLAST.md)
+
 # 140. No Time to Wait
 
 > CodeChef problem code [`NOTIME`](https://www.codechef.com/problems/NOTIME) &middot; difficulty **932** &middot; time limit **1s**

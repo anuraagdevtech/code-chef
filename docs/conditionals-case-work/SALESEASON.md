@@ -1,3 +1,5 @@
+[&larr; 8. Water Filling](WATERFILLING.md) &middot; [Index](../../README.md) &middot; [11. Chefland Games &rarr;](CHEFGAMES.md)
+
 # 9. Sale Season
 
 > CodeChef problem code [`SALESEASON`](https://www.codechef.com/problems/SALESEASON) &middot; difficulty **541** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 422. Max Mex](422-MAXMEX.md) &middot; [Index](README.md) &middot; [424. Find an integer &rarr;](424-SUMDIV2.md)
+
 # 423. Matchsticks
 
 > [`MSTICK`](https://www.codechef.com/problems/MSTICK) &middot; difficulty **1714** &middot; time limit **3s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 122. Find the Direction](122-FACEDIR.md) &middot; [Index](README.md) &middot; [124. Utkarsh and Placement tests &rarr;](124-UTKPLC.md)
+
 # 123. Farmers League
 
 > [`LEAGUE`](https://www.codechef.com/problems/LEAGUE) &middot; difficulty **883** &middot; time limit **2s** &middot; 500 to 1000 difficulty rating (Level 1)

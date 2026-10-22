@@ -1,3 +1,5 @@
+[&larr; 332. Modular Equation](MODEQ.md) &middot; [Index](../../README.md) &middot; [364. Chef and GCD &rarr;](CHFGCD.md)
+
 # 353. Count K-Primes
 
 > CodeChef problem code [`KPRIME`](https://www.codechef.com/problems/KPRIME) &middot; difficulty **1549** &middot; time limit **1.5s**

@@ -1,3 +1,5 @@
+[&larr; 16. Chef and Candies](CHEFCAND.md) &middot; [Index](../../README.md) &middot; [23. Nearest Exit &rarr;](NEARESTEXIT.md)
+
 # 20. Monopoly
 
 > CodeChef problem code [`MONOPOLY2`](https://www.codechef.com/problems/MONOPOLY2) &middot; difficulty **578** &middot; time limit **0.5s**

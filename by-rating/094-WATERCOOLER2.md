@@ -1,3 +1,5 @@
+[&larr; 093. Recent contest problems](093-RECENTCONT.md) &middot; [Index](README.md) &middot; [095. Wordle &rarr;](095-WORDLE.md)
+
 # 094. The Cooler Dilemma 2
 
 > [`WATERCOOLER2`](https://www.codechef.com/problems/WATERCOOLER2) &middot; difficulty **798** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

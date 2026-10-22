@@ -1,3 +1,5 @@
+[&larr; 389. Odd Sum](ODDSUM.md) &middot; [Index](../../README.md) &middot; [396. Survive in ChocoLand &rarr;](SURVIVE.md)
+
 # 390. Chef and Bulb Invention
 
 > CodeChef problem code [`CHFINVNT`](https://www.codechef.com/problems/CHFINVNT) &middot; difficulty **1607** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 036. Minimum Cars required](036-MINCARS.md) &middot; [Index](README.md) &middot; [038. Jenga Night &rarr;](038-JENGA.md)
+
 # 037. Test Score
 
 > [`CHEFSCORE`](https://www.codechef.com/problems/CHEFSCORE) &middot; difficulty **610** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

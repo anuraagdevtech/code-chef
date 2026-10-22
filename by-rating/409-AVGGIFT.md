@@ -1,3 +1,5 @@
+[&larr; 408. Chef and Football Match](408-WATCHFB.md) &middot; [Index](README.md) &middot; [410. Mystical Numbers &rarr;](410-XORGAND.md)
+
 # 409. Average Gift
 
 > [`AVGGIFT`](https://www.codechef.com/problems/AVGGIFT) &middot; difficulty **1701** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 236. Equality](236-EQUALITY.md) &middot; [Index](README.md) &middot; [238. Fit to Play &rarr;](238-PLAYFIT.md)
+
 # 237. Mix the Colors
 
 > [`MIXCOLOR`](https://www.codechef.com/problems/MIXCOLOR) &middot; difficulty **1419** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

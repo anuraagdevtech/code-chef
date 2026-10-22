@@ -1,3 +1,5 @@
+[&larr; 421. Even Subset Xor](421-EVENXOR.md) &middot; [Index](README.md) &middot; [423. Matchsticks &rarr;](423-MSTICK.md)
+
 # 422. Max Mex
 
 > [`MAXMEX`](https://www.codechef.com/problems/MAXMEX) &middot; difficulty **1714** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

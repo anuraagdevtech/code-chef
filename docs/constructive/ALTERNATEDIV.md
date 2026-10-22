@@ -1,3 +1,5 @@
+[&larr; 238. Permutation Xority](PERMXORITY.md) &middot; [Index](../../README.md) &middot; [267. Exactly N plus 1 Values &rarr;](N1VALUES.md)
+
 # 257. Alternating Divisibility
 
 > CodeChef problem code [`ALTERNATEDIV`](https://www.codechef.com/problems/ALTERNATEDIV) &middot; difficulty **1483** &middot; time limit **1s**

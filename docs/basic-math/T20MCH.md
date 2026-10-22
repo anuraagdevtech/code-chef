@@ -1,3 +1,5 @@
+[&larr; 76. Small Factorial](FLOW018.md) &middot; [Index](../../README.md) &middot; [81. Reach fast &rarr;](REACHFAST.md)
+
 # 78. Possible Victory
 
 > CodeChef problem code [`T20MCH`](https://www.codechef.com/problems/T20MCH) &middot; difficulty **769** &middot; time limit **0.5s**

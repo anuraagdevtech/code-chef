@@ -1,3 +1,5 @@
+[&larr; 292. Chef and squares](CHSQR.md) &middot; [Index](../../README.md) &middot; [305. Make it Divisible &rarr;](MAKEDIV3.md)
+
 # 300. K Odd Sum
 
 > CodeChef problem code [`ADVITIYA5`](https://www.codechef.com/problems/ADVITIYA5) &middot; difficulty **1614** &middot; time limit **1s**

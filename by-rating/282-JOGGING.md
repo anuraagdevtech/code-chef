@@ -1,3 +1,5 @@
+[&larr; 281. Alternating Divisibility](281-ALTERNATEDIV.md) &middot; [Index](README.md) &middot; [283. Correct Sentence &rarr;](283-CORTSENT.md)
+
 # 282. Jogging
 
 > [`JOGGING`](https://www.codechef.com/problems/JOGGING) &middot; difficulty **1484** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

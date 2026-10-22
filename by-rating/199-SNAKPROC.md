@@ -1,3 +1,5 @@
+[&larr; 198. Reversal Sorting](198-REVSORT.md) &middot; [Index](README.md) &middot; [200. Points and Lines &rarr;](200-POLIN.md)
+
 # 199. Snake Procession
 
 > [`SNAKPROC`](https://www.codechef.com/problems/SNAKPROC) &middot; difficulty **1290** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

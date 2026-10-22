@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [196. The Smallest Pair &rarr;](SMPAIR.md)
+
 # 67. Second Largest
 
 > CodeChef problem code [`FLOW017`](https://www.codechef.com/problems/FLOW017) &middot; difficulty **520** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 375. Nice Pairs ](NPAIRS.md) &middot; [Index](../../README.md) &middot; [403. Bitwise Tuples &rarr;](BITTUP.md)
+
 # 398. MaxEdges
 
 > CodeChef problem code [`MAXEDGES`](https://www.codechef.com/problems/MAXEDGES) &middot; difficulty **1618** &middot; time limit **1.5s**

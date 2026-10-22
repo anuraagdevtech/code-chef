@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [184. Cops and the Thief Devu &rarr;](COPS.md)
+
 # 178. Gasoline Introduction
 
 > CodeChef problem code [`BEGGASOL`](https://www.codechef.com/problems/BEGGASOL) &middot; difficulty **1263** &middot; time limit **1s**

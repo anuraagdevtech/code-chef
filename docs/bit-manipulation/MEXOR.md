@@ -1,3 +1,5 @@
+[&larr; 426. Boxes](BOX95.md) &middot; [Index](../../README.md) &middot; [452. Even Subset Xor &rarr;](EVENXOR.md)
+
 # 436. MEX-OR
 
 > CodeChef problem code [`MEXOR`](https://www.codechef.com/problems/MEXOR) &middot; difficulty **1650** &middot; time limit **1s**

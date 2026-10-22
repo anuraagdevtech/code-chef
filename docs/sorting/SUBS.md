@@ -1,3 +1,5 @@
+[&larr; 310. Counting Sort](CNTSORT.md) &middot; [Index](../../README.md) &middot; [317. Javelin Qualification &rarr;](JAVELIN.md)
+
 # 312. Fair distribution
 
 > CodeChef problem code [`SUBS`](https://www.codechef.com/problems/SUBS) &middot; difficulty **unrated** &middot; time limit **2s**

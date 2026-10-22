@@ -1,3 +1,5 @@
+[&larr; 22. Air Conditioner Temperature](ACTEMP.md) &middot; [Index](../../README.md) &middot; [55. Water Mixing &rarr;](WTRMIXING.md)
+
 # 32. Bus  Seat Numbering
 
 > CodeChef problem code [`SEATNUMBER`](https://www.codechef.com/problems/SEATNUMBER) &middot; difficulty **613** &middot; time limit **1s**

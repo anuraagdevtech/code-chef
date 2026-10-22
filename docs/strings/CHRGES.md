@@ -1,3 +1,5 @@
+[&larr; 425. 3-Blast Palindrome](BLAST3.md) &middot; [Index](../../README.md) &middot; [458. Oracle Devu and Longest Common Subsequence &rarr;](ORACLCS.md)
+
 # 445. Spreading Charges
 
 > CodeChef problem code [`CHRGES`](https://www.codechef.com/problems/CHRGES) &middot; difficulty **1708** &middot; time limit **4s**

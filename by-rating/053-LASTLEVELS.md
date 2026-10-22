@@ -1,3 +1,5 @@
+[&larr; 052. Candy Distribution](052-CANDYDIST.md) &middot; [Index](README.md) &middot; [054. Blackjack &rarr;](054-BLACKJACK.md)
+
 # 053. The Last Levels
 
 > [`LASTLEVELS`](https://www.codechef.com/problems/LASTLEVELS) &middot; difficulty **679** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

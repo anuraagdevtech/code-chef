@@ -1,3 +1,5 @@
+[&larr; 080. Smallest Numbers of Notes](080-FLOW005.md) &middot; [Index](README.md) &middot; [082. Presents for Cheffina &rarr;](082-PRESENTS.md)
+
 # 081. Endless Appetizers
 
 > [`MOZZ`](https://www.codechef.com/problems/MOZZ) &middot; difficulty **752** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

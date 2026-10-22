@@ -1,3 +1,5 @@
+[&larr; 346. Chef and Chefina](CHFNA.md) &middot; [Index](../../README.md) &middot; [348. Maximum Damage &rarr;](MAXDMGE.md)
+
 # 347. XOR-ORED
 
 > CodeChef problem code [`XORORED`](https://www.codechef.com/problems/XORORED) &middot; difficulty **1621** &middot; time limit **1s**

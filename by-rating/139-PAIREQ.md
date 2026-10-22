@@ -1,3 +1,5 @@
+[&larr; 138. Shoe Fit](138-SHOEFIT.md) &middot; [Index](README.md) &middot; [140. Chef and Pairing Slippers &rarr;](140-CHEFSLP.md)
+
 # 139. Make all equal using Pairs
 
 > [`PAIREQ`](https://www.codechef.com/problems/PAIREQ) &middot; difficulty **928** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

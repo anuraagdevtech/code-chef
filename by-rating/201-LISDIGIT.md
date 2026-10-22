@@ -1,3 +1,5 @@
+[&larr; 200. Points and Lines](200-POLIN.md) &middot; [Index](README.md) &middot; [202. Hard Cash &rarr;](202-CASH.md)
+
 # 201. Digit Longest Increasing Subsequences 2
 
 > [`LISDIGIT`](https://www.codechef.com/problems/LISDIGIT) &middot; difficulty **1297** &middot; time limit **3s** &middot; Jump from 2* to 3* (Level 3)

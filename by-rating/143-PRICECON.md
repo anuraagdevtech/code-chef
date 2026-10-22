@@ -1,3 +1,5 @@
+[&larr; 142. Akash and Missing Class](142-CHFCLASS.md) &middot; [Index](README.md) &middot; [144. First and Last &rarr;](144-FIRSTANDLAST.md)
+
 # 143. Chef and Price Control
 
 > [`PRICECON`](https://www.codechef.com/problems/PRICECON) &middot; difficulty **931** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

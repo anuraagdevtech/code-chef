@@ -1,3 +1,5 @@
+[&larr; 175. Make them equal](MAKEEQUAL.md) &middot; [Index](../../README.md) &middot; [199. Maximise the Subsequence Sum &rarr;](SIGNFLIP.md)
+
 # 187. Magical Doors
 
 > CodeChef problem code [`MAGDOORS`](https://www.codechef.com/problems/MAGDOORS) &middot; difficulty **1355** &middot; time limit **1.5s**

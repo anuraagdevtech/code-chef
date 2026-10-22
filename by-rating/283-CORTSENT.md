@@ -1,3 +1,5 @@
+[&larr; 282. Jogging](282-JOGGING.md) &middot; [Index](README.md) &middot; [284. Alternating Work Days &rarr;](284-ALTER.md)
+
 # 283. Correct Sentence
 
 > [`CORTSENT`](https://www.codechef.com/problems/CORTSENT) &middot; difficulty **1485** &middot; time limit **0.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

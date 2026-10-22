@@ -1,3 +1,5 @@
+[&larr; 186. Chef and the Wildcard Matching](TWOSTR.md) &middot; [Index](../../README.md) &middot; [190. Hiring Test &rarr;](HIRETEST.md)
+
 # 188. Chef and Feedback
 
 > CodeChef problem code [`ERROR`](https://www.codechef.com/problems/ERROR) &middot; difficulty **1199** &middot; time limit **1s**

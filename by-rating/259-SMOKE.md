@@ -1,3 +1,5 @@
+[&larr; 258. K-MEX](258-KMEX.md) &middot; [Index](README.md) &middot; [260. Yet another SOD problem &rarr;](260-SOD3.md)
+
 # 259. Control the Pollution
 
 > [`SMOKE`](https://www.codechef.com/problems/SMOKE) &middot; difficulty **1450** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

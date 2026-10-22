@@ -1,3 +1,5 @@
+[&larr; 299. Palindrome Pain](299-PALINPAIN.md) &middot; [Index](README.md) &middot; [301. Reduce to One &rarr;](301-REDONE.md)
+
 # 300. Equal by XORing
 
 > [`EQBYXOR`](https://www.codechef.com/problems/EQBYXOR) &middot; difficulty **1507** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

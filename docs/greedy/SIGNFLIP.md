@@ -1,3 +1,5 @@
+[&larr; 187. Magical Doors](MAGDOORS.md) &middot; [Index](../../README.md) &middot; [200. Daanish and Problems &rarr;](DIV03.md)
+
 # 199. Maximise the Subsequence Sum
 
 > CodeChef problem code [`SIGNFLIP`](https://www.codechef.com/problems/SIGNFLIP) &middot; difficulty **1308** &middot; time limit **2.5s**

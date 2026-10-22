@@ -1,3 +1,5 @@
+[&larr; 152. Non-Negative Product](152-NONNEGPROD.md) &middot; [Index](README.md) &middot; [154. Kitchen Timetable &rarr;](154-KTTABLE.md)
+
 # 153. Rearranging digits to get a multiple of 5
 
 > [`DIGARR`](https://www.codechef.com/problems/DIGARR) &middot; difficulty **949** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

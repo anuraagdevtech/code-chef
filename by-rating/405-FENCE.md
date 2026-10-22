@@ -1,3 +1,5 @@
+[&larr; 404. The Vowel Matrix](404-VOWMTRX.md) &middot; [Index](README.md) &middot; [406. 3-Blast Palindrome &rarr;](406-BLAST3.md)
+
 # 405. Fencing
 
 > [`FENCE`](https://www.codechef.com/problems/FENCE) &middot; difficulty **1696** &middot; time limit **3s** &middot; 1600 to 1800 difficulty problems (Level 3)

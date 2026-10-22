@@ -1,3 +1,5 @@
+[&larr; 146. Janmansh at Fruit Market](JMARKET.md) &middot; [Index](../../README.md) &middot; [162. Two Dishes &rarr;](TWODISH.md)
+
 # 160. The Two Dishes
 
 > CodeChef problem code [`MAX_DIFF`](https://www.codechef.com/problems/MAX_DIFF) &middot; difficulty **1254** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 260. Chef Odd](CHEFODD.md) &middot; [Index](../../README.md) &middot; [279. Split Sums &rarr;](SPSUM.md)
+
 # 274. Reduce to One
 
 > CodeChef problem code [`REDONE`](https://www.codechef.com/problems/REDONE) &middot; difficulty **1507** &middot; time limit **1s**

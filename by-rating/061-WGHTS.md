@@ -1,3 +1,5 @@
+[&larr; 060. Water Mixing](060-WTRMIXING.md) &middot; [Index](README.md) &middot; [062. Small Factorial &rarr;](062-FLOW018.md)
+
 # 061. Weights
 
 > [`WGHTS`](https://www.codechef.com/problems/WGHTS) &middot; difficulty **697** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

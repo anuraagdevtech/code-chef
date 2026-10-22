@@ -1,3 +1,5 @@
+[&larr; 86. Best of Two](DICEGAME2.md) &middot; [Index](../../README.md) &middot; [94. Buy 2 Get 1 Free &rarr;](SALE2.md)
+
 # 91. The Cooler Dilemma 2
 
 > CodeChef problem code [`WATERCOOLER2`](https://www.codechef.com/problems/WATERCOOLER2) &middot; difficulty **798** &middot; time limit **1s**

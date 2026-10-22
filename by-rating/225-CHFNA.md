@@ -1,3 +1,5 @@
+[&larr; 224. Daanish and Problems](224-DIV03.md) &middot; [Index](README.md) &middot; [226. Average Permutation &rarr;](226-AVGPERM.md)
+
 # 225. Chef and Chefina
 
 > [`CHFNA`](https://www.codechef.com/problems/CHFNA) &middot; difficulty **1400** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

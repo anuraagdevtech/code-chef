@@ -1,3 +1,5 @@
+[&larr; 340. IPC Trainers](IPCTRAIN.md) &middot; [Index](../../README.md) &middot; [372. Sleepy Chef &rarr;](FILL01.md)
+
 # 342. Iron, Magnet and Wall
 
 > CodeChef problem code [`FEMA2`](https://www.codechef.com/problems/FEMA2) &middot; difficulty **1725** &middot; time limit **1s**

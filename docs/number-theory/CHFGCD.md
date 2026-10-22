@@ -1,3 +1,5 @@
+[&larr; 353. Count K-Primes](KPRIME.md) &middot; [Index](../../README.md) &middot; [365. Arranging Cup-cakes &rarr;](RESQ.md)
+
 # 364. Chef and GCD
 
 > CodeChef problem code [`CHFGCD`](https://www.codechef.com/problems/CHFGCD) &middot; difficulty **1481** &middot; time limit **0.5s**

@@ -1,3 +1,5 @@
+[&larr; 94. Buy 2 Get 1 Free](SALE2.md) &middot; [Index](../../README.md) &middot; [98. Best of N Sets &rarr;](BESTOFTENNIS.md)
+
 # 96. The Preparations
 
 > CodeChef problem code [`SUPCHEF`](https://www.codechef.com/problems/SUPCHEF) &middot; difficulty **823** &middot; time limit **0.5s**

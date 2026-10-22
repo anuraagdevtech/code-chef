@@ -1,3 +1,5 @@
+[&larr; 355. Digit Longest Increasing Subsequences 2](LISDIGIT.md) &middot; [Index](../../README.md) &middot; [379. Subarray permutations &rarr;](SUBPERM.md)
+
 # 368. GCD operations
 
 > CodeChef problem code [`GCDOPS`](https://www.codechef.com/problems/GCDOPS) &middot; difficulty **1462** &middot; time limit **1s**

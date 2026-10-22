@@ -1,3 +1,5 @@
+[&larr; 334. Maximal crosses](334-MAXCROSS.md) &middot; [Index](README.md) &middot; [336. Yet Another Constructive Problem &rarr;](336-ORANDCON.md)
+
 # 335. Chef and squares
 
 > [`CHSQR`](https://www.codechef.com/problems/CHSQR) &middot; difficulty **1576** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

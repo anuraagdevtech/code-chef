@@ -1,3 +1,5 @@
+[&larr; 459. Modular Equation](459-MODEQ.md) &middot; [Index](README.md) &middot; [461. Minion Chef and Bananas &rarr;](461-MINEAT.md)
+
 # 460. Chef Restaurant 
 
 > [`CHEFRES`](https://www.codechef.com/problems/CHEFRES) &middot; difficulty **1776** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

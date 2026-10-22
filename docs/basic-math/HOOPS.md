@@ -1,3 +1,5 @@
+[&larr; 157. Richie Rich](CHFRICH.md) &middot; [Index](../../README.md) &middot; [165. Chef and Spells &rarr;](CHFSPL.md)
+
 # 159. Hoop Jump
 
 > CodeChef problem code [`HOOPS`](https://www.codechef.com/problems/HOOPS) &middot; difficulty **930** &middot; time limit **0.5s**

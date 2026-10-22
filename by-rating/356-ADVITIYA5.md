@@ -1,3 +1,5 @@
+[&larr; 355. Maximum Subarray ](355-MAXSUBARR.md) &middot; [Index](README.md) &middot; [357. Survive in ChocoLand &rarr;](357-SURVIVE.md)
+
 # 356. K Odd Sum
 
 > [`ADVITIYA5`](https://www.codechef.com/problems/ADVITIYA5) &middot; difficulty **1614** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

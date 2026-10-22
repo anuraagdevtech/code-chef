@@ -1,3 +1,5 @@
+[&larr; 358. Magic Rankings](MGCRNK.md) &middot; [Index](../../README.md) &middot; [360. Chef and Wedding Arrangements &rarr;](CHEFWED.md)
+
 # 359. Gravity Guy
 
 > CodeChef problem code [`GRGUY`](https://www.codechef.com/problems/GRGUY) &middot; difficulty **1568** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 333. Flu Shot Lineup](FLUSHOT.md) &middot; [Index](../../README.md)
+
 # 387. Sheokand and Number
 
 > CodeChef problem code [`SHKNUM`](https://www.codechef.com/problems/SHKNUM) &middot; difficulty **1534** &middot; time limit **1.5s**

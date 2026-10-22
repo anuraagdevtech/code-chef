@@ -1,3 +1,5 @@
+[&larr; 177. The Lead Game](177-TLG.md) &middot; [Index](README.md) &middot; [179. Chef and Linear Chess &rarr;](179-LINCHESS.md)
+
 # 178. Chef and Feedback
 
 > [`ERROR`](https://www.codechef.com/problems/ERROR) &middot; difficulty **1199** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

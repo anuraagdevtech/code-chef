@@ -1,3 +1,5 @@
+[&larr; 188. Chef and Feedback](ERROR.md) &middot; [Index](../../README.md) &middot; [191. Lapindromes &rarr;](LAPIN.md)
+
 # 190. Hiring Test
 
 > CodeChef problem code [`HIRETEST`](https://www.codechef.com/problems/HIRETEST) &middot; difficulty **1260** &middot; time limit **0.5s**

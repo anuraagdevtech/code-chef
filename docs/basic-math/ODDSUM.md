@@ -1,3 +1,5 @@
+[&larr; 371. Guessing Game](GUESS.md) &middot; [Index](../../README.md) &middot; [390. Chef and Bulb Invention &rarr;](CHFINVNT.md)
+
 # 389. Odd Sum
 
 > CodeChef problem code [`ODDSUM`](https://www.codechef.com/problems/ODDSUM) &middot; difficulty **1600** &middot; time limit **1s**

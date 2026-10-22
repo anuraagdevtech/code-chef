@@ -1,3 +1,5 @@
+[&larr; 398. MaxEdges](MAXEDGES.md) &middot; [Index](../../README.md) &middot; [407. Chef and Interesting Subsequences  &rarr;](CHEFINSQ.md)
+
 # 403. Bitwise Tuples
 
 > CodeChef problem code [`BITTUP`](https://www.codechef.com/problems/BITTUP) &middot; difficulty **1634** &middot; time limit **1.5s**

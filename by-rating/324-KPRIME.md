@@ -1,3 +1,5 @@
+[&larr; 323. Unstable Subarray](323-COUNTSUB.md) &middot; [Index](README.md) &middot; [325. Catch the Thief &rarr;](325-CATHIEF.md)
+
 # 324. Count K-Primes
 
 > [`KPRIME`](https://www.codechef.com/problems/KPRIME) &middot; difficulty **1549** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

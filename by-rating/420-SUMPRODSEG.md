@@ -1,3 +1,5 @@
+[&larr; 419. Minimum Coloring](419-MINCOLOR.md) &middot; [Index](README.md) &middot; [421. Even Subset Xor &rarr;](421-EVENXOR.md)
+
 # 420. Sum Product Segments
 
 > [`SUMPRODSEG`](https://www.codechef.com/problems/SUMPRODSEG) &middot; difficulty **1713** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

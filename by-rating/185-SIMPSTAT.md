@@ -1,3 +1,5 @@
+[&larr; 184. Maximum Length Even Subarray](184-MXEVNSUB.md) &middot; [Index](README.md) &middot; [186. Racing Horses &rarr;](186-HORSES.md)
+
 # 185. Simple Statistics
 
 > [`SIMPSTAT`](https://www.codechef.com/problems/SIMPSTAT) &middot; difficulty **1222** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

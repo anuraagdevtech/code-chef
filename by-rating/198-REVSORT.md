@@ -1,3 +1,5 @@
+[&larr; 197. Even Splits](197-EVENSPLIT.md) &middot; [Index](README.md) &middot; [199. Snake Procession &rarr;](199-SNAKPROC.md)
+
 # 198. Reversal Sorting
 
 > [`REVSORT`](https://www.codechef.com/problems/REVSORT) &middot; difficulty **1288** &middot; time limit **3.5s** &middot; Level up from 1* to 2* (Level 2)

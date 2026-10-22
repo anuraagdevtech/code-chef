@@ -1,3 +1,5 @@
+[&larr; 405. Fencing](405-FENCE.md) &middot; [Index](README.md) &middot; [407. Remove One Element &rarr;](407-REMONE.md)
+
 # 406. 3-Blast Palindrome
 
 > [`BLAST3`](https://www.codechef.com/problems/BLAST3) &middot; difficulty **1699** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 303. Chef Drinks Coke](303-COKE.md) &middot; [Index](README.md) &middot; [305. College Life 2 &rarr;](305-COLGLF2.md)
+
 # 304. One-XOR Deletions
 
 > [`DELXORONE`](https://www.codechef.com/problems/DELXORONE) &middot; difficulty **1516** &middot; time limit **2.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

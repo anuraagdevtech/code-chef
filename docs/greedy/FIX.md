@@ -1,3 +1,5 @@
+[&larr; 462. Bon Appetit](FGFS.md) &middot; [Index](../../README.md) &middot; [474. One Dimensional Kingdoms &rarr;](ONEKING.md)
+
 # 465. Prefixing
 
 > CodeChef problem code [`FIX`](https://www.codechef.com/problems/FIX) &middot; difficulty **1736** &middot; time limit **1s**

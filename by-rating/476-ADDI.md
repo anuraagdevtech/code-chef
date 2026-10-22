@@ -1,3 +1,5 @@
+[&larr; 475. Hussain Set](475-COOK82C.md) &middot; [Index](README.md) &middot; [477. Sort by Adjacent Swaps &rarr;](477-ADJSRT.md)
+
 # 476. Prajit and bits
 
 > [`ADDI`](https://www.codechef.com/problems/ADDI) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

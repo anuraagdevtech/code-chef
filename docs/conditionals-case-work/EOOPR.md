@@ -1,3 +1,5 @@
+[&larr; 408. Range Assign, Number of Distinct Elements Minimize](RANGEASSIGN.md) &middot; [Index](../../README.md)
+
 # 479. The One Who Knocks!
 
 > CodeChef problem code [`EOOPR`](https://www.codechef.com/problems/EOOPR) &middot; difficulty **1749** &middot; time limit **1s**

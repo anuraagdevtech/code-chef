@@ -1,3 +1,5 @@
+[&larr; 290. Chef and Sign Sequences](CHEFSIGN.md) &middot; [Index](../../README.md) &middot; [335. Attendance &rarr;](ATTND.md)
+
 # 291. Boring String
 
 > CodeChef problem code [`BORSTR`](https://www.codechef.com/problems/BORSTR) &middot; difficulty **1566** &middot; time limit **1.5s**

@@ -1,3 +1,5 @@
+[&larr; 470. ChefTown Parade](470-CHEFTOWN.md) &middot; [Index](README.md) &middot; [472. Chef and Good Subsequences &rarr;](472-GDSUB.md)
+
 # 471. Snake Eating
 
 > [`SNAKEEAT`](https://www.codechef.com/problems/SNAKEEAT) &middot; difficulty **1940** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

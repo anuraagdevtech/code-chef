@@ -1,3 +1,5 @@
+[&larr; 365. Arranging Cup-cakes](RESQ.md) &middot; [Index](../../README.md) &middot; [367. Chef and Keyboard &rarr;](CHEFKEY.md)
+
 # 366. Appy and Contest
 
 > CodeChef problem code [`HMAPPY2`](https://www.codechef.com/problems/HMAPPY2) &middot; difficulty **1358** &middot; time limit **1s**

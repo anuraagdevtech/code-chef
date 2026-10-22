@@ -1,3 +1,5 @@
+[&larr; 466. Add to Subsequence](SUBSEQDIST.md) &middot; [Index](../../README.md)
+
 # 484. Bear and AB
 
 > CodeChef problem code [`ABREPEAT`](https://www.codechef.com/problems/ABREPEAT) &middot; difficulty **1754** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 485. Fair distribution](485-SUBS.md) &middot; [Index](README.md)
+
 # 486. Sort by swaps
 
 > [`SWPSRT1`](https://www.codechef.com/problems/SWPSRT1) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

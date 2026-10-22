@@ -1,3 +1,5 @@
+[&larr; 256. Cutting Pizza](256-CUTPIZ.md) &middot; [Index](README.md) &middot; [258. K-MEX &rarr;](258-KMEX.md)
+
 # 257. Counting Flags
 
 > [`FLAGS`](https://www.codechef.com/problems/FLAGS) &middot; difficulty **1446** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

@@ -1,3 +1,5 @@
+[&larr; 61. Self Defence Training](SELFDEF.md) &middot; [Index](../../README.md) &middot; [87. The Lead Game &rarr;](TLG.md)
+
 # 84. Minimum number of Flips
 
 > CodeChef problem code [`MINFLIPS`](https://www.codechef.com/problems/MINFLIPS) &middot; difficulty **781** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 204. Chef and Linear Chess](LINCHESS.md) &middot; [Index](../../README.md) &middot; [243. Cutting Pizza &rarr;](CUTPIZ.md)
+
 # 231. Decreasing Srrnmieeda
 
 > CodeChef problem code [`DECREM`](https://www.codechef.com/problems/DECREM) &middot; difficulty **1423** &middot; time limit **1s**

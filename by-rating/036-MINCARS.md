@@ -1,3 +1,5 @@
+[&larr; 035. Elections in Chefland](035-ELECTN.md) &middot; [Index](README.md) &middot; [037. Test Score &rarr;](037-CHEFSCORE.md)
+
 # 036. Minimum Cars required
 
 > [`MINCARS`](https://www.codechef.com/problems/MINCARS) &middot; difficulty **608** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

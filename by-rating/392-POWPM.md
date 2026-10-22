@@ -1,3 +1,5 @@
+[&larr; 391. Fire Escape Routes](391-FIRESC.md) &middot; [Index](README.md) &middot; [393. Gcd Queries &rarr;](393-GCDQ.md)
+
 # 392. Powered Parameters
 
 > [`POWPM`](https://www.codechef.com/problems/POWPM) &middot; difficulty **1673** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

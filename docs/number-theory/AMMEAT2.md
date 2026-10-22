@@ -1,3 +1,5 @@
+[&larr; 288. Catch the Thief](CATHIEF.md) &middot; [Index](../../README.md) &middot; [299. Non-Divisor Array &rarr;](DIVCOL.md)
+
 # 297. Andrew and the Meatballs again
 
 > CodeChef problem code [`AMMEAT2`](https://www.codechef.com/problems/AMMEAT2) &middot; difficulty **1597** &middot; time limit **1s**

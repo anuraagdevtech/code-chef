@@ -1,3 +1,5 @@
+[&larr; 354. Chef and Frogs](FROGV.md) &middot; [Index](../../README.md) &middot; [399. Max Out &rarr;](IOPC17C.md)
+
 # 385. Median of adjacent maximum numbers
 
 > CodeChef problem code [`MXMEDIAN`](https://www.codechef.com/problems/MXMEDIAN) &middot; difficulty **1523** &middot; time limit **2s**

@@ -1,3 +1,5 @@
+[&larr; 272. Cakewalk](272-CKWLK.md) &middot; [Index](README.md) &middot; [274. Chef and Numbers &rarr;](274-CHEFFED.md)
+
 # 273. Order by XOR
 
 > [`XOR_ORDER`](https://www.codechef.com/problems/XOR_ORDER) &middot; difficulty **1476** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

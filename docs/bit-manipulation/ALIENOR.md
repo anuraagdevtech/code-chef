@@ -1,3 +1,5 @@
+[&larr; 351. XOR with Subset](XORSUB.md) &middot; [Index](../../README.md) &middot; [426. Boxes &rarr;](BOX95.md)
+
 # 420. ALIEN-OR
 
 > CodeChef problem code [`ALIENOR`](https://www.codechef.com/problems/ALIENOR) &middot; difficulty **1639** &middot; time limit **1s**

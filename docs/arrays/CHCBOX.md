@@ -1,3 +1,5 @@
+[&larr; 453. Matchsticks](MSTICK.md) &middot; [Index](../../README.md) &middot; [470. Weird Subarrays &rarr;](WEIRDSUBARR.md)
+
 # 460. Box of Chocolates
 
 > CodeChef problem code [`CHCBOX`](https://www.codechef.com/problems/CHCBOX) &middot; difficulty **1730** &middot; time limit **1s**

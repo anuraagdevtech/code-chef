@@ -1,3 +1,5 @@
+[&larr; 434. Bon Appetit](434-FGFS.md) &middot; [Index](README.md) &middot; [436. Crushed Apples and a Balance Scale &rarr;](436-APP_BAL_SCA.md)
+
 # 435. Penalty Shoot-Out II
 
 > [`PSHOT`](https://www.codechef.com/problems/PSHOT) &middot; difficulty **1735** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

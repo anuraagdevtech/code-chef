@@ -1,3 +1,5 @@
+[Index](../../README.md) &middot; [211. Gift Shop and Coupon &rarr;](GFTSHP.md)
+
 # 126. Inside The Stadium
 
 > CodeChef problem code [`INSTDUM`](https://www.codechef.com/problems/INSTDUM) &middot; difficulty **895** &middot; time limit **1s**

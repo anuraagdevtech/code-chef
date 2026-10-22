@@ -1,3 +1,5 @@
+[&larr; 267. Password](267-PASSWD.md) &middot; [Index](README.md) &middot; [269. Dense Bracket Sequence &rarr;](269-DENSE.md)
+
 # 268. Approximately II
 
 > [`APPROX2`](https://www.codechef.com/problems/APPROX2) &middot; difficulty **1471** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

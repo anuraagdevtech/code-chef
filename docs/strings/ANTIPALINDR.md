@@ -1,3 +1,5 @@
+[&larr; 259. Correct Sentence](CORTSENT.md) &middot; [Index](../../README.md) &middot; [266. Harrenhal &rarr;](HHAL.md)
+
 # 264. Anti Palindrome
 
 > CodeChef problem code [`ANTIPALINDR`](https://www.codechef.com/problems/ANTIPALINDR) &middot; difficulty **1488** &middot; time limit **4.5s**

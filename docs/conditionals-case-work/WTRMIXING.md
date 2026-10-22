@@ -1,3 +1,5 @@
+[&larr; 32. Bus  Seat Numbering](SEATNUMBER.md) &middot; [Index](../../README.md) &middot; [65. Decrement OR Increment &rarr;](DECINC.md)
+
 # 55. Water Mixing
 
 > CodeChef problem code [`WTRMIXING`](https://www.codechef.com/problems/WTRMIXING) &middot; difficulty **694** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 109. Construct N](109-CONN.md) &middot; [Index](README.md) &middot; [111. Problem Category &rarr;](111-PROBCAT.md)
+
 # 110. Highest Divisor
 
 > [`HDIVISR`](https://www.codechef.com/problems/HDIVISR) &middot; difficulty **860** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 374. Number Hunt](374-NUMHUNT.md) &middot; [Index](README.md) &middot; [376. Exam Cheating &rarr;](376-EXAMCHT.md)
+
 # 375. ALIEN-OR
 
 > [`ALIENOR`](https://www.codechef.com/problems/ALIENOR) &middot; difficulty **1639** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

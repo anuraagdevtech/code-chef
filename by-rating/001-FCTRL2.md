@@ -1,3 +1,5 @@
+[Index](README.md) &middot; [002. Reverse The Number &rarr;](002-FLOW007.md)
+
 # 001. Small factorials
 
 > [`FCTRL2`](https://www.codechef.com/problems/FCTRL2) &middot; difficulty **420** &middot; time limit **0.235294s** &middot; 500 to 1000 difficulty rating (Level 1)

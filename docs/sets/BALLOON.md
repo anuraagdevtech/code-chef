@@ -1,3 +1,5 @@
+[&larr; 164. Programming Languages](PROGLANG.md) &middot; [Index](../../README.md) &middot; [182. Nobel Prize &rarr;](NOBEL.md)
+
 # 177. ICPC Balloons
 
 > CodeChef problem code [`BALLOON`](https://www.codechef.com/problems/BALLOON) &middot; difficulty **1205** &middot; time limit **0.5s**

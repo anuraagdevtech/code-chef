@@ -1,3 +1,5 @@
+[&larr; 420. Sum Product Segments](420-SUMPRODSEG.md) &middot; [Index](README.md) &middot; [422. Max Mex &rarr;](422-MAXMEX.md)
+
 # 421. Even Subset Xor
 
 > [`EVENXOR`](https://www.codechef.com/problems/EVENXOR) &middot; difficulty **1714** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

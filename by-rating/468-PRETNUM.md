@@ -1,3 +1,5 @@
+[&larr; 467. Chef and Wedding Arrangements](467-CHEFWED.md) &middot; [Index](README.md) &middot; [469. XOR with Subset &rarr;](469-XORSUB.md)
+
 # 468. Yet Another Cute Girl
 
 > [`PRETNUM`](https://www.codechef.com/problems/PRETNUM) &middot; difficulty **1850** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)

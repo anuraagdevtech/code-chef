@@ -1,3 +1,5 @@
+[&larr; 363. Non-Divisor Array](363-DIVCOL.md) &middot; [Index](README.md) &middot; [365. Zebra Crossing &rarr;](365-ZEBRA.md)
+
 # 364. Construct Array
 
 > [`CONSTRRAY`](https://www.codechef.com/problems/CONSTRRAY) &middot; difficulty **1624** &middot; time limit **2s** &middot; 1600 to 1800 difficulty problems (Level 3)

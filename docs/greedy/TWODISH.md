@@ -1,3 +1,5 @@
+[&larr; 160. The Two Dishes](MAX_DIFF.md) &middot; [Index](../../README.md) &middot; [175. Make them equal &rarr;](MAKEEQUAL.md)
+
 # 162. Two Dishes
 
 > CodeChef problem code [`TWODISH`](https://www.codechef.com/problems/TWODISH) &middot; difficulty **1140** &middot; time limit **0.5s**

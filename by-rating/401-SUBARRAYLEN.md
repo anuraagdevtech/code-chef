@@ -1,3 +1,5 @@
+[&larr; 400. Gritty Grid](400-GRITGRID.md) &middot; [Index](README.md) &middot; [402. Flu Shot Lineup &rarr;](402-FLUSHOT.md)
+
 # 401. Subarrays with length
 
 > [`SUBARRAYLEN`](https://www.codechef.com/problems/SUBARRAYLEN) &middot; difficulty **1691** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)

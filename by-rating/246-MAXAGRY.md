@@ -1,3 +1,5 @@
+[&larr; 245. Balanced and Unique Arrays](245-UNQEQ.md) &middot; [Index](README.md) &middot; [247. Permutation Xority &rarr;](247-PERMXORITY.md)
+
 # 246. Maximum Angriness
 
 > [`MAXAGRY`](https://www.codechef.com/problems/MAXAGRY) &middot; difficulty **1432** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

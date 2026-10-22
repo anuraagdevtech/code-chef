@@ -1,3 +1,5 @@
+[&larr; 345. Jon and Selina](SELINA.md) &middot; [Index](../../README.md) &middot; [347. XOR-ORED &rarr;](XORORED.md)
+
 # 346. Chef and Chefina
 
 > CodeChef problem code [`CHFNA`](https://www.codechef.com/problems/CHFNA) &middot; difficulty **1400** &middot; time limit **1s**

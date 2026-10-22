@@ -1,3 +1,5 @@
+[&larr; 187. Cops and the Thief Devu](187-COPS.md) &middot; [Index](README.md) &middot; [189. Chef and the Wildcard Matching &rarr;](189-TWOSTR.md)
+
 # 188. The Two Dishes
 
 > [`MAX_DIFF`](https://www.codechef.com/problems/MAX_DIFF) &middot; difficulty **1254** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

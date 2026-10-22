@@ -1,3 +1,5 @@
+[&larr; 347. XOR-ORED](XORORED.md) &middot; [Index](../../README.md) &middot; [349. XOR Engine &rarr;](ENGXOR.md)
+
 # 348. Maximum Damage
 
 > CodeChef problem code [`MAXDMGE`](https://www.codechef.com/problems/MAXDMGE) &middot; difficulty **1636** &middot; time limit **0.5 - 1s**

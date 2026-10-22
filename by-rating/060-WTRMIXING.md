@@ -1,3 +1,5 @@
+[&larr; 059. Valentine is Coming](059-VALENTINE.md) &middot; [Index](README.md) &middot; [061. Weights &rarr;](061-WGHTS.md)
+
 # 060. Water Mixing
 
 > [`WTRMIXING`](https://www.codechef.com/problems/WTRMIXING) &middot; difficulty **694** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

@@ -1,3 +1,5 @@
+[&larr; 075. Cyclic Quadrilateral](075-CYCLICQD.md) &middot; [Index](README.md) &middot; [077. Building Race &rarr;](077-BUILDINGRACE.md)
+
 # 076. Too many items
 
 > [`POLYBAGS`](https://www.codechef.com/problems/POLYBAGS) &middot; difficulty **738** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

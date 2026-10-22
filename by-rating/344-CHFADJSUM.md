@@ -1,3 +1,5 @@
+[&larr; 343. Odd Sum](343-ODDSUM.md) &middot; [Index](README.md) &middot; [345. Bouncing Ball &rarr;](345-BOUNCE_BALL.md)
+
 # 344. Chef And Adjacent Sums
 
 > [`CHFADJSUM`](https://www.codechef.com/problems/CHFADJSUM) &middot; difficulty **1604** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

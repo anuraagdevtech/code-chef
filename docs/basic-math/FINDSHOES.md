@@ -1,3 +1,5 @@
+[&larr; 38. Bath in Winters](BATH.md) &middot; [Index](../../README.md) &middot; [42. Mario and Bullet &rarr;](BULLET.md)
+
 # 39. Finding Shoes
 
 > CodeChef problem code [`FINDSHOES`](https://www.codechef.com/problems/FINDSHOES) &middot; difficulty **646** &middot; time limit **0.5s**

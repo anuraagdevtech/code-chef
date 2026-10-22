@@ -1,3 +1,5 @@
+[&larr; 296. The One On The Last Night](S06E06.md) &middot; [Index](../../README.md) &middot; [304. Positive array &rarr;](CIREQ.md)
+
 # 302. Chef And Adjacent Sums
 
 > CodeChef problem code [`CHFADJSUM`](https://www.codechef.com/problems/CHFADJSUM) &middot; difficulty **1604** &middot; time limit **1s**

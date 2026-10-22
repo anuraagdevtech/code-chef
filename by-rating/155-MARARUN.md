@@ -1,3 +1,5 @@
+[&larr; 154. Kitchen Timetable](154-KTTABLE.md) &middot; [Index](README.md) &middot; [156. La Liga &rarr;](156-COOK82A.md)
+
 # 155. Marathon
 
 > [`MARARUN`](https://www.codechef.com/problems/MARARUN) &middot; difficulty **955** &middot; time limit **0.5s** &middot; 500 to 1000 difficulty rating (Level 1)

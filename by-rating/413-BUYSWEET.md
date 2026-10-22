@@ -1,3 +1,5 @@
+[&larr; 412. Game on a Strip](412-ARRGAME.md) &middot; [Index](README.md) &middot; [414. Spreading Charges &rarr;](414-CHRGES.md)
+
 # 413. Buying Sweets
 
 > [`BUYSWEET`](https://www.codechef.com/problems/BUYSWEET) &middot; difficulty **1706** &middot; time limit **2s** &middot; 1600 to 1800 difficulty problems (Level 3)

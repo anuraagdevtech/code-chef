@@ -1,3 +1,5 @@
+[&larr; 245. Control the Pollution](SMOKE.md) &middot; [Index](../../README.md) &middot; [256. Digital clock &rarr;](ONOZ.md)
+
 # 254. Chef and Numbers
 
 > CodeChef problem code [`CHEFFED`](https://www.codechef.com/problems/CHEFFED) &middot; difficulty **1477** &middot; time limit **1s**

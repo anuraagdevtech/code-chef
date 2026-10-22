@@ -1,3 +1,5 @@
+[&larr; 293. Yet Another Constructive Problem](ORANDCON.md) &middot; [Index](../../README.md) &middot; [313. Missing a Point &rarr;](PTMSSNG.md)
+
 # 303. Consecutive Xor
 
 > CodeChef problem code [`XOR2`](https://www.codechef.com/problems/XOR2) &middot; difficulty **1611** &middot; time limit **1.5s**

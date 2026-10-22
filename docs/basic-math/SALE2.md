@@ -1,3 +1,5 @@
+[&larr; 91. The Cooler Dilemma 2](WATERCOOLER2.md) &middot; [Index](../../README.md) &middot; [96. The Preparations &rarr;](SUPCHEF.md)
+
 # 94. Buy 2 Get 1 Free
 
 > CodeChef problem code [`SALE2`](https://www.codechef.com/problems/SALE2) &middot; difficulty **821** &middot; time limit **1s**

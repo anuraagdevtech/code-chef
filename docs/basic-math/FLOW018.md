@@ -1,3 +1,5 @@
+[&larr; 75. Presents for Cheffina](PRESENTS.md) &middot; [Index](../../README.md) &middot; [78. Possible Victory &rarr;](T20MCH.md)
+
 # 76. Small Factorial
 
 > CodeChef problem code [`FLOW018`](https://www.codechef.com/problems/FLOW018) &middot; difficulty **700** &middot; time limit **1s**

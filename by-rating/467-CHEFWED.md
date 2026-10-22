@@ -1,3 +1,5 @@
+[&larr; 466. Forest Gathering](466-FORESTGA.md) &middot; [Index](README.md) &middot; [468. Yet Another Cute Girl &rarr;](468-PRETNUM.md)
+
 # 467. Chef and Wedding Arrangements
 
 > [`CHEFWED`](https://www.codechef.com/problems/CHEFWED) &middot; difficulty **1841** &middot; time limit **1.5s** &middot; Jump from 2* to 3* (Level 3)

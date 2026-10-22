@@ -1,3 +1,5 @@
+[&larr; 218. Pushpa ](PUSH7PA.md) &middot; [Index](../../README.md) &middot; [223. Array Halves &rarr;](ARRHALVES.md)
+
 # 219. Reversal Sorting
 
 > CodeChef problem code [`REVSORT`](https://www.codechef.com/problems/REVSORT) &middot; difficulty **1288** &middot; time limit **3.5s**

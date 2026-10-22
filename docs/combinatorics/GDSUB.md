@@ -1,3 +1,5 @@
+[&larr; 336. Chef In Infinite Plane](CHFPLN.md) &middot; [Index](../../README.md) &middot; [375. Nice Pairs  &rarr;](NPAIRS.md)
+
 # 356. Chef and Good Subsequences
 
 > CodeChef problem code [`GDSUB`](https://www.codechef.com/problems/GDSUB) &middot; difficulty **1999** &middot; time limit **2s**

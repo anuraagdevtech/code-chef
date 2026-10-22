@@ -1,3 +1,5 @@
+[&larr; 447. Lucky Palin](447-LUCKPAL.md) &middot; [Index](README.md) &middot; [449. Eugene and function &rarr;](449-KFUNC.md)
+
 # 448. Copy and Paste
 
 > [`NCOPIES`](https://www.codechef.com/problems/NCOPIES) &middot; difficulty **1745** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

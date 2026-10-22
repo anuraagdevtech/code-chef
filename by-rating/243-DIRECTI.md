@@ -1,3 +1,5 @@
+[&larr; 242. Parallel Processing](242-PLPROCESS.md) &middot; [Index](README.md) &middot; [244. Full Barrier Alchemist &rarr;](244-PIPSQUIK.md)
+
 # 243. Reversing directions
 
 > [`DIRECTI`](https://www.codechef.com/problems/DIRECTI) &middot; difficulty **1426** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

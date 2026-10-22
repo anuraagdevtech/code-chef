@@ -1,3 +1,5 @@
+[&larr; 390. Chef and Bulb Invention](CHFINVNT.md) &middot; [Index](../../README.md) &middot; [414. Three Numbers &rarr;](THREENUMBERS.md)
+
 # 396. Survive in ChocoLand
 
 > CodeChef problem code [`SURVIVE`](https://www.codechef.com/problems/SURVIVE) &middot; difficulty **1616** &middot; time limit **1s**

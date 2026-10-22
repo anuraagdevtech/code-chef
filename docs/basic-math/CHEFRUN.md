@@ -1,3 +1,5 @@
+[&larr; 120. Chef On Island](CCISLAND.md) &middot; [Index](../../README.md) &middot; [125. Chef and Profits &rarr;](CHFPROFIT.md)
+
 # 124. Secret Recipe
 
 > CodeChef problem code [`CHEFRUN`](https://www.codechef.com/problems/CHEFRUN) &middot; difficulty **888** &middot; time limit **1s**

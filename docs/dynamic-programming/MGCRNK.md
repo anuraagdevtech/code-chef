@@ -1,3 +1,5 @@
+[&larr; 357. The White Knight](E1.md) &middot; [Index](../../README.md) &middot; [359. Gravity Guy &rarr;](GRGUY.md)
+
 # 358. Magic Rankings
 
 > CodeChef problem code [`MGCRNK`](https://www.codechef.com/problems/MGCRNK) &middot; difficulty **1540** &middot; time limit **1.5s**

@@ -1,3 +1,5 @@
+[&larr; 330. A temple of Snakes](SNTEMPLE.md) &middot; [Index](../../README.md) &middot; [352. Count Subarrays &rarr;](SUBINC.md)
+
 # 343. ChefTown Parade
 
 > CodeChef problem code [`CHEFTOWN`](https://www.codechef.com/problems/CHEFTOWN) &middot; difficulty **1882** &middot; time limit **1s**

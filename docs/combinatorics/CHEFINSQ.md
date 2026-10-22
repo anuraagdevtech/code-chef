@@ -1,3 +1,5 @@
+[&larr; 403. Bitwise Tuples](BITTUP.md) &middot; [Index](../../README.md) &middot; [416. The Vowel Matrix &rarr;](VOWMTRX.md)
+
 # 407. Chef and Interesting Subsequences 
 
 > CodeChef problem code [`CHEFINSQ`](https://www.codechef.com/problems/CHEFINSQ) &middot; difficulty **1646** &middot; time limit **1s**

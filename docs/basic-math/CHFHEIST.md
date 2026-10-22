@@ -1,3 +1,5 @@
+[&larr; 206. Playing with Matches](MATCHES.md) &middot; [Index](../../README.md) &middot; [230. Equality &rarr;](EQUALITY.md)
+
 # 224. Bella ciao
 
 > CodeChef problem code [`CHFHEIST`](https://www.codechef.com/problems/CHFHEIST) &middot; difficulty **1410** &middot; time limit **0.5s**

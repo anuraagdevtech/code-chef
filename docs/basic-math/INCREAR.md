@@ -1,3 +1,5 @@
+[&larr; 102. Circular Track](LOOP.md) &middot; [Index](../../README.md) &middot; [107. Summer Heat &rarr;](COCONUT.md)
+
 # 106. Equal Integers
 
 > CodeChef problem code [`INCREAR`](https://www.codechef.com/problems/INCREAR) &middot; difficulty **852** &middot; time limit **1s**

@@ -1,3 +1,5 @@
+[&larr; 332. List of Lists](332-LISTLIST.md) &middot; [Index](README.md) &middot; [334. Maximal crosses &rarr;](334-MAXCROSS.md)
+
 # 333. Gravity Guy
 
 > [`GRGUY`](https://www.codechef.com/problems/GRGUY) &middot; difficulty **1568** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

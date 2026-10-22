@@ -1,3 +1,5 @@
+[&larr; 271. Chef and Three Dogs](271-CHDOGS.md) &middot; [Index](README.md) &middot; [273. Order by XOR &rarr;](273-XOR_ORDER.md)
+
 # 272. Cakewalk
 
 > [`CKWLK`](https://www.codechef.com/problems/CKWLK) &middot; difficulty **1474** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

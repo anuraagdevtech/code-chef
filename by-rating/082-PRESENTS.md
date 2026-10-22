@@ -1,3 +1,5 @@
+[&larr; 081. Endless Appetizers](081-MOZZ.md) &middot; [Index](README.md) &middot; [083. Dracula Eats &rarr;](083-CHEAT.md)
+
 # 082. Presents for Cheffina
 
 > [`PRESENTS`](https://www.codechef.com/problems/PRESENTS) &middot; difficulty **757** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

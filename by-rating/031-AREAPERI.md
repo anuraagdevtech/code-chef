@@ -1,3 +1,5 @@
+[&larr; 030. Nearest Exit](030-NEARESTEXIT.md) &middot; [Index](README.md) &middot; [032. Sasta Shark Tank &rarr;](032-SST.md)
+
 # 031. Area OR Perimeter
 
 > [`AREAPERI`](https://www.codechef.com/problems/AREAPERI) &middot; difficulty **590** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

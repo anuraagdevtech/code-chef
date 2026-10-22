@@ -1,3 +1,5 @@
+[&larr; 327. Sticks and Rectangles](327-RECSTI.md) &middot; [Index](README.md) &middot; [329. Chef and Sign Sequences &rarr;](329-CHEFSIGN.md)
+
 # 328. Increasing Decreasing
 
 > [`INCRDEC`](https://www.codechef.com/problems/INCRDEC) &middot; difficulty **1557** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

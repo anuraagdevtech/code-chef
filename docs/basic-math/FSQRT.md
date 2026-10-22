@@ -1,3 +1,5 @@
+[&larr; 45. Chef and Water Bottles](CHEFBOTTLE.md) &middot; [Index](../../README.md) &middot; [48. The Last Levels &rarr;](LASTLEVELS.md)
+
 # 47. Finding Square Roots
 
 > CodeChef problem code [`FSQRT`](https://www.codechef.com/problems/FSQRT) &middot; difficulty **420** &middot; time limit **1s**

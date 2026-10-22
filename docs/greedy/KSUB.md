@@ -1,3 +1,5 @@
+[&larr; 427. Stamps 100](S100.md) &middot; [Index](../../README.md) &middot; [431. Maximum Median Matching &rarr;](MEDMAXMATCH.md)
+
 # 430. K-Subarrays
 
 > CodeChef problem code [`KSUB`](https://www.codechef.com/problems/KSUB) &middot; difficulty **1663** &middot; time limit **1s**

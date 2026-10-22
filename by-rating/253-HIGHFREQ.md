@@ -1,3 +1,5 @@
+[&larr; 252. Chef and Coins Game](252-CHCOINSG.md) &middot; [Index](README.md) &middot; [254. Sleepy Chef &rarr;](254-FILL01.md)
+
 # 253. High Frequency
 
 > [`HIGHFREQ`](https://www.codechef.com/problems/HIGHFREQ) &middot; difficulty **1443** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

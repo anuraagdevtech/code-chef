@@ -1,3 +1,5 @@
+[&larr; 441. Weird Subarrays](441-WEIRDSUBARR.md) &middot; [Index](README.md) &middot; [443. Fair Distribution &rarr;](443-FAIR_DISTRIB.md)
+
 # 442. Xor and Multiply
 
 > [`XORMUL`](https://www.codechef.com/problems/XORMUL) &middot; difficulty **1739** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

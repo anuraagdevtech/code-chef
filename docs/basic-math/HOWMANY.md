@@ -1,3 +1,5 @@
+[&larr; 125. Chef and Profits](CHFPROFIT.md) &middot; [Index](../../README.md) &middot; [137. Chef and Pairing Slippers &rarr;](CHEFSLP.md)
+
 # 133. HOW MANY DIGITS DO I HAVE
 
 > CodeChef problem code [`HOWMANY`](https://www.codechef.com/problems/HOWMANY) &middot; difficulty **520** &middot; time limit **1s**

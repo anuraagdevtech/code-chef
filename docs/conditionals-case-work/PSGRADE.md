@@ -1,3 +1,5 @@
+[&larr; 123. Utkarsh and Placement tests](UTKPLC.md) &middot; [Index](../../README.md) &middot; [136. Shoe Fit &rarr;](SHOEFIT.md)
+
 # 129. Passing Marks
 
 > CodeChef problem code [`PSGRADE`](https://www.codechef.com/problems/PSGRADE) &middot; difficulty **904** &middot; time limit **0.5s**

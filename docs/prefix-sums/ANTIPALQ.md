@@ -1,3 +1,5 @@
+[&larr; 384. Dense Bracket Sequence](DENSE.md) &middot; [Index](../../README.md) &middot; [440. Mystical Numbers &rarr;](XORGAND.md)
+
 # 418. Anti-Palindrome Queries
 
 > CodeChef problem code [`ANTIPALQ`](https://www.codechef.com/problems/ANTIPALQ) &middot; difficulty **1688** &middot; time limit **1.5s**

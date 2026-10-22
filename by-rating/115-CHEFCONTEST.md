@@ -1,3 +1,5 @@
+[&larr; 114. Badminton Serves](114-BADMINTON.md) &middot; [Index](README.md) &middot; [116. Group Assignment &rarr;](116-GROUPASSGN.md)
+
 # 115. Chef and Contest
 
 > [`CHEFCONTEST`](https://www.codechef.com/problems/CHEFCONTEST) &middot; difficulty **872** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

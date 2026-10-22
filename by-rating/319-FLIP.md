@@ -1,3 +1,5 @@
+[&larr; 318. Sheokand and Number](318-SHKNUM.md) &middot; [Index](README.md) &middot; [320. Javelin Qualification &rarr;](320-JAVELIN.md)
+
 # 319. Flip the String
 
 > [`FLIP`](https://www.codechef.com/problems/FLIP) &middot; difficulty **1538** &middot; time limit **1.5s** &middot; 1400 to 1600 difficulty problems (Level 2)

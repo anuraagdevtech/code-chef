@@ -1,3 +1,5 @@
+[&larr; 278. When to take medicine](MEDIC.md) &middot; [Index](../../README.md) &middot; [402. UEFA Champions League &rarr;](UCL.md)
+
 # 334. Sudhanva and Books
 
 > CodeChef problem code [`SUDBOOKS`](https://www.codechef.com/problems/SUDBOOKS) &middot; difficulty **1300** &middot; time limit **1s**

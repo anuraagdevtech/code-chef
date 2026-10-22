@@ -1,3 +1,5 @@
+[&larr; 139. Make all equal using Pairs](139-PAIREQ.md) &middot; [Index](README.md) &middot; [141. Hoop Jump &rarr;](141-HOOPS.md)
+
 # 140. Chef and Pairing Slippers
 
 > [`CHEFSLP`](https://www.codechef.com/problems/CHEFSLP) &middot; difficulty **930** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

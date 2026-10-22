@@ -1,3 +1,5 @@
+[&larr; 190. Hiring Test](190-HIRETEST.md) &middot; [Index](README.md) &middot; [192. Gasoline Introduction &rarr;](192-BEGGASOL.md)
+
 # 191. Sticks
 
 > [`STICKS`](https://www.codechef.com/problems/STICKS) &middot; difficulty **1261** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

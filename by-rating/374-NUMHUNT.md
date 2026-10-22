@@ -1,3 +1,5 @@
+[&larr; 373. Concat Sort](373-CONCATSORT.md) &middot; [Index](README.md) &middot; [375. ALIEN-OR &rarr;](375-ALIENOR.md)
+
 # 374. Number Hunt
 
 > [`NUMHUNT`](https://www.codechef.com/problems/NUMHUNT) &middot; difficulty **1638** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

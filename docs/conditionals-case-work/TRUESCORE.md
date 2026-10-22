@@ -1,3 +1,5 @@
+[&larr; 17. Car or Bike](TRAVELFAST.md) &middot; [Index](../../README.md) &middot; [19. The Three Topics &rarr;](THREETOPICS.md)
+
 # 18. Is the Score Consistent
 
 > CodeChef problem code [`TRUESCORE`](https://www.codechef.com/problems/TRUESCORE) &middot; difficulty **572** &middot; time limit **1s**

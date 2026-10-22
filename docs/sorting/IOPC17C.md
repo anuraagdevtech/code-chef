@@ -1,3 +1,5 @@
+[&larr; 385. Median of adjacent maximum numbers](MXMEDIAN.md) &middot; [Index](../../README.md) &middot; [405. Concat Sort &rarr;](CONCATSORT.md)
+
 # 399. Max Out
 
 > CodeChef problem code [`IOPC17C`](https://www.codechef.com/problems/IOPC17C) &middot; difficulty **1621** &middot; time limit **1s**

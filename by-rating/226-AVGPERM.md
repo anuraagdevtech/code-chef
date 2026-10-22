@@ -1,3 +1,5 @@
+[&larr; 225. Chef and Chefina](225-CHFNA.md) &middot; [Index](README.md) &middot; [227. Hotel Bytelandia &rarr;](227-HOTEL.md)
+
 # 226. Average Permutation
 
 > [`AVGPERM`](https://www.codechef.com/problems/AVGPERM) &middot; difficulty **1401** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

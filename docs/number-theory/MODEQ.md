@@ -1,3 +1,5 @@
+[&larr; 308. Alternating Work Days](ALTER.md) &middot; [Index](../../README.md) &middot; [353. Count K-Primes &rarr;](KPRIME.md)
+
 # 332. Modular Equation
 
 > CodeChef problem code [`MODEQ`](https://www.codechef.com/problems/MODEQ) &middot; difficulty **1761** &middot; time limit **1s**

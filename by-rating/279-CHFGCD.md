@@ -1,3 +1,5 @@
+[&larr; 278. Distinct Pair Sums](278-MANYSUMS.md) &middot; [Index](README.md) &middot; [280. Digital clock &rarr;](280-ONOZ.md)
+
 # 279. Chef and GCD
 
 > [`CHFGCD`](https://www.codechef.com/problems/CHFGCD) &middot; difficulty **1481** &middot; time limit **0.5s** &middot; Jump from 2* to 3* (Level 3)

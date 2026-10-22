@@ -1,3 +1,5 @@
+[&larr; 361. W String](WSTRING.md) &middot; [Index](../../README.md) &middot; [384. Dense Bracket Sequence &rarr;](DENSE.md)
+
 # 369. Gcd Queries
 
 > CodeChef problem code [`GCDQ`](https://www.codechef.com/problems/GCDQ) &middot; difficulty **1674** &middot; time limit **3.5s**

@@ -1,3 +1,5 @@
+[&larr; 265. Chef Goes to the Cinema](CO92SUBW.md) &middot; [Index](../../README.md) &middot; [371. Guessing Game &rarr;](GUESS.md)
+
 # 275. Chef Drinks Coke
 
 > CodeChef problem code [`COKE`](https://www.codechef.com/problems/COKE) &middot; difficulty **1511** &middot; time limit **1s**

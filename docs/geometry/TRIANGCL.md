@@ -1,3 +1,5 @@
+[&larr; 108. Area OR Perimeter](AREAPERI.md) &middot; [Index](../../README.md) &middot; [252. Chef and Three Dogs &rarr;](CHDOGS.md)
+
 # 247. Triangle Classification
 
 > CodeChef problem code [`TRIANGCL`](https://www.codechef.com/problems/TRIANGCL) &middot; difficulty **1462** &middot; time limit **1s**

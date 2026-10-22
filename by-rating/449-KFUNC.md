@@ -1,3 +1,5 @@
+[&larr; 448. Copy and Paste](448-NCOPIES.md) &middot; [Index](README.md) &middot; [450. Same Parity Swaps in Binary Strings &rarr;](450-MAX01EVSWP.md)
+
 # 449. Eugene and function
 
 > [`KFUNC`](https://www.codechef.com/problems/KFUNC) &middot; difficulty **1746** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

@@ -1,3 +1,5 @@
+[&larr; 007. Exams](007-EXAMCHEF.md) &middot; [Index](README.md) &middot; [009. Decrement OR Increment &rarr;](009-DECINC.md)
+
 # 008. Chef And Operators
 
 > [`CHOPRT`](https://www.codechef.com/problems/CHOPRT) &middot; difficulty **520** &middot; time limit **1s** &middot; 500 to 1000 difficulty rating (Level 1)

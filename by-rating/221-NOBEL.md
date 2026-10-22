@@ -1,3 +1,5 @@
+[&larr; 220. Chocolate Monger](220-CM164364.md) &middot; [Index](README.md) &middot; [222. Make it Divisible &rarr;](222-MAKEDIV3.md)
+
 # 221. Nobel Prize
 
 > [`NOBEL`](https://www.codechef.com/problems/NOBEL) &middot; difficulty **1372** &middot; time limit **1s** &middot; Level up from 1* to 2* (Level 2)

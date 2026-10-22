@@ -1,3 +1,5 @@
+[&larr; 15. Count the Notebooks](NOTEBOOK.md) &middot; [Index](../../README.md) &middot; [20. Monopoly &rarr;](MONOPOLY2.md)
+
 # 16. Chef and Candies
 
 > CodeChef problem code [`CHEFCAND`](https://www.codechef.com/problems/CHEFCAND) &middot; difficulty **570** &middot; time limit **0.5s**

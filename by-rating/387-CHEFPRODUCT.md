@@ -1,3 +1,5 @@
+[&larr; 386. OR Matrix](386-ORMATRIX.md) &middot; [Index](README.md) &middot; [388. K-Subarrays &rarr;](388-KSUB.md)
+
 # 387. Chef Product
 
 > [`CHEFPRODUCT`](https://www.codechef.com/problems/CHEFPRODUCT) &middot; difficulty **1658** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)

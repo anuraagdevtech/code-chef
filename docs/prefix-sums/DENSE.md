@@ -1,3 +1,5 @@
+[&larr; 369. Gcd Queries](GCDQ.md) &middot; [Index](../../README.md) &middot; [418. Anti-Palindrome Queries &rarr;](ANTIPALQ.md)
+
 # 384. Dense Bracket Sequence
 
 > CodeChef problem code [`DENSE`](https://www.codechef.com/problems/DENSE) &middot; difficulty **1472** &middot; time limit **2.5s**

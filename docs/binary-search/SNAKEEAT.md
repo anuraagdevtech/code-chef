@@ -1,3 +1,5 @@
+[&larr; 327. Forest Gathering](FORESTGA.md) &middot; [Index](../../README.md) &middot; [331. Squirrel and chestnut &rarr;](SQUIRREL.md)
+
 # 329. Snake Eating
 
 > CodeChef problem code [`SNAKEEAT`](https://www.codechef.com/problems/SNAKEEAT) &middot; difficulty **1940** &middot; time limit **2s**

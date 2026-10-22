@@ -1,3 +1,5 @@
+[&larr; 469. Pokemon Battles](PBATTLE.md) &middot; [Index](../../README.md)
+
 # 473. Army Training
 
 > CodeChef problem code [`ARMTRN`](https://www.codechef.com/problems/ARMTRN) &middot; difficulty **1742** &middot; time limit **1.5s**

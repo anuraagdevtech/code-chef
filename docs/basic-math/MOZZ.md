@@ -1,3 +1,5 @@
+[&larr; 72. Building Race](BUILDINGRACE.md) &middot; [Index](../../README.md) &middot; [75. Presents for Cheffina &rarr;](PRESENTS.md)
+
 # 74. Endless Appetizers
 
 > CodeChef problem code [`MOZZ`](https://www.codechef.com/problems/MOZZ) &middot; difficulty **752** &middot; time limit **1s**

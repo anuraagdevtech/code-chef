@@ -1,3 +1,5 @@
+[&larr; 429. Gritty Grid](GRITGRID.md) &middot; [Index](../../README.md) &middot; [448. Ceiling Sum &rarr;](CEILSUM.md)
+
 # 439. Average Gift
 
 > CodeChef problem code [`AVGGIFT`](https://www.codechef.com/problems/AVGGIFT) &middot; difficulty **1701** &middot; time limit **1.5s**

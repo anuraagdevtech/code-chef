@@ -1,3 +1,5 @@
+[&larr; 376. Cakewalk](CKWLK.md) &middot; [Index](../../README.md) &middot; [410. Find eX &rarr;](FIND_X.md)
+
 # 395. Chef And The Hiring Event
 
 > CodeChef problem code [`CHEARMY`](https://www.codechef.com/problems/CHEARMY) &middot; difficulty **1613** &middot; time limit **1s**

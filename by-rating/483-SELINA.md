@@ -1,3 +1,5 @@
+[&larr; 482. Stable Quick Sort](482-QCKSRT2.md) &middot; [Index](README.md) &middot; [484. Sort Checker &rarr;](484-SRTCHK.md)
+
 # 483. Jon and Selina
 
 > [`SELINA`](https://www.codechef.com/problems/SELINA) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)

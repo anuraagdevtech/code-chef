@@ -1,3 +1,5 @@
+[&larr; 280. Digital clock](280-ONOZ.md) &middot; [Index](README.md) &middot; [282. Jogging &rarr;](282-JOGGING.md)
+
 # 281. Alternating Divisibility
 
 > [`ALTERNATEDIV`](https://www.codechef.com/problems/ALTERNATEDIV) &middot; difficulty **1483** &middot; time limit **1s** &middot; 1400 to 1600 difficulty problems (Level 2)

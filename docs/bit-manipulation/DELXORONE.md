@@ -1,3 +1,5 @@
+[&larr; 273. Equal by XORing](EQBYXOR.md) &middot; [Index](../../README.md) &middot; [281. Positive or Negative Subarrays &rarr;](POSITNEG.md)
+
 # 276. One-XOR Deletions
 
 > CodeChef problem code [`DELXORONE`](https://www.codechef.com/problems/DELXORONE) &middot; difficulty **1516** &middot; time limit **2.5s**
