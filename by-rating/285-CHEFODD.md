@@ -131,7 +131,7 @@ main()
 | 5 | 2 | 3 | $5 \geq 4$ ✓ | $3$ odd vs $2$ even **✗** | `NO` |
 | 14 | 5 | 7 | $14 \geq 10$ ✓ | $7$ odd, $5$ odd ✓ | `YES` |
 
-For the second row, five parts each take an odd number of the seven odds — for instance three parts with one odd each and two with… in fact $1{+}1{+}1{+}1{+}3 = 7$ works.
+For the second row, the seven odds split across five parts with an odd count each — for instance $1 + 1 + 1 + 1 + 3 = 7$ — and the seven evens pad the parts out to size $2$ or more.
 
 ---
 

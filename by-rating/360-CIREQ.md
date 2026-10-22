@@ -159,7 +159,7 @@ Fourth sample: $A = 1, 2, 2, 4, 5$.
 | 4 | 4 | 1 |
 | 5 | 5 | 1 |
 
-Output `2`: the three values at most $2$ cannot all fit in the two low positions of one array — for instance $[1, 2]$ and $[2, 4, 5]$ wait, $[2,4,5]$ needs $2 \geq 1$, $4 \geq 2$, $5 \geq 3$ ✓, and $[1,2]$ needs $1 \geq 1$, $2 \geq 2$ ✓.
+Output `2`: the three values at most $2$ cannot all fit in the two low positions of a single array. A valid pair of arrays is $[1, 2]$ and $[2, 4, 5]$ — checking the first, $1 \geq 1$ and $2 \geq 2$; and the second, $2 \geq 1$, $4 \geq 2$, $5 \geq 3$.
 
 ---
 
