@@ -17,3 +17,24 @@ The answer is therefore always a power of two — the MEX jumps from $2^t$ strai
 The samples trace the jumps. $X = 0$ forces the array $[0]$ alone, so the MEX is $1$. $X = 1$ allows $\{0,1\}$ with OR $1$, so $2$; $X = 2$ cannot afford $\{0,1,2\}$, whose OR is $3$, so it stays at $2$. And $X = 5$ affords $\{0,1,2,3\}$ with OR $3$ but not $\{0,\ldots,4\}$ with OR $7$, giving $4$.
 
 Note the elements need not be distinct or bounded individually — only their OR is constrained — which is why no other construction can do better.
+
+## Edge cases
+
+- **Achieving MEX $= m$ forces the array to contain $0, 1, \dots, m-1$**, whose OR is unavoidable — so the question is the largest $m$ with $\mathrm{OR}(0 \dots m-1) \leq X$.
+- **That OR has a closed form**: $\mathrm{OR}(0 \dots m-1) = 2^{\mathrm{bitlen}(m-1)} - 1$, all ones up to the top bit of $m-1$. So it jumps only at powers of two, which makes the answer always a power of two.
+- **Extra elements never help.** Adding anything beyond $0 \dots m-1$ can only raise the OR, so the optimal array is exactly that prefix.
+- **$X = 0$** forces the array to be all zeros, giving MEX $1$ — the smallest possible answer, and the reason the formula uses $X+1$.
+- **$X$ just below a power of two minus one** is the tight case: $X = 2$ still only allows $\{0, 1\}$, because adding $2$ pushes the OR to $3$.
+- **The expression $2^{\mathrm{bitlen}(X+1) - 1}$** is the largest power of two at most $X+1$, which is exactly that largest $m$.
+- **$X$ up to $10^9$** with constant work per case.
+
+## Dry run
+
+| $X$ | largest prefix $0 \dots m-1$ with OR $\leq X$ | its OR | answer |
+|---:|---|---:|---:|
+| 0 | $\{0\}$ | 0 | `1` |
+| 1 | $\{0,1\}$ | 1 | `2` |
+| 2 | $\{0,1\}$ | 1 | `2` |
+| 5 | $\{0,1,2,3\}$ | 3 | `4` |
+
+For $X = 5$, extending to $\{0,\dots,4\}$ would give an OR of $7 > 5$.

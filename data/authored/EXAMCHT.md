@@ -19,3 +19,26 @@ The sign does not matter, since $p \mid (A-B)$ and $p \mid (B-A)$ are the same c
 The sample has $A = 2$ and $B = 6$, so $|A-B| = 4$ with divisors $1, 2, 4$, giving $3$. Checking $p = 4$: roll $2$ gets set $1 \bmod 4 = 1$ and roll $6$ gets set $5 \bmod 4 = 1$ — the same. But $p = 3$ fails: sets $1$ and $2$.
 
 Note every difference has $p = 1$ among its divisors, so with $A \neq B$ the answer is at least $1$ — a single question set is always shared.
+
+## Edge cases
+
+- **Same set means $(A-1) \equiv (B-1) \pmod p$**, which simplifies to $p \mid (A - B)$ — the $-1$ offsets cancel, so the answer is just the divisor count of the difference.
+- **Equal roll numbers would make every $p$ work**, giving infinitely many; the statement's distinctness makes this unreachable, but the `-1` guard keeps the division safe.
+- **Divisors are counted in pairs up to the square root**, with the perfect-square case counted once — forgetting that doubles the answer for a square difference.
+- **The sign of $A - B$ is irrelevant**, hence the absolute value.
+- **$p = 1$ always counts**: with a single set everyone gets the same questions.
+- **$p$ may exceed both roll numbers** — any divisor of the gap qualifies, including the gap itself.
+- **$A, B \leq 10^8$**, so the trial loop runs to $10^4$ per case with $T \leq 100$.
+
+## Dry run
+
+Sample: $A = 2$, $B = 6$, so the gap is $4$.
+
+| $p$ | divides 4? | Ram's set $(2-1)\%p$ | Shyam's set $(6-1)\%p$ |
+|---:|:---:|---:|---:|
+| 1 | yes | 0 | 0 |
+| 2 | yes | 1 | 1 |
+| 3 | no | 1 | 2 |
+| 4 | yes | 1 | 1 |
+
+Three valid values of $p$, so the output is `3`.

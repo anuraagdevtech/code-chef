@@ -6,7 +6,7 @@
 |---|---|
 | **Topic** | Number Theory |
 | **Technique** | Size feasibility from a square bound and a parity |
-| **Time** | $O(\sqrt[2]{N})$-free, $O(1)$ per test case |
+| **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |
 | **Roadmap course** | 1600 to 1800 difficulty problems (Level 3) |
 
@@ -102,7 +102,7 @@ main()
 
 ## Complexity
 
-- **Time:** $O(\sqrt[2]{N})$-free, $O(1)$ per test case
+- **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
 > CodeChef tags: `Algorithms`, `Searching`

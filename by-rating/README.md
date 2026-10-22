@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **373 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **387 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -16,7 +16,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 31 | Greedy (22) |
+| [1600&ndash;1799](#16001799) | 120 | 45 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
@@ -430,20 +430,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 371 | [XOR with smallest element](371-SMALLXOR.md) `SMALLXOR` | 1635 | Heaps | Detecting the two-cycle that ends the process | yes |
 | 372 | [Maximum Damage](372-MAXDMGE.md) `MAXDMGE` | 1636 | Bit Manipulation | AND is monotone, so only adjacent pairs matter | yes |
 | 373 | [Concat Sort](373-CONCATSORT.md) `CONCATSORT` | 1637 | Sorting | Counting descents in the sorted order's position sequence | yes |
-| 374 | [Number Hunt](374-NUMHUNT.md) `NUMHUNT` | 1638 | Number Theory | Product of the two smallest admissible primes | &ndash; |
-| 375 | [ALIEN-OR](375-ALIENOR.md) `ALIENOR` | 1639 | Bit Manipulation | Single-bit values are necessary and sufficient | &ndash; |
-| 376 | [Exam Cheating](376-EXAMCHT.md) `EXAMCHT` | 1639 | Number Theory | Counting divisors of a difference | &ndash; |
-| 377 | [Charges](377-CHARGES.md) `CHARGES` | 1645 | Arrays | Local update of an adjacency count | &ndash; |
-| 378 | [Chef and Interesting Subsequences ](378-CHEFINSQ.md) `CHEFINSQ` | 1646 | Combinatorics | Choosing among the tied boundary value | &ndash; |
-| 379 | [Maximum Median Matching](379-MEDMAXMATCH.md) `MEDMAXMATCH` | 1647 | Greedy | Opposite pairing of the top halves | &ndash; |
-| 380 | [Range Assign, Number of Distinct Elements Minimize](380-RANGEASSIGN.md) `RANGEASSIGN` | 1648 | Conditionals & Case Work | Fixed endpoints bound what the operation can reach | &ndash; |
-| 381 | [Minimise Maximum Subarray Sum](381-MINIMISEMAX.md) `MINIMISEMAX` | 1649 | Greedy | Two independent lower bounds that are jointly attainable | &ndash; |
-| 382 | [MEX-OR](382-MEXOR.md) `MEXOR` | 1650 | Bit Manipulation | OR of a prefix of the integers | &ndash; |
-| 383 | [Find eX](383-FIND_X.md) `FIND_X` | 1651 | Number Theory | Shared remainder forces a multiple of the LCM | &ndash; |
-| 384 | [Permutation and Palindrome](384-PERMPAL.md) `PERMPAL` | 1651 | Strings | Pairing equal letters inward from both ends | &ndash; |
-| 385 | [Frequency Array Retrieval](385-FREQARRRET.md) `FREQARRRET` | 1654 | Greedy | Lexicographic labelling of equal-frequency groups | &ndash; |
-| 386 | [OR Matrix](386-ORMATRIX.md) `ORMATRIX` | 1656 | Arrays | Case analysis on the nearest reachable one | &ndash; |
-| 387 | [Chef Product](387-CHEFPRODUCT.md) `CHEFPRODUCT` | 1658 | Number Theory | Size feasibility from a square bound and a parity | &ndash; |
+| 374 | [Number Hunt](374-NUMHUNT.md) `NUMHUNT` | 1638 | Number Theory | Product of the two smallest admissible primes | yes |
+| 375 | [ALIEN-OR](375-ALIENOR.md) `ALIENOR` | 1639 | Bit Manipulation | Single-bit values are necessary and sufficient | yes |
+| 376 | [Exam Cheating](376-EXAMCHT.md) `EXAMCHT` | 1639 | Number Theory | Counting divisors of a difference | yes |
+| 377 | [Charges](377-CHARGES.md) `CHARGES` | 1645 | Arrays | Local update of an adjacency count | yes |
+| 378 | [Chef and Interesting Subsequences ](378-CHEFINSQ.md) `CHEFINSQ` | 1646 | Combinatorics | Choosing among the tied boundary value | yes |
+| 379 | [Maximum Median Matching](379-MEDMAXMATCH.md) `MEDMAXMATCH` | 1647 | Greedy | Opposite pairing of the top halves | yes |
+| 380 | [Range Assign, Number of Distinct Elements Minimize](380-RANGEASSIGN.md) `RANGEASSIGN` | 1648 | Conditionals & Case Work | Fixed endpoints bound what the operation can reach | yes |
+| 381 | [Minimise Maximum Subarray Sum](381-MINIMISEMAX.md) `MINIMISEMAX` | 1649 | Greedy | Two independent lower bounds that are jointly attainable | yes |
+| 382 | [MEX-OR](382-MEXOR.md) `MEXOR` | 1650 | Bit Manipulation | OR of a prefix of the integers | yes |
+| 383 | [Find eX](383-FIND_X.md) `FIND_X` | 1651 | Number Theory | Shared remainder forces a multiple of the LCM | yes |
+| 384 | [Permutation and Palindrome](384-PERMPAL.md) `PERMPAL` | 1651 | Strings | Pairing equal letters inward from both ends | yes |
+| 385 | [Frequency Array Retrieval](385-FREQARRRET.md) `FREQARRRET` | 1654 | Greedy | Lexicographic labelling of equal-frequency groups | yes |
+| 386 | [OR Matrix](386-ORMATRIX.md) `ORMATRIX` | 1656 | Arrays | Case analysis on the nearest reachable one | yes |
+| 387 | [Chef Product](387-CHEFPRODUCT.md) `CHEFPRODUCT` | 1658 | Number Theory | Size feasibility from a square bound and a parity | yes |
 | 388 | [K-Subarrays](388-KSUB.md) `KSUB` | 1663 | Greedy | Earliest cut maximises the number of GCD-$G$ pieces | &ndash; |
 | 389 | [The Optimal Pairs](389-OPTPAIRS.md) `OPTPAIRS` | 1666 | Number Theory | The minimum is always N, attained by a divisor family | &ndash; |
 | 390 | [Chef and Frogs](390-FROGV.md) `FROGV` | 1668 | Sorting | Connected components from gaps in sorted order | &ndash; |

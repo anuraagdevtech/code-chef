@@ -518,7 +518,7 @@ The roadmap headline counts **502 solved entries**, but that sums a per-course c
 | 395 | [Chef And The Hiring Event](docs/number-theory/CHEARMY.md) | 1613 | Product expansion for parity, then base-5 indexing | $O(\log K)$ per test case |
 | 410 | [Find eX](docs/number-theory/FIND_X.md) | 1651 | Shared remainder forces a multiple of the LCM | $O(\log \min(B,D))$ per test case |
 | 419 | [Number Hunt](docs/number-theory/NUMHUNT.md) | 1638 | Product of the two smallest admissible primes | $O(g \log^3 X)$ per test case, where $g$ is the local prime gap |
-| 424 | [Chef Product](docs/number-theory/CHEFPRODUCT.md) | 1658 | Size feasibility from a square bound and a parity | $O(\sqrt[2]{N})$-free, $O(1)$ per test case |
+| 424 | [Chef Product](docs/number-theory/CHEFPRODUCT.md) | 1658 | Size feasibility from a square bound and a parity | $O(1)$ per test case |
 | 434 | [The Optimal Pairs](docs/number-theory/OPTPAIRS.md) | 1666 | The minimum is always N, attained by a divisor family | $O(\sqrt{N})$ per test case |
 | 435 | [Array sorting](docs/number-theory/ARRSORT.md) | 1681 | GCD of the displacements | $O(N \log N)$ per test case |
 | 437 | [Exam Cheating](docs/number-theory/EXAMCHT.md) | 1639 | Counting divisors of a difference | $O(\sqrt{|A-B|})$ per test case |

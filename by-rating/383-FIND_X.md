@@ -2,8 +2,6 @@
 
 > [`FIND_X`](https://www.codechef.com/problems/FIND_X) &middot; difficulty **1651** &middot; time limit **1.5s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -110,6 +108,30 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The two remainders start equal and advance in step until one of them wraps.** The first wrap happens at $X = \min(B, D) - r$, so any smaller $X$ keeps them equal — and $X = 1$ works whenever $r + 1 < \min(B, D)$.
+- **Once the window ends, they realign only when both wrap together**, which is at the next multiple of $\operatorname{lcm}(B, D)$ — giving $X = \operatorname{lcm}(B,D) - r$.
+- **The lcm must be computed as `b // gcd(b, d) * d`**, dividing first; with $B, D$ up to $10^9$ the naive product reaches $10^{18}$, native in Python but an overflow in a 64-bit language.
+- **$B = 1$ (or $D = 1$) forces the second branch**, since $r = 0$ and $\min$ is $1$, so $r + 1 < 1$ is false — the second sample row.
+- **$X$ must be strictly positive**, which is why the window test is $r + 1 < \min$ rather than $r \leq \min$.
+- **$A \% B = C \% D$ is guaranteed**, so the remainders really do start equal and the reasoning applies from step zero.
+- **A solution always exists**, as the statement promises — the lcm point is always reachable.
+
+## Dry run
+
+Third sample: $A = 3$, $B = 2$, $C = 4$, $D = 3$, so $r = 1$ and $\min(B,D) = 2$.
+
+Since $r + 1 = 2$ is not less than $2$, the window has already ended. $\operatorname{lcm}(2,3) = 6$, so $X = 6 - 1 = 5$.
+
+| $X$ | $(3+X) \bmod 2$ | $(4+X) \bmod 3$ | equal? |
+|---:|---:|---:|:---:|
+| 1 | 0 | 2 | no |
+| 2 | 1 | 0 | no |
+| 3 | 0 | 1 | no |
+| 4 | 1 | 2 | no |
+| 5 | 0 | 0 | **yes** |
 
 ---
 

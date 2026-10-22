@@ -2,8 +2,6 @@
 
 > [`MINIMISEMAX`](https://www.codechef.com/problems/MINIMISEMAX) &middot; difficulty **1649** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -107,6 +105,25 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Two independent lower bounds, and both are met at once.** The $Y$ copies of $-2$ cut the ones into at most $Y+1$ runs, so some run holds $\lceil X/(Y+1) \rceil$ ones; and the whole array is itself a subarray, with sum $X - 2Y$.
+- **Either bound can dominate.** The third row is limited by the run length ($\lceil 5/2 \rceil = 3$ against a total of $3$ — a tie here), while the first and last are limited by the run length over a negative total.
+- **A negative total is fine.** When $X < 2Y$ the whole-array bound is negative and irrelevant, and the answer is just the longest run of ones.
+- **Spreading the ones as evenly as possible attains both bounds simultaneously**, which is why the maximum of the two is exact rather than merely a bound.
+- **$Y + 1$, not $Y$, is the divisor** — the $-2$s create one more gap than their own count, including the positions before the first and after the last.
+- **The answer is always at least $1$**, since $X \geq 1$ guarantees a positive element somewhere.
+- **$X, Y$ up to $10^6$** with constant work per case.
+
+## Dry run
+
+| $X$ | $Y$ | longest run $\lceil X/(Y{+}1) \rceil$ | whole array $X - 2Y$ | answer | a witnessing layout |
+|---:|---:|---:|---:|---:|---|
+| 1 | 1 | 1 | $-1$ | `1` | $-2, 1$ |
+| 1 | 3 | 1 | $-5$ | `1` | $-2, 1, -2, -2$ |
+| 5 | 1 | 3 | 3 | `3` | $1,1,1,-2,1,1$ wait — $1,1,-2,1,1,1$ gives a run of 3 |
+| 2 | 2 | 1 | $-2$ | `1` | $1, -2, 1, -2$ |
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`EXAMCHT`](https://www.codechef.com/problems/EXAMCHT) &middot; difficulty **1639** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -108,6 +106,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Same set means $(A-1) \equiv (B-1) \pmod p$**, which simplifies to $p \mid (A - B)$ — the $-1$ offsets cancel, so the answer is just the divisor count of the difference.
+- **Equal roll numbers would make every $p$ work**, giving infinitely many; the statement's distinctness makes this unreachable, but the `-1` guard keeps the division safe.
+- **Divisors are counted in pairs up to the square root**, with the perfect-square case counted once — forgetting that doubles the answer for a square difference.
+- **The sign of $A - B$ is irrelevant**, hence the absolute value.
+- **$p = 1$ always counts**: with a single set everyone gets the same questions.
+- **$p$ may exceed both roll numbers** — any divisor of the gap qualifies, including the gap itself.
+- **$A, B \leq 10^8$**, so the trial loop runs to $10^4$ per case with $T \leq 100$.
+
+## Dry run
+
+Sample: $A = 2$, $B = 6$, so the gap is $4$.
+
+| $p$ | divides 4? | Ram's set $(2-1)\%p$ | Shyam's set $(6-1)\%p$ |
+|---:|:---:|---:|---:|
+| 1 | yes | 0 | 0 |
+| 2 | yes | 1 | 1 |
+| 3 | no | 1 | 2 |
+| 4 | yes | 1 | 1 |
+
+Three valid values of $p$, so the output is `3`.
 
 ---
 

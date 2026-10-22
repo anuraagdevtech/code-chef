@@ -2,8 +2,6 @@
 
 > [`CHARGES`](https://www.codechef.com/problems/CHARGES) &middot; difficulty **1645** &middot; time limit **3s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -132,6 +130,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **The total length is $2(N-1) - (\text{opposite pairs})$.** Each of the $N-1$ gaps costs $2$ for a matching pair and $1$ for an opposite one, so counting the opposite pairs and subtracting is enough.
+- **A flip touches only two gaps** — the ones on either side of the flipped particle — and both invert, which is what makes each query $O(1)$ instead of a rescan.
+- **The flips are cumulative.** Query $2$ then $1$ then $3$ in the sample operate on a string that keeps changing, so the state must be mutated rather than recomputed from the original.
+- **The ends have only one adjacent gap**, which the `0 <= j < n - 1` guard handles for $Q = 1$ and $Q = N$.
+- **The old contributions must be removed before the flip and the new ones added after**, or the delta is computed against a stale character.
+- **$N = 1$** has no gaps at all, so the length is $0$ for every query.
+- **Sum of $K \leq 2 \cdot 10^5$**: a `bytearray` for in-place flips and XOR with $1$ to toggle between the byte codes for `0` and `1`.
+
+## Dry run
+
+$N = 3$, $S = $ `010`, so $2(N-1) = 4$.
+
+| query | string after | opposite pairs | length |
+|---:|---|---:|---:|
+| flip 2 | `000` | 0 | `4` |
+| flip 1 | `100` | 1 | `3` |
+| flip 3 | `101` | 2 | `2` |
+
+The last state has both gaps opposite, so each costs $1$.
 
 ---
 
