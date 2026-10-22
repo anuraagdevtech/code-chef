@@ -2,8 +2,6 @@
 
 > [`SUMPRODSEG`](https://www.codechef.com/problems/SUMPRODSEG) &middot; difficulty **1713** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -128,6 +126,27 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Within each family every segment contains the most balanced one.** All sum segments $[L, X-L]$ nest around $[\lfloor X/2 \rfloor, \lceil X/2 \rceil]$, and all product segments $[d, Y/d]$ nest around the divisor pair closest to $\sqrt{Y}$ — so two segments from the same family always intersect.
+- **Hence the answer must pair one sum segment with one product segment**, and the tightest member of each family is the best candidate: if those two intersect, every other pair does too.
+- **Both orderings must be checked**, since the product segment may lie entirely to the right of the sum segment or entirely to the left.
+- **$X = Y = 1$ is the smallest failure** (the second row): the sum segment is $[0,1]$ and the only product segment is $[1,1]$, which overlaps it.
+- **$L$ may be $0$**, since the segments range over non-negative integers — and $\lfloor X/2 \rfloor$ is $0$ when $X = 1$.
+- **The largest divisor at most $\sqrt{Y}$ is found by trial division**, which is $10^6$ steps at $Y = 10^{12}$ — affordable at $T \leq 10$.
+- **A perfect square $Y$** gives a single-point product segment, with the two divisors equal.
+
+## Dry run
+
+First sample: $X = 4$, $Y = 24$.
+
+| family | tightest segment | reasoning |
+|---|---|---|
+| sum | $[2, 2]$ | the balanced split of $4$ |
+| product | $[4, 6]$ | $4$ is the largest divisor of $24$ at most $\sqrt{24} \approx 4.9$ |
+
+Since $4 > 2$ the product segment lies entirely to the right. Output `2 2` then `4 6` — disjoint, with $2+2 = 4$ and $4 \cdot 6 = 24$.
 
 ---
 

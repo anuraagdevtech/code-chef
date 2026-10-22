@@ -17,3 +17,23 @@ So the sum is a constant plus a bonus of $0$, $1$ or $2$ from the roundings, and
 Note the result can be negative, since $B < A$ is allowed and then $B - A < 0$; the formula handles it, as does the ceiling of a negative number ($\lceil -1.5 \rceil = -1$).
 
 The samples cover all three. $A = B = 2$ gives $0$. $A{=}1, B{=}11$ has an even gap of $10$, so $5 + 1 = 6$ — for instance $X = 2$ makes both $9$ and $1$ odd. And $A{=}13, B{=}6$ has the odd gap $-7$, giving $-3$.
+
+## Edge cases
+
+- **The two numerators always sum to $B - A$**, since $(B-X) + (X-A)$ is independent of $X$ — so the only question is how the two ceilings round.
+- **An odd gap always leaves exactly one odd numerator**, giving $\lceil \text{gap}/2 \rceil$ regardless of $X$; there is nothing to choose.
+- **An even gap can be split into two odd halves**, each rounding up, which buys one extra — so the answer is $\text{gap}/2 + 1$. Picking $X = B - 1$ achieves it whenever the gap is at least $2$.
+- **A zero gap forces $X = A = B$**, making both terms $0$ — no rounding bonus is available, which is why it needs its own branch rather than falling into the even case.
+- **$A$ may exceed $B$**, making the gap negative and the answer negative. The third row has $A = 13$, $B = 6$ and answers $-3$ — assuming $A \leq B$ is the easy way to get this wrong.
+- **Python's `%` keeps a negative gap's parity correct**, since `-7 % 2` is `1`, so the odd branch fires as intended.
+- **Both ceilings can be negative**, as the statement's own examples ($\lceil -1.5 \rceil = -1$) make clear.
+
+## Dry run
+
+| $A$ | $B$ | gap $B-A$ | parity | best split | answer |
+|---:|---:|---:|---|---|---:|
+| 2 | 2 | 0 | — | $X$ forced | `0` |
+| 1 | 11 | 10 | even | $X = 6$: $\lceil 5/2 \rceil + \lceil 5/2 \rceil = 3 + 3$ | `6` |
+| 13 | 6 | $-7$ | odd | any $X$ | `-3` |
+
+In the middle row both halves are odd, which is what earns the extra over $\text{gap}/2 = 5$.

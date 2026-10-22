@@ -2,8 +2,6 @@
 
 > [`CHAPD`](https://www.codechef.com/problems/CHAPD) &middot; difficulty **1720** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -121,6 +119,26 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Repeated gcd stripping avoids factorising at all.** Each round removes from $B$ every prime it shares with $A$, to full multiplicity — and with $A, B$ up to $10^{18}$, trial division would be hopeless.
+- **The inner loop must divide to exhaustion**, not once: $B = 128$ against $A = 16$ has $\gcd = 16$, and $128$ needs dividing twice before that prime is gone.
+- **A gcd of $1$ means the remainder is coprime to $A$**, so whatever is left carries a prime that $A$ lacks — the loop breaks and the answer is `No`.
+- **$B$ reaching $1$ means every prime was shared** → `Yes`.
+- **$B = 1$ initially** has no prime divisors, so the condition holds vacuously and the loop never runs.
+- **$A = 1$** shares no prime with anything, so the answer is `No` for every $B > 1$.
+- **Termination is guaranteed**, since each outer round divides $B$ by a gcd of at least $2$ — giving $O(\log^2)$ overall.
+
+## Dry run
+
+Second sample: $A = 128$, $B = 16$.
+
+| round | $B$ | $\gcd(128, B)$ | after stripping |
+|---:|---:|---:|---:|
+| 1 | 16 | 16 | $16 / 16 = 1$ |
+
+$B$ reaches $1$, so `Yes`. The third sample, $A = 7$ with $B = 8$, has $\gcd(7, 8) = 1$ immediately, leaving $B = 8 > 1$ → `No`.
 
 ---
 

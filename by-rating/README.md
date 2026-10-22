@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **415 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **429 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -16,7 +16,7 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1000&ndash;1199](#10001199) | 15 | 15 | Strings (5) |
 | [1200&ndash;1399](#12001399) | 46 | 46 | Number Theory (7) |
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
-| [1600&ndash;1799](#16001799) | 120 | 73 | Greedy (22) |
+| [1600&ndash;1799](#16001799) | 120 | 87 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 0 | Arrays (2) |
 | [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
 | [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
@@ -472,20 +472,20 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | 413 | [Buying Sweets](413-BUYSWEET.md) `BUYSWEET` | 1706 | Greedy | Batching purchases of the cheapest net-cost sweet | yes |
 | 414 | [Spreading Charges](414-CHRGES.md) `CHRGES` | 1708 | Strings | Runs of zeros classified by their bounding charges | yes |
 | 415 | [Devu and Perfume](415-DEVPERF.md) `DEVPERF` | 1708 | Geometry | Manhattan 1-centre via rotated coordinates | yes |
-| 416 | [Lumpy - The Bus Driver](416-LUMPYBUS.md) `LUMPYBUS` | 1708 | Greedy | Cheapest refunds first, paid with coins of the larger denomination | &ndash; |
-| 417 | [Summary Power](417-SUMPOWER.md) `SUMPOWER` | 1709 | Prefix Sums | Counting each boundary's contribution | &ndash; |
-| 418 | [Ceiling Sum](418-CEILSUM.md) `CEILSUM` | 1712 | Basic Math | Parity bonus on a fixed total | &ndash; |
-| 419 | [Minimum Coloring](419-MINCOLOR.md) `MINCOLOR` | 1713 | Constructive | Checkerboard parity, with a third colour only when forced | &ndash; |
-| 420 | [Sum Product Segments](420-SUMPRODSEG.md) `SUMPRODSEG` | 1713 | Number Theory | Every family shares a pivot, so the pair must be mixed | &ndash; |
-| 421 | [Even Subset Xor](421-EVENXOR.md) `EVENXOR` | 1714 | Bit Manipulation | Even-popcount numbers form a linear subspace | &ndash; |
-| 422 | [Max Mex](422-MAXMEX.md) `MAXMEX` | 1714 | Sets | Keep everything except the forbidden value | &ndash; |
-| 423 | [Matchsticks](423-MSTICK.md) `MSTICK` | 1714 | Arrays | Sparse-table range min and max with end aggregates | &ndash; |
-| 424 | [Find an integer](424-SUMDIV2.md) `SUMDIV2` | 1714 | Number Theory | Simultaneous congruences solved by inspection | &ndash; |
-| 425 | [Maximise Sum](425-MAXIMISESUM.md) `MAXIMISESUM` | 1715 | Prefix Sums | Per-position ceiling from prefix and suffix maxima | &ndash; |
-| 426 | [Team Formation](426-TEAMFOR.md) `TEAMFOR` | 1715 | Greedy | Pair the specialists first, then spend the all-rounders | &ndash; |
-| 427 | [Chef and Prime Divisors](427-CHAPD.md) `CHAPD` | 1720 | Number Theory | Stripping shared factors with repeated GCDs | &ndash; |
-| 428 | [Iron, Magnet and Wall](428-FEMA2.md) `FEMA2` | 1725 | Greedy | Interval bipartite matching with two queues | &ndash; |
-| 429 | [Oracle Devu and Longest Common Subsequence](429-ORACLCS.md) `ORACLCS` | 1726 | Strings | Binary alphabet reduces the LCS to two letter counts | &ndash; |
+| 416 | [Lumpy - The Bus Driver](416-LUMPYBUS.md) `LUMPYBUS` | 1708 | Greedy | Cheapest refunds first, paid with coins of the larger denomination | yes |
+| 417 | [Summary Power](417-SUMPOWER.md) `SUMPOWER` | 1709 | Prefix Sums | Counting each boundary's contribution | yes |
+| 418 | [Ceiling Sum](418-CEILSUM.md) `CEILSUM` | 1712 | Basic Math | Parity bonus on a fixed total | yes |
+| 419 | [Minimum Coloring](419-MINCOLOR.md) `MINCOLOR` | 1713 | Constructive | Checkerboard parity, with a third colour only when forced | yes |
+| 420 | [Sum Product Segments](420-SUMPRODSEG.md) `SUMPRODSEG` | 1713 | Number Theory | Every family shares a pivot, so the pair must be mixed | yes |
+| 421 | [Even Subset Xor](421-EVENXOR.md) `EVENXOR` | 1714 | Bit Manipulation | Even-popcount numbers form a linear subspace | yes |
+| 422 | [Max Mex](422-MAXMEX.md) `MAXMEX` | 1714 | Sets | Keep everything except the forbidden value | yes |
+| 423 | [Matchsticks](423-MSTICK.md) `MSTICK` | 1714 | Arrays | Sparse-table range min and max with end aggregates | yes |
+| 424 | [Find an integer](424-SUMDIV2.md) `SUMDIV2` | 1714 | Number Theory | Simultaneous congruences solved by inspection | yes |
+| 425 | [Maximise Sum](425-MAXIMISESUM.md) `MAXIMISESUM` | 1715 | Prefix Sums | Per-position ceiling from prefix and suffix maxima | yes |
+| 426 | [Team Formation](426-TEAMFOR.md) `TEAMFOR` | 1715 | Greedy | Pair the specialists first, then spend the all-rounders | yes |
+| 427 | [Chef and Prime Divisors](427-CHAPD.md) `CHAPD` | 1720 | Number Theory | Stripping shared factors with repeated GCDs | yes |
+| 428 | [Iron, Magnet and Wall](428-FEMA2.md) `FEMA2` | 1725 | Greedy | Interval bipartite matching with two queues | yes |
+| 429 | [Oracle Devu and Longest Common Subsequence](429-ORACLCS.md) `ORACLCS` | 1726 | Strings | Binary alphabet reduces the LCS to two letter counts | yes |
 | 430 | [Book Exercises](430-BEX.md) `BEX` | 1728 | Stacks | Prefix minimum carried alongside a stack | &ndash; |
 | 431 | [Set Difference ](431-SETDIFF.md) `SETDIFF` | 1729 | Combinatorics | Counting how often each element is the extreme | &ndash; |
 | 432 | [Box of Chocolates](432-CHCBOX.md) `CHCBOX` | 1730 | Arrays | Fitting a window into the gaps between maxima | &ndash; |

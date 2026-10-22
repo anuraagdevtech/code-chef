@@ -2,8 +2,6 @@
 
 > [`MINCOLOR`](https://www.codechef.com/problems/MINCOLOR) &middot; difficulty **1713** &middot; time limit **1s** &middot; 1600 to 1800 difficulty problems (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -132,6 +130,34 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Two colours suffice exactly when the fixed cells sit on opposite checkerboard parities**, since a proper two-colouring of a grid *is* the checkerboard and it assigns colours by $(r+c) \bmod 2$.
+- **Same parity forces a third colour**, because the two fixed cells would both have to take colour $1$ — and they cannot be repainted.
+- **Three always suffice**, by the construction here: checkerboard with $1$ on the first cell's parity class and $3$ on the other, then overwrite the second fixed cell with $2$. Its neighbours all lie in the opposite class and carry $3$, so nothing clashes.
+- **The overwrite is safe precisely because of the parity collision** — the cell being overwritten is surrounded entirely by the other class.
+- **The two cells are guaranteed distinct**, so the overwrite never lands on the first fixed cell.
+- **The colour range runs to $10^9$**, so the choice of $3$ as the third colour is arbitrary — the sample uses $4$ instead, and a special judge checks adjacency and the colour count rather than the exact values.
+- **Sum of $N \cdot M \leq 10^5$**, so the grid is emitted row by row with no stored matrix.
+
+## Dry run
+
+Second sample: $2 \times 3$ with cell $(1,1)$ fixed to $1$ and $(1,2)$ fixed to $2$.
+
+| cell | parity $(r+c) \bmod 2$ |
+|---|---:|
+| $(1,1)$ | 0 |
+| $(1,2)$ | 1 |
+
+Different parities, so two colours are enough:
+
+| row | colouring |
+|---:|---|
+| 1 | `1 2 1` |
+| 2 | `2 1 2` |
+
+Both fixed cells already hold their required colours, and no two neighbours match.
 
 ---
 
