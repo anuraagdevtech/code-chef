@@ -124,4 +124,28 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **A rating of exactly $1000$ counts as removed.** The list keeps problems *strictly below* $1000$, so the comparison is $\geq 1000$. The sample's fourth case is five ratings of exactly $1000$ and the answer is $5$ — an off-by-one here returns $0$.
+- **Nothing to remove** (all ratings below $1000$): answer $0$, as in the last sample case.
+- **Largest rating** ($D_i = 5000$): counted, like any other value at or above the threshold.
+- **$N = 1$**: a single problem, removed or not.
+- Only a count is needed, so the array never has to be stored or sorted — one pass with a running total suffices.
+
+## Dry run
+
+| ratings | at or above $1000$ | output |
+|---|---|---:|
+| $800, 1200, 900$ | $1200$ | `1` |
+| $999, 1000, 1001, 1002$ | $1000, 1001, 1002$ | `3` |
+| $1, 2, 2, 2, 5000$ | $5000$ | `1` |
+| $1000 \times 5$ | all five | `5` |
+| $900, 700, 800$ | none | `0` |
+
+Row 2 shows $999$ staying and $1000$ going — the boundary in one line.
+
 > CodeChef tags: `Data Structures`
+
+---
+
+Same problem in rating order (#28 of 486): [../../by-rating/028-TODOLIST.md](../../by-rating/028-TODOLIST.md)

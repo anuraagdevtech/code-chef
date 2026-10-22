@@ -121,3 +121,29 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **Already sorted** (the first row): no inverted pair exists, so `worst` stays $0$ and even $X = 1$ answers `YES`.
+- **One inverted pair decides it** (the second row, where the pair $(2, 1)$ sums to $3 > X = 1$): `NO`.
+- **Equal values are not inversions.** The third row holds $3, 3, 3$ and $2, 2$; the strict `>` skips them, whereas `>=` would charge $6$ for a pair of $3$s and answer `NO`.
+- **The criterion is about pairs, not about whole reversals.** The sample's own explanation for the third case reverses a three-element subarray summing to $7$, but bubble sort reduces any permutation to adjacent swaps of inverted pairs, and the costliest such pair here sums to only $5$ — so the pairwise bound is what governs, and it is both necessary and sufficient.
+- **A running maximum replaces all $O(N^2)$ pairs**, because the costliest inversion ending at position $j$ pairs $A_j$ with the largest value before it.
+- **$A_i, X \leq 2 \cdot 10^9$** makes a pair sum reach $4 \cdot 10^9$ — past 32-bit signed, though native in Python.
+
+## Dry run
+
+Third sample: $A = 3, 2, 2, 3, 3$ with $X = 7$.
+
+| $j$ | $A_j$ | prefix max | inverted? | pair sum | worst so far |
+|---:|---:|---:|:---:|---:|---:|
+| 2 | 2 | 3 | yes | 5 | **5** |
+| 3 | 2 | 3 | yes | 5 | 5 |
+| 4 | 3 | 3 | no | — | 5 |
+| 5 | 3 | 3 | no | — | 5 |
+
+$5 \leq 7$, so `YES`.
+
+---
+
+Same problem in rating order (#198 of 486): [../../by-rating/198-REVSORT.md](../../by-rating/198-REVSORT.md)

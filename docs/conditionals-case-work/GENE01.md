@@ -128,4 +128,26 @@ main()
 - **Time:** $O(1)$
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Both alleles the same** (`B B`): that colour, so no tie-break is needed.
+- **The ordering is dominance, not alphabetical.** Brown beats blue beats green, so for `B G` the answer is `B` — yet `max('B', 'G')` on the raw characters returns `G`, because alphabetically `B < G < R`. Sorting the letters directly gets this backwards for every blue-green pair.
+- **Green only wins when both alleles are green.**
+- **Input shape**: two space-separated characters with no test-case count.
+
+## Dry run
+
+Ranking: `R` $= 2$, `B` $= 1$, `G` $= 0$.
+
+| input | ranks | higher | output |
+|---|---|---|---|
+| `R B` | $2, 1$ | `R` | `R` |
+| `B B` | $1, 1$ | either | `B` |
+
+For `B G` the ranks are $1, 0$, so `B` — the case where alphabetical order would mislead.
+
 > CodeChef tags: `Special`, `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#100 of 486): [../../by-rating/100-GENE01.md](../../by-rating/100-GENE01.md)

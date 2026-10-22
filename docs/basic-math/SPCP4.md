@@ -116,3 +116,26 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Both remainders zero** (the second row, $15\,10\,5$): nothing is left over on either side, so $0$.
+- **Everyone on one side** (the third row, where $X = N$): the other group is empty, so its remainder is $0$ and the answer is the first remainder alone.
+- **The remainders cancel rather than add.** Leftover members of the two groups pair off with each other, so only the imbalance shows — taking the sum instead of the absolute difference would report $3$ on the first row instead of $1$.
+- **$K = 1$**: every remainder is $0$, so the answer is always $0$.
+
+## Dry run
+
+The three values are $N$, then $X$, then $K$.
+
+| $N$ | $X$ | $K$ | $X \bmod K$ | $(N{-}X) \bmod K$ | difference | output |
+|---:|---:|---:|---:|---:|---:|---|
+| 12 | 4 | 3 | 1 | 2 | 1 | `1` |
+| 15 | 10 | 5 | 0 | 0 | 0 | `0` |
+| 8 | 8 | 3 | 2 | 0 | 2 | `2` |
+
+Row 3 has an empty second group.
+
+---
+
+Same problem in rating order (#150 of 486): [../../by-rating/150-SPCP4.md](../../by-rating/150-SPCP4.md)

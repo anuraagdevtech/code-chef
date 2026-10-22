@@ -106,4 +106,26 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Both ends of the range are eligible.** Ages of exactly $10$ and exactly $60$ qualify, so the test is closed on both sides; a strict comparison loses them.
+- **Just outside** — the sample covers both directions: $9$ is too young (third case) and $62$, $65$ too old (first and second).
+- **Nobody eligible**: the count is $0$.
+- **Everybody eligible**: the count is $N$.
+- Only a tally is needed, so the ages need not be stored or sorted.
+
+## Dry run
+
+| ages | inside $[10, 60]$ | output |
+|---|---|---:|
+| $15, 23, 65$ | $15, 23$ | `2` |
+| $15, 62, 16$ | $15, 16$ | `2` |
+| $35, 9$ | $35$ | `1` |
+
+Each row excludes someone for a different reason: too old in rows 1 and 2, too young in row 3.
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#68 of 486): [../../by-rating/068-SELFDEF.md](../../by-rating/068-SELFDEF.md)

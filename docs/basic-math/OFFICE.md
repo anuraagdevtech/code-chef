@@ -95,4 +95,23 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$Y < X$ is guaranteed**, so Friday is always the short day; the formula never needs to decide which day is shorter.
+- **Smallest input** ($X = 2$, $Y = 1$): $4 \times 2 + 1 = 9$ hours.
+- **Largest input** ($X = 12$, $Y = 11$): $4 \times 12 + 11 = 59$ hours.
+- **The weekend contributes nothing** — the count is four full days plus Friday, not five plus two, so a "7 days" reflex overcounts.
+
+## Dry run
+
+| $X$ | $Y$ | $4X$ (Mon&ndash;Thu) | $+Y$ (Fri) | output |
+|---:|---:|---:|---:|---|
+| 10 | 5 | 40 | 45 | `45` |
+| 12 | 2 | 48 | 50 | `50` |
+| 8 | 7 | 32 | 39 | `39` |
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#13 of 486): [../../by-rating/013-OFFICE.md](../../by-rating/013-OFFICE.md)

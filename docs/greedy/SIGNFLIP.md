@@ -121,3 +121,28 @@ main()
 
 - **Time:** $O(N \log N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **It is a *subsequence* sum, so negatives can simply be omitted.** That is why the base total counts only the positive elements, and why the second row answers $0$ rather than $-5$.
+- **$K = 0$** (the second row): no flips at all, and the loop body never runs.
+- **Flipping a positive never helps** (the third row, $K = 3$ on $1, 2, 3$): the element already contributes its value, and negating it only makes it worth omitting. The `break` on the first non-negative in sorted order is what stops the flips being wasted.
+- **Zeros are a correct stopping point** too — flipping $0$ changes nothing — so the `>= 0` test needs no separate zero case. The first row's $0$ sits just past the two flips used.
+- **Fewer than $K$ negatives**: the loop breaks early and the unused flips are discarded, which is allowed since at most $K$ flips are permitted rather than exactly $K$.
+- **Sum of $N$ up to $10^6$**: the sort dominates, and the input is read in one buffered call.
+
+## Dry run
+
+First sample: $K = 2$ on $6, -10, -1, 0, -4, 2$, sorted to $-10, -4, -1, 0, 2, 6$.
+
+| step | value | action | total |
+|---|---:|---|---:|
+| base | — | sum of positives $2 + 6$ | 8 |
+| flip 1 | $-10$ | negate, add $10$ | 18 |
+| flip 2 | $-4$ | negate, add $4$ | **22** |
+
+$K$ is exhausted, so $-1$ and $0$ stay out of the subsequence. Output `22`.
+
+---
+
+Same problem in rating order (#206 of 486): [../../by-rating/206-SIGNFLIP.md](../../by-rating/206-SIGNFLIP.md)

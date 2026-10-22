@@ -137,4 +137,33 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **At most two states survive each reply**, since an ambiguous score admits only the two orderings — so the whole history collapses to a tiny candidate set rather than needing a search.
+- **Goals only accumulate**, so a candidate is viable only if it dominates some state consistent with the previous replies — that monotone filter is what prunes the ambiguity.
+- **Equal scores are unambiguous even when the teams are unnamed**, which is why `a == b` collapses to a single candidate (the fifth reply, $8$ to $8$).
+- **A type-1 reply names the teams**, so it always leaves one state — and it can retroactively resolve nothing, but it does narrow the future.
+- **The answer is `YES` when all surviving states agree on the favourite team's score**, which is the deducible case — the second reply becomes deducible even though the first was not.
+- **The first reply with distinct scores is always ambiguous**, since both orderings dominate the initial $0$–$0$.
+- **At least one consistent sequence is guaranteed**, so the surviving set is never empty.
+
+## Dry run
+
+The sample's six replies, tracking the viable states as (favourite, other):
+
+| reply | candidates | viable after filtering | deducible? |
+|---|---|---|---|
+| `2 0 1` | $(0,1)$, $(1,0)$ | both | `NO` |
+| `1 3 1` | $(3,1)$ | $(3,1)$ | `YES` |
+| `2 2 4` | $(2,4)$, $(4,2)$ | $(4,2)$ only — $(2,4)$ cannot follow $(3,1)$ | `YES` |
+| `2 5 6` | $(5,6)$, $(6,5)$ | both | `NO` |
+| `2 8 8` | $(8,8)$ | $(8,8)$ | `YES` |
+| `2 9 10` | $(9,10)$, $(10,9)$ | both | `NO` |
+
+The third reply is resolved by the second: a favourite-team score of $2$ would mean goals were lost.
+
 > CodeChef tags: `Special`, `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#408 of 486): [../../by-rating/408-WATCHFB.md](../../by-rating/408-WATCHFB.md)

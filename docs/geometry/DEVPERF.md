@@ -158,4 +158,34 @@ main()
 - **Time:** $O(nm + n \log m)$ per test case
 - **Space:** $O(nm)$
 
+## Edge cases
+
+- **Manhattan distance becomes Chebyshev distance under the rotation $(u, v) = (r+c,\, r-c)$**, so the worst distance from a cell to every inhabited house is $\max$ of four linear terms over the extremes of $u$ and $v$ — four numbers summarise the whole grid.
+- **Only the bounding box in rotated coordinates matters**, not the individual houses, which is what makes the evaluation constant-time per candidate cell.
+- **The perfume may go in a haunted house too**, so every cell is a candidate — not just the inhabited ones.
+- **No inhabited houses at all** → $0$ seconds, since nothing needs hypnotising; this is checked before any search.
+- **The $+1$ is the placement second**, which the statement charges separately from the spreading.
+- **The worst-distance function is convex along a row**, being a maximum of linear functions, so a ternary search finds each row's best column — and the final window is swept directly to avoid the usual off-by-one.
+- **A single inhabited house** gives $0$ spreading time if the perfume is placed there, for an answer of $1$.
+
+## Dry run
+
+Second sample: a $3 \times 4$ grid with inhabited houses at $(0,1)$, $(1,0)$, $(1,1)$, $(1,2)$, $(2,1)$ (0-based).
+
+| house | $u = r+c$ | $v = r-c$ |
+|---|---:|---:|
+| $(0,1)$ | 1 | $-1$ |
+| $(1,0)$ | 1 | 1 |
+| $(1,1)$ | 2 | 0 |
+| $(1,2)$ | 3 | $-1$ |
+| $(2,1)$ | 3 | 1 |
+
+So $u \in [1,3]$ and $v \in [-1,1]$. Placing the perfume at $(1,1)$ gives $u = 2$, $v = 0$ and a worst distance of $\max(1, 1, 1, 1) = 1$.
+
+Output $1 + 1 = $ `2`.
+
 > CodeChef tags: `Data Structures`, `Arrays`
+
+---
+
+Same problem in rating order (#415 of 486): [../../by-rating/415-DEVPERF.md](../../by-rating/415-DEVPERF.md)

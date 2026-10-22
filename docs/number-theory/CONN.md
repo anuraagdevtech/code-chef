@@ -108,4 +108,25 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 7$**, the smallest odd value that works: one $7$ and nothing else, so `YES`. This is the boundary.
+- **$N = 5$**, the largest odd failure: too small to contain a $7$, and no combination of even parts can reach an odd total, so `NO`. The sample has both sides of the boundary.
+- **$N = 1, 3$**: `NO` for the same reason.
+- **$N = 2$**: a single $2$, so `YES`.
+- The reasoning in one line: an even $N$ splits entirely into $2$s, while an odd $N$ needs at least one odd part — and the only odd part available is $7$, leaving an even remainder. So odd $N$ works exactly when $N \geq 7$.
+
+## Dry run
+
+| $N$ | parity | reaches 7? | construction | output |
+|---:|---|:---:|---|---|
+| 2 | even | — | $2$ | `YES` |
+| 5 | odd | no | impossible | `NO` |
+| 7 | odd | yes | $7$ | `YES` |
+| 11 | odd | yes | $7 + 2 + 2$ | `YES` |
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#109 of 486): [../../by-rating/109-CONN.md](../../by-rating/109-CONN.md)

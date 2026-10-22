@@ -119,4 +119,25 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The carbon content is not an integer** ($0.6$ in the sample), so it must be parsed as a float. Reading it with `int()` raises or truncates, and this is the single most common way to fail this problem.
+- **The thresholds differ in direction and strictness**: hardness must be $> 50$, tensile $> 5600$, but carbon $< 0.7$. Values of exactly $50$, $5600$ or $0.7$ all *fail* their own test.
+- **Grade $5$ needs all three to fail**, which the samples never show — note that any carbon reading below $0.7$ already satisfies one condition, so a grade of $5$ requires carbon at or above $0.7$ as well.
+- **The pair grades are not symmetric**: hardness and carbon give $9$, carbon and tensile give $8$, hardness and tensile give $7$. The order of the `elif` chain encodes that mapping, and reordering the branches silently changes answers.
+
+## Dry run
+
+| hardness | carbon | tensile | $>50$ | $<0.7$ | $>5600$ | grade |
+|---:|---:|---:|:---:|:---:|:---:|---:|
+| 53 | 0.6 | 5602 | yes | yes | yes | `10` |
+| 45 | 0 | 4500 | no | yes | no | `6` |
+| 0 | 0 | 0 | no | yes | no | `6` |
+
+Rows 2 and 3 satisfy exactly one condition each, which lands them both on $6$.
+
 > CodeChef tags: `Special`, `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#129 of 486): [../../by-rating/129-FLOW014.md](../../by-rating/129-FLOW014.md)

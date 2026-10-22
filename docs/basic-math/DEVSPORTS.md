@@ -104,4 +104,25 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Spending down to exactly zero** (the third row leaves $10000$ against a cost of $10000$): still affordable, so the comparison is non-strict.
+- **Nothing spent yet** ($Y = 0$): the whole budget is available.
+- **Everything already spent** ($Y = Z$): nothing remains, and since each activity costs at least $100$ the answer is `NO`.
+- **All three activities are required**, so their costs *add*. Comparing the remaining budget against the largest single cost would pass the first sample row wrongly.
+
+## Dry run
+
+| $Z$ | $Y$ | left $Z-Y$ | $A+B+C$ | affordable? | output |
+|---:|---:|---:|---:|:---:|---|
+| 25000 | 22000 | 3000 | 3200 | no | `NO` |
+| 10000 | 7000 | 3000 | 900 | yes | `YES` |
+| 15000 | 5000 | 10000 | 10000 | yes (equal) | `YES` |
+
+Row 3 spends the remainder exactly.
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`
+
+---
+
+Same problem in rating order (#108 of 486): [../../by-rating/108-DEVSPORTS.md](../../by-rating/108-DEVSPORTS.md)

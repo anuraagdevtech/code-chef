@@ -99,4 +99,25 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Equal times** ($6$ and $6$): neither is faster, so `SAME` needs its own branch — a plain two-way `if/else` would wrongly pick a winner. The sample tests it.
+- **Extremes** ($1$ against $10$): the gap does not matter, only the direction.
+- $X$ is the bike's time and $Y$ the car's, which the sample's first row pins down: $X = 1 < Y = 5$ answers `BIKE`.
+- Both bounds are small positive integers, so there is no zero-time or negative case to consider.
+
+## Dry run
+
+| $X$ (bike) | $Y$ (car) | comparison | output |
+|---:|---:|---|---|
+| 1 | 5 | $X < Y$ | `BIKE` |
+| 4 | 2 | $Y < X$ | `CAR` |
+| 6 | 6 | equal | `SAME` |
+
+The three rows walk through all three branches.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#24 of 486): [../../by-rating/024-TRAVELFAST.md](../../by-rating/024-TRAVELFAST.md)

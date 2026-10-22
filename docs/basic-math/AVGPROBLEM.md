@@ -108,4 +108,28 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Exact tie**, $A + B = 2C$: the average equals $C$ and the answer must be `NO`, since the question asks for *strictly* greater. Sample case 3 is this case.
+- **All values minimal** ($1,1,1$): $2 > 2$ is false, so `NO`.
+- **All values maximal** ($10,10,10$): $20 > 20$ is false, so `NO` — the extremes behave like the tie, not like a win.
+- **Widest gap** ($A = B = 10$, $C = 1$): $20 > 2$, so `YES`.
+- No parity special case is needed: $A + B$ may be odd, which is exactly why multiplying out beats dividing.
+
+## Dry run
+
+| $A$ | $B$ | $C$ | $A + B$ | $2C$ | $A+B > 2C$ | output |
+|---:|---:|---:|---:|---:|:---:|---|
+| 5 | 9 | 6 | 14 | 12 | yes | `YES` |
+| 5 | 8 | 6 | 13 | 12 | yes | `YES` |
+| 5 | 7 | 6 | 12 | 12 | no | `NO` |
+| 4 | 9 | 8 | 13 | 16 | no | `NO` |
+| 3 | 7 | 2 | 10 | 4 | yes | `YES` |
+
+Row 3 is the tie: the true average is exactly $6$, so it fails the strict test.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#4 of 486): [../../by-rating/004-AVGPROBLEM.md](../../by-rating/004-AVGPROBLEM.md)

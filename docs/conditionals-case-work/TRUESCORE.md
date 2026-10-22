@@ -104,4 +104,27 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Nothing changed** ($2\,2$ then $2\,2$): goals need not increase, so this is `POSSIBLE`. A solution demanding strict growth fails here, and the sample includes it.
+- **One team's score falls** ($3\,4$ then $2\,6$): the first team drops from $3$ to $2$, which no amount of play can do, so `IMPOSSIBLE` — even though the second team's score rose.
+- **Both zero throughout** ($0\,0$ then $0\,0$): `POSSIBLE`, and the lower bound of $0$ means the all-zero case is real input.
+- **The two teams are independent.** One may rise while the other stands still; the only rule is that neither may fall, so both comparisons must be checked and ANDed.
+
+## Dry run
+
+Each test case is two lines, "before" then "after".
+
+| before $A\,B$ | after $C\,D$ | $C \geq A$ | $D \geq B$ | output |
+|---|---|:---:|:---:|---|
+| $1\,5$ | $3\,5$ | yes | yes (equal) | `POSSIBLE` |
+| $3\,4$ | $2\,6$ | **no** | yes | `IMPOSSIBLE` |
+| $2\,2$ | $2\,2$ | yes (equal) | yes (equal) | `POSSIBLE` |
+
+Row 2 fails on the first team alone, which is enough.
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#25 of 486): [../../by-rating/025-TRUESCORE.md](../../by-rating/025-TRUESCORE.md)

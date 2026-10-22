@@ -108,3 +108,29 @@ main()
 
 - **Time:** $O(V \log\log V)$ once, then $O(m - n)$ per query
 - **Space:** $O(V)$ with $V = 10^6$
+
+## Edge cases
+
+- **The step out of level $m$ is never taken**, so the sum runs over $n \dots m-1$ — slicing to `omega[n:m]` is what encodes that. Including $m$ overshoots by $\omega(m)$, which the first sample would report as $5 + 1 = 6$.
+- **$n = m$** → he is already there, and the empty slice sums to $0$.
+- **$\omega(1) = 0$**, which the sieve gives for free since $1$ has no prime factors — and the second row starts at $1$.
+- **Distinct prime factors, not total**: $\omega(8) = 1$ and $\omega(12) = 2$, so the sieve increments each multiple once per *prime*, never per prime power.
+- **A prime is detected by $\omega(p)$ still being $0$** when the outer loop reaches it, which is what makes the single pass both a sieve and a counter.
+- **The sieve is built once for all test cases** ($T \leq 2$), at $10^6$ entries, after which each query is a slice sum.
+
+## Dry run
+
+First sample: $n = 3$, $m = 7$.
+
+| level $k$ | distinct prime factors | $\omega(k)$ |
+|---:|---|---:|
+| 3 | $3$ | 1 |
+| 4 | $2$ | 1 |
+| 5 | $5$ | 1 |
+| 6 | $2, 3$ | 2 |
+
+Total `5`. Level $7$ is the destination, so its own $\omega$ is not spent.
+
+---
+
+Same problem in rating order (#275 of 486): [../../by-rating/275-VEGETA.md](../../by-rating/275-VEGETA.md)

@@ -127,4 +127,31 @@ main()
 - **Time:** $O(1)$ — a fixed-width scan
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The search window is provable, not a guess.** For $X \leq 10^9$ the digit sum is at most $81$ and the digit sum of that at most $16$, so any solution satisfies $X \geq N - 97$. Scanning $200$ values back therefore cannot miss one.
+- **$X$ must be positive**, which `max(1, n - 200)` enforces for small $N$.
+- **$X = N$ is never a solution** for $N \geq 1$, since the two digit-sum terms are both positive — but including it costs nothing and keeps the range simple.
+- **The answer can exceed $1$.** $N = 9939$ has four solutions ($9898$, $9907$, $9910$, $9913$), so the loop must count rather than stop at the first hit.
+- **The answer can be $0$** for many $N$, as the map $X \mapsto X + S(X) + S(S(X))$ is not onto.
+- **There is no test-case count** — the input is a single integer.
+
+## Dry run
+
+$N = 6$: scan $X$ from $1$ upward.
+
+| $X$ | $S(X)$ | $S(S(X))$ | total |
+|---:|---:|---:|---:|
+| 1 | 1 | 1 | 3 |
+| 2 | 2 | 2 | **6** |
+| 3 | 3 | 3 | 9 |
+| 4 | 4 | 4 | 12 |
+| 5 | 5 | 5 | 15 |
+
+Exactly one solution, so the output is `1`.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#274 of 486): [../../by-rating/274-CHEFFED.md](../../by-rating/274-CHEFFED.md)

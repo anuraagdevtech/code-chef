@@ -122,4 +122,26 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = M$**: the difference is $0$, which is even, so `YES`.
+- **$N < M$** (the second row, $1$ and $5$): the difference is negative. Python's `%` returns a non-negative remainder so the parity test still works, but a language where the modulo follows the sign of the dividend needs care — `-1 % 2` can be `-1` there, and comparing it against $0$ then fails.
+- **Both odd or both even** → `YES`; **mixed parity** → `NO`.
+- Every move changes $N - M$ by an even amount, so its parity is invariant — which is why the answer depends on nothing else and no simulation is needed.
+
+## Dry run
+
+| $N$ | $M$ | $N - M$ | even? | output |
+|---:|---:|---:|:---:|---|
+| 4 | 2 | 2 | yes | `YES` |
+| 1 | 5 | $-4$ | yes | `YES` |
+| 2 | 3 | $-1$ | no | `NO` |
+| 2 | 2 | 0 | yes | `YES` |
+
+Row 2 is the negative-difference case.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#134 of 486): [../../by-rating/134-PR0BLEM.md](../../by-rating/134-PR0BLEM.md)

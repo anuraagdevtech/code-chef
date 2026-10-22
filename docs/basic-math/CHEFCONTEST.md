@@ -122,4 +122,26 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **A draw** ($110$ each): needs its own branch.
+- **No wrong answers** ($Q = 0$): no penalty at all, which the third row relies on.
+- **Raw time alone gives the wrong winner.** In the first row Chefina is faster on the clock ($8$ against $10$) and still loses, because her three wrong answers cost $30$ against Chef's $20$. Comparing $X$ with $Y$ and ignoring the penalty fails that row.
+- **The lower total wins**, because it is a penalty — inverting the comparison flips every answer.
+- **Input order is $X, Y, P, Q$**: both times first, then both wrong-answer counts, rather than being grouped per person.
+
+## Dry run
+
+| $X$ | $Y$ | $P$ | $Q$ | Chef $X + 10P$ | Chefina $Y + 10Q$ | lower | output |
+|---:|---:|---:|---:|---:|---:|---|---|
+| 10 | 8 | 2 | 3 | 30 | 38 | Chef | `Chef` |
+| 10 | 10 | 10 | 10 | 110 | 110 | neither | `Draw` |
+| 40 | 21 | 2 | 0 | 60 | 21 | Chefina | `Chefina` |
+
+Row 1 is the one where the clock and the result disagree.
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`
+
+---
+
+Same problem in rating order (#115 of 486): [../../by-rating/115-CHEFCONTEST.md](../../by-rating/115-CHEFCONTEST.md)

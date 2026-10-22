@@ -96,3 +96,25 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Only the zeros *inside* $N$'s own binary width count**, so the measure is against `bit_length` rather than a fixed $64$ — otherwise every small number would report dozens of unset bits.
+- **A number of all ones gives $0$**, since its width equals its popcount — the sample's $N = 1$.
+- **$N \geq 1$ is guaranteed**, so `bit_length` is at least $1$ and never zero.
+- **$N$ up to $10^{18}$** needs $60$ bits, which Python's arbitrary-precision integers handle natively — a 32-bit popcount table would not.
+- **The answer is at most $59$**, reached by a value like $2^{59}$ whose single set bit sits at the top.
+- **`bit_count` is the exact popcount**, so no loop over bits is needed.
+- **The input is two lines**, the count then the values, read as one token stream.
+
+## Dry run
+
+| $N$ | binary | width | set bits | unset inside the width |
+|---:|---|---:|---:|---:|
+| 10 | $1010$ | 4 | 2 | `2` |
+| 1 | $1$ | 1 | 1 | `0` |
+| 8 | $1000$ | 4 | 1 | 3 |
+
+---
+
+Same problem in rating order (#476 of 486): [../../by-rating/476-ADDI.md](../../by-rating/476-ADDI.md)

@@ -113,4 +113,30 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Making $a \mathbin{\&} b = 0$ collapses the equation to $c \oplus d = N$**, so two of the four values are spent on neutralising the AND — $2^{58}$ and $2^{59}$ share no bit.
+- **$N = 0$ needs a different shape.** With the AND neutralised, $c \oplus d = 0$ would force $c = d$ and break distinctness — so for zero the AND must carry the value instead: $12 \mathbin{\&} 10 = 8$, then $(8 \mathbin{|} 1) \oplus 9 = 0$.
+- **$c$ is placed above every possible $N$** at $2^{33}$, which guarantees $d = c \oplus N \neq c$ for $N \neq 0$ and keeps both clear of the two padding values.
+- **All four must be positive**, which $2^{33} \oplus N \geq 2^{33}$ satisfies since $N < 2^{32}$ leaves bit $33$ set.
+- **The $10^{18}$ ceiling is respected**: $2^{59} \approx 5.8 \times 10^{17}$ is the largest value used.
+- **The `|c` step is harmless** once the AND is zero, since $0 \mathbin{|} c = c$ — the OR is simply passed through.
+- **This answer differs from the sample's** (`288230376151711744 576460752303423488 8589934592 8589934593` against `1 4 3 2`), and any valid quadruple is accepted, so a special judge evaluates the expression.
+
+## Dry run
+
+$N = 1$.
+
+| step | value |
+|---|---|
+| $a \mathbin{\&} b = 2^{58} \mathbin{\&} 2^{59}$ | 0 (disjoint bits) |
+| $0 \mathbin{|} c = 2^{33}$ | $2^{33}$ |
+| $2^{33} \oplus d$ where $d = 2^{33} \oplus 1$ | $1$ ✓ |
+
+All four are distinct and positive. For $N = 0$ the quadruple $12, 10, 1, 9$ gives $(8 \mathbin{|} 1) \oplus 9 = 9 \oplus 9 = 0$.
+
 > CodeChef tags: `Advanced Algorithms`, `Mathematics`, `Bit Manipulation`
+
+---
+
+Same problem in rating order (#395 of 486): [../../by-rating/395-BITEQU.md](../../by-rating/395-BITEQU.md)

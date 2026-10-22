@@ -111,4 +111,27 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **An age exactly $X$ votes**, since the rule is "at least $X$". The sample's third case has $X = 2$ with two voters aged exactly $2$, and both count — an off-by-one gives $1$ instead of $3$.
+- **Nobody eligible**: the last sample case sets $X = 6$ above every age, so the answer is $0$.
+- **Everybody eligible** when $X$ is at or below the minimum age.
+- **$N = 1$**: a single citizen, counted or not.
+- Only the tally is needed, so the ages never have to be stored or sorted.
+
+## Dry run
+
+| $X$ | ages | aged $\geq X$ | output |
+|---:|---|---|---:|
+| 3 | $5, 3, 1, 2$ | $5, 3$ | `2` |
+| 2 | $1, 3, 4$ | $3, 4$ | `2` |
+| 2 | $2, 1, 2, 4$ | $2, 2, 4$ | `3` |
+| 6 | $1, 2, 3, 4, 5$ | none | `0` |
+
+Row 3 is the inclusive boundary: both twos vote.
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#35 of 486): [../../by-rating/035-ELECTN.md](../../by-rating/035-ELECTN.md)

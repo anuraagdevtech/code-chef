@@ -145,4 +145,32 @@ main()
 - **Time:** $O(N \log N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **Two regimes, and spotting the second is the whole problem.** If $v \oplus X > v$ the element grows and leaves the minimum position, so the heap advances. If $v \oplus X < v$ the result is *smaller* than the previous minimum, so it stays the minimum and every remaining operation toggles that same element.
+- **So the process becomes a two-cycle**, and the remaining count's parity decides the final value — which is what lets $Y$ up to $10^9$ be handled without simulating it.
+- **$v \oplus X = v$ is impossible** since $X \geq 1$, so the two branches are exhaustive.
+- **The toggle must use the count still left**, `y - step`, not $Y$ itself — the steps already spent change the parity.
+- **The cycle may never be reached**, in which case all $Y$ operations advance the heap normally; the loop simply runs to completion.
+- **Ties for the minimum are resolved arbitrarily** by the statement ("pick any one index"), which a heap does naturally.
+- **The output is the sorted array**, so the heap's internal order is discarded at the end.
+- **Sum of $N \leq 10^5$** with one heap operation per step until the cycle is found.
+
+## Dry run
+
+Third sample: $A = 5, 10, 15, 20, 25$, $X = 20$, $Y = 6$.
+
+| step | minimum $v$ | $v \oplus 20$ | bigger? | action |
+|---:|---:|---:|:---:|---|
+| 0 | 5 | 17 | yes | promote to 17 |
+| 1 | 10 | 30 | yes | promote to 30 |
+| 2 | 15 | 27 | yes | promote to 27 |
+| 3 | 17 | 5 | **no** | cycle found, $3$ steps left (odd) → take $5$ |
+
+Final array sorted: `5 20 25 27 30`.
+
 > CodeChef tags: `Special`, `Algorithms`
+
+---
+
+Same problem in rating order (#371 of 486): [../../by-rating/371-SMALLXOR.md](../../by-rating/371-SMALLXOR.md)

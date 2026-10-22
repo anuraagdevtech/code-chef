@@ -140,4 +140,33 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The pairs split into two kinds**: both characters inside one copy, or the `a` in an earlier copy and the `b` in a later one.
+- **Within-copy pairs are counted once per copy**, so the single-copy count multiplies by $K$.
+- **Across-copy pairs multiply by $\binom{K}{2}$**, since *every* `a` of the earlier copy precedes *every* `b` of the later one — giving $(\text{total } a) \times (\text{total } b)$ per ordered pair of copies.
+- **$K = 1$ leaves only the within-copy term**, as $\binom{1}{2} = 0$ (the second sample row).
+- **The answer is huge**: at $NK \leq 10^9$ the count reaches about $6 \times 10^{16}$, past 32-bit and into the upper reaches of 64-bit.
+- **Characters other than `a` and `b` are ignored**, but they still occupy positions — which is why the counting is by letter rather than by index.
+- **A string with no `a` or no `b`** gives $0$ from both terms.
+
+## Dry run
+
+First sample: $S = $ `abcb` repeated $K = 2$ times, giving `abcbabcb`.
+
+| quantity | value |
+|---|---:|
+| `a`s in one copy | 1 |
+| `b`s in one copy | 2 |
+| `ab` pairs inside one copy | 2 |
+| within-copy total, $K \times 2$ | 4 |
+| copy pairs, $K(K-1)/2$ | 1 |
+| across-copy total, $1 \times 2 \times 1$ | 2 |
+
+Total `6`.
+
 > CodeChef tags: `Data Structures`, `Mathematics`
+
+---
+
+Same problem in rating order (#454 of 486): [../../by-rating/454-ABREPEAT.md](../../by-rating/454-ABREPEAT.md)

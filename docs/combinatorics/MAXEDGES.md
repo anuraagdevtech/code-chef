@@ -120,4 +120,34 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Sources cannot point at each other, and neither can sinks.** An edge between two sources would give one of them an incoming edge, so the $K$ sources form an independent set — and likewise the $L$ sinks. That removes $\binom{K}{2} + \binom{L}{2}$ from the complete DAG's $\binom{N}{2}$.
+- **When $K + L > N$ some vertices must be both**, and such a vertex has no edges at all — so $K + L - N$ vertices drop out entirely and the formula is applied to what remains.
+- **That subtraction must come first.** The second sample has $K = L = 3$ with $N = 5$; treating it directly gives $10 - 3 - 3 = 4$ by luck, but the reduced form $n' = 4$, $k' = l' = 2$ is what generalises.
+- **$K + L \leq N$ needs no adjustment**, which the `max(0, …)` clamp handles (the first row).
+- **A source may point at a sink**, so those cross edges are kept — only the within-group pairs are lost.
+- **$K, L < N$ is guaranteed**, so at least one vertex is neither purely a source nor purely a sink after reduction.
+- **$N$ up to $10^9$** makes the triangular numbers reach $5 \times 10^{17}$ — past 32-bit, and native in Python.
+
+## Dry run
+
+Second sample: $N = 5$, $K = 3$ sources, $L = 3$ sinks.
+
+| step | value |
+|---|---:|
+| vertices forced to be both | $3 + 3 - 5 = 1$ |
+| remaining vertices $n'$ | 4 |
+| pure sources $k'$ | 2 |
+| pure sinks $l'$ | 2 |
+| complete DAG $\binom{4}{2}$ | 6 |
+| minus $\binom{2}{2}$… $\binom{k'}{2} = 1$ | 5 |
+| minus $\binom{l'}{2} = 1$ | **4** |
+
+Output `4`; the isolated vertex counts as both a source and a sink while carrying no edges.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#359 of 486): [../../by-rating/359-MAXEDGES.md](../../by-rating/359-MAXEDGES.md)

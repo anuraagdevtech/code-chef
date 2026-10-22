@@ -143,4 +143,35 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **Feasibility is a divisibility check.** All positions sharing a frequency $f$ must group into complete blocks of exactly $f$ equal values, so the count of such positions must be a multiple of $f$ — the fourth row fails because one position claims frequency $2$.
+- **Lexicographic smallness comes from opening a fresh label only when needed.** The group for a frequency stays open until it has $f$ members; a new label is minted only when no open group of that frequency exists, and since labels are minted in increasing order, that is always the smallest usable value.
+- **$f = 1$ closes immediately**, so a run of ones yields $1, 2, 3, \dots$ — the second row.
+- **A single group covering everything** gives all the same label, as in the third row where five positions each claim frequency $5$.
+- **Groups of different frequencies interleave freely**, which is why the open groups are tracked per frequency rather than as one pointer — the last row alternates between frequencies $2$ and $3$.
+- **A group must be closed once full**, or later positions would wrongly join it and overshoot their claimed frequency.
+- **$B_i \leq 10^5$ and the labels stay within $10^5$**, since at most $N$ labels are ever minted.
+
+## Dry run
+
+Last sample: $B = 1, 3, 2, 3, 2, 2, 2, 3$.
+
+| position | $f$ | open group for $f$? | label | group now |
+|---:|---:|---|---:|---|
+| 1 | 1 | no → mint 1 | 1 | full, closed |
+| 2 | 3 | no → mint 2 | 2 | 1 of 3 |
+| 3 | 2 | no → mint 3 | 3 | 1 of 2 |
+| 4 | 3 | yes (2) | 2 | 2 of 3 |
+| 5 | 2 | yes (3) | 3 | full, closed |
+| 6 | 2 | no → mint 4 | 4 | 1 of 2 |
+| 7 | 2 | yes (4) | 4 | full, closed |
+| 8 | 3 | yes (2) | 2 | full, closed |
+
+Output `1 2 3 2 3 4 4 2`.
+
 > CodeChef tags: `Data Structures`, `Arrays`, `Algorithms`, `Sorting`
+
+---
+
+Same problem in rating order (#385 of 486): [../../by-rating/385-FREQARRRET.md](../../by-rating/385-FREQARRRET.md)

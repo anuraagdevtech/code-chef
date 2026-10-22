@@ -105,4 +105,26 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Chef already has enough** ($N = 10$ children, $X = 100$ candies): the shortfall is negative, so the answer is $0$ packets. **The clamp is essential** — without `max(0, ...)` the expression $(-90 + 3) // 4$ evaluates to $-22$ in Python, because floor division rounds negatives *down*, and the answer would be badly wrong rather than merely off by one.
+- **Exactly enough** ($N = X$): shortfall $0$, so $0$ packets.
+- **Shortfall not a multiple of $4$** ($N = 10$, $X = 9$: one candy short): one whole packet.
+- **Shortfall an exact multiple** ($N = 20$, $X = 12$: eight short): two packets, and the $+3$ must not make it three.
+
+## Dry run
+
+| $N$ | $X$ | shortfall $N - X$ | clamped | $(\text{need}+3)//4$ | output |
+|---:|---:|---:|---:|---:|---|
+| 20 | 12 | 8 | 8 | 2 | `2` |
+| 10 | 100 | $-90$ | 0 | 0 | `0` |
+| 10 | 9 | 1 | 1 | 1 | `1` |
+| 20 | 9 | 11 | 11 | 3 | `3` |
+
+Row 2 is the one the clamp exists for.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#23 of 486): [../../by-rating/023-CHEFCAND.md](../../by-rating/023-CHEFCAND.md)

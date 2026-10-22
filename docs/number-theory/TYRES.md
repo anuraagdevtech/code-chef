@@ -107,4 +107,23 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 2$** (the minimum): two tyres make exactly one bike, so `YES`.
+- **$N$ a multiple of $4$** ($N = 8$): everything goes into cars with nothing left over, so `NO`.
+- **$N$ is guaranteed even**, so the remainder modulo $4$ is only ever $0$ or $2$ — there is no odd case to reject, and that guarantee is what lets a single modulo decide it.
+- **Largest input** ($N = 1000$, a multiple of $4$): `NO`.
+
+## Dry run
+
+| $N$ | $N \bmod 4$ | leftover tyres | output |
+|---:|---:|---:|---|
+| 8 | 0 | 0 | `NO` |
+| 2 | 2 | 2 | `YES` |
+| 6 | 2 | 2 | `YES` |
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#96 of 486): [../../by-rating/096-TYRES.md](../../by-rating/096-TYRES.md)

@@ -170,3 +170,27 @@ main()
 
 - **Time:** $O(\sum E_i)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **The intro is watched once per season, not once overall.** It changes slightly each season, so he sits through it in each season's first episode and skips it in the other $E_i - 1$ — hence a per-season subtraction of $Q_i (E_i - 1)$.
+- **A one-episode season subtracts nothing**, since $E_i - 1 = 0$. The second sample's whole second case is five such seasons, and its answer is the raw sum.
+- **$Q_i < L_{i,j}$ is guaranteed**, so no episode is shorter than its own intro and the total can never go negative.
+- **$Q$ is read as a block of $S$ values before the seasons**, so the input is not interleaved — reading a $Q_i$ alongside each season desynchronises everything.
+- **Each season's length list is preceded by its own $E_i$**, so the stride varies and the position must be advanced per season.
+- **Sum of all $E_i \leq 10^5$** per case with $T \leq 5$, and lengths up to $10^5$ make the total around $10^{10}$ — past 32-bit.
+
+## Dry run
+
+First sample: $S = 2$, intros $Q = 1, 2$.
+
+| season | episodes | raw total | intro skips | subtracted | net |
+|---:|---|---:|---:|---:|---:|
+| 1 | $2$ | 2 | 0 | 0 | 2 |
+| 2 | $3, 4$ | 7 | 1 | $2 \times 1 = 2$ | 5 |
+
+Output `7`. Season 2's second episode skips its two-minute intro.
+
+---
+
+Same problem in rating order (#305 of 486): [../../by-rating/305-COLGLF2.md](../../by-rating/305-COLGLF2.md)

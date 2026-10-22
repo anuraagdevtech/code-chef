@@ -109,3 +109,26 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **$S$ larger than $N$** (the second and third rows): one dish is capped at $N$, so the other must take the remaining $S - N$ and the difference is $2N - S$ rather than $S$.
+- **$S$ smaller than $N$** (the first row, $S = 1$ with $N = 3$): the whole sum fits in one dish, the other is $0$, and the difference is $S$ itself — which $2S - S$ gives.
+- **The cap must be $\min(N, S)$.** Using $N$ alone makes the second tastiness negative when $S < N$; using $S$ alone breaks the per-dish ceiling when $S > N$.
+- **$S = 2N$** (the second row, $N = S = 4$ gives $2 \cdot 4 - 4 = 4$; a true $S = 2N$ case like $N = 2, S = 4$) leaves both dishes full and the difference $0$.
+- **Feasibility is guaranteed** — the statement promises some valid pair with $T_1 + T_2 = S$ — so $S \leq 2N$ and the formula never returns a negative number.
+- **Tastiness may be $0$**, which is what makes the $S < N$ case work at all.
+
+## Dry run
+
+| $N$ | $S$ | $\min(N, S)$ | other dish | difference $2\min(N,S) - S$ |
+|---:|---:|---:|---:|---:|
+| 3 | 1 | 1 | 0 | `1` |
+| 4 | 4 | 4 | 0 | `4` |
+| 2 | 3 | 2 | 1 | `1` |
+
+Row 3 is the capped case: the best split is $2 + 1$, not $3 + 0$, because no dish may exceed $N = 2$.
+
+---
+
+Same problem in rating order (#188 of 486): [../../by-rating/188-MAX_DIFF.md](../../by-rating/188-MAX_DIFF.md)

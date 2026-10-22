@@ -126,4 +126,28 @@ main()
 - **Time:** $O(L)$ per test case with $L = 5$
 - **Space:** $O(L)$
 
+## Edge cases
+
+- **Nothing in common** (`ABCDE` against `EDCBA`): only the middle letter aligns, giving `BBGBB` — note that `A` and `E` both *appear* in the other word, yet score black, because this variant has no "right letter, wrong place" state.
+- **Repeated letters** (`START` against `STUNT`): the `T` at index $1$ matches and the `T` at index $4$ matches, each judged on its own. Because there is no yellow state, duplicates need no tallying — the usual Wordle difficulty disappears.
+- **Identical words**: all `G`.
+- **No match anywhere**: all `B`.
+- Both strings are exactly five characters, so no length handling is needed.
+
+## Dry run
+
+`START` against the guess `STUNT`, index by index:
+
+| index | 0 | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|---|
+| answer | `S` | `T` | `A` | `R` | `T` |
+| guess | `S` | `T` | `U` | `N` | `T` |
+| result | `G` | `G` | `B` | `B` | `G` |
+
+Output `GGBBG`.
+
 > CodeChef tags: `Data Structures`, `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#95 of 486): [../../by-rating/095-WORDLE.md](../../by-rating/095-WORDLE.md)

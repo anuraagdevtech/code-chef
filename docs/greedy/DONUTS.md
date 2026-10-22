@@ -151,3 +151,29 @@ main()
 
 - **Time:** $O(M \log M)$ per test case
 - **Space:** $O(M)$
+
+## Edge cases
+
+- **$M$ chains need $M-1$ links**, and each cut doughnut supplies exactly one link — so cutting $M-1$ doughnuts from any chains always works. That is the baseline the search starts from.
+- **Sacrificing a whole small chain can be cheaper.** Cutting every doughnut of the $d$ smallest chains both supplies links and removes those chains from the count, leaving $M-d$ pieces needing $M-d-1$ links.
+- **The cost is the larger of the two numbers**, `max(used, m - d - 1)`: if the sacrificed doughnuts exceed the links needed, the surplus cuts are still cuts; if they fall short, more doughnuts must be cut from surviving chains.
+- **A chain of length $1$ is the ideal sacrifice** — one cut turns it into a link and removes a chain, a net gain. The second sample's answer of $1$ rests entirely on this.
+- **$d = 0$ (no sacrifice) must stay a candidate**, which the initial `best = m - 1` provides; the first sample never improves on it.
+- **$M = 1$** needs no links at all, and `best = 0` falls straight out.
+- **Sorting ascending is what makes the prefix sums the cheapest sacrifices** for each $d$.
+
+## Dry run
+
+Second sample: $N = 6$ in chains $3, 2, 1$, sorted to $1, 2, 3$.
+
+| $d$ | chains sacrificed | links gained | chains left | links still needed | cost |
+|---:|---|---:|---:|---:|---:|
+| 0 | — | 0 | 3 | 2 | 2 |
+| 1 | the $1$ | 1 | 2 | 1 | **1** |
+| 2 | the $1$ and $2$ | 3 | 1 | 0 | 3 |
+
+Output `1`: cut the lone doughnut and use it to join the chains of $2$ and $3$.
+
+---
+
+Same problem in rating order (#349 of 486): [../../by-rating/349-DONUTS.md](../../by-rating/349-DONUTS.md)

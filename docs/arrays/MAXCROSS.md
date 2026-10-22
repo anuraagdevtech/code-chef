@@ -171,3 +171,31 @@ main()
 
 - **Time:** $O(n^2)$
 - **Space:** $O(n^2)$
+
+## Edge cases
+
+- **Four directions, and the two diagonal families index differently.** Diagonals keep $r - c$ constant, which ranges over $[-(n-1), n-1]$; anti-diagonals keep $r + c$ constant, which ranges over $[0, 2n-2]$. Reusing one loop range for both silently drops cells near a corner — a real bug here, caught by the sample.
+- **An isolated `X` scores $1$**, since the statement's $x_1 + x_2 - 1$ counts the cell itself once in each direction.
+- **A `.` cell scores $0$** regardless of its surroundings.
+- **Each cell takes the maximum over the four directions**, so the stamping writes a run length only when it beats what is already recorded.
+- **Every cell of a run gets the whole run's length**, not its distance from an end — the bottom row of the sample has five consecutive crosses, and all five report `5`.
+- **There is no leading test count**: the input begins with $n$ and then the grid.
+- **The output rows separate values by exactly one space**, so the whole row is joined at once.
+- **$n$ up to $1000$** means $10^6$ cells and four passes, so the runs must be found with a linear sweep per line rather than by probing outward from each cell.
+
+## Dry run
+
+Take the cross at row $1$, column $3$ of the sample (1-based), whose answer is $2$.
+
+| direction | run through it | length |
+|---|---|---:|
+| horizontal | just itself (`..X....XX.` has `.` on both sides) | 1 |
+| vertical | rows $1$–$2$ of column $3$ are `X`, `.` | 1 |
+| diagonal ($r - c$) | $(1,3)$ and $(2,4)$ are both `X` | **2** |
+| anti-diagonal ($r + c$) | just itself | 1 |
+
+Maximum is `2`.
+
+---
+
+Same problem in rating order (#334 of 486): [../../by-rating/334-MAXCROSS.md](../../by-rating/334-MAXCROSS.md)

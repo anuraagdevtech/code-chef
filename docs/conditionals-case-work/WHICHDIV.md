@@ -107,4 +107,23 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$R = 2000$ exactly**: division $1$, since the bands are inclusive at their lower edge.
+- **$R = 1600$ exactly**: division $2$; **$R = 1599$**: division $3$. The two together pin the lower boundary.
+- **Extremes** ($R = 1000$ and $R = 4500$): divisions $3$ and $1$.
+- **Testing from the top down with $\geq$** is what makes the inclusive edges come out right; the same ladder written ascending with $<$ needs the complementary bounds and is easier to get wrong by one.
+
+## Dry run
+
+| $R$ | $\geq 2000$? | $\geq 1600$? | output |
+|---:|:---:|:---:|---|
+| 1500 | no | no | `3` |
+| 4000 | yes | — | `1` |
+| 1900 | no | yes | `2` |
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#113 of 486): [../../by-rating/113-WHICHDIV.md](../../by-rating/113-WHICHDIV.md)

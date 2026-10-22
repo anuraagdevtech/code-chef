@@ -136,3 +136,32 @@ main()
 
 - **Time:** $O(n)$ per test case
 - **Space:** $O(n)$
+
+## Edge cases
+
+- **Blocks may only be reduced, never raised**, so the tallest slope ending at a block is capped by its own height — which is what the two running arrays compute, one from each side.
+- **The peak of the temple is $\min(\text{left}, \text{right})$ at that block**, since both arms must fit; the best temple is the largest such value over all positions.
+- **A temple of peak $x$ uses $x^2$ blocks** ($1 + 2 + \dots + x + \dots + 2 + 1$), so the removal count is the total height minus $x^2$.
+- **Every block outside the temple must go entirely**, which is why the answer subtracts from the full sum rather than from a window.
+- **A peak of $1$ is always available** (a single block reduced to height $1$), so the answer is well defined even on a flat range.
+- **The first sample is already a temple**, so nothing is removed.
+- **A tall isolated block is wasted**: the third sample's $6$ can only support a peak of $3$, because its neighbours cap the arms.
+- **$h_i$ up to $10^9$ with $n$ up to $10^5$** makes the total reach $10^{14}$, past 32-bit.
+
+## Dry run
+
+Third sample: $h = 1, 2, 6, 2, 1$.
+
+| block | left arm | right arm | possible peak |
+|---:|---:|---:|---:|
+| 1 | 1 | 1 | 1 |
+| 2 | 2 | 2 | 2 |
+| 3 | 3 | 3 | **3** |
+| 4 | 2 | 2 | 2 |
+| 5 | 1 | 1 | 1 |
+
+Best peak is $3$, using $9$ blocks out of a total height of $12$ — so `3` blocks are removed.
+
+---
+
+Same problem in rating order (#463 of 486): [../../by-rating/463-SNTEMPLE.md](../../by-rating/463-SNTEMPLE.md)

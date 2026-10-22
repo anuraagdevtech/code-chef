@@ -94,4 +94,24 @@ main()
 - **Time:** $O(d)$ per test case, $d$ = number of digits
 - **Space:** $O(d)$
 
+## Edge cases
+
+- **A single digit** ($N \leq 9$): trivially a palindrome, so `wins`.
+- **Even length** ($N = 1221$): a palindrome with no middle digit, so the check must not assume an odd length.
+- **A trailing zero** ($N = 100$): reversing gives `001`, which differs from `100`, so `loses`. Comparing the *strings* is what makes this right — the reversal has to preserve length.
+- **Largest input** ($N = 20000$): five digits, `02002` reversed, so `loses`.
+- Reversing the digit string is simpler and safer than rebuilding the number arithmetically, and at $N \leq 20000$ there is no performance reason to prefer the latter.
+
+## Dry run
+
+| $N$ | digits reversed | equal? | output |
+|---:|---|:---:|---|
+| 331 | `133` | no | `loses` |
+| 666 | `666` | yes | `wins` |
+| 343 | `343` | yes | `wins` |
+
 > CodeChef tags: `Data Structures`, `Mathematics`, `Algorithms`
+
+---
+
+Same problem in rating order (#72 of 486): [../../by-rating/072-PALL01.md](../../by-rating/072-PALL01.md)

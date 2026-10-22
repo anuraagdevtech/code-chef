@@ -116,3 +116,28 @@ main()
 
 - **Time:** $O(\log M)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **A balance with no weights can only bisect**, so from $M$ the reachable amounts are sums of $M/2^j$ pieces — that is, $M p / 2^j$ for integers $p, j$.
+- **So $N$ is reachable iff the odd part of $M$ divides $N$**, since the powers of two can always be supplied by halving far enough while the odd factor can never be split.
+- **$N$ must also not exceed $M$**, which is the other half of the test — the fourth row has $N = 9$ against $M = 4$ and fails on size alone.
+- **The third row fails on the odd part**: $M = 5$ is already odd, so every reachable amount is a multiple of $5$ and $N = 1$ is out of reach.
+- **$M$ a power of two makes the odd part $1$**, so every $N \leq M$ works — the first row, where $2$ halves into $1$ and $1$.
+- **$M = N$ always works** with no weighing at all.
+- **$M, N$ up to $10^{18}$**: the odd part is found by at most $60$ halvings, and the arithmetic stays exact.
+
+## Dry run
+
+| $M$ | odd part of $M$ | $N$ | $N \leq M$? | odd part divides $N$? | output |
+|---:|---:|---:|:---:|:---:|---|
+| 2 | 1 | 1 | yes | yes | `YES` |
+| 1 | 1 | 1 | yes | yes | `YES` |
+| 5 | 5 | 1 | yes | **no** | `NO` |
+| 4 | 1 | 9 | **no** | yes | `NO` |
+
+For the first row: balance $2$ kg into two piles of $1$ kg each.
+
+---
+
+Same problem in rating order (#436 of 486): [../../by-rating/436-APP_BAL_SCA.md](../../by-rating/436-APP_BAL_SCA.md)

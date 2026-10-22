@@ -132,3 +132,39 @@ main()
 
 - **Time:** $O(N^2)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **The segments must be contiguous**, so the problem is a one-dimensional partition and a prefix dynamic program suffices — no subset reasoning.
+- **The arguing cost is counted per guest, not per family.** A family's *second* member at a table makes two guests arguers at once, so the running cost jumps by $2$ there and by $1$ for each further member — getting that increment wrong is the main hazard.
+- **The segment cost is maintained incrementally** as the right end extends, which is what makes the whole thing $O(N^2)$ rather than $O(N^3)$.
+- **Every table costs $K$ regardless of occupancy**, so a large $K$ pushes toward one big table and a small $K$ toward many.
+- **The extremes are both plausible optima.** With $K = 1$ the first sample splits; with $K = 14$ the second keeps everyone together at a cost of $17$.
+- **A family tally is reset per starting index**, which is why the counts array is rebuilt inside the outer loop.
+- **$F_i \leq 100$**, so the tally is a fixed $101$-slot array rather than a dictionary.
+
+## Dry run
+
+First sample: $N = 5$, $K = 1$, families $5, 1, 3, 3, 3$.
+
+Segment costs (table cost $1$ plus arguers):
+
+| segment | families | arguers | cost |
+|---|---|---:|---:|
+| $1..3$ | $5, 1, 3$ | 0 | 1 |
+| $1..4$ | $5, 1, 3, 3$ | 2 | 3 |
+| $4..4$ | $3$ | 0 | 1 |
+| $5..5$ | $3$ | 0 | 1 |
+
+| prefix | best total |
+|---:|---:|
+| 0 | 0 |
+| 3 | 1 (one table) |
+| 4 | 2 (that table, then $\{3\}$) |
+| 5 | **3** (add $\{3\}$) |
+
+Output `3`: three tables, $\{5,1,3\}$, $\{3\}$ and $\{3\}$, with no two members of family $3$ seated together.
+
+---
+
+Same problem in rating order (#467 of 486): [../../by-rating/467-CHEFWED.md](../../by-rating/467-CHEFWED.md)

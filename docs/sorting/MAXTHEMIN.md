@@ -135,3 +135,30 @@ main()
 
 - **Time:** $O(N \log N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **Each operation changes exactly one position**, so after $K$ of them at least $N - K$ originals survive — and the minimum can therefore never exceed the $(K+1)$-th smallest. That bound is also attainable, which is the whole proof.
+- **$K \geq N - 1$** (the first and fourth rows): the whole array can be flooded with the maximum, so the answer is $\max(A)$.
+- **$K$ may exceed $N$ by a wide margin** — the fourth row has $K = 1000$ with $N = 5$ — so the index must be clamped to $n - 1$ rather than trusted, or it raises `IndexError`.
+- **$K = 0$**: nothing is touched and the answer is $\min(A)$.
+- **Duplicates must each be overwritten.** The third row has two $3$s, and reaching $4$ costs exactly the $K = 2$ available; with $K = 1$ one $3$ would remain.
+- **Copies come only from a neighbour**, so the value spreads one position per operation — the first sample's explanation walks the $5$ rightwards across four operations.
+
+## Dry run
+
+Third sample: $A = 4, 3, 4, 3, 5$ sorted to $3, 3, 4, 4, 5$, with $K = 2$.
+
+| rank | value | must be overwritten? |
+|---:|---:|---|
+| 1 | 3 | yes (uses one operation) |
+| 2 | 3 | yes (uses the second) |
+| 3 | 4 | **survives** → the answer |
+| 4 | 4 | survives |
+| 5 | 5 | survives |
+
+Index $\min(K, N-1) = 2$ (0-based) gives `4`.
+
+---
+
+Same problem in rating order (#218 of 486): [../../by-rating/218-MAXTHEMIN.md](../../by-rating/218-MAXTHEMIN.md)

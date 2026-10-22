@@ -174,4 +174,27 @@ main()
 - **Time:** $O(N)$
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The lead is measured on cumulative totals, not on the round's own scores.** In the sample, round $2$ has a per-round gap of $45$, far larger than the cumulative lead of $13$ at that point — using the round's difference gives a different and wrong answer.
+- **The maximum can occur in the first round and never be beaten**, which is exactly what happens here: the lead of $58$ after round $1$ survives all five rounds.
+- **A tie in the running totals** gives a lead of $0$, which cannot beat the initial best, so the strict `>` keeps the earlier holder and no tie handling is needed.
+- **Input shape**: $N$ followed by the rounds, with no test-case count; the output is two numbers on one line.
+
+## Dry run
+
+| round | scores | total 1 | total 2 | lead | best so far |
+|---:|---|---:|---:|---:|---|
+| 1 | $140, 82$ | 140 | 82 | 58 | **1 with 58** |
+| 2 | $89, 134$ | 229 | 216 | 13 | 1 with 58 |
+| 3 | $90, 110$ | 319 | 326 | 7 | 1 with 58 |
+| 4 | $112, 106$ | 431 | 432 | 1 | 1 with 58 |
+| 5 | $88, 90$ | 519 | 522 | 3 | 1 with 58 |
+
+Output `1 58`. Note player $2$ leads from round $3$ onward but never by much.
+
 > CodeChef tags: `Data Structures`, `Arrays`, `Basic Programming Concepts`, `Algorithms`
+
+---
+
+Same problem in rating order (#177 of 486): [../../by-rating/177-TLG.md](../../by-rating/177-TLG.md)

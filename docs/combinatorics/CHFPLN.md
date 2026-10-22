@@ -106,3 +106,29 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **Points from different values never collide**, since $x + y = A_i$ differs — so each value's contribution can be counted on its own and simply summed.
+- **A value $v$ offers only $v - 1$ distinct points**: $(1, v-1)$ through $(v-1, 1)$, because both parts must be strictly positive. That is the per-value ceiling.
+- **The copies are the other ceiling**, so each value contributes $\min(\text{count}, v - 1)$ — and the sample has one row binding on each: the three $2$s are capped at $1$ point, while the two $4$s use both copies.
+- **$A_i = 2$ is the tightest case**: the only split is $(1,1)$, so any number of $2$s yields a single point.
+- **$A_i \geq 2$ is guaranteed**, so every value admits at least one split and no index is unusable.
+- **Every index must be split** — there is no option to skip one — but a duplicate point simply does not add to the count.
+- **$N$ up to $2 \times 10^5$** with the note to use fast I/O, so the whole input is read in one call.
+
+## Dry run
+
+First sample: $A = 2, 2, 4, 4, 2, 6$.
+
+| value | copies | splits available ($v - 1$) | points contributed |
+|---:|---:|---:|---:|
+| 2 | 3 | 1 | 1 |
+| 4 | 2 | 3 | 2 |
+| 6 | 1 | 5 | 1 |
+
+Total `4` — for instance $(1,1)$, $(1,3)$, $(2,2)$ and $(1,5)$.
+
+---
+
+Same problem in rating order (#337 of 486): [../../by-rating/337-CHFPLN.md](../../by-rating/337-CHFPLN.md)

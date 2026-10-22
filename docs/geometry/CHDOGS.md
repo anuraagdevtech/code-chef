@@ -114,4 +114,26 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The symmetry is what makes this constant.** Three dogs at the corners of an equilateral triangle, each chasing the next, keep the configuration equilateral forever — so the chase angle stays at $120^\circ$ and the closing speed never changes.
+- **The closing rate is $v - v\cos 120^\circ = 1.5v$**, giving a meeting time of $s / 1.5v = 2s/(3v)$ — no integration of the pursuit curve is needed.
+- **The answer can be minute.** With $s = 1$ and $v = 10^9$ it is about $6.7 \times 10^{-10}$, so plenty of decimal places must be printed rather than a default six.
+- **The sample's second answer is $10^{-7}$ while this prints $6.7 \times 10^{-10}$**, and both are accepted: the checker allows an absolute error of $10^{-6}$, and at this magnitude everything under the tolerance passes. That is why this problem needs a special judge rather than exact matching.
+- **The division must be floating point** — integer division would floor to $0$ for every case where $2s < 3v$.
+- **$s, v$ up to $10^9$** put the answer anywhere from $\sim\!10^{-9}$ to $\sim\!6.7 \times 10^8$.
+
+## Dry run
+
+| $s$ | $v$ | $2s/(3v)$ | printed |
+|---:|---:|---|---|
+| 2 | 5 | $4/15$ | `0.266666667` |
+| 1 | $10^9$ | $2/(3 \times 10^9)$ | `0.000000001` |
+
+Each dog's velocity has a component $v\cos 120^\circ = -v/2$ along the line to its target, so the gap of $s$ shrinks at $1.5v$ throughout.
+
 > CodeChef tags: `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#271 of 486): [../../by-rating/271-CHDOGS.md](../../by-rating/271-CHDOGS.md)

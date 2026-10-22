@@ -139,3 +139,32 @@ main()
 
 - **Time:** $O(31(N + Q))$
 - **Space:** $O(31N)$
+
+## Edge cases
+
+- **The bits are independent**, since each contributes $2^b$ times the count of elements whose bit differs from $X$'s — so each bit of $X$ is chosen on its own from the count of ones in the range.
+- **Flip a bit only when it strictly helps**: setting $X$'s bit turns the zeros into ones, which is better when fewer than half the elements already have it. The comparison is $2 \cdot \text{ones} < m$.
+- **A tie must leave the bit clear**, because the problem asks for the *smallest* such $X$ — a bit that changes nothing must not be set.
+- **The high bits dominate but need no special ordering**, since the choices are independent; the per-bit rule is already optimal.
+- **$31$ bit planes are prefixed**, which is what makes each query $O(31)$ rather than $O(31 \cdot \text{range})$.
+- **Bits above the data are always set**, since no element has them — which is why the answers are close to $2^{31}$.
+- **$X < 2^{31}$ is the stated bound**, matching the $31$ planes exactly.
+
+## Dry run
+
+First query of the sample: the range $1 \dots 3$ holds $20, 11, 18$, so $m = 3$.
+
+| bit | ones in range | $2 \cdot \text{ones} < 3$? | $X$'s bit |
+|---:|---:|:---:|---:|
+| 0 | 1 | yes | 1 |
+| 1 | 2 | no | 0 |
+| 2 | 1 | yes | 1 |
+| 3 | 1 | yes | 1 |
+| 4 | 2 | no | 0 |
+| 5–30 | 0 | yes | 1 |
+
+$X = 2147483629$, matching the expected output.
+
+---
+
+Same problem in rating order (#465 of 486): [../../by-rating/465-XXOR.md](../../by-rating/465-XXOR.md)

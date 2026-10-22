@@ -113,3 +113,25 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Already enough free space** ($S = 10$, apps $1$ and $2$, need $3$): free space is $7$, so zero deletions.
+- **Deleting one is enough, but it must be the larger app.** The sample's last row has $50$ free and needs $75$: removing the $30$ app gives $80$ and works, removing the $20$ app gives only $70$ and does not. A solution that deletes either app, or the smaller one, fails here.
+- **Neither one alone suffices** ($S = 15$, apps $5$ and $10$, need $15$): both must go, so $2$. Since $Z \leq S$ is guaranteed, deleting both *always* works, which is why the answer never exceeds $2$.
+- **An exact fit** (free space equal to $Z$): zero deletions, so the comparison is non-strict.
+
+## Dry run
+
+| $S$ | $X$ | $Y$ | $Z$ | free $S-X-Y$ | free $+\max(X,Y)$ | output |
+|---:|---:|---:|---:|---:|---:|---|
+| 10 | 1 | 2 | 3 | 7 | — | `0` |
+| 9 | 4 | 5 | 1 | 0 | 5 | `1` |
+| 15 | 5 | 10 | 15 | 0 | 10 | `2` |
+| 100 | 20 | 30 | 75 | 50 | 80 | `1` |
+
+Row 4 is the one that needs the *larger* app removed; row 3 needs both.
+
+---
+
+Same problem in rating order (#63 of 486): [../../by-rating/063-CHEFAPPS.md](../../by-rating/063-CHEFAPPS.md)

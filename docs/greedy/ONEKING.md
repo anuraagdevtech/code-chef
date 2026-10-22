@@ -127,4 +127,30 @@ main()
 - **Time:** $O(N \log N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **Bombing the earliest right endpoint is optimal.** Sorting by right endpoint and placing a bomb there whenever the current kingdom is not already covered is the classic interval-stabbing greedy — the bomb reaches as far forward as possible without missing the kingdom that forced it.
+- **Sorting by right endpoint, not left**, is what makes it work; sorting by left endpoint and bombing greedily can overcount.
+- **Overlapping kingdoms share a bomb** (the sample's first two, which both contain the point $3$), so the answer is $2$ rather than $3$.
+- **Touching intervals count as overlapping**, since the endpoints are inclusive — an interval starting exactly where the bomb sits is destroyed.
+- **A degenerate kingdom $[a, a]$ is allowed** ($a_i \leq b_i$ with equality permitted) and simply forces a bomb at that point.
+- **The sentinel starts below every coordinate**, since $a_i \geq 0$ means $-1$ is safely outside the range.
+- **The tuple is stored as (right, left)** so the default sort orders by right endpoint with no key function.
+
+## Dry run
+
+Sample: kingdoms $[1,3]$, $[2,5]$, $[6,9]$, sorted by right endpoint.
+
+| kingdom | left | already covered? | bomb placed at |
+|---|---:|---|---:|
+| $[1,3]$ | 1 | no | **3** |
+| $[2,5]$ | 2 | yes ($2 \leq 3$) | — |
+| $[6,9]$ | 6 | no | **9** |
+
+Output `2`.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#446 of 486): [../../by-rating/446-ONEKING.md](../../by-rating/446-ONEKING.md)

@@ -151,4 +151,32 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Touching counts as passing**, so both tests are inclusive. The first case's opening barrier is type $2$ at height $2$ with a jump of exactly $2$, and it is cleared.
+- **The two barrier kinds compare in opposite directions.** A type $2$ barrier rises from the ground to $X$, so he needs $X \leq Y_2$; a type $1$ barrier hangs from $X$ upwards, so his ducked height $H - Y_1$ must satisfy $H - Y_1 \leq X$. Using one direction for both fails most cases.
+- **A broken barrier is still passed — unless it drains the last life.** The statement is explicit: if no life force remains after the break, he cannot pass *that* barrier. So the loop breaks before incrementing, and the first case passes $5$ of $6$ despite breaking three.
+- **Exhaustion on the very first barrier** (the second case: one life, one impassable barrier) → `0`.
+- **Lives may survive to the end** (the third case finishes with one left and passes all six).
+- **$H - Y_1$ is computed once**, since the ducked height never changes during a run.
+
+## Dry run
+
+First sample: $H = 5$, $Y_1 = 1$ (so ducked height $4$), $Y_2 = 2$, $L = 3$.
+
+| barrier | type | $X$ | test | result | lives | passed |
+|---:|---:|---:|---|---|---:|---:|
+| 1 | 2 | 2 | $2 \leq 2$ | jump | 3 | 1 |
+| 2 | 2 | 1 | $1 \leq 2$ | jump | 3 | 2 |
+| 3 | 1 | 10 | $4 \leq 10$ | duck | 3 | 3 |
+| 4 | 2 | 8 | $8 \leq 2$ fails | break | 2 | 4 |
+| 5 | 2 | 4 | $4 \leq 2$ fails | break | 1 | 5 |
+| 6 | 1 | 2 | $4 \leq 2$ fails | break, **exhausted** | 0 | 5 |
+
+Output `5`.
+
 > CodeChef tags: `Basic Programming Concepts`, `Algorithms`
+
+---
+
+Same problem in rating order (#244 of 486): [../../by-rating/244-PIPSQUIK.md](../../by-rating/244-PIPSQUIK.md)

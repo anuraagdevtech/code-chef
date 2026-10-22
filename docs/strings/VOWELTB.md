@@ -77,4 +77,26 @@ main()
 - **Time:** $O(1)$
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Each of the five vowels** `A E I O U`: all must print `Vowel`.
+- **`Y`**: a consonant under this problem's definition, since the set is exactly those five letters.
+- **`A` and `Z`**, the two ends of the alphabet: one of each class, confirming the test is membership and not a range comparison.
+- **Input shape**: one character and no test-case count. Reading with `.split()` discards the trailing newline, which a raw `read()` would keep and turn into a two-character token.
+- The input is guaranteed upper case, so no case folding is needed — but that guarantee is the only reason.
+
+## Dry run
+
+Input is the single character `Z`.
+
+| step | value |
+|---|---|
+| token read | `"Z"` |
+| in $\{A, E, I, O, U\}$? | no |
+| output | `Consonant` |
+
 > CodeChef tags: `Basic Programming Concepts`, `Algorithms`
+
+---
+
+Same problem in rating order (#12 of 486): [../../by-rating/012-VOWELTB.md](../../by-rating/012-VOWELTB.md)

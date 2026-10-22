@@ -144,4 +144,28 @@ main()
 - **Time:** $O(g \log^3 X)$ per test case, where $g$ is the local prime gap
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The three conditions force the shape $p \cdot q$ with $p < q$ the two smallest primes at least $X$.** No factor below $X$ means every prime factor is $\geq X$; not prime means at least two factors; not a perfect square rules out $p^2$.
+- **$p^2$ is the trap.** It is the smallest composite with all factors $\geq p$, and it is excluded precisely because it is a square — which is why the next prime is needed.
+- **$p \cdot q$ beats $p^3$**, since Bertrand's postulate gives $q < 2p \leq p^2$ for $p \geq 2$, so no cube can undercut it.
+- **$X = 1$ and $X = 2$ give the same answer**, $6$: the smallest prime at least $1$ is still $2$. Note $4$ is rejected as a square.
+- **The answer may exceed 32 bits**, as the statement warns: near $X = 10^9$ the product is about $10^{18}$.
+- **Primality must be tested, not sieved.** At $X = 10^9$ a sieve is out of the question, so Miller–Rabin with the first twelve prime bases is used — deterministic well past $10^{18}$.
+- **$T \leq 5$** keeps the prime-gap walk cheap; gaps near $10^9$ are only a few hundred.
+
+## Dry run
+
+| $X$ | smallest prime $\geq X$ | next prime | $Y$ |
+|---:|---:|---:|---:|
+| 1 | 2 | 3 | `6` |
+| 2 | 2 | 3 | `6` |
+| 3 | 3 | 5 | `15` |
+
+For $X = 3$: $9 = 3^2$ is a square, $3 \cdot 5 = 15$ is composite, non-square, and its only factors are $1, 3, 5, 15$ — none below $3$.
+
 > CodeChef tags: `Mathematics`, `Number Theory`
+
+---
+
+Same problem in rating order (#374 of 486): [../../by-rating/374-NUMHUNT.md](../../by-rating/374-NUMHUNT.md)

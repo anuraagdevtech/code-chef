@@ -143,4 +143,27 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Only the longest free run and the runner-up matter.** Nayeon wins exactly when the longest run $M$ is odd *and* $\lceil M/2 \rceil$ exceeds the second-longest run — verified by exhaustive search over every strip up to length $12$ ($56$ distinct block multisets, no mismatch).
+- **An even longest run loses.** The second sample row has runs of $1$ and $2$: the longest is even, so the answer is `No` whatever the rest looks like.
+- **A lone run of $1$ wins** (the third row), since $1$ is odd and its half, $1$, beats a runner-up of $0$.
+- **No free cells at all** (the last row) → `No`, since Nayeon cannot move.
+- **The halving is a ceiling**, so a run of $3$ contributes $2$ — enough to beat a runner-up of $1$ but not of $2$.
+- **$A_1 = A_N = 1$ is guaranteed**, so every free run is bounded on both sides and there are no edge runs to treat specially.
+- **The runner-up must be tracked alongside the maximum**, including the final run after the loop — a run ending at the last cell would otherwise be dropped.
+
+## Dry run
+
+| strip | free runs | longest $M$ | runner-up | $M$ odd? | $\lceil M/2 \rceil >$ runner-up? | output |
+|---|---|---:|---:|:---:|:---:|---|
+| $1,1,0,0,0,1,1$ | $3$ | 3 | 0 | yes | $2 > 0$ ✓ | `Yes` |
+| $1,0,1,1,1,0,0,1$ | $1, 2$ | 2 | 1 | **no** | — | `No` |
+| $1,1,0,1$ | $1$ | 1 | 0 | yes | $1 > 0$ ✓ | `Yes` |
+| $1,1,1,1$ | none | 0 | 0 | no | — | `No` |
+
 > CodeChef tags: `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#412 of 486): [../../by-rating/412-ARRGAME.md](../../by-rating/412-ARRGAME.md)

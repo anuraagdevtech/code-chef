@@ -123,4 +123,35 @@ main()
 - **Time:** $O(1)$ per test case — twelve candidate assignments
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The sum and difference pin down $a$ and $b$.** From $s = a+b$ and $d = a-b$ we get $a = (s+d)/2$ and $b = (s-d)/2$, so guessing which two of the four written values are the sum and the difference leaves nothing to search — twelve ordered pairs in all.
+- **The parity check comes first**: if $s + d$ is odd the candidate cannot yield integers, so it is discarded before dividing.
+- **The recovered pair must be verified against the whole multiset**, not just against $s$ and $d$ — the product and the quotient must match too. Comparing sorted lists handles duplicates for free.
+- **The range $[1, 10^4]$ must be enforced** on the recovered values, or a wildly wrong candidate could accidentally reproduce some of the numbers.
+- **At most one of the four can be negative** (only $a - b$ can be), which is a useful sanity check on the input but not needed by the algorithm.
+- **No solution** → `-1 -1` (the second row), printed as a pair rather than a single value.
+- **Uniqueness is guaranteed** when a solution exists, so the first match can be returned immediately.
+
+## Dry run
+
+First sample: the written values are $-1, 72, 0, 17$.
+
+Trying $s = 17$ and $d = -1$:
+
+| step | value |
+|---|---:|
+| $a = (17 + (-1))/2$ | 8 |
+| $b = (17 - (-1))/2$ | 9 |
+| $a + b$ | 17 ✓ |
+| $a - b$ | $-1$ ✓ |
+| $a \cdot b$ | 72 ✓ |
+| $\lfloor a/b \rfloor$ | 0 ✓ |
+
+All four match, so the output is `8 9`.
+
 > CodeChef tags: `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#339 of 486): [../../by-rating/339-MISS_NUM.md](../../by-rating/339-MISS_NUM.md)

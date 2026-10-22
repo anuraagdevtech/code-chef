@@ -115,4 +115,30 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **One backward pass answers every suffix.** Suffixes of equal length compare on their first differing character, so scanning right to left and remembering the verdict at the most recent mismatch gives each index's answer in constant time.
+- **Equal suffixes do not count**, which is why the carried verdict starts as false — a run of matching characters at the tail contributes nothing until a mismatch appears.
+- **A mismatch overwrites the verdict**, it does not combine with it: the character at position $i$ decides outright, and everything to its right becomes irrelevant.
+- **Identical strings give $0$**, since no mismatch ever sets the flag.
+- **A mismatch at the very front flips only one suffix**, while one at the very back flips all $N$ — which is the second sample, where `aaa` against `aab` differs only at the last character and answers $3$.
+- **The comparison is on bytes**, so no decoding is needed over up to $10^6$ characters.
+- **Sum of $N \leq 10^6$**: one pass, with the running total accumulated as a boolean.
+
+## Dry run
+
+Second sample: $A = $ `aaa`, $B = $ `aab`.
+
+| $i$ | $A_i$ | $B_i$ | mismatch? | verdict after | counted |
+|---:|---|---|:---:|---|---:|
+| 3 | `a` | `b` | yes | `a` $<$ `b` → true | 1 |
+| 2 | `a` | `a` | no | carried: true | 2 |
+| 1 | `a` | `a` | no | carried: true | 3 |
+
+Output `3` — every suffix of `aaa` is smaller, decided by that final character.
+
 > CodeChef tags: `Data Structures`, `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#458 of 486): [../../by-rating/458-STRCOMPARE.md](../../by-rating/458-STRCOMPARE.md)

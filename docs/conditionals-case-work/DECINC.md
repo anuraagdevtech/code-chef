@@ -78,4 +78,27 @@ main()
 - **Time:** $O(1)$
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 0$**: $0$ is divisible by $4$, so the answer is $0 + 1 = 1$. Taking the other branch would print $-1$, which is why the divisibility test has to come first.
+- **$N = 4$** (smallest positive multiple of four): $5$.
+- **$N = 1$**: not a multiple of four, so $0$ — the result may legitimately be zero.
+- **$N = 1000$** (the bound, and a multiple of four): $1001$.
+- **Input shape**: a single integer with *no* leading test-case count, unlike almost every other problem here — reading a count first would consume the value itself.
+
+## Dry run
+
+Input is the single value $N = 5$.
+
+| step | value |
+|---|---|
+| $N$ | $5$ |
+| $N \bmod 4$ | $1$ |
+| branch | not divisible, so $N - 1$ |
+| output | `4` |
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#9 of 486): [../../by-rating/009-DECINC.md](../../by-rating/009-DECINC.md)

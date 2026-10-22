@@ -125,4 +125,27 @@ main()
 - **Time:** $O(1)$ per test case — the search is bounded by a small constant
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Already at the target** ($N = 50$): zero minutes, with no charging or discharging.
+- **Above the target** ($N = 51$): the shortfall is negative, so some discharging is forced before the arithmetic works out — the `num < 0` guard is what skips the impossible choices.
+- **Parity forces the pairing.** The charge step moves the level by $2$ and the discharge by $3$, so for a given shortfall the number of discharges must match its parity; $N = 23$ has an odd shortfall of $27$ and needs an odd count of discharges, landing on $1$ discharge and $15$ charges.
+- **Empty battery** ($N = 0$): $25$ minutes of pure charging.
+- The search bound of $201$ is generous — the shortfall is at most $50$, so the optimum always uses a small number of discharges and the loop never runs out.
+
+## Dry run
+
+| $N$ | shortfall $50 - N$ | discharges $b$ | $\text{shortfall} + 3b$ | charges $a$ | total | output |
+|---:|---:|---:|---:|---:|---:|---|
+| 51 | $-1$ | 1 | 2 | 1 | 2 | `2` |
+| 50 | 0 | 0 | 0 | 0 | 0 | `0` |
+| 23 | 27 | 1 | 30 | 15 | 16 | `16` |
+| 0 | 50 | 0 | 50 | 25 | 25 | `25` |
+
+For $N = 23$, $b = 0$ leaves the odd value $27$, which cannot be halved — hence $b = 1$.
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#130 of 486): [../../by-rating/130-FIFTYPE.md](../../by-rating/130-FIFTYPE.md)

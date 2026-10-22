@@ -117,3 +117,24 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **Only coverage matters, not popularity.** The third row has all four people on one topic, which still leaves three fields untouched — so counting people per topic is beside the point.
+- **Every topic taken** (the first row, four people on four distinct topics) → `No`.
+- **The comparison is strict**: if all $M$ topics are covered there is no empty field left, so $\mathrm{distinct} < M$ rather than $\leq$.
+- **$A_i \leq M$ is guaranteed**, so no out-of-range topic can appear and the distinct count never exceeds $M$.
+- **$N$ may exceed $M$** (the second row has five people and four topics), which forces duplicates and therefore guarantees a free field.
+- **Sum of $N$ and of $M$ each up to $10^6$**: one pass with a set per case, and the values stay as raw byte tokens.
+
+## Dry run
+
+| $N$ | $M$ | topics chosen | distinct | $< M$? | output |
+|---:|---:|---|---:|:---:|---|
+| 4 | 4 | $1,2,3,4$ | 4 | no | `No` |
+| 5 | 4 | $4,2,1,1,1$ | 3 | yes | `Yes` |
+| 4 | 4 | $4,4,4,4$ | 1 | yes | `Yes` |
+
+---
+
+Same problem in rating order (#221 of 486): [../../by-rating/221-NOBEL.md](../../by-rating/221-NOBEL.md)

@@ -112,3 +112,26 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Exactly half pass**, $2Z = XY$: the rate is $50\%$, not above it, so `NO`. Sample case 4 ($3 \times 6 = 18$ students, $9$ passes) is built on this.
+- **$Z = 0$**: nobody passed, so `NO` for any $X, Y$.
+- **$Z = XY$**: everybody passed, and $2XY > XY$ holds for all $X, Y \geq 1$, so `YES`.
+- **Smallest school** ($X = Y = 1$): $Z = 0$ gives `NO` and $Z = 1$ gives `YES` — a single student is either all or nothing.
+- $XY$ is at most $250$, so there is no overflow concern; the reason to multiply out is exactness at the halfway point, not range.
+
+## Dry run
+
+| $X$ | $Y$ | $Z$ | students $XY$ | $2Z$ | $2Z > XY$ | output |
+|---:|---:|---:|---:|---:|:---:|---|
+| 2 | 10 | 12 | 20 | 24 | yes | `YES` |
+| 2 | 10 | 3 | 20 | 6 | no | `NO` |
+| 1 | 5 | 3 | 5 | 6 | yes | `YES` |
+| 3 | 6 | 9 | 18 | 18 | no | `NO` |
+
+Row 3 shows an odd total handled exactly, and row 4 the $50\%$ tie failing.
+
+---
+
+Same problem in rating order (#7 of 486): [../../by-rating/007-EXAMCHEF.md](../../by-rating/007-EXAMCHEF.md)

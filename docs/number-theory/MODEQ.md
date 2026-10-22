@@ -165,3 +165,28 @@ main()
 
 - **Time:** $O(N \cdot d)$ per test case after an $O(M)$ sieve
 - **Space:** $O(M)$
+
+## Edge cases
+
+- **The nested modulo collapses.** With $a < b$ we have $M \bmod a < a < b$, so the left side is just $M \bmod a$; and the condition becomes $M \bmod a = (M \bmod b) \bmod a$, i.e. $a \mid \bigl(M - (M \bmod b)\bigr) = a \mid b \lfloor M/b \rfloor$.
+- **So for each $b$ the answer is the number of its partners below it that divide $b \lfloor M/b \rfloor$** — a divisor count, not a search over pairs.
+- **$b > M$ makes the product zero**, and every $a$ divides $0$, so all $b-1$ partners qualify. Without that branch the divisor routine would be handed $0$ and loop forever.
+- **$a < b$ is strict**, so the divisors counted are those strictly below $b$.
+- **The divisors are generated from the smallest-prime-factor sieve**, built once across all test cases to the largest $M$ — re-factorising per pair would be far too slow.
+- **$a = 1$ always qualifies**, since $1$ divides everything, so every $b \geq 2$ contributes at least one pair.
+- **Sum of $N \leq 10^6$** with $M \leq 5 \cdot 10^5$, so the sieve dominates the memory and the per-$b$ divisor work stays small.
+
+## Dry run
+
+Second sample: $N = 3$, $M = 6$.
+
+| $b$ | $\lfloor M/b \rfloor$ | $b \lfloor M/b \rfloor$ | divisors below $b$ | pairs |
+|---:|---:|---:|---|---:|
+| 2 | 3 | 6 | $\{1\}$ | 1 |
+| 3 | 2 | 6 | $\{1, 2\}$ | 2 |
+
+Output `3`. Checking $(2,3)$ directly: $((6 \bmod 2) \bmod 3) = 0$ and $((6 \bmod 3) \bmod 2) = 0$ ✓
+
+---
+
+Same problem in rating order (#459 of 486): [../../by-rating/459-MODEQ.md](../../by-rating/459-MODEQ.md)

@@ -122,4 +122,31 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The expression is a bitwise majority.** Bit $b$ of $(A|B) \mathbin{\&} (B|C) \mathbin{\&} (C|A)$ is set exactly when at least two of $A, B, C$ have bit $b$ — because a bit held by only one of them is missing from the one OR that excludes it.
+- **So every bit of $X$ goes into all three**, and the three are separated by marker bits that only one of them holds, which the majority then discards.
+- **The markers must be clear in $X$.** Since $X \leq 10^8 < 2^{27}$, bits $27$ and $28$ are guaranteed free — picking a marker inside $X$'s range could collide and corrupt the result.
+- **The bound $10^9$ is respected**: the largest output is $X \mid 2^{28} \leq 10^8 + 2.68 \times 10^8$, comfortably under.
+- **Distinctness is automatic**, as the three differ in bits $27$ and $28$.
+- **$X \geq 1$ is guaranteed**, so no all-zero degenerate case arises — though the construction would handle it.
+- **This answer differs from the sample's** (`3 134217731 268435459` against `1 2 3`); the statement allows any valid triple, so a special judge evaluates the expression.
+
+## Dry run
+
+$X = 3 = 11_2$.
+
+| bit | $A = X$ | $B = X \mid 2^{27}$ | $C = X \mid 2^{28}$ | how many have it | majority |
+|---:|:---:|:---:|:---:|---:|:---:|
+| 0 | 1 | 1 | 1 | 3 | **1** |
+| 1 | 1 | 1 | 1 | 3 | **1** |
+| 27 | 0 | 1 | 0 | 1 | 0 |
+| 28 | 0 | 0 | 1 | 1 | 0 |
+
+The majority is $11_2 = 3 = X$ ✓
+
 > CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
+
+---
+
+Same problem in rating order (#336 of 486): [../../by-rating/336-ORANDCON.md](../../by-rating/336-ORANDCON.md)

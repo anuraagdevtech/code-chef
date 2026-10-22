@@ -119,4 +119,25 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$P = 1$** (just the driver): the answer is $V \cdot M$, the full mileage. The $+1$ in $M - P + 1$ is what makes this come out right — without it the row gives $50$ instead of $60$.
+- **The driver is already priced into $M$**, so only the $P - 1$ extra passengers reduce the range. That off-by-one is the entire problem, and it is read from the statement rather than derived.
+- **$P \leq 5$ while $M \geq 6$**, so $M - P + 1 \geq 2$ and the answer is always positive — there is no clamp to worry about.
+- **Largest input** ($V = 100$, $M = 56$, $P = 1$): $5600$.
+
+## Dry run
+
+| $P$ | $M$ | $V$ | effective mileage $M - P + 1$ | range $V \cdot {\cdot}$ | output |
+|---:|---:|---:|---:|---:|---|
+| 5 | 10 | 20 | 6 | 120 | `120` |
+| 1 | 6 | 10 | 6 | 60 | `60` |
+| 4 | 6 | 1 | 3 | 3 | `3` |
+
+Row 2 is the driver-only case that pins the $+1$.
+
 > CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#148 of 486): [../../by-rating/148-CARRANGE.md](../../by-rating/148-CARRANGE.md)

@@ -119,4 +119,27 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 15$ then $N = 16$**, the deck boundary: $15$ is the last lower seat (position $15$, so Single) and $16$ is the first upper one (position $1$, so Double). The sample includes $16$, which is where the modulo has to be right.
+- **The `(n - 1) % 15 + 1` form matters**: a plain `n % 15` sends seat $15$ to position $0$ and breaks both the deck's last seat and the Single test.
+- **$N = 10$ then $N = 11$**, the berth boundary: position $10$ is still Double, $11$ is Single.
+- **First and last seats**: $N = 1$ is Lower Double, $N = 30$ is Upper Single.
+
+## Dry run
+
+| $N$ | deck ($\leq 15$?) | position $(N-1)\bmod 15 + 1$ | berth ($\leq 10$?) | output |
+|---:|---|---:|---|---|
+| 6 | Lower | 6 | Double | `Lower Double` |
+| 28 | Upper | 13 | Single | `Upper Single` |
+| 16 | Upper | 1 | Double | `Upper Double` |
+| 13 | Lower | 13 | Single | `Lower Single` |
+| 10 | Lower | 10 | Double | `Lower Double` |
+
+Row 3 wraps to position $1$; row 5 sits exactly on the Double limit.
+
 > CodeChef tags: `Basic Programming Concepts`, `Algorithms`
+
+---
+
+Same problem in rating order (#39 of 486): [../../by-rating/039-SEATNUMBER.md](../../by-rating/039-SEATNUMBER.md)

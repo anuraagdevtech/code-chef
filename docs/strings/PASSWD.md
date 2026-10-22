@@ -125,3 +125,26 @@ main()
 
 - **Time:** $O(|S|)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **The lowercase rule applies to the whole string; the other three apply strictly inside.** That asymmetry is in the statement, and the code mirrors it — `islower` is tested over `s` while the rest are tested over `s[1:-1]`.
+- **The interior exclusion is what fails the first row.** `#cookOff#P1` has a digit, but it is the final character, so it does not count and the answer is `NO`.
+- **The length bar is $10$**, and the third row (`gR3@tPWD`, eight characters) fails on that alone despite satisfying every other rule.
+- **The length check must come first**, or `s[1:-1]` on a very short string would be tested — harmlessly here, but the ordering keeps the logic honest.
+- **The special set is exactly `@#%&?`**, so a character like `!` or `$` does not qualify even though it looks special; it also cannot appear, since the constraints limit the alphabet.
+- **Sum of lengths up to $10^6$**: each predicate short-circuits, and the slice is taken once rather than per rule.
+
+## Dry run
+
+| password | length | lower (whole) | upper (inside) | digit (inside) | special (inside) | output |
+|---|---:|:---:|:---:|:---:|:---:|---|
+| `#cookOff#P1` | 11 | yes | `O`, `P` | **none** (the `1` is last) | `#` | `NO` |
+| `U@code4CHEFINA` | 14 | yes | `C`,`H`,… | `4` | `@` | `YES` |
+| `gR3@tPWD` | 8 | — | — | — | — | `NO` (too short) |
+
+The first row's interior is `cookOff#P`, which has no digit at all.
+
+---
+
+Same problem in rating order (#267 of 486): [../../by-rating/267-PASSWD.md](../../by-rating/267-PASSWD.md)

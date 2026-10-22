@@ -131,3 +131,28 @@ main()
 
 - **Time:** $O(N \log(\text{months}))$
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **The yield only ever grows**, since every tree gets taller each month and a tree once legal stays legal — so the first sufficient month can be binary searched.
+- **Legality is per tree, not per total.** A tree below the minimum height $L$ contributes nothing at all, which is why the probe tests each tree separately rather than summing everything.
+- **The early exit matters.** Once the running total reaches $W$ the probe returns, which keeps each of the $\sim 60$ binary-search steps cheap even at $N = 10^5$.
+- **Month $0$ must be a candidate**, since the forest may already suffice — the search's lower bound is $0$, not $1$.
+- **The upper bound must be generous**: with $W$ up to $10^{18}$ and a growth rate of $1$, the answer can approach $10^{18}$, so the search starts at twice that.
+- **Heights reach $10^9 + 10^9 \cdot 10^{18}$** inside the probe, so exact integers are essential.
+- **There is no test-case count**: the input is $N$, $W$, $L$ followed by the tree data.
+
+## Dry run
+
+Sample: $W = 74$, $L = 51$, trees $(H, R) = (2,2), (5,7), (2,9)$.
+
+| months | heights | legal (≥ 51) | harvest |
+|---:|---|---|---:|
+| 6 | $14, 47, 56$ | just the third | 56 |
+| 7 | $16, 54, 65$ | the second and third | 119 |
+
+Month $6$ falls short of $74$ and month $7$ clears it, so the answer is `7`.
+
+---
+
+Same problem in rating order (#466 of 486): [../../by-rating/466-FORESTGA.md](../../by-rating/466-FORESTGA.md)

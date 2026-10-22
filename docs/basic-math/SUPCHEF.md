@@ -103,4 +103,24 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Finishing exactly at minute $M$** ($M = 10$, $N = 1$, $K = 10$): too late, because the requirement is *strictly* before. The sample's first row exists to catch `<=`.
+- **Comfortably in time** ($20 < 25$): `YES`.
+- **Over the deadline** ($20$ against $15$): `NO`.
+- **Largest work** ($N = K = 10^4$): the product is $10^8$, well within range alongside $M \leq 10^9$.
+- The total work is the product $N \cdot K$, so both numbers have to be combined before comparing — neither alone decides it.
+
+## Dry run
+
+| $M$ | $N$ | $K$ | work $NK$ | $< M$? | output |
+|---:|---:|---:|---:|:---:|---|
+| 10 | 1 | 10 | 10 | no (equal) | `NO` |
+| 25 | 2 | 10 | 20 | yes | `YES` |
+| 15 | 2 | 10 | 20 | no | `NO` |
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`
+
+---
+
+Same problem in rating order (#99 of 486): [../../by-rating/099-SUPCHEF.md](../../by-rating/099-SUPCHEF.md)

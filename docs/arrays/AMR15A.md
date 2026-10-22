@@ -167,4 +167,28 @@ main()
 - **Time:** $O(N)$
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Exactly half lucky** ($N = 2$ with one even count): $2 \times 1 > 2$ is false, so `NOT READY` — a **strict** majority is required and `>=` would be wrong.
+- **$N = 1$**: the single soldier decides it, and the two sample runs are precisely the two outcomes.
+- **All lucky** or **none lucky**: the extremes.
+- **"Lucky" means an even weapon count**, so a soldier carrying $1$ weapon is unlucky while $2$ is lucky — the parity, not the amount.
+- **Input shape**: $N$ followed by the array, with no test-case count.
+
+## Dry run
+
+Sample 1: $N = 1$, weapons $[1]$.
+
+| step | value |
+|---|---|
+| even counts | $0$ |
+| $2 \times 0 > 1$? | no |
+| output | `NOT READY` |
+
+Sample 2: $N = 1$, weapons $[2]$ — one even count, and $2 \times 1 > 1$ holds, so `READY FOR BATTLE`.
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`
+
+---
+
+Same problem in rating order (#71 of 486): [../../by-rating/071-AMR15A.md](../../by-rating/071-AMR15A.md)

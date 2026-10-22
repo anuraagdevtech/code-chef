@@ -148,4 +148,31 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **$S$ starts at $0$, so the first element must be added** — multiplying leaves $S$ at zero forever. Something has to seed the product.
+- **Ones are worthless as multipliers**, since $S \times 1$ does nothing, so every $1$ should be added instead.
+- **Two or more ones make a free seed**: add all of them and multiply by everything else. The second sample's two ones seed $2$, then $\times 2$ gives $4$.
+- **With no ones, adding exactly one element is optimal** and *which* one does not matter: $a \times \prod(\text{rest}) = \prod(\text{all})$ either way. Adding two instead gives $(a+b)\prod(\text{rest})$, which is worse because $a + b \leq ab$ for $a, b \geq 2$.
+- **With exactly one 1, adding the smallest other element too is strictly better.** The seed becomes $1 + a$ and the answer $\frac{1+a}{a}\prod(\text{all})$, maximised by the smallest $a$ — better than adding the $1$ alone, which gives just $\prod(\text{all})$.
+- **All ones** means nothing is worth multiplying, and the answer is simply $N$.
+- **The modulus is applied to the product**, but the comparisons that drive the choice are made on the true values — which is safe here because the decisions depend only on counts and the smallest element, never on the reduced product.
+
+## Dry run
+
+First sample: $A = 4, 2, 5, 2$ — no ones.
+
+| step | value |
+|---|---:|
+| smallest element, added as the seed | 2 |
+| remaining factors | $4, 5, 2$ |
+| product of the rest | 40 |
+| total | **80** |
+
+Output `80`, which equals $\prod A$ — as it must, since adding exactly one element and multiplying by the rest always reproduces the full product. The gap only opens up with more additions: on $A = 3, 3$, adding both gives $6$ against the product's $9$.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#368 of 486): [../../by-rating/368-ENV.md](../../by-rating/368-ENV.md)

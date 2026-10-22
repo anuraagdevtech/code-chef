@@ -108,4 +108,24 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **No overlap** ($\{4,3\}$ against $\{1,2\}$): both races are won, so $2$.
+- **Complete overlap** ($\{2,1\}$ against $\{1,2\}$): neither, so $0$. This row also shows that order inside a pair is irrelevant — the sets are equal even though the numbers are listed in the opposite order.
+- **Partial overlap**: exactly $1$.
+- **$X \neq Y$ and $A \neq B$ are guaranteed**, so each pair really has two distinct members and the answer is $2$ minus the overlap size — no deduplication inside a pair is needed.
+- The answer is always $0$, $1$ or $2$.
+
+## Dry run
+
+| Chef's races | rival's races | difference | output |
+|---|---|---|---:|
+| $\{4, 3\}$ | $\{1, 2\}$ | $\{4, 3\}$ | `2` |
+| $\{4, 2\}$ | $\{1, 2\}$ | $\{4\}$ | `1` |
+| $\{2, 1\}$ | $\{1, 2\}$ | $\varnothing$ | `0` |
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#79 of 486): [../../by-rating/079-CHEFRACES.md](../../by-rating/079-CHEFRACES.md)

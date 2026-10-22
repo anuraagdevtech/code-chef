@@ -122,4 +122,27 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Trailing zero coefficients** ($1, 2, 4, 0$): the degree is $2$, not $3$. Returning $N - 1$ is the trap, and the sample's last row catches it.
+- **Leading zeros** ($0, 0, 5$): the degree is $2$ — low-order zeros are irrelevant, only the highest nonzero index matters.
+- **Negative coefficients count as nonzero** ($-3$): testing `a > 0` instead of `a != 0` misses them, and the sample's second row has one.
+- **A constant polynomial** ($5$): degree $0$.
+- **At least one coefficient is nonzero** by the constraints, so the answer is always well defined; the initial value of $0$ would otherwise be a silently wrong default for an all-zero input.
+
+## Dry run
+
+| coefficients (index = exponent) | nonzero indices | highest | output |
+|---|---|---:|---|
+| $5$ | $0$ | 0 | `0` |
+| $-3, 3$ | $0, 1$ | 1 | `1` |
+| $0, 0, 5$ | $2$ | 2 | `2` |
+| $1, 2, 4, 0$ | $0, 1, 2$ | 2 | `2` |
+
+Row 4 has four coefficients but degree $2$.
+
 > CodeChef tags: `Mathematics`, `Algorithms`
+
+---
+
+Same problem in rating order (#92 of 486): [../../by-rating/092-DPOLY.md](../../by-rating/092-DPOLY.md)

@@ -95,4 +95,24 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$X = 7$**, the boundary: he finishes exactly at $10$ pm, which counts as on time, so `Yes`. An off-by-one here (`<` instead of `<=`) fails precisely this case, and the sample tests it.
+- **$X = 8$**: finishes at $11$ pm, so `No`.
+- **$X = 1$** (smallest) finishes at $4$ pm, comfortably `Yes`; **$X = 9$** (largest) finishes at midnight, `No`.
+- The bound $X \leq 9$ keeps everything inside one afternoon, so there is no wrap past midnight and no 12-hour-clock conversion to get wrong.
+
+## Dry run
+
+| $X$ | finishes at | $X + 3 \leq 10$ | output |
+|---:|---:|:---:|---|
+| 7 | $10$ pm | yes (equality) | `Yes` |
+| 9 | $12$ am | no | `No` |
+
+The first row is the tight case: equality is still on time.
+
 > CodeChef tags: `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#6 of 486): [../../by-rating/006-JASSIGNMENTS.md](../../by-rating/006-JASSIGNMENTS.md)

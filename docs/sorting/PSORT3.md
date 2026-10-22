@@ -120,3 +120,29 @@ main()
 
 - **Time:** $O(N \log N)$
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **The two keys pull in opposite directions**, so the sort key negates the second component and leaves the first positive: descending by $B_i$, ascending by $A_i$ on ties.
+- **Negation is safe here** because the values are positive integers — on an unbounded or floating type a reverse comparator would be the sturdier choice.
+- **The tie-break is genuinely exercised** by the sample: two pairs share $B_i = 3$ and are ordered by their first components, $2$ before $3$.
+- **The pairs come from two separate arrays**, zipped by index — not read as interleaved pairs.
+- **The output is one flat line** of $2N$ numbers, each pair's components adjacent.
+- **$A_i, B_i$ up to $10^{18}$**, so the keys stay exact in Python where a float key would lose precision.
+- **There is no test-case count**: the input is $N$, then array $A$, then array $B$.
+
+## Dry run
+
+Sample: $A = 2, 2, 3$ and $B = 6, 3, 3$.
+
+| pair | sort key $(-B_i,\, A_i)$ |
+|---|---|
+| $(2, 6)$ | $(-6, 2)$ |
+| $(2, 3)$ | $(-3, 2)$ |
+| $(3, 3)$ | $(-3, 3)$ |
+
+Sorted: $(2,6)$, then $(2,3)$ before $(3,3)$ on the tie. Output `2 6 2 3 3 3`.
+
+---
+
+Same problem in rating order (#480 of 486): [../../by-rating/480-PSORT3.md](../../by-rating/480-PSORT3.md)

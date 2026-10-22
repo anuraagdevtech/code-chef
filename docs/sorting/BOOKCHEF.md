@@ -125,3 +125,30 @@ main()
 
 - **Time:** $O(M \log M)$
 - **Space:** $O(N + M)$
+
+## Edge cases
+
+- **Two sort keys in one tuple.** `friend not in special` puts special friends first (since `False < True`), and `-popularity` orders each group most-popular first — so one `sort` does the whole algorithm.
+- **A special friend's post outranks every non-special post** regardless of popularity, which is exactly what the sample shows: a post of popularity $1$ from a special friend beats one of popularity $10$ from another.
+- **Within the special group popularity still rules**, so the two special posts come out as $2$ then $1$.
+- **Negating the popularity is what gives a descending order** inside an ascending sort, avoiding a custom comparator.
+- **No tie rule is specified** for equally popular posts in the same group, so the post text serves as a deterministic third key.
+- **There is no test-case count**: the first line holds $N$ and $M$ together.
+- **Friend ids are matched as raw byte tokens** against the special set, safe because the input has no leading zeros.
+
+## Dry run
+
+Special friends $\{1, 2\}$.
+
+| post | friend | special? | popularity | sort key |
+|---|---:|:---:|---:|---|
+| `WhoDoesntLoveChefBook` | 1 | yes | 1 | $(\text{False}, -1)$ |
+| `WinterIsComing` | 2 | yes | 2 | $(\text{False}, -2)$ |
+| `TheseViolentDelights…` | 3 | no | 10 | $(\text{True}, -10)$ |
+| `ComeAtTheKing…` | 4 | no | 3 | $(\text{True}, -3)$ |
+
+Sorted: `WinterIsComing`, `WhoDoesntLoveChefBook`, `TheseViolentDelights…`, `ComeAtTheKing…`
+
+---
+
+Same problem in rating order (#347 of 486): [../../by-rating/347-BOOKCHEF.md](../../by-rating/347-BOOKCHEF.md)

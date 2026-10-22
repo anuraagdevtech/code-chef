@@ -122,4 +122,29 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The grid is a checkerboard and each step flips colour**, so Alice's colour after $k$ moves shifts by $kX$ and Bob's by $(k-1)Y$ — they can only share a cell when those parities agree.
+- **Equal move parities fix the gap.** If $X \equiv Y$, then $kX - (k-1)Y \equiv X \pmod 2$ for every $k$, so meeting requires $(N+M) \equiv X \pmod 2$ and no choice of $k$ can help.
+- **Unequal move parities let $k$ choose the colour.** If $X \not\equiv Y$ the expression is $k + Y \pmod 2$, so some $k$ always works and the answer is `Yes` regardless of the grid.
+- **They must meet right after Alice's move**, which is why Bob has made $k-1$ moves and not $k$ — the asymmetry is what puts $Y$ in the odd-parity branch.
+- **Steps may be wasted**, since $N, M \geq 2$ always leaves a neighbour to bounce off, so distance is never an obstacle and only parity matters.
+- **$X$ and $Y$ reach $10^9$** while only their parities are used.
+- **The second sample row is the sole `No`**: both moves odd, and $(N+M)$ even against an odd $X$.
+
+## Dry run
+
+| $N$ | $M$ | $X$ | $Y$ | parities | condition | output |
+|---:|---:|---:|---:|---|---|---|
+| 2 | 2 | 2 | 1 | differ | $k$ is free | `Yes` |
+| 2 | 2 | 1 | 1 | same | $(N{+}M) \bmod 2 = 0 \neq 1$ | `No` |
+| 2 | 2 | 1 | 2 | differ | $k$ is free | `Yes` |
+| 2 | 3 | 3 | 3 | same | $(N{+}M) \bmod 2 = 1 = 1$ ✓ | `Yes` |
+
+In the second row Alice always lands on a colour Bob has just left.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#400 of 486): [../../by-rating/400-GRITGRID.md](../../by-rating/400-GRITGRID.md)

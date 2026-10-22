@@ -111,4 +111,26 @@ main()
 - **Time:** $O(|s|)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Block alignment is the point, not the letter counts.** `ABBA` passes because its blocks are `AB` and `BA`, while `ABAABB` fails on its middle block `AA` — and both strings contain three of each letter in the second case, so a counting argument cannot distinguish them.
+- **$|s|$ is guaranteed even**, so there is never a trailing partial block to decide about.
+- **The shortest input** ($|s| = 2$) is a single block: `AB` passes, `AA` fails.
+- **A failure anywhere fails the whole string**, so `all` short-circuits on the first bad block.
+
+## Dry run
+
+| $s$ | blocks of two | all differ? | output |
+|---|---|:---:|---|
+| `AB` | `AB` | yes | `yes` |
+| `ABBA` | `AB`, `BA` | yes | `yes` |
+| `ABAABB` | `AB`, `AA`, `BB` | no | `no` |
+| `AA` | `AA` | no | `no` |
+
+Rows 2 and 3 have the same letter counts in different alignments.
+
 > CodeChef tags: `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#175 of 486): [../../by-rating/175-PLAYPIAN.md](../../by-rating/175-PLAYPIAN.md)

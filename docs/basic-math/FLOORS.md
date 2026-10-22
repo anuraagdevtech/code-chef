@@ -117,4 +117,27 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Same floor, different rooms** ($42$ and $50$): the answer is $0$ even though the room numbers differ by $8$. The sample's second row.
+- **Adjacent rooms across a floor boundary** ($80$ and $81$): one room apart but one *floor* apart. The sample's fourth row, and this is where the shift matters.
+- **The $-1$ shift is essential.** Rooms are numbered from $1$, so room $10$ belongs to floor $1$ and room $11$ to floor $2$. A plain `room // 10 + 1` puts room $10$ on floor $2$, breaking every multiple of ten.
+- **The extremes** ($1$ and $100$): floors $1$ and $10$, nine apart.
+- $X \neq Y$ is guaranteed, but their floors may still coincide, so a zero answer is legitimate.
+
+## Dry run
+
+| $X$ | floor of $X$ | $Y$ | floor of $Y$ | difference | output |
+|---:|---:|---:|---:|---:|---|
+| 1 | 1 | 100 | 10 | 9 | `9` |
+| 42 | 5 | 50 | 5 | 0 | `0` |
+| 53 | 6 | 30 | 3 | 3 | `3` |
+| 81 | 9 | 80 | 8 | 1 | `1` |
+
+Row 4 is the boundary pair: consecutive rooms, different floors.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#69 of 486): [../../by-rating/069-FLOORS.md](../../by-rating/069-FLOORS.md)

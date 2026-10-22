@@ -116,4 +116,33 @@ main()
 - **Time:** $O(N \log A)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **Prefix GCDs form a divisibility chain.** $B_i = \gcd(B_{i-1}, A_i)$, so $B_i$ always divides $B_{i-1}$ — making that the one necessary condition, and the second row fails it ($1$ is not divisible by $3$).
+- **The condition is also sufficient, and $B$ realises itself.** Taking $A = B$ gives $\gcd(B_1, \dots, B_i) = B_i$, because every earlier $B_j$ is a multiple of $B_i$ — so no construction is needed beyond echoing the input.
+- **$B_i \leq 10^9$ is given**, so echoing $B$ automatically respects the bound on $A_i$.
+- **The chain must be checked in the right direction**: $B_{i-1} \bmod B_i$, not the reverse. The reverse test would accept the second row.
+- **$N = 1$** has no constraint at all, and $A = B$ works trivially.
+- **A constant $B$** is a valid chain (every value divides itself), as is any strictly decreasing chain of divisors.
+- **This answer differs from the sample's** (`4 2` against `4 26`), and both produce the same $B$; the statement asks for any such $A$, so a special judge recomputes the prefix GCDs.
+
+## Dry run
+
+First sample: $B = 4, 2$.
+
+| check | value |
+|---|---|
+| $4 \bmod 2$ | $0$ ✓ |
+
+So output $A = 4, 2$ and verify:
+
+| $i$ | $\gcd(A_1 \dots A_i)$ | required $B_i$ |
+|---:|---:|---:|
+| 1 | $\gcd(4) = 4$ | 4 ✓ |
+| 2 | $\gcd(4, 2) = 2$ | 2 ✓ |
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#358 of 486): [../../by-rating/358-GCDPRF.md](../../by-rating/358-GCDPRF.md)

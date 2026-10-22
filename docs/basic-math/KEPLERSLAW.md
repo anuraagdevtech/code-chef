@@ -112,3 +112,24 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Identical pairs** ($1\,1\,1\,1$): trivially `Yes`.
+- **The exponents must be the right way round** — $T$ squared against $R$ cubed. Swapping them changes the third row's answer from `Yes` to `No`, since $1 \cdot 8^2 = 64$ against $8^3 \cdot 2^2 = 2048$.
+- **Cross-multiplication keeps the exact case exact.** Comparing $T^2/R^3$ as floats risks a false negative precisely on the third row, where the equality holds exactly ($512 = 512$).
+- **No overflow**: the cubes reach $1000$ and the squares $100$, so the products stay around $10^5$.
+
+## Dry run
+
+| $T_1$ | $T_2$ | $R_1$ | $R_2$ | $T_1^2 R_2^3$ | $T_2^2 R_1^3$ | output |
+|---:|---:|---:|---:|---:|---:|---|
+| 1 | 1 | 1 | 1 | 1 | 1 | `Yes` |
+| 1 | 2 | 3 | 4 | 64 | 108 | `No` |
+| 1 | 8 | 2 | 8 | 512 | 512 | `Yes` |
+
+Row 3 is the exact equality that floating point would endanger.
+
+---
+
+Same problem in rating order (#162 of 486): [../../by-rating/162-KEPLERSLAW.md](../../by-rating/162-KEPLERSLAW.md)

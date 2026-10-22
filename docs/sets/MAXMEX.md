@@ -107,4 +107,29 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **The MEX is over *positive* integers**, so $0$ never enters the reasoning and the required values are $1 \dots M-1$.
+- **Only copies of $M$ must be dropped.** Every other element is harmless: values above $M$ cannot lower the MEX, and duplicates of the small values cannot either — so the answer is $N$ minus the count of $M$.
+- **A missing value below $M$ makes it impossible** → $-1$, since the MEX would land there instead.
+- **$M$ may be absent entirely**, in which case nothing is dropped and the answer is $N$ — the sample, where $M = 3$ does not occur.
+- **$M \leq N$ is guaranteed**, so the required run $1 \dots M-1$ could in principle fit.
+- **$A_i$ reaches $10^9$** while $M \leq N$, so the large values are counted but never need inspecting individually.
+- **The membership test compares encoded tokens**, which is safe because the input has no leading zeros.
+
+## Dry run
+
+Sample: $N = 3$, $M = 3$, $A = 1, 2, 4$.
+
+| required value | present? |
+|---:|:---:|
+| 1 | yes |
+| 2 | yes |
+
+Both are there, and $M = 3$ appears $0$ times — so everything can be kept. Output `3`, with the chosen set $\{1, 2, 4\}$ whose MEX is $3$.
+
 > CodeChef tags: `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#422 of 486): [../../by-rating/422-MAXMEX.md](../../by-rating/422-MAXMEX.md)

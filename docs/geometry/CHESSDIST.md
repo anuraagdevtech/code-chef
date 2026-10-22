@@ -109,4 +109,26 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Same square**: distance $0$.
+- **Pure rank or file move** ($(5,5)$ to $(5,3)$): one gap is zero, so the answer is simply the other. The sample's second row.
+- **Pure diagonal** (both gaps equal): the answer is that single value, not their sum — this is exactly where Manhattan distance would double the count, and it is the reason the metric is a maximum.
+- **Opposite corners** ($(1,1)$ to $(10^5, 10^5)$): $99999$ moves.
+- The king closes both gaps at once on a diagonal step, so the larger gap alone determines the move count.
+
+## Dry run
+
+| from | to | $|\Delta x|$ | $|\Delta y|$ | $\max$ | output |
+|---|---|---:|---:|---:|---|
+| $(2,4)$ | $(5,1)$ | 3 | 3 | 3 | `3` |
+| $(5,5)$ | $(5,3)$ | 0 | 2 | 2 | `2` |
+| $(1,4)$ | $(3,3)$ | 2 | 1 | 2 | `2` |
+
+Row 1 is pure diagonal: three moves, not the six Manhattan would suggest.
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#57 of 486): [../../by-rating/057-CHESSDIST.md](../../by-rating/057-CHESSDIST.md)

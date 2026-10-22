@@ -100,4 +100,27 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N$ an exact multiple of $4$** ($N = 4$): one car, and the $+3$ must not make it two.
+- **Smallest input** ($N = 2$): a partly filled car still counts, so the answer is $1$ rather than $0$.
+- **$N = 98$**: $24$ full cars carry $96$ people and the last two need a $25$th.
+- **Largest input** ($N = 1000$): exactly $250$ cars.
+- Everyone must travel, so this is a ceiling and never a floor — flooring would leave people behind.
+
+## Dry run
+
+| $N$ | $N + 3$ | $//\,4$ | output |
+|---:|---:|---:|---|
+| 4 | 7 | 1 | `1` |
+| 2 | 5 | 1 | `1` |
+| 7 | 10 | 2 | `2` |
+| 98 | 101 | 25 | `25` |
+
+Row 1 is the exact fit, row 3 the one-person overflow into a second car.
+
 > CodeChef tags: `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#36 of 486): [../../by-rating/036-MINCARS.md](../../by-rating/036-MINCARS.md)

@@ -102,4 +102,25 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$A = B$**: must print `=`, so the chain needs all three branches and not just a two-way test. Sample case 3 covers it.
+- **Both at the bound** $A = B = 10^9 + 1$: equal, so `=`. Note the limit is $10^9 + 1$, one past the usual $10^9$ — still inside 32-bit range, but it is a deliberate nudge past the round number.
+- **Both minimal** ($A = B = 1$): `=`.
+- Only the *sign* of $A - B$ matters, so no subtraction overflow is possible even in a fixed-width language; comparing directly avoids the question entirely.
+
+## Dry run
+
+| $A$ | $B$ | relation | output |
+|---:|---:|---|---|
+| 10 | 20 | $A < B$ | `<` |
+| 20 | 10 | $A > B$ | `>` |
+| 10 | 10 | equal | `=` |
+
+The three sample rows exercise all three branches in turn.
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#8 of 486): [../../by-rating/008-CHOPRT.md](../../by-rating/008-CHOPRT.md)

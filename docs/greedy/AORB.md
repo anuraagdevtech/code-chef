@@ -141,3 +141,25 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **The two orders tie** ($X = 10$, $Y = 20$: both give $1360$). The sample's first row, so taking either is fine but the maximum must still be computed.
+- **Equal solving times, unequal decay** ($X = Y = 15$): B-first scores $1380$ against A-first's $1350$. Which order wins is decided by the *decay rates*, not by which problem is quicker — B loses $4$ points a minute and so should be submitted early. A rule like "solve the faster one first" gets this row wrong.
+- **Scores never go negative** at these bounds: with $X + Y \leq 200$ the worst cases are $1000 - 4 \times 200 = 200$ and $500 - 2 \times 200 = 100$, both positive, so no clamping is needed.
+- Only two orders exist, so evaluating both and taking the larger is exact — there is no greedy rule to justify.
+
+## Dry run
+
+| $X$ | $Y$ | A first | B first | output |
+|---:|---:|---:|---:|---|
+| 10 | 20 | $480 + 880 = 1360$ | $920 + 440 = 1360$ | `1360` |
+| 8 | 40 | $484 + 808 = 1292$ | $840 + 404 = 1244$ | `1292` |
+| 15 | 15 | $470 + 880 = 1350$ | $940 + 440 = 1380$ | `1380` |
+| 20 | 10 | $460 + 880 = 1340$ | $960 + 440 = 1400$ | `1400` |
+
+In each pair the problem solved second pays for the first one's time; rows 3 and 4 both favour B first.
+
+---
+
+Same problem in rating order (#73 of 486): [../../by-rating/073-AORB.md](../../by-rating/073-AORB.md)

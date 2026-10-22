@@ -125,4 +125,27 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Three levels or fewer** ($X = 2$ and $X = 3$, both in the sample): breaks sit *between* blocks of three, so there is no break at all and the answer is just $XY$. $X = 3$ is the boundary.
+- **$X = 4$**: $(4-1)//3 = 1$, the first break appears.
+- **$X$ a multiple of $3$** ($X = 6$): $(6-1)//3 = 1$, not $2$ — no break follows the final level, which is the whole reason the formula uses $X - 1$ rather than $X$.
+- **Largest sample** ($X = 24$): $23 // 3 = 7$ breaks, not $8$.
+- Counting separators rather than groups is the trap: there are always one fewer gaps than blocks.
+
+## Dry run
+
+| $X$ | $Y$ | $Z$ | play $XY$ | breaks $(X-1)//3$ | rest $Z \cdot {\cdot}$ | output |
+|---:|---:|---:|---:|---:|---:|---|
+| 2 | 12 | 10 | 24 | 0 | 0 | `24` |
+| 3 | 12 | 10 | 36 | 0 | 0 | `36` |
+| 7 | 20 | 8 | 140 | 2 | 16 | `156` |
+| 24 | 45 | 15 | 1080 | 7 | 105 | `1185` |
+
+Row 2 sits on the boundary where no break has appeared yet.
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`
+
+---
+
+Same problem in rating order (#53 of 486): [../../by-rating/053-LASTLEVELS.md](../../by-rating/053-LASTLEVELS.md)

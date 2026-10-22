@@ -130,4 +130,28 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Each inequality is decided at a single bit** — the highest bit where its pair differs. $A \oplus X < B \oplus X$ holds exactly when $X$'s bit $p$ equals $A$'s, where $p$ is the top differing bit of $A$ and $B$; every lower bit is irrelevant.
+- **When the two deciding bits coincide, the demands conflict.** If $p = q$, the bit must match both $A_p$ and $B_p$, and $A$ and $B$ differ there by construction — so the answer is $-1$. The second row is this case.
+- **Otherwise the two constraints touch different bits and compose freely**, so setting each of them independently always works; no search over $X$ is needed.
+- **Every other bit of $X$ may be anything**, which is why many answers are valid: the first row prints $0$ here where the sample shows $4$, and both satisfy $1 < 2 < 3$ after XOR. A special judge checks the inequalities.
+- **The bound $X < 2^{30}$ is automatic**, since $p$ and $q$ are below $30$ for inputs under $2^{30}$.
+- **$A, B, C$ are distinct**, so both XORs are non-zero and `bit_length() - 1` is well defined — on a zero XOR it would give $-1$ and a nonsense shift.
+
+## Dry run
+
+Third sample: $A = 3$, $B = 2$, $C = 1$.
+
+| pair | XOR | top differing bit | demand on $X$ |
+|---|---:|---:|---|
+| $A, B$ | $3 \oplus 2 = 1$ | $p = 0$ | bit $0$ of $X$ $=$ bit $0$ of $A$ $= 1$ |
+| $B, C$ | $2 \oplus 1 = 3$ | $q = 1$ | bit $1$ of $X$ $=$ bit $1$ of $B$ $= 1$ |
+
+So $X = 3$, and indeed $3 \oplus 3 = 0 < 2 \oplus 3 = 1 < 1 \oplus 3 = 2$.
+
 > CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#273 of 486): [../../by-rating/273-XOR_ORDER.md](../../by-rating/273-XOR_ORDER.md)

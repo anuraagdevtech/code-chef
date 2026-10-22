@@ -101,4 +101,26 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Water is the binding limit** ($N = 5$ bottles, $X = 2$ litres each, $K = 8$ litres): only $4$ bottles can be filled although $5$ exist.
+- **Bottles are the binding limit** ($N = 3$, $X = 1$, $K = 4$): only $3$ can be filled although the water would stretch to $4$. The sample has one row for each direction, so taking either limit alone fails.
+- **Not even one bottle's worth of water** ($X = 5$, $K = 4$): $4 // 5 = 0$.
+- **$K = 0$** is allowed by the constraints, giving $0$.
+- Leftover water is simply unused, so the division floors.
+
+## Dry run
+
+| $N$ (bottles) | $X$ (per bottle) | $K$ (water) | $K // X$ | $\min(N, {\cdot})$ | output |
+|---:|---:|---:|---:|---:|---|
+| 5 | 2 | 8 | 4 | 4 | `4` |
+| 10 | 5 | 4 | 0 | 0 | `0` |
+| 3 | 1 | 4 | 4 | 3 | `3` |
+
+Row 1 is limited by water, row 3 by bottles.
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#51 of 486): [../../by-rating/051-CHEFBOTTLE.md](../../by-rating/051-CHEFBOTTLE.md)

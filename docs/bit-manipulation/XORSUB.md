@@ -140,3 +140,36 @@ main()
 
 - **Time:** $O(N \log V + \log^2 V)$ per test case
 - **Space:** $O(\log V)$
+
+## Edge cases
+
+- **The achievable XORs form a linear subspace**, so a basis in reduced form captures every subset at once — and the greedy over the basis finds the maximum with no enumeration.
+- **The empty subset is allowed**, giving $F(P) = 0$, so the answer is never below $K$ itself.
+- **The greedy takes a bit whenever it can**, because $2^b$ exceeds the sum of every lower bit — so improving a high bit is always worth whatever happens below.
+- **The basis is stored by leading bit**, which makes the insertion a cancel-and-retry loop and the query a single downward pass.
+- **A value that reduces to zero adds nothing**, which is what happens to the sample's $3$ — it is already the XOR of $1$ and $2$.
+- **$K$ may already have a bit set**, in which case the basis vector for that bit is skipped: flipping it down would lose more than it gains.
+- **$A_i, K \leq 1000 < 2^{10}$**, so ten bit positions suffice and the basis is tiny.
+
+## Dry run
+
+Sample: $N = 3$, $K = 4$, $A = 1, 2, 3$.
+
+| value | reduction | basis after |
+|---:|---|---|
+| 1 | leading bit $0$, slot free | $\text{basis}[0] = 1$ |
+| 2 | leading bit $1$, slot free | $\text{basis}[1] = 2$ |
+| 3 | $3 \oplus 2 = 1$, then $1 \oplus 1 = 0$ | unchanged |
+
+Greedy from $K = 4 = 100_2$:
+
+| bit | basis vector | $K$'s bit | action | result |
+|---:|---:|---:|---|---:|
+| 1 | 2 | 0 | take it | 6 |
+| 0 | 1 | 0 | take it | **7** |
+
+Output `7`.
+
+---
+
+Same problem in rating order (#469 of 486): [../../by-rating/469-XORSUB.md](../../by-rating/469-XORSUB.md)

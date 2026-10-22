@@ -127,4 +127,27 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 1$ needs its own branch.** The array is already a single element, so zero operations suffice; the general formula would test $2 A_1 \leq K$ and reject, for example, $A = [5]$ with $K = 3$. The sample's first row happens to pass either way, so it does not expose this.
+- **The minimum is the universal partner**, so the *maximum* is the binding case. Checking the two smallest elements instead would accept arrays whose largest element can never be paired off.
+- **The minimum is never removed** — it is kept as the survivor — so it stays available as a partner for every other element, which is what makes one comparison enough.
+- **All equal** (the second row): $\min + \max = 2 A_1 = 4$, which exceeds $K = 3$ even though each element alone is well under it.
+- **Exactly equal to $K$** → `YES`; the condition is non-strict.
+- **Sum of $N \leq 2 \cdot 10^5$**: one pass computing both extremes.
+
+## Dry run
+
+| $N$ | $K$ | array | min | max | $\min + \max$ | output |
+|---:|---:|---|---:|---:|---:|---|
+| 1 | 3 | $1$ | — | — | — (single element) | `YES` |
+| 3 | 3 | $2,2,2$ | 2 | 2 | 4 | `NO` |
+| 4 | 7 | $1,4,3,5$ | 1 | 5 | 6 | `YES` |
+
+In row 3 the $1$ pairs with $5$, then $4$, then $3$, removing each in turn and surviving itself.
+
 > CodeChef tags: `Data Structures`, `Arrays`, `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#235 of 486): [../../by-rating/235-REMELEM.md](../../by-rating/235-REMELEM.md)

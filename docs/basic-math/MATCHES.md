@@ -107,3 +107,26 @@ main()
 
 - **Time:** $O(d)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **The matches spell out the *result*, not the operands.** Summing the segment costs of $A$ and $B$ themselves gives a completely different answer — the first row would then cost $2{+}5{+}5 + 5{+}5{+}4 = 26$ rather than $13$.
+- **A carry changes the digit count**: $999 + 1 = 1000$ grows from three digits to four, so the sum must be formed before any counting.
+- **The costs are not monotone in the digit's value**: $1$ is cheapest at two segments and $8$ dearest at seven, so a larger sum can cost fewer matches.
+- **Largest input** ($A = B = 10^6$): the sum has seven digits.
+
+## Dry run
+
+Segment costs: $0{\to}6$, $1{\to}2$, $2{\to}5$, $3{\to}5$, $4{\to}4$, $5{\to}5$, $6{\to}6$, $7{\to}3$, $8{\to}7$, $9{\to}6$.
+
+| $A$ | $B$ | $A+B$ | per digit | total | output |
+|---:|---:|---:|---|---:|---|
+| 123 | 234 | 357 | $5 + 5 + 3$ | 13 | `13` |
+| 10101 | 1010 | 11111 | $2 \times 5$ | 10 | `10` |
+| 4 | 4 | 8 | $7$ | 7 | `7` |
+
+Row 3 is the dearest single digit.
+
+---
+
+Same problem in rating order (#161 of 486): [../../by-rating/161-MATCHES.md](../../by-rating/161-MATCHES.md)

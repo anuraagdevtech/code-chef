@@ -137,4 +137,27 @@ main()
 - **Time:** $O(|S|)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **A tie pays $55$**, not $60$ or $40$ — a distinct third rate. The sample's third row is a $14$&ndash;$14$ draw on points.
+- **The draws cancel in the comparison.** Each draw adds one to both totals, so $2C + D$ against $2N + D$ reduces to $C$ against $N$ — the draw count only matters for reaching the tie, never for breaking it.
+- **All draws**: a tie, so $55X$.
+- **A clean sweep** (the first row, all `C`): $60X$.
+- $|S|$ is always $14$, so there is no length handling, and the three characters partition the string exactly.
+
+## Dry run
+
+| $X$ | $S$ | $C$ | $D$ | $N$ | Carlsen $2C{+}D$ | Chef $2N{+}D$ | rate | output |
+|---:|---|---:|---:|---:|---:|---:|---:|---|
+| 100 | all `C` | 14 | 0 | 0 | 28 | 0 | 60 | `6000` |
+| 400 | `CD` $\times 7$ | 7 | 7 | 0 | 21 | 7 | 60 | `24000` |
+| 30 | mixed | 4 | 6 | 4 | 14 | 14 | 55 | `1650` |
+| 1 | mixed | 0 | 6 | 8 | 6 | 22 | 40 | `40` |
+
+Row 3 ties on points because $C = N = 4$.
+
 > CodeChef tags: `Mathematics`, `Algorithms`
+
+---
+
+Same problem in rating order (#146 of 486): [../../by-rating/146-WCC.md](../../by-rating/146-WCC.md)

@@ -125,4 +125,29 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **One operation removes two odd counts at once.** Converting every occurrence of character $i$ into character $j$ adds the two counts, and odd $+$ odd $=$ even — so a single merge fixes both.
+- **A palindrome tolerates one odd count**, the middle character, which is why the target is "at most one" and the answer is $\lfloor \text{odds}/2 \rfloor$ rather than requiring zero.
+- **The parity of the odd count is fixed** by the total number of characters, so an odd `odds` can never be driven to zero — and need not be, since one is allowed. The floor division handles both cases with the same expression.
+- **No odd counts** (the first row, a single character with count $4$) → $0$ operations.
+- **The operation converts *all* occurrences**, not one, which is what makes each merge worth exactly two odd counts; a per-character edit would be a different problem.
+- **$A_i \geq 1$**, so every listed character is actually present, and sum of $N \leq 2 \cdot 10^5$.
+
+## Dry run
+
+Second sample: counts $4, 3, 1$.
+
+| character | count | parity |
+|---:|---:|---|
+| 1 | 4 | even |
+| 2 | 3 | **odd** |
+| 3 | 1 | **odd** |
+
+Two odd counts, so one merge: convert all of character $3$ into character $2$, giving counts $4, 4, 0$. Output `1` — the string can now be arranged as a palindrome.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#286 of 486): [../../by-rating/286-MAKEPAL.md](../../by-rating/286-MAKEPAL.md)

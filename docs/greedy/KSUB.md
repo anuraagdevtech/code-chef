@@ -134,4 +134,31 @@ main()
 - **Time:** $O(N \log A)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Every subarray's gcd is a multiple of $G$**, so each $g_i \geq G$ — and an average of exactly $G$ therefore forces *every* chosen subarray to have gcd exactly $G$. The averaging condition is a disguise for a counting one.
+- **So the question is "are there $K$ disjoint subarrays with gcd $G$"**, answered by cutting as early as possible: the moment the running gcd reaches $G$, close the piece and reset.
+- **The earliest cut is optimal**, since a longer piece can only use up elements that a later piece might have needed — the standard exchange argument.
+- **A single element equal to $G$ closes a piece immediately** (the third row's leading $1$, where $G = 1$).
+- **Resetting to $0$ rather than to the next element** is what makes `gcd(0, v) == v` start the next run correctly.
+- **A trailing partial run is discarded**: in the last row the final $24$ stands alone with gcd $24 \neq 6$, so those elements contribute nothing and are simply left out of the $K$ pieces.
+- **$K$ may exceed what is achievable** even when $G$ divides everything; the fourth row manages only $2$ pieces against $K = 3$.
+
+## Dry run
+
+Fourth sample: $A = 6, 12, 18, 24$, so $G = \gcd = 6$ and $K = 3$.
+
+| element | running gcd | equals $G$? | pieces |
+|---:|---:|:---:|---:|
+| 6 | 6 | **yes** → cut | 1 |
+| 12 | 12 | no | 1 |
+| 18 | 6 | **yes** → cut | 2 |
+| 24 | 24 | no | 2 |
+
+Only $2$ disjoint pieces have gcd $6$, short of $K = 3$, so `NO`.
+
 > CodeChef tags: `Mathematics`, `Number Theory`, `Algorithms`
+
+---
+
+Same problem in rating order (#388 of 486): [../../by-rating/388-KSUB.md](../../by-rating/388-KSUB.md)

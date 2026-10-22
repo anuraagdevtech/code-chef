@@ -109,3 +109,23 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Length-one substrings count**, which is why the formula is $c(c+1)/2$ and not $\binom{c}{2}$: each single `1` is itself a substring beginning and ending with `1`.
+- **No `1`s at all** → $0$, which the formula gives with no special case.
+- **The positions of the `1`s are irrelevant**, only how many there are: `10001` and `11000` both answer $3$.
+- **A single `1`** → exactly $1$.
+- **$c$ up to $10^5$** puts $c^2$ near $10^{10}$, past 32-bit signed.
+- **$N$ is supplied but unused** in Python, so its token must still be consumed or the next case's string is misread.
+
+## Dry run
+
+| $S$ | count of `1` | $c(c+1)/2$ | substrings |
+|---|---:|---:|---|
+| `1111` | 4 | `10` | all $\binom{4}{2} = 6$ pairs plus $4$ singles |
+| `10001` | 2 | `3` | `1`, `1`, `10001` |
+
+---
+
+Same problem in rating order (#212 of 486): [../../by-rating/212-CSUB.md](../../by-rating/212-CSUB.md)

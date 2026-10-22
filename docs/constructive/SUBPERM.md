@@ -121,3 +121,30 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **$K = 1$ is impossible for $N > 1$.** The singleton holding the value $1$ is always good, and so is the whole array — two distinct subsegments — so at least $2$ good subsegments exist. Only $N = 1$ can have exactly one.
+- **Every good subsegment must contain the value $1$**, since a permutation of any length includes $1$. Placing $1$ at the front therefore makes every good subsegment a *prefix*, which is what reduces the construction to choosing which prefixes are good.
+- **The leading run $1, 2, \dots, K-1$ gives $K-1$ good prefixes**, each being a permutation of $1 \dots j$.
+- **The descending tail blocks every prefix in between.** Position $K$ holds $N$, so any prefix of length $j \geq K$ contains $N$ and can only be a permutation when $j = N$ — supplying exactly one more good prefix, for $K$ in total.
+- **$N = 1$, $K = 1$** falls out of the same code: an empty head and a one-element tail.
+- **This answer differs from the sample's** at $N = 5$, $K = 3$ (`1 2 5 4 3` against `5 3 1 4 2`); the statement asks for any such permutation, so a special judge counts the good subsegments.
+
+## Dry run
+
+$N = 5$, $K = 3$ gives $P = 1, 2, 5, 4, 3$.
+
+| prefix | values | permutation of its length? |
+|---|---|:---:|
+| $[1]$ | $\{1\}$ | **yes** |
+| $[1,2]$ | $\{1,2\}$ | **yes** |
+| $[1,2,5]$ | $\{1,2,5\}$ | no |
+| $[1,2,5,4]$ | $\{1,2,4,5\}$ | no |
+| $[1,2,5,4,3]$ | $\{1,\dots,5\}$ | **yes** |
+
+No non-prefix subsegment is good, since none of them contains the $1$. Total: `3`.
+
+---
+
+Same problem in rating order (#297 of 486): [../../by-rating/297-SUBPERM.md](../../by-rating/297-SUBPERM.md)

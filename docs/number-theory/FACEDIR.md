@@ -102,4 +102,25 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$X$ a multiple of $4$** ($X = 4$, $X = 8$): back to the starting heading, `North`.
+- **The first three turns** ($X = 1, 2, 3$): `East`, `South`, `West` in order.
+- **Largest input** ($X = 1000$): $1000 \bmod 4 = 0$, so `North` — no need to step through a thousand turns.
+- The period is exactly $4$, so only $X \bmod 4$ matters; the table's index $0$ must be the *initial* direction for that to line up.
+
+## Dry run
+
+Table, clockwise from the start: $0$ `North`, $1$ `East`, $2$ `South`, $3$ `West`.
+
+| $X$ | $X \bmod 4$ | output |
+|---:|---:|---|
+| 1 | 1 | `East` |
+| 3 | 3 | `West` |
+| 6 | 2 | `South` |
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Algorithms`
+
+---
+
+Same problem in rating order (#122 of 486): [../../by-rating/122-FACEDIR.md](../../by-rating/122-FACEDIR.md)

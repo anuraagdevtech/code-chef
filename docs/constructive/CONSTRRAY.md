@@ -123,4 +123,32 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **An odd $N$ is impossible, by a symmetry.** Writing $D_i = P_i - S_i$ and using $S_i = \text{total} - P_{N-i}$ gives $D_{N-i} = D_i$ — so indices $i$ and $N-i$ must demand the same sign, forcing them to share parity. For odd $N$, $i = 1$ and $i = N-1$ have opposite parities and the same $D$, a contradiction.
+- **That same symmetry is what makes the construction cheap.** Only the indices up to $N/2$ need arranging; the rest follow for free, since $N - i$ has the same parity as $i$ when $N$ is even.
+- **The trailing zeros make $S_i = 0$ for $i \leq N/2$**, so the condition reduces to the sign of $P_i$ alone.
+- **The front $1, -2, 2, -2, \dots$ makes $P_i$ alternate between $+1$ and $-1$**, exactly matching the required signs.
+- **$N = 2$** is the smallest case: $[1, 0]$, with the single condition $P_1 = 1 > S_1 = 0$.
+- **Values stay tiny** ($|A_i| \leq 2$), far inside the $10^9$ bound.
+- **This answer differs from the sample's** (`1 0` against `343 -343`), and the statement allows any valid array, so a special judge checks the prefix and suffix sums.
+
+## Dry run
+
+$N = 6$ gives $A = 1, -2, 2, 0, 0, 0$ with total $1$.
+
+| $i$ | $P_i$ | $S_i$ | required | holds? |
+|---:|---:|---:|---|:---:|
+| 1 | 1 | 0 | $P > S$ (odd) | ✓ |
+| 2 | $-1$ | 0 | $P < S$ (even) | ✓ |
+| 3 | 1 | 0 | $P > S$ (odd) | ✓ |
+| 4 | 1 | 2 | $P < S$ (even) | ✓ |
+| 5 | 1 | 0 | $P > S$ (odd) | ✓ |
+
+Note $D_1 = D_5 = 1$ and $D_2 = D_4 = -1$, the symmetry in action.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#364 of 486): [../../by-rating/364-CONSTRRAY.md](../../by-rating/364-CONSTRRAY.md)

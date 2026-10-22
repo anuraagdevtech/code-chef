@@ -108,4 +108,25 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **B alone beats A and C together** ($1, 5, 2$): the answer is $5$, so a solution that always takes $A + C$ fails this row.
+- **A and C together win** ($2, 3, 4 \to 6$).
+- **All three equal** ($8, 8, 8$): $A + C = 16$ wins, because two groups beat one.
+- **A and C do not conflict with each other**, so the only decision is $B$ against $A \cup C$ — there is no third combination to consider, which is why a two-way maximum is exhaustive rather than greedy.
+
+## Dry run
+
+| $P_A$ | $P_B$ | $P_C$ | $B$ alone | $A + C$ | output |
+|---:|---:|---:|---:|---:|---|
+| 2 | 3 | 4 | 3 | 6 | `6` |
+| 1 | 5 | 2 | 5 | 3 | `5` |
+| 8 | 8 | 8 | 8 | 16 | `16` |
+
+Row 2 is the one where excluding $B$ would be a mistake.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#128 of 486): [../../by-rating/128-MAYOR_PARTY.md](../../by-rating/128-MAYOR_PARTY.md)

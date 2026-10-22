@@ -132,4 +132,32 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The split must be a prefix/suffix cut**, not an arbitrary partition — the jobs keep their order, which is what makes a single scan enough instead of a subset-sum search.
+- **Giving everything to one processor is legal**, which is why `best` starts at the full total and the final iteration (an empty suffix) is included. The third row, with $N = 1$, has no other option.
+- **The two processors run in parallel**, so the cost is the *heavier* side — summing them would just reproduce the total.
+- **$\max(\text{prefix}, \text{total} - \text{prefix})$ is V-shaped** in the cut point, since $A_i \geq 1$ makes prefixes strictly increase; so the single pass finds the true minimum and no binary search is needed.
+- **A balanced split may be impossible.** The first row's best is $5$ against $4$, not an even $4.5$ — the answer is the achievable maximum, not half the total.
+- **Sum of $N \leq 2 \cdot 10^5$**: one pass per case with a running prefix rather than a stored prefix array.
+
+## Dry run
+
+Second sample: six jobs of cost $1$, total $6$.
+
+| cut after | prefix | suffix | heavier side |
+|---:|---:|---:|---:|
+| 1 | 1 | 5 | 5 |
+| 2 | 2 | 4 | 4 |
+| 3 | 3 | 3 | **3** |
+| 4 | 4 | 2 | 4 |
+| 5 | 5 | 1 | 5 |
+| 6 | 6 | 0 | 6 |
+
+Output `3`, at the balanced cut.
+
 > CodeChef tags: `Algorithms`, `Simple Algos`
+
+---
+
+Same problem in rating order (#242 of 486): [../../by-rating/242-PLPROCESS.md](../../by-rating/242-PLPROCESS.md)

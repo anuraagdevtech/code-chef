@@ -101,4 +101,27 @@ main()
 - **Time:** $O(1)$
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Area equals perimeter**: then neither label applies and the answer is `Eq`. This happens for $L = B = 4$ (both $16$) and for $L = 3, B = 6$ (both $18$), so the third branch is genuinely reachable and must be there.
+- **Smallest input** ($L = B = 1$): area $1$ against perimeter $4$, so `Peri` and $4$.
+- **Largest input** ($L = B = 1000$): area $10^6$ against perimeter $4000$, so `Area`.
+- **Output is two lines** — the label, then the winning value — and on `Eq` the value printed is the shared one.
+- **Input shape**: two integers with no test-case count.
+
+## Dry run
+
+Input is $L = 1$, $B = 2$.
+
+| step | value |
+|---|---|
+| area $L \times B$ | $2$ |
+| perimeter $2(L + B)$ | $6$ |
+| comparison | perimeter is larger |
+| output | `Peri` then `6` |
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#31 of 486): [../../by-rating/031-AREAPERI.md](../../by-rating/031-AREAPERI.md)

@@ -105,4 +105,29 @@ main()
 - **Time:** $O(\log N + \log M)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The $M$ bit positions are independent**, since the AND is computed bitwise — so the count is a per-bit count raised to the $M$-th power.
+- **Per bit, every column of $N$ values works except the all-ones one**, giving $2^N - 1$ choices: the AND bit is $0$ unless all $N$ have it set.
+- **The answer is therefore $(2^N - 1)^M$**, a doubly-nested modular power and nothing more.
+- **$N = 1$** forces $A_1 = 0$, and $(2^1 - 1)^M = 1$ confirms it — the single tuple of all zeros.
+- **$2^N - 1$ must be reduced before the outer power**, which `pow(pow(2, n, MOD) - 1, m, MOD)` does; computing $2^N$ exactly at $N = 10^6$ would be a $300{,}000$-digit number.
+- **The subtraction cannot go negative** in practice, since $2^N \bmod p$ is $0$ only when $p \mid 2^N$, impossible for the prime $10^9+7$.
+- **$N, M$ up to $10^6$** with $T$ up to $10^5$: two modular exponentiations per case, each $O(\log)$.
+
+## Dry run
+
+| $N$ | $M$ | $2^N - 1$ | $(2^N-1)^M$ | output |
+|---:|---:|---:|---|---:|
+| 1 | 2 | 1 | $1^2$ | `1` |
+| 2 | 2 | 3 | $3^2$ | `9` |
+| 4 | 2 | 15 | $15^2$ | `225` |
+| 8 | 4 | 255 | $255^4 = 4228250625$ | `228250597` |
+
+The last row reduces modulo $10^9+7$: $4228250625 - 4(10^9+7) = 228250597$.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#370 of 486): [../../by-rating/370-BITTUP.md](../../by-rating/370-BITTUP.md)

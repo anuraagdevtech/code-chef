@@ -1,12 +1,12 @@
 # CodeChef - Become 5 Star roadmap
 
-Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, and the topic or data structure it belongs to.
+Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, the topic or data structure it belongs to, the edge cases that decide the problem, and a dry run on a sample.
 
 **486 of 486 solved problems documented.**
 
 ## Roadmap progress
 
-| Level | Course | Solved | Total | Documented |
+| Level | Course | Solved | Total | Files here |
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
 | 2 | Level up from 1* to 2* | 66 | 66 | 63 |
@@ -17,22 +17,14 @@ Worked documentation for every problem I have solved on the CodeChef [Become 5 S
 | 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
 | | **Total** | **502** | **761** | **486** |
 
-The roadmap headline counts **502 solved entries**, but that sums a per-course counter and a problem can hold more than one slot. Deduplicated it is **486 distinct problems**, which is what is documented here: 7 problems occupy two slots inside a single course and 19 are listed in two different courses. Run `python3 tools/reconcile_counts.py` to reproduce the breakdown.
+The roadmap headline counts **502 solved entries**, but that sums a per-course counter and a problem can hold more than one slot. Deduplicated it is **486 distinct problems**, which is what is documented here: 7 problems occupy two slots inside a single course and 19 are listed in two different courses. A problem listed in two courses is written up once and filed under one of them, which is why the per-course **Files here** column can sit below that course's **Solved** count while the totals still agree. Run `python3 tools/reconcile_counts.py` to reproduce the breakdown.
 
 ## Views
 
+Every problem is written up once and rendered into two views, which carry the same six sections and cross-link to each other.
+
 - **[By topic](#problems-by-topic)** - the index below, and `docs/<topic>/<CODE>.md`.
-- **[By rating](by-rating/README.md)** - the same problems numbered `001`-`486` in difficulty order, each with the topic used, the constraints, the approach, the solution, its edge cases and a dry run.
-
-## Phases
-
-| Phase | Problems | Documented |
-|---|---:|---:|
-| 1 | 100 | 100 |
-| 2 | 100 | 100 |
-| 3 | 100 | 100 |
-| 4 | 100 | 100 |
-| 5 | 86 | 86 |
+- **[By rating](by-rating/README.md)** - the same 486 problems numbered `001`-`486` in difficulty order, so a plain directory listing runs easiest to hardest.
 
 ## Problems by topic
 

@@ -127,4 +127,30 @@ main()
 - **Time:** $O(N \log \log N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **$\Omega(i) + 1$ is a valid colouring**, because $x \mid y$ with $x \neq y$ forces $\Omega(y) > \Omega(x)$ — the quotient contributes at least one more prime factor — so the colours of a divisor pair always differ.
+- **It is also optimal.** The chain $1 \mid 2 \mid 4 \mid \dots \mid 2^k \leq N$ has $k+1$ members all pairwise divisible, so $C \geq k+1$; and $\Omega(i) \leq \log_2 i \leq k$ gives $C \leq k+1$.
+- **So $C = \lfloor \log_2 N \rfloor + 1$**, computed here as $\Omega$ of the highest power of two not exceeding $N$, plus one.
+- **$N = 1$** gives $C = 1$: a single element with no divisor pair to worry about.
+- **$\Omega$ counts multiplicity, not distinct primes.** $\Omega(4) = 2$ while $\omega(4) = 1$, and using the distinct count would give $4$ and $2$ the same colour despite $2 \mid 4$.
+- **The smallest-prime-factor sieve gives $\Omega$ in one pass** via $\Omega(v) = \Omega(v / \mathrm{spf}(v)) + 1$, which is why the sieve stores spf rather than just primality.
+- **This colouring differs from the sample's** at $N = 3$ (`1 2 2` against `2 1 1`), and both use $C = 2$ validly, so a special judge checks the divisor pairs.
+
+## Dry run
+
+$N = 3$: the highest power of two is $2$, so $C = \Omega(2) + 1 = 2$.
+
+| $i$ | factorisation | $\Omega(i)$ | colour |
+|---:|---|---:|---:|
+| 1 | — | 0 | 1 |
+| 2 | $2$ | 1 | 2 |
+| 3 | $3$ | 1 | 2 |
+
+Divisor pairs: $1 \mid 2$ (colours $1 \neq 2$ ✓) and $1 \mid 3$ ($1 \neq 2$ ✓). The pair $2, 3$ has no divisibility, so sharing colour $2$ is fine.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#363 of 486): [../../by-rating/363-DIVCOL.md](../../by-rating/363-DIVCOL.md)

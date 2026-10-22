@@ -125,4 +125,27 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The first student's slot starts at time $0$**, so the running marker must be initialised to $0$ rather than to $A_1$ — otherwise the first slot comes out as length zero.
+- **Slots are fixed, so an overrun does not eat into the next one.** In the second sample the first student needs $15$ against a $10$-unit slot and fails, yet the second student still gets a full $10$ units. The marker advances to $A_i$ whether or not the student finished.
+- **Exactly enough time** ($B_i$ equal to the slot length): counts as done, so the comparison is non-strict — the first sample's opening row turns on it.
+- **$A$ is strictly increasing** by the constraints, so every slot has positive length.
+
+## Dry run
+
+First sample, $A = 1, 10, 15$ and $B = 1, 10, 3$:
+
+| $i$ | slot $A_i - \text{prev}$ | $B_i$ | fits? |
+|---:|---:|---:|:---:|
+| 1 | $1 - 0 = 1$ | 1 | yes |
+| 2 | $10 - 1 = 9$ | 10 | no |
+| 3 | $15 - 10 = 5$ | 3 | yes |
+
+Two finish, so `2`. The second sample gives slots $10, 10, 10$ against $15, 5, 20$ — only the middle one fits, so `1`.
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#154 of 486): [../../by-rating/154-KTTABLE.md](../../by-rating/154-KTTABLE.md)

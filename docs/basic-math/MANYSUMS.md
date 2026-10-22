@@ -95,3 +95,23 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **The two integers need not be distinct**, which the statement says explicitly — that is what makes $2L$ and $2R$ themselves reachable, and why $L = R$ gives one sum rather than none.
+- **There are no gaps in $[2L, 2R]$**, because either addend can be nudged by one: starting from $L + L$ and incrementing one side at a time sweeps every integer up to $R + R$.
+- **$L = R$** (the first row) → exactly one reachable value, $2L$.
+- **The count is of distinct sums, not of pairs** — the second row has nine ordered pairs but only three distinct sums.
+- **$L, R$ up to $10^6$** keeps the answer under $2 \times 10^6$, so no large arithmetic is involved.
+- **$T$ up to $10^5$** with constant work per case.
+
+## Dry run
+
+| $L$ | $R$ | reachable sums | count |
+|---:|---:|---|---:|
+| 2 | 2 | $4$ | `1` |
+| 2 | 3 | $4$ ($2{+}2$), $5$ ($2{+}3$), $6$ ($3{+}3$) | `3` |
+
+---
+
+Same problem in rating order (#278 of 486): [../../by-rating/278-MANYSUMS.md](../../by-rating/278-MANYSUMS.md)

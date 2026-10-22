@@ -141,3 +141,29 @@ main()
 
 - **Time:** $O(N \log N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **Exactly one element of $A$ is dropped**, so after sorting both arrays, $B_1$ must come from either $A_1$ or $A_2$ — nothing further along, since at most one element before it can be missing.
+- **Trying $A_2$ first yields the smaller $X$**, because $A_2 > A_1$ makes $B_1 - A_2 < B_1 - A_1$ — and the problem asks for the smallest. Checking $A_1$ first would return the larger offset whenever both work.
+- **$X$ must be strictly positive**, which the guard enforces; $B_1 - A_2$ can easily come out negative or zero.
+- **The candidate is verified by a merge**, allowing exactly one skip in $A$ — which rejects an offset that matches the first element by accident.
+- **The merge must also confirm $B$ is exhausted**, hence the `j == len(b)` check; running out of $A$ early is a failure.
+- **$N = 2$ leaves a single element in $B$** (the second and third rows), where both candidates are worth trying.
+- **The values are pairwise distinct within each array**, so the sorted merge never faces ties.
+- **$B_i$ can reach $2 \times 10^9$** while $A_i$ caps at $10^9$, so the offset can be as large as the values themselves.
+
+## Dry run
+
+First sample: $A = 1, 3, 4, 8$ and $B = 8, 11, 15$ (both sorted).
+
+| candidate $X$ | from | merge |
+|---:|---|---|
+| $8 - 3 = 5$ | $A_2$ | $1{+}5 = 6 \neq 8$ (skip), $3{+}5 = 8$ ✓, $4{+}5 = 9 \neq 11$ → second skip, **fails** |
+| $8 - 1 = 7$ | $A_1$ | $1{+}7 = 8$ ✓, $3{+}7 = 10 \neq 11$ (skip), $4{+}7 = 11$ ✓, $8{+}7 = 15$ ✓ → **works** |
+
+Output `7`: Bob dropped the $3$.
+
+---
+
+Same problem in rating order (#407 of 486): [../../by-rating/407-REMONE.md](../../by-rating/407-REMONE.md)

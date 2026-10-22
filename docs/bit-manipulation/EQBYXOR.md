@@ -141,4 +141,29 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Already equal** → $0$ operations (the first row).
+- **$N = 1$ permits no operation at all**, since $X$ must satisfy $1 \leq X < 1$. So anything but $A = B$ is impossible — the third row, where $A \oplus B = 3$ and the answer is $-1$.
+- **One operation works exactly when $1 \leq A \oplus B < N$**, because that difference is itself a legal $X$.
+- **Two operations extend the reach to the whole bit width of $N-1$.** Picking $X_1 = 2^{b-1}$ (the top bit of $N-1$, itself a legal value) and $X_2 = d \oplus 2^{b-1}$ covers every $d < 2^b$, which is why the second threshold is $2^{\text{bit\_length}(N-1)}$ rather than $N$ again.
+- **Beyond that width nothing is reachable**, however many operations are used: every legal $X$ is below $2^b$, so every XOR of them is too.
+- **The answer is never more than $2$** when it is finite.
+- **$A, B < 2^{30}$**, so the bit-length arithmetic stays in a comfortable range.
+
+## Dry run
+
+| $A$ | $B$ | $d = A \oplus B$ | $N$ | $d < N$? | $d < 2^{\text{bits}(N-1)}$? | output |
+|---:|---:|---:|---:|:---:|:---:|---:|
+| 5 | 5 | 0 | 2 | — | — | `0` |
+| 3 | 7 | 4 | 8 | yes | — | `1` |
+| 8 | 11 | 3 | 1 | no | $3 < 1$ no | `-1` |
+| 24 | 27 | 3 | 3 | no | $3 < 4$ yes | `2` |
+
+The last row uses $X_1 = 2$ and $X_2 = 1$, both legal since $N = 3$, and $2 \oplus 1 = 3$.
+
 > CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
+
+---
+
+Same problem in rating order (#300 of 486): [../../by-rating/300-EQBYXOR.md](../../by-rating/300-EQBYXOR.md)

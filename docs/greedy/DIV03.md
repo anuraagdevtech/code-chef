@@ -133,3 +133,30 @@ main()
 
 - **Time:** $O(1)$ per test case — ten fixed difficulties
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Empty tiers must be skipped without becoming the answer.** Cases $2$ and $4$ both have runs of zeros between the tier that gets cleared and the tier that survives; without the `continue` on a zero count, the answer would be reported as an empty difficulty.
+- **$K = 0$** (case $3$): nothing is removed, and the answer is simply the hardest non-empty tier, $8$.
+- **Exactly clearing a tier** (case $4$, where $K = 10$ matches the ten problems at difficulty $10$) moves on to the next non-empty tier, which becomes the answer.
+- **Removing from the top down is forced**, because the answer is the *maximum* remaining difficulty: deleting anything easier leaves that maximum untouched and wastes the budget.
+- **$K <$ the total is guaranteed**, so at least one problem always survives and the loop always halts at a tier it cannot clear — the `answer = 1` initialiser never actually fires.
+- **The ten counts are a fixed-length record**, so each case consumes exactly $11$ tokens; a variable-length read would desynchronise the stream.
+
+## Dry run
+
+Second sample: counts $2, 0, 1, 0, 0, 0, 0, 0, 0, 10$ for difficulties $1$ through $10$, with $K = 12$.
+
+| difficulty | count | action | $K$ left |
+|---:|---:|---|---:|
+| 10 | 10 | clear it | 2 |
+| 9…4 | 0 | skip (empty) | 2 |
+| 3 | 1 | clear it | 1 |
+| 2 | 0 | skip (empty) | 1 |
+| 1 | 2 | **cannot clear** | — |
+
+Output `1`.
+
+---
+
+Same problem in rating order (#224 of 486): [../../by-rating/224-DIV03.md](../../by-rating/224-DIV03.md)

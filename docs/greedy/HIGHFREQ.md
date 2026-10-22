@@ -132,3 +132,34 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **Only one distinct value** (the second row): the runner-up count is $0$, so the answer is the halved leader, $\lceil 5/2 \rceil = 3$.
+- **The runner-up can cap the answer.** The third row halves a leader of $4$ down to $2$, which only matches the runner-up's own $2$ — so the answer is $2$ and splitting further is pointless. Reporting $\lceil \text{top}/2 \rceil$ unconditionally would be wrong whenever the runner-up is larger.
+- **An odd leader count halves to the ceiling**: relabelling $2$ of $5$ copies leaves $3$, and there is no way to do better since one side must take the extra.
+- **A tie at the top** (the first row, two values with count $2$ each): halving one leaves the other untouched at $2$, so nothing improves.
+- **The operation is at most once**, and it may relabel *any* subset of one value's occurrences — which is what makes an even split possible rather than forcing all-or-nothing.
+- **`most_common(2)` may return a single pair** when the array holds one distinct value, which the length guard handles.
+
+## Dry run
+
+Third sample: $A = 1, 2, 2, 1, 2, 2$.
+
+| value | frequency |
+|---:|---:|
+| 2 | 4 (leader) |
+| 1 | 2 (runner-up) |
+
+Relabel two of the four $2$s to a fresh value: frequencies become $2, 2, 2$.
+
+| candidate | value |
+|---|---:|
+| halved leader $\lceil 4/2 \rceil$ | 2 |
+| untouched runner-up | 2 |
+
+Output `2`.
+
+---
+
+Same problem in rating order (#253 of 486): [../../by-rating/253-HIGHFREQ.md](../../by-rating/253-HIGHFREQ.md)

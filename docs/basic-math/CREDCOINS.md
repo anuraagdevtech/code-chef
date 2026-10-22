@@ -101,4 +101,26 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Fewer than $100$ coins earned** ($X = 20$, $Y = 4$ gives $80$): no bag is affordable, so the answer is $0$. The sample includes this.
+- **Exactly $100$** ($X = Y = 10$): one bag, with nothing left over.
+- **Not a multiple of $100$** ($199$ coins): one bag — the division floors, it does not round, so $199$ must not become $2$.
+- **Largest input** ($X = Y = 1000$): $10^6$ coins and $10000$ bags.
+- The product is computed before dividing, so no precision is lost; dividing first would floor twice.
+
+## Dry run
+
+| $X$ | $Y$ | coins $XY$ | $//\,100$ | output |
+|---:|---:|---:|---:|---|
+| 10 | 10 | 100 | 1 | `1` |
+| 20 | 4 | 80 | 0 | `0` |
+| 70 | 7 | 490 | 4 | `4` |
+
+The last row shows the floor discarding $90$ spare coins.
+
 > CodeChef tags: `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#14 of 486): [../../by-rating/014-CREDCOINS.md](../../by-rating/014-CREDCOINS.md)

@@ -118,4 +118,27 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Exactly one block** ($N = 3$): one item free, two paid.
+- **$N = 4$ and $N = 5$**: still only one free, since a partial block earns nothing — both sample rows confirm the step does not move until $N = 6$.
+- **$N = 6$**: two free.
+- **$N = 1$ or $2$**: nothing free.
+- The price multiplies only *after* counting paid items; multiplying first and then discounting would need the same division anyway.
+
+## Dry run
+
+| $N$ | free $N//3$ | paid | $X$ | total | output |
+|---:|---:|---:|---:|---:|---|
+| 3 | 1 | 2 | 4 | 8 | `8` |
+| 4 | 1 | 3 | 2 | 6 | `6` |
+| 5 | 1 | 4 | 3 | 12 | `12` |
+| 6 | 2 | 4 | 1 | 4 | `4` |
+
+Rows 2 and 3 show the free count stalling at one across $N = 4, 5$.
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#97 of 486): [../../by-rating/097-SALE2.md](../../by-rating/097-SALE2.md)

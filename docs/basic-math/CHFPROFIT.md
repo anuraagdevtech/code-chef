@@ -110,3 +110,23 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Selling at cost** ($Y = Z$): the margin is zero, so the profit is $0$ — the constraint $Y \leq Z$ allows this.
+- **$Y \leq Z$ is guaranteed**, so the profit is never negative and no clamp is needed.
+- **A margin of one** (the last two sample rows): the answer is just the share count.
+- **Largest inputs** ($X = 10^4$ with a margin of $10^4 - 1$): close to $10^8$, inside 32-bit range but worth noting.
+- Factoring as $X(Z-Y)$ is one multiplication rather than the two of $XZ - XY$, and keeps the intermediate values small.
+
+## Dry run
+
+| $X$ (shares) | $Y$ (bought at) | $Z$ (sold at) | margin $Z-Y$ | profit $X \cdot {\cdot}$ | output |
+|---:|---:|---:|---:|---:|---|
+| 2 | 5 | 20 | 15 | 30 | `30` |
+| 3 | 1 | 2 | 1 | 3 | `3` |
+| 4 | 5 | 6 | 1 | 4 | `4` |
+
+---
+
+Same problem in rating order (#126 of 486): [../../by-rating/126-CHFPROFIT.md](../../by-rating/126-CHFPROFIT.md)

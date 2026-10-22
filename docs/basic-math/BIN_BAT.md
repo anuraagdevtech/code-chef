@@ -117,4 +117,24 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 2$**: a single round and **zero** breaks, so the answer is just $A$. The $(\text{rounds} - 1)$ factor must not go negative or invent a break.
+- **Breaks sit between rounds**, so there is always one fewer break than round — the usual separator-versus-group trap.
+- **$N$ is guaranteed a power of two**, which is what makes `bit_length() - 1` an exact $\log_2$. For a non-power it would silently round and give the wrong round count.
+- **Largest input** ($N = 2^{20}$): twenty rounds and nineteen breaks.
+
+## Dry run
+
+| $N$ | rounds $\log_2 N$ | breaks | play $\text{rounds} \cdot A$ | rest $(\text{rounds}-1) \cdot B$ | output |
+|---:|---:|---:|---:|---:|---|
+| 4 | 2 | 1 | 20 | 5 | `25` |
+| 16 | 4 | 3 | 120 | 15 | `135` |
+| 32 | 5 | 4 | 225 | 60 | `285` |
+| 1024 | 10 | 9 | 230 | 81 | `311` |
+
 > CodeChef tags: `Mathematics`, `Number Theory`
+
+---
+
+Same problem in rating order (#90 of 486): [../../by-rating/090-BIN_BAT.md](../../by-rating/090-BIN_BAT.md)

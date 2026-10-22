@@ -107,3 +107,27 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Exactly on each boundary.** $X = 100$ sits in the first band, so no discount; $X = 1000$ is still in the second band, so $25$ off, giving $975$ (the sample checks this); $X = 5000$ takes $100$ off.
+- **One past a boundary.** $X = 101$ drops into the second band for $76$ — a single rupee more than $100$ costs $25$ less.
+- **Smallest input** ($X = 1$): no discount, so $1$.
+- **Largest input** ($X = 10000$): $500$ off, so $9500$.
+- **Band order matters.** The tests are written ascending with `<=` so the first match wins; reordering them, or using open intervals, silently applies the wrong discount.
+- The discount never exceeds the price in any band, so the answer cannot go negative.
+
+## Dry run
+
+| $X$ | band | discount | output |
+|---:|---|---:|---|
+| 15 | $X \leq 100$ | 0 | `15` |
+| 70 | $X \leq 100$ | 0 | `70` |
+| 250 | $100 < X \leq 1000$ | 25 | `225` |
+| 1000 | $100 < X \leq 1000$ | 25 | `975` |
+
+The last row is the boundary: $1000$ belongs to the second band, not the third.
+
+---
+
+Same problem in rating order (#15 of 486): [../../by-rating/015-SALESEASON.md](../../by-rating/015-SALESEASON.md)

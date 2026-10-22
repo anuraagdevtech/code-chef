@@ -201,6 +201,17 @@ def solution_body(d, A):
     A('')
 
 
+def extras_body(d, A):
+    """Edge cases and dry run - shared by both views."""
+    sec = d['sections']
+    if 'edge cases' in sec:
+        A('## Edge cases\n')
+        A(sec['edge cases'] + '\n')
+    if 'dry run' in sec:
+        A('## Dry run\n')
+        A(sec['dry run'] + '\n')
+
+
 def rating_order(codes):
     """Sequence number per code: easiest rating first, unrated last."""
     rows = []
@@ -255,12 +266,7 @@ def render_study(d, seq):
     A(d['solution'])
     A('```\n')
 
-    if 'edge cases' in sec:
-        A('## Edge cases\n')
-        A(sec['edge cases'] + '\n')
-    if 'dry run' in sec:
-        A('## Dry run\n')
-        A(sec['dry run'] + '\n')
+    extras_body(d, A)
 
     rel = os.path.join('..', 'docs', slugify(meta['topic']), f'{d["code"]}.md')
     A('---\n')
@@ -369,9 +375,15 @@ def build_one(code):
     A('')
     problem_body(d, A)
     solution_body(d, A)
+    extras_body(d, A)
     tags = [t for t in (raw.get('computed_tags') or []) if t]
     if tags:
         A(f'> CodeChef tags: {", ".join(f"`{t}`" for t in tags)}\n')
+    seq = SEQ[code]
+    rated_rel = os.path.join('..', '..', 'by-rating', f'{seq:03d}-{code}.md')
+    A('---\n')
+    A(f'Same problem in rating order (#{seq} of {len(SEQ)}): '
+      f'[{rated_rel}]({rated_rel})\n')
 
     out_dir = os.path.join(DOCS, slugify(topic))
     os.makedirs(out_dir, exist_ok=True)
@@ -380,7 +392,6 @@ def build_one(code):
         f.write('\n'.join(P).rstrip() + '\n')
 
     os.makedirs(RATED, exist_ok=True)
-    seq = SEQ[code]
     with open(os.path.join(RATED, f'{seq:03d}-{code}.md'),
               'w', encoding='utf-8') as f:
         f.write(render_study(d, seq))
@@ -404,11 +415,12 @@ def write_index(built, codes):
     A('# CodeChef - Become 5 Star roadmap\n')
     A('Worked documentation for every problem I have solved on the CodeChef '
       '[Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: '
-      'the question, its constraints, an explained Python solution, the time and '
-      'space complexity, and the topic or data structure it belongs to.\n')
+      'the question, its constraints, an explained Python solution, the time '
+      'and space complexity, the topic or data structure it belongs to, the '
+      'edge cases that decide the problem, and a dry run on a sample.\n')
     A(f'**{len(built)} of {len(codes)} solved problems documented.**\n')
     A('## Roadmap progress\n')
-    A('| Level | Course | Solved | Total | Documented |')
+    A('| Level | Course | Solved | Total | Files here |')
     A('|---|---|---:|---:|---:|')
     for c in IDX['courses']:
         n = sum(1 for b in built if META[b['code']]['course'] == c['slug'])
@@ -432,23 +444,23 @@ def write_index(built, codes):
                 where[code].add(slug)
         cross = sum(1 for c in codes if len(where.get(c, ())) > 1)
         note += (f': {intra} problems occupy two slots inside a single course '
-                 f'and {cross} are listed in two different courses. Run '
+                 f'and {cross} are listed in two different courses. A '
+                 'problem listed in two courses is written up once and filed '
+                 'under one of them, which is why the per-course **Files '
+                 'here** column can sit below that course\'s **Solved** '
+                 'count while the totals still agree. Run '
                  '`python3 tools/reconcile_counts.py` to reproduce the '
                  'breakdown')
     A(note + '.\n')
     A('## Views\n')
+    A('Every problem is written up once and rendered into two views, which '
+      'carry the same six sections and cross-link to each other.\n')
     A('- **[By topic](#problems-by-topic)** - the index below, and '
       '`docs/<topic>/<CODE>.md`.')
-    A('- **[By rating](by-rating/README.md)** - the same problems numbered '
-      '`001`-`486` in difficulty order, each with the topic used, the '
-      'constraints, the approach, the solution, its edge cases and a dry run.')
-    A('')
-    A('## Phases\n')
-    A('| Phase | Problems | Documented |')
-    A('|---|---:|---:|')
-    for i in range(0, len(codes), 100):
-        chunk = codes[i:i + 100]
-        A(f'| {i // 100 + 1} | {len(chunk)} | {sum(1 for c in chunk if c in done)} |')
+    A(f'- **[By rating](by-rating/README.md)** - the same {len(built)} '
+      'problems numbered `001`-`'
+      f'{len(built):03d}` in difficulty order, so a plain directory listing '
+      'runs easiest to hardest.')
     A('')
     A('## Problems by topic\n')
     for topic in sorted(by_topic):

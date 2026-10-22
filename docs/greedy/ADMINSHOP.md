@@ -129,4 +129,27 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Two independent lower bounds, and the answer is the larger.** Every admin must spend $N$ hours (one per shop), and every shop must absorb $X$ visits at $A_i$ at a time, needing $\lceil X / A_i \rceil$ hours. Both are achievable simultaneously, so the maximum of the two is exact.
+- **Either bound can dominate.** The second row is limited by the shop count ($N = 4$ against a worst shop needing $2$), while the third is limited by a single tight shop ($N = 1$ against $\lceil 6/2 \rceil = 3$).
+- **Only the tightest shop matters**, so the per-shop bound collapses to a maximum over $\lceil X / A_i \rceil$.
+- **The ceiling must be integer**: `(x + a - 1) // a` rather than a float division, since $X$ and $A_i$ reach $10^9$ and a float divide can round the wrong way near an exact multiple.
+- **$A_i \geq X$ makes a shop free** — its bound is $1$ — which the first row shows with capacity $3$ for $3$ admins.
+- **Admins may visit shops in any order**, which is what makes the two bounds simultaneously satisfiable; a fixed order would be a scheduling problem instead.
+
+## Dry run
+
+| $N$ | $X$ | capacities | per-shop $\lceil X/A_i \rceil$ | worst | $\max(N, \text{worst})$ |
+|---:|---:|---|---|---:|---:|
+| 2 | 3 | $3, 3$ | $1, 1$ | 1 | `2` |
+| 4 | 2 | $1,2,3,4$ | $2,1,1,1$ | 2 | `4` |
+| 1 | 6 | $2$ | $3$ | 3 | `3` |
+
+Row 3: one shop holding two at a time must serve six admins, so three hours even though each admin needs only one.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#313 of 486): [../../by-rating/313-ADMINSHOP.md](../../by-rating/313-ADMINSHOP.md)

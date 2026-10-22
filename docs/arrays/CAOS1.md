@@ -173,4 +173,33 @@ main()
 - **Time:** $O(R \cdot C)$ per test case
 - **Space:** $O(R \cdot C)$
 
+## Edge cases
+
+- **"Some prime $P \leq \min$" is just $\min \geq 2$**, because $2$ is the smallest prime — so no primality testing is needed at all.
+- **The cell itself is excluded from every arm**, as the statement's note insists; the recurrence encodes that by reading the *neighbour's* arm and adding one only when that neighbour is open.
+- **A wall truncates the arm to zero at that point**, which is what the reset in the recurrence does — and it is why the first sample answers $0$: the lone `#` leaves the centre cell with a right-arm of only $1$.
+- **A cell within one step of any border fails on that arm**, so the outer two rings of the grid never contribute and need no special-casing.
+- **The cell must itself be open**; a wall is never a monster's home however long its arms would be.
+- **Four separate passes** build the arms — two row sweeps in opposite directions and two column sweeps — because each direction needs the neighbour already computed.
+- **$R, C \leq 50$** with $T \leq 100$, so the five grids per case are cheap.
+
+## Dry run
+
+First sample: a $5 \times 5$ grid of `^` with a single `#` at row $3$, column $5$.
+
+Only the centre cell $(3,3)$ is far enough from every border to have a chance:
+
+| direction | contiguous `^` (excluding the cell) |
+|---|---:|
+| left | 2 |
+| right | 1 — blocked by the `#` at column $5$ |
+| top | 2 |
+| bottom | 2 |
+
+$\min = 1 < 2$, so it is not a CPC and the answer is `0`.
+
 > CodeChef tags: `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#289 of 486): [../../by-rating/289-CAOS1.md](../../by-rating/289-CAOS1.md)

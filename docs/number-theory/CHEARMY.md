@@ -129,4 +129,29 @@ main()
 - **Time:** $O(\log K)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The subsequence sum collapses to a product.** Summing $\mathrm{prod}(s)$ over all non-empty digit subsequences gives $\prod (1 + d_i) - 1$, so "magical" means that product is odd — which happens exactly when every digit is even.
+- **So magical numbers are the all-even-digit numbers**, listed increasingly as $0, 2, 4, 6, 8, 20, 22, \dots$ — and the $K$-th one is $K-1$ written in base $5$ with each digit doubled.
+- **The list is 0-indexed from $0$**, so $K$ must be decremented first: $K = 1$ gives the magical number $0$.
+- **The do-while shape matters.** A plain `while k:` loop would emit nothing for $k = 0$ and print an empty string instead of `0`.
+- **No leading zeros appear**, because the base-5 representation of a positive $k$ never starts with $0$, and doubling preserves that.
+- **$K$ up to $10^{12}$** gives about $18$ base-5 digits, so the answer is built as text rather than as an integer.
+- **The digit $0$ is even and allowed inside the number**, which is why base $5$ (not base $4$) is the right radix.
+
+## Dry run
+
+| $K$ | $K - 1$ | base 5 | digits doubled | magical number |
+|---:|---:|---|---|---|
+| 1 | 0 | $0$ | $0$ | `0` |
+| 2 | 1 | $1$ | $2$ | `2` |
+| 5 | 4 | $4$ | $8$ | `8` |
+| 6 | 5 | $10$ | $2, 0$ | `20` |
+
+Check $246$: $\prod(1+d) = 3 \cdot 5 \cdot 7 = 105$, odd, so $105 - 1 = 104$ is even and $246$ is magical — consistent with all its digits being even.
+
 > CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#354 of 486): [../../by-rating/354-CHEARMY.md](../../by-rating/354-CHEARMY.md)

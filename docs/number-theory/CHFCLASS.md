@@ -111,4 +111,24 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 5$ then $N = 6$**: $0$ then $1$. The sample has both, and together they pin the offset — day $6$ is the first Saturday.
+- **$N = 7$** (Sunday): still $1$, since no new Saturday has arrived.
+- **Largest input** ($N = 10^9$): about $1.43 \times 10^8$.
+- **The convention that day $1$ is a Monday fixes the $+1$.** Saturdays are the days congruent to $6 \bmod 7$, so the count is $\lfloor (N+1)/7 \rfloor$; starting the week anywhere else shifts every answer by a day.
+
+## Dry run
+
+| $N$ | $N + 1$ | $//\,7$ | Saturdays (days $6, 13, 20, \ldots$) | output |
+|---:|---:|---:|---|---|
+| 5 | 6 | 0 | none yet | `0` |
+| 6 | 7 | 1 | $6$ | `1` |
+| 8 | 9 | 1 | $6$ | `1` |
+| 22 | 23 | 3 | $6, 13, 20$ | `3` |
+
 > CodeChef tags: `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#142 of 486): [../../by-rating/142-CHFCLASS.md](../../by-rating/142-CHFCLASS.md)

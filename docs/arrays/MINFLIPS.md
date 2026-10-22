@@ -121,4 +121,27 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Odd $N$** is impossible: a sum of an odd number of $\pm 1$ values is itself odd, so it can never reach $0$. The answer is $-1$, as in the sample's second case, and no amount of flipping helps.
+- **Already balanced** ($[1, -1]$): zero flips, so the answer can legitimately be $0$.
+- **All $+1$** ($[1,1,1,1]$): $N/2$ flips, the worst case for a given $N$.
+- **Too many $-1$ instead**: the absolute value covers both directions, since flips can go either way.
+- Each flip moves the count of $+1$ values by exactly one, so the distance from the current count to $N/2$ *is* the answer — no search is needed.
+
+## Dry run
+
+| $N$ | array | $+1$ count | target $N/2$ | distance | output |
+|---:|---|---:|---:|---:|---|
+| 4 | $1, 1, 1, 1$ | 4 | 2 | 2 | `2` |
+| 5 | $1, -1, 1, -1, 1$ | — | — | — | `-1` (odd $N$) |
+| 6 | $1, -1, -1, 1, 1, 1$ | 4 | 3 | 1 | `1` |
+| 2 | $1, -1$ | 1 | 1 | 0 | `0` |
+
+Row 2 is rejected on parity before any counting happens.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#89 of 486): [../../by-rating/089-MINFLIPS.md](../../by-rating/089-MINFLIPS.md)

@@ -126,4 +126,30 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **XOR with a fixed $X$ pairs values into two-element orbits** $\{a, a \oplus X\}$ — nothing can move between orbits, so the best achievable count is the largest orbit total.
+- **Either side of an orbit can be the target**, and flipping the smaller side costs fewer operations — hence the secondary minimisation over $\min(c, c')$.
+- **$X = 0$ makes the operation a no-op**, so the answer is the plain modal count with zero operations. Without that branch, $a \oplus 0 = a$ would double-count the same bucket.
+- **An orbit with no partner present** contributes just its own count, with zero operations — the second sample row, where no value pairs up.
+- **Equal orbit halves** make either choice cost the same, which the tuple comparison resolves deterministically.
+- **The tuple trick `(total, -flips)`** maximises the count first and minimises the operations second in a single comparison.
+- **Sum of $N \leq 5 \cdot 10^5$**, so each orbit is examined twice (once from each side) and that is affordable.
+
+## Dry run
+
+First sample: $A = 1, 2, 3$ with $X = 2$.
+
+| value | partner $a \oplus 2$ | counts | orbit total | flips needed |
+|---:|---:|---|---:|---:|
+| 1 | 3 | $1 + 1$ | 2 | 1 |
+| 2 | 0 (absent) | $1 + 0$ | 1 | 0 |
+| 3 | 1 | $1 + 1$ | 2 | 1 |
+
+Best total is $2$ at a cost of $1$, so the output is `2 1` — turn the $1$ into a $3$ (or the other way round).
+
 > CodeChef tags: `Data Structures`, `Arrays`, `Mathematics`
+
+---
+
+Same problem in rating order (#433 of 486): [../../by-rating/433-PALINT.md](../../by-rating/433-PALINT.md)

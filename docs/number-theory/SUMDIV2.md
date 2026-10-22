@@ -111,3 +111,29 @@ main()
 
 - **Time:** $O(\log \min(X,Y))$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **$N = XY - X - Y$ solves both congruences at once**: $N + Y = X(Y-1)$ and $N + X = Y(X-1)$, so each is divisible by the right number — no search or CRT machinery is needed.
+- **That value can be negative or zero**, as at $X = Y = 1$ where it is $-1$, so it must be shifted into range by reducing modulo $\operatorname{lcm}(X,Y)$ — the period of the solution set.
+- **A remainder of $0$ maps to the lcm**, since $N \geq 1$ is required.
+- **The lcm must be built as `x // gcd * y`**, dividing first; the product $XY$ reaches $10^{18}$, exact in Python but an overflow in a 64-bit language.
+- **$N \leq 10^{18}$ holds**, because the answer is at most $\operatorname{lcm}(X,Y) \leq XY \leq 10^{18}$.
+- **Minimisation is explicitly not required**, which is why the reduced representative is fine even though the sample prints a different one.
+- **This answer differs from the sample's** at every row (for $18, 42$ it prints $66$ against $192$), and a special judge checks the two divisibility conditions.
+
+## Dry run
+
+First sample: $X = 18$, $Y = 42$.
+
+| step | value |
+|---|---:|
+| $XY - X - Y$ | $756 - 60 = 696$ |
+| $\operatorname{lcm}(18, 42)$ | 126 |
+| $696 \bmod 126$ | 66 |
+
+Check $N = 66$: $66 + 42 = 108 = 6 \cdot 18$ ✓ and $66 + 18 = 84 = 2 \cdot 42$ ✓
+
+---
+
+Same problem in rating order (#424 of 486): [../../by-rating/424-SUMDIV2.md](../../by-rating/424-SUMDIV2.md)

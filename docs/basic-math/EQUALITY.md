@@ -156,4 +156,29 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **Summing all $N$ equations counts each variable exactly $N - 1$ times**, which recovers $\sum x$ in a single step — no elimination or substitution is needed.
+- **The division must be exact**, and the problem guarantees a solvable system, so $\sum a$ is divisible by $N - 1$. Integer division is the right tool.
+- **Float division would be wrong, not merely slow.** With $a_i$ up to $5 \cdot 10^{12}$ and $N$ up to $5 \cdot 10^4$, the sum reaches $2.5 \cdot 10^{17}$ — beyond the $2^{53}$ exact range of a double, so `/` can round and produce an off-by-one answer.
+- **$N = 2$**: the divisor is $1$, so $\sum x = a_1 + a_2$ and the answer is simply the two values swapped.
+- **$x_i \geq 1$ is guaranteed** by the constraints, so valid input never yields a non-positive output.
+- **$T$ up to $25{,}000$ with $\sum N \leq 50{,}000$** means most cases are tiny, so the per-case overhead matters as much as the per-element work.
+
+## Dry run
+
+Second sample: $a = 13, 11, 10, 8$, so $N = 4$.
+
+| step | value |
+|---|---|
+| $\sum a$ | $42$ |
+| $\sum x = \sum a / (N-1)$ | $42 / 3 = 14$ |
+| $x_i = 14 - a_i$ | $1, 3, 4, 6$ |
+
+Check: $x_2 + x_3 + x_4 = 3 + 4 + 6 = 13 = a_1$. ✓
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#236 of 486): [../../by-rating/236-EQUALITY.md](../../by-rating/236-EQUALITY.md)

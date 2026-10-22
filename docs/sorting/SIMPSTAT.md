@@ -127,3 +127,29 @@ main()
 
 - **Time:** $O(N \log N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **$K = 0$ trims nothing** (the second row): the slice must be `a[0:n]`, so writing the bounds as `a[k:n-k]` rather than special-casing zero is what keeps this correct.
+- **$2K < N$ is guaranteed**, so the kept slice always holds at least one element and the division is never by zero.
+- **Negative values must sort numerically.** The $-10$ in the first two rows is trimmed at $K = 1$ but counted at $K = 0$; sorting the raw byte tokens would place `-10` by its leading `-` instead of its value.
+- **Summing in integers and dividing once** keeps the result exact until the final division, avoiding the drift of a running float average.
+- **Equal values trimmed from both ends** (the third row, all ones): the answer is still exact, and six decimal places are required in the output.
+
+## Dry run
+
+First sample: $N = 5$, $K = 1$, values $2, 9, -10, 25, 1$.
+
+| step | result |
+|---|---|
+| sorted | $-10, 1, 2, 9, 25$ |
+| trim $K=1$ from each end | drop $-10$ and $25$ |
+| kept | $1, 2, 9$ |
+| sum / count | $12 / 3$ |
+| output | `4.000000` |
+
+With $K = 0$ the same values give $27 / 5 = $ `5.400000`, as in the second row.
+
+---
+
+Same problem in rating order (#185 of 486): [../../by-rating/185-SIMPSTAT.md](../../by-rating/185-SIMPSTAT.md)

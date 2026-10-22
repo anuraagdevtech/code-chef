@@ -111,3 +111,26 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Surplus steps must be wasted in pairs.** Stepping away and back costs two moves, so $K - \mathrm{dist}$ has to be even — the second row has more than enough steps ($4$ against a distance of $3$) and still fails on parity.
+- **Too few steps** → `NO` regardless of parity, which the `k >= dist` half of the test covers.
+- **Exactly $K = \mathrm{dist}$** → `YES`, since a gap of $0$ is even (the first row).
+- **Coordinates may be $0$** (the third row's target is $(1, 0)$), and the walk is unbounded, so no clamping to a grid is needed.
+- **$(a,b) \neq (c,d)$ is guaranteed**, so the distance is at least $1$ and the degenerate "already there with $K = 0$" case never arises.
+- **$T$ up to $10^5$** with constant work per case, read in one buffered call.
+
+## Dry run
+
+| from | to | Manhattan distance | $K$ | $K - \mathrm{dist}$ | even? | output |
+|---|---|---:|---:|---:|:---:|---|
+| $(1,1)$ | $(2,2)$ | 2 | 2 | 0 | yes | `YES` |
+| $(1,1)$ | $(2,3)$ | 3 | 4 | 1 | **no** | `NO` |
+| $(1,1)$ | $(1,0)$ | 1 | 3 | 2 | yes | `YES` |
+
+Row 3 uses one step to arrive and wastes the other two on a step out and back.
+
+---
+
+Same problem in rating order (#223 of 486): [../../by-rating/223-TANDJ1.md](../../by-rating/223-TANDJ1.md)

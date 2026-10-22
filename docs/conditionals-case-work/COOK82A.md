@@ -105,3 +105,25 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **A draw keeps the title.** Barcelona needs Real Madrid to *lose* and itself to *win*, both strictly. The first sample has a $1$&ndash;$1$ draw in Real Madrid's match, so the title stays — a non-strict comparison would hand it to Barcelona.
+- **Both conditions are needed**: Real Madrid slipping is not enough if Barcelona also fails to win.
+- **The four lines arrive in arbitrary order**, so they must be indexed by team name rather than by position. The first sample lists Barcelona first and the second lists Malaga first, which is exactly what breaks a positional parse.
+- **Goals can be $0$** and go up to $20$, so no assumption about scorelines holds.
+
+## Dry run
+
+First sample: Barcelona $2$, Malaga $1$, RealMadrid $1$, Eibar $0$.
+
+| condition | value | met? |
+|---|---|:---:|
+| RealMadrid $<$ Malaga | $1 < 1$ | no |
+| Barcelona $>$ Eibar | $2 > 0$ | yes |
+
+One condition fails, so `RealMadrid`. In the second sample $2 < 3$ and $8 > 6$ both hold, so `Barcelona`.
+
+---
+
+Same problem in rating order (#156 of 486): [../../by-rating/156-COOK82A.md](../../by-rating/156-COOK82A.md)

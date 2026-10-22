@@ -111,3 +111,26 @@ main()
 
 - **Time:** $O(1)$ per query
 - **Space:** $O(Q)$
+
+## Edge cases
+
+- **Popping an empty shelf prints `kuchbhi?`** rather than raising `IndexError` — the third `-1` in the sample, after both books have been taken.
+- **The two query types have different token counts** (type $1$ takes two tokens, type $-1$ one), so the stream must be consumed by type; a fixed stride of two desynchronises the whole input.
+- **Last in, first out**: $45$ was pushed second and comes out first.
+- **$Q$ up to $10^6$** — the output is joined once at the end rather than printed per query, and the whole input is read in a single buffered call.
+- **$N$ up to $10^9$**: the values are only stored and echoed, so they are kept as raw byte tokens and never parsed into integers.
+- **A run of pushes with no pops** produces no output at all; the output line count equals the number of $-1$ queries, not $Q$.
+
+## Dry run
+
+| query | shelf after (bottom → top) | output |
+|---|---|---|
+| `1 2` | $2$ | — |
+| `1 45` | $2, 45$ | — |
+| `-1` | $2$ | `45` |
+| `-1` | empty | `2` |
+| `-1` | empty | `kuchbhi?` |
+
+---
+
+Same problem in rating order (#203 of 486): [../../by-rating/203-SUDBOOKS.md](../../by-rating/203-SUDBOOKS.md)

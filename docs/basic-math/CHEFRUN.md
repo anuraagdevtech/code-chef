@@ -113,4 +113,24 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **A draw** (third row: both products equal $4$): needs its own branch.
+- **$X_1 < X_3 < X_2$ is guaranteed**, so both distances are strictly positive — there is no zero-distance or sign case to handle.
+- **Coordinates may be negative** ($|X_i| \leq 10^5$), so the distances must come from the differences rather than from the coordinates themselves.
+- **Cross-multiplication keeps the tie exact.** The comparison is between the times $\frac{X_3 - X_1}{V_1}$ and $\frac{X_2 - X_3}{V_2}$; multiplying out avoids a float rounding error at precisely the `Draw` case.
+- The **lower** time wins, so the inequality runs the opposite way to a speed comparison.
+
+## Dry run
+
+| $X_1$ | $X_2$ | $X_3$ | $V_1$ | $V_2$ | Chef $(X_3{-}X_1)V_2$ | Kefa $(X_2{-}X_3)V_1$ | output |
+|---:|---:|---:|---:|---:|---:|---:|---|
+| 1 | 3 | 2 | 1 | 2 | 2 | 1 | `Kefa` |
+| 1 | 5 | 2 | 1 | 2 | 2 | 3 | `Chef` |
+| 1 | 5 | 3 | 2 | 2 | 4 | 4 | `Draw` |
+
 > CodeChef tags: `Special`
+
+---
+
+Same problem in rating order (#125 of 486): [../../by-rating/125-CHEFRUN.md](../../by-rating/125-CHEFRUN.md)

@@ -107,3 +107,26 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Disjoint ranges** ($1..3$ and $5..5$): the overlap expression evaluates to $-1$ and **must clamp to zero**. Without the clamp the answer comes out as $5$ instead of $4$, and the sample's first row is exactly this.
+- **Ranges that touch without overlapping** ($1..3$ and $4..6$): the expression gives exactly $0$, so the clamp is not needed but does no harm — the boundary between the two behaviours.
+- **One range inside the other** ($1..8$ and $4..6$): the union is just the outer range, $8$.
+- **Identical single points** ($5..5$ twice): the union is $1$, not $2$.
+- **Inclusive counts throughout**: a range $A..B$ holds $B - A + 1$ values, so each $+1$ matters — dropping them understates every answer.
+
+## Dry run
+
+| $A..B$ | $C..D$ | sizes | overlap $\min(B,D) - \max(A,C) + 1$ | union | output |
+|---|---|---|---:|---:|---|
+| $1..3$ | $5..5$ | $3 + 1$ | $3 - 5 + 1 = -1 \to 0$ | 4 | `4` |
+| $3..8$ | $2..5$ | $6 + 4$ | $5 - 3 + 1 = 3$ | 7 | `7` |
+| $1..8$ | $4..6$ | $8 + 3$ | $6 - 4 + 1 = 3$ | 8 | `8` |
+| $5..5$ | $5..5$ | $1 + 1$ | $5 - 5 + 1 = 1$ | 1 | `1` |
+
+Row 1 is the clamp; row 3 is full containment.
+
+---
+
+Same problem in rating order (#135 of 486): [../../by-rating/135-TWORANGES.md](../../by-rating/135-TWORANGES.md)

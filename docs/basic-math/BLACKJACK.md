@@ -99,4 +99,24 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The required value exceeds any card** ($A = 1$, $B = 5$ needs $15$): no card is worth that, so $-1$. The sample's second row.
+- **Exactly $10$**, the largest card ($A = 1$, $B = 10$): valid, and the sample's first row sits on this boundary — an off-by-one upper test rejects it.
+- **Exactly $1$**, the smallest card ($A = B = 10$): valid.
+- **The lower bound can never actually fail.** With $A, B \leq 10$ the sum is at most $20$, so $21 - A - B \geq 1$ always; only the upper test can reject. The `1 <=` guard is there for safety rather than necessity.
+- The third card is fully determined, so there is nothing to search — only to validate.
+
+## Dry run
+
+| $A$ | $B$ | needed $21 - A - B$ | a real card? | output |
+|---:|---:|---:|:---:|---|
+| 1 | 10 | 10 | yes (the maximum) | `10` |
+| 1 | 5 | 15 | no | `-1` |
+| 4 | 9 | 8 | yes | `8` |
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#54 of 486): [../../by-rating/054-BLACKJACK.md](../../by-rating/054-BLACKJACK.md)

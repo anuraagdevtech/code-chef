@@ -130,4 +130,32 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **This is not a permutation.** Values may run up to $2N$, which is what gives the construction room: the pairs reach $4j - 2 \leq 2N - 2$.
+- **The non-division at even positions is free.** The second member of each pair, $4j - 2$, is even while the next odd position holds $2j + 1$, which is odd — an even number can never divide an odd one, so the condition holds without any checking.
+- **The division at odd positions is by construction**: $2j - 1$ divides $2(2j-1) = 4j - 2$.
+- **An odd $N$ leaves a lone tail**, and position $N$ has no successor, so no condition applies to it. The value $N$ itself is used, and it is not among the odds already placed (those stop at $N - 2$), so distinctness holds.
+- **For odd $N \geq 3$ the join is still valid**: the preceding value $2N - 4$ sits at an even position and exceeds $N$, so it cannot divide it.
+- **$N = 1$** → a single element with no conditions at all.
+- **This answer differs from the sample's** (`1 2 3 6` against `1 3 2 4`), and the statement allows any valid array, so a special judge checks the four conditions.
+
+## Dry run
+
+$N = 6$ gives $A = 1, 2, 3, 6, 5, 10$.
+
+| $i$ | $A_i$ | $A_{i+1}$ | required | holds? |
+|---:|---:|---:|---|:---:|
+| 1 | 1 | 2 | $1 \mid 2$ | yes |
+| 2 | 2 | 3 | $2 \nmid 3$ | yes |
+| 3 | 3 | 6 | $3 \mid 6$ | yes |
+| 4 | 6 | 5 | $6 \nmid 5$ | yes |
+| 5 | 5 | 10 | $5 \mid 10$ | yes |
+
+All six values distinct, and the largest is $10 \leq 2N = 12$.
+
 > CodeChef tags: `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#281 of 486): [../../by-rating/281-ALTERNATEDIV.md](../../by-rating/281-ALTERNATEDIV.md)

@@ -106,3 +106,26 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Already at the target** ($X = Y$): zero wins needed, and the sample's first row checks it.
+- **A gap of exactly $8$** ($10 \to 18$): one win, and the $+7$ must not make it two.
+- **A gap of $9$** ($10 \to 19$): two wins, since one win still leaves a point short. Together with the previous row this is the boundary pair, and the sample has both.
+- **A gap of $7$** ($10 \to 17$): one win overshoots, which is fine — the rating only has to reach the target, not land on it.
+- $X \leq Y$ is guaranteed, so the clamp is belt and braces, but it keeps the expression correct if that bound ever loosened.
+
+## Dry run
+
+| $X$ | $Y$ | gap | gap $+ 7$ | $//\,8$ | output |
+|---:|---:|---:|---:|---:|---|
+| 10 | 10 | 0 | 7 | 0 | `0` |
+| 10 | 17 | 7 | 14 | 1 | `1` |
+| 10 | 18 | 8 | 15 | 1 | `1` |
+| 10 | 19 | 9 | 16 | 2 | `2` |
+
+Rows 3 and 4 are one rating point apart and differ by a whole win.
+
+---
+
+Same problem in rating order (#49 of 486): [../../by-rating/049-C_RATING.md](../../by-rating/049-C_RATING.md)

@@ -134,4 +134,36 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Four categories, and the pairing order matters.** Specialists pair with each other first — one programmer-only with one English-only — because such a team spends no all-rounder.
+- **An all-rounder can carry anyone**, so after the specialist pairs are formed, each leftover specialist and each person who knows neither can be partnered with one all-rounder.
+- **Surplus all-rounders pair among themselves, two per team**, which is the halved term — so they are spent last, at the worse rate.
+- **Two programmers cannot form a team** (nobody knows English), which is why leftover specialists on one side count as plain spares rather than pairing up.
+- **Nobody qualifying** (the third row, where everyone lacks programming) → $0$ teams, even with three people.
+- **A single all-rounder plus one specialist** forms a team (the fourth row), since the all-rounder covers both requirements.
+- **People who know neither are not useless**, as the first and second rows show — they can fill the second seat beside an all-rounder.
+
+## Dry run
+
+Second sample: $S = $ `1010`, $T = $ `0110`.
+
+| person | programming | English | category |
+|---:|:---:|:---:|---|
+| 1 | yes | no | programmer only |
+| 2 | no | yes | English only |
+| 3 | yes | yes | all-rounder |
+| 4 | no | no | neither |
+
+| step | teams |
+|---|---:|
+| pair the specialists ($1$ with $2$) | 1 |
+| the all-rounder ($3$) takes the spare ($4$) | 2 |
+
+Output `2`.
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#426 of 486): [../../by-rating/426-TEAMFOR.md](../../by-rating/426-TEAMFOR.md)

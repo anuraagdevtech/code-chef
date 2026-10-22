@@ -103,4 +103,24 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Smallest squad** ($N = 2$): two arrangements — either player can captain while the other is vice-captain.
+- **Order matters.** Captain and vice-captain are different roles, so the count is the ordered pair $N(N-1)$ and *not* the combination $\binom{N}{2} = N(N-1)/2$. Using the combination halves every answer.
+- **One player cannot hold both roles**, which is why the second factor is $N - 1$ rather than $N$.
+- **Largest input** ($N = 11$): $110$ arrangements.
+
+## Dry run
+
+| $N$ | captain choices | vice-captain choices | total $N(N-1)$ | output |
+|---:|---:|---:|---:|---|
+| 2 | 2 | 1 | 2 | `2` |
+| 3 | 3 | 2 | 6 | `6` |
+
+For $N = 3$ the six orderings are $(1,2), (1,3), (2,1), (2,3), (3,1), (3,2)$ — the pairs $(1,2)$ and $(2,1)$ counting separately is exactly what makes this a permutation count.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#78 of 486): [../../by-rating/078-FIZZBUZZ2303.md](../../by-rating/078-FIZZBUZZ2303.md)

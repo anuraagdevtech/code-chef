@@ -104,4 +104,22 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$Y$ an exact multiple of $X$** ($X = Y = 5$): the answer is $0$, because $1 \times 5 < 5$ is false. The $-1$ in $(Y-1)//X$ is exactly what makes the inequality strict, and the sample's second row catches an implementation that drops it.
+- **$Y < X$**: nothing fits, so $0$.
+- **Largest inputs** ($10^9$): no overflow concern in Python, and the expression stays in integers throughout.
+- Writing $\lfloor (Y-1)/X \rfloor$ rather than $\lfloor Y/X \rfloor$ is the whole content: the first counts multiples *strictly below* $Y$, the second includes $Y$ itself.
+
+## Dry run
+
+| $X$ | $Y$ | $Y - 1$ | $//\,X$ | check | output |
+|---:|---:|---:|---:|---|---|
+| 5 | 12 | 11 | 2 | $2 \times 5 = 10 < 12$ | `2` |
+| 5 | 5 | 4 | 0 | $1 \times 5 = 5 \not< 5$ | `0` |
+
 > CodeChef tags: `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#94 of 486): [../../by-rating/094-WATERCOOLER2.md](../../by-rating/094-WATERCOOLER2.md)

@@ -127,3 +127,29 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Equal neighbours continue the run**, since the condition is non-decreasing: $[2, 2]$ contributes three subarrays, not two. Using a strict `>` would under-count every plateau.
+- **Single elements all count**, which is why the run resets to $1$ rather than $0$ when the order breaks.
+- **The number of qualifying subarrays ending at a position is exactly the current stretch length**, which is what collapses the count to one pass instead of enumerating pairs.
+- **A strictly decreasing array** gives $N$ — just the singletons.
+- **$N = 1$** (the second row) → $1$.
+- **Totals reach $N(N+1)/2 \approx 5 \times 10^9$** at $N = 10^5$, past 32-bit signed.
+
+## Dry run
+
+First sample: $1, 4, 2, 3$.
+
+| element | continues run? | run length | subarrays ending here | total |
+|---:|---|---:|---|---:|
+| 1 | — | 1 | $[1]$ | 1 |
+| 4 | $4 \geq 1$ yes | 2 | $[4]$, $[1,4]$ | 3 |
+| 2 | $2 \geq 4$ **no** | 1 | $[2]$ | 4 |
+| 3 | $3 \geq 2$ yes | 2 | $[3]$, $[2,3]$ | 6 |
+
+Output `6`.
+
+---
+
+Same problem in rating order (#277 of 486): [../../by-rating/277-SUBINC.md](../../by-rating/277-SUBINC.md)

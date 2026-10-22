@@ -115,4 +115,32 @@ main()
 - **Time:** $O(N \log N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **The split is into two *subsequences*, so each keeps its original relative order** — meaning the sorted order's position sequence must break into a prefix and a suffix that are each increasing in position.
+- **That is exactly "at most one descent"** in the position sequence: one cut point, so one place where the positions may drop.
+- **Already sorted** gives zero descents and still answers `YES`, since the operation may be applied zero times (or with an empty $Q$).
+- **Two descents are fatal** (the second row, $1,3,5,2,4$, whose position sequence $0,3,1,4,2$ drops twice) — no single concatenation can repair both.
+- **A stable sort is required.** Equal values must keep their original order, or an arbitrary tie-break could invent a descent and reject a solvable case.
+- **Sorting indices rather than values** is what makes the descent count meaningful; sorting the values alone loses the position information entirely.
+- **Sum of $N \leq 2 \cdot 10^5$**: one sort and one pass.
+
+## Dry run
+
+Third sample: $A = 5, 10, 7, 11, 9$.
+
+| rank | value | original position |
+|---:|---:|---:|
+| 1 | 5 | 0 |
+| 2 | 7 | 2 |
+| 3 | 9 | 4 |
+| 4 | 10 | 1 |
+| 5 | 11 | 3 |
+
+Position sequence $0, 2, 4, 1, 3$ has one descent ($4 \to 1$), so `YES`: take $P = [5, 7, 9]$ and $Q = [10, 11]$.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#373 of 486): [../../by-rating/373-CONCATSORT.md](../../by-rating/373-CONCATSORT.md)

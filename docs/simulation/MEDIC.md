@@ -123,4 +123,28 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The chain survives a month boundary only from an even-length month.** From an odd-length month, stepping by two off the last correct day lands on the wrong parity: a $31$-day month's odd chain ends at $31$, and $+2$ gives day $2$ of the next month, which is even. That single observation is the whole problem.
+- **An even-length month preserves parity either way**: the odd chain ends at $\ell-1$ and continues at day $1$; the even chain ends at $\ell$ and continues at day $2$.
+- **February is the interesting month**: $28$ days is even and the chain continues, while a leap year's $29$ is odd and it breaks.
+- **Leap years need the full rule** — divisible by $4$, except centuries unless divisible by $400$ — since the range $1900$–$2038$ includes $1900$ (not a leap year) and $2000$ (one).
+- **Starting on the last day of an odd month** gives exactly one pill, which is the sample: $31$ March yields $1$.
+- **The count within a month is $(\ell - d)/2 + 1$**, which handles both parities with the same expression.
+- **The year may roll over**, so December is followed by January of the next year — and December has $31$ days, so the chain always breaks there anyway.
+
+## Dry run
+
+Starting $2019{:}03{:}31$ — day $31$, odd parity, in a $31$-day month.
+
+| month | length | days taken | count | boundary survives? |
+|---|---:|---|---:|---|
+| March 2019 | 31 | $31$ | 1 | **no** ($31$ is odd) |
+
+Output `1`. Had the start been $2019{:}04{:}2$, April's $30$ days would give $15$ pills and the chain would carry into May.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#307 of 486): [../../by-rating/307-MEDIC.md](../../by-rating/307-MEDIC.md)

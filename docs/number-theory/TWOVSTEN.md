@@ -102,4 +102,24 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$X = 0$**: divisible by $10$, so the answer is $0$. The constraints do allow it.
+- **A multiple of $5$ but not $10$** ($25$): one doubling makes it a multiple of $10$.
+- **Not a multiple of $5$** ($1$): **impossible**, and this is the invariant that matters — doubling supplies factors of $2$ but can never introduce a factor of $5$, so a number lacking one never gains it. The answer is $-1$.
+- **Already a multiple of $10$** ($10$): zero operations.
+- The three branches are exhaustive because a number is either divisible by $10$, by $5$ only, or by neither.
+
+## Dry run
+
+| $X$ | $X \bmod 10$ | $X \bmod 5$ | reasoning | output |
+|---:|---:|---:|---|---|
+| 10 | 0 | 0 | already there | `0` |
+| 25 | 5 | 0 | has the $5$, needs one $2$ | `1` |
+| 1 | 1 | 1 | no factor of $5$, ever | `-1` |
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#147 of 486): [../../by-rating/147-TWOVSTEN.md](../../by-rating/147-TWOVSTEN.md)

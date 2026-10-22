@@ -114,4 +114,25 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **A festival falling on a weekend adds nothing.** The third row's single festival is day $13$, already a Saturday, so the answer stays at the eight weekend days. Adding $N$ to $8$ would give $9$.
+- **Partial overlap** (the first row has $7$ on a weekend and $5$ not): only the new day counts.
+- **The $A_i$ are guaranteed distinct**, so there are no duplicate festivals to collapse — but the union is still needed for weekend collisions.
+- **Day $1$ is a Monday**, which fixes the weekend set as $\{6,7,13,14,20,21,27,28\}$ in a $30$-day month. A different starting weekday changes every answer, so that convention is the one assumption to get right.
+
+## Dry run
+
+Weekend days: $6, 7, 13, 14, 20, 21, 27, 28$ — eight of them.
+
+| festivals | already a weekend | new days | total |
+|---|---|---:|---:|
+| $5, 7$ | $7$ | $5$ | `9` |
+| $23, 1, 6$ | $6$ | $23, 1$ | `10` |
+| $13$ | $13$ | none | `8` |
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#133 of 486): [../../by-rating/133-SUNDAY.md](../../by-rating/133-SUNDAY.md)

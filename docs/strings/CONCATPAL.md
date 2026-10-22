@@ -138,4 +138,29 @@ main()
 - **Time:** $O(N + M)$ per test case
 - **Space:** $O(1)$ — 26 counters
 
+## Edge cases
+
+- **Every position of the shorter string mirrors into the longer one.** If $|A| \leq |B|$, then position $i \leq |A|$ maps to position $|A| + |B| + 1 - i \geq |B| + 1 > |A|$ — so each character of $A$ needs a partner in $B$, making multiset containment necessary.
+- **The leftover of the longer string forms the centre** and must itself be a palindrome, so at most one of its character counts may be odd. The first row leaves `b` and two `d`s, which is fine.
+- **Which string is shorter must be determined first**, hence the swap; assuming $A$ is the shorter one fails whenever $N > M$, as in the first sample row.
+- **Containment can fail outright** (the second row, `abc` against `xyz`) with no shared letter at all.
+- **Equal lengths** make the leftover empty, so the test reduces to the two multisets being identical.
+- **Identical letters on both sides** (the third row, `aa` and `aaaa`) leave two `a`s in the middle, an even count, so it works.
+- **One extra character of the wrong kind** breaks it: the fourth row leaves `a` and `x`, two odd counts.
+
+## Dry run
+
+First sample: $A = $ `abcdd` ($N = 5$), $B = $ `ac` ($M = 2$). Since $N > M$ the roles swap, so the shorter side is `ac`.
+
+| letter | shorter side | longer side | contained? |
+|---|---:|---:|:---:|
+| a | 1 | 1 | yes |
+| c | 1 | 1 | yes |
+
+Leftover of the longer side: `b` $\times 1$, `d` $\times 2$ — one odd count, which the centre can absorb. Output `YES`, e.g. `ca` $+$ `dbdac`… or more simply `ac` $+$ `dbdca` reads as `acdbdca`.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#306 of 486): [../../by-rating/306-CONCATPAL.md](../../by-rating/306-CONCATPAL.md)

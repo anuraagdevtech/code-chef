@@ -126,3 +126,24 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **The two axes are counted independently**, so a shared numeric value does not merge anything: the third row's single point at $(10, 10)$ contributes one vertical and one horizontal line, for $2$.
+- **All points on one vertical line** (the second row): one vertical line plus $N$ distinct horizontal ones, giving $6$ for $N = 5$.
+- **Duplicate points** would collapse on both axes at once, which the sets handle with no extra logic.
+- **Coordinate $0$ is allowed**, so the origin is an ordinary point and the tokens include `0`.
+- **Comparing raw byte tokens is safe** here, since the input has no leading zeros or negative numbers and each value therefore has exactly one spelling.
+- **The strided slices read the $x$ and $y$ columns in one pass** without materialising a list of points, which matters at $\sum N = 10^5$.
+
+## Dry run
+
+| points | distinct $x$ | distinct $y$ | output |
+|---|---|---|---:|
+| $(1,1), (1,0), (0,1), (0,0)$ | $\{0, 1\}$ → 2 | $\{0, 1\}$ → 2 | `4` |
+| $(0,0) \dots (0,4)$ | $\{0\}$ → 1 | $\{0,1,2,3,4\}$ → 5 | `6` |
+| $(10, 10)$ | $\{10\}$ → 1 | $\{10\}$ → 1 | `2` |
+
+---
+
+Same problem in rating order (#200 of 486): [../../by-rating/200-POLIN.md](../../by-rating/200-POLIN.md)

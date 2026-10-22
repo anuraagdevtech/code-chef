@@ -117,4 +117,26 @@ main()
 - **Time:** $O(\sqrt{N})$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 1$**: not prime, and it needs an explicit guard — trial division alone finds no divisor and would wrongly say yes.
+- **$N = 2$**: prime, and the only even one. The `n < 4` shortcut passes it before the even test can reject it, which is the ordering that matters.
+- **$N = 4$**: the smallest composite, caught by the even test.
+- **A large prime** ($99991$): the loop runs up to $\lfloor\sqrt{99991}\rfloor = 316$, so roughly $157$ odd divisors are tried — the square-root bound is what keeps this cheap.
+- Testing only odd divisors after the even check halves the work, and stopping at $\sqrt N$ is safe because a composite always has a factor at or below its square root.
+
+## Dry run
+
+| $N$ | guards | divisors tried | first divisor found | output |
+|---:|---|---|---:|---|
+| 23 | odd, $\geq 4$ | $3$ | none to $\lfloor\sqrt{23}\rfloor = 4$ | `yes` |
+| 13 | odd, $\geq 4$ | $3$ | none to $3$ | `yes` |
+| 20 | even | — | $2$ | `no` |
+| 1000 | even | — | $2$ | `no` |
+| 99991 | odd, $\geq 4$ | $3, 5, \ldots, 315$ | none | `yes` |
+
 > CodeChef tags: `Mathematics`, `Number Theory`, `Primality Checking`
+
+---
+
+Same problem in rating order (#105 of 486): [../../by-rating/105-PRB01.md](../../by-rating/105-PRB01.md)

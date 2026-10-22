@@ -101,4 +101,30 @@ main()
 - **Time:** $O(k)$ per test case, $k = 6$ denominations
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **An amount needing the smallest notes** ($N = 242$): two hundreds, four tens and a two — seven notes, so the tail of the denomination list genuinely gets used.
+- **Smallest inputs**: $N = 1$ takes one note, $N = 3$ takes two ($2 + 1$).
+- **The list must be descending.** Iterating the denominations the other way round takes $N$ ones and returns $N$ instead of the minimum.
+- **Greedy is optimal here because the system is canonical** — with notes $1, 2, 5, 10, 50, 100$ the largest-first rule always reaches the minimum. That is a property of *this* set, not of greedy in general: for a set like $\{1, 3, 4\}$ and $N = 6$, greedy takes $4 + 1 + 1$ while the optimum is $3 + 3$.
+
+## Dry run
+
+$N = 242$, taking the largest note that still fits at each step:
+
+| note | taken | remainder |
+|---:|---:|---:|
+| 100 | 2 | 42 |
+| 50 | 0 | 42 |
+| 10 | 4 | 2 |
+| 5 | 0 | 2 |
+| 2 | 1 | 0 |
+| 1 | 0 | 0 |
+
+Seven notes in total, so the output is `7`.
+
 > CodeChef tags: `Mathematics`, `Algorithms`
+
+---
+
+Same problem in rating order (#80 of 486): [../../by-rating/080-FLOW005.md](../../by-rating/080-FLOW005.md)

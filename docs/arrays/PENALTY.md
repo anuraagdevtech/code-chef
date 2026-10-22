@@ -102,4 +102,26 @@ main()
 - **Time:** $O(1)$ per test case — ten fixed entries
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **A tie** (all zeros, or equal goals): the answer is `0`, a distinct third output.
+- **The offset is the trap.** Shots are numbered from $1$, so team $1$ takes the odd-numbered shots — the *even* zero-based slots. The sample's second row puts a single goal in the last slot, which belongs to team $2$; getting the parity backwards reports `1` there.
+- **One team wins every shot** (the fourth row: team $1$ takes $5$ to team $2$'s $4$): a narrow win on the alternating split.
+- All ten shots are always present, so there is no partial-match handling.
+
+## Dry run
+
+| shots $A_1 \ldots A_{10}$ | team 1 (slots $1,3,5,7,9$) | team 2 (slots $2,4,6,8,10$) | output |
+|---|---:|---:|---|
+| all $0$ | 0 | 0 | `0` |
+| $0\ldots0\,1$ | 0 | 1 | `2` |
+| $1\,0\,1\,0\,0\ldots$ | 2 | 0 | `1` |
+| $1\times9$ then $0$ | 5 | 4 | `1` |
+
+Row 2's single goal lands on shot $10$, which is team $2$'s.
+
 > CodeChef tags: `Basic Programming Concepts`, `Algorithms`
+
+---
+
+Same problem in rating order (#137 of 486): [../../by-rating/137-PENALTY.md](../../by-rating/137-PENALTY.md)

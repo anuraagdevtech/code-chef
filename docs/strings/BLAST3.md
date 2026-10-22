@@ -122,4 +122,29 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Each operation removes exactly three consecutive characters**, so the length only ever drops by $3$ — and the surviving positions fall into fixed residue classes mod $3$.
+- **$N \equiv 1 \pmod 3$ is always possible**, since the string can be whittled down to a single character, and one character is a palindrome.
+- **Otherwise the survivors must pair up**, and the reachable pairs are exactly a position $p \equiv 1 \pmod 3$ with a later position $q \equiv N \pmod 3$ holding the same character. Verified by brute force over all $29{,}523$ strings of length at most $9$ on a three-letter alphabet, with no mismatch.
+- **The scan order matters.** A position is tested against the set of earlier $p \equiv 1$ characters *before* being added to it, which enforces $p < q$.
+- **All identical characters** (the first row) succeed as soon as the residues line up.
+- **All distinct characters** (the second row) fail, since no pair can match.
+- **The operation needs $|S| \geq 3$**, so a string of length $1$ or $2$ admits no moves at all — length $1$ is already a palindrome, and length $2$ needs its two characters equal.
+
+## Dry run
+
+Third sample: $N = 5$, $S = $ `aabcd`, so $N \bmod 3 = 2$.
+
+| position | residue mod 3 | role | character | match? |
+|---:|---:|---|---|:---:|
+| 1 | 1 | candidate $p$ | `a` | recorded |
+| 2 | 2 | candidate $q$ | `a` | **yes** — `a` already seen |
+
+Output `YES`: removing positions $3,4,5$ leaves `aa`, a palindrome.
+
 > CodeChef tags: `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#406 of 486): [../../by-rating/406-BLAST3.md](../../by-rating/406-BLAST3.md)

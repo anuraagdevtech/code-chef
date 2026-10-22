@@ -119,4 +119,30 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Both displacements share the parity of the elapsed time.** After $t$ seconds each has moved $\pm K$ exactly $t$ times, so each net displacement is $K$ times an integer congruent to $t$ modulo $2$ — making their difference an *even* multiple of $K$.
+- **So the gap must be divisible by $K$ and the quotient must be even.** Both halves are needed: the second row has $|x-y| = 3$, divisible by $K = 1$ but with an odd quotient, so `No`.
+- **A divisibility failure alone** is enough to answer `No` when $K > 1$ and the gap is not a multiple.
+- **An odd gap with $K = 1$ is always hopeless** (the first row), since the quotient is the gap itself.
+- **The board bounds do not matter.** $K \leq N$ is guaranteed, so both can always oscillate within $[0, N]$ without being forced into a corner — which is why $N$ is read and never used.
+- **They may not meet mid-move**, only at the end of a second, which is exactly what the parity argument captures: positions are only ever compared at integer times.
+- **$x \neq y$ is guaranteed**, so the gap is at least $1$ and the trivial "already caught" case does not arise.
+
+## Dry run
+
+| $x$ | $y$ | gap | $K$ | gap $\bmod K$ | quotient | quotient even? | output |
+|---:|---:|---:|---:|---:|---:|:---:|---|
+| 0 | 1 | 1 | 1 | 0 | 1 | no | `No` |
+| 1 | 4 | 3 | 1 | 0 | 3 | no | `No` |
+| 4 | 2 | 2 | 1 | 0 | 2 | **yes** | `Yes` |
+| 3 | 7 | 4 | 2 | 0 | 2 | **yes** | `Yes` |
+| 8 | 2 | 6 | 3 | 0 | 2 | **yes** | `Yes` |
+
+In row 3 both step right then the policeman steps right again while the thief steps left: positions $4 \to 5 \to 4$ and $2 \to 3 \to 4$.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#325 of 486): [../../by-rating/325-CATHIEF.md](../../by-rating/325-CATHIEF.md)

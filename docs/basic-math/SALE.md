@@ -100,4 +100,25 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Several items tie for cheapest** ($3, 3, 3$ and $8, 4, 4$): **exactly one** item is free, so only a single minimum is subtracted. Removing every tied minimum would give $3$ and $8$ instead of $6$ and $12$, and both sample rows test this.
+- **All three prices equal**: the answer is twice the price.
+- **The cheapest item in any position** — first, middle or last — must be found, so a hard-coded position fails.
+- The answer is the total minus one extremum, which is why no sorting is needed.
+
+## Dry run
+
+| prices | total | cheapest | total $-$ min | output |
+|---|---:|---:|---:|---|
+| $6, 2, 4$ | 12 | 2 | 10 | `10` |
+| $3, 3, 3$ | 9 | 3 | 6 | `6` |
+| $8, 4, 4$ | 16 | 4 | 12 | `12` |
+
+Rows 2 and 3 have ties for cheapest, and only one copy is discounted.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#88 of 486): [../../by-rating/088-SALE.md](../../by-rating/088-SALE.md)

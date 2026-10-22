@@ -81,4 +81,23 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 0$**: $0! = 1$. The lower bound here is $0$, unlike the sibling problem where it is $1$, and `math.factorial(0)` returns $1$ without a special case — a hand-rolled `for i in range(1, n+1)` loop also gets this right only because the empty product is $1$.
+- **$N = 20$**, the upper bound: $20! = 2{,}432{,}902{,}008{,}176{,}640{,}000$, which just fits in a signed 64-bit integer (limit about $9.22 \times 10^{18}$). **$21!$ would not**, and that is precisely why the bound is $20$ — the problem is calibrated so a `long long` suffices.
+- **$N = 1$**: $1$.
+- In Python the bound is irrelevant, since integers are arbitrary precision.
+
+## Dry run
+
+| $N$ | product | output |
+|---:|---|---:|
+| 3 | $1 \times 2 \times 3$ | `6` |
+| 4 | $6 \times 4$ | `24` |
+| 5 | $24 \times 5$ | `120` |
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`, `Algorithms`, `CPP`
+
+---
+
+Same problem in rating order (#62 of 486): [../../by-rating/062-FLOW018.md](../../by-rating/062-FLOW018.md)

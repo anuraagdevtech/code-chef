@@ -109,4 +109,27 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **A tie** ($A = B$, $X = Y$): `Both`, so the equality branch is needed.
+- **Time is not rounded to whole minutes.** The sample's last row has Chef at $3/2 = 1.5$ against Chefina at $2$; rounding Chef up to $2$ turns a win into a tie. Cross-multiplication keeps the fractional comparison exact without ever forming a float.
+- **The smaller time wins**, which is the opposite direction to a speed comparison — it is easy to invert by reflex.
+- **No overflow**: the products are at most $100 \times 10 = 1000$.
+- Only the ratios matter, so very different pairs can tie.
+
+## Dry run
+
+| $A$ | $B$ | $X$ | $Y$ | Chef $A \cdot Y$ | Chefina $B \cdot X$ | faster | output |
+|---:|---:|---:|---:|---:|---:|---|---|
+| 2 | 2 | 2 | 2 | 4 | 4 | neither | `Both` |
+| 4 | 2 | 1 | 5 | 20 | 2 | Chefina | `Chefina` |
+| 3 | 2 | 4 | 1 | 3 | 8 | Chef | `Chef` |
+| 3 | 2 | 2 | 1 | 3 | 4 | Chef | `Chef` |
+
+Row 4 is the fractional case: $1.5$ against $2$.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#77 of 486): [../../by-rating/077-BUILDINGRACE.md](../../by-rating/077-BUILDINGRACE.md)

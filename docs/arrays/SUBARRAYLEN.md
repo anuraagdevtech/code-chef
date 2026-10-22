@@ -122,4 +122,31 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **Group the positions by value, then by the length they license.** A position $p$ holding the value $\ell$ makes every subarray of length $\ell$ that covers $p$ a hit, which is the interval of left ends $[\max(1, p - \ell + 1),\, \min(p, N - \ell + 1)]$.
+- **Overlaps must not be double-counted.** Two positions holding the same value license overlapping ranges of left ends, so a running `last` tracks the rightmost left end already counted and clips the next interval.
+- **The positions arrive in increasing order**, which is why one pointer suffices instead of a full interval-union pass.
+- **The upper clip $N - \ell + 1$ matters**, since a subarray of length $\ell$ cannot start so late that it runs off the end.
+- **The lower clip at $1$ matters** for positions near the front, where $p - \ell + 1$ goes non-positive.
+- **A value exceeding $N$ would license nothing**, but $A_i \leq N$ is guaranteed so every value indexes a real length.
+- **Sum of $N \leq 5 \cdot 10^5$**: the work is linear overall, since each position is visited once inside its own length's bucket.
+
+## Dry run
+
+First sample: $A = 1, 2, 1$.
+
+| length | positions holding it | left-end interval | counted | running total |
+|---:|---|---|---:|---:|
+| 1 | $p = 1$ | $[1, 1]$ | 1 | 1 |
+| 1 | $p = 3$ | $[3, 3]$ | 1 | 2 |
+| 2 | $p = 2$ | $[1, 2]$ | 2 | 4 |
+| 3 | none | — | 0 | 4 |
+
+Output `4`: the subarrays are $[1]$, $[1]$ (the third element), $[1,2]$ and $[2,1]$.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#401 of 486): [../../by-rating/401-SUBARRAYLEN.md](../../by-rating/401-SUBARRAYLEN.md)

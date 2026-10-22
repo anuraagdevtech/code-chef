@@ -85,4 +85,26 @@ main()
 - **Time:** $O(n)$ big-integer multiplications per test case
 - **Space:** $O(n \log n)$ bits for the result
 
+## Edge cases
+
+- **$n = 1$**: $1! = 1$. The lower bound here is $1$, so $0!$ never arises, but `math.factorial(0)` would correctly give $1$ anyway.
+- **$n = 100$**, the upper bound: $100!$ has $158$ digits. This is the whole point of the problem — a 64-bit integer overflows at $21!$, so any fixed-width type is unusable and C/C++ solutions must implement big-number multiplication by hand.
+- **No floating point.** A `double` can hold $100!$ only approximately, and the answer has to be exact to the last digit, so `math.exp`/`lgamma` style shortcuts are wrong here.
+- Python's integers are arbitrary precision, so the "big integer" part of the problem disappears entirely.
+
+## Dry run
+
+| $n$ | product | output |
+|---:|---|---:|
+| 1 | $1$ | `1` |
+| 2 | $1 \times 2$ | `2` |
+| 5 | $1 \times 2 \times 3 \times 4 \times 5$ | `120` |
+| 3 | $1 \times 2 \times 3$ | `6` |
+
+The values arrive out of order and are independent, so each is answered on its own.
+
 > CodeChef tags: `Data Structures`, `Arrays`, `Mathematics`, `Algorithms`
+
+---
+
+Same problem in rating order (#1 of 486): [../../by-rating/001-FCTRL2.md](../../by-rating/001-FCTRL2.md)

@@ -113,3 +113,26 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **Both students sharing a first name get the full name, the earlier one included.** A single pass that decides as it reads prints just `hasan` for the first of them, because the clash has not been seen yet — which is why the counting pass must complete first. The sample is built on exactly this.
+- **Last names may repeat freely**; only first names are ever compared, so two students called `x jones` and `y jones` are both called by first name alone.
+- **All first names distinct**: every line is a bare first name.
+- **All first names identical**: every line is a full name.
+- **Output is $N$ lines per test case, in the original input order** — not sorted and not grouped.
+
+## Dry run
+
+| student | first name | times that first name appears | output |
+|---|---|---:|---|
+| hasan jaddouh | hasan | 2 | `hasan jaddouh` |
+| farhod khakimiyon | farhod | 1 | `farhod` |
+| kerim kochekov | kerim | 1 | `kerim` |
+| hasan khateeb | hasan | 2 | `hasan khateeb` |
+
+The first line needs the count from the fourth, which is why one pass is not enough.
+
+---
+
+Same problem in rating order (#172 of 486): [../../by-rating/172-ATTND.md](../../by-rating/172-ATTND.md)

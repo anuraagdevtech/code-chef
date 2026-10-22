@@ -121,4 +121,31 @@ main()
 - **Time:** $O(H \cdot M)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **No leading zeros** in the display, so hour $10$ shows as `10` and already contains two different digits — it can never qualify however the minutes fall. Zero-padding to two digits would change the answer.
+- **Multi-digit matches do count.** The $H = 10$, $M = 12$ case gains one over $H = 10$, $M = 11$ purely from hour $1$ with minute $11$, giving `111`.
+- **Hour $0$ with minute $0$ shows `00`**, which always qualifies — so the answer is never zero for valid input.
+- **$H$ and $M$ are exclusive upper bounds**: hours run $0 \dots H-1$ and minutes $0 \dots M-1$.
+- **$H = M = 1$** → the single time `00`, giving `1`.
+- **$H, M \leq 100$** means at most $10^4$ pairs per case, so the direct double loop is affordable at $T \leq 50$; the uniform test `s.count(s[0]) == len(s)` handles any digit count.
+
+## Dry run
+
+$H = 11$, $M = 11$.
+
+| hour | minute that matches | display |
+|---:|---:|---|
+| 0 | 0 | `00` |
+| 1 | 1 | `11` |
+| … | … | … |
+| 9 | 9 | `99` |
+| 10 | none | `10…` already mixed |
+
+Ten qualifying times, so `10`. Raising $M$ to $12$ adds hour $1$ with minute $11$ (`111`), giving `11`.
+
 > CodeChef tags: `Data Structures`, `Algorithms`
+
+---
+
+Same problem in rating order (#280 of 486): [../../by-rating/280-ONOZ.md](../../by-rating/280-ONOZ.md)

@@ -106,4 +106,26 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Below every threshold** (a total of $1$ km): no prize at all, so $0$ — a case the ladder needs an explicit final branch for.
+- **Exactly on a threshold** ($10$, $21$ or $42$): qualifies for that tier, so the comparisons are non-strict. The second sample row sits exactly on $10$.
+- **The longest race he can finish is always the best**, because $A < B < C$ is guaranteed — so there is no need to compare prize values, only distances.
+- **Largest total** ($D = 10$ days at $d = 5$ km, so $50$): clears $42$ and takes $C$.
+- The bands must be tested from the top down; ascending tests with the first match winning would hand out the smallest prize instead of the largest.
+
+## Dry run
+
+| $D$ | $d$ | total | tier reached | prize | output |
+|---:|---:|---:|---|---:|---|
+| 1 | 1 | 1 | none | 0 | `0` |
+| 10 | 1 | 10 | $\geq 10$ | $A = 1$ | `1` |
+| 10 | 3 | 30 | $\geq 21$ | $B = 2$ | `2` |
+
+Row 2 lands exactly on the first threshold.
+
 > CodeChef tags: `Basic Programming Concepts`, `Mathematics`
+
+---
+
+Same problem in rating order (#155 of 486): [../../by-rating/155-MARARUN.md](../../by-rating/155-MARARUN.md)

@@ -120,4 +120,23 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Nobody infected** ($Y = 0$): no separation is needed, so the answer is just $X$. The first sample row.
+- **Everybody infected** ($X = Y$): the $-1$ fires, giving $2X - 1$ rather than $2X$, because with no healthy group present one leading gap is unnecessary. The third sample row ($3, 3$) gives $5$ and is the only case that exercises the correction.
+- **A mix** ($5, 3$): $X + Y$ with no correction.
+- The $-1$ triggers on exactly one condition, so the formula is $X + Y$ everywhere else — which makes that single sample row the whole test of the special case.
+
+## Dry run
+
+| $X$ | $Y$ | $X + Y$ | $X = Y$? | correction | output |
+|---:|---:|---:|:---:|---:|---|
+| 4 | 0 | 4 | no | 0 | `4` |
+| 5 | 3 | 8 | no | 0 | `8` |
+| 3 | 3 | 6 | yes | $-1$ | `5` |
+
 > CodeChef tags: `Algorithms`, `Constructive`, `Observation`
+
+---
+
+Same problem in rating order (#132 of 486): [../../by-rating/132-AVOIDCONTACT.md](../../by-rating/132-AVOIDCONTACT.md)

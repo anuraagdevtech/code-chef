@@ -105,3 +105,24 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **$N = 1$**: a single hoop, taken by the first player.
+- **$N$ is guaranteed odd**, which is what makes the two converging sequences meet at one hoop rather than passing each other — there is never a simultaneous arrival at two different hoops to resolve.
+- **$N = 3$**: the middle hoop, index $2$.
+- **Largest input** ($N = 199999$): $100000$.
+- The first player reaches the middle hoop first, so the answer is that index rather than a tie — which is why the formula is $\lceil N/2 \rceil$ and not something symmetric.
+
+## Dry run
+
+| $N$ | middle $\lceil N/2 \rceil$ | output |
+|---:|---:|---|
+| 1 | 1 | `1` |
+| 3 | 2 | `2` |
+
+For $N = 5$ the answer would be $3$: the first player's hoops are $1, 2, 3$ while the second's run $5, 4$, and they meet at $3$.
+
+---
+
+Same problem in rating order (#141 of 486): [../../by-rating/141-HOOPS.md](../../by-rating/141-HOOPS.md)

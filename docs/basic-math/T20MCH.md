@@ -108,4 +108,30 @@ main()
 - **Time:** $O(1)$
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The best case exactly ties the target**: the two sample runs differ by a single run, $719$ and $720$, against a best possible $720$. A tie is not a win, so the comparison must be **strict** — this pair exists to catch `>=`.
+- **One over left** ($O = 19$): the best case adds only $36$.
+- **A T20 has $20$ overs**, so the overs remaining are $20 - O$; using $O$ itself inverts the whole calculation.
+- **$36$ per over** is $6$ balls at $6$ runs each, the theoretical ceiling — the constraint $C \leq 36 \cdot O$ confirms the same rate applies to what has already been scored.
+- **Input order is $R$, $O$, $C$**, with no test-case count.
+
+## Dry run
+
+Sample 1: $R = 719$, $O = 18$, $C = 648$.
+
+| step | value |
+|---|---|
+| overs left | $20 - 18 = 2$ |
+| best possible extra | $2 \times 36 = 72$ |
+| best final score | $648 + 72 = 720$ |
+| $720 > 719$? | yes |
+| output | `YES` |
+
+Sample 2 is identical but with $R = 720$: now $720 > 720$ fails, so `NO`.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#84 of 486): [../../by-rating/084-T20MCH.md](../../by-rating/084-T20MCH.md)

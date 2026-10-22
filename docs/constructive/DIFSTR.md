@@ -112,4 +112,30 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **Cantor's diagonal argument gives the answer outright.** Flipping the $i$-th character of the $i$-th string produces a string that differs from row $i$ at position $i$ — so it differs from every row, and only the $N$ diagonal characters need reading.
+- **The strings are square** ($N$ strings of length $N$), which is exactly what makes a diagonal exist; a rectangular input would need a different approach.
+- **Only $N$ of the $N^2$ characters are examined**, so the whole thing is linear rather than quadratic.
+- **$N = 1$**: one string of one character, and flipping it gives the only other option.
+- **Duplicate input strings are harmless** — the construction differs from each row independently, so repeated rows cost nothing.
+- **This answer differs from the sample's** (`001` against `111` for the first case); any string differing from all $N$ is accepted, so a special judge checks it.
+- **Bytes are compared against the literal `0x30`** rather than decoded, keeping the scan allocation-free.
+
+## Dry run
+
+First sample: three strings of length $3$.
+
+| $i$ | string | character at position $i$ | flipped |
+|---:|---|---:|---:|
+| 0 | `101` | `1` | `0` |
+| 1 | `110` | `1` | `0` |
+| 2 | `100` | `0` | `1` |
+
+Result `001`, which differs from `101` at position $0$, from `110` at position $0$, and from `100` at position $2$.
+
 > CodeChef tags: `Data Structures`, `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#352 of 486): [../../by-rating/352-DIFSTR.md](../../by-rating/352-DIFSTR.md)

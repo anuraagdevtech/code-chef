@@ -109,4 +109,30 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$K$ may exceed $7$** (it is $10$ in the sample), so it is not pre-reduced. Adding it and then taking the remainder handles that automatically; reducing $K$ first would also work but is an extra step to get wrong.
+- **A value already divisible by $7$** counts only when $K$ is too — the shift is uniform, so the test is equivalently $v \equiv -K \pmod 7$.
+- **$N = 1$**: a single minion.
+- **Values up to $10^5$ and $K$ up to $100$**: the sum stays small, so no overflow.
+- The shift applies to every value equally, which is what turns "will become divisible" into a plain residue count.
+
+## Dry run
+
+$N = 5$, $K = 10$, values $2, 4, 1, 35, 1$:
+
+| value | $v + K$ | $\bmod 7$ | counts? |
+|---:|---:|---:|:---:|
+| 2 | 12 | 5 | no |
+| 4 | 14 | 0 | **yes** |
+| 1 | 11 | 4 | no |
+| 35 | 45 | 3 | no |
+| 1 | 11 | 4 | no |
+
+One minion qualifies, so `1`. Note $35$ is divisible by $7$ on its own and still fails, because $K$ is not.
+
 > CodeChef tags: `Mathematics`, `Modular Arithmetic`, `Algorithms`
+
+---
+
+Same problem in rating order (#159 of 486): [../../by-rating/159-CHN15A.md](../../by-rating/159-CHN15A.md)

@@ -115,4 +115,30 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Bits where $A$ and $B$ agree should be lifted in both factors**, so $X$ takes the complement there — a free gain for both sides of the product.
+- **Bits where they differ split between the factors**, and their total contribution is fixed whichever way they fall — so the product is maximised by *balancing*, which means giving the single top differing bit to one factor and all the lower differing bits to the other.
+- **The top differing bit outweighs all the lower ones**, which is why a balanced split is the best achievable rather than an even division of count.
+- **No differing bits at all** ($A = B$) leaves nothing to split: $X$ is the complement everywhere and both factors become $2^N - 1$. The first sample row is this case, with $A = B = 0$ giving $X = 1$.
+- **The result must be masked to $N$ bits**, since the complement of a small value sets bits above the limit.
+- **$A = B = 0$ with $N = 1$** is the smallest instance and still answers $1$, not $0$.
+- **Any maximising $X$ is accepted**, so a special judge evaluates the product rather than matching the value.
+
+## Dry run
+
+Second sample: $N = 3$, $A = 4$ ($100_2$), $B = 6$ ($110_2$), so they differ only at bit $1$.
+
+| bit | $A$ | $B$ | agree? | $X$'s bit | reason |
+|---:|---:|---:|:---:|---:|---|
+| 2 | 1 | 1 | yes | 0 | both already have it |
+| 1 | 0 | 1 | no | 1 | give it to $A$ (the top differing bit) |
+| 0 | 0 | 0 | yes | 1 | lift both |
+
+$X = 011_2 = 3$, giving $(4 \oplus 3) \times (6 \oplus 3) = 7 \times 5 = 35$ — the maximum.
+
 > CodeChef tags: `Mathematics`, `Bit Manipulation`
+
+---
+
+Same problem in rating order (#442 of 486): [../../by-rating/442-XORMUL.md](../../by-rating/442-XORMUL.md)

@@ -101,4 +101,26 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **$N = 1$**: only the first episode exists, and episodes are numbered from $1$, so it is an *odd* position and takes $B$. The sample's first row confirms this.
+- **$N$ odd**: the odd positions get the extra episode, so $\lceil N/2 \rceil$ of them against $\lfloor N/2 \rfloor$ even ones.
+- **$N$ even** ($N = 2$ and $N = 4$ in the sample): an exact split.
+- **The parity convention is the trap.** Counting from $0$ instead of $1$ swaps which of $A$ and $B$ gets the extra episode, which changes every odd-$N$ answer.
+- **Largest input** ($N = 60$): an even split of $30$ each.
+
+## Dry run
+
+| $N$ | $A$ | $B$ | odd slots $\lceil N/2 \rceil$ | even slots $\lfloor N/2 \rfloor$ | total $B\cdot\text{odd} + A\cdot\text{even}$ | output |
+|---:|---:|---:|---:|---:|---:|---|
+| 1 | 2 | 2 | 1 | 0 | $2$ | `2` |
+| 2 | 3 | 4 | 1 | 1 | $4 + 3$ | `7` |
+| 4 | 20 | 30 | 2 | 2 | $60 + 40$ | `100` |
+
+Row 1 is the case that pins the numbering down.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#64 of 486): [../../by-rating/064-CHEFEREN.md](../../by-rating/064-CHEFEREN.md)

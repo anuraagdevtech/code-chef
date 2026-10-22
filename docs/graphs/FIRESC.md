@@ -153,4 +153,31 @@ main()
 - **Time:** $O((N + M)\,\alpha(N))$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **Friends must share a route, so each connected component becomes one route** — and maximising the route count means using exactly one per component, since merging two would waste a route.
+- **Friendship is not transitive but connectivity is**, which is the whole point: the components, not the individual friendships, decide the grouping.
+- **An isolated employee is their own route** (the first sample's employee $4$), so singletons count.
+- **$M$ may be $0$**, leaving $N$ routes and exactly one captain choice per route, for $1$ way in total.
+- **The captain count is a product over components**, since each route picks its own captain independently — $3 \cdot 1 = 3$ in the first sample, $2^3 = 8$ in the third.
+- **Extra edges inside a component change nothing** (the second sample's triangle has three edges and still forms one component of size $3$).
+- **The product needs the modulus**: $5 \times 10^4$ components of size $2$ give $2^{50000}$, far past any fixed integer width.
+- **Union by size with path halving** keeps the DSU near-linear at $N, M \leq 10^5$.
+
+## Dry run
+
+Third sample: $N = 6$ with edges $(1,2)$, $(3,4)$, $(5,6)$.
+
+| component | members | size |
+|---:|---|---:|
+| 1 | $\{1, 2\}$ | 2 |
+| 2 | $\{3, 4\}$ | 2 |
+| 3 | $\{5, 6\}$ | 2 |
+
+Three routes, and $2 \times 2 \times 2 = 8$ ways to pick the captains. Output `3 8`.
+
 > CodeChef tags: `Advanced Data Structures`, `Mathematics`
+
+---
+
+Same problem in rating order (#391 of 486): [../../by-rating/391-FIRESC.md](../../by-rating/391-FIRESC.md)

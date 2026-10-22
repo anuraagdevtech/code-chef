@@ -111,3 +111,26 @@ main()
 
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **A negative left side needs no special case.** The first row gives $u^2 - 2as = -1$, meaning the car stops before reaching the turn; the comparison $-1 \leq 1$ answers `Yes` correctly without a branch.
+- **Exact equality is safe.** If braking brings the speed to precisely $V$, the turn is survivable, so the comparison is non-strict.
+- **No square root is taken.** Comparing $u^2 - 2as$ against $v^2$ keeps everything in integers, where a float `sqrt` could land on the wrong side of an exact tie.
+- **All of $U, V, A, S \geq 1$**, so there is always some braking over some distance — zero-distance and zero-deceleration cases cannot arise.
+- **Values up to $10^4$** make $u^2$ up to $10^8$ and $2as$ up to $2 \cdot 10^8$: small, but both intermediates exceed any single input.
+- **$T$ up to $10^5$** with constant work per case.
+
+## Dry run
+
+| $U$ | $V$ | $A$ | $S$ | $u^2 - 2as$ | $v^2$ | $\leq$? | output |
+|---:|---:|---:|---:|---:|---:|:---:|---|
+| 1 | 1 | 1 | 1 | $-1$ | 1 | yes | `Yes` |
+| 2 | 1 | 1 | 1 | 2 | 1 | no | `No` |
+| 2 | 2 | 1 | 1 | 2 | 4 | yes | `Yes` |
+
+Row 1 is the stops-early case; the formula handles it as an ordinary comparison.
+
+---
+
+Same problem in rating order (#214 of 486): [../../by-rating/214-NFS.md](../../by-rating/214-NFS.md)

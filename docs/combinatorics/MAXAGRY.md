@@ -121,4 +121,29 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Swaps beyond $\lfloor N/2 \rfloor$ add nothing**, since a full reversal already maximises the inversion count. The second row ($N = 1$) and the fourth ($N = 5$ with $K = 3$) both hit the clamp.
+- **$N = 1$** → no swap is possible and the answer is $0$, which the clamp produces without a branch.
+- **The outermost pair should be swapped first.** Positions $i$ and $N+1-i$ are the farthest apart still available, and swapping a pair at index distance $d$ creates $2d - 1$ inversions — so taking the largest $d$ first is greedily optimal.
+- **The closed form is essential**, not a nicety: $K$ reaches $10^9$, so a loop over the swaps would time out even though each step is trivial.
+- **Magnitudes**: $K(2N+1)$ with $K \leq 5 \cdot 10^8$ and $N \leq 10^9$ reaches about $10^{18}$ — inside 64-bit but close to its ceiling, and native in Python.
+- **$K$ is at least $1$** by the constraints, so the clamp is the only route to a zero answer.
+
+## Dry run
+
+First sample: $N = 7$, $K = 3$, so three swaps on $1 \dots 7$.
+
+| swap | positions | index distance $d$ | inversions gained $2d-1$ | running total |
+|---:|---|---:|---:|---:|
+| 1 | $1 \leftrightarrow 7$ | 6 | 11 | 11 |
+| 2 | $2 \leftrightarrow 6$ | 4 | 7 | 18 |
+| 3 | $3 \leftrightarrow 5$ | 2 | 3 | **21** |
+
+The closed form gives $3(15) - 2 \cdot 3 \cdot 4 = 45 - 24 = $ `21`.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#246 of 486): [../../by-rating/246-MAXAGRY.md](../../by-rating/246-MAXAGRY.md)

@@ -97,4 +97,23 @@ main()
 - **Time:** $O(1)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Equal strengths with zero tolerance** ($X = Y = 5$, $D = 0$): the gap is $0$, which is within $0$, so `YES`. The sample's third row sits on this boundary.
+- **The gap exactly equals $D$**: `YES`, since the comparison is non-strict.
+- **Either team may be stronger.** The absolute value is essential — a one-sided $X - Y \leq D$ accepts every case where $X < Y$ regardless of how far apart they are.
+- **Off by one** ($X = 5$, $Y = 3$, $D = 1$): a gap of $2$ against a tolerance of $1$, so `NO`. The sample's second row.
+
+## Dry run
+
+| $X$ | $Y$ | $|X - Y|$ | $D$ | within? | output |
+|---:|---:|---:|---:|:---:|---|
+| 5 | 3 | 2 | 4 | yes | `YES` |
+| 5 | 3 | 2 | 1 | no | `NO` |
+| 5 | 5 | 0 | 0 | yes (equal) | `YES` |
+
 > CodeChef tags: `Basic Programming Concepts`
+
+---
+
+Same problem in rating order (#67 of 486): [../../by-rating/067-CRICUP.md](../../by-rating/067-CRICUP.md)

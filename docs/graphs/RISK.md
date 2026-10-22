@@ -159,3 +159,39 @@ main()
 
 - **Time:** $O(NM)$ per test case
 - **Space:** $O(NM)$
+
+## Edge cases
+
+- **A turn captures a whole connected component**, since the player keeps taking neighbouring land — so the game reduces to dealing out component sizes.
+- **Both players take the largest component left**, which is optimal for each: a component once taken is gone, so grabbing the biggest maximises your own total and denies it to the opponent.
+- **Chef plays second**, so he receives the $2$nd, $4$th, $6$th largest — the odd indices of the descending list, which is exactly `sizes[1::2]`.
+- **A single component gives Chef nothing** (the second sample, one $2 \times 2$ block), since Mike takes it all.
+- **Equal-sized components split evenly**, as in the third sample's three singletons where Chef gets one.
+- **Adjacency is by shared side only**, so diagonal land forms separate components — which is why the third sample's diagonal gives three components rather than one.
+- **The flood fill uses an explicit stack**, since $N \cdot M$ reaches $10^6$ and recursion would overflow.
+- **The grid is flattened to a single `bytearray`**, with cells indexed as $r \cdot M + c$, keeping the fill allocation-free.
+
+## Dry run
+
+First sample: the $4 \times 4$ grid has four corner singletons and one central $2 \times 2$ block.
+
+| component | size |
+|---|---:|
+| central block | 4 |
+| each corner | 1 |
+
+Sorted descending: $4, 1, 1, 1, 1$.
+
+| turn | player | takes |
+|---:|---|---:|
+| 1 | Mike | 4 |
+| 2 | **Chef** | 1 |
+| 3 | Mike | 1 |
+| 4 | **Chef** | 1 |
+| 5 | Mike | 1 |
+
+Chef's total is `2`.
+
+---
+
+Same problem in rating order (#473 of 486): [../../by-rating/473-RISK.md](../../by-rating/473-RISK.md)

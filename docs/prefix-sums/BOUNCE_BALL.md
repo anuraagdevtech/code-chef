@@ -141,4 +141,29 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
 
+## Edge cases
+
+- **The hits alternate sides, so the two totals must nearly balance.** Pushed right, the ball spends hits on the right and left alternately, taking $\lceil k/2 \rceil$ from the right of $k$ total — so clearing everything needs $R = L$ or $R = L + 1$.
+- **Equal totals give two ways**, since either direction works; a difference of one gives exactly one way, pushing toward the heavier side. That is the whole counting rule.
+- **A difference above one gives nothing**, however large the totals: the third row has $6$ against $5$ at one zero (one way) and $11$ against $0$ at the other (none).
+- **Every empty cell is a candidate**, and two adjacent zeros can both count — the first row's positions $2$ and $3$ each give one way, for a total of $2$.
+- **Walls of height above $1$ take several hits**, which is why the totals are sums of heights rather than counts of walls (the last row balances $1000$ against $999$).
+- **The running left total must be updated after the test**, so the zero cell itself contributes nothing to either side.
+- **Sum of $N \leq 2 \cdot 10^5$**: one pass with a running prefix and the precomputed grand total.
+
+## Dry run
+
+First sample: $A = 1, 0, 0, 2$, total wall height $3$.
+
+| position | left total | right total | difference | ways |
+|---:|---:|---:|---:|---:|
+| 2 | 1 | 2 | 1 | 1 (push right) |
+| 3 | 1 | 2 | 1 | 1 (push right) |
+
+Output `2`. From position $2$ pushed right: hit the wall at $4$ (height $2 \to 1$), bounce left, hit the wall at $1$ ($1 \to 0$), bounce right, hit $4$ again ($1 \to 0$) — all clear.
+
 > CodeChef tags: `Algorithms`, `Simple Algos`
+
+---
+
+Same problem in rating order (#345 of 486): [../../by-rating/345-BOUNCE_BALL.md](../../by-rating/345-BOUNCE_BALL.md)

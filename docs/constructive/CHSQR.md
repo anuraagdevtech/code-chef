@@ -138,4 +138,29 @@ main()
 - **Time:** $O(K^2)$ per test case
 - **Space:** $O(K)$
 
+## Edge cases
+
+- **$K$ is odd**, so the centre is a single cell at $((K-1)/2, (K-1)/2)$ and the distance to the nearest $1$ is well defined — an even $K$ would have four central cells and a different answer.
+- **A Latin square forces a $1$ in every row**, so the nearest one can never be far: within $\lceil K/2 \rceil$ rows of the centre there must be a $1$, and the construction pushes it as far as that allows.
+- **$K = 1$** is the degenerate case: the only cell holds $1$ and sits at the centre, so the distance is $0$.
+- **The shift by $(K+1)/2$ is what maximises the distance.** A plain cyclic square $((c - r) \bmod K) + 1$ puts a $1$ on the main diagonal, which passes straight through the centre; shifting the diagonal moves it off.
+- **Python's `%` on a negative operand returns a non-negative result**, which is what keeps `(c - r - s) % k` in range without an explicit `+ k`.
+- **This square differs from the sample's** at $K = 3$ (`2 3 1 / 1 2 3 / 3 1 2` against `3 2 1 / 1 3 2 / 2 1 3`), but the $1$s sit in the same three cells, so both achieve the same $F(K)$ — a special judge measures the distance.
+
+## Dry run
+
+$K = 3$, so the shift is $s = 2$ and the centre is cell $(1,1)$ (0-based).
+
+| row | row contents | position of the $1$ | distance to centre |
+|---:|---|---|---:|
+| 0 | `2 3 1` | $(0, 2)$ | 2 |
+| 1 | `1 2 3` | $(1, 0)$ | **1** |
+| 2 | `3 1 2` | $(2, 1)$ | **1** |
+
+The closest $1$ is one step away, which is the best a $3 \times 3$ Latin square allows.
+
 > CodeChef tags: `Algorithms`
+
+---
+
+Same problem in rating order (#335 of 486): [../../by-rating/335-CHSQR.md](../../by-rating/335-CHSQR.md)

@@ -142,3 +142,30 @@ main()
 
 - **Time:** $O(L)$ per report
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Two heads in a row** (`H..H..T..T`): invalid, caught by the `inside` flag on the second `H`.
+- **A tail before any head** (`.T...H..H.T`): invalid; without the `not inside` guard on `T` this string is silently accepted.
+- **A head left unclosed at the end** (`H..T..H`): invalid, and only the post-loop `not inside` test catches it — every in-loop check passes.
+- **No snakes at all** (`...`): `Valid`, since the flag never rises.
+- **The minimal snake** (`HT`): `Valid`.
+- **Dots are ignored entirely**, both between snakes and inside one, so `H..T` and `HT` are equally fine.
+- **$L$ is given but unused in Python**, so its token must still be consumed or the next report's string is misread.
+
+## Dry run
+
+| report | where it fails | output |
+|---|---|---|
+| `..H..T...HTH....T.` | nowhere; ends outside | `Valid` |
+| `...` | nowhere; never enters | `Valid` |
+| `H..H..T..T` | second `H` while inside | `Invalid` |
+| `HT` | nowhere | `Valid` |
+| `.T...H..H.T` | first `T` while outside | `Invalid` |
+| `H..T..H` | passes the loop, but ends **inside** | `Invalid` |
+
+The last two rows fail by different mechanisms, which is why both the in-loop checks and the final flag test are needed.
+
+---
+
+Same problem in rating order (#199 of 486): [../../by-rating/199-SNAKPROC.md](../../by-rating/199-SNAKPROC.md)

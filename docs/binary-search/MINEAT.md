@@ -161,3 +161,28 @@ main()
 
 - **Time:** $O(N \log \max A)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Hours needed is non-increasing in the speed $K$**, so the predicate "finishes within $H$ hours" is monotone and the smallest feasible $K$ can be binary searched.
+- **A pile takes $\lceil A_i / K \rceil$ hours**, since only one pile may be touched per hour and a partial pile still costs a whole hour — the ceiling is where the problem lives.
+- **The search upper bound is $\max A$**, at which every pile takes exactly one hour and the total is $N$ — and $H \geq N$ is guaranteed, so that speed always works and the search never runs off the top.
+- **The lower bound is $1$**, not $0$, since a speed of zero finishes nothing.
+- **$H = N$ forces $K = \max A$** (the first sample), the tightest case.
+- **The ceiling must be integer**, computed as `(a + k - 1) // k`; a float division would misjudge exact multiples.
+- **Sums reach $10^5 \times 10^9$** in intermediate totals, so exact integers are needed throughout.
+
+## Dry run
+
+Third sample: piles $4, 3, 2, 7$ with $H = 5$ hours.
+
+| $K$ | hours per pile | total | within $5$? |
+|---:|---|---:|:---:|
+| 3 | $2, 1, 1, 3$ | 7 | no |
+| 4 | $1, 1, 1, 2$ | 5 | **yes** |
+
+So $4$ is the smallest workable speed. Output `4`.
+
+---
+
+Same problem in rating order (#461 of 486): [../../by-rating/461-MINEAT.md](../../by-rating/461-MINEAT.md)

@@ -109,3 +109,28 @@ main()
 
 - **Time:** $O(|X|)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **A `?` in either string matches**, so the test is a three-way disjunction rather than substituting one string's wildcards into the other.
+- **Both strings may hold `?` in the same position** — the final column of the first sample row — and that still matches, since any single letter satisfies both.
+- **Equal lengths are guaranteed**, so `zip` never silently truncates a longer string.
+- **One mismatched letter fails the pair.** The second row differs only at index $1$ (`t` against `c`) and every other column matches.
+- **Length can be $1$**, giving a single column to compare.
+- Only lowercase letters and `?` appear, so no case folding is needed.
+
+## Dry run
+
+| index | X | Y | verdict |
+|---:|---|---|---|
+| 0 | `s` | `s` | equal |
+| 1 | `?` | `c` | wildcard in X |
+| 2 | `o` | `o` | equal |
+| 3 | `r` | `?` | wildcard in Y |
+| 4 | `?` | `?` | wildcard in both |
+
+All five columns pass, so `s?or?` against `sco??` is `Yes`. Replacing index $1$ with a literal `t` fails immediately against `c`, giving the second row's `No`.
+
+---
+
+Same problem in rating order (#189 of 486): [../../by-rating/189-TWOSTR.md](../../by-rating/189-TWOSTR.md)

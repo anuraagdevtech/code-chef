@@ -120,4 +120,28 @@ main()
 - **Time:** $O(1)$
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The whole movie at double speed** ($Y = X$): the answer is $X/2$, e.g. $X = Y = 100$ gives $50$.
+- **$Y$ is guaranteed even**, so $Y/2$ is exact and there is no rounding decision. Were $Y$ odd the problem would have to state how a half minute is handled.
+- **Smallest $Y$** is $2$, not $0$, so there is always some footage watched at $2\times$.
+- The formula assumes $Y \leq X$ — you cannot fast-forward more footage than the film contains — which the problem's setup implies.
+- **Input shape**: one line with $X$ and $Y$, no leading test-case count.
+
+## Dry run
+
+Sample 1: $X = 100$, $Y = 20$.
+
+| part | footage | real time |
+|---|---:|---:|
+| at $2\times$ | $20$ min | $10$ min |
+| at normal speed | $80$ min | $80$ min |
+| **total** | $100$ min | **$90$ min** |
+
+Output `90`. Sample 2 ($X = 50$, $Y = 24$) gives $12 + 26 = 38$.
+
 > CodeChef tags: `Mathematics`, `Basic Math`
+
+---
+
+Same problem in rating order (#42 of 486): [../../by-rating/042-MOVIE2X.md](../../by-rating/042-MOVIE2X.md)

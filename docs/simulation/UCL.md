@@ -156,4 +156,32 @@ main()
 - **Time:** $O(1)$ per test case (12 fixed matches)
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **Twelve matches per group**, because four teams each play every other team twice — so the match count is fixed and needs no reading.
+- **The literal `vs.` occupies a token**, so each match line is five whitespace-separated tokens and the stride must be five; treating it as four desynchronises the whole case.
+- **Goal difference counts home and away goals alike**, as the statement insists, so each match updates both teams symmetrically.
+- **A draw awards one point to each**, not zero, which the three-way branch handles.
+- **Points come first and goal difference only breaks ties**, which the tuple key $(-\text{points}, -\text{difference})$ encodes in one sort.
+- **Teams must be registered before their first result** — the `setdefault` pair — or a team that only ever draws would be missing from the table.
+- **Only the top two are printed**, on one line, separated by a space.
+- **No further tie-break is specified** beyond goal difference, so two teams level on both are not distinguished by the statement.
+
+## Dry run
+
+First sample group, after all twelve matches:
+
+| team | points | goal difference |
+|---|---:|---:|
+| manutd | 16 | +13 |
+| fcbarca | 8 | +4 |
+| arsenal | 5 | $-5$ |
+| lyon | 4 | $-12$ |
+
+Sorted by points then difference, the top two are `manutd fcbarca`.
+
 > CodeChef tags: `Data Structures`, `Algorithms`, `Constructive`
+
+---
+
+Same problem in rating order (#369 of 486): [../../by-rating/369-UCL.md](../../by-rating/369-UCL.md)

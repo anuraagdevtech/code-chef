@@ -112,4 +112,28 @@ main()
 - **Time:** $O(K)$ per test case
 - **Space:** $O(K)$
 
+## Edge cases
+
+- **All-even indices always work**, since any two share the factor $2$ and are therefore never coprime — so the construction needs no search.
+- **$2K \leq N$ is exactly the feasibility bound.** The even numbers form the largest pairwise non-coprime set in $[1, N]$, of size $\lfloor N/2 \rfloor$, so $K$ beyond that is impossible.
+- **$K = 1$ needs its own branch.** There are no pairs to check, so any single plate works — including plate $1$, which the even construction would never reach and which $2K \leq N$ might reject for small $N$.
+- **Plate $1$ is unusable for $K \geq 2$**, because $\gcd(1, j) = 1$ for every $j$.
+- **$K = N$** (the second row, $N = K = 100$) is impossible for $N \geq 2$, since half the plates are odd.
+- **This answer differs from the sample's** (`2 4 6` against `45 63 35`); the statement asks for one of the possible choices, so a special judge verifies the pairwise gcds.
+- **$N \leq 777$** keeps the output small, and the plates may be printed in any order.
+
+## Dry run
+
+First sample: $N = 100$, $K = 3$, and $2K = 6 \leq 100$.
+
+| chosen plates | pairwise gcds |
+|---|---|
+| $2, 4, 6$ | $\gcd(2,4) = 2$, $\gcd(2,6) = 2$, $\gcd(4,6) = 2$ |
+
+None is $1$, so the choice is valid. Output `2 4 6`.
+
 > CodeChef tags: `Mathematics`, `Number Theory`, `Set Theory`
+
+---
+
+Same problem in rating order (#342 of 486): [../../by-rating/342-AMMEAT2.md](../../by-rating/342-AMMEAT2.md)

@@ -139,4 +139,30 @@ main()
 - **Time:** $O(N)$ per test case
 - **Space:** $O(1)$
 
+## Edge cases
+
+- **The snap is what makes the timing exact.** Once the temperature is within one degree of $K$, the next minute lands it precisely on $K$ — so a can starting $g$ degrees away reaches ambient after exactly $g$ minutes, never $g-1$ or $g+1$.
+- **A can already at ambient stays there** for any walk length, which the $m \geq g$ branch covers with $g = 0$.
+- **Cheapest, not coldest.** The first sample has two qualifying cans; the one at price $8$ wins over the one at price $10$ even though both land inside $[L, R]$.
+- **No qualifying can** → $-1$ (the second sample, where every can cools to $16$–$18$ against a window of $[20, 30]$).
+- **Temperatures and the window may be negative** ($|C_i|, |K| \leq 50$ and $-50 \leq L$), so the drift direction must be chosen by comparison rather than assumed.
+- **Both endpoints are inclusive**, and the first sample's winner lands exactly on $L = 4$.
+- **$M \geq 1$** by the constraints, so the zero-walk case never arises in practice though the formula handles it.
+
+## Dry run
+
+First sample: $M = 2$ minutes, ambient $K = 5$, window $[4, 6]$.
+
+| can | start $C$ | gap $|C - K|$ | $M \geq$ gap? | temperature on arrival | in $[4,6]$? | price |
+|---:|---:|---:|:---:|---:|:---:|---:|
+| 1 | 1 | 4 | no | $1 + 2 = 3$ | no | — |
+| 2 | 2 | 3 | no | $2 + 2 = 4$ | yes | **8** |
+| 3 | 8 | 3 | no | $8 - 2 = 6$ | yes | 10 |
+
+Output `8`.
+
 > CodeChef tags: `Mathematics`
+
+---
+
+Same problem in rating order (#303 of 486): [../../by-rating/303-COKE.md](../../by-rating/303-COKE.md)

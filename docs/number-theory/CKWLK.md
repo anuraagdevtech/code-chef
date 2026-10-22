@@ -100,3 +100,27 @@ main()
 
 - **Time:** $O(\log N)$ per test case
 - **Space:** $O(1)$
+
+## Edge cases
+
+- **Factorising into twos and fives turns the puzzle into two linear bounds.** Using $\times 10$ $a$ times and $\times 20$ $b$ times gives $2^{a+2b} 5^{a+b}$, so with $t$ twos and $f$ fives we need $a = 2f - t$ and $b = t - f$ — both non-negative, i.e. $f \leq t \leq 2f$.
+- **Any other prime factor is fatal.** The second row, $90 = 2 \cdot 3^2 \cdot 5$, has the right shape in twos and fives but leaves $9$ behind, so the residue must be checked against $1$.
+- **Too many twos fails** even with no stray primes: the last row is $2^{19} 5^9$, and $19 > 2 \cdot 9$, so no choice of $a, b$ works.
+- **$N = 1$** → zero twos and zero fives, so $0 \leq 0 \leq 0$ holds and the answer is `Yes` with no cheat codes used.
+- **Both bounds are non-strict**, and the extremes correspond to using only one code: $t = f$ means all $\times 10$, and $t = 2f$ means all $\times 20$ (the third row sits on $t = f$).
+- **$N$ up to $10^{18}$**: the two division loops run at most about $60$ and $26$ times, so no general factorisation is needed.
+
+## Dry run
+
+| $N$ | factorisation | twos $t$ | fives $f$ | residue | $f \leq t \leq 2f$ | output |
+|---:|---|---:|---:|---:|:---:|---|
+| 200 | $2^3 5^2$ | 3 | 2 | 1 | $2 \leq 3 \leq 4$ ✓ | `Yes` |
+| 90 | $2 \cdot 3^2 \cdot 5$ | 1 | 1 | **9** | — | `No` |
+| $10^{12}$ | $2^{12} 5^{12}$ | 12 | 12 | 1 | $12 \leq 12 \leq 24$ ✓ | `Yes` |
+| $1024 \cdot 10^9$ | $2^{19} 5^9$ | 19 | 9 | 1 | $19 \leq 18$ **✗** | `No` |
+
+For $200$: $a = 2(2) - 3 = 1$ and $b = 3 - 2 = 1$, so one $\times 10$ and one $\times 20$.
+
+---
+
+Same problem in rating order (#272 of 486): [../../by-rating/272-CKWLK.md](../../by-rating/272-CKWLK.md)

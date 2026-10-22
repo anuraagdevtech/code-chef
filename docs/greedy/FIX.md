@@ -130,3 +130,30 @@ main()
 
 - **Time:** $O(N)$ per test case
 - **Space:** $O(N)$
+
+## Edge cases
+
+- **A position is forced exactly when $A_i$ is a value not yet placed in $B$.** The prefix condition then demands it immediately, since $B$'s prefix of length $i$ must contain every distinct value of $A$'s prefix and this is the last slot available.
+- **Every other position is free**, and the lexicographically largest legal choice is $\max(A)$ — which is itself a value of $A$, so the membership condition holds.
+- **Repeats of an already-seen value are where the gain is.** The first sample's second $5$ happens to equal the maximum, but on $A = 7, 1, 7$ the final repeat is filled with the maximum $7$ rather than echoing the input.
+- **The maximum is always available**, because it appears in $A$ and is therefore placed (or reused) at some point — so no feasibility check is needed on the free positions.
+- **The required set only grows**, which is why a single `set` of what $B$ has placed suffices to decide forced versus free.
+- **All distinct values** (the second row) make every position forced, so $B$ equals $A$.
+- **Sum of $N \leq 5 \cdot 10^5$**, with one set and one pass.
+
+## Dry run
+
+First sample: $A = 5, 5, 2, 3$ with $\max(A) = 5$.
+
+| $i$ | $A_i$ | already in $B$? | $B_i$ | reason |
+|---:|---:|:---:|---:|---|
+| 1 | 5 | no | 5 | forced |
+| 2 | 5 | yes | 5 | free → the maximum |
+| 3 | 2 | no | 2 | forced |
+| 4 | 3 | no | 3 | forced |
+
+Output `5 5 2 3`. Here the free slot's maximum coincides with $A_2$; on $7, 1, 7$ the third slot takes $7$ rather than repeating anything new.
+
+---
+
+Same problem in rating order (#437 of 486): [../../by-rating/437-FIX.md](../../by-rating/437-FIX.md)

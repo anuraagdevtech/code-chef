@@ -98,4 +98,28 @@ main()
 - **Time:** $O(d)$ per test case, $d$ = number of digits
 - **Space:** $O(d)$
 
+## Edge cases
+
+- **Trailing zeros in $N$** become leading zeros after reversal and must vanish: $2300$ reverses to the string `0032`, and the answer is $32$, not `0032`. The sample tests exactly this.
+- **Internal zeros stay**: $31203 \to 30213$. Only the *leading* zeros of the reversed string are dropped, which is precisely what `int()` does.
+- **A palindrome** such as $121$ reverses to itself.
+- **Single digit** ($N = 5$): reversing changes nothing.
+- **Largest input** ($N = 10^6$): `1000000` reverses to `0000001`, which collapses all the way down to $1$.
+- Reversing as text and then converting is what makes the zero-stripping free; reversing arithmetically with `% 10` needs the same care but written out by hand.
+
+## Dry run
+
+| $N$ | digits reversed | after `int()` | output |
+|---:|---|---:|---:|
+| 12345 | `54321` | 54321 | `54321` |
+| 31203 | `30213` | 30213 | `30213` |
+| 2123 | `3212` | 3212 | `3212` |
+| 2300 | `0032` | 32 | `32` |
+
+The last row is the interesting one: two leading zeros appear and are discarded by the conversion.
+
 > CodeChef tags: `Mathematics`, `Basic Math`, `Algorithms`
+
+---
+
+Same problem in rating order (#2 of 486): [../../by-rating/002-FLOW007.md](../../by-rating/002-FLOW007.md)

@@ -133,3 +133,28 @@ main()
 
 - **Time:** $O(M + K)$ per test case
 - **Space:** $O(M + K)$
+
+## Edge cases
+
+- **Files in both lists must not be double-counted.** In the second row $M = K = 2$ and $N = 4$, so $N - M - K$ gives $0$, but file $4$ appears in both lists and the true answer is $1$. The union, not the sum, is what must be subtracted.
+- **A file can be in neither list**: file $5$ in the first row and files $1$ and $2$ in the second.
+- **A file can be in both**, which is what the first number counts — the first row has all four ignored files also tracked.
+- **Both lists are strictly increasing**, so neither contains an internal duplicate and the sets can be built straight from the tokens.
+- Comparing the raw byte tokens is safe here because the input has no leading zeros, so each number has exactly one spelling.
+
+## Dry run
+
+Second sample: $N = 4$, ignored $\{1, 4\}$, tracked $\{3, 4\}$.
+
+| file | ignored? | tracked? | counted as |
+|---:|:---:|:---:|---|
+| 1 | yes | no | — |
+| 2 | no | no | **untracked and not ignored** |
+| 3 | no | yes | — |
+| 4 | yes | yes | **both** |
+
+Output `1 1`. Note $N - M - K = 0$ would be wrong, because file $4$ is subtracted twice.
+
+---
+
+Same problem in rating order (#183 of 486): [../../by-rating/183-VCS.md](../../by-rating/183-VCS.md)
