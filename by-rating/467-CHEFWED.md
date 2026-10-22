@@ -145,16 +145,23 @@ main()
 
 First sample: $N = 5$, $K = 1$, families $5, 1, 3, 3, 3$.
 
-| tables | guests per table | arguing cost | table cost | total |
-|---|---|---:|---:|---:|
-| one | all five | $3$ (the three $3$s) | 1 | 4 |
-| two | $5,1$ and $3,3,3$ | $0 + 3$ | 2 | 5 |
-| two | $5,1,3$ and $3,3$ | $0 + 2$ | 2 | 4 |
-| three | $5,1$, $3,3$, $3$ | $0 + 2 + 0$ | 3 | 5 |
-| three | $5$, $1$, $3,3,3$ | $0 + 0 + 3$ | 3 | 6 |
-| four | $5$, $1$, $3,3$, $3$ | $0+0+2+0$ | 4 | 6 |
+Segment costs (table cost $1$ plus arguers):
 
-The best is `3`, achieved by five tables of one guest each: no arguing at all, at a table cost of $5$… in fact that is $5$. The true optimum here is one table per guest only when $K$ is tiny; with $K=1$ the winner is $3$, from tables $\{5\}, \{1\}, \{3\}, \{3,3\}$ — cost $4 + 2$… the DP settles it at `3`.
+| segment | families | arguers | cost |
+|---|---|---:|---:|
+| $1..3$ | $5, 1, 3$ | 0 | 1 |
+| $1..4$ | $5, 1, 3, 3$ | 2 | 3 |
+| $4..4$ | $3$ | 0 | 1 |
+| $5..5$ | $3$ | 0 | 1 |
+
+| prefix | best total |
+|---:|---:|
+| 0 | 0 |
+| 3 | 1 (one table) |
+| 4 | 2 (that table, then $\{3\}$) |
+| 5 | **3** (add $\{3\}$) |
+
+Output `3`: three tables, $\{5,1,3\}$, $\{3\}$ and $\{3\}$, with no two members of family $3$ seated together.
 
 ---
 

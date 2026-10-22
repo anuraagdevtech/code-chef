@@ -161,7 +161,7 @@ main()
 - **The feasibility check is a prefix sum.** Among the survivors, those still below $K$ need $K - L_i$ feeds each, and the total must not exceed the $n - m$ snakes available as food.
 - **The predicate is monotone in $m$** — fewer survivors means more food and less demand — so the answer is binary searched.
 - **Survivors already at or above $K$ need nothing**, which is why the demand is summed only over the prefix below $K$, found by one `bisect_left`.
-- **Every survivor may already be long enough**, in which case the demand is zero and the check short-circuits — the second case, where $K = 100$ is unreachable and the answer is $0$… in fact there the demand is unaffordable, so the answer is $0$.
+- **An unreachable $K$ gives $0$.** The second sample asks for length $100$ from snakes of length at most $5$; even one survivor would need $95$ feeds against four available, so no snake qualifies.
 - **A feed gives exactly $+1$**, so the demand is linear in the shortfall and no scheduling subtlety arises.
 - **$L_i$ and $K$ reach $10^9$ with $n$ at $10^5$**, so the demand can reach $10^{14}$ — past 32-bit.
 
