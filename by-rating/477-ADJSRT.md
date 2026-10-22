@@ -2,8 +2,6 @@
 
 > [`ADJSRT`](https://www.codechef.com/problems/ADJSRT) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -116,6 +114,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Insertion sort performs exactly the inversions**, one adjacent swap each — and since every adjacent swap removes at most one inversion, that count is the minimum. So the algorithm is optimal by construction, not by accident.
+- **Its real cost is $O(n + \text{inversions})$**, not $O(n^2)$: the inner loop runs only while a genuine inversion is found. The problem guarantees at most $10^5$ swaps, which is what makes this viable at $n = 10^5$.
+- **The swap indices are reported as the left position** of each adjacent pair, matching the problem's $0 \le i \le n-2$ convention.
+- **An already-sorted array yields zero swaps**, and the output is then the count followed by an empty line.
+- **Equal elements are never swapped**, since the condition is a strict `>` — which keeps the count at the true inversion number rather than inflating it.
+- **The order of the reported swaps matters**: they must be replayable in sequence, which the insertion order guarantees.
+- **There is no test-case count**: the input is $n$ followed by the array.
+
+## Dry run
+
+Sample: $A = 3, 2, 1$.
+
+| step | array before | swap at | array after |
+|---:|---|---:|---|
+| 1 | $3, 2, 1$ | 0 | $2, 3, 1$ |
+| 2 | $2, 3, 1$ | 1 | $2, 1, 3$ |
+| 3 | $2, 1, 3$ | 0 | $1, 2, 3$ |
+
+Three swaps, which is exactly the inversion count of $3, 2, 1$. Output `3` then `0 1 0`.
 
 ---
 

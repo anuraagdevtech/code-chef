@@ -2,8 +2,6 @@
 
 > [`QCKSRT2`](https://www.codechef.com/problems/QCKSRT2) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -142,6 +140,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Only the earliest occurrence of a key is a safe pivot.** Pivoting on a later copy pulls it ahead of the equal elements that preceded it, which is exactly the instability the problem is about.
+- **Only the first component is compared**, so two pairs with the same first value are "equal" however their second components differ — which is why the set is keyed on the first element alone.
+- **Every distinct key contributes exactly one valid index**, so the answer's size is the number of distinct first components.
+- **All-distinct keys make every index valid**, and all-equal keys leave only index $0$.
+- **The indices are reported in increasing order**, which the left-to-right scan produces naturally.
+- **Two things are printed**: the count then the indices.
+- **There is no test-case count**: the input is $n$ followed by $2n$ integers, read as pairs.
+
+## Dry run
+
+Sample: the pairs $(1,2), (2,3), (2,1), (3,2)$, so the keys are $1, 2, 2, 3$.
+
+| index | key | first occurrence? | valid pivot |
+|---:|---:|:---:|:---:|
+| 0 | 1 | yes | ✓ |
+| 1 | 2 | yes | ✓ |
+| 2 | 2 | no | — |
+| 3 | 3 | yes | ✓ |
+
+Output `3` then `0 1 3`. Pivoting on index $2$ would move $(2,1)$ ahead of $(2,3)$.
 
 ---
 

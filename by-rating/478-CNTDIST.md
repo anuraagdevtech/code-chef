@@ -2,8 +2,6 @@
 
 > [`CNTDIST`](https://www.codechef.com/problems/CNTDIST) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -118,6 +116,29 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Chef's code compares each new element against every earlier one**, costing $1 + 2 + \dots + (n-1) = \Theta(n^2)$ comparisons — so the exponent asked for is $2$.
+- **A hash set replaces the linear membership scan with an average $O(1)$ lookup**, bringing the whole count to $O(n)$ and fixing the time limit.
+- **The elements are stated to be uniformly random**, which is what makes the average-case hashing argument safe rather than merely typical.
+- **Two things are printed**: the exponent on one line and the distinct count on the next.
+- **The sample shows `*` for the exponent**, a placeholder — a special judge accepts the correct value there rather than matching the literal.
+- **Duplicates collapse**, which is the whole point: the sample's $1, 2, 1$ has two distinct values.
+- **There is no test-case count**: the input is $n$ followed by the array.
+- **The values are compared as raw tokens**, safe because the input has no leading zeros.
+
+## Dry run
+
+Sample: $n = 3$ with the array $1, 2, 1$.
+
+| step | element | already seen? | distinct so far |
+|---:|---:|:---:|---:|
+| 1 | 1 | no | 1 |
+| 2 | 2 | no | 2 |
+| 3 | 1 | yes | 2 |
+
+Chef's version would make $0 + 1 + 2 = 3$ comparisons here, and $\Theta(n^2)$ in general — hence the exponent `2`, then the count `2`.
 
 ---
 

@@ -2,8 +2,6 @@
 
 > [`SWPSRT1`](https://www.codechef.com/problems/SWPSRT1) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -108,6 +106,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **Selection sort fits the budget exactly.** Each of the first $n-1$ positions is fixed with at most one swap, so the total never exceeds $n-1$ — which is precisely the allowance.
+- **A position already holding its minimum is skipped**, so the count can be well below $n-1$ — the sample uses just one swap for three elements.
+- **The swaps may use any two indices**, not only adjacent ones, which is what lets selection sort apply at all.
+- **Minimisation is explicitly not required**, so there is no need to count inversions or find the cycle decomposition — any sequence within budget is accepted.
+- **The reported pairs must be replayable in order**, which the emission order guarantees.
+- **An already-sorted array yields zero swaps**, and the output is the count alone.
+- **Equal elements need no swap**, since `min` picks the earliest index among ties and the guard then skips it.
+- **$n \leq 500$** makes the quadratic scan trivial, and the statement explicitly permits it.
+
+## Dry run
+
+Sample: $A = 3, 2, 1$.
+
+| position | smallest in the suffix | at index | swap? | array after |
+|---:|---:|---:|---|---|
+| 0 | 1 | 2 | yes, $(0, 2)$ | $1, 2, 3$ |
+| 1 | 2 | 1 | no | $1, 2, 3$ |
+
+One swap, so the output is `1` then `0 2`.
 
 ---
 

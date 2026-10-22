@@ -2,8 +2,6 @@
 
 > [`SRTCHK`](https://www.codechef.com/problems/SRTCHK) &middot; difficulty **unrated** &middot; time limit **1s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -111,6 +109,24 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **One comparison tests both conditions at once.** Checking `sorted(A) == B` verifies that $B$ holds the same multiset *and* that it is in non-decreasing order — two separate checks collapse into one.
+- **A wrong multiset is caught** even when $B$ is itself sorted: the first sample row has $B = 1,2,3,4$ against an $A$ containing two $2$s.
+- **An unsorted $B$ is caught** even with the right elements — the second row has the right values in the wrong order.
+- **Duplicates must be preserved exactly**, which a set-based comparison would miss; the multiset is what matters.
+- **Equal arrays answer `yes`** when $A$ is already sorted.
+- **$n = 1$** is trivially `yes` when the two single elements match.
+- **Sum of $n \leq 10^5$**: one sort per case, with both arrays read in the same pass.
+
+## Dry run
+
+| $A$ | $\mathrm{sorted}(A)$ | $B$ | equal? | output |
+|---|---|---|:---:|---|
+| $1,3,2,2$ | $1,2,2,3$ | $1,2,3,4$ | no (values) | `no` |
+| $1,3,2,2$ | $1,2,2,3$ | $1,2,3,2$ | no (order) | `no` |
+| $1,3,2,2$ | $1,2,2,3$ | $1,2,2,3$ | yes | `yes` |
 
 ---
 

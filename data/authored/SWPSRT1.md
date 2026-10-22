@@ -17,3 +17,25 @@ With $n \leq 500$ the $O(n^2)$ scan is trivially fast, and the statement explici
 The output format is the count $m$ followed by $m$ lines of index pairs, applied in order. For the sample $[3,2,1]$ this gives a single swap of positions $0$ and $2$, matching the published answer — though **any valid sequence is accepted**, so this is judged by a checker that replays the swaps and confirms the result is sorted and within budget.
 
 Duplicate values need no special handling: selection sort places equal elements in some order, and the problem asks only for non-decreasing output, not stability.
+
+## Edge cases
+
+- **Selection sort fits the budget exactly.** Each of the first $n-1$ positions is fixed with at most one swap, so the total never exceeds $n-1$ — which is precisely the allowance.
+- **A position already holding its minimum is skipped**, so the count can be well below $n-1$ — the sample uses just one swap for three elements.
+- **The swaps may use any two indices**, not only adjacent ones, which is what lets selection sort apply at all.
+- **Minimisation is explicitly not required**, so there is no need to count inversions or find the cycle decomposition — any sequence within budget is accepted.
+- **The reported pairs must be replayable in order**, which the emission order guarantees.
+- **An already-sorted array yields zero swaps**, and the output is the count alone.
+- **Equal elements need no swap**, since `min` picks the earliest index among ties and the guard then skips it.
+- **$n \leq 500$** makes the quadratic scan trivial, and the statement explicitly permits it.
+
+## Dry run
+
+Sample: $A = 3, 2, 1$.
+
+| position | smallest in the suffix | at index | swap? | array after |
+|---:|---:|---:|---|---|
+| 0 | 1 | 2 | yes, $(0, 2)$ | $1, 2, 3$ |
+| 1 | 2 | 1 | no | $1, 2, 3$ |
+
+One swap, so the output is `1` then `0 2`.

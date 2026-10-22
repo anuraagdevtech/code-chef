@@ -2,7 +2,7 @@
 
 Every solved problem, ordered by CodeChef difficulty rating and numbered so a plain directory listing follows the same order: `001-<CODE>.md` is the easiest, `486-<CODE>.md` the hardest. One file per problem, each carrying the topic used, the problem and its constraints, the approach, the solution, its edge cases and a dry run.
 
-**486 problems** &middot; ratings 420 upward &middot; **472 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
+**486 problems** &middot; ratings 420 upward &middot; **486 with edge cases and a dry run written so far**. Problems CodeChef has not rated carry no place on the ladder, so they sit at the end.
 
 Same write-ups grouped by topic instead: [`../docs`](../docs).
 
@@ -18,10 +18,10 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 | [1400&ndash;1599](#14001599) | 118 | 118 | Greedy (18) |
 | [1600&ndash;1799](#16001799) | 120 | 120 | Greedy (22) |
 | [1800&ndash;1999](#18001999) | 10 | 10 | Arrays (2) |
-| [2000&ndash;2199](#20002199) | 1 | 0 | Graphs (1) |
-| [2200&ndash;2399](#22002399) | 1 | 0 | Heaps (1) |
-| [2600&ndash;2799](#26002799) | 1 | 0 | Bit Manipulation (1) |
-| [Unrated](#unrated) | 11 | 0 | Sorting (7) |
+| [2000&ndash;2199](#20002199) | 1 | 1 | Graphs (1) |
+| [2200&ndash;2399](#22002399) | 1 | 1 | Heaps (1) |
+| [2600&ndash;2799](#26002799) | 1 | 1 | Bit Manipulation (1) |
+| [Unrated](#unrated) | 11 | 11 | Sorting (7) |
 
 ## 400&ndash;599
 
@@ -539,19 +539,19 @@ Same write-ups grouped by topic instead: [`../docs`](../docs).
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 473 | [Maximum Size](473-RISK.md) `RISK` | 2113 | Graphs | Connected components, then alternating greedy picks | &ndash; |
+| 473 | [Maximum Size](473-RISK.md) `RISK` | 2113 | Graphs | Connected components, then alternating greedy picks | yes |
 
 ## 2200&ndash;2399
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 474 | [Lowest Sum](474-LOWSUM.md) `LOWSUM` | 2302 | Heaps | $k$ smallest pairwise sums | &ndash; |
+| 474 | [Lowest Sum](474-LOWSUM.md) `LOWSUM` | 2302 | Heaps | $k$ smallest pairwise sums | yes |
 
 ## 2600&ndash;2799
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 475 | [Hussain Set](475-COOK82C.md) `COOK82C` | 2608 | Bit Manipulation | Grouping a halving process by bit length | &ndash; |
+| 475 | [Hussain Set](475-COOK82C.md) `COOK82C` | 2608 | Bit Manipulation | Grouping a halving process by bit length | yes |
 
 ## Unrated
 
@@ -559,17 +559,17 @@ CodeChef publishes no difficulty rating for these.
 
 | # | Problem | Rating | Topic | Technique | Edge cases + dry run |
 |---:|---|---:|---|---|:---:|
-| 476 | [Prajit and bits](476-ADDI.md) `ADDI` | &ndash; | Bit Manipulation | Zero bits inside the binary width | &ndash; |
-| 477 | [Sort by Adjacent Swaps](477-ADJSRT.md) `ADJSRT` | &ndash; | Sorting | Insertion sort performs exactly the inversions | &ndash; |
-| 478 | [Count Distinct Values](478-CNTDIST.md) `CNTDIST` | &ndash; | Sets | Replacing a linear scan with a hash set | &ndash; |
-| 479 | [Counting Sort](479-CNTSORT.md) `CNTSORT` | &ndash; | Sorting | Counting sort over a small value range | &ndash; |
-| 480 | [Pair Sort Version 3](480-PSORT3.md) `PSORT3` | &ndash; | Sorting | Mixed-direction composite key | &ndash; |
-| 481 | [Missing a Point](481-PTMSSNG.md) `PTMSSNG` | &ndash; | Bit Manipulation | XOR cancels everything that appears twice | &ndash; |
-| 482 | [Stable Quick Sort](482-QCKSRT2.md) `QCKSRT2` | &ndash; | Sorting | Which pivot choices preserve stability | &ndash; |
-| 483 | [Jon and Selina](483-SELINA.md) `SELINA` | &ndash; | Bit Manipulation | Parity bitmask over a 26-letter alphabet | &ndash; |
-| 484 | [Sort Checker](484-SRTCHK.md) `SRTCHK` | &ndash; | Sorting | Verifying a claimed sort | &ndash; |
-| 485 | [Fair distribution](485-SUBS.md) `SUBS` | &ndash; | Sorting | Sliding a fixed-size window | &ndash; |
-| 486 | [Sort by swaps](486-SWPSRT1.md) `SWPSRT1` | &ndash; | Sorting | Selection sort meets the swap budget exactly | &ndash; |
+| 476 | [Prajit and bits](476-ADDI.md) `ADDI` | &ndash; | Bit Manipulation | Zero bits inside the binary width | yes |
+| 477 | [Sort by Adjacent Swaps](477-ADJSRT.md) `ADJSRT` | &ndash; | Sorting | Insertion sort performs exactly the inversions | yes |
+| 478 | [Count Distinct Values](478-CNTDIST.md) `CNTDIST` | &ndash; | Sets | Replacing a linear scan with a hash set | yes |
+| 479 | [Counting Sort](479-CNTSORT.md) `CNTSORT` | &ndash; | Sorting | Counting sort over a small value range | yes |
+| 480 | [Pair Sort Version 3](480-PSORT3.md) `PSORT3` | &ndash; | Sorting | Mixed-direction composite key | yes |
+| 481 | [Missing a Point](481-PTMSSNG.md) `PTMSSNG` | &ndash; | Bit Manipulation | XOR cancels everything that appears twice | yes |
+| 482 | [Stable Quick Sort](482-QCKSRT2.md) `QCKSRT2` | &ndash; | Sorting | Which pivot choices preserve stability | yes |
+| 483 | [Jon and Selina](483-SELINA.md) `SELINA` | &ndash; | Bit Manipulation | Parity bitmask over a 26-letter alphabet | yes |
+| 484 | [Sort Checker](484-SRTCHK.md) `SRTCHK` | &ndash; | Sorting | Verifying a claimed sort | yes |
+| 485 | [Fair distribution](485-SUBS.md) `SUBS` | &ndash; | Sorting | Sliding a fixed-size window | yes |
+| 486 | [Sort by swaps](486-SWPSRT1.md) `SWPSRT1` | &ndash; | Sorting | Selection sort meets the swap budget exactly | yes |
 
 ---
 

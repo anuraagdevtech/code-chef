@@ -2,8 +2,6 @@
 
 > [`SUBS`](https://www.codechef.com/problems/SUBS) &middot; difficulty **unrated** &middot; time limit **2s** &middot; Jump from 2* to 3* (Level 3)
 
-> _Edge cases and dry run for this problem are still to be written._
-
 ## Topic used
 
 | | |
@@ -138,6 +136,28 @@ def main() -> None:
 
 main()
 ```
+
+## Edge cases
+
+- **An optimal choice is contiguous once sorted.** If two chosen elements straddle an unchosen one, swapping it in can only shrink the spread — so sliding a window of size $K$ over the sorted array covers every candidate.
+- **The spread of a window is its last element minus its first**, since the array is sorted — no per-window maximum or minimum is needed.
+- **$K = N$ leaves one window**, giving the full spread of the array.
+- **$K = 1$ gives $0$**, as a single element has no spread.
+- **Duplicates can give $0$** when $K$ of them coincide, which the window finds without a special case.
+- **The window count is $N - K + 1$**, which is at least $1$ since $K \leq N$ is guaranteed.
+- **$A_i$ may be $0$**, and the values reach $10^9$, so the spread fits comfortably.
+- **Sum of $N$ up to $2 \cdot 10^6$**: one sort per case and one linear sweep.
+
+## Dry run
+
+Third sample: $A = 1, 5, 44, 20, 40$ sorted to $1, 5, 20, 40, 44$, with $K = 4$.
+
+| window | spread |
+|---|---:|
+| $1, 5, 20, 40$ | $40 - 1 = 39$ |
+| $5, 20, 40, 44$ | $44 - 5 = 39$ |
+
+Both tie, so the answer is `39`.
 
 ---
 

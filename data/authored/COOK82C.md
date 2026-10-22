@@ -21,3 +21,27 @@ Right-shifting a sorted list keeps it sorted, so each level is a merge of two so
 The sample makes the levels visible. From $\{8,5,3,1\}$: level 4 is $[8]$, level 3 is $[5,4]$ (the $4$ being $8 \gg 1$), level 2 is $[3,2,2]$, level 1 is $[1,1,1,1]$. Reading positions $1,2,3,4,6,8$ off that concatenation gives $8, 5, 4, 3, 2, 1$.
 
 Elements can reach $2^{63}$, which overflows signed 64-bit arithmetic in C++ — Python's integers make this a non-issue, though at $N, M = 10^6$ this problem is really sized for a compiled language.
+
+## Edge cases
+
+- **The maximum always has the greatest bit length**, so every number of bit length $b$ is divided before any of bit length $b-1$ — which groups the whole process into $64$ levels.
+- **Halving preserves order**, so a level's values are the previous level's halves merged with the newly arriving numbers — both sorted runs, so one sort per level suffices.
+- **Within a level the divisions run in descending order**, which is why a query is answered by counting from the *end* of the ascending level list.
+- **Queries arrive in chronological order**, which lets a single pointer sweep them as the levels are built — no per-query search.
+- **A number reaching $0$ leaves the multiset**, which the level construction handles implicitly: halving a value of bit length $1$ gives $0$, which never enters the next level.
+- **Empty levels are skipped**, since a bit length may have no numbers at all.
+- **Values reach $2^{63}$**, so $65$ buckets are needed and the arithmetic must be exact.
+- **The loop breaks once every query is answered**, which matters when $N$ is large and the queries are all early.
+
+## Dry run
+
+Sample: the multiset $\{8, 5, 3, 1\}$.
+
+| bit length | values at this level (ascending) | moves | answers |
+|---:|---|---:|---|
+| 4 | $8$ | 1 | move 1 → `8` |
+| 3 | $4, 5$ | 2–3 | move 2 → `5`, move 3 → `4` |
+| 2 | $2, 2, 3$ | 4–6 | move 4 → `3`, move 6 → `2` |
+| 1 | $1, 1, 1, 1$ | 7–10 | move 8 → `1` |
+
+Each level's divisions go from its largest value down, which is why move $4$ takes the $3$ rather than a $2$.
