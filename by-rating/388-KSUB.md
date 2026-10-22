@@ -139,7 +139,7 @@ main()
 - **The earliest cut is optimal**, since a longer piece can only use up elements that a later piece might have needed — the standard exchange argument.
 - **A single element equal to $G$ closes a piece immediately** (the third row's leading $1$, where $G = 1$).
 - **Resetting to $0$ rather than to the next element** is what makes `gcd(0, v) == v` start the next run correctly.
-- **A trailing partial run is discarded**, as in the last row where the final $24$ never reaches $6$ on its own — wait, it does: $\gcd(24) = 24 \neq 6$, so that run contributes nothing.
+- **A trailing partial run is discarded**: in the last row the final $24$ stands alone with gcd $24 \neq 6$, so those elements contribute nothing and are simply left out of the $K$ pieces.
 - **$K$ may exceed what is achievable** even when $G$ divides everything; the fourth row manages only $2$ pieces against $K = 3$.
 
 ## Dry run

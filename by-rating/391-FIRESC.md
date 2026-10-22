@@ -159,7 +159,7 @@ main()
 - **$M$ may be $0$**, leaving $N$ routes and exactly one captain choice per route, for $1$ way in total.
 - **The captain count is a product over components**, since each route picks its own captain independently — $3 \cdot 1 = 3$ in the first sample, $2^3 = 8$ in the third.
 - **Extra edges inside a component change nothing** (the second sample's triangle has three edges and still forms one component of size $3$).
-- **The product needs the modulus**, as $N$ up to $10^5$ singletons… in fact a component of size $2$ repeated $5 \cdot 10^4$ times gives $2^{50000}$, far past any fixed width.
+- **The product needs the modulus**: $5 \times 10^4$ components of size $2$ give $2^{50000}$, far past any fixed integer width.
 - **Union by size with path halving** keeps the DSU near-linear at $N, M \leq 10^5$.
 
 ## Dry run
