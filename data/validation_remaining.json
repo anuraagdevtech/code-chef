@@ -1,0 +1,78 @@
+{
+  "scope": {
+    "new_solutions": 249,
+    "previous_distinct_solutions": 486,
+    "roadmap_distinct_problems": 735
+  },
+  "online_judge_submissions": false,
+  "sample_sets": {
+    "exact": 217,
+    "semantic_or_numerical": 30,
+    "case_insensitive": 2,
+    "failure": 0,
+    "skip": 0
+  },
+  "deterministic_checks": {
+    "test_remaining.py": 10572,
+    "test_remaining_math.py": 2038,
+    "test_dp_course.py": 8143,
+    "test_advanced_one.py": 62391,
+    "test_advanced_two.py": 6342
+  },
+  "total_deterministic_checks": 89486,
+  "selected_local_smoke_tests": [
+    {
+      "code": "INFDIV",
+      "parameters": "DP through199999",
+      "interpreter": "PyPy3.11.15",
+      "seconds": 0.42
+    },
+    {
+      "code": "TREDEG",
+      "parameters": "N100000 K123456789",
+      "interpreter": "PyPy3.11.15",
+      "seconds": 3.86
+    },
+    {
+      "code": "TREDEG",
+      "parameters": "N2000000 K1",
+      "interpreter": "PyPy3.11.15",
+      "seconds": 0.1
+    },
+    {
+      "code": "PTREE",
+      "parameters": "N199396 Q100000 cycling64 query bases",
+      "interpreter": "PyPy3.11.15",
+      "seconds": 3.07
+    },
+    {
+      "code": "SUMXOR2",
+      "parameters": "N200000 30distinct bit counts",
+      "interpreter": "CPython3",
+      "seconds": 2.235
+    },
+    {
+      "code": "CHEFQUE",
+      "parameters": "Q10000000 official legacy example",
+      "interpreter": "CPython3",
+      "seconds": 4.127
+    },
+    {
+      "code": "SQUAR",
+      "parameters": "N100000 maxvalue9999991",
+      "interpreter": "CPython3",
+      "seconds": 2.22
+    },
+    {
+      "code": "CHESUB",
+      "parameters": "N100000 K100",
+      "interpreter": "CPython3",
+      "seconds": 1.959
+    }
+  ],
+  "notes": [
+    "Local timing results are not online judge verdicts.",
+    "CHEFQUE bitmap requires256MiB plus interpreter overhead.",
+    "Historical account-solved status is preserved."
+  ]
+}

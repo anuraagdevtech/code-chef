@@ -2,6 +2,8 @@
 
 # CodeChef - Become 5 Star roadmap
 
+**New:** [Python solutions for all 249 remaining roadmap problems](docs/remaining/README.md), with approach notes and reproducible tests. The account-solved history below is preserved.
+
 Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, the topic or data structure it belongs to, the edge cases that decide the problem, and a dry run on a sample.
 
 **486 of 486 solved problems documented.**
@@ -693,3 +695,4 @@ python3 tools/reconcile_counts.py   # audit the roadmap solved count
 ```
 
 Both views are generated, so edit `data/authored/<CODE>.md` or `solutions/<CODE>.py` and rebuild rather than editing `docs/` or `by-rating/` directly.
+

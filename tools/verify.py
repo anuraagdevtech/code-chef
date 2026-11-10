@@ -20,6 +20,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, 'data', 'raw')
 SOLN = os.path.join(ROOT, 'solutions')
 TIMEOUT = 15
+EXTRA_SAMPLES = {}
+for filename in ('samples_remaining.json', 'samples_dp_course.json', 'samples_advanced_two.json'):
+    path = os.path.join(ROOT, 'data', filename)
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as handle:
+            EXTRA_SAMPLES.update(json.load(handle))
 
 
 def norm(s):
@@ -34,7 +40,7 @@ def run(code):
     if not os.path.exists(sol):
         return 'SKIP', ''
     raw = json.load(open(os.path.join(RAW, f'{code}.json'), encoding='utf-8'))
-    samples = (raw.get('problemComponents') or {}).get('sampleTestCases') or []
+    samples = (raw.get('problemComponents') or {}).get('sampleTestCases') or EXTRA_SAMPLES.get(code) or []
     if not samples:
         return 'SKIP', 'no samples'
     worst, detail = 'PASS', ''
@@ -68,7 +74,10 @@ def run(code):
 
 
 def main():
-    codes = sys.argv[1:] or open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
+    if sys.argv[1:] == ['--remaining']:
+        codes = open(os.path.join(ROOT, 'data', 'remaining.txt')).read().split()
+    else:
+        codes = sys.argv[1:] or open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
     tally = {}
     for code in codes:
         status, detail = run(code)
@@ -83,3 +92,4 @@ def main():
 
 if __name__ == '__main__':
     sys.exit(main())
+

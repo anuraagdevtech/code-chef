@@ -1,0 +1,1496 @@
+{
+  "SUB_XOR": {
+    "contest": "DIFF1800",
+    "name": "Subarray XOR",
+    "rating": "1757",
+    "course": "3-star-difficulty-problems"
+  },
+  "PREFIXFLIP": {
+    "contest": "DIFF1800",
+    "name": "Flip the Prefix",
+    "rating": "1758",
+    "course": "3-star-difficulty-problems"
+  },
+  "MINNOTES": {
+    "contest": "DIFF1800",
+    "name": "Optimal Denomination",
+    "rating": "1759",
+    "course": "3-star-difficulty-problems"
+  },
+  "RACINGEN": {
+    "contest": "DIFF1800",
+    "name": "Racing",
+    "rating": "1759",
+    "course": "3-star-difficulty-problems"
+  },
+  "LEBAMBOO": {
+    "contest": "DIFF1800",
+    "name": "Little Elephant and Bamboo",
+    "rating": "1761",
+    "course": "3-star-difficulty-problems"
+  },
+  "DISTELE": {
+    "contest": "DIFF1800",
+    "name": "Distinct Elements",
+    "rating": "1762",
+    "course": "3-star-difficulty-problems"
+  },
+  "CHEFELEC": {
+    "contest": "DIFF1800",
+    "name": "Chefland and Electricity",
+    "rating": "1767",
+    "course": "3-star-difficulty-problems"
+  },
+  "RECTCNT": {
+    "contest": "DIFF1800",
+    "name": "Rectangles Counting",
+    "rating": "1770",
+    "course": "3-star-difficulty-problems"
+  },
+  "CAB": {
+    "contest": "DIFF1800",
+    "name": "Cybalphabit",
+    "rating": "1771",
+    "course": "3-star-difficulty-problems"
+  },
+  "BRKNLIFE": {
+    "contest": "DIFF1800",
+    "name": "Broken Life",
+    "rating": "1772",
+    "course": "3-star-difficulty-problems"
+  },
+  "SUMQ": {
+    "contest": "DIFF1800",
+    "name": "Triplets",
+    "rating": "1772",
+    "course": "3-star-difficulty-problems"
+  },
+  "LUNCHTIM": {
+    "contest": "DIFF1800",
+    "name": "Lunchtime",
+    "rating": "1773",
+    "course": "3-star-difficulty-problems"
+  },
+  "PCJ18C": {
+    "contest": "DIFF1800",
+    "name": "Chef and Polygon Cakes",
+    "rating": "1773",
+    "course": "3-star-difficulty-problems"
+  },
+  "MONKS": {
+    "contest": "DIFF1800",
+    "name": "Monks",
+    "rating": "1776",
+    "course": "3-star-difficulty-problems"
+  },
+  "PALPALS": {
+    "contest": "DIFF1800",
+    "name": "Palpal Strings",
+    "rating": "1776",
+    "course": "3-star-difficulty-problems"
+  },
+  "BIN_OD": {
+    "contest": "DIFF1800",
+    "name": "Binod",
+    "rating": "1776",
+    "course": "3-star-difficulty-problems"
+  },
+  "KCON": {
+    "contest": "DIFF1800",
+    "name": "K-Concatenation",
+    "rating": "1780",
+    "course": "3-star-difficulty-problems"
+  },
+  "CAPIMOVE": {
+    "contest": "DIFF1800",
+    "name": "Capital Movement",
+    "rating": "1780",
+    "course": "3-star-difficulty-problems"
+  },
+  "ZEROONE": {
+    "contest": "DIFF1800",
+    "name": "01 Subsequence",
+    "rating": "1781",
+    "course": "3-star-difficulty-problems"
+  },
+  "SET302": {
+    "contest": "DIFF1800",
+    "name": "Problem-2",
+    "rating": "1620",
+    "course": "3-star-difficulty-problems"
+  },
+  "KLXOR": {
+    "contest": "DIFF1800",
+    "name": "Again XOR problem",
+    "rating": "1786",
+    "course": "3-star-difficulty-problems"
+  },
+  "ARTBALAN": {
+    "contest": "DIFF1800",
+    "name": "Art of Balance",
+    "rating": "1788",
+    "course": "3-star-difficulty-problems"
+  },
+  "ABX01": {
+    "contest": "DIFF1800",
+    "name": "Strange Function",
+    "rating": "1789",
+    "course": "3-star-difficulty-problems"
+  },
+  "PREZ": {
+    "contest": "DIFF1800",
+    "name": "Prefix Zeros",
+    "rating": "1790",
+    "course": "3-star-difficulty-problems"
+  },
+  "CHEFHAM": {
+    "contest": "DIFF1800",
+    "name": "Chef and Hamming Distance of arrays",
+    "rating": "1790",
+    "course": "3-star-difficulty-problems"
+  },
+  "SVRT": {
+    "contest": "DIFF1800",
+    "name": "Server Trouble",
+    "rating": "1791",
+    "course": "3-star-difficulty-problems"
+  },
+  "STR_REVERSE": {
+    "contest": "DIFF1800",
+    "name": "String Reverse",
+    "rating": "1792",
+    "course": "3-star-difficulty-problems"
+  },
+  "TAAPLUSB": {
+    "contest": "DIFF1800",
+    "name": "A Plus B Again!",
+    "rating": "1796",
+    "course": "3-star-difficulty-problems"
+  },
+  "BWALL": {
+    "contest": "DIFF1800",
+    "name": "The Great Wall of Byteland",
+    "rating": "1796",
+    "course": "3-star-difficulty-problems"
+  },
+  "DIGITOP": {
+    "contest": "DIFF1800",
+    "name": "Digit Operation",
+    "rating": "1798",
+    "course": "3-star-difficulty-problems"
+  },
+  "ADAKNG": {
+    "contest": "LP3TO401",
+    "name": "Ada King",
+    "rating": "1581",
+    "course": "3to4stars"
+  },
+  "SNSOCIAL": {
+    "contest": "LP3TO401",
+    "name": "Snakes and transition from Capitalism to Socialism",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "CFMAR04": {
+    "contest": "LP3TO401",
+    "name": "IS IT DSU HARD!!",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "DIAMTREE": {
+    "contest": "LP3TO401",
+    "name": "Find Tree Diameter",
+    "rating": "1620",
+    "course": "3to4stars"
+  },
+  "ROOTTREE": {
+    "contest": "LP3TO401",
+    "name": "Root the Tree",
+    "rating": "1934",
+    "course": "3to4stars"
+  },
+  "INOI1601": {
+    "contest": "LP3TO401",
+    "name": "Wealth Disparity",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "DSUBAGS": {
+    "contest": "LP3TO401",
+    "name": "Queries with Bags",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "FAMTREE": {
+    "contest": "LP3TO401",
+    "name": "Family Tree",
+    "rating": "1720",
+    "course": "3to4stars"
+  },
+  "CRIMCH": {
+    "contest": "LP3TO401",
+    "name": "Cricket Match",
+    "rating": "1350",
+    "course": "3to4stars"
+  },
+  "SUBREM": {
+    "contest": "LP3TO401",
+    "name": "Subtree Removal",
+    "rating": "2010",
+    "course": "3to4stars"
+  },
+  "COSTEMP": {
+    "contest": "LP3TO401",
+    "name": "Cosmic Temple",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "TINOI17A": {
+    "contest": "LP3TO401",
+    "name": "Fence - INOI 2017",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "EVEDG": {
+    "contest": "LP3TO401",
+    "name": "Even Edges",
+    "rating": "1945",
+    "course": "3to4stars"
+  },
+  "SEGDIR": {
+    "contest": "LP3TO401",
+    "name": "Moving Segments",
+    "rating": "1940",
+    "course": "3to4stars"
+  },
+  "TREEVERS": {
+    "contest": "LP3TO401",
+    "name": "Treeversion",
+    "rating": "2453",
+    "course": "3to4stars"
+  },
+  "ABDTOLL": {
+    "contest": "LP3TO401",
+    "name": "Abdullah and Toll Discounts",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "TOURISTS": {
+    "contest": "LP3TO401",
+    "name": "Tourists in Mancunia",
+    "rating": "2133",
+    "course": "3to4stars"
+  },
+  "DINCPATH": {
+    "contest": "LP3TO401",
+    "name": "Doubly Increasing Path",
+    "rating": "2493",
+    "course": "3to4stars"
+  },
+  "REVERSE": {
+    "contest": "LP3TO402",
+    "name": "Chef and Reversing",
+    "rating": "1879",
+    "course": "3to4stars"
+  },
+  "DIGJUMP": {
+    "contest": "LP3TO402",
+    "name": "Chef and Digit Jumps",
+    "rating": "1886",
+    "course": "3to4stars"
+  },
+  "GALACTIK": {
+    "contest": "LP3TO402",
+    "name": "Galactik Football",
+    "rating": "1860",
+    "course": "3to4stars"
+  },
+  "CORONA": {
+    "contest": "LP3TO402",
+    "name": "India Fights Corona",
+    "rating": "2560",
+    "course": "3to4stars"
+  },
+  "ARRGRAPH": {
+    "contest": "LP3TO402",
+    "name": "Graph on an Array",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "PERCAPTA": {
+    "contest": "LP3TO402",
+    "name": "Per Capita Income",
+    "rating": "2132",
+    "course": "3to4stars"
+  },
+  "INSQ15_F": {
+    "contest": "LP3TO402",
+    "name": "FCAR",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "AMR14B": {
+    "contest": "LP3TO402",
+    "name": "Road Decoration",
+    "rating": "-1",
+    "course": "3to4stars"
+  },
+  "HDELIVER": {
+    "contest": "LP3TO403",
+    "name": "Home Delivery",
+    "rating": "1621",
+    "course": "3to4stars"
+  },
+  "BINTREE": {
+    "contest": "LP3TO403",
+    "name": "Shortest Path in Binary Trees",
+    "rating": "1413",
+    "course": "3to4stars"
+  },
+  "PATHSUMS": {
+    "contest": "LP3TO403",
+    "name": "Path-etic Sums",
+    "rating": "1838",
+    "course": "3to4stars"
+  },
+  "ICM2006": {
+    "contest": "LP3TO403",
+    "name": "Lavanya Loves DFA",
+    "rating": "1586",
+    "course": "3to4stars"
+  },
+  "OMWG": {
+    "contest": "LP3TO403",
+    "name": "One more weird game",
+    "rating": "1536",
+    "course": "3to4stars"
+  },
+  "CIELTOMY": {
+    "contest": "LP3TO403",
+    "name": "Ciel and Tomya",
+    "rating": "1877",
+    "course": "3to4stars"
+  },
+  "PETERSEN": {
+    "contest": "LP3TO403",
+    "name": "Petersen Graph",
+    "rating": "1894",
+    "course": "3to4stars"
+  },
+  "TR1": {
+    "contest": "LP3TO403",
+    "name": "Rendezvous",
+    "rating": "1638",
+    "course": "3to4stars"
+  },
+  "FIRE": {
+    "contest": "LP3TO403",
+    "name": "Brush Fire",
+    "rating": "1761",
+    "course": "3to4stars"
+  },
+  "KINGCON": {
+    "contest": "LP3TO403",
+    "name": "Kingdom Unity",
+    "rating": "1851",
+    "course": "3to4stars"
+  },
+  "TR2": {
+    "contest": "LP3TO403",
+    "name": "Robot Game",
+    "rating": "1754",
+    "course": "3to4stars"
+  },
+  "CHEFHACK": {
+    "contest": "LP3TO403",
+    "name": "End Of The World",
+    "rating": "1730",
+    "course": "3to4stars"
+  },
+  "SPREAD": {
+    "contest": "LP3TO403",
+    "name": "Gravel",
+    "rating": "1822",
+    "course": "3to4stars"
+  },
+  "F3": {
+    "contest": "LP3TO403",
+    "name": "Curry Stained Napkin",
+    "rating": "1815",
+    "course": "3to4stars"
+  },
+  "RG_01": {
+    "contest": "LP3TO403",
+    "name": "Maximal Score Path",
+    "rating": "1836",
+    "course": "3to4stars"
+  },
+  "CHEFGIFT": {
+    "contest": "LP3TO403",
+    "name": "Birthday Gift",
+    "rating": "1868",
+    "course": "3to4stars"
+  },
+  "N1": {
+    "contest": "LP3TO403",
+    "name": "Treasure Hunting",
+    "rating": "1634",
+    "course": "3to4stars"
+  },
+  "K3": {
+    "contest": "LP3TO403",
+    "name": "Maze of Digits",
+    "rating": "1859",
+    "course": "3to4stars"
+  },
+  "M3": {
+    "contest": "LP3TO403",
+    "name": "Soccer League",
+    "rating": "1906",
+    "course": "3to4stars"
+  },
+  "BYTEISLE": {
+    "contest": "LP3TO403",
+    "name": "Byteknights and Byteknaves",
+    "rating": "1919",
+    "course": "3to4stars"
+  },
+  "PTUPLES": {
+    "contest": "LP3TO404",
+    "name": "Prime Tuples",
+    "rating": "1809",
+    "course": "3to4stars"
+  },
+  "ODDDIV": {
+    "contest": "LP3TO404",
+    "name": "Odd Divisors",
+    "rating": "1657",
+    "course": "3to4stars"
+  },
+  "NUMFACT": {
+    "contest": "LP3TO404",
+    "name": "Number of Factors",
+    "rating": "1710",
+    "course": "3to4stars"
+  },
+  "SPCTRIPS": {
+    "contest": "LP3TO404",
+    "name": "Special Triplets",
+    "rating": "1673",
+    "course": "3to4stars"
+  },
+  "LEVY": {
+    "contest": "LP3TO404",
+    "name": "Levy Conjecture",
+    "rating": "1510",
+    "course": "3to4stars"
+  },
+  "COOLGUYS": {
+    "contest": "LP3TO404",
+    "name": "Cool Guys",
+    "rating": "1758",
+    "course": "3to4stars"
+  },
+  "CBALLS": {
+    "contest": "LP3TO404",
+    "name": "Churu and Balls",
+    "rating": "1697",
+    "course": "3to4stars"
+  },
+  "PRIGAME": {
+    "contest": "LP3TO404",
+    "name": "Prime Game",
+    "rating": "1792",
+    "course": "3to4stars"
+  },
+  "EARTSEQ": {
+    "contest": "LP3TO404",
+    "name": "Yet Another Problem About Sequences",
+    "rating": "2011",
+    "course": "3to4stars"
+  },
+  "DESTCELL": {
+    "contest": "LP3TO404",
+    "name": "Destroy Cells",
+    "rating": "2297",
+    "course": "3to4stars"
+  },
+  "PPTEST": {
+    "contest": "LP3TO405",
+    "name": "Polo the Penguin and the Test",
+    "rating": "1603",
+    "course": "3to4stars"
+  },
+  "MARCHA1": {
+    "contest": "LP3TO405",
+    "name": "Paying up",
+    "rating": "1510",
+    "course": "3to4stars"
+  },
+  "MCHEF": {
+    "contest": "LP3TO405",
+    "name": "MasterChef",
+    "rating": "2016",
+    "course": "3to4stars"
+  },
+  "PERMSPL": {
+    "contest": "LP3TO405",
+    "name": "Permutation Split",
+    "rating": "2996",
+    "course": "3to4stars"
+  },
+  "COINPART": {
+    "contest": "LP3TO405",
+    "name": "Coin Partition",
+    "rating": "2804",
+    "course": "3to4stars"
+  },
+  "PEPPERA": {
+    "contest": "LP3TO405",
+    "name": "Chef and Pepperoni Pizza Again",
+    "rating": "2516",
+    "course": "3to4stars"
+  },
+  "BLKJK": {
+    "contest": "LP3TO405",
+    "name": "Blackjack",
+    "rating": "2903",
+    "course": "3to4stars"
+  },
+  "MEANMEDI": {
+    "contest": "LP3TO405",
+    "name": "Mean Mean Medians",
+    "rating": "2719",
+    "course": "3to4stars"
+  },
+  "COUNTPAL": {
+    "contest": "LP3TO406",
+    "name": "Count palindromes",
+    "rating": "1631",
+    "course": "3to4stars"
+  },
+  "FCBARCA": {
+    "contest": "LP3TO406",
+    "name": "Barcelona Gameplay Tactics",
+    "rating": "1658",
+    "course": "3to4stars"
+  },
+  "DBOY": {
+    "contest": "LP3TO406",
+    "name": "Pizza Delivery",
+    "rating": "1666",
+    "course": "3to4stars"
+  },
+  "VK18": {
+    "contest": "LP3TO406",
+    "name": "Total Diamonds",
+    "rating": "1786",
+    "course": "3to4stars"
+  },
+  "TRIP": {
+    "contest": "LP3TO406",
+    "name": "Trip",
+    "rating": "2005",
+    "course": "3to4stars"
+  },
+  "STRMRG": {
+    "contest": "LP3TO406",
+    "name": "String Merging",
+    "rating": "1965",
+    "course": "3to4stars"
+  },
+  "CHGLSTGT": {
+    "contest": "LP3TO406",
+    "name": "Girl Friend and String Gift",
+    "rating": "1986",
+    "course": "3to4stars"
+  },
+  "MATRIX2": {
+    "contest": "LP3TO406",
+    "name": "Matrix",
+    "rating": "2209",
+    "course": "3to4stars"
+  },
+  "DELISH": {
+    "contest": "LP3TO406",
+    "name": "Dessert Wizard",
+    "rating": "1804",
+    "course": "3to4stars"
+  },
+  "LEMOUSE": {
+    "contest": "LP3TO406",
+    "name": "Little Elephant and Mouses",
+    "rating": "1941",
+    "course": "3to4stars"
+  },
+  "CHSQARR": {
+    "contest": "LP3TO406",
+    "name": "Chef and Rectangle Array",
+    "rating": "2088",
+    "course": "3to4stars"
+  },
+  "CHEFTWOS": {
+    "contest": "LP3TO406",
+    "name": "Chef and Two String",
+    "rating": "2233",
+    "course": "3to4stars"
+  },
+  "PHCUL": {
+    "contest": "LP3TO406",
+    "name": "Physical Exercise",
+    "rating": "1865",
+    "course": "3to4stars"
+  },
+  "GERMANDE": {
+    "contest": "LP3TO406",
+    "name": "Gerrymander",
+    "rating": "1904",
+    "course": "3to4stars"
+  },
+  "SEARRAYS": {
+    "contest": "LP3TO406",
+    "name": "Sereja and Arrays",
+    "rating": "1999",
+    "course": "3to4stars"
+  },
+  "TAASEQ": {
+    "contest": "LP3TO406",
+    "name": "The Lost Arithmetic Sequences",
+    "rating": "2012",
+    "course": "3to4stars"
+  },
+  "KIRLAB": {
+    "contest": "LP3TO406",
+    "name": "Kirito in labyrinth",
+    "rating": "2047",
+    "course": "3to4stars"
+  },
+  "CHEFOFR": {
+    "contest": "LP3TO406",
+    "name": "Offer for Chef",
+    "rating": "2100",
+    "course": "3to4stars"
+  },
+  "N3": {
+    "contest": "LP3TO406",
+    "name": "K-important Strings",
+    "rating": "1729",
+    "course": "3to4stars"
+  },
+  "AEHASH": {
+    "contest": "LP3TO406",
+    "name": "A-E Hash Function",
+    "rating": "1832",
+    "course": "3to4stars"
+  },
+  "F2": {
+    "contest": "LP3TO406",
+    "name": "Bytelandian Robots",
+    "rating": "1844",
+    "course": "3to4stars"
+  },
+  "LUCKY3": {
+    "contest": "LP3TO406",
+    "name": "Lucky Sum",
+    "rating": "1875",
+    "course": "3to4stars"
+  },
+  "RDF": {
+    "contest": "LP3TO406",
+    "name": "Random decreasing function",
+    "rating": "1975",
+    "course": "3to4stars"
+  },
+  "MEDIAN": {
+    "contest": "LP3TO406",
+    "name": "Little Elephant and Median",
+    "rating": "2023",
+    "course": "3to4stars"
+  },
+  "WORLDCUP": {
+    "contest": "LP3TO406",
+    "name": "Strategy for the World Cup",
+    "rating": "2055",
+    "course": "3to4stars"
+  },
+  "RRPLAYER": {
+    "contest": "LP3TO406",
+    "name": "Player",
+    "rating": "2067",
+    "course": "3to4stars"
+  },
+  "ODDBIN": {
+    "contest": "LP3TO406",
+    "name": "Odd Binomial Coefficients",
+    "rating": "2107",
+    "course": "3to4stars"
+  },
+  "WOUT": {
+    "contest": "LP3TO407",
+    "name": "Way Out",
+    "rating": "1845",
+    "course": "3to4stars"
+  },
+  "CHFQUEUE": {
+    "contest": "LP3TO407",
+    "name": "Chefs in Queue",
+    "rating": "2146",
+    "course": "3to4stars"
+  },
+  "HMAPPY1": {
+    "contest": "LP3TO407",
+    "name": "Appy Loves One",
+    "rating": "1932",
+    "course": "3to4stars"
+  },
+  "STRQ": {
+    "contest": "LP3TO407",
+    "name": "Chef and Strings",
+    "rating": "1930",
+    "course": "3to4stars"
+  },
+  "SEACO": {
+    "contest": "LP3TO407",
+    "name": "Sereja and Commands",
+    "rating": "1990",
+    "course": "3to4stars"
+  },
+  "CHEFSUBA": {
+    "contest": "LP3TO407",
+    "name": "Chef and Sub Array ",
+    "rating": "1908",
+    "course": "3to4stars"
+  },
+  "CSUBQ": {
+    "contest": "LP3TO407",
+    "name": "Chef and Subarray Queries",
+    "rating": "2345",
+    "course": "3to4stars"
+  },
+  "NEWREST": {
+    "contest": "LP3TO408",
+    "name": "New Restaurant",
+    "rating": "1800",
+    "course": "3to4stars"
+  },
+  "CHEFWD": {
+    "contest": "LP3TO408",
+    "name": "Chef World",
+    "rating": "2049",
+    "course": "3to4stars"
+  },
+  "OLYMPIC": {
+    "contest": "LP3TO408",
+    "name": "Gifts at Olympics",
+    "rating": "2696",
+    "course": "3to4stars"
+  },
+  "CNTWAYS": {
+    "contest": "LP3TO408",
+    "name": "The Uncountable Ways",
+    "rating": "1992",
+    "course": "3to4stars"
+  },
+  "ADIMAT": {
+    "contest": "LP3TO408",
+    "name": "Adi and the Matrix",
+    "rating": "2900",
+    "course": "3to4stars"
+  },
+  "INFDIV": {
+    "contest": "LP3TO408",
+    "name": "E - Make it Zero",
+    "rating": "2690",
+    "course": "3to4stars"
+  },
+  "PTREE": {
+    "contest": "LP3TO408",
+    "name": "Perfect Tree Problem",
+    "rating": "2900",
+    "course": "3to4stars"
+  },
+  "TREDEG": {
+    "contest": "LP3TO408",
+    "name": "Trees and Degrees",
+    "rating": "2783",
+    "course": "3to4stars"
+  },
+  "MOBCNT": {
+    "contest": "LP3TO408",
+    "name": "Counting Mobiles",
+    "rating": "2690",
+    "course": "3to4stars"
+  },
+  "MXFACS": {
+    "contest": "DIFF2500",
+    "name": "Maximum Factors Problem",
+    "rating": "2006",
+    "course": "5-star-and-above-problems"
+  },
+  "ELWINTER": {
+    "contest": "DIFF2500",
+    "name": "Winter",
+    "rating": "2007",
+    "course": "5-star-and-above-problems"
+  },
+  "REMSUBARR": {
+    "contest": "DIFF2500",
+    "name": "Subarray Removal",
+    "rating": "2007",
+    "course": "5-star-and-above-problems"
+  },
+  "ALTSUFF": {
+    "contest": "DIFF2500",
+    "name": "Alternative Sufferings",
+    "rating": "2011",
+    "course": "5-star-and-above-problems"
+  },
+  "ROPASCI": {
+    "contest": "DIFF2500",
+    "name": "Rock Paper Scissors",
+    "rating": "2013",
+    "course": "5-star-and-above-problems"
+  },
+  "PALIXOR": {
+    "contest": "DIFF2500",
+    "name": "NASA",
+    "rating": "2014",
+    "course": "5-star-and-above-problems"
+  },
+  "DISTK": {
+    "contest": "DIFF2500",
+    "name": "K Distinct Array",
+    "rating": "2015",
+    "course": "5-star-and-above-problems"
+  },
+  "PRIMEFACDIV": {
+    "contest": "DIFF2500",
+    "name": "Prime Factor Division",
+    "rating": "2016",
+    "course": "5-star-and-above-problems"
+  },
+  "QNUMBER": {
+    "contest": "DIFF2500",
+    "name": "Queries About Numbers",
+    "rating": "2026",
+    "course": "5-star-and-above-problems"
+  },
+  "MAXANDOR": {
+    "contest": "DIFF2500",
+    "name": "Maximum And Or",
+    "rating": "2028",
+    "course": "5-star-and-above-problems"
+  },
+  "NOSEQ": {
+    "contest": "DIFF2500",
+    "name": "No sequence",
+    "rating": "2031",
+    "course": "5-star-and-above-problems"
+  },
+  "GOLMINE": {
+    "contest": "DIFF2500",
+    "name": "Gold Mining",
+    "rating": "2033",
+    "course": "5-star-and-above-problems"
+  },
+  "CONSADD": {
+    "contest": "DIFF2500",
+    "name": "Consecutive Adding",
+    "rating": "2038",
+    "course": "5-star-and-above-problems"
+  },
+  "KPAL": {
+    "contest": "DIFF2500",
+    "name": "K Increment Palindrome",
+    "rating": "2038",
+    "course": "5-star-and-above-problems"
+  },
+  "SYMARRSWAP": {
+    "contest": "DIFF2500",
+    "name": "Symmetric Swaps",
+    "rating": "2041",
+    "course": "5-star-and-above-problems"
+  },
+  "MOUNTAIN": {
+    "contest": "DIFF2500",
+    "name": "Mountain",
+    "rating": "2047",
+    "course": "5-star-and-above-problems"
+  },
+  "NOPALINDROME": {
+    "contest": "DIFF2500",
+    "name": "No Palindrome",
+    "rating": "2054",
+    "course": "5-star-and-above-problems"
+  },
+  "MAXREMOV": {
+    "contest": "DIFF2500",
+    "name": "Max Range Queries",
+    "rating": "2057",
+    "course": "5-star-and-above-problems"
+  },
+  "SPCP6": {
+    "contest": "DIFF2500",
+    "name": "Tetris",
+    "rating": "2062",
+    "course": "5-star-and-above-problems"
+  },
+  "PARPER": {
+    "contest": "DIFF2500",
+    "name": "Parity Permutation",
+    "rating": "2066",
+    "course": "5-star-and-above-problems"
+  },
+  "AGCY": {
+    "contest": "DIFF2500",
+    "name": "Angry Cyborg",
+    "rating": "2072",
+    "course": "5-star-and-above-problems"
+  },
+  "BURGER": {
+    "contest": "DIFF2500",
+    "name": "Double Burgers",
+    "rating": "2072",
+    "course": "5-star-and-above-problems"
+  },
+  "SUMARRAY": {
+    "contest": "DIFF2500",
+    "name": "Array Sum",
+    "rating": "2077",
+    "course": "5-star-and-above-problems"
+  },
+  "EQUIVALENT": {
+    "contest": "DIFF2500",
+    "name": "Equivalent Numbers",
+    "rating": "2087",
+    "course": "5-star-and-above-problems"
+  },
+  "SEGTHREE": {
+    "contest": "DIFF2500",
+    "name": "Segment Three",
+    "rating": "2089",
+    "course": "5-star-and-above-problems"
+  },
+  "FPE": {
+    "contest": "DIFF2500",
+    "name": "Full Path Eraser",
+    "rating": "2094",
+    "course": "5-star-and-above-problems"
+  },
+  "RECHEND": {
+    "contest": "DIFF2500",
+    "name": "Can You Reach The End",
+    "rating": "2095",
+    "course": "5-star-and-above-problems"
+  },
+  "TRPTSTIC": {
+    "contest": "DIFF2500",
+    "name": "TripTastic",
+    "rating": "2095",
+    "course": "5-star-and-above-problems"
+  },
+  "LCMMANIA": {
+    "contest": "DIFF2500",
+    "name": "LCM Mania",
+    "rating": "2098",
+    "course": "5-star-and-above-problems"
+  },
+  "SUBARRAYXOR": {
+    "contest": "DIFF2500",
+    "name": "Non Zero Subarray Xor",
+    "rating": "2101",
+    "course": "5-star-and-above-problems"
+  },
+  "MAJIK": {
+    "contest": "DIFF2500",
+    "name": "Wishcraft",
+    "rating": "2105",
+    "course": "5-star-and-above-problems"
+  },
+  "TRAVELLING": {
+    "contest": "DIFF2500",
+    "name": "Travelling in the Graph",
+    "rating": "2108",
+    "course": "5-star-and-above-problems"
+  },
+  "MAXIMALEXP": {
+    "contest": "DIFF2500",
+    "name": "Maximal Expression",
+    "rating": "2127",
+    "course": "5-star-and-above-problems"
+  },
+  "INTARR": {
+    "contest": "DIFF2500",
+    "name": "Interesting Array",
+    "rating": "2145",
+    "course": "5-star-and-above-problems"
+  },
+  "MAXVAC": {
+    "contest": "DIFF2500",
+    "name": "Maximising Vacations",
+    "rating": "2147",
+    "course": "5-star-and-above-problems"
+  },
+  "SQRTCBRT": {
+    "contest": "DIFF2500",
+    "name": "Love Squares Hate Cubes",
+    "rating": "2150",
+    "course": "5-star-and-above-problems"
+  },
+  "LEXILARGEST": {
+    "contest": "DIFF2500",
+    "name": "Lexicographically Largest ",
+    "rating": "2151",
+    "course": "5-star-and-above-problems"
+  },
+  "AWESUM_OR": {
+    "contest": "DIFF2500",
+    "name": "SUM OR",
+    "rating": "2152",
+    "course": "5-star-and-above-problems"
+  },
+  "MUSROD": {
+    "contest": "DIFF2500",
+    "name": "Musical Rods",
+    "rating": "2160",
+    "course": "5-star-and-above-problems"
+  },
+  "SUBSBIN": {
+    "contest": "DIFF2500",
+    "name": "Binary Substitution",
+    "rating": "2161",
+    "course": "5-star-and-above-problems"
+  },
+  "CHEFSHOPPING": {
+    "contest": "DIFF2500",
+    "name": "Chef Goes Shopping",
+    "rating": "2164",
+    "course": "5-star-and-above-problems"
+  },
+  "DIVBY3": {
+    "contest": "DIFF2500",
+    "name": "Minimize swaps",
+    "rating": "2164",
+    "course": "5-star-and-above-problems"
+  },
+  "SEQGOODNESS": {
+    "contest": "DIFF2500",
+    "name": "Sum of Goodness",
+    "rating": "2167",
+    "course": "5-star-and-above-problems"
+  },
+  "MINIMUMOP": {
+    "contest": "DIFF2500",
+    "name": "Minimum Operation",
+    "rating": "2170",
+    "course": "5-star-and-above-problems"
+  },
+  "CCD": {
+    "contest": "DIFF2500",
+    "name": "Increase 2 consecutive characters",
+    "rating": "2171",
+    "course": "5-star-and-above-problems"
+  },
+  "EXPVALUE": {
+    "contest": "DIFF2500",
+    "name": "Expected Value",
+    "rating": "2177",
+    "course": "5-star-and-above-problems"
+  },
+  "CENS20A": {
+    "contest": "DIFF2500",
+    "name": "Cherry and Bits",
+    "rating": "2179",
+    "course": "5-star-and-above-problems"
+  },
+  "SSO": {
+    "contest": "DIFF2500",
+    "name": "Chef Is Just Throwing Random Words",
+    "rating": "2181",
+    "course": "5-star-and-above-problems"
+  },
+  "DLTNODE": {
+    "contest": "DIFF2500",
+    "name": "Sardar and GCD",
+    "rating": "2190",
+    "course": "5-star-and-above-problems"
+  },
+  "MEXYARR": {
+    "contest": "DIFF2500",
+    "name": "Mexy Array",
+    "rating": "2190",
+    "course": "5-star-and-above-problems"
+  },
+  "VSTRING": {
+    "contest": "DIFF2500",
+    "name": "Valid String",
+    "rating": "2194",
+    "course": "5-star-and-above-problems"
+  },
+  "PYRAMIDMOVES": {
+    "contest": "DIFF2500",
+    "name": "Pyramid Traversal",
+    "rating": "2194",
+    "course": "5-star-and-above-problems"
+  },
+  "CHINSM": {
+    "contest": "DIFF2500",
+    "name": "Chef and insomnia",
+    "rating": "2197",
+    "course": "5-star-and-above-problems"
+  },
+  "PARPERM": {
+    "contest": "DIFF2500",
+    "name": "Partition It",
+    "rating": "2202",
+    "course": "5-star-and-above-problems"
+  },
+  "ICM2003": {
+    "contest": "DIFF2500",
+    "name": "Is This JEE",
+    "rating": "2206",
+    "course": "5-star-and-above-problems"
+  },
+  "CIRMERGE": {
+    "contest": "DIFF2500",
+    "name": "Circular Merging",
+    "rating": "2208",
+    "course": "5-star-and-above-problems"
+  },
+  "ANUMLA": {
+    "contest": "DIFF2500",
+    "name": "Mahesh and his lost array",
+    "rating": "2212",
+    "course": "5-star-and-above-problems"
+  },
+  "STROPERS": {
+    "contest": "DIFF2500",
+    "name": "String Operations",
+    "rating": "2220",
+    "course": "5-star-and-above-problems"
+  },
+  "DIANE": {
+    "contest": "DIFF2500",
+    "name": "Yet Another Crossover Episode",
+    "rating": "2221",
+    "course": "5-star-and-above-problems"
+  },
+  "COPAR": {
+    "contest": "DIFF2500",
+    "name": "Cute Chef Gift",
+    "rating": "2235",
+    "course": "5-star-and-above-problems"
+  },
+  "EXISTENCEOFX": {
+    "contest": "DIFF2500",
+    "name": "Existence Of X",
+    "rating": "2235",
+    "course": "5-star-and-above-problems"
+  },
+  "DIST_VALS": {
+    "contest": "DIFF2500",
+    "name": "Distinct Values",
+    "rating": "2236",
+    "course": "5-star-and-above-problems"
+  },
+  "TSHIRTS": {
+    "contest": "DIFF2500",
+    "name": "Little Elephant and T-Shirts",
+    "rating": "2242",
+    "course": "5-star-and-above-problems"
+  },
+  "ANTSCHEF": {
+    "contest": "DIFF2500",
+    "name": "Chef and Ants",
+    "rating": "2244",
+    "course": "5-star-and-above-problems"
+  },
+  "ALIKE_THEM": {
+    "contest": "DIFF2500",
+    "name": "Make Them Alike",
+    "rating": "2245",
+    "course": "5-star-and-above-problems"
+  },
+  "INTREP": {
+    "contest": "DIFF2500",
+    "name": "Interesting Representation",
+    "rating": "2251",
+    "course": "5-star-and-above-problems"
+  },
+  "MAX1S": {
+    "contest": "DIFF2500",
+    "name": "Maximize 1s",
+    "rating": "2255",
+    "course": "5-star-and-above-problems"
+  },
+  "SUMOFCUBE": {
+    "contest": "DIFF2500",
+    "name": "Sum of Cube ",
+    "rating": "2259",
+    "course": "5-star-and-above-problems"
+  },
+  "KSUM": {
+    "contest": "DIFF2500",
+    "name": "Maximum K Sums",
+    "rating": "2260",
+    "course": "5-star-and-above-problems"
+  },
+  "ABCSTR": {
+    "contest": "DIFF2500",
+    "name": "ABC-Strings",
+    "rating": "2264",
+    "course": "5-star-and-above-problems"
+  },
+  "ASHIGIFT": {
+    "contest": "DIFF2500",
+    "name": "Saving a gift of love",
+    "rating": "2265",
+    "course": "5-star-and-above-problems"
+  },
+  "LONGESTARRAY": {
+    "contest": "DIFF2500",
+    "name": "Longest Subarray",
+    "rating": "2267",
+    "course": "5-star-and-above-problems"
+  },
+  "ASH57": {
+    "contest": "DIFF2500",
+    "name": "Chroma Swap",
+    "rating": "2271",
+    "course": "5-star-and-above-problems"
+  },
+  "CS2023_404": {
+    "contest": "DIFF2500",
+    "name": "Search for 404",
+    "rating": "2296",
+    "course": "5-star-and-above-problems"
+  },
+  "ALTDIA": {
+    "contest": "DIFF2500",
+    "name": "Alternating Diameter",
+    "rating": "2300",
+    "course": "5-star-and-above-problems"
+  },
+  "SPOOKYSEQ": {
+    "contest": "DIFF2500",
+    "name": "Spooky Sequences",
+    "rating": "2304",
+    "course": "5-star-and-above-problems"
+  },
+  "SUMXOR2": {
+    "contest": "DIFF2500",
+    "name": "XOR Sums",
+    "rating": "2306",
+    "course": "5-star-and-above-problems"
+  },
+  "CHESUB": {
+    "contest": "DIFF2500",
+    "name": "K-Subarrays",
+    "rating": "2306",
+    "course": "5-star-and-above-problems"
+  },
+  "CHEFFFUNC": {
+    "contest": "DIFF2500",
+    "name": "Chefs Favourite Function",
+    "rating": "2316",
+    "course": "5-star-and-above-problems"
+  },
+  "MERGEBS": {
+    "contest": "DIFF2500",
+    "name": "Merging Binary Strings",
+    "rating": "2318",
+    "course": "5-star-and-above-problems"
+  },
+  "REDGREEN": {
+    "contest": "DIFF2500",
+    "name": "Red Green Grids",
+    "rating": "2319",
+    "course": "5-star-and-above-problems"
+  },
+  "MAKEPAL3": {
+    "contest": "DIFF2500",
+    "name": "Palindrome In Making",
+    "rating": "2322",
+    "course": "5-star-and-above-problems"
+  },
+  "SWAPGAME": {
+    "contest": "DIFF2500",
+    "name": "Make that Array!",
+    "rating": "2323",
+    "course": "5-star-and-above-problems"
+  },
+  "ABROADS": {
+    "contest": "DIFF2500",
+    "name": "Ancient Berland Roads",
+    "rating": "2324",
+    "course": "5-star-and-above-problems"
+  },
+  "SIMPLEARRAY": {
+    "contest": "DIFF2500",
+    "name": "Potato to Gold",
+    "rating": "2326",
+    "course": "5-star-and-above-problems"
+  },
+  "CHEFQUE": {
+    "contest": "DIFF2500",
+    "name": "Chef and Queries",
+    "rating": "2327",
+    "course": "5-star-and-above-problems"
+  },
+  "CANDIES3": {
+    "contest": "DIFF2500",
+    "name": "Candies",
+    "rating": "2329",
+    "course": "5-star-and-above-problems"
+  },
+  "SPLITMIN": {
+    "contest": "DIFF2500",
+    "name": "Two Piles",
+    "rating": "2347",
+    "course": "5-star-and-above-problems"
+  },
+  "KEEPOUT": {
+    "contest": "DIFF2500",
+    "name": "Ultimate Fencing",
+    "rating": "1830",
+    "course": "5-star-and-above-problems"
+  },
+  "SPTREE": {
+    "contest": "DIFF2500",
+    "name": "A Special Tree",
+    "rating": "2350",
+    "course": "5-star-and-above-problems"
+  },
+  "TWOAVG": {
+    "contest": "DIFF2500",
+    "name": "Two Averages",
+    "rating": "2353",
+    "course": "5-star-and-above-problems"
+  },
+  "RIFFLES": {
+    "contest": "DIFF2500",
+    "name": "Chef and Riffles",
+    "rating": "2360",
+    "course": "5-star-and-above-problems"
+  },
+  "CHANDWEIGHT": {
+    "contest": "DIFF2500",
+    "name": "Chandelier",
+    "rating": "2368",
+    "course": "5-star-and-above-problems"
+  },
+  "CLASSES": {
+    "contest": "DIFF2500",
+    "name": "Minimal Travel Time",
+    "rating": "2379",
+    "course": "5-star-and-above-problems"
+  },
+  "TDISTS": {
+    "contest": "DIFF2500",
+    "name": "Tree Distances",
+    "rating": "2383",
+    "course": "5-star-and-above-problems"
+  },
+  "WRDVLS": {
+    "contest": "DIFF2500",
+    "name": "Weird Values",
+    "rating": "2393",
+    "course": "5-star-and-above-problems"
+  },
+  "CNCTCT": {
+    "contest": "DIFF2500",
+    "name": "Connect All Cities",
+    "rating": "2417",
+    "course": "5-star-and-above-problems"
+  },
+  "CONSTANARRAY": {
+    "contest": "DIFF2500",
+    "name": "Construct An Array",
+    "rating": "2419",
+    "course": "5-star-and-above-problems"
+  },
+  "ONEORALL": {
+    "contest": "DIFF2500",
+    "name": "One or All",
+    "rating": "2420",
+    "course": "5-star-and-above-problems"
+  },
+  "SMALLESTDIFF": {
+    "contest": "DIFF2500",
+    "name": "Smallest Difference",
+    "rating": "2421",
+    "course": "5-star-and-above-problems"
+  },
+  "GCD_QUERIES": {
+    "contest": "DIFF2500",
+    "name": "GCD Queries",
+    "rating": "2422",
+    "course": "5-star-and-above-problems"
+  },
+  "TWOCOUNTERS": {
+    "contest": "DIFF2500",
+    "name": "Two Counters",
+    "rating": "2425",
+    "course": "5-star-and-above-problems"
+  },
+  "ADJFLIP": {
+    "contest": "DIFF2500",
+    "name": "Adjacent Flips",
+    "rating": "2426",
+    "course": "5-star-and-above-problems"
+  },
+  "MAXCYCSHIFT": {
+    "contest": "DIFF2500",
+    "name": "Max Shift After XOR",
+    "rating": "2444",
+    "course": "5-star-and-above-problems"
+  },
+  "BALSUFF": {
+    "contest": "DIFF2500",
+    "name": "Balanced Suffix",
+    "rating": "2447",
+    "course": "5-star-and-above-problems"
+  },
+  "GSEQ": {
+    "contest": "DIFF2500",
+    "name": "Good Sequence",
+    "rating": "2451",
+    "course": "5-star-and-above-problems"
+  },
+  "DEQUEUE": {
+    "contest": "DIFF2500",
+    "name": "Minimum Popping",
+    "rating": "2463",
+    "course": "5-star-and-above-problems"
+  },
+  "SQUAR": {
+    "contest": "DIFF2500",
+    "name": "Squarified",
+    "rating": "2470",
+    "course": "5-star-and-above-problems"
+  },
+  "MEXSUB": {
+    "contest": "DIFF2500",
+    "name": "Mex Subsequence",
+    "rating": "2494",
+    "course": "5-star-and-above-problems"
+  },
+  "CHEF7UP": {
+    "contest": "DIFF2500",
+    "name": "Chef Up",
+    "rating": "2494",
+    "course": "5-star-and-above-problems"
+  },
+  "EXPECTEDSUM": {
+    "contest": "DIFF2500",
+    "name": "Expected Sum",
+    "rating": "2495",
+    "course": "5-star-and-above-problems"
+  },
+  "ADMIT": {
+    "contest": "DIFF2500",
+    "name": "College Admissions",
+    "rating": "2496",
+    "course": "5-star-and-above-problems"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "COINPART": [
+    {
+      "input": "2\n4\n5 3 20 9\n4\n2 2 2 2\n",
+      "output": "2 4 1 3\n1 2 3 4\n"
+    }
+  ],
+  "MEANMEDI": [
+    {
+      "input": "2\n8 2\n4 9 1 3 5 9 4 10\n5 4\n10 7 4 5 9\n",
+      "output": "0.000\n0.500\n"
+    }
+  ],
+  "MATRIX2": [
+    {
+      "input": "2 3\n011\n111\n",
+      "output": "6\n"
+    }
+  ],
+  "OLYMPIC": [
+    {
+      "input": "3\n5 3 12\n4\n4\n5\n2\n12\n",
+      "output": "30\n10\n2320\n3\n"
+    }
+  ]
+}

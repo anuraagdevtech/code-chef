@@ -900,3 +900,14 @@ CHECKERS = {
     "XORMUL": _xormul,
     "SUMPRODSEG": _sumprodseg,
 }
+
+from remaining_checkers import CHECKERS as REMAINING_CHECKERS
+CHECKERS.update(REMAINING_CHECKERS)
+CHECKERS['TAAPLUSB'] = _float_tolerance()
+from checkers_dp_course import CHECKERS as DP_CHECKERS
+from checkers_advanced_one import CHECKERS as ADVANCED_ONE_CHECKERS
+from checkers_advanced_two import CHECKERS as ADVANCED_TWO_CHECKERS
+CHECKERS.update(DP_CHECKERS)
+CHECKERS.update(ADVANCED_ONE_CHECKERS)
+CHECKERS.update(ADVANCED_TWO_CHECKERS)
+
