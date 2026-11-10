@@ -478,6 +478,10 @@ def write_index(built, codes):
           f'[{SEQ[first]:03d}. {name} &rarr;]'
           f'(by-rating/{SEQ[first]:03d}-{first}.md)\n')
     A('# CodeChef - Become 5 Star roadmap\n')
+    if os.path.exists(os.path.join(ROOT, 'data', 'remaining.txt')):
+        A('**New:** [Python solutions for all 249 remaining roadmap problems]'
+          '(docs/remaining/README.md), with approach notes and reproducible tests. '
+          'The account-solved history below is preserved.\n')
     A('Worked documentation for every problem I have solved on the CodeChef '
       '[Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: '
       'the question, its constraints, an explained Python solution, the time '
@@ -585,3 +589,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

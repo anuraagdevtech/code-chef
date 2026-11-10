@@ -19,6 +19,9 @@ RAW = os.path.join(ROOT, 'data', 'raw')
 UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36')
 META = json.load(open(os.path.join(ROOT, 'data', 'problem_meta.json')))
+REMAINING_META = os.path.join(ROOT, 'data', 'remaining_problem_meta.json')
+if os.path.exists(REMAINING_META):
+    META.update(json.load(open(REMAINING_META)))
 
 
 def get(url):
@@ -59,7 +62,10 @@ def fetch_one(code):
 
 
 def main():
-    codes = sys.argv[1:] or open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
+    if sys.argv[1:] == ['--remaining']:
+        codes = open(os.path.join(ROOT, 'data', 'remaining.txt')).read().split()
+    else:
+        codes = sys.argv[1:] or open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
     os.makedirs(RAW, exist_ok=True)
     failed = []
     with ThreadPoolExecutor(max_workers=8) as ex:
@@ -73,3 +79,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
