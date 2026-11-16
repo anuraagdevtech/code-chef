@@ -147,4 +147,4 @@ Queries: $(1,2)$ same component → `Yes`; $(1,3)$ same → `Yes`; $(2,5)$ diffe
 
 ---
 
-Same problem in rating order (#390 of 486): [../../by-rating/390-FROGV.md](../../by-rating/390-FROGV.md)
+Same problem in rating order (#407 of 735): [../../by-rating/407-FROGV.md](../../by-rating/407-FROGV.md)

@@ -131,8 +131,6 @@ main()
 
 Rows 2 and 3 have the same letter counts in different alignments.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#175 of 486): [../../by-rating/175-PLAYPIAN.md](../../by-rating/175-PLAYPIAN.md)
+Same problem in rating order (#175 of 735): [../../by-rating/175-PLAYPIAN.md](../../by-rating/175-PLAYPIAN.md)

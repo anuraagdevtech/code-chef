@@ -112,8 +112,6 @@ main()
 | 12 | 2 | 48 | 50 | `50` |
 | 8 | 7 | 32 | 39 | `39` |
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#13 of 486): [../../by-rating/013-OFFICE.md](../../by-rating/013-OFFICE.md)
+Same problem in rating order (#13 of 735): [../../by-rating/013-OFFICE.md](../../by-rating/013-OFFICE.md)

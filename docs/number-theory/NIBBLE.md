@@ -131,8 +131,6 @@ main()
 
 $52$ is the row that separates "multiple of $4$" from "multiple of $8$".
 
-> CodeChef tags: `Mathematics`, `Modular Arithmetic`, `Basic Math`
-
 ---
 
-Same problem in rating order (#33 of 486): [../../by-rating/033-NIBBLE.md](../../by-rating/033-NIBBLE.md)
+Same problem in rating order (#33 of 735): [../../by-rating/033-NIBBLE.md](../../by-rating/033-NIBBLE.md)

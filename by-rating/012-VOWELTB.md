@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Strings |
 | **Technique** | Membership test against a small set |
-| **CodeChef tags** | `Basic Programming Concepts`, `Algorithms`, `Conditional Statements`, `Implementation` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ |
 | **Space** | $O(1)$ |

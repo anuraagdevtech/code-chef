@@ -138,8 +138,6 @@ main()
 
 Row 2 is the driver-only case that pins the $+1$.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#148 of 486): [../../by-rating/148-CARRANGE.md](../../by-rating/148-CARRANGE.md)
+Same problem in rating order (#148 of 735): [../../by-rating/148-CARRANGE.md](../../by-rating/148-CARRANGE.md)

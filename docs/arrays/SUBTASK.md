@@ -152,4 +152,4 @@ Row 3 satisfies both conditions, which is why the full-pass branch has to be che
 
 ---
 
-Same problem in rating order (#182 of 486): [../../by-rating/182-SUBTASK.md](../../by-rating/182-SUBTASK.md)
+Same problem in rating order (#182 of 735): [../../by-rating/182-SUBTASK.md](../../by-rating/182-SUBTASK.md)

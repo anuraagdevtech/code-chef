@@ -146,8 +146,6 @@ First sample, $A = 1, 10, 15$ and $B = 1, 10, 3$:
 
 Two finish, so `2`. The second sample gives slots $10, 10, 10$ against $15, 5, 20$ — only the middle one fits, so `1`.
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#154 of 486): [../../by-rating/154-KTTABLE.md](../../by-rating/154-KTTABLE.md)
+Same problem in rating order (#154 of 735): [../../by-rating/154-KTTABLE.md](../../by-rating/154-KTTABLE.md)

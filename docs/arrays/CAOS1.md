@@ -200,8 +200,6 @@ Only the centre cell $(3,3)$ is far enough from every border to have a chance:
 
 $\min = 1 < 2$, so it is not a CPC and the answer is `0`.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#289 of 486): [../../by-rating/289-CAOS1.md](../../by-rating/289-CAOS1.md)
+Same problem in rating order (#291 of 735): [../../by-rating/291-CAOS1.md](../../by-rating/291-CAOS1.md)

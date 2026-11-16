@@ -164,8 +164,6 @@ Second sample: $N = 4$ customers.
 
 In compartment $2$, the first two chain exactly at time $200$; the third starts at $150$, which is already busy. Total `3`.
 
-> CodeChef tags: `Algorithms`, `Greedy`
-
 ---
 
-Same problem in rating order (#434 of 486): [../../by-rating/434-FGFS.md](../../by-rating/434-FGFS.md)
+Same problem in rating order (#457 of 735): [../../by-rating/457-FGFS.md](../../by-rating/457-FGFS.md)

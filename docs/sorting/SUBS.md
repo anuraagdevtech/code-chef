@@ -166,4 +166,4 @@ Both tie, so the answer is `39`.
 
 ---
 
-Same problem in rating order (#485 of 486): [../../by-rating/485-SUBS.md](../../by-rating/485-SUBS.md)
+Same problem in rating order (#733 of 735): [../../by-rating/733-SUBS.md](../../by-rating/733-SUBS.md)

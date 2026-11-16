@@ -97,8 +97,6 @@ Input is the single character `Z`.
 | in $\{A, E, I, O, U\}$? | no |
 | output | `Consonant` |
 
-> CodeChef tags: `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#12 of 486): [../../by-rating/012-VOWELTB.md](../../by-rating/012-VOWELTB.md)
+Same problem in rating order (#12 of 735): [../../by-rating/012-VOWELTB.md](../../by-rating/012-VOWELTB.md)

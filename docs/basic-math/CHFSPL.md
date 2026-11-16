@@ -123,4 +123,4 @@ main()
 
 ---
 
-Same problem in rating order (#158 of 486): [../../by-rating/158-CHFSPL.md](../../by-rating/158-CHFSPL.md)
+Same problem in rating order (#158 of 735): [../../by-rating/158-CHFSPL.md](../../by-rating/158-CHFSPL.md)

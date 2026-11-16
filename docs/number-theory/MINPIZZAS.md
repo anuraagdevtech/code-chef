@@ -129,4 +129,4 @@ main()
 
 ---
 
-Same problem in rating order (#316 of 486): [../../by-rating/316-MINPIZZAS.md](../../by-rating/316-MINPIZZAS.md)
+Same problem in rating order (#320 of 735): [../../by-rating/320-MINPIZZAS.md](../../by-rating/320-MINPIZZAS.md)

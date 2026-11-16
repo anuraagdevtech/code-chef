@@ -144,8 +144,6 @@ main()
 
 Row 1 takes $[1,0]$ and then $[0,1]$, leaving a single $0$ that scores nothing.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#298 of 486): [../../by-rating/298-SUBARRAYREM.md](../../by-rating/298-SUBARRAYREM.md)
+Same problem in rating order (#300 of 735): [../../by-rating/300-SUBARRAYREM.md](../../by-rating/300-SUBARRAYREM.md)

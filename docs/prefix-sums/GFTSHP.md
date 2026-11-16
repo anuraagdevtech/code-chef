@@ -154,4 +154,4 @@ Output `2`.
 
 ---
 
-Same problem in rating order (#219 of 486): [../../by-rating/219-GFTSHP.md](../../by-rating/219-GFTSHP.md)
+Same problem in rating order (#220 of 735): [../../by-rating/220-GFTSHP.md](../../by-rating/220-GFTSHP.md)

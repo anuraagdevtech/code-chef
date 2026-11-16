@@ -127,8 +127,6 @@ First sample: $L = 4$, $R = 6$, and $6 < 8$, so $n = 6$.
 
 Strictly decreasing, so `6`. The second row has $L = 1$, $R = 2$: $2 \bmod 1 = 0$ already, and nothing is below it, so `-1`.
 
-> CodeChef tags: `Mathematics`, `Set Theory`, `Algorithms`
-
 ---
 
-Same problem in rating order (#239 of 486): [../../by-rating/239-DECREM.md](../../by-rating/239-DECREM.md)
+Same problem in rating order (#241 of 735): [../../by-rating/241-DECREM.md](../../by-rating/241-DECREM.md)

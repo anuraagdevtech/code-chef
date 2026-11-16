@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Number Theory |
 | **Technique** | Cyclic state via modulo |
-| **CodeChef tags** | `Basic Programming Concepts`, `Mathematics`, `Algorithms`, `Conditional Statements`, `Modular Arithmetic`, `Basic Math`, `Observation`, `Brute Force`, `Implementation` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

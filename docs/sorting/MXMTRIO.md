@@ -139,4 +139,4 @@ Output `126`, and the margin is $a_1(a_n - a_{n-1}) = 17 \cdot 2 = 34$.
 
 ---
 
-Same problem in rating order (#213 of 486): [../../by-rating/213-MXMTRIO.md](../../by-rating/213-MXMTRIO.md)
+Same problem in rating order (#213 of 735): [../../by-rating/213-MXMTRIO.md](../../by-rating/213-MXMTRIO.md)

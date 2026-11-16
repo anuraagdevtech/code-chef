@@ -1,4 +1,4 @@
-[&larr; 474. One Dimensional Kingdoms](ONEKING.md) &middot; [Index](../../README.md)
+[&larr; 474. One Dimensional Kingdoms](ONEKING.md) &middot; [Index](../../README.md) &middot; [493. Chefland and Electricity &rarr;](CHEFELEC.md)
 
 # 481. Chef and String
 
@@ -158,8 +158,6 @@ First sample: `CHEFCHEFFFF`.
 
 Output `2`.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#453 of 486): [../../by-rating/453-CHRL2.md](../../by-rating/453-CHRL2.md)
+Same problem in rating order (#476 of 735): [../../by-rating/476-CHRL2.md](../../by-rating/476-CHRL2.md)

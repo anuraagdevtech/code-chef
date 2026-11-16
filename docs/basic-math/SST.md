@@ -131,8 +131,6 @@ main()
 
 Row 1 is the tie that makes the naive $A$-versus-$B$ comparison fail.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#32 of 486): [../../by-rating/032-SST.md](../../by-rating/032-SST.md)
+Same problem in rating order (#32 of 735): [../../by-rating/032-SST.md](../../by-rating/032-SST.md)

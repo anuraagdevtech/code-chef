@@ -180,4 +180,4 @@ Output $800 - 700 = $ `100` — one of B's lectures is missed.
 
 ---
 
-Same problem in rating order (#296 of 486): [../../by-rating/296-IPCTRAIN.md](../../by-rating/296-IPCTRAIN.md)
+Same problem in rating order (#298 of 735): [../../by-rating/298-IPCTRAIN.md](../../by-rating/298-IPCTRAIN.md)

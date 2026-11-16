@@ -133,8 +133,6 @@ main()
 | $2, 2, 3$ | 6 | $2, 2, 2$ | third fails | — | `NO` |
 | $100, 100, 100$ | 300 | $100, 100, 100$ | all equal | $300 = 300$ | `YES` |
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#131 of 486): [../../by-rating/131-PSGRADE.md](../../by-rating/131-PSGRADE.md)
+Same problem in rating order (#131 of 735): [../../by-rating/131-PSGRADE.md](../../by-rating/131-PSGRADE.md)

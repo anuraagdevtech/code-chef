@@ -162,8 +162,6 @@ First sample: $N = 6$, $K = 2$, $S = $ `100101`.
 
 Output `6`. Jumping far on the first move instead would land on block $4$ or $6$ and leave no legal second jump to a black block beyond.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#365 of 486): [../../by-rating/365-ZEBRA.md](../../by-rating/365-ZEBRA.md)
+Same problem in rating order (#376 of 735): [../../by-rating/376-ZEBRA.md](../../by-rating/376-ZEBRA.md)

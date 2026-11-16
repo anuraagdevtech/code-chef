@@ -140,8 +140,6 @@ Third sample: $N = 105$, bus cost $X = 80$, car cost $Y = 10$.
 
 Output `100`.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#259 of 486): [../../by-rating/259-SMOKE.md](../../by-rating/259-SMOKE.md)
+Same problem in rating order (#261 of 735): [../../by-rating/261-SMOKE.md](../../by-rating/261-SMOKE.md)

@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Brute Force |
 | **Technique** | Searching one variable of a linear Diophantine equation |
-| **CodeChef tags** | `Basic Programming Concepts`, `Loops` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case — the search is bounded by a small constant |
 | **Space** | $O(1)$ |

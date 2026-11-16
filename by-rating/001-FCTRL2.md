@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Big Integers |
 | **Technique** | Arbitrary-precision arithmetic |
-| **CodeChef tags** | `Data Structures`, `Arrays`, `Mathematics`, `Algorithms`, `1D Arrays`, `Modular Arithmetic`, `Basic Math`, `Brute Force`, `Implementation` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(n)$ big-integer multiplications per test case |
 | **Space** | $O(n \log n)$ bits for the result |

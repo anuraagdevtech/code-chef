@@ -1,4 +1,4 @@
-[&larr; 438. Chef and Football Match](WATCHFB.md) &middot; [Index](../../README.md)
+[&larr; 438. Chef and Football Match](WATCHFB.md) &middot; [Index](../../README.md) &middot; [627. Alternative Sufferings &rarr;](ALTSUFF.md)
 
 # 463. Penalty Shoot-Out II
 
@@ -143,8 +143,6 @@ First sample: $N = 3$ and the shots are `101011`.
 
 Output `4`.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#435 of 486): [../../by-rating/435-PSHOT.md](../../by-rating/435-PSHOT.md)
+Same problem in rating order (#458 of 735): [../../by-rating/458-PSHOT.md](../../by-rating/458-PSHOT.md)

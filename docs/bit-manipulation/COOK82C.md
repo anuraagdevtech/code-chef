@@ -202,4 +202,4 @@ Each level's divisions go from its largest value down, which is why move $4$ tak
 
 ---
 
-Same problem in rating order (#475 of 486): [../../by-rating/475-COOK82C.md](../../by-rating/475-COOK82C.md)
+Same problem in rating order (#704 of 735): [../../by-rating/704-COOK82C.md](../../by-rating/704-COOK82C.md)

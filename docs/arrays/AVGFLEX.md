@@ -140,4 +140,4 @@ Output `2`.
 
 ---
 
-Same problem in rating order (#251 of 486): [../../by-rating/251-AVGFLEX.md](../../by-rating/251-AVGFLEX.md)
+Same problem in rating order (#253 of 735): [../../by-rating/253-AVGFLEX.md](../../by-rating/253-AVGFLEX.md)

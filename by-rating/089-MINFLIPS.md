@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Feasibility by parity, then distance to the target count |
-| **CodeChef tags** | `Mathematics`, `Basic Programming Concepts`, `Basic Math` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

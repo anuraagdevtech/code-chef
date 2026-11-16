@@ -174,4 +174,4 @@ Output `7`.
 
 ---
 
-Same problem in rating order (#469 of 486): [../../by-rating/469-XORSUB.md](../../by-rating/469-XORSUB.md)
+Same problem in rating order (#545 of 735): [../../by-rating/545-XORSUB.md](../../by-rating/545-XORSUB.md)

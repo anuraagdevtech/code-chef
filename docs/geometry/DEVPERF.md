@@ -1,4 +1,4 @@
-[&larr; 383. Polygon Relationship](POLYREL.md) &middot; [Index](../../README.md)
+[&larr; 383. Polygon Relationship](POLYREL.md) &middot; [Index](../../README.md) &middot; [517. Ada King &rarr;](ADAKNG.md)
 
 # 446. Devu and Perfume
 
@@ -186,8 +186,6 @@ So $u \in [1,3]$ and $v \in [-1,1]$. Placing the perfume at $(1,1)$ gives $u = 2
 
 Output $1 + 1 = $ `2`.
 
-> CodeChef tags: `Data Structures`, `Arrays`
-
 ---
 
-Same problem in rating order (#415 of 486): [../../by-rating/415-DEVPERF.md](../../by-rating/415-DEVPERF.md)
+Same problem in rating order (#434 of 735): [../../by-rating/434-DEVPERF.md](../../by-rating/434-DEVPERF.md)

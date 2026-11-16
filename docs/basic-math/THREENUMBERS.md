@@ -146,8 +146,6 @@ Second sample: $A, B, C = 3, 7, 3$ — all odd, so feasible. Total $13$, minimum
 
 Check: $V = (13+2)/3 = 5$, with $s_B = 2$ and $s_A = s_C = 0$ — two operations, each adding to $A$ and $C$ and subtracting from $B$: $3,7,3 \to 4,6,4 \to 5,5,5$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#394 of 486): [../../by-rating/394-THREENUMBERS.md](../../by-rating/394-THREENUMBERS.md)
+Same problem in rating order (#412 of 735): [../../by-rating/412-THREENUMBERS.md](../../by-rating/412-THREENUMBERS.md)

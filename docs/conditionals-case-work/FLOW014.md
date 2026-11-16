@@ -138,8 +138,6 @@ main()
 
 Rows 2 and 3 satisfy exactly one condition each, which lands them both on $6$.
 
-> CodeChef tags: `Special`, `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#129 of 486): [../../by-rating/129-FLOW014.md](../../by-rating/129-FLOW014.md)
+Same problem in rating order (#129 of 735): [../../by-rating/129-FLOW014.md](../../by-rating/129-FLOW014.md)

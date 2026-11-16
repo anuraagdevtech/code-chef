@@ -136,4 +136,4 @@ Count $= 3 + 2 - 2 \cdot 1 = 3 \geq 3$, so `Win`.
 
 ---
 
-Same problem in rating order (#217 of 486): [../../by-rating/217-HMAPPY2.md](../../by-rating/217-HMAPPY2.md)
+Same problem in rating order (#218 of 735): [../../by-rating/218-HMAPPY2.md](../../by-rating/218-HMAPPY2.md)

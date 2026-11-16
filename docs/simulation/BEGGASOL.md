@@ -160,8 +160,6 @@ Third sample: fuel per car $5, 4, 3, 2, 1$.
 
 Past car $5$ the remaining $11$ units carry the car $11$ further: $4 + 11 = $ `15`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#192 of 486): [../../by-rating/192-BEGGASOL.md](../../by-rating/192-BEGGASOL.md)
+Same problem in rating order (#192 of 735): [../../by-rating/192-BEGGASOL.md](../../by-rating/192-BEGGASOL.md)

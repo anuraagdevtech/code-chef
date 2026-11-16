@@ -122,8 +122,6 @@ main()
 
 Row 2 pays $3$ for the mandatory second kind rather than another $2$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#151 of 486): [../../by-rating/151-JMARKET.md](../../by-rating/151-JMARKET.md)
+Same problem in rating order (#151 of 735): [../../by-rating/151-JMARKET.md](../../by-rating/151-JMARKET.md)

@@ -117,4 +117,4 @@ The two sample rows differ by one gift and cost the same, which is the whole poi
 
 ---
 
-Same problem in rating order (#82 of 486): [../../by-rating/082-PRESENTS.md](../../by-rating/082-PRESENTS.md)
+Same problem in rating order (#82 of 735): [../../by-rating/082-PRESENTS.md](../../by-rating/082-PRESENTS.md)

@@ -144,4 +144,4 @@ Three swaps, which is exactly the inversion count of $3, 2, 1$. Output `3` then 
 
 ---
 
-Same problem in rating order (#477 of 486): [../../by-rating/477-ADJSRT.md](../../by-rating/477-ADJSRT.md)
+Same problem in rating order (#717 of 735): [../../by-rating/717-ADJSRT.md](../../by-rating/717-ADJSRT.md)

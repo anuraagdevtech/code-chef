@@ -139,4 +139,4 @@ main()
 
 ---
 
-Same problem in rating order (#221 of 486): [../../by-rating/221-NOBEL.md](../../by-rating/221-NOBEL.md)
+Same problem in rating order (#222 of 735): [../../by-rating/222-NOBEL.md](../../by-rating/222-NOBEL.md)

@@ -121,8 +121,6 @@ main()
 
 The last row shows the floor discarding $90$ spare coins.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#14 of 486): [../../by-rating/014-CREDCOINS.md](../../by-rating/014-CREDCOINS.md)
+Same problem in rating order (#14 of 735): [../../by-rating/014-CREDCOINS.md](../../by-rating/014-CREDCOINS.md)

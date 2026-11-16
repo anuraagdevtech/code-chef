@@ -173,4 +173,4 @@ Output `4`: one halving $3 \to 1$, then three doublings $1 \to 2 \to 4 \to 8$.
 
 ---
 
-Same problem in rating order (#210 of 486): [../../by-rating/210-COOKMACH.md](../../by-rating/210-COOKMACH.md)
+Same problem in rating order (#210 of 735): [../../by-rating/210-COOKMACH.md](../../by-rating/210-COOKMACH.md)

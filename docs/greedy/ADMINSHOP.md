@@ -150,8 +150,6 @@ main()
 
 Row 3: one shop holding two at a time must serve six admins, so three hours even though each admin needs only one.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#313 of 486): [../../by-rating/313-ADMINSHOP.md](../../by-rating/313-ADMINSHOP.md)
+Same problem in rating order (#317 of 735): [../../by-rating/317-ADMINSHOP.md](../../by-rating/317-ADMINSHOP.md)

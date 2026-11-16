@@ -150,4 +150,4 @@ Sum $5 + 5 + 7 = $ `17`, achieved by one operation with $l = 1$, $r = 3$.
 
 ---
 
-Same problem in rating order (#425 of 486): [../../by-rating/425-MAXIMISESUM.md](../../by-rating/425-MAXIMISESUM.md)
+Same problem in rating order (#445 of 735): [../../by-rating/445-MAXIMISESUM.md](../../by-rating/445-MAXIMISESUM.md)

@@ -130,4 +130,4 @@ The interior zeros never affect the digit sum, so the pattern scales to any $N$.
 
 ---
 
-Same problem in rating order (#222 of 486): [../../by-rating/222-MAKEDIV3.md](../../by-rating/222-MAKEDIV3.md)
+Same problem in rating order (#223 of 735): [../../by-rating/223-MAKEDIV3.md](../../by-rating/223-MAKEDIV3.md)

@@ -125,8 +125,6 @@ main()
 
 Rows 2 and 3 are two different students in the same group of six.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#116 of 486): [../../by-rating/116-GROUPASSGN.md](../../by-rating/116-GROUPASSGN.md)
+Same problem in rating order (#116 of 735): [../../by-rating/116-GROUPASSGN.md](../../by-rating/116-GROUPASSGN.md)

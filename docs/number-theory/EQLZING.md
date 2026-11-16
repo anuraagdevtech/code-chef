@@ -116,8 +116,6 @@ main()
 | 3 | 3 | 6 | yes | 3 | `Yes` |
 | 1 | 2 | 3 | no | — | `No` |
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#98 of 486): [../../by-rating/098-EQLZING.md](../../by-rating/098-EQLZING.md)
+Same problem in rating order (#98 of 735): [../../by-rating/098-EQLZING.md](../../by-rating/098-EQLZING.md)

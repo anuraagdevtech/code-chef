@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Weighted penalty, then a three-way comparison |
-| **CodeChef tags** | `Basic Programming Concepts`, `Mathematics`, `Conditional Statements`, `Basic Math` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

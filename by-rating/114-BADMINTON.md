@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Counting even values in a range |
-| **CodeChef tags** | `Algorithms`, `Constructive`, `ad-hoc`, `Implementation` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

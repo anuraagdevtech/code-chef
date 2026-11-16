@@ -123,8 +123,6 @@ main()
 | 15 | 0 | 1 | yes | `2` |
 | 8 | 3 | — | — | `-1` |
 
-> CodeChef tags: `Mathematics`, `Modular Arithmetic`, `Basic Math`
-
 ---
 
-Same problem in rating order (#65 of 486): [../../by-rating/065-MINCOINS.md](../../by-rating/065-MINCOINS.md)
+Same problem in rating order (#65 of 735): [../../by-rating/065-MINCOINS.md](../../by-rating/065-MINCOINS.md)

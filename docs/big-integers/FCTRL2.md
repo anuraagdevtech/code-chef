@@ -105,8 +105,6 @@ main()
 
 The values arrive out of order and are independent, so each is answered on its own.
 
-> CodeChef tags: `Data Structures`, `Arrays`, `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#1 of 486): [../../by-rating/001-FCTRL2.md](../../by-rating/001-FCTRL2.md)
+Same problem in rating order (#1 of 735): [../../by-rating/001-FCTRL2.md](../../by-rating/001-FCTRL2.md)

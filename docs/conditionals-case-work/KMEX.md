@@ -156,4 +156,4 @@ Output `NO`: the two $2$s must be excluded, and the remaining $0, 1, 5$ cannot r
 
 ---
 
-Same problem in rating order (#258 of 486): [../../by-rating/258-KMEX.md](../../by-rating/258-KMEX.md)
+Same problem in rating order (#260 of 735): [../../by-rating/260-KMEX.md](../../by-rating/260-KMEX.md)

@@ -133,4 +133,4 @@ Row 3 is the capped case: the best split is $2 + 1$, not $3 + 0$, because no dis
 
 ---
 
-Same problem in rating order (#188 of 486): [../../by-rating/188-MAX_DIFF.md](../../by-rating/188-MAX_DIFF.md)
+Same problem in rating order (#188 of 735): [../../by-rating/188-MAX_DIFF.md](../../by-rating/188-MAX_DIFF.md)

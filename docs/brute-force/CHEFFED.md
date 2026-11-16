@@ -152,8 +152,6 @@ $N = 6$: scan $X$ from $1$ upward.
 
 Exactly one solution, so the output is `1`.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#274 of 486): [../../by-rating/274-CHEFFED.md](../../by-rating/274-CHEFFED.md)
+Same problem in rating order (#276 of 735): [../../by-rating/276-CHEFFED.md](../../by-rating/276-CHEFFED.md)

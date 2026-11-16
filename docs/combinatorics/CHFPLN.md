@@ -133,4 +133,4 @@ Total `4` — for instance $(1,1)$, $(1,3)$, $(2,2)$ and $(1,5)$.
 
 ---
 
-Same problem in rating order (#337 of 486): [../../by-rating/337-CHFPLN.md](../../by-rating/337-CHFPLN.md)
+Same problem in rating order (#343 of 735): [../../by-rating/343-CHFPLN.md](../../by-rating/343-CHFPLN.md)

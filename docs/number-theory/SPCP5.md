@@ -175,4 +175,4 @@ Two regular attacks deal $1$ and $2$, then the special move deals the prime $7$.
 
 ---
 
-Same problem in rating order (#312 of 486): [../../by-rating/312-SPCP5.md](../../by-rating/312-SPCP5.md)
+Same problem in rating order (#316 of 735): [../../by-rating/316-SPCP5.md](../../by-rating/316-SPCP5.md)

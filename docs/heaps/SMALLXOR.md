@@ -1,4 +1,4 @@
-[&larr; 339. Lowest Sum](LOWSUM.md) &middot; [Index](../../README.md)
+[&larr; 339. Lowest Sum](LOWSUM.md) &middot; [Index](../../README.md) &middot; [692. Maximum K Sums &rarr;](KSUM.md)
 
 # 404. XOR with smallest element
 
@@ -171,8 +171,6 @@ Third sample: $A = 5, 10, 15, 20, 25$, $X = 20$, $Y = 6$.
 
 Final array sorted: `5 20 25 27 30`.
 
-> CodeChef tags: `Special`, `Algorithms`
-
 ---
 
-Same problem in rating order (#371 of 486): [../../by-rating/371-SMALLXOR.md](../../by-rating/371-SMALLXOR.md)
+Same problem in rating order (#384 of 735): [../../by-rating/384-SMALLXOR.md](../../by-rating/384-SMALLXOR.md)

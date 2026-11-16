@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Counting values inside a closed range |
-| **CodeChef tags** | `Basic Programming Concepts`, `Loops` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

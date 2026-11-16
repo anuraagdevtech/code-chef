@@ -111,8 +111,6 @@ main()
 | 32 | 32 | 32 | 32 | `32` |
 | 82 | 45 | 54 | 82 | `82` |
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#40 of 486): [../../by-rating/040-DISCUS.md](../../by-rating/040-DISCUS.md)
+Same problem in rating order (#40 of 735): [../../by-rating/040-DISCUS.md](../../by-rating/040-DISCUS.md)

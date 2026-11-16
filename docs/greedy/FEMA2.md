@@ -187,8 +187,6 @@ First sample: $N = 4$, $K = 5$, $S = $ `I::M`.
 
 The magnet's $w$ is $6$ and the iron's is $1$, a difference of $5 \leq K$ — so they match. Attraction power $= 5 + 1 - 3 - 2 = 1 > 0$ ✓ Output `1`.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#428 of 486): [../../by-rating/428-FEMA2.md](../../by-rating/428-FEMA2.md)
+Same problem in rating order (#449 of 735): [../../by-rating/449-FEMA2.md](../../by-rating/449-FEMA2.md)

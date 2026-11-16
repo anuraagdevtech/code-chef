@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Conditionals & Case Work |
 | **Technique** | Deriving an adjacency rule from an edge list |
-| **CodeChef tags** | `Basic Programming Concepts`, `Algorithms`, `Conditional Statements`, `Implementation` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(1)$ per query |
 | **Space** | $O(1)$ |

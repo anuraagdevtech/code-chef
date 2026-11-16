@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Brute Force |
 | **Technique** | Searching a small range downward |
-| **CodeChef tags** | `Algorithms`, `Brute Force` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ — at most 10 divisibility tests |
 | **Space** | $O(1)$ |

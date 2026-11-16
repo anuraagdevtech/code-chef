@@ -157,4 +157,4 @@ Row 1 would be `01` under the general rule, which is why the length is checked f
 
 ---
 
-Same problem in rating order (#197 of 486): [../../by-rating/197-EVENSPLIT.md](../../by-rating/197-EVENSPLIT.md)
+Same problem in rating order (#197 of 735): [../../by-rating/197-EVENSPLIT.md](../../by-rating/197-EVENSPLIT.md)

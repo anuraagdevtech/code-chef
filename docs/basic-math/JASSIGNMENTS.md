@@ -113,8 +113,6 @@ main()
 
 The first row is the tight case: equality is still on time.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#6 of 486): [../../by-rating/006-JASSIGNMENTS.md](../../by-rating/006-JASSIGNMENTS.md)
+Same problem in rating order (#6 of 735): [../../by-rating/006-JASSIGNMENTS.md](../../by-rating/006-JASSIGNMENTS.md)

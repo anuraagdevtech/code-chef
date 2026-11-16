@@ -185,4 +185,4 @@ Output `Yes`. A witnessing arrangement is $[3, 2, 1, 2]$: the even positions bot
 
 ---
 
-Same problem in rating order (#398 of 486): [../../by-rating/398-ANTIPALQ.md](../../by-rating/398-ANTIPALQ.md)
+Same problem in rating order (#416 of 735): [../../by-rating/416-ANTIPALQ.md](../../by-rating/416-ANTIPALQ.md)

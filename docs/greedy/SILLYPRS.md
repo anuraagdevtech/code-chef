@@ -148,8 +148,6 @@ Matched pairs: $\min(1,2) + \min(2,1) = 1 + 1 = 2$, so one pair mismatches.
 
 $\sum A = 15$, $\sum B = 6$, giving $(21 - 1)/2 = $ `10`. For instance $5{+}1$, $4{+}2$ and $6{+}3$ → $3 + 3 + 4$.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#302 of 486): [../../by-rating/302-SILLYPRS.md](../../by-rating/302-SILLYPRS.md)
+Same problem in rating order (#304 of 735): [../../by-rating/304-SILLYPRS.md](../../by-rating/304-SILLYPRS.md)

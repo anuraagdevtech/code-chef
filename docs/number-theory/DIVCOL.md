@@ -151,8 +151,6 @@ $N = 3$: the highest power of two is $2$, so $C = \Omega(2) + 1 = 2$.
 
 Divisor pairs: $1 \mid 2$ (colours $1 \neq 2$ ✓) and $1 \mid 3$ ($1 \neq 2$ ✓). The pair $2, 3$ has no divisibility, so sharing colour $2$ is fine.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#363 of 486): [../../by-rating/363-DIVCOL.md](../../by-rating/363-DIVCOL.md)
+Same problem in rating order (#374 of 735): [../../by-rating/374-DIVCOL.md](../../by-rating/374-DIVCOL.md)

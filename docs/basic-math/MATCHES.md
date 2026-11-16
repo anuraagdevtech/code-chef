@@ -131,4 +131,4 @@ Row 3 is the dearest single digit.
 
 ---
 
-Same problem in rating order (#161 of 486): [../../by-rating/161-MATCHES.md](../../by-rating/161-MATCHES.md)
+Same problem in rating order (#161 of 735): [../../by-rating/161-MATCHES.md](../../by-rating/161-MATCHES.md)

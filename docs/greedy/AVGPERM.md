@@ -139,4 +139,4 @@ Weighted sum $4(1) + 2(2) + 1(2) + 3(1) = 13$, the minimum; the sample's `3 2 1 
 
 ---
 
-Same problem in rating order (#226 of 486): [../../by-rating/226-AVGPERM.md](../../by-rating/226-AVGPERM.md)
+Same problem in rating order (#227 of 735): [../../by-rating/227-AVGPERM.md](../../by-rating/227-AVGPERM.md)

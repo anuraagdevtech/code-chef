@@ -169,4 +169,4 @@ Output `3`: three tables, $\{5,1,3\}$, $\{3\}$ and $\{3\}$, with no two members 
 
 ---
 
-Same problem in rating order (#467 of 486): [../../by-rating/467-CHEFWED.md](../../by-rating/467-CHEFWED.md)
+Same problem in rating order (#533 of 735): [../../by-rating/533-CHEFWED.md](../../by-rating/533-CHEFWED.md)

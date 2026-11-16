@@ -130,4 +130,4 @@ main()
 
 ---
 
-Same problem in rating order (#171 of 486): [../../by-rating/171-TWODISH.md](../../by-rating/171-TWODISH.md)
+Same problem in rating order (#171 of 735): [../../by-rating/171-TWODISH.md](../../by-rating/171-TWODISH.md)

@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Strings |
 | **Technique** | Position-wise comparison |
-| **CodeChef tags** | `Data Structures`, `Basic Programming Concepts`, `String`, `Loops` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(L)$ per test case with $L = 5$ |
 | **Space** | $O(L)$ |

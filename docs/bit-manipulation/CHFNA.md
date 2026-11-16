@@ -119,4 +119,4 @@ Total $8 + 2 = $ `10`, which is $6 \oplus 12$.
 
 ---
 
-Same problem in rating order (#225 of 486): [../../by-rating/225-CHFNA.md](../../by-rating/225-CHFNA.md)
+Same problem in rating order (#226 of 735): [../../by-rating/226-CHFNA.md](../../by-rating/226-CHFNA.md)

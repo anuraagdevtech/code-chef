@@ -139,4 +139,4 @@ Row 2 is where $(n+3)//5$ would wrongly give $1$ instead of $2$.
 
 ---
 
-Same problem in rating order (#160 of 486): [../../by-rating/160-JOINING.md](../../by-rating/160-JOINING.md)
+Same problem in rating order (#160 of 735): [../../by-rating/160-JOINING.md](../../by-rating/160-JOINING.md)

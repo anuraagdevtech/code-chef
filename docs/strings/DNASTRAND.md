@@ -138,4 +138,4 @@ So `ATCG` becomes `TAGC`. The other cases follow the same table: `GTCC` to `CAGG
 
 ---
 
-Same problem in rating order (#50 of 486): [../../by-rating/050-DNASTRAND.md](../../by-rating/050-DNASTRAND.md)
+Same problem in rating order (#50 of 735): [../../by-rating/050-DNASTRAND.md](../../by-rating/050-DNASTRAND.md)

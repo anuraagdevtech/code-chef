@@ -144,8 +144,6 @@ Sample 1: $N = 2$, $H = 5$, $x = 3$, zones $1, 2$.
 
 One zone suffices, so `YES`. Sample 2 raises $H$ to $6$: now $4$ and $5$ both fall short, so `NO`.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#145 of 486): [../../by-rating/145-NOTIME.md](../../by-rating/145-NOTIME.md)
+Same problem in rating order (#145 of 735): [../../by-rating/145-NOTIME.md](../../by-rating/145-NOTIME.md)

@@ -121,8 +121,6 @@ main()
 
 Row 1 is limited by water, row 3 by bottles.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#51 of 486): [../../by-rating/051-CHEFBOTTLE.md](../../by-rating/051-CHEFBOTTLE.md)
+Same problem in rating order (#51 of 735): [../../by-rating/051-CHEFBOTTLE.md](../../by-rating/051-CHEFBOTTLE.md)

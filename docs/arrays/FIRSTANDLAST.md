@@ -140,8 +140,6 @@ main()
 
 In row 2 the pairs are $(5{+}10), (10{+}15), (15{+}5)$ — the last being the wraparound.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#144 of 486): [../../by-rating/144-FIRSTANDLAST.md](../../by-rating/144-FIRSTANDLAST.md)
+Same problem in rating order (#144 of 735): [../../by-rating/144-FIRSTANDLAST.md](../../by-rating/144-FIRSTANDLAST.md)

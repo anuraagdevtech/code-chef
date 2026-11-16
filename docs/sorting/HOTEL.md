@@ -151,4 +151,4 @@ Output `1`. Reversing the tie-break makes every pair overlap and reports `2`.
 
 ---
 
-Same problem in rating order (#227 of 486): [../../by-rating/227-HOTEL.md](../../by-rating/227-HOTEL.md)
+Same problem in rating order (#228 of 735): [../../by-rating/228-HOTEL.md](../../by-rating/228-HOTEL.md)

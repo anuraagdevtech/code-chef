@@ -124,8 +124,6 @@ main()
 
 The unseen all-ones case would give sum $3$ and output `0`.
 
-> CodeChef tags: `Special`, `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#138 of 486): [../../by-rating/138-SHOEFIT.md](../../by-rating/138-SHOEFIT.md)
+Same problem in rating order (#138 of 735): [../../by-rating/138-SHOEFIT.md](../../by-rating/138-SHOEFIT.md)

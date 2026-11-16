@@ -128,4 +128,4 @@ The sample covers $N = 3, 4, 5$; the pattern repeats with period $4$.
 
 ---
 
-Same problem in rating order (#184 of 486): [../../by-rating/184-MXEVNSUB.md](../../by-rating/184-MXEVNSUB.md)
+Same problem in rating order (#184 of 735): [../../by-rating/184-MXEVNSUB.md](../../by-rating/184-MXEVNSUB.md)

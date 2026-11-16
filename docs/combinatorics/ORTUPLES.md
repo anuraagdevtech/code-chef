@@ -142,8 +142,6 @@ First sample: $P = 10$, $Q = 12$, $R = 14$ — binary $01010$, $01100$, $01110$.
 
 Product `4`. Bit $3$ is the only one where all three agree, and it alone admits the four choices.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`
-
 ---
 
-Same problem in rating order (#411 of 486): [../../by-rating/411-ORTUPLES.md](../../by-rating/411-ORTUPLES.md)
+Same problem in rating order (#430 of 735): [../../by-rating/430-ORTUPLES.md](../../by-rating/430-ORTUPLES.md)

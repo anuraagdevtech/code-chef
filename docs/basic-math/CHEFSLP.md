@@ -124,8 +124,6 @@ main()
 
 Row 4 is limited by the right shoes; row 2 by the price.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#140 of 486): [../../by-rating/140-CHEFSLP.md](../../by-rating/140-CHEFSLP.md)
+Same problem in rating order (#140 of 735): [../../by-rating/140-CHEFSLP.md](../../by-rating/140-CHEFSLP.md)

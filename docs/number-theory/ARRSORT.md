@@ -142,8 +142,6 @@ First sample: $P = 4, 2, 3, 1$.
 
 $\gcd(3, 0, 0, 3) = 3$, so the answer is `3`: one swap of positions $1$ and $4$ sorts it.
 
-> CodeChef tags: `Mathematics`, `Number Theory`, `Algorithms`
-
 ---
 
-Same problem in rating order (#396 of 486): [../../by-rating/396-ARRSORT.md](../../by-rating/396-ARRSORT.md)
+Same problem in rating order (#414 of 735): [../../by-rating/414-ARRSORT.md](../../by-rating/414-ARRSORT.md)

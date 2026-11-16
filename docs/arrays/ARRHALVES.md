@@ -148,8 +148,6 @@ First sample: $N = 2$, $P = 3, 2, 1, 4$. Small values are $1$ and $2$.
 
 Total `2`: swap $3$ with $2$, then $3$ with $1$, giving $2,1,3,4$.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#229 of 486): [../../by-rating/229-ARRHALVES.md](../../by-rating/229-ARRHALVES.md)
+Same problem in rating order (#230 of 735): [../../by-rating/230-ARRHALVES.md](../../by-rating/230-ARRHALVES.md)

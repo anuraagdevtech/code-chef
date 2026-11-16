@@ -158,4 +158,4 @@ One list, starting and ending with $1$. Output `2` $= n - \text{top} + 1 = 3 - 2
 
 ---
 
-Same problem in rating order (#332 of 486): [../../by-rating/332-LISTLIST.md](../../by-rating/332-LISTLIST.md)
+Same problem in rating order (#337 of 735): [../../by-rating/337-LISTLIST.md](../../by-rating/337-LISTLIST.md)

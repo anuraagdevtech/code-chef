@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Number Theory |
 | **Technique** | Finding the invariant |
-| **CodeChef tags** | `Mathematics`, `Algorithms`, `Constructive`, `Basic Math`, `ad-hoc` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

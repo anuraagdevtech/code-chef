@@ -126,8 +126,6 @@ main()
 
 Row 2 lands exactly on the first threshold.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#155 of 486): [../../by-rating/155-MARARUN.md](../../by-rating/155-MARARUN.md)
+Same problem in rating order (#155 of 735): [../../by-rating/155-MARARUN.md](../../by-rating/155-MARARUN.md)

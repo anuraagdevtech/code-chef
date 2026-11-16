@@ -130,8 +130,6 @@ main()
 
 Row 2 takes the back route; row 4 is the tie.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#104 of 486): [../../by-rating/104-LOOP.md](../../by-rating/104-LOOP.md)
+Same problem in rating order (#104 of 735): [../../by-rating/104-LOOP.md](../../by-rating/104-LOOP.md)

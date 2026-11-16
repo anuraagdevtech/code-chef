@@ -158,4 +158,4 @@ Output `5 5 2 3`. Here the free slot's maximum coincides with $A_2$; on $7, 1, 7
 
 ---
 
-Same problem in rating order (#437 of 486): [../../by-rating/437-FIX.md](../../by-rating/437-FIX.md)
+Same problem in rating order (#460 of 735): [../../by-rating/460-FIX.md](../../by-rating/460-FIX.md)

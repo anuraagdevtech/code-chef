@@ -123,8 +123,6 @@ main()
 
 Row 3 spends the remainder exactly.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#108 of 486): [../../by-rating/108-DEVSPORTS.md](../../by-rating/108-DEVSPORTS.md)
+Same problem in rating order (#108 of 735): [../../by-rating/108-DEVSPORTS.md](../../by-rating/108-DEVSPORTS.md)

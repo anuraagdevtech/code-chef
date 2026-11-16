@@ -146,8 +146,6 @@ main()
 
 For $N = 23$, $b = 0$ leaves the odd value $27$, which cannot be halved — hence $b = 1$.
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#130 of 486): [../../by-rating/130-FIFTYPE.md](../../by-rating/130-FIFTYPE.md)
+Same problem in rating order (#130 of 735): [../../by-rating/130-FIFTYPE.md](../../by-rating/130-FIFTYPE.md)

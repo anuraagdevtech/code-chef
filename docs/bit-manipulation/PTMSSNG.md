@@ -157,4 +157,4 @@ Output `2 2`. The $1$s, $4$s and $9$s cancel in $x$; the $1$s, $6$s and $3$s can
 
 ---
 
-Same problem in rating order (#481 of 486): [../../by-rating/481-PTMSSNG.md](../../by-rating/481-PTMSSNG.md)
+Same problem in rating order (#728 of 735): [../../by-rating/728-PTMSSNG.md](../../by-rating/728-PTMSSNG.md)

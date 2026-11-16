@@ -142,8 +142,6 @@ First sample: goals $3, 7, 1, 4, 2, 4$.
 
 Output `4`, from the first two matches.
 
-> CodeChef tags: `Data Structures`, `Arrays`, `Algorithms`, `Constructive`, `Simple Algos`
-
 ---
 
-Same problem in rating order (#238 of 486): [../../by-rating/238-PLAYFIT.md](../../by-rating/238-PLAYFIT.md)
+Same problem in rating order (#240 of 735): [../../by-rating/240-PLAYFIT.md](../../by-rating/240-PLAYFIT.md)

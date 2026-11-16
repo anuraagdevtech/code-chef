@@ -164,8 +164,6 @@ First sample: $A = 1, 0, 0, 2$, total wall height $3$.
 
 Output `2`. From position $2$ pushed right: hit the wall at $4$ (height $2 \to 1$), bounce left, hit the wall at $1$ ($1 \to 0$), bounce right, hit $4$ again ($1 \to 0$) — all clear.
 
-> CodeChef tags: `Algorithms`, `Simple Algos`
-
 ---
 
-Same problem in rating order (#345 of 486): [../../by-rating/345-BOUNCE_BALL.md](../../by-rating/345-BOUNCE_BALL.md)
+Same problem in rating order (#353 of 735): [../../by-rating/353-BOUNCE_BALL.md](../../by-rating/353-BOUNCE_BALL.md)

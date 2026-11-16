@@ -125,8 +125,6 @@ $N = 242$, taking the largest note that still fits at each step:
 
 Seven notes in total, so the output is `7`.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#80 of 486): [../../by-rating/080-FLOW005.md](../../by-rating/080-FLOW005.md)
+Same problem in rating order (#80 of 735): [../../by-rating/080-FLOW005.md](../../by-rating/080-FLOW005.md)

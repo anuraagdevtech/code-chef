@@ -147,8 +147,6 @@ $X = 3 = 11_2$.
 
 The majority is $11_2 = 3 = X$ ✓
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
-
 ---
 
-Same problem in rating order (#336 of 486): [../../by-rating/336-ORANDCON.md](../../by-rating/336-ORANDCON.md)
+Same problem in rating order (#341 of 735): [../../by-rating/341-ORANDCON.md](../../by-rating/341-ORANDCON.md)

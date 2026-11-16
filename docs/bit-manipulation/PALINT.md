@@ -150,8 +150,6 @@ First sample: $A = 1, 2, 3$ with $X = 2$.
 
 Best total is $2$ at a cost of $1$, so the output is `2 1` — turn the $1$ into a $3$ (or the other way round).
 
-> CodeChef tags: `Data Structures`, `Arrays`, `Mathematics`
-
 ---
 
-Same problem in rating order (#433 of 486): [../../by-rating/433-PALINT.md](../../by-rating/433-PALINT.md)
+Same problem in rating order (#456 of 735): [../../by-rating/456-PALINT.md](../../by-rating/456-PALINT.md)

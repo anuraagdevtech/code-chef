@@ -121,8 +121,6 @@ main()
 
 Row 1 lands exactly on the threshold; row 3 clears it on hard problems alone.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#34 of 486): [../../by-rating/034-QUALIFY.md](../../by-rating/034-QUALIFY.md)
+Same problem in rating order (#34 of 735): [../../by-rating/034-QUALIFY.md](../../by-rating/034-QUALIFY.md)

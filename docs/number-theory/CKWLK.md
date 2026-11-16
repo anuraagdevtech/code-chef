@@ -125,4 +125,4 @@ For $200$: $a = 2(2) - 3 = 1$ and $b = 3 - 2 = 1$, so one $\times 10$ and one $\
 
 ---
 
-Same problem in rating order (#272 of 486): [../../by-rating/272-CKWLK.md](../../by-rating/272-CKWLK.md)
+Same problem in rating order (#274 of 735): [../../by-rating/274-CKWLK.md](../../by-rating/274-CKWLK.md)

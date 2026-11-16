@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Comparing ratios by cross-multiplication |
-| **CodeChef tags** | `Basic Programming Concepts`, `Mathematics`, `Basic Math`, `Conditional Statements`, `Arithmetic` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

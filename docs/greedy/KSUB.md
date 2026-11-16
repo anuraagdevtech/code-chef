@@ -159,8 +159,6 @@ Fourth sample: $A = 6, 12, 18, 24$, so $G = \gcd = 6$ and $K = 3$.
 
 Only $2$ disjoint pieces have gcd $6$, short of $K = 3$, so `NO`.
 
-> CodeChef tags: `Mathematics`, `Number Theory`, `Algorithms`
-
 ---
 
-Same problem in rating order (#388 of 486): [../../by-rating/388-KSUB.md](../../by-rating/388-KSUB.md)
+Same problem in rating order (#404 of 735): [../../by-rating/404-KSUB.md](../../by-rating/404-KSUB.md)

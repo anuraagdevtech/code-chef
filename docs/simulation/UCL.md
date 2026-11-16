@@ -182,8 +182,6 @@ First sample group, after all twelve matches:
 
 Sorted by points then difference, the top two are `manutd fcbarca`.
 
-> CodeChef tags: `Data Structures`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#369 of 486): [../../by-rating/369-UCL.md](../../by-rating/369-UCL.md)
+Same problem in rating order (#381 of 735): [../../by-rating/381-UCL.md](../../by-rating/381-UCL.md)

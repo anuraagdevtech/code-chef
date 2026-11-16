@@ -166,4 +166,4 @@ Best peak is $3$, using $9$ blocks out of a total height of $12$ — so `3` bloc
 
 ---
 
-Same problem in rating order (#463 of 486): [../../by-rating/463-SNTEMPLE.md](../../by-rating/463-SNTEMPLE.md)
+Same problem in rating order (#521 of 735): [../../by-rating/521-SNTEMPLE.md](../../by-rating/521-SNTEMPLE.md)

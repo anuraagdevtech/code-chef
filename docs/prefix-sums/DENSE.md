@@ -151,4 +151,4 @@ Best nest is $3$ deep, so $8 - 2 \cdot 3 = $ `2` brackets are removed.
 
 ---
 
-Same problem in rating order (#269 of 486): [../../by-rating/269-DENSE.md](../../by-rating/269-DENSE.md)
+Same problem in rating order (#271 of 735): [../../by-rating/271-DENSE.md](../../by-rating/271-DENSE.md)

@@ -178,4 +178,4 @@ Output `1`: cut the lone doughnut and use it to join the chains of $2$ and $3$.
 
 ---
 
-Same problem in rating order (#349 of 486): [../../by-rating/349-DONUTS.md](../../by-rating/349-DONUTS.md)
+Same problem in rating order (#357 of 735): [../../by-rating/357-DONUTS.md](../../by-rating/357-DONUTS.md)

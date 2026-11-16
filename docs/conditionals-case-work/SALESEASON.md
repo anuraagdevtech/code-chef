@@ -132,4 +132,4 @@ The last row is the boundary: $1000$ belongs to the second band, not the third.
 
 ---
 
-Same problem in rating order (#15 of 486): [../../by-rating/015-SALESEASON.md](../../by-rating/015-SALESEASON.md)
+Same problem in rating order (#15 of 735): [../../by-rating/015-SALESEASON.md](../../by-rating/015-SALESEASON.md)

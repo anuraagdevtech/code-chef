@@ -145,4 +145,4 @@ Rows 3 and 4 are consecutive days either side of the third Tuesday.
 
 ---
 
-Same problem in rating order (#83 of 486): [../../by-rating/083-CHEAT.md](../../by-rating/083-CHEAT.md)
+Same problem in rating order (#83 of 735): [../../by-rating/083-CHEAT.md](../../by-rating/083-CHEAT.md)

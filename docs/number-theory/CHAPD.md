@@ -146,4 +146,4 @@ $B$ reaches $1$, so `Yes`. The third sample, $A = 7$ with $B = 8$, has $\gcd(7, 
 
 ---
 
-Same problem in rating order (#427 of 486): [../../by-rating/427-CHAPD.md](../../by-rating/427-CHAPD.md)
+Same problem in rating order (#447 of 735): [../../by-rating/447-CHAPD.md](../../by-rating/447-CHAPD.md)

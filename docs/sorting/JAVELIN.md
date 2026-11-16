@@ -154,4 +154,4 @@ Output `3 1 3 4`.
 
 ---
 
-Same problem in rating order (#320 of 486): [../../by-rating/320-JAVELIN.md](../../by-rating/320-JAVELIN.md)
+Same problem in rating order (#325 of 735): [../../by-rating/325-JAVELIN.md](../../by-rating/325-JAVELIN.md)

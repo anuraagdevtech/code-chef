@@ -132,4 +132,4 @@ Row 3 misses by $11$ hundredths of a rupee, which is exactly why the comparison 
 
 ---
 
-Same problem in rating order (#168 of 486): [../../by-rating/168-CSTOCK.md](../../by-rating/168-CSTOCK.md)
+Same problem in rating order (#168 of 735): [../../by-rating/168-CSTOCK.md](../../by-rating/168-CSTOCK.md)

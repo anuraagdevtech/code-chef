@@ -168,8 +168,6 @@ Second sample: $N = 8$, $K = 3$, categories $1,3,2,2,4,1,3,5$ with times $3,3,0,
 
 Five categories available, so pick the three cheapest minima: $0 + 1 + 2 = $ `3`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#248 of 486): [../../by-rating/248-CHEFDINE.md](../../by-rating/248-CHEFDINE.md)
+Same problem in rating order (#250 of 735): [../../by-rating/250-CHEFDINE.md](../../by-rating/250-CHEFDINE.md)

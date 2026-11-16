@@ -130,8 +130,6 @@ main()
 
 Row 3 is the tie: the true average is exactly $6$, so it fails the strict test.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#4 of 486): [../../by-rating/004-AVGPROBLEM.md](../../by-rating/004-AVGPROBLEM.md)
+Same problem in rating order (#4 of 735): [../../by-rating/004-AVGPROBLEM.md](../../by-rating/004-AVGPROBLEM.md)

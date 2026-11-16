@@ -128,4 +128,4 @@ One condition fails, so `RealMadrid`. In the second sample $2 < 3$ and $8 > 6$ b
 
 ---
 
-Same problem in rating order (#156 of 486): [../../by-rating/156-COOK82A.md](../../by-rating/156-COOK82A.md)
+Same problem in rating order (#156 of 735): [../../by-rating/156-COOK82A.md](../../by-rating/156-COOK82A.md)

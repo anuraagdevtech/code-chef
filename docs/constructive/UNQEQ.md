@@ -143,8 +143,6 @@ $N = 8$, so $k = 2$: $A = 1, 2, 7, 8$ and $B = 3, 4, 5, 6$.
 
 The first three must differ and do; the fourth is the shared total.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#245 of 486): [../../by-rating/245-UNQEQ.md](../../by-rating/245-UNQEQ.md)
+Same problem in rating order (#247 of 735): [../../by-rating/247-UNQEQ.md](../../by-rating/247-UNQEQ.md)

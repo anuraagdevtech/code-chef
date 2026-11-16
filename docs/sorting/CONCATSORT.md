@@ -141,8 +141,6 @@ Third sample: $A = 5, 10, 7, 11, 9$.
 
 Position sequence $0, 2, 4, 1, 3$ has one descent ($4 \to 1$), so `YES`: take $P = [5, 7, 9]$ and $Q = [10, 11]$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#373 of 486): [../../by-rating/373-CONCATSORT.md](../../by-rating/373-CONCATSORT.md)
+Same problem in rating order (#386 of 735): [../../by-rating/386-CONCATSORT.md](../../by-rating/386-CONCATSORT.md)

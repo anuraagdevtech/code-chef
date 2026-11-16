@@ -1,4 +1,4 @@
-[&larr; 469. Pokemon Battles](PBATTLE.md) &middot; [Index](../../README.md)
+[&larr; 469. Pokemon Battles](PBATTLE.md) &middot; [Index](../../README.md) &middot; [638. Symmetric Swaps &rarr;](SYMARRSWAP.md)
 
 # 473. Army Training
 
@@ -174,8 +174,6 @@ Third sample: $A = 100, 800, 300, 500$, sorted descending to $800, 500, 300, 100
 
 Output `2080000`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#445 of 486): [../../by-rating/445-ARMTRN.md](../../by-rating/445-ARMTRN.md)
+Same problem in rating order (#468 of 735): [../../by-rating/468-ARMTRN.md](../../by-rating/468-ARMTRN.md)

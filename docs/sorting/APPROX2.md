@@ -173,8 +173,6 @@ Then count pairs at each target:
 
 Output `1 4`.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#268 of 486): [../../by-rating/268-APPROX2.md](../../by-rating/268-APPROX2.md)
+Same problem in rating order (#270 of 735): [../../by-rating/270-APPROX2.md](../../by-rating/270-APPROX2.md)

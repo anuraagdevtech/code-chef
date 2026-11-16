@@ -136,4 +136,4 @@ Row 2 keeps $\{2,2,2\}$, whose only pairwise difference is $0$.
 
 ---
 
-Same problem in rating order (#295 of 486): [../../by-rating/295-EQDIFFER.md](../../by-rating/295-EQDIFFER.md)
+Same problem in rating order (#297 of 735): [../../by-rating/297-EQDIFFER.md](../../by-rating/297-EQDIFFER.md)

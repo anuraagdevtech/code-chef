@@ -142,4 +142,4 @@ For the first row: balance $2$ kg into two piles of $1$ kg each.
 
 ---
 
-Same problem in rating order (#436 of 486): [../../by-rating/436-APP_BAL_SCA.md](../../by-rating/436-APP_BAL_SCA.md)
+Same problem in rating order (#459 of 735): [../../by-rating/459-APP_BAL_SCA.md](../../by-rating/459-APP_BAL_SCA.md)

@@ -148,8 +148,6 @@ main()
 
 Output `GGBBG`.
 
-> CodeChef tags: `Data Structures`, `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#95 of 486): [../../by-rating/095-WORDLE.md](../../by-rating/095-WORDLE.md)
+Same problem in rating order (#95 of 735): [../../by-rating/095-WORDLE.md](../../by-rating/095-WORDLE.md)

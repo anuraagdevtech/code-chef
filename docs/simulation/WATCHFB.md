@@ -164,8 +164,6 @@ The sample's six replies, tracking the viable states as (favourite, other):
 
 The third reply is resolved by the second: a favourite-team score of $2$ would mean goals were lost.
 
-> CodeChef tags: `Special`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#408 of 486): [../../by-rating/408-WATCHFB.md](../../by-rating/408-WATCHFB.md)
+Same problem in rating order (#427 of 735): [../../by-rating/427-WATCHFB.md](../../by-rating/427-WATCHFB.md)

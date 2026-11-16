@@ -107,8 +107,6 @@ Input is the single value $N = 9$.
 | $1 \leq 3$? | yes |
 | output | `1` |
 
-> CodeChef tags: `Special`, `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#11 of 486): [../../by-rating/011-HOWMANY.md](../../by-rating/011-HOWMANY.md)
+Same problem in rating order (#11 of 735): [../../by-rating/011-HOWMANY.md](../../by-rating/011-HOWMANY.md)

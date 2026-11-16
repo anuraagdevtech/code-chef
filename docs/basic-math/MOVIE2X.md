@@ -142,8 +142,6 @@ Sample 1: $X = 100$, $Y = 20$.
 
 Output `90`. Sample 2 ($X = 50$, $Y = 24$) gives $12 + 26 = 38$.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#42 of 486): [../../by-rating/042-MOVIE2X.md](../../by-rating/042-MOVIE2X.md)
+Same problem in rating order (#42 of 735): [../../by-rating/042-MOVIE2X.md](../../by-rating/042-MOVIE2X.md)

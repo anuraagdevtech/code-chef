@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Simulation |
 | **Technique** | Collecting fuel while moving forward |
-| **CodeChef tags** | `Algorithms`, `Observation`, `Brute Force` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

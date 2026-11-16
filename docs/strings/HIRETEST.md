@@ -158,4 +158,4 @@ Output `1100`. Rows 3 and 4 fail for different reasons: too few partials, and th
 
 ---
 
-Same problem in rating order (#190 of 486): [../../by-rating/190-HIRETEST.md](../../by-rating/190-HIRETEST.md)
+Same problem in rating order (#190 of 735): [../../by-rating/190-HIRETEST.md](../../by-rating/190-HIRETEST.md)

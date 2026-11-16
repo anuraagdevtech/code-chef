@@ -124,8 +124,6 @@ main()
 
 Row 2 is the clamped case.
 
-> CodeChef tags: `Special`, `Mathematics`
-
 ---
 
-Same problem in rating order (#48 of 486): [../../by-rating/048-BULLET.md](../../by-rating/048-BULLET.md)
+Same problem in rating order (#48 of 735): [../../by-rating/048-BULLET.md](../../by-rating/048-BULLET.md)

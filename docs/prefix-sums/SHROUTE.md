@@ -179,4 +179,4 @@ Output `1` — teleport to city $5$ and ride the left-moving train one stop.
 
 ---
 
-Same problem in rating order (#457 of 486): [../../by-rating/457-SHROUTE.md](../../by-rating/457-SHROUTE.md)
+Same problem in rating order (#481 of 735): [../../by-rating/481-SHROUTE.md](../../by-rating/481-SHROUTE.md)

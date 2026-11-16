@@ -154,4 +154,4 @@ Output `6`.
 
 ---
 
-Same problem in rating order (#277 of 486): [../../by-rating/277-SUBINC.md](../../by-rating/277-SUBINC.md)
+Same problem in rating order (#279 of 735): [../../by-rating/279-SUBINC.md](../../by-rating/279-SUBINC.md)

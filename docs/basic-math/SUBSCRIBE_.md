@@ -115,8 +115,6 @@ main()
 
 The middle row shows the exact-multiple case landing on $2$ rather than $3$.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#5 of 486): [../../by-rating/005-SUBSCRIBE_.md](../../by-rating/005-SUBSCRIBE_.md)
+Same problem in rating order (#5 of 735): [../../by-rating/005-SUBSCRIBE_.md](../../by-rating/005-SUBSCRIBE_.md)

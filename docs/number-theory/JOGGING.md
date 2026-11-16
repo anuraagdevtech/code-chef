@@ -124,8 +124,6 @@ main()
 
 The totals after each kilometre are $X, 2X, 4X, 8X$ — the running sum doubles because the new kilometre equals everything before it.
 
-> CodeChef tags: `Special`, `Mathematics`
-
 ---
 
-Same problem in rating order (#282 of 486): [../../by-rating/282-JOGGING.md](../../by-rating/282-JOGGING.md)
+Same problem in rating order (#284 of 735): [../../by-rating/284-JOGGING.md](../../by-rating/284-JOGGING.md)

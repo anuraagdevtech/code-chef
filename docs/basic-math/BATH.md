@@ -118,8 +118,6 @@ main()
 
 Row 2 wastes one litre; rows 1 and 4 cannot afford even one bath.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#45 of 486): [../../by-rating/045-BATH.md](../../by-rating/045-BATH.md)
+Same problem in rating order (#45 of 735): [../../by-rating/045-BATH.md](../../by-rating/045-BATH.md)

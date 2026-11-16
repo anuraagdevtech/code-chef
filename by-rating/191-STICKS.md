@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Greedy |
 | **Technique** | Largest two pairs by frequency |
-| **CodeChef tags** | `Algorithms`, `Greedy`, `Brute Force` |
 | **Complexity class** | Linearithmic $O(n \log n)$ |
 | **Time** | $O(N \log N)$ per test case |
 | **Space** | $O(N)$ |

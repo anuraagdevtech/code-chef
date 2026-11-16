@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Geometry |
 | **Technique** | Comparing area against perimeter |
-| **CodeChef tags** | `Mathematics`, `Basic Math`, `Geometry` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ |
 | **Space** | $O(1)$ |

@@ -126,8 +126,6 @@ main()
 | 100 | 450 | 1000 | 1350 | 10 | 3 | 13 | `13` |
 | 150 | 400 | 1200 | 1200 | 8 | 3 | 11 | `11` |
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#106 of 486): [../../by-rating/106-COCONUT.md](../../by-rating/106-COCONUT.md)
+Same problem in rating order (#106 of 735): [../../by-rating/106-COCONUT.md](../../by-rating/106-COCONUT.md)

@@ -120,8 +120,6 @@ main()
 | 4 | 2 | 1 | 3 | 1 | 1 | 3 | no (second) | `NO` |
 | 4 | 2 | 4 | 2 | 2 | 8 | 4 | no (both) | `NO` |
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#120 of 486): [../../by-rating/120-CCISLAND.md](../../by-rating/120-CCISLAND.md)
+Same problem in rating order (#120 of 735): [../../by-rating/120-CCISLAND.md](../../by-rating/120-CCISLAND.md)

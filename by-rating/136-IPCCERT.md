@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Filtering rows on two independent criteria |
-| **CodeChef tags** | `Basic Programming Concepts`, `Algorithms`, `Conditional Statements`, `Implementation` |
 | **Complexity class** | Product of two sizes $O(n m)$ |
 | **Time** | $O(N \cdot K)$ |
 | **Space** | $O(1)$ |

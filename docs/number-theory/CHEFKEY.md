@@ -147,4 +147,4 @@ Output `3`.
 
 ---
 
-Same problem in rating order (#209 of 486): [../../by-rating/209-CHEFKEY.md](../../by-rating/209-CHEFKEY.md)
+Same problem in rating order (#209 of 735): [../../by-rating/209-CHEFKEY.md](../../by-rating/209-CHEFKEY.md)

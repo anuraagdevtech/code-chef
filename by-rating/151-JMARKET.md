@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Greedy |
 | **Technique** | Cheapest choice under a diversity constraint |
-| **CodeChef tags** | `Algorithms`, `Greedy` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

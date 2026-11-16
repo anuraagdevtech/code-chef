@@ -132,8 +132,6 @@ Sample 1: $R = 719$, $O = 18$, $C = 648$.
 
 Sample 2 is identical but with $R = 720$: now $720 > 720$ fails, so `NO`.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#84 of 486): [../../by-rating/084-T20MCH.md](../../by-rating/084-T20MCH.md)
+Same problem in rating order (#84 of 735): [../../by-rating/084-T20MCH.md](../../by-rating/084-T20MCH.md)

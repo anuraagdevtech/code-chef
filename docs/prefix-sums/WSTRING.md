@@ -201,8 +201,6 @@ First sample: `aaaaa#bb#cc#dddd`, with `#` at positions $5$, $8$ and $11$ (0-bas
 
 Total $3 + 5 + 2 + 2 + 4 = $ `16`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#464 of 486): [../../by-rating/464-WSTRING.md](../../by-rating/464-WSTRING.md)
+Same problem in rating order (#524 of 735): [../../by-rating/524-WSTRING.md](../../by-rating/524-WSTRING.md)

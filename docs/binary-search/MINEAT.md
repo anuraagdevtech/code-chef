@@ -187,4 +187,4 @@ So $4$ is the smallest workable speed. Output `4`.
 
 ---
 
-Same problem in rating order (#461 of 486): [../../by-rating/461-MINEAT.md](../../by-rating/461-MINEAT.md)
+Same problem in rating order (#505 of 735): [../../by-rating/505-MINEAT.md](../../by-rating/505-MINEAT.md)

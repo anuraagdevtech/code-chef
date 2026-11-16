@@ -1,4 +1,4 @@
-[&larr; 212. Count Substrings](212-CSUB.md) &middot; [Index](README.md) &middot; [214. Turn It &rarr;](214-NFS.md)
+[&larr; 212. Count Substrings](212-CSUB.md) &middot; [Index](README.md) &middot; [214. Cricket Match &rarr;](214-CRIMCH.md)
 
 # 213. Maximum Trio
 

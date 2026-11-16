@@ -138,4 +138,4 @@ Walking the buckets upward gives `1 2 7 9 10`. The second case's $3, 7, 7, 3$ ta
 
 ---
 
-Same problem in rating order (#479 of 486): [../../by-rating/479-CNTSORT.md](../../by-rating/479-CNTSORT.md)
+Same problem in rating order (#722 of 735): [../../by-rating/722-CNTSORT.md](../../by-rating/722-CNTSORT.md)

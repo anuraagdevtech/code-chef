@@ -1,4 +1,4 @@
-[Index](../../README.md)
+[Index](../../README.md) &middot; [498. Lunchtime &rarr;](LUNCHTIM.md)
 
 # 338. Book Exercises
 
@@ -165,4 +165,4 @@ The first pick removes the one book above `mathematics`; the second picks the to
 
 ---
 
-Same problem in rating order (#430 of 486): [../../by-rating/430-BEX.md](../../by-rating/430-BEX.md)
+Same problem in rating order (#451 of 735): [../../by-rating/451-BEX.md](../../by-rating/451-BEX.md)

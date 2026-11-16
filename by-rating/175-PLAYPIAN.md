@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Strings |
 | **Technique** | Validating fixed-size blocks |
-| **CodeChef tags** | `Algorithms`, `Constructive`, `ad-hoc` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(|s|)$ per test case |
 | **Space** | $O(1)$ |

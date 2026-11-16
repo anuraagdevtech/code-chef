@@ -136,4 +136,4 @@ In the first string every character matches at least one neighbour; the trailing
 
 ---
 
-Same problem in rating order (#178 of 486): [../../by-rating/178-ERROR.md](../../by-rating/178-ERROR.md)
+Same problem in rating order (#178 of 735): [../../by-rating/178-ERROR.md](../../by-rating/178-ERROR.md)

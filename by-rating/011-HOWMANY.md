@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Counting digits |
-| **CodeChef tags** | `Special`, `Basic Programming Concepts`, `Mathematics`, `Case work`, `Conditional Statements`, `Basic Math` |
 | **Complexity class** | Logarithmic $O(\log n)$ |
 | **Time** | $O(d)$ |
 | **Space** | $O(d)$ |

@@ -152,8 +152,6 @@ Third sample: $A = 3$, $B = 2$, $C = 1$.
 
 So $X = 3$, and indeed $3 \oplus 3 = 0 < 2 \oplus 3 = 1 < 1 \oplus 3 = 2$.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#273 of 486): [../../by-rating/273-XOR_ORDER.md](../../by-rating/273-XOR_ORDER.md)
+Same problem in rating order (#275 of 735): [../../by-rating/275-XOR_ORDER.md](../../by-rating/275-XOR_ORDER.md)

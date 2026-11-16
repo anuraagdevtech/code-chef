@@ -137,8 +137,6 @@ Since $r + 1 = 2$ is not less than $2$, the window has already ended. $\operator
 | 4 | 1 | 2 | no |
 | 5 | 0 | 0 | **yes** |
 
-> CodeChef tags: `Number Theory`
-
 ---
 
-Same problem in rating order (#383 of 486): [../../by-rating/383-FIND_X.md](../../by-rating/383-FIND_X.md)
+Same problem in rating order (#397 of 735): [../../by-rating/397-FIND_X.md](../../by-rating/397-FIND_X.md)

@@ -131,4 +131,4 @@ A fourth, unsampled case: $N = 7$, $K = 0$ stays at `7` instead of crashing.
 
 ---
 
-Same problem in rating order (#204 of 486): [../../by-rating/204-SMOL.md](../../by-rating/204-SMOL.md)
+Same problem in rating order (#204 of 735): [../../by-rating/204-SMOL.md](../../by-rating/204-SMOL.md)

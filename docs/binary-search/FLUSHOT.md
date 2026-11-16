@@ -163,4 +163,4 @@ Feasible, and person $3$ sits exactly on its bound — so $1.4$ is the answer. O
 
 ---
 
-Same problem in rating order (#402 of 486): [../../by-rating/402-FLUSHOT.md](../../by-rating/402-FLUSHOT.md)
+Same problem in rating order (#420 of 735): [../../by-rating/420-FLUSHOT.md](../../by-rating/420-FLUSHOT.md)

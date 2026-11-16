@@ -116,8 +116,6 @@ main()
 
 Row 1 fills both bags exactly; row 3's tenth bag carries nine.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#76 of 486): [../../by-rating/076-POLYBAGS.md](../../by-rating/076-POLYBAGS.md)
+Same problem in rating order (#76 of 735): [../../by-rating/076-POLYBAGS.md](../../by-rating/076-POLYBAGS.md)

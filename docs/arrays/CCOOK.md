@@ -148,8 +148,6 @@ main()
 
 The last two rows differ in which problems were solved and not in the label.
 
-> CodeChef tags: `Special`, `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#157 of 486): [../../by-rating/157-CCOOK.md](../../by-rating/157-CCOOK.md)
+Same problem in rating order (#157 of 735): [../../by-rating/157-CCOOK.md](../../by-rating/157-CCOOK.md)

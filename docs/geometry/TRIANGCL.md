@@ -215,4 +215,4 @@ Sorted $1, 4, 5$: no two equal, so **Scalene**; and $1 + 4 = 5$ exactly, so **ri
 
 ---
 
-Same problem in rating order (#264 of 486): [../../by-rating/264-TRIANGCL.md](../../by-rating/264-TRIANGCL.md)
+Same problem in rating order (#266 of 735): [../../by-rating/266-TRIANGCL.md](../../by-rating/266-TRIANGCL.md)

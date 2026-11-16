@@ -156,4 +156,4 @@ Four odd, two even. Query $P = 3$ has popcount $2$, even, so the tallies carry o
 
 ---
 
-Same problem in rating order (#367 of 486): [../../by-rating/367-ENGXOR.md](../../by-rating/367-ENGXOR.md)
+Same problem in rating order (#379 of 735): [../../by-rating/379-ENGXOR.md](../../by-rating/379-ENGXOR.md)

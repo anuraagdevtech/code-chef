@@ -137,8 +137,6 @@ main()
 
 (`S` is `START38`, `L` is `LTIME108`.)
 
-> CodeChef tags: `Data Structures`
-
 ---
 
-Same problem in rating order (#93 of 486): [../../by-rating/093-RECENTCONT.md](../../by-rating/093-RECENTCONT.md)
+Same problem in rating order (#93 of 735): [../../by-rating/093-RECENTCONT.md](../../by-rating/093-RECENTCONT.md)

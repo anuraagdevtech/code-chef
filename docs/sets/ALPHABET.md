@@ -145,4 +145,4 @@ Known letters $\{a, c, t\}$.
 
 ---
 
-Same problem in rating order (#170 of 486): [../../by-rating/170-ALPHABET.md](../../by-rating/170-ALPHABET.md)
+Same problem in rating order (#170 of 735): [../../by-rating/170-ALPHABET.md](../../by-rating/170-ALPHABET.md)

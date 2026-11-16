@@ -126,8 +126,6 @@ main()
 | $\{4, 2\}$ | $\{1, 2\}$ | $\{4\}$ | `1` |
 | $\{2, 1\}$ | $\{1, 2\}$ | $\varnothing$ | `0` |
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#79 of 486): [../../by-rating/079-CHEFRACES.md](../../by-rating/079-CHEFRACES.md)
+Same problem in rating order (#79 of 735): [../../by-rating/079-CHEFRACES.md](../../by-rating/079-CHEFRACES.md)

@@ -145,8 +145,6 @@ Third sample: $N = 5$, $S = $ `aabcd`, so $N \bmod 3 = 2$.
 
 Output `YES`: removing positions $3,4,5$ leaves `aa`, a palindrome.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#406 of 486): [../../by-rating/406-BLAST3.md](../../by-rating/406-BLAST3.md)
+Same problem in rating order (#425 of 735): [../../by-rating/425-BLAST3.md](../../by-rating/425-BLAST3.md)

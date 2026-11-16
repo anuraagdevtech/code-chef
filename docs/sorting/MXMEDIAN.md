@@ -167,4 +167,4 @@ $B = 5, 6, 4$, whose median is `5` $= A_{2N-k} = A_4$. The two largest values ea
 
 ---
 
-Same problem in rating order (#308 of 486): [../../by-rating/308-MXMEDIAN.md](../../by-rating/308-MXMEDIAN.md)
+Same problem in rating order (#312 of 735): [../../by-rating/312-MXMEDIAN.md](../../by-rating/312-MXMEDIAN.md)

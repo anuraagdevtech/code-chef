@@ -151,8 +151,6 @@ Second sample: $K = 3$ with strings `000`, `010`, `011`, `100`.
 
 Output `NO`. The value $j = 1$ (binary `001`) is unreachable, since every element containing that bit — namely `011` — also carries another bit that no OR can remove.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
-
 ---
 
-Same problem in rating order (#375 of 486): [../../by-rating/375-ALIENOR.md](../../by-rating/375-ALIENOR.md)
+Same problem in rating order (#389 of 735): [../../by-rating/389-ALIENOR.md](../../by-rating/389-ALIENOR.md)

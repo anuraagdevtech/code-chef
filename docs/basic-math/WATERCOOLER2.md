@@ -120,8 +120,6 @@ main()
 | 5 | 12 | 11 | 2 | $2 \times 5 = 10 < 12$ | `2` |
 | 5 | 5 | 4 | 0 | $1 \times 5 = 5 \not< 5$ | `0` |
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#94 of 486): [../../by-rating/094-WATERCOOLER2.md](../../by-rating/094-WATERCOOLER2.md)
+Same problem in rating order (#94 of 735): [../../by-rating/094-WATERCOOLER2.md](../../by-rating/094-WATERCOOLER2.md)

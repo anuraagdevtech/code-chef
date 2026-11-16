@@ -142,8 +142,6 @@ main()
 
 Row 1 is the one where the clock and the result disagree.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#115 of 486): [../../by-rating/115-CHEFCONTEST.md](../../by-rating/115-CHEFCONTEST.md)
+Same problem in rating order (#115 of 735): [../../by-rating/115-CHEFCONTEST.md](../../by-rating/115-CHEFCONTEST.md)

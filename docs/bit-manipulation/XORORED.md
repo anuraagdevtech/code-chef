@@ -143,4 +143,4 @@ With $X = 4$: $0$ and $2$, OR $= 2$. With the sample's $X = 6$: $2$ and $0$, OR 
 
 ---
 
-Same problem in rating order (#362 of 486): [../../by-rating/362-XORORED.md](../../by-rating/362-XORORED.md)
+Same problem in rating order (#373 of 735): [../../by-rating/373-XORORED.md](../../by-rating/373-XORORED.md)

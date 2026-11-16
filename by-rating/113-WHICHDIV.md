@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Conditionals & Case Work |
 | **Technique** | Ordered threshold ladder |
-| **CodeChef tags** | `Algorithms`, `Implementation` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

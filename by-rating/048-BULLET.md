@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Working backwards from a deadline |
-| **CodeChef tags** | `Special`, `Mathematics`, `Physics`, `Basic Math` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

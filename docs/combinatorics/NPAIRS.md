@@ -138,4 +138,4 @@ The `down` key $1$ holds all three indices, giving $\binom{3}{2} = 3$ pairs; the
 
 ---
 
-Same problem in rating order (#330 of 486): [../../by-rating/330-NPAIRS.md](../../by-rating/330-NPAIRS.md)
+Same problem in rating order (#335 of 735): [../../by-rating/335-NPAIRS.md](../../by-rating/335-NPAIRS.md)

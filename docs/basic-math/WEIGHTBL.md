@@ -138,4 +138,4 @@ main()
 
 ---
 
-Same problem in rating order (#166 of 486): [../../by-rating/166-WEIGHTBL.md](../../by-rating/166-WEIGHTBL.md)
+Same problem in rating order (#166 of 735): [../../by-rating/166-WEIGHTBL.md](../../by-rating/166-WEIGHTBL.md)

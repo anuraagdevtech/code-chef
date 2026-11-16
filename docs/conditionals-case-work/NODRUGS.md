@@ -146,4 +146,4 @@ Row 3 could take up to $99$ units, but every one of them would cost $10$ speed.
 
 ---
 
-Same problem in rating order (#241 of 486): [../../by-rating/241-NODRUGS.md](../../by-rating/241-NODRUGS.md)
+Same problem in rating order (#243 of 735): [../../by-rating/243-NODRUGS.md](../../by-rating/243-NODRUGS.md)

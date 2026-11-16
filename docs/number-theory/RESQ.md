@@ -137,4 +137,4 @@ main()
 
 ---
 
-Same problem in rating order (#208 of 486): [../../by-rating/208-RESQ.md](../../by-rating/208-RESQ.md)
+Same problem in rating order (#208 of 735): [../../by-rating/208-RESQ.md](../../by-rating/208-RESQ.md)

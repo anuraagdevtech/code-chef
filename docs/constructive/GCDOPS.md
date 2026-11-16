@@ -139,8 +139,6 @@ main()
 
 For the second row, $A_4$ is set by pairing index $4$ with index $2$: $\gcd(4, 2) = 2$, and index $2$ stays at $2$.
 
-> CodeChef tags: `Mathematics`, `Number Theory`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#263 of 486): [../../by-rating/263-GCDOPS.md](../../by-rating/263-GCDOPS.md)
+Same problem in rating order (#265 of 735): [../../by-rating/265-GCDOPS.md](../../by-rating/265-GCDOPS.md)

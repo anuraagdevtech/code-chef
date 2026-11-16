@@ -158,8 +158,6 @@ Second sample: six jobs of cost $1$, total $6$.
 
 Output `3`, at the balanced cut.
 
-> CodeChef tags: `Algorithms`, `Simple Algos`
-
 ---
 
-Same problem in rating order (#242 of 486): [../../by-rating/242-PLPROCESS.md](../../by-rating/242-PLPROCESS.md)
+Same problem in rating order (#244 of 735): [../../by-rating/244-PLPROCESS.md](../../by-rating/244-PLPROCESS.md)

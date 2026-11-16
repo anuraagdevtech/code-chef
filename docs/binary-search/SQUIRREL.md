@@ -165,4 +165,4 @@ Output `4`.
 
 ---
 
-Same problem in rating order (#350 of 486): [../../by-rating/350-SQUIRREL.md](../../by-rating/350-SQUIRREL.md)
+Same problem in rating order (#358 of 735): [../../by-rating/358-SQUIRREL.md](../../by-rating/358-SQUIRREL.md)

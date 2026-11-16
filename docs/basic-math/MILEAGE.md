@@ -140,4 +140,4 @@ $N$ appears in none of the columns, because it cancels.
 
 ---
 
-Same problem in rating order (#102 of 486): [../../by-rating/102-MILEAGE.md](../../by-rating/102-MILEAGE.md)
+Same problem in rating order (#102 of 735): [../../by-rating/102-MILEAGE.md](../../by-rating/102-MILEAGE.md)

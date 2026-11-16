@@ -140,8 +140,6 @@ main()
 | 0 | 10000001 | odd | positive odd | `1` | $a = d$ |
 | 0 | 4 | 4 | $\equiv 0 \pmod 4$ | 3 | $a = 3$, $b = 2$: $0 \to 3 \to 6 \to 4$ |
 
-> CodeChef tags: `Special`, `Basic Programming Concepts`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#451 of 486): [../../by-rating/451-EOOPR.md](../../by-rating/451-EOOPR.md)
+Same problem in rating order (#474 of 735): [../../by-rating/474-EOOPR.md](../../by-rating/474-EOOPR.md)

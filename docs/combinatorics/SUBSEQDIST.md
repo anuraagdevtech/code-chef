@@ -158,8 +158,6 @@ main()
 
 For the first row, two operations give the three $3$s the codes $00$, $01$, $10$ — enough to separate them.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#438 of 486): [../../by-rating/438-SUBSEQDIST.md](../../by-rating/438-SUBSEQDIST.md)
+Same problem in rating order (#461 of 735): [../../by-rating/461-SUBSEQDIST.md](../../by-rating/461-SUBSEQDIST.md)

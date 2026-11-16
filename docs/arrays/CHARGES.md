@@ -157,8 +157,6 @@ $N = 3$, $S = $ `010`, so $2(N-1) = 4$.
 
 The last state has both gaps opposite, so each costs $1$.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#377 of 486): [../../by-rating/377-CHARGES.md](../../by-rating/377-CHARGES.md)
+Same problem in rating order (#391 of 735): [../../by-rating/391-CHARGES.md](../../by-rating/391-CHARGES.md)

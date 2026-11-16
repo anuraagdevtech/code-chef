@@ -127,8 +127,6 @@ main()
 
 Row 1 is the one the clamp exists for.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#46 of 486): [../../by-rating/046-FINDSHOES.md](../../by-rating/046-FINDSHOES.md)
+Same problem in rating order (#46 of 735): [../../by-rating/046-FINDSHOES.md](../../by-rating/046-FINDSHOES.md)

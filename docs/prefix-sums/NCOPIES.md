@@ -1,4 +1,4 @@
-[&larr; 471. Fair Distribution](FAIR_DISTRIB.md) &middot; [Index](../../README.md)
+[&larr; 471. Fair Distribution](FAIR_DISTRIB.md) &middot; [Index](../../README.md) &middot; [497. Triplets &rarr;](SUMQ.md)
 
 # 476. Copy and Paste
 
@@ -165,8 +165,6 @@ With $\text{ones} = 2$, the base copy is $\lfloor 3/2 \rfloor = 1$:
 
 Output `2` — the good indices are $4$ and $5$.
 
-> CodeChef tags: `Data Structures`, `Mathematics`, `Algorithms`, `Searching`, `Simple Algos`
-
 ---
 
-Same problem in rating order (#448 of 486): [../../by-rating/448-NCOPIES.md](../../by-rating/448-NCOPIES.md)
+Same problem in rating order (#471 of 735): [../../by-rating/471-NCOPIES.md](../../by-rating/471-NCOPIES.md)

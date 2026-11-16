@@ -172,8 +172,6 @@ Last sample: $B = 1, 3, 2, 3, 2, 2, 2, 3$.
 
 Output `1 2 3 2 3 4 4 2`.
 
-> CodeChef tags: `Data Structures`, `Arrays`, `Algorithms`, `Sorting`
-
 ---
 
-Same problem in rating order (#385 of 486): [../../by-rating/385-FREQARRRET.md](../../by-rating/385-FREQARRRET.md)
+Same problem in rating order (#399 of 735): [../../by-rating/399-FREQARRRET.md](../../by-rating/399-FREQARRRET.md)

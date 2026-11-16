@@ -133,8 +133,6 @@ Values $4, 9, 1, 32, 13$, sorted to $1, 4, 9, 13, 32$.
 
 Output `3`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#186 of 486): [../../by-rating/186-HORSES.md](../../by-rating/186-HORSES.md)
+Same problem in rating order (#186 of 735): [../../by-rating/186-HORSES.md](../../by-rating/186-HORSES.md)

@@ -127,8 +127,6 @@ main()
 
 Size $3$ is impossible for $N = 4$ because $3^2 = 9 > 4$; size $1$ is impossible because $4$ is not odd.
 
-> CodeChef tags: `Algorithms`, `Searching`
-
 ---
 
-Same problem in rating order (#387 of 486): [../../by-rating/387-CHEFPRODUCT.md](../../by-rating/387-CHEFPRODUCT.md)
+Same problem in rating order (#402 of 735): [../../by-rating/402-CHEFPRODUCT.md](../../by-rating/402-CHEFPRODUCT.md)

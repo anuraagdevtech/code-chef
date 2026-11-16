@@ -194,4 +194,4 @@ Output `Yes` then `2`: one switch down at column 1 and one back up at column 4.
 
 ---
 
-Same problem in rating order (#333 of 486): [../../by-rating/333-GRGUY.md](../../by-rating/333-GRGUY.md)
+Same problem in rating order (#338 of 735): [../../by-rating/338-GRGUY.md](../../by-rating/338-GRGUY.md)

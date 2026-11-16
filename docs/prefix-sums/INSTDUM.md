@@ -151,8 +151,6 @@ First sample, runs $1, 0, 2, 3$:
 
 Two matches, so the output is `2`. The third sample ($1,1,1$) matches at every ball, giving `3`.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#127 of 486): [../../by-rating/127-INSTDUM.md](../../by-rating/127-INSTDUM.md)
+Same problem in rating order (#127 of 735): [../../by-rating/127-INSTDUM.md](../../by-rating/127-INSTDUM.md)

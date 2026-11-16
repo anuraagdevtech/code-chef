@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Exact integer square root |
-| **CodeChef tags** | `Basic Programming Concepts`, `Inbuilt functions` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case in practice |
 | **Space** | $O(1)$ |

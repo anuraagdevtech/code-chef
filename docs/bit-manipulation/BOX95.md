@@ -165,8 +165,6 @@ Third sample: $A = 6, 5, 4$. The maximum is $6$, whose top bit is $4$.
 
 Three top-bit elements, so $\lceil 3/2 \rceil = $ `2` boxes — for instance $\{6, 5\}$ (XOR $6 \geq 5$, then $3$) and $\{4\}$.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
-
 ---
 
-Same problem in rating order (#399 of 486): [../../by-rating/399-BOX95.md](../../by-rating/399-BOX95.md)
+Same problem in rating order (#417 of 735): [../../by-rating/417-BOX95.md](../../by-rating/417-BOX95.md)

@@ -121,8 +121,6 @@ main()
 
 Row 1 is the exact fit; row 4's fourth trip carries just one candy.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#55 of 486): [../../by-rating/055-FILLCANDIES.md](../../by-rating/055-FILLCANDIES.md)
+Same problem in rating order (#55 of 735): [../../by-rating/055-FILLCANDIES.md](../../by-rating/055-FILLCANDIES.md)

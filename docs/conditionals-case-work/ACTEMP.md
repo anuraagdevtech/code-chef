@@ -134,8 +134,6 @@ main()
 
 Row 3 is the tight fit; row 4 fails on both lower bounds at once.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#29 of 486): [../../by-rating/029-ACTEMP.md](../../by-rating/029-ACTEMP.md)
+Same problem in rating order (#29 of 735): [../../by-rating/029-ACTEMP.md](../../by-rating/029-ACTEMP.md)

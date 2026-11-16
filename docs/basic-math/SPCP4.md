@@ -140,4 +140,4 @@ Row 3 has an empty second group.
 
 ---
 
-Same problem in rating order (#150 of 486): [../../by-rating/150-SPCP4.md](../../by-rating/150-SPCP4.md)
+Same problem in rating order (#150 of 735): [../../by-rating/150-SPCP4.md](../../by-rating/150-SPCP4.md)

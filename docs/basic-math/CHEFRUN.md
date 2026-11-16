@@ -131,8 +131,6 @@ main()
 | 1 | 5 | 2 | 1 | 2 | 2 | 3 | `Chef` |
 | 1 | 5 | 3 | 2 | 2 | 4 | 4 | `Draw` |
 
-> CodeChef tags: `Special`
-
 ---
 
-Same problem in rating order (#125 of 486): [../../by-rating/125-CHEFRUN.md](../../by-rating/125-CHEFRUN.md)
+Same problem in rating order (#125 of 735): [../../by-rating/125-CHEFRUN.md](../../by-rating/125-CHEFRUN.md)

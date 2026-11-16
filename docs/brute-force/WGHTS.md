@@ -131,8 +131,6 @@ Row 1: $W = 5$ with weights $2, 1, 6$. All seven subset sums:
 
 $5$ appears nowhere, so `NO`. Row 2 ($W = 7$ from $9, 7, 2$) matches the singleton $\{7\}$, and row 3 ($W = 20$ from $8, 10, 12$) matches $\{8, 12\}$.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#61 of 486): [../../by-rating/061-WGHTS.md](../../by-rating/061-WGHTS.md)
+Same problem in rating order (#61 of 735): [../../by-rating/061-WGHTS.md](../../by-rating/061-WGHTS.md)

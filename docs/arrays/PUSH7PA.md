@@ -141,4 +141,4 @@ Output `3`. Note the two $1$s reach as high as the lone $2$.
 
 ---
 
-Same problem in rating order (#194 of 486): [../../by-rating/194-PUSH7PA.md](../../by-rating/194-PUSH7PA.md)
+Same problem in rating order (#194 of 735): [../../by-rating/194-PUSH7PA.md](../../by-rating/194-PUSH7PA.md)

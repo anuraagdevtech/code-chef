@@ -134,8 +134,6 @@ main()
 | 7 | 2 | 7 | 2 | 14 | 14 | neither | `0` |
 | 1 | 5 | 3 | 2 | 15 | 2 | second | `1` |
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#112 of 486): [../../by-rating/112-CARCHOICE.md](../../by-rating/112-CARCHOICE.md)
+Same problem in rating order (#112 of 735): [../../by-rating/112-CARCHOICE.md](../../by-rating/112-CARCHOICE.md)

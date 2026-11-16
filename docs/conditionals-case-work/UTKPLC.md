@@ -125,8 +125,6 @@ main()
 
 The second row is the one that defeats a fixed alphabetical ranking.
 
-> CodeChef tags: `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#124 of 486): [../../by-rating/124-UTKPLC.md](../../by-rating/124-UTKPLC.md)
+Same problem in rating order (#124 of 735): [../../by-rating/124-UTKPLC.md](../../by-rating/124-UTKPLC.md)

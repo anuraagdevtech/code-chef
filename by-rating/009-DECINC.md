@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Conditionals & Case Work |
 | **Technique** | Single divisibility branch |
-| **CodeChef tags** | `Basic Programming Concepts`, `Conditional Statements` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ |
 | **Space** | $O(1)$ |

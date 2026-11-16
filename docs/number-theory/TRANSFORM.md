@@ -130,8 +130,6 @@ The cycle, written from the starting state: index $0$ `NORMAL`, $1$ `HUGE`, $2$ 
 | 4 | 1 | HUGE | `HUGE` |
 | 12 | 0 | NORMAL | `NORMAL` |
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#47 of 486): [../../by-rating/047-TRANSFORM.md](../../by-rating/047-TRANSFORM.md)
+Same problem in rating order (#47 of 735): [../../by-rating/047-TRANSFORM.md](../../by-rating/047-TRANSFORM.md)

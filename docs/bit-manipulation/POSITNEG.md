@@ -179,8 +179,6 @@ First sample: $B = +1, -1, +1, +1$, so $C = 1, -2, 4, 8$.
 
 $P - Q = 6$, so the output is `6`. For instance $C_1 + C_2 = -1 < 0$, matching $B_2 = -1$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#311 of 486): [../../by-rating/311-POSITNEG.md](../../by-rating/311-POSITNEG.md)
+Same problem in rating order (#315 of 735): [../../by-rating/315-POSITNEG.md](../../by-rating/315-POSITNEG.md)

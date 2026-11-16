@@ -121,8 +121,6 @@ Table, clockwise from the start: $0$ `North`, $1$ `East`, $2$ `South`, $3$ `West
 | 3 | 3 | `West` |
 | 6 | 2 | `South` |
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#122 of 486): [../../by-rating/122-FACEDIR.md](../../by-rating/122-FACEDIR.md)
+Same problem in rating order (#122 of 735): [../../by-rating/122-FACEDIR.md](../../by-rating/122-FACEDIR.md)

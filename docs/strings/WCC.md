@@ -158,8 +158,6 @@ main()
 
 Row 3 ties on points because $C = N = 4$.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#146 of 486): [../../by-rating/146-WCC.md](../../by-rating/146-WCC.md)
+Same problem in rating order (#146 of 735): [../../by-rating/146-WCC.md](../../by-rating/146-WCC.md)

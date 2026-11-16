@@ -121,8 +121,6 @@ main()
 
 Row 1 is the case that pins the numbering down.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#64 of 486): [../../by-rating/064-CHEFEREN.md](../../by-rating/064-CHEFEREN.md)
+Same problem in rating order (#64 of 735): [../../by-rating/064-CHEFEREN.md](../../by-rating/064-CHEFEREN.md)

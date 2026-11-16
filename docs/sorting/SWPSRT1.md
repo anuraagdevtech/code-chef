@@ -136,4 +136,4 @@ One swap, so the output is `1` then `0 2`.
 
 ---
 
-Same problem in rating order (#486 of 486): [../../by-rating/486-SWPSRT1.md](../../by-rating/486-SWPSRT1.md)
+Same problem in rating order (#734 of 735): [../../by-rating/734-SWPSRT1.md](../../by-rating/734-SWPSRT1.md)

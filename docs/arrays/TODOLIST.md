@@ -146,8 +146,6 @@ main()
 
 Row 2 shows $999$ staying and $1000$ going — the boundary in one line.
 
-> CodeChef tags: `Data Structures`
-
 ---
 
-Same problem in rating order (#28 of 486): [../../by-rating/028-TODOLIST.md](../../by-rating/028-TODOLIST.md)
+Same problem in rating order (#28 of 735): [../../by-rating/028-TODOLIST.md](../../by-rating/028-TODOLIST.md)

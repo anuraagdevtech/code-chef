@@ -146,8 +146,6 @@ main()
 
 For $N = 7$ the child is a triangle on every second vertex; its own child would have one vertex, so the chain ends.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#261 of 486): [../../by-rating/261-POLYREL.md](../../by-rating/261-POLYREL.md)
+Same problem in rating order (#263 of 735): [../../by-rating/263-POLYREL.md](../../by-rating/263-POLYREL.md)

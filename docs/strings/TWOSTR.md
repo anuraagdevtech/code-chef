@@ -135,4 +135,4 @@ All five columns pass, so `s?or?` against `sco??` is `Yes`. Replacing index $1$ 
 
 ---
 
-Same problem in rating order (#189 of 486): [../../by-rating/189-TWOSTR.md](../../by-rating/189-TWOSTR.md)
+Same problem in rating order (#189 of 735): [../../by-rating/189-TWOSTR.md](../../by-rating/189-TWOSTR.md)

@@ -150,8 +150,6 @@ main()
 
 For the first row, one troop takes `aaaa` (positions $1, 4, 7, 8$) and a second takes the remaining `bbbb`.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#291 of 486): [../../by-rating/291-HHAL.md](../../by-rating/291-HHAL.md)
+Same problem in rating order (#293 of 735): [../../by-rating/293-HHAL.md](../../by-rating/293-HHAL.md)

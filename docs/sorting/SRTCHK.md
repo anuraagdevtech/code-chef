@@ -135,4 +135,4 @@ main()
 
 ---
 
-Same problem in rating order (#484 of 486): [../../by-rating/484-SRTCHK.md](../../by-rating/484-SRTCHK.md)
+Same problem in rating order (#732 of 735): [../../by-rating/732-SRTCHK.md](../../by-rating/732-SRTCHK.md)

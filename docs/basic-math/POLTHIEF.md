@@ -125,8 +125,6 @@ main()
 
 Row 2 has the gap the other way round, which the absolute value absorbs.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#43 of 486): [../../by-rating/043-POLTHIEF.md](../../by-rating/043-POLTHIEF.md)
+Same problem in rating order (#43 of 735): [../../by-rating/043-POLTHIEF.md](../../by-rating/043-POLTHIEF.md)

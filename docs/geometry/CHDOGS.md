@@ -134,8 +134,6 @@ main()
 
 Each dog's velocity has a component $v\cos 120^\circ = -v/2$ along the line to its target, so the gap of $s$ shrinks at $1.5v$ throughout.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#271 of 486): [../../by-rating/271-CHDOGS.md](../../by-rating/271-CHDOGS.md)
+Same problem in rating order (#273 of 735): [../../by-rating/273-CHDOGS.md](../../by-rating/273-CHDOGS.md)

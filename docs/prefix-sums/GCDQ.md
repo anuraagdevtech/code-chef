@@ -170,4 +170,4 @@ Sample: $A = 2, 6, 9$.
 
 ---
 
-Same problem in rating order (#393 of 486): [../../by-rating/393-GCDQ.md](../../by-rating/393-GCDQ.md)
+Same problem in rating order (#411 of 735): [../../by-rating/411-GCDQ.md](../../by-rating/411-GCDQ.md)

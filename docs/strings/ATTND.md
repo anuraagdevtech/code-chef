@@ -137,4 +137,4 @@ The first line needs the count from the fourth, which is why one pass is not eno
 
 ---
 
-Same problem in rating order (#172 of 486): [../../by-rating/172-ATTND.md](../../by-rating/172-ATTND.md)
+Same problem in rating order (#172 of 735): [../../by-rating/172-ATTND.md](../../by-rating/172-ATTND.md)

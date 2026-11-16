@@ -1,4 +1,4 @@
-[&larr; 413. Fire Escape Routes](FIRESC.md) &middot; [Index](../../README.md)
+[&larr; 413. Fire Escape Routes](FIRESC.md) &middot; [Index](../../README.md) &middot; [504. Capital Movement &rarr;](CAPIMOVE.md)
 
 # 486. Maximum Size
 
@@ -196,4 +196,4 @@ Chef's total is `2`.
 
 ---
 
-Same problem in rating order (#473 of 486): [../../by-rating/473-RISK.md](../../by-rating/473-RISK.md)
+Same problem in rating order (#612 of 735): [../../by-rating/612-RISK.md](../../by-rating/612-RISK.md)

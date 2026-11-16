@@ -166,8 +166,6 @@ main()
 
 For $X = 3$: $9 = 3^2$ is a square, $3 \cdot 5 = 15$ is composite, non-square, and its only factors are $1, 3, 5, 15$ — none below $3$.
 
-> CodeChef tags: `Mathematics`, `Number Theory`
-
 ---
 
-Same problem in rating order (#374 of 486): [../../by-rating/374-NUMHUNT.md](../../by-rating/374-NUMHUNT.md)
+Same problem in rating order (#387 of 735): [../../by-rating/387-NUMHUNT.md](../../by-rating/387-NUMHUNT.md)

@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Sets |
 | **Technique** | Union of a fixed set with input values |
-| **CodeChef tags** | `Basic Programming Concepts`, `Mathematics`, `Basic Math`, `Loops`, `Arithmetic` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(N)$ |

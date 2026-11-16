@@ -159,8 +159,6 @@ Sample: a $3 \times 3$ matrix with $1$s at $(1,2)$ and $(3,3)$.
 | $(2,2)$ | column 2 has one | 1 |
 | $(1,2)$ | already a $1$ | 0 |
 
-> CodeChef tags: `Data Structures`, `Arrays`, `Mathematics`, `Bit Manipulation`, `Algorithms`
-
 ---
 
-Same problem in rating order (#386 of 486): [../../by-rating/386-ORMATRIX.md](../../by-rating/386-ORMATRIX.md)
+Same problem in rating order (#400 of 735): [../../by-rating/400-ORMATRIX.md](../../by-rating/400-ORMATRIX.md)

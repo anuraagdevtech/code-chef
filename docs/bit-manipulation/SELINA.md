@@ -132,4 +132,4 @@ main()
 
 ---
 
-Same problem in rating order (#483 of 486): [../../by-rating/483-SELINA.md](../../by-rating/483-SELINA.md)
+Same problem in rating order (#730 of 735): [../../by-rating/730-SELINA.md](../../by-rating/730-SELINA.md)

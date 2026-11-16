@@ -129,8 +129,6 @@ main()
 
 Row 1 divides evenly by $M$ and still fails, which is the point.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#52 of 486): [../../by-rating/052-CANDYDIST.md](../../by-rating/052-CANDYDIST.md)
+Same problem in rating order (#52 of 735): [../../by-rating/052-CANDYDIST.md](../../by-rating/052-CANDYDIST.md)

@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Counting two categories in one pass |
-| **CodeChef tags** | `Data Structures`, `Arrays` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

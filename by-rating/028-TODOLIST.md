@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Counting with a predicate |
-| **CodeChef tags** | `Data Structures`, `Arrays` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

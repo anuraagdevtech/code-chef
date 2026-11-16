@@ -200,4 +200,4 @@ Maximum is `2`.
 
 ---
 
-Same problem in rating order (#334 of 486): [../../by-rating/334-MAXCROSS.md](../../by-rating/334-MAXCROSS.md)
+Same problem in rating order (#339 of 735): [../../by-rating/339-MAXCROSS.md](../../by-rating/339-MAXCROSS.md)

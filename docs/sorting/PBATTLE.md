@@ -161,8 +161,6 @@ Fourth sample: ground powers $2, 3, 5, 4, 1$ and water powers $4, 2, 1, 5, 6$.
 
 Output `3`. Trainer $5$ is weakest on the ground but strongest in the water, so nobody dominates it in both.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#440 of 486): [../../by-rating/440-PBATTLE.md](../../by-rating/440-PBATTLE.md)
+Same problem in rating order (#463 of 735): [../../by-rating/463-PBATTLE.md](../../by-rating/463-PBATTLE.md)

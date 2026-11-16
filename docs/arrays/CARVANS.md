@@ -164,4 +164,4 @@ Output `2`.
 
 ---
 
-Same problem in rating order (#193 of 486): [../../by-rating/193-CARVANS.md](../../by-rating/193-CARVANS.md)
+Same problem in rating order (#193 of 735): [../../by-rating/193-CARVANS.md](../../by-rating/193-CARVANS.md)

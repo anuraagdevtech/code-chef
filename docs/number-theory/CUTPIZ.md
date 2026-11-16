@@ -151,8 +151,6 @@ Second sample: cuts at $90^\circ$ and $210^\circ$.
 
 The missing cut is at $330^\circ$, completing three $120^\circ$ slices.
 
-> CodeChef tags: `Mathematics`, `Number Theory`, `Algorithms`
-
 ---
 
-Same problem in rating order (#256 of 486): [../../by-rating/256-CUTPIZ.md](../../by-rating/256-CUTPIZ.md)
+Same problem in rating order (#258 of 735): [../../by-rating/258-CUTPIZ.md](../../by-rating/258-CUTPIZ.md)

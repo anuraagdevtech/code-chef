@@ -163,4 +163,4 @@ Index $\min(K, N-1) = 2$ (0-based) gives `4`.
 
 ---
 
-Same problem in rating order (#218 of 486): [../../by-rating/218-MAXTHEMIN.md](../../by-rating/218-MAXTHEMIN.md)
+Same problem in rating order (#219 of 735): [../../by-rating/219-MAXTHEMIN.md](../../by-rating/219-MAXTHEMIN.md)

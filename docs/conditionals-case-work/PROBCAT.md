@@ -134,4 +134,4 @@ The untested boundaries behave as $100 \to$ `Medium` and $200 \to$ `Hard`.
 
 ---
 
-Same problem in rating order (#111 of 486): [../../by-rating/111-PROBCAT.md](../../by-rating/111-PROBCAT.md)
+Same problem in rating order (#111 of 735): [../../by-rating/111-PROBCAT.md](../../by-rating/111-PROBCAT.md)

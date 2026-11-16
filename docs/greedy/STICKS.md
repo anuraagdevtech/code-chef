@@ -145,8 +145,6 @@ Pair lengths sorted descending: $2, 1$ → area $2 \times 1 = $ `2`.
 
 The second sample has counts $\{1{:}1, 2{:}2, 3{:}1\}$, so only one pair exists and the output is `-1`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#191 of 486): [../../by-rating/191-STICKS.md](../../by-rating/191-STICKS.md)
+Same problem in rating order (#191 of 735): [../../by-rating/191-STICKS.md](../../by-rating/191-STICKS.md)

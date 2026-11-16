@@ -133,8 +133,6 @@ Weekend days: $6, 7, 13, 14, 20, 21, 27, 28$ — eight of them.
 | $23, 1, 6$ | $6$ | $23, 1$ | `10` |
 | $13$ | $13$ | none | `8` |
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#133 of 486): [../../by-rating/133-SUNDAY.md](../../by-rating/133-SUNDAY.md)
+Same problem in rating order (#133 of 735): [../../by-rating/133-SUNDAY.md](../../by-rating/133-SUNDAY.md)

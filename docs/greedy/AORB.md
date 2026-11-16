@@ -164,4 +164,4 @@ In each pair the problem solved second pays for the first one's time; rows 3 and
 
 ---
 
-Same problem in rating order (#73 of 486): [../../by-rating/073-AORB.md](../../by-rating/073-AORB.md)
+Same problem in rating order (#73 of 735): [../../by-rating/073-AORB.md](../../by-rating/073-AORB.md)

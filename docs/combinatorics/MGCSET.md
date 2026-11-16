@@ -138,8 +138,6 @@ main()
 
 The only good subsequence in the second row is $[3]$ itself.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#270 of 486): [../../by-rating/270-MGCSET.md](../../by-rating/270-MGCSET.md)
+Same problem in rating order (#272 of 735): [../../by-rating/272-MGCSET.md](../../by-rating/272-MGCSET.md)

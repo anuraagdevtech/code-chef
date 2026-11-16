@@ -121,8 +121,6 @@ main()
 
 The three sample rows exercise all three branches in turn.
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#8 of 486): [../../by-rating/008-CHOPRT.md](../../by-rating/008-CHOPRT.md)
+Same problem in rating order (#8 of 735): [../../by-rating/008-CHOPRT.md](../../by-rating/008-CHOPRT.md)

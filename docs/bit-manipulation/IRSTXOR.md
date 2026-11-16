@@ -136,8 +136,6 @@ Sample: $C = 13 = 1101_2$, so $d = 4$ and both factors are below $16$.
 
 $A = 1010_2 = 10$, $B = 0111_2 = 7$, and $10 \oplus 7 = 13$ with product `70`.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#287 of 486): [../../by-rating/287-IRSTXOR.md](../../by-rating/287-IRSTXOR.md)
+Same problem in rating order (#289 of 735): [../../by-rating/289-IRSTXOR.md](../../by-rating/289-IRSTXOR.md)

@@ -125,8 +125,6 @@ main()
 
 Row 2 is the one the clamp exists for.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#23 of 486): [../../by-rating/023-CHEFCAND.md](../../by-rating/023-CHEFCAND.md)
+Same problem in rating order (#23 of 735): [../../by-rating/023-CHEFCAND.md](../../by-rating/023-CHEFCAND.md)

@@ -2,35 +2,37 @@
 
 # CodeChef - Become 5 Star roadmap
 
-Worked documentation for every problem I have solved on the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, its constraints, an explained Python solution, the time and space complexity, the topic or data structure it belongs to, the edge cases that decide the problem, and a dry run on a sample.
+Worked Python solutions for the CodeChef [Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: the question, constraints, approach, runnable code, complexity, edge cases, and a dry run.
 
-**486 of 486 solved problems documented.**
+**735 of 735 distinct roadmap problems documented.** **0 remain.** See [remaining problems](REMAINING.md).
 
 ## Roadmap progress
 
-| Level | Course | Solved | Total | Files here |
+| Level | Course | Documented distinct problems | Distinct problems | Course slots |
 |---|---|---:|---:|---:|
 | 1 | 500 to 1000 difficulty rating | 156 | 156 | 156 |
-| 2 | Level up from 1* to 2* | 66 | 66 | 63 |
+| 2 | Level up from 1* to 2* | 63 | 63 | 66 |
 | 2 | 1400 to 1600 difficulty problems | 85 | 85 | 85 |
-| 3 | Jump from 2* to 3* | 96 | 96 | 84 |
-| 3 | 1600 to 1800 difficulty problems | 98 | 128 | 97 |
-| 4 | Rise from 3* to 4* | 1 | 118 | 1 |
-| 5 | 2000 to 2500 difficulty problems | 0 | 112 | 0 |
-| | **Total** | **502** | **761** | **486** |
+| 3 | Jump from 2* to 3* | 92 | 92 | 96 |
+| 3 | 1600 to 1800 difficulty problems | 128 | 128 | 128 |
+| 4 | Rise from 3* to 4* | 118 | 118 | 118 |
+| 5 | 2000 to 2500 difficulty problems | 112 | 112 | 112 |
+| | **Total, deduplicated across courses** | **735** | **735** | **761** |
 
-The roadmap headline counts **502 solved entries**, but that sums a per-course counter and a problem can hold more than one slot. Deduplicated it is **486 distinct problems**, which is what is documented here: 7 problems occupy two slots inside a single course and 19 are listed in two different courses. A problem listed in two courses is written up once and filed under one of them, which is why the per-course **Files here** column can sit below that course's **Solved** count while the totals still agree. Run `python3 tools/reconcile_counts.py` to reproduce the breakdown.
+Course slots can repeat a problem within one course or across courses. Each distinct problem is implemented and documented once.
+
+The saved CodeChef profile snapshot for `anuraag_147` was harvested on 2026-10-21: **502 solved course entries** and **486 distinct accepted problems**. That snapshot is retained in `data/all_solved.txt` and `data/roadmap_index.json`. New local solutions are tracked separately in `data/completed.txt`; they have not been submitted to CodeChef and do not change the account snapshot. Run `python3 tools/reconcile_counts.py` to audit the original counts.
 
 ## Views
 
 Every problem is written up once and rendered into two views, which carry the same six sections and cross-link to each other.
 
 - **[By topic](#problems-by-topic)** - the index below, and `docs/<topic>/<CODE>.md`.
-- **[By rating](by-rating/README.md)** - the same 486 problems numbered `001`-`486` in difficulty order, so a plain directory listing runs easiest to hardest.
+- **[By rating](by-rating/README.md)** - the same 735 problems numbered `001`-`735` in difficulty order, so a plain directory listing runs easiest to hardest.
 
 ## Problems by topic
 
-<details open><summary><b>Arrays</b> (44)</summary>
+<details open><summary><b>Arrays</b> (53)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -78,10 +80,19 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 453 | [Matchsticks](docs/arrays/MSTICK.md) | 1714 | Sparse-table range min and max with end aggregates | $O(N \log N + Q)$ |
 | 460 | [Box of Chocolates](docs/arrays/CHCBOX.md) | 1730 | Fitting a window into the gaps between maxima | $O(N)$ per test case |
 | 470 | [Weird Subarrays](docs/arrays/WEIRDSUBARR.md) | 1739 | Counting valley subarrays from run lengths | $O(N)$ per test case |
+| 591 | [Chef and Rectangle Array](docs/arrays/CHSQARR.md) | 2088 | 2D sliding-window maximum with monotone deques plus 2D prefix sums | $O(Q \cdot N \cdot M)$, with repeated query sizes answered from a cache |
+| 596 | [The Lost Arithmetic Sequences](docs/arrays/TAASEQ.md) | 2012 | A constant number of removal candidates, each verified in linear time | $O(N)$ per test case |
+| 610 | [Appy Loves One](docs/arrays/HMAPPY1.md) | 1932 | All rotations answered at once with a sliding-window maximum over runs | $O(N + Q)$ |
+| 613 | [Chef and Sub Array ](docs/arrays/CHEFSUBA.md) | 1908 | Window sums on the doubled array, then a sliding maximum per rotation | $O(N + P)$ |
+| 626 | [Subarray Removal](docs/arrays/REMSUBARR.md) | 2007 | Positions of the largest values must form one contiguous block | $O(N)$ per test case |
+| 636 | [Consecutive Adding](docs/arrays/CONSADD.md) | 2038 | Greedy elimination with window operations, rows first and then the last columns | $O(R \cdot C)$ per test case |
+| 650 | [Can You Reach The End](docs/arrays/RECHEND.md) | 2095 | A diagonal chain of blocks touching both boundary arcs separates the corners | $O(N)$ per test case |
+| 712 | [Ultimate Fencing](docs/arrays/KEEPOUT.md) | 1830 | Undo the insertions on a linked list of sorted posts | $O(N \log N)$ per test case |
+| 730 | [Minimum Popping](docs/arrays/DEQUEUE.md) | 2463 | Keep the longest middle part that does not swallow all copies of any value | $O(N + M)$ per test case |
 
 </details>
 
-<details open><summary><b>Basic Math</b> (95)</summary>
+<details open><summary><b>Basic Math</b> (104)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -180,6 +191,15 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 467 | [Maximum Value](docs/basic-math/MVALUE.md) | 1738 | Factoring the expression, then checking the extremes | $O(N \log N)$ per test case |
 | 480 | [Save People](docs/basic-math/FIZZBUZZ2306.md) | 1750 | Manhattan bisector from an adjacent placement | $O(1)$ per test case |
 | 483 | [Digit Removal](docs/basic-math/DIGITREM.md) | 1754 | Digit-position candidates for the next clean number | $O(\log^2 N)$ per test case |
+| 490 | [Racing](docs/basic-math/RACINGEN.md) | 1759 | Energy balance gives the shortest completion time | $O(1)$ per test case |
+| 491 | [Little Elephant and Bamboo](docs/basic-math/LEBAMBOO.md) | 1761 | Solve the linear equations for operation counts | $O(N)$ per test case |
+| 499 | [Chef and Polygon Cakes](docs/basic-math/PCJ18C.md) | 1773 | Recover the common difference from the angle sum | $O(\log V)$ per test case |
+| 512 | [Server Trouble](docs/basic-math/SVRT.md) | 1791 | Balance the circular gaps by quotient and remainder | $O(1)$ per test case |
+| 547 | [One more weird game](docs/basic-math/OMWG.md) | 1536 | Count each grid adjacency exactly once | $O(1)$ per test case |
+| 656 | [Maximal Expression](docs/basic-math/MAXIMALEXP.md) | 2127 | The two residues have one of two possible sums - split it evenly | $O(1)$ per test case |
+| 659 | [Love Squares Hate Cubes](docs/basic-math/SQRTCBRT.md) | 2150 | The answer is a square - iterate to the least fixed point | $O(1)$ expected per test case - a handful of iterations |
+| 665 | [Minimize swaps](docs/basic-math/DIVBY3.md) | 2164 | Ones on even positions modulo three; the answer is always 0, 1, 2, 3 or -1 | $O(N)$ per test case |
+| 706 | [Make that Array!](docs/basic-math/SWAPGAME.md) | 2323 | A potential function makes the score independent of the moves | $O(N)$ per test case |
 
 </details>
 
@@ -191,7 +211,7 @@ Every problem is written up once and rendered into two views, which carry the sa
 
 </details>
 
-<details open><summary><b>Binary Search</b> (7)</summary>
+<details open><summary><b>Binary Search</b> (11)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -202,10 +222,14 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 331 | [Squirrel and chestnut](docs/binary-search/SQUIRREL.md) | 1611 | Searching time, with a greedy capacity check | $O(m \log m \log(\text{time}))$ per test case |
 | 333 | [Flu Shot Lineup](docs/binary-search/FLUSHOT.md) | 1692 | Binary search on a real-valued answer | $O(N \log \frac{1}{\varepsilon})$ per test case |
 | 387 | [Sheokand and Number](docs/binary-search/SHKNUM.md) | 1534 | Precomputed candidate set with a bisect | $O(\log C)$ per test case after an $O(C \log C)$ precomputation |
+| 506 | [Problem-2](docs/binary-search/SET302.md) | 1620 | Binary search a monotone sum of ceiling divisions | $O(N\log V)$ per test case |
+| 651 | [TripTastic](docs/binary-search/TRPTSTIC.md) | 2095 | Binary search on the Chebyshev radius with 2D prefix sums | $O(N \cdot M \cdot \log \max(N, M))$ per test case |
+| 678 | [Is This JEE](docs/binary-search/ICM2003.md) | 2206 | Bisection on the sign of the derivative | $O(55)$ iterations per test case |
+| 714 | [Two Averages](docs/binary-search/TWOAVG.md) | 2353 | Only K into A and 1 into B help; binary search the number of appends | $O(N + M + \log \text{answer})$ per test case |
 
 </details>
 
-<details open><summary><b>Bit Manipulation</b> (25)</summary>
+<details open><summary><b>Bit Manipulation</b> (38)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -234,10 +258,23 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 452 | [Even Subset Xor](docs/bit-manipulation/EVENXOR.md) | 1714 | Even-popcount numbers form a linear subspace | $O(N)$ per test case |
 | 461 | [XOR Equal](docs/bit-manipulation/PALINT.md) | 1731 | XOR pairs values into two-element orbits | $O(N)$ per test case |
 | 468 | [Xor and Multiply](docs/bit-manipulation/XORMUL.md) | 1739 | Lift the shared bits, then balance the differing ones | $O(N)$ per test case |
+| 487 | [Subarray XOR](docs/bit-manipulation/SUB_XOR.md) | 1757 | Parity of contributions to each output bit | $O(N)$ per test case |
+| 502 | [Binod](docs/bit-manipulation/BIN_OD.md) | 1776 | Offline queries grouped by bit with prefix counts | $O(NB+Q)$ per test case for $B$ queried bits |
+| 507 | [Again XOR problem](docs/bit-manipulation/KLXOR.md) | 1786 | XOR prefix parity for each output position | $O(N)$ per test case |
+| 598 | [Offer for Chef](docs/bit-manipulation/CHEFOFR.md) | 2100 | Greedy on answer bits with a partition DP over cluster counts | $O(Q \cdot B \cdot P^2)$ with $P \le 50$ topped slices and $B$ bits in the total sweetness |
+| 604 | [Little Elephant and Median](docs/bit-manipulation/MEDIAN.md) | 2023 | Memoised search over bitmasks with maximal windows and dominance pruning | $O(2^N \cdot N^2)$ in the worst case; pruning keeps the visited states far below that for $N \le 30$ |
+| 629 | [NASA](docs/bit-manipulation/PALIXOR.md) | 2014 | Counting pairs by xor value, directly or with a Walsh-Hadamard transform | $O(\min(D \cdot P,\; U \log U))$ per test case with $D$ distinct values, $P$ palindromes below $U = 2^{15}$ |
+| 633 | [Maximum And Or](docs/bit-manipulation/MAXANDOR.md) | 2028 | Independent bits - free exactly where A and B differ | $O(1)$ per test case |
+| 645 | [Double Burgers](docs/bit-manipulation/BURGER.md) | 2072 | Each streak is a power of two minus one - search the number of streaks | $O(\log^2 (Y / X))$ per test case |
+| 671 | [Chef Is Just Throwing Random Words](docs/bit-manipulation/SSO.md) | 2181 | Count the supply of each bit and propagate carries | $O(N \log A)$ per test case |
+| 684 | [Existence Of X](docs/bit-manipulation/EXISTENCEOFX.md) | 2235 | Column addition from the lowest bit - each bit of X is forced | $O(\log \max(A, B, C))$ per test case |
+| 695 | [Longest Subarray](docs/bit-manipulation/LONGESTARRAY.md) | 2267 | Two pointers with per-bit counts - every bit must appear both inside and outside | $O(30 \cdot N)$ per test case |
+| 702 | [Chefs Favourite Function](docs/bit-manipulation/CHEFFFUNC.md) | 2316 | Closed forms for f and g, and only O(log R) candidates | $O(\log R)$ per test case |
+| 709 | [Chef and Queries](docs/bit-manipulation/CHEFQUE.md) | 2327 | A packed bitmap as the set, with an incrementally maintained sum | $O(Q)$ |
 
 </details>
 
-<details open><summary><b>Brute Force</b> (8)</summary>
+<details open><summary><b>Brute Force</b> (9)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -249,10 +286,11 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 254 | [Chef and Numbers](docs/brute-force/CHEFFED.md) | 1477 | Bounding the search window | $O(1)$ — a fixed-width scan |
 | 256 | [Digital clock](docs/brute-force/ONOZ.md) | 1482 | Enumerating a small product space | $O(H \cdot M)$ per test case |
 | 294 | [Missing Numbers](docs/brute-force/MISS_NUM.md) | 1594 | Guessing which two values are the sum and difference | $O(1)$ per test case — twelve candidate assignments |
+| 648 | [Segment Three](docs/brute-force/SEGTHREE.md) | 2089 | Residues repeat with period three - try all nine patterns | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Combinatorics</b> (18)</summary>
+<details open><summary><b>Combinatorics</b> (38)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -274,6 +312,26 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 459 | [Set Difference ](docs/combinatorics/SETDIFF.md) | 1729 | Counting how often each element is the extreme | $O(N \log N)$ per test case |
 | 466 | [Add to Subsequence](docs/combinatorics/SUBSEQDIST.md) | 1737 | Operations as bits of a distinguishing code | $O(N)$ per test case |
 | 484 | [Bear and AB](docs/combinatorics/ABREPEAT.md) | 1754 | Splitting pairs into within-copy and across-copy | $O(N)$ per test case |
+| 492 | [Distinct Elements](docs/combinatorics/DISTELE.md) | 1762 | Independent choice from each frequency class | $O(N)$ per test case |
+| 582 | [Barcelona Gameplay Tactics](docs/combinatorics/FCBARCA.md) | 1658 | Closed form for walks returning to the starting player | $O(\log N+\log MOD)$ per test case |
+| 595 | [Sereja and Arrays](docs/combinatorics/SEARRAYS.md) | 1999 | Counting tilings with a single zero and a block of K ones | $O(N)$ per test case |
+| 602 | [Lucky Sum](docs/combinatorics/LUCKY3.md) | 1875 | Inclusion-exclusion over per-digit thresholds with a 4-level sum-over-subsets table | $O(D \cdot (N \cdot D + D \cdot 4^D))$ per test case, $D \le 9$ digits |
+| 605 | [Strategy for the World Cup](docs/combinatorics/WORLDCUP.md) | 2055 | Multinomial over sixes, fours and the rest, with a prefix of binomials for wickets | $O(B_{\max} + T \cdot B)$ |
+| 615 | [New Restaurant](docs/combinatorics/NEWREST.md) | 1800 | Stirling numbers of the second kind times a falling factorial | $O(N_{\max}^2 + \sum \min(N, M, K))$ |
+| 616 | [Chef World](docs/combinatorics/CHEFWD.md) | 2049 | Fibonacci convolution in closed form with fast doubling | $O(\log N)$ per test case |
+| 617 | [Gifts at Olympics](docs/combinatorics/OLYMPIC.md) | 2696 | Burnside for reversal, with multinomials updated along a sweep over box sizes | $O(S + Q \log Q + E \log N)$, $S$ the total number of chocolates and $E = \sum O(\sqrt{count})$ breakpoints |
+| 618 | [The Uncountable Ways](docs/combinatorics/CNTWAYS.md) | 1992 | Lattice paths split at the unique step that passes below the cut-out corner | $O(\max(N + M) + \sum N)$ |
+| 619 | [Adi and the Matrix](docs/combinatorics/ADIMAT.md) | 2900 | Burnside over row cycle types with a cycle-index DP for the columns | $O(p(n) \cdot m^2)$, $n = \min(N, M)$, $m = \max(N, M)$ and $p$ the partition function |
+| 622 | [Trees and Degrees](docs/combinatorics/TREDEG.md) | 2783 | Pruefer codes and the coefficient of a power of an exponential generating function | $O(N)$ for $K = 1$; otherwise $O(N \log K)$ plus $O(\log N)$ levels of big-integer convolutions |
+| 623 | [Counting Mobiles](docs/combinatorics/MOBCNT.md) | 2690 | Leaves forced by depth, choosing which slots of each level are leaves | $O(N + \log \sum a_i)$ per test case |
+| 643 | [Parity Permutation](docs/combinatorics/PARPER.md) | 2066 | Index parity classes must be uniform in value parity | $O(N)$ per test case |
+| 661 | [SUM OR](docs/combinatorics/AWESUM_OR.md) | 2152 | No carries - distribute the set bits of N among three non-empty owners | $O(\log N)$ per test case |
+| 666 | [Sum of Goodness](docs/combinatorics/SEQGOODNESS.md) | 2167 | Each value contributes a difference of two binomial tails, maintained incrementally | $O(N)$ per test case after $O(\max N)$ precomputation |
+| 675 | [Pyramid Traversal](docs/combinatorics/PYRAMIDMOVES.md) | 2194 | Convert labels to (row, column) and choose which steps go right | $O(\sqrt{V})$ precomputation and $O(1)$ per query, $V$ the largest label |
+| 700 | [XOR Sums](docs/combinatorics/SUMXOR2.md) | 2306 | Per-bit signed coefficients from a three-term recurrence, grouped by bit count | $O(30 \cdot N + Q)$ |
+| 704 | [Red Green Grids](docs/combinatorics/REDGREEN.md) | 2319 | Count (grid, path) pairs path by path | $O(N + M)$ precomputation, $O(\log (N M))$ per test case |
+| 708 | [Potato to Gold](docs/combinatorics/SIMPLEARRAY.md) | 2326 | Independent choices per pair of complementary remainders | $O(N + K)$ per test case |
+| 719 | [Weird Values](docs/combinatorics/WRDVLS.md) | 2393 | For each value, count subarrays containing exactly that many occurrences | $O(N)$ per test case |
 
 </details>
 
@@ -310,7 +368,7 @@ Every problem is written up once and rendered into two views, which carry the sa
 
 </details>
 
-<details open><summary><b>Constructive</b> (22)</summary>
+<details open><summary><b>Constructive</b> (44)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -336,10 +394,44 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 428 | [Bitwise Equation](docs/constructive/BITEQU.md) | 1679 | Neutralising the AND to reduce to one XOR | $O(1)$ per test case |
 | 449 | [Minimum Coloring](docs/constructive/MINCOLOR.md) | 1713 | Checkerboard parity, with a third colour only when forced | $O(NM)$ per test case |
 | 478 | [Same Parity Swaps in Binary Strings](docs/constructive/MAX01EVSWP.md) | 1747 | Matching on a path, with a parity-forced shortfall | $O(N)$ per test case |
+| 495 | [Cybalphabit](docs/constructive/CAB.md) | 1771 | Split powers of two until the required length | $O(N+\log K)$ per test case |
+| 511 | [Chef and Hamming Distance of arrays](docs/constructive/CHEFHAM.md) | 1790 | Rotate sorted values by the maximum frequency | $O(N\log N)$ per test case |
+| 529 | [Even Edges](docs/constructive/EVEDG.md) | 1945 | Parity of the edge count and vertex degrees | $O(N+M)$ per test case |
+| 539 | [Graph on an Array](docs/constructive/ARRGRAPH.md) | unrated | Check coprime connectivity, then add a universal prime | $O(N^2\log V)$ per test case with $V=50$ |
+| 545 | [Path-etic Sums](docs/constructive/PATHSUMS.md) | 1838 | Assign one and two to the two tree colour classes | $O(N)$ per test case |
+| 571 | [Yet Another Problem About Sequences](docs/constructive/EARTSEQ.md) | 2011 | Distinct large primes interleaved with a small cyclic colouring | $O(V\log\log V+\sum N)$ overall for fixed sieve bound $V=400000$ |
+| 630 | [K Distinct Array](docs/constructive/DISTK.md) | 2015 | A distinct prefix, one calibrated repeat and a constant tail | $O(N)$ per test case |
+| 634 | [No sequence](docs/constructive/NOSEQ.md) | 2031 | Balanced base-K digits read off from the residue | $O(N)$ per test case |
+| 637 | [K Increment Palindrome](docs/constructive/KPAL.md) | 2038 | Only two obstructions - K = N, and a parity clash | $O(N)$ per test case |
+| 639 | [Mountain](docs/constructive/MOUNTAIN.md) | 2047 | Shortest block of top rows, then greedy top-up from the heaviest row | $O(N)$ per query |
+| 640 | [No Palindrome](docs/constructive/NOPALINDROME.md) | 2054 | The greedy smallest number is periodic - count the digits in one period | $O(1)$ per test case |
+| 646 | [Array Sum](docs/constructive/SUMARRAY.md) | 2077 | Start from the minimum array and raise elements in steps of two | $O(N)$ per test case |
+| 652 | [LCM Mania](docs/constructive/LCMMANIA.md) | 2098 | Three explicit families, impossible only for powers of two | $O(1)$ per test case |
+| 653 | [Non Zero Subarray Xor](docs/constructive/SUBARRAYXOR.md) | 2101 | Choose the prefix xors first - make them 0, 1, ..., N | $O(N)$ per test case |
+| 657 | [Interesting Array](docs/constructive/INTARR.md) | 2145 | Zigzag from the sorted halves, tried in both orientations | $O(N \log N)$ per test case |
+| 663 | [Binary Substitution](docs/constructive/SUBSBIN.md) | 2161 | Fix the imbalance one unit per operation, then collapse the whole string | $O(N^2)$ per test case with $N \le 1000$ |
+| 682 | [Yet Another Crossover Episode](docs/constructive/DIANE.md) | 2221 | Blocks with a computable contribution, separated by ones | $O(D / 99998 + 1)$ per test case |
+| 698 | [Alternating Diameter](docs/constructive/ALTDIA.md) | 2300 | A star with the minority-friendly colour in the centre | $O(B + W)$ per test case |
+| 718 | [Tree Distances](docs/constructive/TDISTS.md) | 2383 | Only the bipartition sizes matter; realise them with a double star | $O(\sqrt{x + y})$ per test case |
+| 721 | [Construct An Array](docs/constructive/CONSTANARRAY.md) | 2419 | Blocks of M distinct values keep all frequencies within one of each other | $O(N + M)$ expected per test case |
+| 723 | [Smallest Difference](docs/constructive/SMALLESTDIFF.md) | 2421 | A tight window of sorted values for the path, with decoys beside it | $O(N M \log (N M))$ per test case |
+| 726 | [Adjacent Flips](docs/constructive/ADJFLIP.md) | 2426 | Ones on even positions minus ones on odd positions never changes | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Dynamic Programming</b> (5)</summary>
+<details open><summary><b>Disjoint Set Union</b> (5)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 523 | [Queries with Bags](docs/disjoint-set-union/DSUBAGS.md) | unrated | Path compression and union by size | $O((N+Q)\alpha(N))$ overall |
+| 543 | [Home Delivery](docs/disjoint-set-union/HDELIVER.md) | 1621 | Fast-road connected components | $O((N+M+Q)\alpha(N))$ per test case |
+| 699 | [Spooky Sequences](docs/disjoint-set-union/SPOOKYSEQ.md) | 2304 | Interleave the components, then permute equal strengths inside each | $O((N + M)\,\alpha(N))$ per test case after factorial precomputation |
+| 707 | [Ancient Berland Roads](docs/disjoint-set-union/ABROADS.md) | 2324 | Process the queries backwards - deletions become unions | $O((N + M + Q) \log (N + M + Q))$ |
+| 720 | [Connect All Cities](docs/disjoint-set-union/CNCTCT.md) | 2417 | Kruskal over bits - each bit is a clique of equal-weight edges | $O(30 \cdot N \cdot \alpha(N))$ per test case |
+
+</details>
+
+<details open><summary><b>Dynamic Programming</b> (41)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -348,20 +440,67 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 359 | [Gravity Guy](docs/dynamic-programming/GRGUY.md) | 1568 | Two-state DP with a zero-cost move | $O(n)$ per test case |
 | 360 | [Chef and Wedding Arrangements](docs/dynamic-programming/CHEFWED.md) | 1841 | Partition DP with an incrementally maintained segment cost | $O(N^2)$ per test case |
 | 362 | [Dish Distribution](docs/dynamic-programming/DISHDIS.md) | 1596 | Bounded compositions via a prefix-sum convolution | $O(nm)$ per test case |
+| 503 | [K-Concatenation](docs/dynamic-programming/KCON.md) | 1780 | Kadane over two copies plus profitable middle copies | $O(N)$ per test case |
+| 515 | [The Great Wall of Byteland](docs/dynamic-programming/BWALL.md) | 1796 | Profile tiling with exponentiated transfer matrices | $O(\log N)$ per test case after $O(\log N_{max})$ fixed-size matrix preprocessing |
+| 526 | [Subtree Removal](docs/dynamic-programming/SUBREM.md) | 2010 | Keep a subtree optimally or remove it for one penalty | $O(N)$ per test case |
+| 534 | [Doubly Increasing Path](docs/dynamic-programming/DINCPATH.md) | 2493 | Process oriented edges in batches of equal differences | $O(N+M\log M)$ per test case |
+| 558 | [Birthday Gift](docs/dynamic-programming/CHEFGIFT.md) | 1868 | Shortest transfer costs followed by stage DP | $O(M^3+NM^2)$ per test case |
+| 559 | [Treasure Hunting](docs/dynamic-programming/N1.md) | 1634 | BFS distances between treasures and subset tour DP | $O((K+2)N^2+2^K K^2)$ per test case for $K$ treasures |
+| 573 | [Polo the Penguin and the Test](docs/dynamic-programming/PPTEST.md) | 1603 | 0-1 knapsack with total test value | $O(NW)$ per test case |
+| 574 | [Paying up](docs/dynamic-programming/MARCHA1.md) | 1510 | Subset-sum reachability as an integer bitset | $O(NM/w)$ word operations per test case |
+| 575 | [MasterChef](docs/dynamic-programming/MCHEF.md) | 2016 | Interval-minimum sweep and pruned removal knapsack | $O((N+M)\log M+N\log K+KB)$ per test case with $B\le\min(N,\sum_{c=1}^{200}\lfloor K/c\rfloor)$ |
+| 576 | [Permutation Split](docs/dynamic-programming/PERMSPL.md) | 2996 | Subset sum of inversion-graph degrees | $O(N^2+NI/w)$ word operations per test case for $I$ total inversions |
+| 577 | [Coin Partition](docs/dynamic-programming/COINPART.md) | 2804 | Balanced partition by subset-sum bitset, then a simulated hand-out order | $O(N \cdot S / w)$ per test case, $S$ the sum of the values |
+| 578 | [Chef and Pepperoni Pizza Again](docs/dynamic-programming/PEPPERA.md) | 2516 | Partition row imbalances and reconstruct the reversals | $O(N^2+ND/w)$ word operations per test case for $D\le N^2/2$ total absolute imbalance |
+| 579 | [Blackjack](docs/dynamic-programming/BLKJK.md) | 2903 | Earliest-prefix dominance and cardinality subset-sum bitsets | $O((NC+NQ+CY)Y/w)$ word operations per test case for $C=\min(N,Y)$ and $Q$ an initial valid swap bound |
+| 580 | [Mean Mean Medians](docs/dynamic-programming/MEANMEDI.md) | 2719 | Fixed median with cardinality-indexed subset-sum bitsets on both sides | $O(N \cdot K \cdot S / w + N \cdot S)$ per test case, $S$ the largest reachable sum |
+| 581 | [Count palindromes](docs/dynamic-programming/COUNTPAL.md) | 1631 | Count prefix partitions using rolling palindrome states | $O(|S|^2)$ overall |
+| 583 | [Pizza Delivery](docs/dynamic-programming/DBOY.md) | 1666 | Unbounded minimum-coin DP for each exact round trip | $O(KU+N)$ per test case for $U=2\max H$ and $K$ distinct fuel amounts |
+| 585 | [Trip](docs/dynamic-programming/TRIP.md) | 2005 | Sliding reachability window and shortest-level prefix counts | $O(N)$ overall |
+| 586 | [String Merging](docs/dynamic-programming/STRMRG.md) | 1965 | Run compression and a bit-parallel longest common subsequence | $O(N+M+AB/w)$ word operations per test case for compressed lengths $A,B$ |
+| 587 | [Girl Friend and String Gift](docs/dynamic-programming/CHGLSTGT.md) | 1986 | Minimum prefix partition using rolling palindrome detection | $O(|S|^2)$ per test case |
+| 588 | [Matrix](docs/dynamic-programming/MATRIX2.md) | 2209 | Largest upper-triangular square from the row run and the diagonal neighbour | $O(N \cdot M)$ |
+| 589 | [Dessert Wizard](docs/dynamic-programming/DELISH.md) | 1804 | Kadane extremes on prefixes and suffixes, joined at every split point | $O(N)$ per test case |
+| 590 | [Little Elephant and Mouses](docs/dynamic-programming/LEMOUSE.md) | 1941 | Grid path DP that remembers the last move to avoid double counting | $O(N \cdot M)$ per test case |
+| 592 | [Chef and Two String](docs/dynamic-programming/CHEFTWOS.md) | 2233 | Three-state automaton for good strings, run on both strings at once | $O(N)$ per test case |
+| 600 | [A-E Hash Function](docs/dynamic-programming/AEHASH.md) | 1832 | Memoised hash distributions per (length, number of A) with a max-convolution | $O(N \cdot A^2 \cdot H)$ in the worst case over all states, $H$ the largest hash value |
+| 601 | [Bytelandian Robots](docs/dynamic-programming/F2.md) | 1844 | Distinct subsequences by end position, with last-occurrence correction | $O(N \cdot \min(N, L))$ per test case |
+| 628 | [Rock Paper Scissors](docs/dynamic-programming/ROPASCI.md) | 2013 | Suffix as a function on the three moves, composed right to left | $O(N)$ per test case |
+| 642 | [Tetris](docs/dynamic-programming/SPCP6.md) | 2062 | Ways by lines cleared and whose turn it is | $O(\max L + T)$ |
+| 679 | [Circular Merging](docs/dynamic-programming/CIRMERGE.md) | 2208 | Interval merging on the doubled circle with Knuth optimisation | $O(N^2)$ per test case |
+| 686 | [Little Elephant and T-Shirts](docs/dynamic-programming/TSHIRTS.md) | 2242 | Bitmask over people, processing the 100 shirts one at a time | $O(100 \cdot 2^N \cdot N)$ per test case |
+| 697 | [Search for 404](docs/dynamic-programming/CS2023_404.md) | 2296 | Subsequence-counting DP summed over all replacements | $O(N)$ per test case |
+| 701 | [K-Subarrays](docs/dynamic-programming/CHESUB.md) | 2306 | Two arrays per count - subarray still open, or best so far | $O(N \cdot K)$ per test case |
+| 703 | [Merging Binary Strings](docs/dynamic-programming/MERGEBS.md) | 2318 | Merge DP where appending a zero costs the ones already placed | $O(N^2)$ per test case |
+| 716 | [Chandelier](docs/dynamic-programming/CHANDWEIGHT.md) | 2368 | Requirements propagated outwards from the first support that breaks | $O(N)$ per test case |
+| 725 | [Two Counters](docs/dynamic-programming/TWOCOUNTERS.md) | 2425 | Only the difference of the counters matters, and only within [-2, 2] | $O(N + M)$ per test case |
+| 729 | [Good Sequence](docs/dynamic-programming/GSEQ.md) | 2451 | Longest chain of boundaries whose prefix value rises by exactly one | $O(N)$ expected per test case |
+| 732 | [Mex Subsequence](docs/dynamic-programming/MEXSUB.md) | 2494 | Every part needs all values below the global MEX - count partitions with a prefix-sum DP | $O(N \log N)$ per test case |
 
 </details>
 
-<details open><summary><b>Game Theory</b> (3)</summary>
+<details open><summary><b>Fenwick Tree</b> (1)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 555 | [Gravel](docs/fenwick-tree/SPREAD.md) | 1822 | Range additions become two difference-array point updates | $O((N+M)\log N)$ overall |
+
+</details>
+
+<details open><summary><b>Game Theory</b> (6)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 226 | [String Game ](docs/game-theory/STRAME.md) | 1413 | Counting the forced number of moves | $O(N)$ per test case |
 | 241 | [Chef and Coins Game](docs/game-theory/CHCOINSG.md) | 1442 | Losing positions form a residue class | $O(1)$ per test case |
 | 442 | [Game on a Strip](docs/game-theory/ARRGAME.md) | 1705 | Largest free run against the runner-up | $O(N)$ per test case |
+| 570 | [Prime Game](docs/game-theory/PRIGAME.md) | 1792 | Prime-count threshold via the smallest forbidden prime product | $O(V\log\log V+T)$ overall for $V=\max X$ |
+| 635 | [Gold Mining](docs/game-theory/GOLMINE.md) | 2033 | Every mine is split in proportion to the mining speeds | $O(N)$ per test case |
+| 722 | [One or All](docs/game-theory/ONEORALL.md) | 2420 | Parity of the total, plus the parity of the minimum when N is even | $O(N)$ per test case |
 
 </details>
 
-<details open><summary><b>Geometry</b> (7)</summary>
+<details open><summary><b>Geometry</b> (9)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -372,19 +511,47 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 252 | [Chef and Three Dogs](docs/geometry/CHDOGS.md) | 1473 | Pursuit curve by relative closing speed | $O(1)$ per test case |
 | 383 | [Polygon Relationship](docs/geometry/POLYREL.md) | 1460 | Halving the vertex count down to a triangle | $O(N)$ per test case, all of it input reading |
 | 446 | [Devu and Perfume](docs/geometry/DEVPERF.md) | 1708 | Manhattan 1-centre via rotated coordinates | $O(nm + n \log m)$ per test case |
+| 517 | [Ada King](docs/geometry/ADAKNG.md) | 1581 | Clip a Chebyshev-distance square to the chessboard | $O(1)$ per test case |
+| 593 | [Physical Exercise](docs/geometry/PHCUL.md) | 1865 | Precomputed nearest finish, then all pairs in both visiting orders | $O(N \cdot M + (N + M) \cdot K)$ per test case |
 
 </details>
 
-<details open><summary><b>Graphs</b> (2)</summary>
+<details open><summary><b>Graphs</b> (28)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 413 | [Fire Escape Routes](docs/graphs/FIRESC.md) | 1671 | Connected components by DSU, then a product of sizes | $O((N + M)\,\alpha(N))$ per test case |
 | 486 | [Maximum Size](docs/graphs/RISK.md) | 2113 | Connected components, then alternating greedy picks | $O(NM)$ per test case |
+| 504 | [Capital Movement](docs/graphs/CAPIMOVE.md) | 1780 | Scan population order while marking each closed neighbourhood | $O(N\log N)$ per test case |
+| 518 | [Snakes and transition from Capitalism to Socialism](docs/graphs/SNSOCIAL.md) | unrated | Multi-source BFS from all maximum-wealth cells | $O(NM)$ per test case |
+| 520 | [Find Tree Diameter](docs/graphs/DIAMTREE.md) | 1620 | Two breadth-first searches find a tree diameter | $O(N)$ per test case |
+| 521 | [Root the Tree](docs/graphs/ROOTTREE.md) | 1934 | Count excess incoming edges in a directed tree | $O(N)$ per test case |
+| 525 | [Cricket Match](docs/graphs/CRIMCH.md) | 1350 | Bipartite colouring of every connected component | $O(N+M)$ per test case |
+| 528 | [Fence - INOI 2017](docs/graphs/TINOI17A.md) | unrated | Sparse flood fill with exposed-side counting | $O(N)$ expected overall |
+| 530 | [Moving Segments](docs/graphs/SEGDIR.md) | 1940 | Two-colour equal-speed interval overlaps by maximum depth | $O(N\log N)$ per test case |
+| 533 | [Tourists in Mancunia](docs/graphs/TOURISTS.md) | 2133 | Orient an undirected Euler tour | $O(N+E)$ overall |
+| 535 | [Chef and Reversing](docs/graphs/REVERSE.md) | 1879 | 0-1 BFS on original and reversed edge choices | $O(N+M)$ overall |
+| 536 | [Chef and Digit Jumps](docs/graphs/DIGJUMP.md) | 1886 | BFS with each equal-digit group expanded once | $O(N)$ overall |
+| 537 | [Galactik Football](docs/graphs/GALACTIK.md) | 1860 | Connect component minima in a star | $O(N+M)$ overall |
+| 538 | [India Fights Corona](docs/graphs/CORONA.md) | 2560 | Multi-source Dijkstra seeded with hospital prices | $O((N+M)\log N)$ per test case |
+| 540 | [Per Capita Income](docs/graphs/PERCAPTA.md) | 2132 | Largest component among maximum-ratio provinces | $O(N+M)$ per test case |
+| 541 | [FCAR](docs/graphs/INSQ15_F.md) | unrated | Dijkstra on city and current travel mode | $O((N+R)\log N)$ overall |
+| 542 | [Road Decoration](docs/graphs/AMR14B.md) | unrated | Compare the cheapest shortest-path tree with an MST | $O(M\log N)$ per test case |
+| 548 | [Ciel and Tomya](docs/graphs/CIELTOMY.md) | 1877 | Dijkstra with counts of equal shortest routes | $O((N+M)\log N)$ per test case |
+| 549 | [Petersen Graph](docs/graphs/PETERSEN.md) | 1894 | Try the two starting vertices and follow unique letter transitions | $O(|S|)$ per test case |
+| 552 | [Kingdom Unity](docs/graphs/KINGCON.md) | 1851 | Iterative low-link articulation-point search | $O(N+M)$ per test case |
+| 554 | [End Of The World](docs/graphs/CHEFHACK.md) | 1730 | Flood-fill nonprime parity components in row-major order | $O(V\log\log V+\pi(V)+K\log\pi(V)+\sum N^2)$ overall for $K$ prime cells and maximum password $V$ |
+| 556 | [Curry Stained Napkin](docs/graphs/F3.md) | 1815 | Count mirrored copies of each original stained component | $O(64+\log N)$ per test case |
+| 557 | [Maximal Score Path](docs/graphs/RG_01.md) | 1836 | Maximum spanning tree preserves all bottleneck paths | $O(E\log E+V^2)$ overall |
+| 560 | [Maze of Digits](docs/graphs/K3.md) | 1859 | BFS over position and collected digit sum | $O((X+1)(M+1)(N+1))$ per test case |
+| 561 | [Soccer League](docs/graphs/M3.md) | 1906 | League elimination as a maximum-flow feasibility test | $O(N^5)$ worst case per test case - $N$ Dinic runs on $O(N)$ vertices and $O(N^2)$ edges |
+| 625 | [Winter](docs/graphs/ELWINTER.md) | 2007 | Lazy multi-source BFS driven by a time-ordered heap | $O((N + M) \log N + Q)$ |
+| 655 | [Travelling in the Graph](docs/graphs/TRAVELLING.md) | 2108 | 0-1 BFS where only unit-length added edges are ever needed | $O(N + M)$ per test case |
+| 717 | [Minimal Travel Time](docs/graphs/CLASSES.md) | 2379 | BFS distances from the hostel, then the K nearest subjects | $O(N + M + S \log S)$ per test case |
 
 </details>
 
-<details open><summary><b>Greedy</b> (59)</summary>
+<details open><summary><b>Greedy</b> (76)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -447,19 +614,48 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 465 | [Prefixing](docs/greedy/FIX.md) | 1736 | Forced slots, and the maximum everywhere else | $O(N)$ per test case |
 | 474 | [One Dimensional Kingdoms](docs/greedy/ONEKING.md) | 1743 | Stabbing intervals at earliest right endpoints | $O(N \log N)$ per test case |
 | 481 | [Chef and String](docs/greedy/CHRL2.md) | 1751 | Pipelined counters along a fixed pattern | $O(|S|)$ |
+| 493 | [Chefland and Electricity](docs/greedy/CHEFELEC.md) | 1767 | Remove the largest gap between consecutive powered villages | $O(N)$ per test case |
+| 496 | [Broken Life](docs/greedy/BRKNLIFE.md) | 1772 | Avoid advancing the subsequence matcher at question marks | $O(N)$ per test case |
+| 500 | [Monks](docs/greedy/MONKS.md) | 1776 | Keep the largest feasible prefix after sorting | $O(N\log N)$ per test case |
+| 505 | [01 Subsequence](docs/greedy/ZEROONE.md) | 1781 | Sort zero blocks downwards and one blocks upwards | $O(N\log N)$ per test case |
+| 510 | [Prefix Zeros](docs/greedy/PREZ.md) | 1790 | Maintain the exact cost of zeroing each prefix | $O(N)$ per test case |
+| 532 | [Abdullah and Toll Discounts](docs/greedy/ABDTOLL.md) | unrated | Discount the shallowest active toll when a path exceeds budget | $O(N\log N)$ per test case |
+| 562 | [Byteknights and Byteknaves](docs/greedy/BYTEISLE.md) | 1919 | Valid total counts followed by lexicographic candidate elimination | $O(N\log N)$ per test case |
+| 654 | [Wishcraft](docs/greedy/MAJIK.md) | 2105 | Keep the two extremes and absorb the largest absolute values into them | $O(N \log N)$ per test case |
+| 658 | [Maximising Vacations](docs/greedy/MAXVAC.md) | 2147 | Vacations per run of holidays, plus the best gain from bridging one workday | $O(N)$ per test case |
+| 664 | [Chef Goes Shopping](docs/greedy/CHEFSHOPPING.md) | 2164 | Every original boundary is paid once, in its cheaper direction | $O(N)$ per test case |
+| 673 | [Mexy Array](docs/greedy/MEXYARR.md) | 2190 | Reserve constrained values until their last use and always insert the smallest allowed value | $O(N \log N)$ per test case |
+| 680 | [Mahesh and his lost array](docs/greedy/ANUMLA.md) | 2212 | Smallest unexplained subset sum is the next element | $O(N \cdot 2^N)$ per test case |
+| 690 | [Maximize 1s](docs/greedy/MAX1S.md) | 2255 | Positional weights and a maximum-sum segment of flip gains | $O(N)$ per test case |
+| 694 | [Saving a gift of love](docs/greedy/ASHIGIFT.md) | 2265 | Walk the path backwards, keeping the group size needed for the rest | $O((B + C) \log (B + C))$ per test case |
+| 696 | [Chroma Swap](docs/greedy/ASH57.md) | 2271 | Colours present in B form free pools; pick the smallest usable value greedily | $O(N \log N)$ per test case |
+| 705 | [Palindrome In Making](docs/greedy/MAKEPAL3.md) | 2322 | Mirror differences, removed in signed layers | $O(N)$ per test case |
+| 728 | [Balanced Suffix](docs/greedy/BALSUFF.md) | 2447 | Build left to right, keeping the remaining multiset balanced | $O(26 \cdot N)$ per test case |
 
 </details>
 
-<details open><summary><b>Heaps</b> (2)</summary>
+<details open><summary><b>Hashing</b> (4)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 494 | [Rectangles Counting](docs/hashing/RECTCNT.md) | 1770 | Group vertical sides by their two heights | $O(N)$ expected per test case |
+| 519 | [IS IT DSU HARD!!](docs/hashing/CFMAR04.md) | unrated | Use letter-frequency tuples as anagram signatures | $O(\sum |S_i|+26N)$ overall |
+| 693 | [ABC-Strings](docs/hashing/ABCSTR.md) | 2264 | Equal prefix states (A-B, A-C) mark balanced substrings | $O(N)$ expected |
+| 727 | [Max Shift After XOR](docs/hashing/MAXCYCSHIFT.md) | 2444 | Sliding window over the prefix xors of the doubled array | $O(N)$ expected per test case |
+
+</details>
+
+<details open><summary><b>Heaps</b> (3)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 339 | [Lowest Sum](docs/heaps/LOWSUM.md) | 2302 | $k$ smallest pairwise sums | $O(K \log K + n \log n)$ per test case, where $n = \max q_i$ |
 | 404 | [XOR with smallest element](docs/heaps/SMALLXOR.md) | 1635 | Detecting the two-cycle that ends the process | $O(N \log N)$ per test case |
+| 692 | [Maximum K Sums](docs/heaps/KSUM.md) | 2260 | K-way merge of the decreasing lists of sums per left endpoint | $O(N + K \log N)$ |
 
 </details>
 
-<details open><summary><b>Number Theory</b> (60)</summary>
+<details open><summary><b>Number Theory</b> (86)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -523,10 +719,36 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 472 | [Modular GCD](docs/number-theory/GCDMOD.md) | 1741 | Reducing the big operand modulo the small one | $O(\log N)$ per test case |
 | 477 | [Eugene and function](docs/number-theory/KFUNC.md) | 1746 | Digital roots are periodic along an arithmetic progression | $O(\log R)$ per test case |
 | 482 | [Too Many Candies](docs/number-theory/ICL1903.md) | 1754 | Linear congruence solved with the extended GCD | $O(\log M)$ per test case |
+| 489 | [Optimal Denomination](docs/number-theory/MINNOTES.md) | 1759 | Prefix and suffix GCD after one removal | $O(N \log V)$ per test case |
+| 509 | [Strange Function](docs/number-theory/ABX01.md) | 1789 | Digital root from modular exponentiation | $O(\log N)$ per test case |
+| 563 | [Prime Tuples](docs/number-theory/PTUPLES.md) | 1809 | Every prime-sum triple starts with two | $O(V\log\log V+T)$ overall for $V=\max N$ |
+| 564 | [Odd Divisors](docs/number-theory/ODDDIV.md) | 1657 | Add every odd divisor to its multiples | $O(V\log V+T)$ overall for $V=\max R$ |
+| 565 | [Number of Factors](docs/number-theory/NUMFACT.md) | 1710 | Add prime exponents across all factors | $O(N\pi(\sqrt V))$ trial divisions per test case after a sieve to $\sqrt V$ |
+| 566 | [Special Triplets](docs/number-theory/SPCTRIPS.md) | 1673 | Reduce scaled triples to divisor summatory counts | $O(V\log V+T\sqrt V)$ overall for $V=\max N$ |
+| 567 | [Levy Conjecture](docs/number-theory/LEVY.md) | 1510 | Precompute counts of prime plus twice-prime sums | $O(V\log\log V+\pi(V)^2+T)$ overall for $V=\max N$ |
+| 568 | [Cool Guys](docs/number-theory/COOLGUYS.md) | 1758 | Dirichlet hyperbola count of divisible ordered pairs | $O(\sqrt N+\log N)$ per test case |
+| 569 | [Churu and Balls](docs/number-theory/CBALLS.md) | 1697 | Try prime common divisors with bucketed rounding costs | $O(V\log\log V+N+V\sum_{p\le V+1}1/p+\pi(V+1))$ per test case |
+| 572 | [Destroy Cells](docs/number-theory/DESTCELL.md) | 2297 | Enumerate periodic row-major positions and test column-major divisibility | $O(S\log S)$ per test case for $S=NM$ |
+| 597 | [Kirito in labyrinth](docs/number-theory/KIRLAB.md) | 2047 | Longest chain DP keyed by prime factor, with a smallest-prime-factor sieve | $O(A \log \log A + N \log A)$ over the whole input, $A$ the largest value |
+| 607 | [Odd Binomial Coefficients](docs/number-theory/ODDBIN.md) | 2107 | Polynomials over GF(2) split at the highest exponent bit | $O(60 \cdot 2^{M} \cdot M)$ worst case per test case with memoisation, $M \le 15$ |
+| 624 | [Maximum Factors Problem](docs/number-theory/MXFACS.md) | 2006 | Remove one copy of the prime with the largest exponent | $O(\sqrt{N})$ per test case |
+| 631 | [Prime Factor Division](docs/number-theory/PRIMEFACDIV.md) | 2016 | Strip common factors with repeated gcd | $O(\log^2 B)$ per test case |
+| 632 | [Queries About Numbers](docs/number-theory/QNUMBER.md) | 2026 | Factorise N once and answer from prime exponents | $O(\sqrt{N} + Q \cdot \omega(N) \log K)$ |
+| 647 | [Equivalent Numbers](docs/number-theory/EQUIVALENT.md) | 2087 | Reduce each number to its primitive root base | $O(\sqrt{A} + \sqrt{B})$ per uncached pair |
+| 660 | [Lexicographically Largest ](docs/number-theory/LEXILARGEST.md) | 2151 | Largest multiplier coprime to the ratio of consecutive prefix gcds | $O(N \log M)$ per test case plus the short downward searches |
+| 667 | [Minimum Operation](docs/number-theory/MINIMUMOP.md) | 2170 | At most two operations - common gcd, an unused prime, or 2 then 3 | $O(M_{\max} \log \log M_{\max})$ sieve, then $O(N \log A)$ per test case |
+| 676 | [Chef and insomnia](docs/number-theory/CHINSM.md) | 2197 | Sliding window whose left end jumps past the latest bad partner | $O(V \log V + N \cdot \tau(V))$, $V$ the largest value |
+| 677 | [Partition It](docs/number-theory/PARPERM.md) | 2202 | Only 1 and the primes above N/2 can be separated from the rest | $O(N \log \log N)$ sieve, then $O(N)$ per test case |
+| 683 | [Cute Chef Gift](docs/number-theory/COPAR.md) | 2235 | Each prime spans an interval - find the first position no interval crosses | $O(V \log \log V + N \log V)$, $V$ the largest value |
+| 689 | [Interesting Representation](docs/number-theory/INTREP.md) | 2251 | Multiply N by two neighbouring numbers that each add exactly one new prime | $O(1)$ per test case |
+| 710 | [Candies](docs/number-theory/CANDIES3.md) | 2329 | Sum of floors as a harmonic sum over multiples | $O(N + M \log M)$ per test case |
+| 715 | [Chef and Riffles](docs/number-theory/RIFFLES.md) | 2360 | A riffle is multiplication by two modulo N - 1 | $O(N + \log K)$ per test case |
+| 724 | [GCD Queries](docs/number-theory/GCD_QUERIES.md) | 2422 | One min-heap of sorted indices per prime, with lazy deletion | $O(V \log \log V + (N + Q) \log V \log N)$ |
+| 731 | [Squarified](docs/number-theory/SQUAR.md) | 2470 | Group by square-free kernel and take the largest non-trivial group | $O(V \log \log V + N \log V)$, $V$ the largest value in the input |
 
 </details>
 
-<details open><summary><b>Prefix Sums</b> (15)</summary>
+<details open><summary><b>Prefix Sums</b> (26)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -545,6 +767,30 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 456 | [Maximise Sum](docs/prefix-sums/MAXIMISESUM.md) | 1715 | Per-position ceiling from prefix and suffix maxima | $O(N)$ per test case |
 | 471 | [Fair Distribution](docs/prefix-sums/FAIR_DISTRIB.md) | 1741 | Reparametrising by gaps turns it into suffix sums | $O(N)$ per test case |
 | 476 | [Copy and Paste](docs/prefix-sums/NCOPIES.md) | 1745 | Splitting a repeated string's running total | $O(N + M)$ per test case |
+| 497 | [Triplets](docs/prefix-sums/SUMQ.md) | 1772 | Factor a triplet sum into two prefix sums | $O(P\log P+Q\log Q+R\log R)$ per test case |
+| 584 | [Total Diamonds](docs/prefix-sums/VK18.md) | 1786 | Grow the square using a prefix sum of digit imbalances | $O(V+T)$ overall for $V=\max N$ |
+| 594 | [Gerrymander](docs/prefix-sums/GERMANDE.md) | 1904 | Circular sliding window grouped by starting offset | $O(N)$ per test case |
+| 608 | [Way Out](docs/prefix-sums/WOUT.md) | 1845 | Difference array per row, then the best window of H rows | $O(N)$ per test case |
+| 611 | [Chef and Strings](docs/prefix-sums/STRQ.md) | 1930 | Prefix counts of ordered character pairs, corrected for starts before L | $O(16 \cdot N + Q)$ |
+| 612 | [Sereja and Commands](docs/prefix-sums/SEACO.md) | 1990 | Reverse sweep over commands with two difference arrays | $O(N + M)$ per test case |
+| 641 | [Max Range Queries](docs/prefix-sums/MAXREMOV.md) | 2057 | Net gain of removing an interval as a range sum of +1 and -1 scores | $O(N + C)$ per test case, $C = 10^5$ |
+| 644 | [Angry Cyborg](docs/prefix-sums/AGCY.md) | 2072 | Range updates of a linear function with two difference arrays | $O(N + Q)$ per test case |
+| 668 | [Increase 2 consecutive characters](docs/prefix-sums/CCD.md) | 2171 | The alternating sum of differences is the only invariant | $O(N + Q)$ per test case |
+| 670 | [Cherry and Bits](docs/prefix-sums/CENS20A.md) | 2179 | Two-dimensional xor difference array | $O(N \cdot M + Q)$ |
+| 691 | [Sum of Cube ](docs/prefix-sums/SUMOFCUBE.md) | 2259 | Expand the cube of a prefix difference and keep three running power sums | $O(N)$ per test case |
+
+</details>
+
+<details open><summary><b>Probability</b> (6)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 514 | [A Plus B Again!](docs/probability/TAAPLUSB.md) | 1796 | Sum the carry probabilities as a geometric series | $O(1)$ per test case |
+| 603 | [Random decreasing function](docs/probability/RDF.md) | 1975 | Expectation by layers with a running prefix average, cut off after 70 steps | $O(70 \cdot \max N + T)$ |
+| 606 | [Player](docs/probability/RRPLAYER.md) | 2067 | Coupon collector - a sum of geometric waiting times | $O(\max N + T)$ |
+| 620 | [E - Make it Zero](docs/probability/INFDIV.md) | 2690 | Expectation recurrence over remainders, summed by quotient blocks | $O(N \sqrt{N})$ |
+| 669 | [Expected Value](docs/probability/EXPVALUE.md) | 2177 | Carry the mean and the second moment through independent increments | $O(N)$ |
+| 734 | [Expected Sum](docs/probability/EXPECTEDSUM.md) | 2495 | Linearity of expectation over the positions Chef draws | $O(\log p)$ per test case |
 
 </details>
 
@@ -570,7 +816,7 @@ Every problem is written up once and rendered into two views, which carry the sa
 
 </details>
 
-<details open><summary><b>Simulation</b> (8)</summary>
+<details open><summary><b>Simulation</b> (11)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -582,10 +828,13 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 402 | [UEFA Champions League](docs/simulation/UCL.md) | 1633 | Building a league table and sorting by two keys | $O(1)$ per test case (12 fixed matches) |
 | 438 | [Chef and Football Match](docs/simulation/WATCHFB.md) | 1700 | Tracking the at-most-two consistent states | $O(N)$ per test case |
 | 463 | [Penalty Shoot-Out II](docs/simulation/PSHOT.md) | 1735 | Best and worst completions of a prefix | $O(N)$ per test case |
+| 627 | [Alternative Sufferings](docs/simulation/ALTSUFF.md) | 2011 | One simulated step, then distance to the nearest seed and parity | $O(N)$ per test case |
+| 688 | [Make Them Alike](docs/simulation/ALIKE_THEM.md) | 2245 | Track which original position every final value comes from | $O(N)$ per test case |
+| 735 | [College Admissions](docs/simulation/ADMIT.md) | 2496 | Simulate the admissions in exam-rank order until Chef chooses | $O(M \log M + \sum \text{list lengths})$ per test case |
 
 </details>
 
-<details open><summary><b>Sorting</b> (28)</summary>
+<details open><summary><b>Sorting</b> (33)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -617,18 +866,26 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 421 | [Powered Parameters](docs/sorting/POWPM.md) | 1673 | Bounding the exponent, then counting by integer root | $O(N \log N + 30 \log N)$ per test case |
 | 469 | [Pokemon Battles](docs/sorting/PBATTLE.md) | 1739 | Counting Pareto maxima of two orderings | $O(N \log N)$ per test case |
 | 473 | [Army Training](docs/sorting/ARMTRN.md) | 1742 | Sorted split maximising a product of two sums | $O(N \log N)$ per test case |
+| 638 | [Symmetric Swaps](docs/sorting/SYMARRSWAP.md) | 2041 | Smallest value window that contains an option for every index | $O(N \log N)$ per test case |
+| 662 | [Musical Rods](docs/sorting/MUSROD.md) | 2160 | Exchange argument - order rods by beauty per unit length | $O(N \log N)$ per test case |
+| 687 | [Chef and Ants](docs/sorting/ANTSCHEF.md) | 2244 | Swap identities at collisions, then count meetings ray by ray | $O(S \log S)$ per test case, $S$ the total number of ants |
+| 711 | [Two Piles](docs/sorting/SPLITMIN.md) | 2347 | The larger maximum is at least the largest of the pair minima; pair it with its nearest lower value | $O(N \log N)$ per test case |
+| 733 | [Chef Up](docs/sorting/CHEF7UP.md) | 2494 | Parity of the distance to Chef decides which officers can be cornered | $O(N \log N)$ per test case |
 
 </details>
 
-<details open><summary><b>Stacks</b> (1)</summary>
+<details open><summary><b>Stacks</b> (4)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
 | 338 | [Book Exercises](docs/stacks/BEX.md) | 1728 | Prefix minimum carried alongside a stack | $O(1)$ amortised per action, $O(N)$ overall |
+| 498 | [Lunchtime](docs/stacks/LUNCHTIM.md) | 1773 | Monotone groups bounded by taller students | $O(N)$ per test case |
+| 609 | [Chefs in Queue](docs/stacks/CHFQUEUE.md) | 2146 | Nearest strictly smaller element to the right with a monotonic stack | $O(N)$ |
+| 685 | [Distinct Values](docs/stacks/DIST_VALS.md) | 2236 | Largest and second largest of a subarray are neighbours on a monotonic stack | $O(N)$ expected per test case |
 
 </details>
 
-<details open><summary><b>Strings</b> (35)</summary>
+<details open><summary><b>Strings</b> (44)</summary>
 
 | # | Problem | Difficulty | Technique | Time |
 |---:|---|---:|---|---|
@@ -667,6 +924,35 @@ Every problem is written up once and rendered into two views, which carry the sa
 | 458 | [Oracle Devu and Longest Common Subsequence](docs/strings/ORACLCS.md) | 1726 | Binary alphabet reduces the LCS to two letter counts | $O(nm)$ per test case |
 | 475 | [Lucky Palin](docs/strings/LUCKPAL.md) | 1744 | Placing a block and its mirror, costed in O(1) | $O(|S|)$ per test case for the cost scan, plus $O(|S|)$ per tied placement |
 | 485 | [Compare those strings](docs/strings/STRCOMPARE.md) | 1756 | Suffix comparison answered by one backward pass | $O(N)$ per test case |
+| 488 | [Flip the Prefix](docs/strings/PREFIXFLIP.md) | 1758 | Sliding window over mandatory boundary flips | $O(N)$ per test case |
+| 501 | [Palpal Strings](docs/strings/PALPALS.md) | 1776 | Pair supply must cover all odd-frequency centres | $O(|S|)$ per test case |
+| 508 | [Art of Balance](docs/strings/ARTBALAN.md) | 1788 | Enumerate feasible alphabet sizes and retain most occurrences | $O(|S|+26^2)$ per test case |
+| 513 | [String Reverse](docs/strings/STR_REVERSE.md) | 1792 | Keep the longest target prefix that is already a subsequence | $O(|S|)$ per test case |
+| 516 | [Digit Operation](docs/strings/DIGITOP.md) | 1798 | Length invariance and global digit deficits | $O(\sum |A_i|+\sum |B_i|)$ per test case |
+| 546 | [Lavanya Loves DFA](docs/strings/ICM2006.md) | 1586 | Read the accepting suffix from the five-state diagram | $O(|S|)$ per test case to read the input; $O(1)$ to check its suffix |
+| 599 | [K-important Strings](docs/strings/N3.md) | 1729 | Pairwise overlaps by KMP, then a shortest walk with exactly K vertices | $O(N^2 L + K N^2)$ per test case |
+| 674 | [Valid String](docs/strings/VSTRING.md) | 2194 | Circular gaps between ones - at most one may be too long | $O(N)$ per test case |
+| 681 | [String Operations](docs/strings/STROPERS.md) | 2220 | A complete invariant - length, ones, and zeros seen after an odd number of ones | $O(N^2)$ per test case |
+
+</details>
+
+<details open><summary><b>Trees</b> (13)</summary>
+
+| # | Problem | Difficulty | Technique | Time |
+|---:|---|---:|---|---|
+| 522 | [Wealth Disparity](docs/trees/INOI1601.md) | unrated | Carry the maximum ancestor wealth during iterative DFS | $O(N)$ overall |
+| 524 | [Family Tree](docs/trees/FAMTREE.md) | 1720 | Carry the minimum and maximum ancestor wealth during DFS | $O(N)$ overall |
+| 527 | [Cosmic Temple](docs/trees/COSTEMP.md) | unrated | Reroot distance sums using subtree sizes | $O(N)$ overall |
+| 531 | [Treeversion](docs/trees/TREEVERS.md) | 2453 | Sort child blocks by an exact cross-product comparator | $O(N\log N)$ per test case |
+| 544 | [Shortest Path in Binary Trees](docs/trees/BINTREE.md) | 1413 | Repeatedly move the larger heap label to its parent | $O(\log\max(i,j))$ per query |
+| 550 | [Rendezvous](docs/trees/TR1.md) | 1638 | Count ordered pairs by their lowest common ancestor | $O(N)$ per test case |
+| 551 | [Brush Fire](docs/trees/FIRE.md) | 1761 | Follow one burning branch while shielding its sibling | $O(N)$ per test case |
+| 553 | [Robot Game](docs/trees/TR2.md) | 1754 | Merge root-path tries and count supporting maps | $O(\sum N_i+M)$ per test case |
+| 614 | [Chef and Subarray Queries](docs/trees/CSUBQ.md) | 2345 | Segment tree counting all-good subarrays, used at two thresholds | $O((N + Q) \log N)$ |
+| 621 | [Perfect Tree Problem](docs/trees/PTREE.md) | 2900 | Level widths of perfect subtrees as constant-width segments with arithmetic-geometric sums | $O(N \log N + D \cdot B \log N + Q (\sqrt{N} + D))$ with $D = O(\sqrt{N})$ branching depths and $B$ distinct anchors queried |
+| 649 | [Full Path Eraser](docs/trees/FPE.md) | 2094 | Subtree gcds and a DP over where the removed root path continues | $O(N \log A)$ per test case |
+| 672 | [Sardar and GCD](docs/trees/DLTNODE.md) | 2190 | Rerooting - subtree gcds below, complement gcds above | $O(N \log A)$ per test case |
+| 713 | [A Special Tree](docs/trees/SPTREE.md) | 2350 | Rerooting a "best source minus distance" value in two passes | $O(N + K)$ per test case |
 
 </details>
 
@@ -680,6 +966,8 @@ data/authored/<CODE>.md      hand written approach + metadata
 data/raw/<CODE>.json         problem payloads fetched from CodeChef
 data/problem_meta.json       code -> contest, course, level, order
 data/roadmap_slots.json      per-course problem slots, for the count audit
+data/completed.txt           additional locally completed Python problems
+REMAINING.md                 generated list of problems still to implement
 tools/                       fetch, build, verify and audit scripts
 ```
 
@@ -688,8 +976,11 @@ tools/                       fetch, build, verify and audit scripts
 ```bash
 python3 tools/fetch_raw.py     # pull problem payloads into data/raw/
 python3 tools/build_docs.py    # rebuild docs/ and this README
-python3 tools/verify.py        # run every solution against its samples
+python3 tools/verify.py        # run every documented solution against its samples
+python3 tools/verify_additions.py   # exhaustive and random small-instance oracles
 python3 tools/reconcile_counts.py   # audit the roadmap solved count
 ```
+
+Sample checks establish sample compatibility, not an online-judge acceptance. The additional oracle suite checks selected algorithms against exhaustive small instances.
 
 Both views are generated, so edit `data/authored/<CODE>.md` or `solutions/<CODE>.py` and rebuild rather than editing `docs/` or `by-rating/` directly.

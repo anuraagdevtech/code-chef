@@ -143,8 +143,6 @@ main()
 
 Row 4 has four coefficients but degree $2$.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#92 of 486): [../../by-rating/092-DPOLY.md](../../by-rating/092-DPOLY.md)
+Same problem in rating order (#92 of 735): [../../by-rating/092-DPOLY.md](../../by-rating/092-DPOLY.md)

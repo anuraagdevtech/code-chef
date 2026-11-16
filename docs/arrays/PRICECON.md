@@ -140,8 +140,6 @@ First sample, cap $K = 4$:
 
 Total $7$, so the output is `7`. Note the $2$ and $3$ contribute zero rather than $-2$ and $-1$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#143 of 486): [../../by-rating/143-PRICECON.md](../../by-rating/143-PRICECON.md)
+Same problem in rating order (#143 of 735): [../../by-rating/143-PRICECON.md](../../by-rating/143-PRICECON.md)

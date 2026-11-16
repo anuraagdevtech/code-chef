@@ -147,8 +147,6 @@ First sample: $A = 1, 2, 1$.
 
 Output `4`: the subarrays are $[1]$, $[1]$ (the third element), $[1,2]$ and $[2,1]$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#401 of 486): [../../by-rating/401-SUBARRAYLEN.md](../../by-rating/401-SUBARRAYLEN.md)
+Same problem in rating order (#419 of 735): [../../by-rating/419-SUBARRAYLEN.md](../../by-rating/419-SUBARRAYLEN.md)

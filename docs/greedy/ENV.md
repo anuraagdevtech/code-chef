@@ -173,8 +173,6 @@ First sample: $A = 4, 2, 5, 2$ — no ones.
 
 Output `80`, which equals $\prod A$ — as it must, since adding exactly one element and multiplying by the rest always reproduces the full product. The gap only opens up with more additions: on $A = 3, 3$, adding both gives $6$ against the product's $9$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#368 of 486): [../../by-rating/368-ENV.md](../../by-rating/368-ENV.md)
+Same problem in rating order (#380 of 735): [../../by-rating/380-ENV.md](../../by-rating/380-ENV.md)

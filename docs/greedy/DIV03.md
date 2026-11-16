@@ -161,4 +161,4 @@ Output `1`.
 
 ---
 
-Same problem in rating order (#224 of 486): [../../by-rating/224-DIV03.md](../../by-rating/224-DIV03.md)
+Same problem in rating order (#225 of 735): [../../by-rating/225-DIV03.md](../../by-rating/225-DIV03.md)

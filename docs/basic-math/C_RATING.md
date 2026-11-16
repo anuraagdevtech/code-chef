@@ -130,4 +130,4 @@ Rows 3 and 4 are one rating point apart and differ by a whole win.
 
 ---
 
-Same problem in rating order (#49 of 486): [../../by-rating/049-C_RATING.md](../../by-rating/049-C_RATING.md)
+Same problem in rating order (#49 of 735): [../../by-rating/049-C_RATING.md](../../by-rating/049-C_RATING.md)

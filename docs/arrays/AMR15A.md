@@ -189,8 +189,6 @@ Sample 1: $N = 1$, weapons $[1]$.
 
 Sample 2: $N = 1$, weapons $[2]$ — one even count, and $2 \times 1 > 1$ holds, so `READY FOR BATTLE`.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#71 of 486): [../../by-rating/071-AMR15A.md](../../by-rating/071-AMR15A.md)
+Same problem in rating order (#71 of 735): [../../by-rating/071-AMR15A.md](../../by-rating/071-AMR15A.md)

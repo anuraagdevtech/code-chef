@@ -157,4 +157,4 @@ Month $6$ falls short of $74$ and month $7$ clears it, so the answer is `7`.
 
 ---
 
-Same problem in rating order (#466 of 486): [../../by-rating/466-FORESTGA.md](../../by-rating/466-FORESTGA.md)
+Same problem in rating order (#528 of 735): [../../by-rating/528-FORESTGA.md](../../by-rating/528-FORESTGA.md)

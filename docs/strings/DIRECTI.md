@@ -161,8 +161,6 @@ First sample.
 
 Each returned turn is the flip of the turn that *followed* the road being entered.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#243 of 486): [../../by-rating/243-DIRECTI.md](../../by-rating/243-DIRECTI.md)
+Same problem in rating order (#245 of 735): [../../by-rating/245-DIRECTI.md](../../by-rating/245-DIRECTI.md)

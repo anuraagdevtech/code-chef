@@ -122,8 +122,6 @@ Input is $L = 1$, $B = 2$.
 | comparison | perimeter is larger |
 | output | `Peri` then `6` |
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#31 of 486): [../../by-rating/031-AREAPERI.md](../../by-rating/031-AREAPERI.md)
+Same problem in rating order (#31 of 735): [../../by-rating/031-AREAPERI.md](../../by-rating/031-AREAPERI.md)

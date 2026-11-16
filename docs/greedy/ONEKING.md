@@ -151,8 +151,6 @@ Sample: kingdoms $[1,3]$, $[2,5]$, $[6,9]$, sorted by right endpoint.
 
 Output `2`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#446 of 486): [../../by-rating/446-ONEKING.md](../../by-rating/446-ONEKING.md)
+Same problem in rating order (#469 of 735): [../../by-rating/469-ONEKING.md](../../by-rating/469-ONEKING.md)

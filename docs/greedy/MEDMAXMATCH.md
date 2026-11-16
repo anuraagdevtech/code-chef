@@ -162,8 +162,6 @@ Third sample: $A$ sorted $= 4, 5, 10, 16, 93$ and $B$ sorted $= 4, 6, 26, 34, 62
 
 The median is the smallest of these three, `50`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#379 of 486): [../../by-rating/379-MEDMAXMATCH.md](../../by-rating/379-MEDMAXMATCH.md)
+Same problem in rating order (#393 of 735): [../../by-rating/393-MEDMAXMATCH.md](../../by-rating/393-MEDMAXMATCH.md)

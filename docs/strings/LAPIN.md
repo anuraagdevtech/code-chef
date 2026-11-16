@@ -130,8 +130,6 @@ main()
 
 Row 5 uses the same two letters in both halves and still fails, on the counts.
 
-> CodeChef tags: `Data Structures`, `Arrays`
-
 ---
 
-Same problem in rating order (#173 of 486): [../../by-rating/173-LAPIN.md](../../by-rating/173-LAPIN.md)
+Same problem in rating order (#173 of 735): [../../by-rating/173-LAPIN.md](../../by-rating/173-LAPIN.md)

@@ -121,8 +121,6 @@ main()
 
 Row 1 is the exact fit, row 3 the one-person overflow into a second car.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#36 of 486): [../../by-rating/036-MINCARS.md](../../by-rating/036-MINCARS.md)
+Same problem in rating order (#36 of 735): [../../by-rating/036-MINCARS.md](../../by-rating/036-MINCARS.md)

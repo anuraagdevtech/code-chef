@@ -151,8 +151,6 @@ main()
 
 Row 3 is realised by $[4, 6]$: one of each, mean $5$.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#409 of 486): [../../by-rating/409-AVGGIFT.md](../../by-rating/409-AVGGIFT.md)
+Same problem in rating order (#428 of 735): [../../by-rating/428-AVGGIFT.md](../../by-rating/428-AVGGIFT.md)

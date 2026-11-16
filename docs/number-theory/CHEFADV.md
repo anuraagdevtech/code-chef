@@ -145,8 +145,6 @@ main()
 
 Row 3 passes one shifted test and fails the other, which is why both must be demanded together.
 
-> CodeChef tags: `Mathematics`, `Modular Arithmetic`, `Algebra`, `Basic Math`
-
 ---
 
-Same problem in rating order (#262 of 486): [../../by-rating/262-CHEFADV.md](../../by-rating/262-CHEFADV.md)
+Same problem in rating order (#264 of 735): [../../by-rating/264-CHEFADV.md](../../by-rating/264-CHEFADV.md)

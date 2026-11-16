@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Number Theory |
 | **Technique** | Divisibility test |
-| **CodeChef tags** | `Mathematics`, `Modular Arithmetic`, `Basic Math`, `Divisibility`, `Integer Division` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

@@ -153,4 +153,4 @@ Sorted: `WinterIsComing`, `WhoDoesntLoveChefBook`, `TheseViolentDelights…`, `C
 
 ---
 
-Same problem in rating order (#347 of 486): [../../by-rating/347-BOOKCHEF.md](../../by-rating/347-BOOKCHEF.md)
+Same problem in rating order (#355 of 735): [../../by-rating/355-BOOKCHEF.md](../../by-rating/355-BOOKCHEF.md)

@@ -118,8 +118,6 @@ main()
 
 The three rows walk through all three branches.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#24 of 486): [../../by-rating/024-TRAVELFAST.md](../../by-rating/024-TRAVELFAST.md)
+Same problem in rating order (#24 of 735): [../../by-rating/024-TRAVELFAST.md](../../by-rating/024-TRAVELFAST.md)

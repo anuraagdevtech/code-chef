@@ -158,8 +158,6 @@ Third sample: $A = 1, 2, 3, 4$.
 
 Valid, so the answer is the first gap, `3`. Three operations — on prefixes of lengths $2$, $1$ and $1$ — give coverage $c = (3, 1, 0, 0)$ and turn $A$ into $4, 3, 3, 4$, a palindrome.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#338 of 486): [../../by-rating/338-ARRPAL.md](../../by-rating/338-ARRPAL.md)
+Same problem in rating order (#345 of 735): [../../by-rating/345-ARRPAL.md](../../by-rating/345-ARRPAL.md)

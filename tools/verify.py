@@ -15,11 +15,13 @@ import json, os, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from checkers import CHECKERS
+from roadmap import documented_codes
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, 'data', 'raw')
 SOLN = os.path.join(ROOT, 'solutions')
 TIMEOUT = 15
+SAMPLE_OVERRIDES = json.load(open(os.path.join(ROOT, "data", "sample_overrides.json"), encoding="utf-8"))
 
 
 def norm(s):
@@ -34,7 +36,7 @@ def run(code):
     if not os.path.exists(sol):
         return 'SKIP', ''
     raw = json.load(open(os.path.join(RAW, f'{code}.json'), encoding='utf-8'))
-    samples = (raw.get('problemComponents') or {}).get('sampleTestCases') or []
+    samples = (raw.get('problemComponents') or {}).get('sampleTestCases') or SAMPLE_OVERRIDES.get(code, [])
     if not samples:
         return 'SKIP', 'no samples'
     worst, detail = 'PASS', ''
@@ -68,7 +70,7 @@ def run(code):
 
 
 def main():
-    codes = sys.argv[1:] or open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
+    codes = sys.argv[1:] or documented_codes()
     tally = {}
     for code in codes:
         status, detail = run(code)

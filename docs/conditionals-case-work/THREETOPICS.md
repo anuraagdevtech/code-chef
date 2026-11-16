@@ -132,8 +132,6 @@ Sample 1: $A,B,C = 2,3,7$ and $X = 3$.
 
 Sample 2: $A,B,C = 4,6,8$ and $X = 5$ — $5$ is in none of them, so `No`.
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#26 of 486): [../../by-rating/026-THREETOPICS.md](../../by-rating/026-THREETOPICS.md)
+Same problem in rating order (#26 of 735): [../../by-rating/026-THREETOPICS.md](../../by-rating/026-THREETOPICS.md)

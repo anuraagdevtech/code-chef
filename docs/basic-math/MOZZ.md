@@ -150,8 +150,6 @@ main()
 
 Row 2 has no reward at all; row 4 has one stick per plate.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#81 of 486): [../../by-rating/081-MOZZ.md](../../by-rating/081-MOZZ.md)
+Same problem in rating order (#81 of 735): [../../by-rating/081-MOZZ.md](../../by-rating/081-MOZZ.md)

@@ -178,8 +178,6 @@ Third sample: $N = 6$ with edges $(1,2)$, $(3,4)$, $(5,6)$.
 
 Three routes, and $2 \times 2 \times 2 = 8$ ways to pick the captains. Output `3 8`.
 
-> CodeChef tags: `Advanced Data Structures`, `Mathematics`
-
 ---
 
-Same problem in rating order (#391 of 486): [../../by-rating/391-FIRESC.md](../../by-rating/391-FIRESC.md)
+Same problem in rating order (#408 of 735): [../../by-rating/408-FIRESC.md](../../by-rating/408-FIRESC.md)

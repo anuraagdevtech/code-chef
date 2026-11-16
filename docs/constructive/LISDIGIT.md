@@ -182,4 +182,4 @@ The lengths reproduce the input array exactly.
 
 ---
 
-Same problem in rating order (#201 of 486): [../../by-rating/201-LISDIGIT.md](../../by-rating/201-LISDIGIT.md)
+Same problem in rating order (#201 of 735): [../../by-rating/201-LISDIGIT.md](../../by-rating/201-LISDIGIT.md)

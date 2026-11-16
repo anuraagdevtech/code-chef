@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Rearranging a given formula |
-| **CodeChef tags** | `Special`, `Algorithms`, `Physics`, `Mathematics`, `Brute Force` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

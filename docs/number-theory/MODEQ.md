@@ -191,4 +191,4 @@ Output `3`. Checking $(2,3)$ directly: $((6 \bmod 2) \bmod 3) = 0$ and $((6 \bmo
 
 ---
 
-Same problem in rating order (#459 of 486): [../../by-rating/459-MODEQ.md](../../by-rating/459-MODEQ.md)
+Same problem in rating order (#490 of 735): [../../by-rating/490-MODEQ.md](../../by-rating/490-MODEQ.md)

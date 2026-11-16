@@ -124,8 +124,6 @@ main()
 | 4000 | yes | — | `1` |
 | 1900 | no | yes | `2` |
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#113 of 486): [../../by-rating/113-WHICHDIV.md](../../by-rating/113-WHICHDIV.md)
+Same problem in rating order (#113 of 735): [../../by-rating/113-WHICHDIV.md](../../by-rating/113-WHICHDIV.md)

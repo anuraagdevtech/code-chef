@@ -1,4 +1,4 @@
-[&larr; 480. Save People](FIZZBUZZ2306.md) &middot; [Index](../../README.md)
+[&larr; 480. Save People](FIZZBUZZ2306.md) &middot; [Index](../../README.md) &middot; [490. Racing &rarr;](RACINGEN.md)
 
 # 483. Digit Removal
 
@@ -151,8 +151,6 @@ Fourth sample: $N = 5925$, $D = 9$. The leftmost $9$ is at position $1$, and the
 
 Best is $6000$, so the answer is $6000 - 5925 = $ `75`.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#455 of 486): [../../by-rating/455-DIGITREM.md](../../by-rating/455-DIGITREM.md)
+Same problem in rating order (#478 of 735): [../../by-rating/478-DIGITREM.md](../../by-rating/478-DIGITREM.md)

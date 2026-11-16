@@ -138,4 +138,4 @@ main()
 
 ---
 
-Same problem in rating order (#181 of 486): [../../by-rating/181-PERMEXIS.md](../../by-rating/181-PERMEXIS.md)
+Same problem in rating order (#181 of 735): [../../by-rating/181-PERMEXIS.md](../../by-rating/181-PERMEXIS.md)

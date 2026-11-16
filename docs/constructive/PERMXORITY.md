@@ -148,8 +148,6 @@ $N = 6$ gives $A = 2, 3, 1, 4, 5, 6$.
 
 $1 \oplus 2 \oplus 3 = 0$, and the trailing $1 \oplus 1 = 0$, so the total XOR is `0`.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
-
 ---
 
-Same problem in rating order (#247 of 486): [../../by-rating/247-PERMXORITY.md](../../by-rating/247-PERMXORITY.md)
+Same problem in rating order (#249 of 735): [../../by-rating/249-PERMXORITY.md](../../by-rating/249-PERMXORITY.md)

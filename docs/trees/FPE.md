@@ -1,0 +1,181 @@
+[&larr; 621. Perfect Tree Problem](PTREE.md) &middot; [Index](../../README.md) &middot; [672. Sardar and GCD &rarr;](DLTNODE.md)
+
+# 649. Full Path Eraser
+
+> CodeChef problem code [`FPE`](https://www.codechef.com/problems/FPE) &middot; difficulty **2094** &middot; time limit **2s**
+
+| | |
+|---|---|
+| **Topic** | Trees |
+| **Technique** | Subtree gcds and a DP over where the removed root path continues |
+| **Time** | $O(N \log A)$ per test case |
+| **Space** | $O(N)$ |
+| **Roadmap course** | 2000 to 2500 difficulty problems (Level 5) |
+
+## Question
+
+There is a rooted tree of $N$ vertices rooted at vertex $1$. Each vertex $v$ has a value $A_v$ associated with it.
+
+You choose a vertex $v$ (possibly the root) from the tree and remove all vertices on the path from the root to the vertex $v$, also including $v$. This will result in a forest of zero or more connected components.
+
+The beauty of a connected component is the $\mathrm{GCD}$ of the values of all vertices in the component. Find the maximum value of the sum of beauties of the obtained connected components for any choice of $v$.
+
+Here, $\mathrm{GCD}$ stands for [Greatest Common Divisor](https://en.wikipedia.org/wiki/Greatest_common_divisor).
+
+**Input**
+
+- The first line contains a single integer $T$ — the number of test cases. Then the test cases follow.
+- The first line of each test case contains an integer $N$ — the size of the tree.
+- The second line of each test case contains $N$ space-separated integers $A_1, A_2, \dots, A_N$ denoting the values associated with each vertex.
+- The next $N-1$ lines contain two space-separated integers $u$ and $v$ — denoting an undirected edge between nodes $u$ and $v$.
+
+It is guaranteed that the edges given in the input form a tree.
+
+**Output**
+
+For each test case output the maximum value of the sum of beauties of the obtained connected components for any choice of $v$.
+
+## Constraints
+
+- $1 \leq T \leq 2\cdot10^4$
+- $1 \leq N \leq 3\cdot10^5$
+- $1 \leq A_i \leq 10^9$
+- $1 \leq u,v \leq N$ and $u \neq v$
+- It is guaranteed that the edges given in the input form a tree.
+- The sum of $N$ over all test cases does not exceed $3\cdot10^5$
+
+**Subtasks**
+
+- 30 points : $1 \leq R \leq 10000$
+- 70 points : $1 \leq R \leq 10^9$
+
+## Sample
+
+**Sample input**
+
+```
+1
+10
+15 30 15 5 3 15 3 3 5 5
+1 2
+1 5
+2 3
+2 4
+5 6
+5 7
+5 8
+7 9
+7 10
+```
+
+**Sample output**
+
+```
+33
+```
+
+<details><summary>Explanation</summary>
+
+The tree from the sample is as follows.
+
+![tree_basic](https://s3.amazonaws.com/codechef_shared/download/Images/the_hyp0cr1t3/tree_basic.png =450x450)
+
+If vertex $v = 7$ is chosen, vertices $1$, $5$ and $7$ are removed.
+
+![tree_remove](https://s3.amazonaws.com/codechef_shared/download/Images/the_hyp0cr1t3/tree_remove.png =450x450)
+
+The resulting forest contains five connected components $\{8\}, \{6\}, \{10\}, \{9\}$ and $\{2, 3, 4\}$.
+
+![tree_value](https://s3.amazonaws.com/codechef_shared/download/Images/the_hyp0cr1t3/tree_value.png =450x450)
+
+The beauties of the connected components are $3$, $15$, $5$, $5$ and $5$ respectively. Thus the answer is $3 + 15 + 5 + 5 + 5 = 33$.
+
+It can be shown that this is the maximum value possible for any choice of $v$.
+
+</details>
+
+## Approach
+
+Removing the path from the root to $v$ leaves exactly the subtrees hanging off the path: for every removed vertex, all its children that are not on the path, each as a whole subtree. The beauty of such a component is the gcd of that subtree, so first compute `subtree_gcd` for every vertex bottom-up, and for every vertex the sum of its children's subtree gcds.
+
+Let `best[u]` be the best total obtainable inside the subtree of $u$ given that $u$ is removed. If the path stops at $u$, all children's subtrees are components: the sum of their gcds. If it continues into a child $c$, that child's gcd is replaced by `best[c]`:
+
+$$\text{best}[u] = \sum_{c} g_c + \max\bigl(0, \max_c (\text{best}[c] - g_c)\bigr).$$
+
+The root is always removed, so the answer is `best[1]`. The tree is processed in reverse BFS order to avoid recursion.
+
+## Solution (Python)
+
+```python
+import sys
+from math import gcd
+
+
+def main() -> None:
+    tokens = iter(map(int, sys.stdin.buffer.read().split()))
+    out = []
+    for _ in range(next(tokens)):
+        n = next(tokens)
+        values = [next(tokens) for _ in range(n)]
+        graph = [[] for _ in range(n)]
+        for i in range(n - 1):
+            u = next(tokens) - 1
+            v = next(tokens) - 1
+            graph[u].append(v)
+            graph[v].append(u)
+        parent = [-1] * n
+        order = [0]
+        parent[0] = 0
+        for u in order:
+            for v in graph[u]:
+                if v != parent[u]:
+                    parent[v] = u
+                    order.append(v)
+        subtree_gcd = values[:]
+        child_gcd_sum = [0] * n
+        for u in reversed(order[1:]):
+            up = parent[u]
+            subtree_gcd[up] = gcd(subtree_gcd[up], subtree_gcd[u])
+            child_gcd_sum[up] += subtree_gcd[u]
+        best = [0] * n
+        for u in reversed(order):
+            best[u] = child_gcd_sum[u] + max([0] + [best[v] - subtree_gcd[v] for v in graph[u] if parent[v] == u])
+        out.append(str(best[0]))
+    print('\n'.join(out))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+## Complexity
+
+- **Time:** $O(N \log A)$ per test case
+- **Space:** $O(N)$
+- Auxiliary space excludes the buffered input and output.
+
+## Edge cases
+
+- $N = 1$: removing the root leaves nothing and the answer is 0.
+- Choosing a leaf removes it and creates no component below it.
+- Continuing the path is optional - the gain may be negative.
+- The total length is bounded over all test cases, so per-test allocations stay linear.
+
+## Dry run
+
+Sample tree: 1 has children 2, 5; 2 has 3, 4; 5 has 6, 7, 8; 7 has 9, 10. Values `15 30 15 5 3 15 3 3 5 5`.
+
+Subtree gcds: $g_3 = 15$, $g_4 = 5$, $g_2 = 5$, $g_6 = 15$, $g_9 = g_{10} = 5$, $g_7 = 1$, $g_8 = 3$, $g_5 = 1$.
+
+- `best[7]` = $5 + 5 = 10$.
+- `best[5]` = $(15 + 1 + 3) + \max(0, 10 - 1) = 28$.
+- `best[2]` = $15 + 5 = 20$.
+- `best[1]` = $(5 + 1) + \max(0,\; 20 - 5,\; 28 - 1) = 33$.
+
+Answer 33, by choosing $v = 7$.
+
+> CodeChef tags: `Data Structures`, `Graphs`, `Mathematics`, `Number Theory`, `Algorithms`, `Graph Algos`, `Traversals`
+
+---
+
+Same problem in rating order (#603 of 735): [../../by-rating/603-FPE.md](../../by-rating/603-FPE.md)

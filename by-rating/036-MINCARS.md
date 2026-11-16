@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Ceiling division |
-| **CodeChef tags** | `Mathematics`, `Basic Math`, `Integer Division`, `Arithmetic` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

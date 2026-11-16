@@ -175,4 +175,4 @@ In row 1, winning $5$ of a best-of-$9$ clinches it, which is why the loser's $2$
 
 ---
 
-Same problem in rating order (#101 of 486): [../../by-rating/101-BESTOFTENNIS.md](../../by-rating/101-BESTOFTENNIS.md)
+Same problem in rating order (#101 of 735): [../../by-rating/101-BESTOFTENNIS.md](../../by-rating/101-BESTOFTENNIS.md)

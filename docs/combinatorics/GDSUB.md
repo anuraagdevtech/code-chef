@@ -134,4 +134,4 @@ Sum $1 + 5 + 8 + 4 = $ `18`.
 
 ---
 
-Same problem in rating order (#472 of 486): [../../by-rating/472-GDSUB.md](../../by-rating/472-GDSUB.md)
+Same problem in rating order (#565 of 735): [../../by-rating/565-GDSUB.md](../../by-rating/565-GDSUB.md)

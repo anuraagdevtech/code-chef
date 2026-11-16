@@ -148,8 +148,6 @@ main()
 
 In row 3 the $1$ pairs with $5$, then $4$, then $3$, removing each in turn and surviving itself.
 
-> CodeChef tags: `Data Structures`, `Arrays`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#235 of 486): [../../by-rating/235-REMELEM.md](../../by-rating/235-REMELEM.md)
+Same problem in rating order (#237 of 735): [../../by-rating/237-REMELEM.md](../../by-rating/237-REMELEM.md)

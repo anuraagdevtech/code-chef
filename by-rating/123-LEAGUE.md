@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Combinatorics |
 | **Technique** | Extremal construction in a round robin |
-| **CodeChef tags** | `math` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

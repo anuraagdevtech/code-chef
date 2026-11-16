@@ -138,8 +138,6 @@ Second sample: $N = 4$ checkpoints (three legs), tank $V = 2$.
 
 Minimum $1 + 1 + 2 = 4$, maximum $1 + 2 + 3 = 6$. Output `6 4`.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#397 of 486): [../../by-rating/397-CHEFCAR.md](../../by-rating/397-CHEFCAR.md)
+Same problem in rating order (#415 of 735): [../../by-rating/415-CHEFCAR.md](../../by-rating/415-CHEFCAR.md)

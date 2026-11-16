@@ -177,8 +177,6 @@ First sample: $H = 5$, $Y_1 = 1$ (so ducked height $4$), $Y_2 = 2$, $L = 3$.
 
 Output `5`.
 
-> CodeChef tags: `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#244 of 486): [../../by-rating/244-PIPSQUIK.md](../../by-rating/244-PIPSQUIK.md)
+Same problem in rating order (#246 of 735): [../../by-rating/246-PIPSQUIK.md](../../by-rating/246-PIPSQUIK.md)

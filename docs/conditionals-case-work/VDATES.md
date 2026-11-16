@@ -131,4 +131,4 @@ main()
 
 ---
 
-Same problem in rating order (#149 of 486): [../../by-rating/149-VDATES.md](../../by-rating/149-VDATES.md)
+Same problem in rating order (#149 of 735): [../../by-rating/149-VDATES.md](../../by-rating/149-VDATES.md)

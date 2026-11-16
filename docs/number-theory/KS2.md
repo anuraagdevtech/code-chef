@@ -131,8 +131,6 @@ main()
 
 Listing the round numbers confirms it: $19, 28, 37, \dots, 91, 109, 118, \dots, 190$ — the $19$th is $190$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#310 of 486): [../../by-rating/310-KS2.md](../../by-rating/310-KS2.md)
+Same problem in rating order (#314 of 735): [../../by-rating/314-KS2.md](../../by-rating/314-KS2.md)

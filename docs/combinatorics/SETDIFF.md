@@ -184,8 +184,6 @@ Third sample: $S = \{1, 2, 3, 4\}$, so $n = 4$.
 
 Total `23`.
 
-> CodeChef tags: `Mathematics`, `Modular Arithmetic`
-
 ---
 
-Same problem in rating order (#431 of 486): [../../by-rating/431-SETDIFF.md](../../by-rating/431-SETDIFF.md)
+Same problem in rating order (#453 of 735): [../../by-rating/453-SETDIFF.md](../../by-rating/453-SETDIFF.md)

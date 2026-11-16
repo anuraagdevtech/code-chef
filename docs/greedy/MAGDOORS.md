@@ -136,4 +136,4 @@ Output `2`. Note door $3$ is open only because of the wave cast at door $2$.
 
 ---
 
-Same problem in rating order (#216 of 486): [../../by-rating/216-MAGDOORS.md](../../by-rating/216-MAGDOORS.md)
+Same problem in rating order (#217 of 735): [../../by-rating/217-MAGDOORS.md](../../by-rating/217-MAGDOORS.md)

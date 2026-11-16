@@ -165,8 +165,6 @@ Second sample: target $100$, rod $50$, plates $100, 10, 10, 10, 10, 10, 90$.
 
 Total load $50 + 40 = 90 < 100$, so `NO`. The lone $100$-gram plate is unusable for want of a twin.
 
-> CodeChef tags: `Data Structures`, `Arrays`, `Algorithms`
-
 ---
 
-Same problem in rating order (#348 of 486): [../../by-rating/348-BENCHP.md](../../by-rating/348-BENCHP.md)
+Same problem in rating order (#356 of 735): [../../by-rating/356-BENCHP.md](../../by-rating/356-BENCHP.md)

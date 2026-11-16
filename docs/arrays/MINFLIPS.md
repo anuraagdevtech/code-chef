@@ -142,8 +142,6 @@ main()
 
 Row 2 is rejected on parity before any counting happens.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#89 of 486): [../../by-rating/089-MINFLIPS.md](../../by-rating/089-MINFLIPS.md)
+Same problem in rating order (#89 of 735): [../../by-rating/089-MINFLIPS.md](../../by-rating/089-MINFLIPS.md)

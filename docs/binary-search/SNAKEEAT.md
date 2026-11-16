@@ -183,4 +183,4 @@ So `3` snakes can reach length $10$.
 
 ---
 
-Same problem in rating order (#471 of 486): [../../by-rating/471-SNAKEEAT.md](../../by-rating/471-SNAKEEAT.md)
+Same problem in rating order (#557 of 735): [../../by-rating/557-SNAKEEAT.md](../../by-rating/557-SNAKEEAT.md)

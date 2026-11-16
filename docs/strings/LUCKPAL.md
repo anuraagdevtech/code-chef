@@ -157,8 +157,6 @@ Second sample: `luckycodechef`, length $13$, so the mirror of a block at $p$ sit
 
 With $p = 0$ the first block is free and the second costs five edits, plus one more from the remaining mirror pairs — $6$ in total, giving `luckycocykcul`.
 
-> CodeChef tags: `Data Structures`, `Special`, `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#447 of 486): [../../by-rating/447-LUCKPAL.md](../../by-rating/447-LUCKPAL.md)
+Same problem in rating order (#470 of 735): [../../by-rating/470-LUCKPAL.md](../../by-rating/470-LUCKPAL.md)

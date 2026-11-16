@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Conditionals & Case Work |
 | **Technique** | Three-way comparison |
-| **CodeChef tags** | `Basic Programming Concepts`, `Conditional Statements` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

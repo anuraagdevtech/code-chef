@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Prefix Sums |
 | **Technique** | Running total compared against the index |
-| **CodeChef tags** | `Mathematics`, `Basic Math` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

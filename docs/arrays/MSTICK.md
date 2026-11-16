@@ -261,4 +261,4 @@ Output `9.0`.
 
 ---
 
-Same problem in rating order (#423 of 486): [../../by-rating/423-MSTICK.md](../../by-rating/423-MSTICK.md)
+Same problem in rating order (#443 of 735): [../../by-rating/443-MSTICK.md](../../by-rating/443-MSTICK.md)

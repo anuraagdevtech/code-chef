@@ -123,8 +123,6 @@ main()
 
 Row 3 never uses the long jump; row 4 is the case where both options coincide.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#56 of 486): [../../by-rating/056-XJUMP.md](../../by-rating/056-XJUMP.md)
+Same problem in rating order (#56 of 735): [../../by-rating/056-XJUMP.md](../../by-rating/056-XJUMP.md)

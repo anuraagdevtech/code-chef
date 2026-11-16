@@ -161,8 +161,6 @@ Fourth sample: $5, 5, 5, 6, 6, 6$.
 
 Largest group is $3$, so $6 - 3 = $ `3` deletions. Note $5 \oplus 6 = 3 > 1$, so the two groups cannot mix.
 
-> CodeChef tags: `Data Structures`, `Arrays`
-
 ---
 
-Same problem in rating order (#304 of 486): [../../by-rating/304-DELXORONE.md](../../by-rating/304-DELXORONE.md)
+Same problem in rating order (#308 of 735): [../../by-rating/308-DELXORONE.md](../../by-rating/308-DELXORONE.md)

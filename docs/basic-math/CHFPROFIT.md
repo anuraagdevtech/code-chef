@@ -131,4 +131,4 @@ main()
 
 ---
 
-Same problem in rating order (#126 of 486): [../../by-rating/126-CHFPROFIT.md](../../by-rating/126-CHFPROFIT.md)
+Same problem in rating order (#126 of 735): [../../by-rating/126-CHFPROFIT.md](../../by-rating/126-CHFPROFIT.md)

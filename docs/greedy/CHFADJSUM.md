@@ -154,8 +154,6 @@ main()
 
 Row 1 works as $4, 3, 4$: sums $7$ and $7$, both under $8$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#344 of 486): [../../by-rating/344-CHFADJSUM.md](../../by-rating/344-CHFADJSUM.md)
+Same problem in rating order (#352 of 735): [../../by-rating/352-CHFADJSUM.md](../../by-rating/352-CHFADJSUM.md)

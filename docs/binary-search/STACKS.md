@@ -189,4 +189,4 @@ Output `3 1 1 2`.
 
 ---
 
-Same problem in rating order (#462 of 486): [../../by-rating/462-STACKS.md](../../by-rating/462-STACKS.md)
+Same problem in rating order (#519 of 735): [../../by-rating/519-STACKS.md](../../by-rating/519-STACKS.md)

@@ -115,8 +115,6 @@ main()
 
 The code folds both steps into the single multiplier $10$.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#21 of 486): [../../by-rating/021-NOTEBOOK.md](../../by-rating/021-NOTEBOOK.md)
+Same problem in rating order (#21 of 735): [../../by-rating/021-NOTEBOOK.md](../../by-rating/021-NOTEBOOK.md)

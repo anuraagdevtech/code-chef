@@ -170,8 +170,6 @@ Fourth sample: $S = $ `0-0+000-`.
 
 Output `2`. After infinite time the string is `--0++0--`, with the two centres left neutral.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#414 of 486): [../../by-rating/414-CHRGES.md](../../by-rating/414-CHRGES.md)
+Same problem in rating order (#433 of 735): [../../by-rating/433-CHRGES.md](../../by-rating/433-CHRGES.md)

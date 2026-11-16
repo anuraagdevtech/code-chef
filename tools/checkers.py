@@ -900,3 +900,7 @@ CHECKERS = {
     "XORMUL": _xormul,
     "SUMPRODSEG": _sumprodseg,
 }
+
+# Additional roadmap constructions and numerical answers.
+from roadmap_checkers import CHECKERS as ROADMAP_CHECKERS
+CHECKERS.update(ROADMAP_CHECKERS)

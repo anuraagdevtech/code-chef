@@ -170,8 +170,6 @@ Third sample: $P = 5$ ones, $Q = 4$ twos, refunds $2, 3, 4, 5$ (already sorted).
 
 The last creature needs five ones but only four remain, so it is skipped. Output `3`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#416 of 486): [../../by-rating/416-LUMPYBUS.md](../../by-rating/416-LUMPYBUS.md)
+Same problem in rating order (#435 of 735): [../../by-rating/435-LUMPYBUS.md](../../by-rating/435-LUMPYBUS.md)

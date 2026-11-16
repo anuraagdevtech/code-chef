@@ -151,8 +151,6 @@ main()
 
 For the first row the odd $1$ must go, and the two evens give four choices: keep both, keep either, or keep neither.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#353 of 486): [../../by-rating/353-REMOSET.md](../../by-rating/353-REMOSET.md)
+Same problem in rating order (#361 of 735): [../../by-rating/361-REMOSET.md](../../by-rating/361-REMOSET.md)

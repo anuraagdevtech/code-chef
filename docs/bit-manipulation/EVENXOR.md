@@ -142,4 +142,4 @@ Subsets: $\{3\} \to 3$ (popcount $2$), $\{5\} \to 5$ ($2$), $\{3,5\} \to 6$ ($2$
 
 ---
 
-Same problem in rating order (#421 of 486): [../../by-rating/421-EVENXOR.md](../../by-rating/421-EVENXOR.md)
+Same problem in rating order (#441 of 735): [../../by-rating/441-EVENXOR.md](../../by-rating/441-EVENXOR.md)

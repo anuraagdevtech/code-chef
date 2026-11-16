@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Net progress per cycle, with an odd remainder |
-| **CodeChef tags** | `Special`, `Basic Programming Concepts`, `Algorithms`, `Constructive`, `Case work`, `Conditional Statements`, `ad-hoc`, `Brute Force`, `Implementation` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

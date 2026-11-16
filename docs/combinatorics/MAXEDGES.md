@@ -148,8 +148,6 @@ Second sample: $N = 5$, $K = 3$ sources, $L = 3$ sinks.
 
 Output `4`; the isolated vertex counts as both a source and a sink while carrying no edges.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#359 of 486): [../../by-rating/359-MAXEDGES.md](../../by-rating/359-MAXEDGES.md)
+Same problem in rating order (#367 of 735): [../../by-rating/367-MAXEDGES.md](../../by-rating/367-MAXEDGES.md)

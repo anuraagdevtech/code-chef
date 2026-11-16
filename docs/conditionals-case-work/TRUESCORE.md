@@ -125,8 +125,6 @@ Each test case is two lines, "before" then "after".
 
 Row 2 fails on the first team alone, which is enough.
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#25 of 486): [../../by-rating/025-TRUESCORE.md](../../by-rating/025-TRUESCORE.md)
+Same problem in rating order (#25 of 735): [../../by-rating/025-TRUESCORE.md](../../by-rating/025-TRUESCORE.md)

@@ -154,8 +154,6 @@ First sample: $A = $ `100001`, $B = $ `110111`.
 
 Even class: differences at $\{4\}$ → one run. Odd class: differences at $\{1, 3\}$, adjacent within the class → one run. Output `2`.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#319 of 486): [../../by-rating/319-FLIP.md](../../by-rating/319-FLIP.md)
+Same problem in rating order (#324 of 735): [../../by-rating/324-FLIP.md](../../by-rating/324-FLIP.md)

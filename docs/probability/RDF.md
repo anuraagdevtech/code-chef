@@ -1,0 +1,162 @@
+[&larr; 514. A Plus B Again!](TAAPLUSB.md) &middot; [Index](../../README.md) &middot; [606. Player &rarr;](RRPLAYER.md)
+
+# 603. Random decreasing function
+
+> CodeChef problem code [`RDF`](https://www.codechef.com/problems/RDF) &middot; difficulty **1975** &middot; time limit **2s**
+
+| | |
+|---|---|
+| **Topic** | Probability |
+| **Technique** | Expectation by layers with a running prefix average, cut off after 70 steps |
+| **Time** | $O(70 \cdot \max N + T)$ |
+| **Space** | $O(\max N + T)$ |
+| **Roadmap course** | Rise from 3* to 4* (Level 4) |
+
+## Question
+
+Andriy and Serhiy are little students from the Lyceum of Kremenchuk. Yesterday there was a great party in the city - Chef's birthday. There were a lot of famous programmers at the party and, of course, everybody gave a gift to Chef. Andriy and Serhiy also didn't come empty-handed. Andriy gave Chef two integer numbers **N** and **K**. Serhiy was more inventive and gave Chef a strange function called "Random-Decreasing-Function", or "**RDF**" abbreviated. The function has the following form:
+
+```
+<code>RDF(N, K)
+    **for** i = 1 **to** K
+        **do** N = random(N)
+    **return** N</code>
+```
+
+In above language function **random(N)** returns any integer in the range **[0, N)** with equal probability. Let's consider that **random(0) = 0**. Chef likes both gifts very much and he plays with them every day, let alone that he forgot about his restaurant. Chef runs this function plenty times a day. The only trouble is that results are too unexpected for Chef. Now he asks you to find the expected result of **RDF(N, K)**.
+
+**Input**
+
+The first line of the input contains an integer **T** denoting the number of test cases. The description of **T** test cases follows. The only line of each test case contains two space-separated integers **N** and **K**.
+
+**Output**
+
+For each test case, output a single line containing the expected result of **RDF(N, K)**. Your answer will be considered as correct if it has an absolute or relative error less than **10^−6**. More formally if the expected output is **A** and your output is **B**, your output will be considered as correct if and only if
+**|A − B| ≤ 10^−6 * max{|A|, |B|, 1}**.
+
+**Constrains**
+
+- **1** ≤ **T** ≤ **500000** (**5 * 10^5**)
+
+- **1** ≤ **N** < **100000** (**10^5**)
+
+- **0** ≤ **K** < **100000** (**10^5**)
+
+## Constraints
+
+- 1 <= T <= 5 * 10^5.
+- 1 <= N < 10^5.
+- 0 <= K < 10^5.
+
+## Sample
+
+**Sample input**
+
+```
+3
+6 1
+4 2
+4 3
+```
+
+**Sample output**
+
+```
+2.5
+0.3750
+0.0416667
+```
+
+<details><summary>Explanation</summary>
+
+**Example case 1.** **RDF(6, 1)** returns each of the numbers **0, 1, 2, 3, 4, 5** with probability **1/6**. Hence the expected value is
+**(0 + 1 + 2 + 3 + 4 + 5) / 6 = 2.5**.
+
+**Example case 2.** Value of **N** when **RDF(4, 2)** is called may change by one of the following scenarios:
+
+- **4 ? 0 ? 0** with probability **1/4**.
+
+- **4 ? 1 ? 0** with probability **1/4**.
+
+- **4 ? 2 ? 0** with probability **1/8**.
+
+- **4 ? 2 ? 1** with probability **1/8**.
+
+- **4 ? 3 ? 0** with probability **1/12**.
+
+- **4 ? 3 ? 1** with probability **1/12**.
+
+- **4 ? 3 ? 2** with probability **1/12**.
+
+Hence the expected value is
+**0 * 1/4 + 0 * 1/4 + 0 * 1/8 + 1 * 1/8 + 0 * 1/12 + 1 * 1/12 + 2 * 1/12 = 1/8 + 1/12 + 1/6 = 3/8 = 0.375**.
+**Example case 3.** You should figure it out by yourself.
+
+</details>
+
+## Approach
+
+Let $E_k(n)$ be the expected result of $k$ steps starting from $n$. One step replaces $n$ by a uniform value in $[0, n)$, so
+
+$$E_0(n) = n, \qquad E_k(n) = \frac{1}{n} \sum_{j=0}^{n-1} E_{k-1}(j), \qquad E_k(0) = 0.$$
+
+A running sum over $j$ turns a whole layer into one linear pass. Each step at least halves the expectation ($E_1(n) = (n-1)/2$), so after 70 steps it is below $N / 2^{70}$, far under the required precision; such queries are answered with 0 and layers beyond 69 are never built.
+
+The queries are grouped by $k$ and answered offline while the layers are generated up to the largest $N$ in the input.
+
+## Solution (Python)
+
+```python
+import sys
+
+
+def main() -> None:
+    tokens = iter(map(int, sys.stdin.buffer.read().split()))
+    cases = [(next(tokens), next(tokens)) for _ in range(next(tokens))]
+    largest = max((n for n, k in cases), default=0)
+    by_steps = {}
+    answers = [0.0] * len(cases)
+    for i, (n, k) in enumerate(cases):
+        if k < 70:
+            by_steps.setdefault(k, []).append((i, n))
+    expected = [float(i) for i in range(largest + 1)]
+    for k in range(min(69, max(by_steps, default=0)) + 1):
+        for i, n in by_steps.get(k, []):
+            answers[i] = expected[n]
+        total = 0.0
+        next_expected = [0.0] * (largest + 1)
+        for n in range(1, largest + 1):
+            total += expected[n - 1]
+            next_expected[n] = total / n
+        expected = next_expected
+    print('\n'.join(('%.10f' % x for x in answers)))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+## Complexity
+
+- **Time:** $O(70 \cdot \max N + T)$
+- **Space:** $O(\max N + T)$
+- Auxiliary space excludes the buffered input and output.
+
+## Edge cases
+
+- $K = 0$ returns $N$ itself.
+- `random(0) = 0`, so $E_k(0) = 0$ and the division by $n$ only happens for $n \ge 1$.
+- Huge $K$ must not drive the loop - the cut-off keeps the work bounded.
+- Answers are floats; ten decimals are printed.
+
+## Dry run
+
+`RDF(4, 2)`.
+
+Layer 0: $E_0 = 0, 1, 2, 3, 4$. Layer 1: $E_1(n) = (n-1)/2$, giving $0, 0, 0.5, 1, 1.5$.
+
+Layer 2: $E_2(4) = (E_1(0) + E_1(1) + E_1(2) + E_1(3)) / 4 = (0 + 0 + 0.5 + 1) / 4 = 0.375$.
+
+---
+
+Same problem in rating order (#561 of 735): [../../by-rating/561-RDF.md](../../by-rating/561-RDF.md)

@@ -120,8 +120,6 @@ main()
 
 The last row is the interesting one: two leading zeros appear and are discarded by the conversion.
 
-> CodeChef tags: `Mathematics`, `Basic Math`, `Algorithms`
-
 ---
 
-Same problem in rating order (#2 of 486): [../../by-rating/002-FLOW007.md](../../by-rating/002-FLOW007.md)
+Same problem in rating order (#2 of 735): [../../by-rating/002-FLOW007.md](../../by-rating/002-FLOW007.md)

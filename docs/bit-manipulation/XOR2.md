@@ -144,8 +144,6 @@ main()
 
 For the first row: XOR positions $2$ and $3$ with $1$ to get $3,3,3,3$.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
-
 ---
 
-Same problem in rating order (#351 of 486): [../../by-rating/351-XOR2.md](../../by-rating/351-XOR2.md)
+Same problem in rating order (#359 of 735): [../../by-rating/359-XOR2.md](../../by-rating/359-XOR2.md)

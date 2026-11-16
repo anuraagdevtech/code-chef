@@ -159,8 +159,6 @@ main()
 
 In the last row, painting any of the five `B`s white turns the whole string white in one move.
 
-> CodeChef tags: `Data Structures`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#265 of 486): [../../by-rating/265-MKGPLNKS.md](../../by-rating/265-MKGPLNKS.md)
+Same problem in rating order (#267 of 735): [../../by-rating/267-MKGPLNKS.md](../../by-rating/267-MKGPLNKS.md)

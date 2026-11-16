@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Sorting |
 | **Technique** | Minimum adjacent difference after sorting |
-| **CodeChef tags** | `Algorithms`, `Sorting`, `Brute Force` |
 | **Complexity class** | Linearithmic $O(n \log n)$ |
 | **Time** | $O(N \log N)$ per test case |
 | **Space** | $O(N)$ |

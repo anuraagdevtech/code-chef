@@ -124,8 +124,6 @@ main()
 | 2 | 2 | 2 | `YES` |
 | 6 | 2 | 2 | `YES` |
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#96 of 486): [../../by-rating/096-TYRES.md](../../by-rating/096-TYRES.md)
+Same problem in rating order (#96 of 735): [../../by-rating/096-TYRES.md](../../by-rating/096-TYRES.md)

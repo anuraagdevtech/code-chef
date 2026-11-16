@@ -164,8 +164,6 @@ Second sample: $S = $ `1010`, $T = $ `0110`.
 
 Output `2`.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#426 of 486): [../../by-rating/426-TEAMFOR.md](../../by-rating/426-TEAMFOR.md)
+Same problem in rating order (#446 of 735): [../../by-rating/446-TEAMFOR.md](../../by-rating/446-TEAMFOR.md)

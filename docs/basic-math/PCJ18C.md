@@ -1,0 +1,109 @@
+[&larr; 491. Little Elephant and Bamboo](LEBAMBOO.md) &middot; [Index](../../README.md) &middot; [512. Server Trouble &rarr;](SVRT.md)
+
+# 499. Chef and Polygon Cakes
+
+> CodeChef problem code [`PCJ18C`](https://www.codechef.com/problems/PCJ18C) &middot; difficulty **1773** &middot; time limit **1s**
+
+| | |
+|---|---|
+| **Topic** | Basic Math |
+| **Technique** | Recover the common difference from the angle sum |
+| **Time** | $O(\log V)$ per test case |
+| **Space** | $O(1)$ |
+| **Roadmap course** | 1600 to 1800 difficulty problems (Level 3) |
+
+## Question
+
+Chef is making polygon cakes in his kitchen today!
+
+Since the judge panel is very strict, Chef's cakes must be beautiful and have sharp and precise $internal$ angles in arithmetic progression.
+
+Given the number of sides, $N$, of the cake Chef is baking today and also the measure of its first angle(smallest angle), $A$, find the measure of the $K^{th}$ angle.
+
+**Input:**
+- The first line contains a single integer $T$, the number of test cases.
+- The next $T$ lines contain three space separated integers $N$, $A$ and $K$, the number of sides of polygon, the first angle and the $K^{th}$ angle respectively.
+
+**Output:**
+For each test case, print two space separated integers $X$ and $Y$, such that the $K^{th}$ angle can be written in the form of $X/Y$ and $gcd(X, Y) = 1$
+
+**Constraints**
+- $1 \leq T \leq 50$
+- $3 \leq N \leq 1000$
+- $1 \leq A \leq 1000000000$
+- $1 \leq K \leq N$
+- It is guaranteed the answer is always valid.
+
+## Constraints
+
+- $1 \leq T \leq 50$
+- $3 \leq N \leq 1000$
+- $1 \leq A \leq 1000000000$
+- $1 \leq K \leq N$
+- It is guaranteed the answer is always valid.
+
+## Sample
+
+**Sample input**
+
+```
+1
+3 30 2
+```
+
+**Sample output**
+
+```
+60 1
+```
+
+## Approach
+
+The angle sum is $180(N-2)$. For an arithmetic progression starting at $A$, this equals $NA+N(N-1)d/2$. Therefore the $K$-th angle is $A+2(K-1)(180(N-2)-NA)/(N(N-1))$.
+
+Form one integer numerator over denominator $N(N-1)$, then divide both by their GCD. Keeping integer arithmetic avoids rounding rational angles.
+
+## Solution (Python)
+
+```python
+import sys
+from math import gcd
+
+
+def main() -> None:
+    tokens = iter(sys.stdin.buffer.read().split())
+    out = []
+    for _ in range(int(next(tokens))):
+        n, a, k = (int(next(tokens)) for _ in range(3))
+        den = n*(n-1)
+        num = a*den + 2*(k-1)*(180*(n-2)-n*a)
+        g = gcd(abs(num), den)
+        out.append(f'{num//g} {den//g}')
+    sys.stdout.write("\n".join(out) + "\n")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+## Complexity
+
+- **Time:** $O(\log V)$ per test case
+- **Space:** $O(1)$
+- Auxiliary space excludes the buffered input and output.
+
+## Edge cases
+
+- $K=1$ returns exactly $A/1$.
+- Equal angles have common difference zero.
+- Reduce the fraction even when the angle is an integer.
+
+## Dry run
+
+For `N=3, A=30, K=2`, the total is 180, so the progression difference is 30 and the second angle is `60 1`.
+
+> CodeChef tags: `Mathematics`, `Number Theory`, `Sequences and Progression`, `Basic Math`
+
+---
+
+Same problem in rating order (#498 of 735): [../../by-rating/498-PCJ18C.md](../../by-rating/498-PCJ18C.md)

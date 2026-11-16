@@ -151,8 +151,6 @@ Second sample: $n = 2$, $K = 4$. Floor is $2 \cdot 3/2 = 3$, so $x = 4 - 3 + 1 =
 
 Total $1 + 2 + 1 = 4 = K$ ✓
 
-> CodeChef tags: `Number Theory`
-
 ---
 
-Same problem in rating order (#293 of 486): [../../by-rating/293-GCDSUBARRAYS.md](../../by-rating/293-GCDSUBARRAYS.md)
+Same problem in rating order (#295 of 735): [../../by-rating/295-GCDSUBARRAYS.md](../../by-rating/295-GCDSUBARRAYS.md)

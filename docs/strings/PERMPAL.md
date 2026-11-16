@@ -165,8 +165,6 @@ The string `abab`, with `a` at positions $1, 3$ and `b` at positions $2, 4$ (1-b
 
 Applying it: $t = s_1 s_2 s_4 s_3 = $ `abba`, a palindrome.
 
-> CodeChef tags: `Data Structures`
-
 ---
 
-Same problem in rating order (#384 of 486): [../../by-rating/384-PERMPAL.md](../../by-rating/384-PERMPAL.md)
+Same problem in rating order (#398 of 735): [../../by-rating/398-PERMPAL.md](../../by-rating/398-PERMPAL.md)

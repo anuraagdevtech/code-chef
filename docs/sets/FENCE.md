@@ -167,8 +167,6 @@ First sample: $K = 9$ plants in a $4 \times 4$ field.
 
 Eight shared edges, so $4 \cdot 9 - 2 \cdot 8 = 36 - 16 = $ `20`.
 
-> CodeChef tags: `Data Structures`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#405 of 486): [../../by-rating/405-FENCE.md](../../by-rating/405-FENCE.md)
+Same problem in rating order (#423 of 735): [../../by-rating/423-FENCE.md](../../by-rating/423-FENCE.md)

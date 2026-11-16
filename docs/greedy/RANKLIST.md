@@ -156,8 +156,6 @@ main()
 
 The last row starts from $\{1,1,1\}$; changing two elements to $2$ and $3$ gives the ideal list.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#322 of 486): [../../by-rating/322-RANKLIST.md](../../by-rating/322-RANKLIST.md)
+Same problem in rating order (#327 of 735): [../../by-rating/327-RANKLIST.md](../../by-rating/327-RANKLIST.md)

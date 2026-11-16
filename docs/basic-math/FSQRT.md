@@ -111,8 +111,6 @@ Sample input: three values, each handled independently.
 
 Printed as `3`, `2`, `100`.
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#3 of 486): [../../by-rating/003-FSQRT.md](../../by-rating/003-FSQRT.md)
+Same problem in rating order (#3 of 735): [../../by-rating/003-FSQRT.md](../../by-rating/003-FSQRT.md)

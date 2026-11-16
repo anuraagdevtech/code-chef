@@ -121,8 +121,6 @@ main()
 | 25 | 2 | 10 | 20 | yes | `YES` |
 | 15 | 2 | 10 | 20 | no | `NO` |
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#99 of 486): [../../by-rating/099-SUPCHEF.md](../../by-rating/099-SUPCHEF.md)
+Same problem in rating order (#99 of 735): [../../by-rating/099-SUPCHEF.md](../../by-rating/099-SUPCHEF.md)

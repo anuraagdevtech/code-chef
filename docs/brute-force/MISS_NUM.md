@@ -1,4 +1,4 @@
-[&larr; 256. Digital clock](ONOZ.md) &middot; [Index](../../README.md)
+[&larr; 256. Digital clock](ONOZ.md) &middot; [Index](../../README.md) &middot; [648. Segment Three &rarr;](SEGTHREE.md)
 
 # 294. Missing Numbers
 
@@ -152,8 +152,6 @@ Trying $s = 17$ and $d = -1$:
 
 All four match, so the output is `8 9`.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#339 of 486): [../../by-rating/339-MISS_NUM.md](../../by-rating/339-MISS_NUM.md)
+Same problem in rating order (#346 of 735): [../../by-rating/346-MISS_NUM.md](../../by-rating/346-MISS_NUM.md)

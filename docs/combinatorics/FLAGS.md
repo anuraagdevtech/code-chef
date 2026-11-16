@@ -215,8 +215,6 @@ main()
 
 At $N = 2$ only the stripe patterns survive; the others need a third colour.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#257 of 486): [../../by-rating/257-FLAGS.md](../../by-rating/257-FLAGS.md)
+Same problem in rating order (#259 of 735): [../../by-rating/259-FLAGS.md](../../by-rating/259-FLAGS.md)

@@ -134,8 +134,6 @@ main()
 
 Row 3 is the exact tie, row 4 the near miss.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#20 of 486): [../../by-rating/020-HELIUM3.md](../../by-rating/020-HELIUM3.md)
+Same problem in rating order (#20 of 735): [../../by-rating/020-HELIUM3.md](../../by-rating/020-HELIUM3.md)

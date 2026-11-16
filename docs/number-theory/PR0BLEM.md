@@ -142,8 +142,6 @@ main()
 
 Row 2 is the negative-difference case.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#134 of 486): [../../by-rating/134-PR0BLEM.md](../../by-rating/134-PR0BLEM.md)
+Same problem in rating order (#134 of 735): [../../by-rating/134-PR0BLEM.md](../../by-rating/134-PR0BLEM.md)

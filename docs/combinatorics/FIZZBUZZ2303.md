@@ -121,8 +121,6 @@ main()
 
 For $N = 3$ the six orderings are $(1,2), (1,3), (2,1), (2,3), (3,1), (3,2)$ — the pairs $(1,2)$ and $(2,1)$ counting separately is exactly what makes this a permutation count.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#78 of 486): [../../by-rating/078-FIZZBUZZ2303.md](../../by-rating/078-FIZZBUZZ2303.md)
+Same problem in rating order (#78 of 735): [../../by-rating/078-FIZZBUZZ2303.md](../../by-rating/078-FIZZBUZZ2303.md)

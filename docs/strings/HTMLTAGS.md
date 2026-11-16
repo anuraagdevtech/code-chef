@@ -142,8 +142,6 @@ main()
 | `</5>` | yes | yes | yes | `5` | yes | `Success` |
 | `<//aA>` | yes | yes | yes | `/aA` | **no** | `Error` |
 
-> CodeChef tags: `Special`, `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#249 of 486): [../../by-rating/249-HTMLTAGS.md](../../by-rating/249-HTMLTAGS.md)
+Same problem in rating order (#251 of 735): [../../by-rating/251-HTMLTAGS.md](../../by-rating/251-HTMLTAGS.md)

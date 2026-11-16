@@ -151,8 +151,6 @@ Sample: $K = 2$, $A = 3, 6, 10$ — binary $0011$, $0110$, $1010$.
 
 Total `5`. Bit $1$ is the only column needing two operations, since three indices exceed $K = 2$.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
-
 ---
 
-Same problem in rating order (#326 of 486): [../../by-rating/326-XXOORR.md](../../by-rating/326-XXOORR.md)
+Same problem in rating order (#331 of 735): [../../by-rating/331-XXOORR.md](../../by-rating/331-XXOORR.md)

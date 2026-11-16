@@ -146,4 +146,4 @@ Output `Yes` — for instance A takes $\{5, 4, 2\}$ and B takes $\{1, 3\}$.
 
 ---
 
-Same problem in rating order (#309 of 486): [../../by-rating/309-SPSUM.md](../../by-rating/309-SPSUM.md)
+Same problem in rating order (#313 of 735): [../../by-rating/313-SPSUM.md](../../by-rating/313-SPSUM.md)

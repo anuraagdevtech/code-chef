@@ -1,0 +1,131 @@
+[&larr; 645. Double Burgers](BURGER.md) &middot; [Index](../../README.md) &middot; [684. Existence Of X &rarr;](EXISTENCEOFX.md)
+
+# 671. Chef Is Just Throwing Random Words
+
+> CodeChef problem code [`SSO`](https://www.codechef.com/problems/SSO) &middot; difficulty **2181** &middot; time limit **1.5s**
+
+| | |
+|---|---|
+| **Topic** | Bit Manipulation |
+| **Technique** | Count the supply of each bit and propagate carries |
+| **Time** | $O(N \log A)$ per test case |
+| **Space** | $O(\log \sum A)$ |
+| **Roadmap course** | 2000 to 2500 difficulty problems (Level 5) |
+
+## Question
+
+Chef once had a deep epiphany and ended up saying: Given a sequence of positive integers $a_1, a_2, \ldots, a_N$, if you take each of its $2^N$ subsequences and write down the sum of elements of this subsequence, what will the bitwise OR of the written integers be?
+
+Yes, you read it right, but can you solve it?
+
+**Input**
+- The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
+- The first line of each test case contains a single integer $N$.
+- The second line contains $N$ space-separated integers $a_1, a_2, \ldots, a_N$.
+
+**Output**
+For each test case, print a single line containing one integer ― the bitwise OR of sums of all subsequences.
+
+**Constraints**
+- $1 \le T \le 5$
+- $1 \le N \le 10^5$
+- $1 \le a_i \lt 2^{30}$ for each valid $i$
+
+**Subtasks**
+**Subtask #1 (100 points):** original constraints
+
+## Constraints
+
+- $1 \le T \le 5$
+- $1 \le N \le 10^5$
+- $1 \le a_i \lt 2^{30}$ for each valid $i$
+
+## Sample
+
+**Sample input**
+
+```
+2
+2
+1 1
+3
+1 9 8
+```
+
+**Sample output**
+
+```
+3
+27
+```
+
+## Approach
+
+Bit $i$ appears in the OR if some subset sum has bit $i$ set. Count, for each bit, how many of the given numbers have it; think of these as coins of value $2^i$.
+
+- If at least one coin of value $2^i$ is available - an original one or one formed by a carry - a subset sum with bit $i$ set exists.
+- Two coins of value $2^i$ can be added to form one coin of value $2^{i+1}$, so pass $\lfloor \text{count}_i / 2 \rfloor$ on to the next bit.
+
+Going from the lowest bit upwards with this rule marks every bit that can be produced by carries, and a bit with no supply at all cannot be produced. The table is sized for sums well beyond the input range.
+
+## Solution (Python)
+
+```python
+import sys
+
+
+def main() -> None:
+    tokens = iter(map(int, sys.stdin.buffer.read().split()))
+    out = []
+    for _ in range(next(tokens)):
+        n = next(tokens)
+        counts = [0] * 48
+        for _ in range(n):
+            x = next(tokens)
+            while x:
+                bit = x & -x
+                counts[bit.bit_length() - 1] += 1
+                x -= bit
+        answer = 0
+        for i in range(47):
+            if counts[i]:
+                answer |= 1 << i
+            counts[i + 1] += counts[i] // 2
+        out.append(str(answer))
+    print('\n'.join(out))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+## Complexity
+
+- **Time:** $O(N \log A)$ per test case
+- **Space:** $O(\log \sum A)$
+- Auxiliary space excludes the buffered input and output.
+
+## Edge cases
+
+- A single element: the answer is the element itself.
+- Equal elements matter - `1 1` produces the sum 2 and hence bit 1.
+- Carries can cascade through several bits.
+- The empty subsequence has sum 0 and contributes nothing.
+
+## Dry run
+
+`A = [1, 9, 8]`: bit 0 occurs twice (1, 9) and bit 3 twice (9, 8).
+
+- bit 0: count 2 - set; carry 1 to bit 1.
+- bit 1: count 1 - set; carry 0.
+- bit 2: count 0.
+- bit 3: count 2 - set; carry 1 to bit 4.
+- bit 4: count 1 - set.
+
+Answer $1 + 2 + 8 + 16 = 27$.
+
+> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
+
+---
+
+Same problem in rating order (#631 of 735): [../../by-rating/631-SSO.md](../../by-rating/631-SSO.md)

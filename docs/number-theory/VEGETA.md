@@ -135,4 +135,4 @@ Total `5`. Level $7$ is the destination, so its own $\omega$ is not spent.
 
 ---
 
-Same problem in rating order (#275 of 486): [../../by-rating/275-VEGETA.md](../../by-rating/275-VEGETA.md)
+Same problem in rating order (#277 of 735): [../../by-rating/277-VEGETA.md](../../by-rating/277-VEGETA.md)

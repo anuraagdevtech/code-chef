@@ -130,4 +130,4 @@ main()
 
 ---
 
-Same problem in rating order (#212 of 486): [../../by-rating/212-CSUB.md](../../by-rating/212-CSUB.md)
+Same problem in rating order (#212 of 735): [../../by-rating/212-CSUB.md](../../by-rating/212-CSUB.md)

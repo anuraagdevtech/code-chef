@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Conditionals & Case Work |
 | **Technique** | Presence of both values in a small collection |
-| **CodeChef tags** | `Special`, `Basic Programming Concepts`, `Algorithms`, `Case work`, `Conditional Statements`, `Brute Force` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

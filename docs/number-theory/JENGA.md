@@ -127,8 +127,6 @@ main()
 
 Rows 2 and 3 are the same pair of numbers swapped, and they give opposite answers.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#38 of 486): [../../by-rating/038-JENGA.md](../../by-rating/038-JENGA.md)
+Same problem in rating order (#38 of 735): [../../by-rating/038-JENGA.md](../../by-rating/038-JENGA.md)

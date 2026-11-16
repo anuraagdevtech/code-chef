@@ -159,8 +159,6 @@ Third sample: $A = 1, 2, 1, 3$.
 
 Output `YES`: one operation on the two $1$s at indices $1$ and $3$ gives $1, 1, 1, 3$ — two distinct values.
 
-> CodeChef tags: `Special`, `Algorithms`
-
 ---
 
-Same problem in rating order (#380 of 486): [../../by-rating/380-RANGEASSIGN.md](../../by-rating/380-RANGEASSIGN.md)
+Same problem in rating order (#394 of 735): [../../by-rating/394-RANGEASSIGN.md](../../by-rating/394-RANGEASSIGN.md)

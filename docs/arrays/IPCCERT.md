@@ -148,8 +148,6 @@ $N = 4$, $M = 8$, $K = 4$:
 
 One eligible student, so the output is `1`.
 
-> CodeChef tags: `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#136 of 486): [../../by-rating/136-IPCCERT.md](../../by-rating/136-IPCCERT.md)
+Same problem in rating order (#136 of 735): [../../by-rating/136-IPCCERT.md](../../by-rating/136-IPCCERT.md)

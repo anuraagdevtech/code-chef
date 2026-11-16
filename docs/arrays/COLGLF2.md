@@ -195,4 +195,4 @@ Output `7`. Season 2's second episode skips its two-minute intro.
 
 ---
 
-Same problem in rating order (#305 of 486): [../../by-rating/305-COLGLF2.md](../../by-rating/305-COLGLF2.md)
+Same problem in rating order (#309 of 735): [../../by-rating/309-COLGLF2.md](../../by-rating/309-COLGLF2.md)

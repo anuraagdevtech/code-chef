@@ -137,4 +137,4 @@ The sample is the first row; the others show the duplicate-maximum trap.
 
 ---
 
-Same problem in rating order (#361 of 486): [../../by-rating/361-IOPC17C.md](../../by-rating/361-IOPC17C.md)
+Same problem in rating order (#372 of 735): [../../by-rating/372-IOPC17C.md](../../by-rating/372-IOPC17C.md)

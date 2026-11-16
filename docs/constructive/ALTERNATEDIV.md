@@ -156,8 +156,6 @@ $N = 6$ gives $A = 1, 2, 3, 6, 5, 10$.
 
 All six values distinct, and the largest is $10 \leq 2N = 12$.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#281 of 486): [../../by-rating/281-ALTERNATEDIV.md](../../by-rating/281-ALTERNATEDIV.md)
+Same problem in rating order (#283 of 735): [../../by-rating/283-ALTERNATEDIV.md](../../by-rating/283-ALTERNATEDIV.md)

@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Summing alternate positions |
-| **CodeChef tags** | `Basic Programming Concepts`, `Algorithms`, `Conditional Statements`, `Brute Force`, `Implementation` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case — ten fixed entries |
 | **Space** | $O(1)$ |

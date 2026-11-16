@@ -135,8 +135,6 @@ $N = 4$, target sum $2^4 = 16$.
 
 Output `1 2 3 3 7`: five values, exactly one ($3$) appearing twice, non-decreasing, summing to $16$.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#292 of 486): [../../by-rating/292-N1VALUES.md](../../by-rating/292-N1VALUES.md)
+Same problem in rating order (#294 of 735): [../../by-rating/294-N1VALUES.md](../../by-rating/294-N1VALUES.md)

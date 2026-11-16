@@ -135,8 +135,6 @@ main()
 | 32 | 5 | 4 | 225 | 60 | `285` |
 | 1024 | 10 | 9 | 230 | 81 | `311` |
 
-> CodeChef tags: `Mathematics`, `Number Theory`
-
 ---
 
-Same problem in rating order (#90 of 486): [../../by-rating/090-BIN_BAT.md](../../by-rating/090-BIN_BAT.md)
+Same problem in rating order (#90 of 735): [../../by-rating/090-BIN_BAT.md](../../by-rating/090-BIN_BAT.md)

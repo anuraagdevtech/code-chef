@@ -112,8 +112,6 @@ main()
 
 Row 2 shows $15$ going unused despite being the second largest value present.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#41 of 486): [../../by-rating/041-MAXTASTE.md](../../by-rating/041-MAXTASTE.md)
+Same problem in rating order (#41 of 735): [../../by-rating/041-MAXTASTE.md](../../by-rating/041-MAXTASTE.md)

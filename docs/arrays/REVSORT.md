@@ -148,4 +148,4 @@ $5 \leq 7$, so `YES`.
 
 ---
 
-Same problem in rating order (#198 of 486): [../../by-rating/198-REVSORT.md](../../by-rating/198-REVSORT.md)
+Same problem in rating order (#198 of 735): [../../by-rating/198-REVSORT.md](../../by-rating/198-REVSORT.md)

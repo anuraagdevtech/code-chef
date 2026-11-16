@@ -139,4 +139,4 @@ Rows 4 and 3 sit either side of the threshold: one full tank passes, two do not.
 
 ---
 
-Same problem in rating order (#16 of 486): [../../by-rating/016-WATERFILLING.md](../../by-rating/016-WATERFILLING.md)
+Same problem in rating order (#16 of 735): [../../by-rating/016-WATERFILLING.md](../../by-rating/016-WATERFILLING.md)

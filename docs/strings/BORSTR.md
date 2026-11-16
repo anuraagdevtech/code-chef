@@ -160,8 +160,6 @@ main()
 
 Row 1 wins from a single run; row 4 from two.
 
-> CodeChef tags: `Data Structures`
-
 ---
 
-Same problem in rating order (#331 of 486): [../../by-rating/331-BORSTR.md](../../by-rating/331-BORSTR.md)
+Same problem in rating order (#336 of 735): [../../by-rating/336-BORSTR.md](../../by-rating/336-BORSTR.md)

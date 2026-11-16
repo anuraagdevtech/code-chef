@@ -149,4 +149,4 @@ In the second row one of the two $2$s is repainted to any unused colour.
 
 ---
 
-Same problem in rating order (#237 of 486): [../../by-rating/237-MIXCOLOR.md](../../by-rating/237-MIXCOLOR.md)
+Same problem in rating order (#239 of 735): [../../by-rating/239-MIXCOLOR.md](../../by-rating/239-MIXCOLOR.md)

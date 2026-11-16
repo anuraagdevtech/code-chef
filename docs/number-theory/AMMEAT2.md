@@ -134,8 +134,6 @@ First sample: $N = 100$, $K = 3$, and $2K = 6 \leq 100$.
 
 None is $1$, so the choice is valid. Output `2 4 6`.
 
-> CodeChef tags: `Mathematics`, `Number Theory`, `Set Theory`
-
 ---
 
-Same problem in rating order (#342 of 486): [../../by-rating/342-AMMEAT2.md](../../by-rating/342-AMMEAT2.md)
+Same problem in rating order (#349 of 735): [../../by-rating/349-AMMEAT2.md](../../by-rating/349-AMMEAT2.md)

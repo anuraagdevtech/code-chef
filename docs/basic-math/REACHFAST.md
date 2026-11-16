@@ -127,8 +127,6 @@ main()
 
 Row 1's fourth move covers only one unit; row 4 divides exactly.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#86 of 486): [../../by-rating/086-REACHFAST.md](../../by-rating/086-REACHFAST.md)
+Same problem in rating order (#86 of 735): [../../by-rating/086-REACHFAST.md](../../by-rating/086-REACHFAST.md)

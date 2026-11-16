@@ -155,8 +155,6 @@ main()
 
 In the last row Zlatan deletes either `10` or `01`, leaving a single `1` that Ramos cannot touch.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#233 of 486): [../../by-rating/233-STRAME.md](../../by-rating/233-STRAME.md)
+Same problem in rating order (#235 of 735): [../../by-rating/235-STRAME.md](../../by-rating/235-STRAME.md)

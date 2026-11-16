@@ -149,4 +149,4 @@ No non-prefix subsegment is good, since none of them contains the $1$. Total: `3
 
 ---
 
-Same problem in rating order (#297 of 486): [../../by-rating/297-SUBPERM.md](../../by-rating/297-SUBPERM.md)
+Same problem in rating order (#299 of 735): [../../by-rating/299-SUBPERM.md](../../by-rating/299-SUBPERM.md)

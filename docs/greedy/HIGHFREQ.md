@@ -164,4 +164,4 @@ Output `2`.
 
 ---
 
-Same problem in rating order (#253 of 486): [../../by-rating/253-HIGHFREQ.md](../../by-rating/253-HIGHFREQ.md)
+Same problem in rating order (#255 of 735): [../../by-rating/255-HIGHFREQ.md](../../by-rating/255-HIGHFREQ.md)

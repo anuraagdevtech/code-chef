@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Strings |
 | **Technique** | Divisibility decided by one digit |
-| **CodeChef tags** | `Data Structures`, `String` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(D)$ per test case |
 | **Space** | $O(1)$ |

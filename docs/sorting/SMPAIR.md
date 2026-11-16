@@ -136,4 +136,4 @@ Output `4`. The $5$ and $4$ are never considered.
 
 ---
 
-Same problem in rating order (#215 of 486): [../../by-rating/215-SMPAIR.md](../../by-rating/215-SMPAIR.md)
+Same problem in rating order (#216 of 735): [../../by-rating/216-SMPAIR.md](../../by-rating/216-SMPAIR.md)

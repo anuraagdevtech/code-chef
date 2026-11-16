@@ -1,4 +1,4 @@
-[&larr; 449. Minimum Coloring](MINCOLOR.md) &middot; [Index](../../README.md)
+[&larr; 449. Minimum Coloring](MINCOLOR.md) &middot; [Index](../../README.md) &middot; [495. Cybalphabit &rarr;](CAB.md)
 
 # 478. Same Parity Swaps in Binary Strings
 
@@ -160,8 +160,6 @@ Third sample: $S = $ `10001` with $N = 5$.
 
 $N$ is odd, so the answer is $\min(0 + 2,\, \lfloor 5/2 \rfloor) = $ `2` — for instance `00101`, which contains `01` twice.
 
-> CodeChef tags: `Data Structures`
-
 ---
 
-Same problem in rating order (#450 of 486): [../../by-rating/450-MAX01EVSWP.md](../../by-rating/450-MAX01EVSWP.md)
+Same problem in rating order (#473 of 735): [../../by-rating/473-MAX01EVSWP.md](../../by-rating/473-MAX01EVSWP.md)

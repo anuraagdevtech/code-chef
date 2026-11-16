@@ -168,4 +168,4 @@ Output `7`: Bob dropped the $3$.
 
 ---
 
-Same problem in rating order (#407 of 486): [../../by-rating/407-REMONE.md](../../by-rating/407-REMONE.md)
+Same problem in rating order (#426 of 735): [../../by-rating/426-REMONE.md](../../by-rating/426-REMONE.md)

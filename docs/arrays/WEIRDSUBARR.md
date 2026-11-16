@@ -1,4 +1,4 @@
-[&larr; 460. Box of Chocolates](CHCBOX.md) &middot; [Index](../../README.md)
+[&larr; 460. Box of Chocolates](CHCBOX.md) &middot; [Index](../../README.md) &middot; [591. Chef and Rectangle Array &rarr;](CHSQARR.md)
 
 # 470. Weird Subarrays
 
@@ -149,8 +149,6 @@ First sample: $P = 2, 3, 1$.
 
 Output `5` — every subarray except $[2,3,1]$ itself.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#441 of 486): [../../by-rating/441-WEIRDSUBARR.md](../../by-rating/441-WEIRDSUBARR.md)
+Same problem in rating order (#464 of 735): [../../by-rating/464-WEIRDSUBARR.md](../../by-rating/464-WEIRDSUBARR.md)

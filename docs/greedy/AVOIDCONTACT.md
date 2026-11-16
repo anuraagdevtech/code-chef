@@ -137,8 +137,6 @@ main()
 | 5 | 3 | 8 | no | 0 | `8` |
 | 3 | 3 | 6 | yes | $-1$ | `5` |
 
-> CodeChef tags: `Algorithms`, `Constructive`, `Observation`
-
 ---
 
-Same problem in rating order (#132 of 486): [../../by-rating/132-AVOIDCONTACT.md](../../by-rating/132-AVOIDCONTACT.md)
+Same problem in rating order (#132 of 735): [../../by-rating/132-AVOIDCONTACT.md](../../by-rating/132-AVOIDCONTACT.md)

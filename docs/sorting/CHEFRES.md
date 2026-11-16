@@ -180,4 +180,4 @@ Sample: windows $[2,3)$, $[5,7)$, $[9,10)$, $[20,30)$ after sorting.
 
 ---
 
-Same problem in rating order (#460 of 486): [../../by-rating/460-CHEFRES.md](../../by-rating/460-CHEFRES.md)
+Same problem in rating order (#500 of 735): [../../by-rating/500-CHEFRES.md](../../by-rating/500-CHEFRES.md)

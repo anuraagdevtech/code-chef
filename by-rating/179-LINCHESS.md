@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Number Theory |
 | **Technique** | Divisors as reachable positions |
-| **CodeChef tags** | `Mathematics`, `Algorithms`, `Basic Math`, `Sorting` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

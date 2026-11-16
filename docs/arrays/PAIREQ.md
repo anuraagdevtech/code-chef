@@ -141,4 +141,4 @@ Row 3 has two values tied at two apiece, and both choices cost the same.
 
 ---
 
-Same problem in rating order (#139 of 486): [../../by-rating/139-PAIREQ.md](../../by-rating/139-PAIREQ.md)
+Same problem in rating order (#139 of 735): [../../by-rating/139-PAIREQ.md](../../by-rating/139-PAIREQ.md)

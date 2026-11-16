@@ -9,10 +9,11 @@ Most roadmap problems answer to the pseudo-contest PRACTICE, but ~28% of them
 only resolve under the contest code their course lists (LP1TO201, DIFF1500,
 ...), so the contest comes from data/problem_meta.json.
 
-Usage:  python3 tools/fetch_raw.py [CODE ...]      (default: all solved)
+Usage:  python3 tools/fetch_raw.py [CODE ...]      (default: the complete saved roadmap)
 """
 import json, os, subprocess, sys
 from concurrent.futures import ThreadPoolExecutor
+from roadmap import all_roadmap_codes
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, 'data', 'raw')
@@ -59,7 +60,7 @@ def fetch_one(code):
 
 
 def main():
-    codes = sys.argv[1:] or open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
+    codes = sys.argv[1:] or all_roadmap_codes()
     os.makedirs(RAW, exist_ok=True)
     failed = []
     with ThreadPoolExecutor(max_workers=8) as ex:

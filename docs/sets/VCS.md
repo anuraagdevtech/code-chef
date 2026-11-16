@@ -159,4 +159,4 @@ Output `1 1`. Note $N - M - K = 0$ would be wrong, because file $4$ is subtracte
 
 ---
 
-Same problem in rating order (#183 of 486): [../../by-rating/183-VCS.md](../../by-rating/183-VCS.md)
+Same problem in rating order (#183 of 735): [../../by-rating/183-VCS.md](../../by-rating/183-VCS.md)

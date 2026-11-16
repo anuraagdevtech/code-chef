@@ -163,8 +163,6 @@ First sample: $M = 2$ minutes, ambient $K = 5$, window $[4, 6]$.
 
 Output `8`.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#303 of 486): [../../by-rating/303-COKE.md](../../by-rating/303-COKE.md)
+Same problem in rating order (#307 of 735): [../../by-rating/307-COKE.md](../../by-rating/307-COKE.md)

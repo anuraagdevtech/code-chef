@@ -125,4 +125,4 @@ In the second row the middle `parti` is skipped, leaving it untouched between th
 
 ---
 
-Same problem in rating order (#176 of 486): [../../by-rating/176-PAWRI.md](../../by-rating/176-PAWRI.md)
+Same problem in rating order (#176 of 735): [../../by-rating/176-PAWRI.md](../../by-rating/176-PAWRI.md)

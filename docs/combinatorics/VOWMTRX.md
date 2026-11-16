@@ -144,4 +144,4 @@ The single cut may fall anywhere between index $5$ and index $7$, which is $7 - 
 
 ---
 
-Same problem in rating order (#404 of 486): [../../by-rating/404-VOWMTRX.md](../../by-rating/404-VOWMTRX.md)
+Same problem in rating order (#422 of 735): [../../by-rating/422-VOWMTRX.md](../../by-rating/422-VOWMTRX.md)

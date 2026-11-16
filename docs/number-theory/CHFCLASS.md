@@ -129,8 +129,6 @@ main()
 | 8 | 9 | 1 | $6$ | `1` |
 | 22 | 23 | 3 | $6, 13, 20$ | `3` |
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#142 of 486): [../../by-rating/142-CHFCLASS.md](../../by-rating/142-CHFCLASS.md)
+Same problem in rating order (#142 of 735): [../../by-rating/142-CHFCLASS.md](../../by-rating/142-CHFCLASS.md)

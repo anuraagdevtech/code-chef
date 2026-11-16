@@ -159,8 +159,6 @@ main()
 
 Rows 2 and 3 are the parity pair.
 
-> CodeChef tags: `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#163 of 486): [../../by-rating/163-BRLADDER.md](../../by-rating/163-BRLADDER.md)
+Same problem in rating order (#163 of 735): [../../by-rating/163-BRLADDER.md](../../by-rating/163-BRLADDER.md)

@@ -134,8 +134,6 @@ Sample: $A = 2$, $B = 6$, so the gap is $4$.
 
 Three valid values of $p$, so the output is `3`.
 
-> CodeChef tags: `Mathematics`, `Number Theory`, `Integer Factorisation`
-
 ---
 
-Same problem in rating order (#376 of 486): [../../by-rating/376-EXAMCHT.md](../../by-rating/376-EXAMCHT.md)
+Same problem in rating order (#390 of 735): [../../by-rating/390-EXAMCHT.md](../../by-rating/390-EXAMCHT.md)

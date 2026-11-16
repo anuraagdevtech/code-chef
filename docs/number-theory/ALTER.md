@@ -137,4 +137,4 @@ main()
 
 ---
 
-Same problem in rating order (#284 of 486): [../../by-rating/284-ALTER.md](../../by-rating/284-ALTER.md)
+Same problem in rating order (#286 of 735): [../../by-rating/286-ALTER.md](../../by-rating/286-ALTER.md)

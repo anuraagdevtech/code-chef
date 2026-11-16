@@ -132,4 +132,4 @@ main()
 
 ---
 
-Same problem in rating order (#381 of 486): [../../by-rating/381-MINIMISEMAX.md](../../by-rating/381-MINIMISEMAX.md)
+Same problem in rating order (#395 of 735): [../../by-rating/395-MINIMISEMAX.md](../../by-rating/395-MINIMISEMAX.md)

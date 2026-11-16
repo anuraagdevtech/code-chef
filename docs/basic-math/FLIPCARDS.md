@@ -129,8 +129,6 @@ main()
 
 Rows 1 and 3 are the two already-uniform cases, reached from opposite directions.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#44 of 486): [../../by-rating/044-FLIPCARDS.md](../../by-rating/044-FLIPCARDS.md)
+Same problem in rating order (#44 of 735): [../../by-rating/044-FLIPCARDS.md](../../by-rating/044-FLIPCARDS.md)

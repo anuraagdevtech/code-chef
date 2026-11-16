@@ -1,4 +1,4 @@
-[&larr; 241. Chef and Coins Game](CHCOINSG.md) &middot; [Index](../../README.md)
+[&larr; 241. Chef and Coins Game](CHCOINSG.md) &middot; [Index](../../README.md) &middot; [570. Prime Game &rarr;](PRIGAME.md)
 
 # 442. Game on a Strip
 
@@ -164,8 +164,6 @@ main()
 | $1,1,0,1$ | $1$ | 1 | 0 | yes | $1 > 0$ ✓ | `Yes` |
 | $1,1,1,1$ | none | 0 | 0 | no | — | `No` |
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#412 of 486): [../../by-rating/412-ARRGAME.md](../../by-rating/412-ARRGAME.md)
+Same problem in rating order (#431 of 735): [../../by-rating/431-ARRGAME.md](../../by-rating/431-ARRGAME.md)

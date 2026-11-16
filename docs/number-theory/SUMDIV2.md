@@ -138,4 +138,4 @@ Check $N = 66$: $66 + 42 = 108 = 6 \cdot 18$ ✓ and $66 + 18 = 84 = 2 \cdot 42$
 
 ---
 
-Same problem in rating order (#424 of 486): [../../by-rating/424-SUMDIV2.md](../../by-rating/424-SUMDIV2.md)
+Same problem in rating order (#444 of 735): [../../by-rating/444-SUMDIV2.md](../../by-rating/444-SUMDIV2.md)

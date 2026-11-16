@@ -139,4 +139,4 @@ For the second row, the seven odds split across five parts with an odd count eac
 
 ---
 
-Same problem in rating order (#285 of 486): [../../by-rating/285-CHEFODD.md](../../by-rating/285-CHEFODD.md)
+Same problem in rating order (#287 of 735): [../../by-rating/287-CHEFODD.md](../../by-rating/287-CHEFODD.md)

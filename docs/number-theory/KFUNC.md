@@ -209,8 +209,6 @@ Second sample: $A_1 = 14$, $D = 7$, $L = 2$, $R = 4$.
 
 Three terms, so the sum is $3 + 1 + 8 = $ `12`. Directly: $A_2 = 21$, $A_3 = 28$, $A_4 = 35$, whose digital roots are $3$, $1$ and $8$ ✓
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#449 of 486): [../../by-rating/449-KFUNC.md](../../by-rating/449-KFUNC.md)
+Same problem in rating order (#472 of 735): [../../by-rating/472-KFUNC.md](../../by-rating/472-KFUNC.md)

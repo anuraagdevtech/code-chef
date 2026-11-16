@@ -128,8 +128,6 @@ main()
 
 The last row reduces modulo $10^9+7$: $4228250625 - 4(10^9+7) = 228250597$.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#370 of 486): [../../by-rating/370-BITTUP.md](../../by-rating/370-BITTUP.md)
+Same problem in rating order (#382 of 735): [../../by-rating/382-BITTUP.md](../../by-rating/382-BITTUP.md)

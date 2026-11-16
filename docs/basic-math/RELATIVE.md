@@ -124,8 +124,6 @@ main()
 
 Rows 2 and 3 share $c$ and differ only through $g$.
 
-> CodeChef tags: `Special`, `Algorithms`
-
 ---
 
-Same problem in rating order (#117 of 486): [../../by-rating/117-RELATIVE.md](../../by-rating/117-RELATIVE.md)
+Same problem in rating order (#117 of 735): [../../by-rating/117-RELATIVE.md](../../by-rating/117-RELATIVE.md)

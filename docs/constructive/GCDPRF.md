@@ -143,8 +143,6 @@ So output $A = 4, 2$ and verify:
 | 1 | $\gcd(4) = 4$ | 4 ✓ |
 | 2 | $\gcd(4, 2) = 2$ | 2 ✓ |
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#358 of 486): [../../by-rating/358-GCDPRF.md](../../by-rating/358-GCDPRF.md)
+Same problem in rating order (#366 of 735): [../../by-rating/366-GCDPRF.md](../../by-rating/366-GCDPRF.md)

@@ -128,4 +128,4 @@ main()
 
 ---
 
-Same problem in rating order (#85 of 486): [../../by-rating/085-LUCKFOUR.md](../../by-rating/085-LUCKFOUR.md)
+Same problem in rating order (#85 of 735): [../../by-rating/085-LUCKFOUR.md](../../by-rating/085-LUCKFOUR.md)

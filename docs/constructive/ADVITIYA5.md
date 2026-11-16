@@ -157,8 +157,6 @@ $N = 4$, $K = 2$: odds $\{1, 3\}$, evens $\{2, 4\}$, and $K + 1 = 3$ blocks (two
 
 Permutation `1 2 4 3`, with adjacent sums $3$ (odd), $6$ (even), $7$ (odd) — exactly $K = 2$ odd sums.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#356 of 486): [../../by-rating/356-ADVITIYA5.md](../../by-rating/356-ADVITIYA5.md)
+Same problem in rating order (#364 of 735): [../../by-rating/364-ADVITIYA5.md](../../by-rating/364-ADVITIYA5.md)

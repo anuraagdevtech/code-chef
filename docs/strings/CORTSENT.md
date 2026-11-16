@@ -143,8 +143,6 @@ main()
 | | `NO` | no | yes | `YES` |
 | `A N D` | `A` | no | no (`A` < `N`) | `NO` |
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#283 of 486): [../../by-rating/283-CORTSENT.md](../../by-rating/283-CORTSENT.md)
+Same problem in rating order (#285 of 735): [../../by-rating/285-CORTSENT.md](../../by-rating/285-CORTSENT.md)

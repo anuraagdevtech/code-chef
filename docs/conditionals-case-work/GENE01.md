@@ -148,8 +148,6 @@ Ranking: `R` $= 2$, `B` $= 1$, `G` $= 0$.
 
 For `B G` the ranks are $1, 0$, so `B` — the case where alphabetical order would mislead.
 
-> CodeChef tags: `Special`, `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#100 of 486): [../../by-rating/100-GENE01.md](../../by-rating/100-GENE01.md)
+Same problem in rating order (#100 of 735): [../../by-rating/100-GENE01.md](../../by-rating/100-GENE01.md)

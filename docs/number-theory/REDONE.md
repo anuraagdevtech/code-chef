@@ -142,8 +142,6 @@ main()
 
 For $N = 2$: $1 + 2 + 1 \cdot 2 = 5$, and $1 + 5 = 6 = 3!$ ✓
 
-> CodeChef tags: `Advanced Algorithms`, `Algorithms`
-
 ---
 
-Same problem in rating order (#301 of 486): [../../by-rating/301-REDONE.md](../../by-rating/301-REDONE.md)
+Same problem in rating order (#303 of 735): [../../by-rating/303-REDONE.md](../../by-rating/303-REDONE.md)

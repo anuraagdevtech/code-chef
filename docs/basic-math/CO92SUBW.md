@@ -140,8 +140,6 @@ $X = 9$. Stations sit at $1, 3, 6, 10, 15, \dots$
 
 Output `5`: ride four stations past the target, then walk back one unit.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#290 of 486): [../../by-rating/290-CO92SUBW.md](../../by-rating/290-CO92SUBW.md)
+Same problem in rating order (#292 of 735): [../../by-rating/292-CO92SUBW.md](../../by-rating/292-CO92SUBW.md)

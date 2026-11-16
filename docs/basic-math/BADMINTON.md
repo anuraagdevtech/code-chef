@@ -126,8 +126,6 @@ main()
 | 53 | $0, 2, \ldots, 52$ | 27 | `27` |
 | 746 | $0, 2, \ldots, 746$ | 374 | `374` |
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#114 of 486): [../../by-rating/114-BADMINTON.md](../../by-rating/114-BADMINTON.md)
+Same problem in rating order (#114 of 735): [../../by-rating/114-BADMINTON.md](../../by-rating/114-BADMINTON.md)

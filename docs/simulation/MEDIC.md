@@ -145,8 +145,6 @@ Starting $2019{:}03{:}31$ — day $31$, odd parity, in a $31$-day month.
 
 Output `1`. Had the start been $2019{:}04{:}2$, April's $30$ days would give $15$ pills and the chain would carry into May.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#307 of 486): [../../by-rating/307-MEDIC.md](../../by-rating/307-MEDIC.md)
+Same problem in rating order (#311 of 735): [../../by-rating/311-MEDIC.md](../../by-rating/311-MEDIC.md)

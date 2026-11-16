@@ -154,8 +154,6 @@ First sample: a $3 \times 3$ grid with the infection at $(1, 2)$.
 
 Output `6` — the whole bottom two rows are saved.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#452 of 486): [../../by-rating/452-FIZZBUZZ2306.md](../../by-rating/452-FIZZBUZZ2306.md)
+Same problem in rating order (#475 of 735): [../../by-rating/475-FIZZBUZZ2306.md](../../by-rating/475-FIZZBUZZ2306.md)

@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Rate and time |
-| **CodeChef tags** | `Mathematics`, `Basic Math`, `Arithmetic` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ |
 | **Space** | $O(1)$ |

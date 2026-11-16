@@ -138,8 +138,6 @@ main()
 
 Row 4 has an odd total, which still lands inside block $5$.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#58 of 486): [../../by-rating/058-MYSERVE.md](../../by-rating/058-MYSERVE.md)
+Same problem in rating order (#58 of 735): [../../by-rating/058-MYSERVE.md](../../by-rating/058-MYSERVE.md)

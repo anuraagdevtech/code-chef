@@ -158,4 +158,4 @@ Denominator $2N - 3 = 1$, so the answer is `8.000000`. The second sample's best 
 
 ---
 
-Same problem in rating order (#321 of 486): [../../by-rating/321-MGCRNK.md](../../by-rating/321-MGCRNK.md)
+Same problem in rating order (#326 of 735): [../../by-rating/326-MGCRNK.md](../../by-rating/326-MGCRNK.md)

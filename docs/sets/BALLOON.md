@@ -158,4 +158,4 @@ Output `8`. Problem $8$ at position $7$ contributes nothing.
 
 ---
 
-Same problem in rating order (#180 of 486): [../../by-rating/180-BALLOON.md](../../by-rating/180-BALLOON.md)
+Same problem in rating order (#180 of 735): [../../by-rating/180-BALLOON.md](../../by-rating/180-BALLOON.md)

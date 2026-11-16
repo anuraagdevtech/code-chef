@@ -169,4 +169,4 @@ $X = 2147483629$, matching the expected output.
 
 ---
 
-Same problem in rating order (#465 of 486): [../../by-rating/465-XXOR.md](../../by-rating/465-XXOR.md)
+Same problem in rating order (#525 of 735): [../../by-rating/525-XXOR.md](../../by-rating/525-XXOR.md)

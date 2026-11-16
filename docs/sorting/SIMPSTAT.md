@@ -154,4 +154,4 @@ With $K = 0$ the same values give $27 / 5 = $ `5.400000`, as in the second row.
 
 ---
 
-Same problem in rating order (#185 of 486): [../../by-rating/185-SIMPSTAT.md](../../by-rating/185-SIMPSTAT.md)
+Same problem in rating order (#185 of 735): [../../by-rating/185-SIMPSTAT.md](../../by-rating/185-SIMPSTAT.md)

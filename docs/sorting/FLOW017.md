@@ -110,8 +110,6 @@ main()
 
 Each row places the answer in a different input position, which is what makes sorting the clean move.
 
-> CodeChef tags: `Special`, `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#10 of 486): [../../by-rating/010-FLOW017.md](../../by-rating/010-FLOW017.md)
+Same problem in rating order (#10 of 735): [../../by-rating/010-FLOW017.md](../../by-rating/010-FLOW017.md)

@@ -169,8 +169,6 @@ main()
 
 For row 4, one edit gives `aab` (counts $2, 1$, still one odd); two edits give `abc`.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#288 of 486): [../../by-rating/288-ANTIPALINDR.md](../../by-rating/288-ANTIPALINDR.md)
+Same problem in rating order (#290 of 735): [../../by-rating/290-ANTIPALINDR.md](../../by-rating/290-ANTIPALINDR.md)

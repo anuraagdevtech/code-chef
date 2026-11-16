@@ -153,4 +153,4 @@ Equal totals, so `DRAW`.
 
 ---
 
-Same problem in rating order (#196 of 486): [../../by-rating/196-EQUINOX.md](../../by-rating/196-EQUINOX.md)
+Same problem in rating order (#196 of 735): [../../by-rating/196-EQUINOX.md](../../by-rating/196-EQUINOX.md)

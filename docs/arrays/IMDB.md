@@ -151,4 +151,4 @@ Output `51` — the $100$ is unreachable.
 
 ---
 
-Same problem in rating order (#169 of 486): [../../by-rating/169-IMDB.md](../../by-rating/169-IMDB.md)
+Same problem in rating order (#169 of 735): [../../by-rating/169-IMDB.md](../../by-rating/169-IMDB.md)

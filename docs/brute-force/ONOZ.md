@@ -146,8 +146,6 @@ $H = 11$, $M = 11$.
 
 Ten qualifying times, so `10`. Raising $M$ to $12$ adds hour $1$ with minute $11$ (`111`), giving `11`.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#280 of 486): [../../by-rating/280-ONOZ.md](../../by-rating/280-ONOZ.md)
+Same problem in rating order (#282 of 735): [../../by-rating/282-ONOZ.md](../../by-rating/282-ONOZ.md)

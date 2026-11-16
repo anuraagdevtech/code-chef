@@ -130,4 +130,4 @@ The last row needs $2, 2$, which share the factor $2$.
 
 ---
 
-Same problem in rating order (#279 of 486): [../../by-rating/279-CHFGCD.md](../../by-rating/279-CHFGCD.md)
+Same problem in rating order (#281 of 735): [../../by-rating/281-CHFGCD.md](../../by-rating/281-CHFGCD.md)

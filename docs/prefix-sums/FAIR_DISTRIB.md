@@ -174,4 +174,4 @@ The band is breached at position $2$, so `NO`. Concretely, with all five toys wo
 
 ---
 
-Same problem in rating order (#443 of 486): [../../by-rating/443-FAIR_DISTRIB.md](../../by-rating/443-FAIR_DISTRIB.md)
+Same problem in rating order (#466 of 735): [../../by-rating/466-FAIR_DISTRIB.md](../../by-rating/466-FAIR_DISTRIB.md)

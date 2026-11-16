@@ -149,8 +149,6 @@ $N = 6$ gives $A = 1, -2, 2, 0, 0, 0$ with total $1$.
 
 Note $D_1 = D_5 = 1$ and $D_2 = D_4 = -1$, the symmetry in action.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#364 of 486): [../../by-rating/364-CONSTRRAY.md](../../by-rating/364-CONSTRRAY.md)
+Same problem in rating order (#375 of 735): [../../by-rating/375-CONSTRRAY.md](../../by-rating/375-CONSTRRAY.md)

@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Sum of flags mapped to a label |
-| **CodeChef tags** | `Special`, `Basic Programming Concepts`, `Case work`, `Conditional Statements` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(1)$ per contestant |
 | **Space** | $O(1)$ |

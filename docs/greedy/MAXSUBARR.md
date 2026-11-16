@@ -181,8 +181,6 @@ First sample: $A = 3, 26, -79, 72, 23$ and $B = 66, 44$, so the positive gain is
 
 Output `205`: send both of $B$'s elements to the back of $A$ and take the subarray $72, 23, 66, 44$ — or equivalently the whole suffix plus the block.
 
-> CodeChef tags: `Data Structures`, `Mathematics`, `Algorithms`, `Greedy`
-
 ---
 
-Same problem in rating order (#355 of 486): [../../by-rating/355-MAXSUBARR.md](../../by-rating/355-MAXSUBARR.md)
+Same problem in rating order (#363 of 735): [../../by-rating/363-MAXSUBARR.md](../../by-rating/363-MAXSUBARR.md)

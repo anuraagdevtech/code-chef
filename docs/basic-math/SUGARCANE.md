@@ -126,8 +126,6 @@ main()
 
 The code jumps straight to the last column; the middle two are only there to show the rate collapsing to $15$.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#22 of 486): [../../by-rating/022-SUGARCANE.md](../../by-rating/022-SUGARCANE.md)
+Same problem in rating order (#22 of 735): [../../by-rating/022-SUGARCANE.md](../../by-rating/022-SUGARCANE.md)

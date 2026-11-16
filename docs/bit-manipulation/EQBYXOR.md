@@ -164,8 +164,6 @@ main()
 
 The last row uses $X_1 = 2$ and $X_2 = 1$, both legal since $N = 3$, and $2 \oplus 1 = 3$.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
-
 ---
 
-Same problem in rating order (#300 of 486): [../../by-rating/300-EQBYXOR.md](../../by-rating/300-EQBYXOR.md)
+Same problem in rating order (#302 of 735): [../../by-rating/302-EQBYXOR.md](../../by-rating/302-EQBYXOR.md)

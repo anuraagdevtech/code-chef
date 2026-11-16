@@ -134,8 +134,6 @@ Take $A = 1, 2, 2, 2, 5$ with $K = 3$, sorted as shown.
 
 The sample's own case, $1,2,3,4$ with $K = 2$, has a unique boundary copy and so answers `1`.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#378 of 486): [../../by-rating/378-CHEFINSQ.md](../../by-rating/378-CHEFINSQ.md)
+Same problem in rating order (#392 of 735): [../../by-rating/392-CHEFINSQ.md](../../by-rating/392-CHEFINSQ.md)

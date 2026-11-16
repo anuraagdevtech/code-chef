@@ -140,4 +140,4 @@ The $9$ is left unpaired. Output `2`.
 
 ---
 
-Same problem in rating order (#207 of 486): [../../by-rating/207-TACHSTCK.md](../../by-rating/207-TACHSTCK.md)
+Same problem in rating order (#207 of 735): [../../by-rating/207-TACHSTCK.md](../../by-rating/207-TACHSTCK.md)

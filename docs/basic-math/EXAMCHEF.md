@@ -136,4 +136,4 @@ Row 3 shows an odd total handled exactly, and row 4 the $50\%$ tie failing.
 
 ---
 
-Same problem in rating order (#7 of 486): [../../by-rating/007-EXAMCHEF.md](../../by-rating/007-EXAMCHEF.md)
+Same problem in rating order (#7 of 735): [../../by-rating/007-EXAMCHEF.md](../../by-rating/007-EXAMCHEF.md)

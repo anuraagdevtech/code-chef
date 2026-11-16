@@ -147,4 +147,4 @@ Sorted: $(2,6)$, then $(2,3)$ before $(3,3)$ on the tie. Output `2 6 2 3 3 3`.
 
 ---
 
-Same problem in rating order (#480 of 486): [../../by-rating/480-PSORT3.md](../../by-rating/480-PSORT3.md)
+Same problem in rating order (#727 of 735): [../../by-rating/727-PSORT3.md](../../by-rating/727-PSORT3.md)

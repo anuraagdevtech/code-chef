@@ -145,8 +145,6 @@ main()
 
 In the second row Alice always lands on a colour Bob has just left.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#400 of 486): [../../by-rating/400-GRITGRID.md](../../by-rating/400-GRITGRID.md)
+Same problem in rating order (#418 of 735): [../../by-rating/418-GRITGRID.md](../../by-rating/418-GRITGRID.md)

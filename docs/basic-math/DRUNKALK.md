@@ -133,8 +133,6 @@ main()
 
 All three samples are odd; an even $k$ such as $4$ would give $+3,-1,+3,-1 = 4$.
 
-> CodeChef tags: `Special`, `Basic Programming Concepts`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#119 of 486): [../../by-rating/119-DRUNKALK.md](../../by-rating/119-DRUNKALK.md)
+Same problem in rating order (#119 of 735): [../../by-rating/119-DRUNKALK.md](../../by-rating/119-DRUNKALK.md)

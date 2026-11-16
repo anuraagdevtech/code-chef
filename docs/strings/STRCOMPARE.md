@@ -1,4 +1,4 @@
-[&larr; 475. Lucky Palin](LUCKPAL.md) &middot; [Index](../../README.md)
+[&larr; 475. Lucky Palin](LUCKPAL.md) &middot; [Index](../../README.md) &middot; [488. Flip the Prefix &rarr;](PREFIXFLIP.md)
 
 # 485. Compare those strings
 
@@ -139,8 +139,6 @@ Second sample: $A = $ `aaa`, $B = $ `aab`.
 
 Output `3` — every suffix of `aaa` is smaller, decided by that final character.
 
-> CodeChef tags: `Data Structures`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#458 of 486): [../../by-rating/458-STRCOMPARE.md](../../by-rating/458-STRCOMPARE.md)
+Same problem in rating order (#482 of 735): [../../by-rating/482-STRCOMPARE.md](../../by-rating/482-STRCOMPARE.md)

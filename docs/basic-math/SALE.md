@@ -119,8 +119,6 @@ main()
 
 Rows 2 and 3 have ties for cheapest, and only one copy is discounted.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#88 of 486): [../../by-rating/088-SALE.md](../../by-rating/088-SALE.md)
+Same problem in rating order (#88 of 735): [../../by-rating/088-SALE.md](../../by-rating/088-SALE.md)

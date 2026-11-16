@@ -161,4 +161,4 @@ Total `7`.
 
 ---
 
-Same problem in rating order (#413 of 486): [../../by-rating/413-BUYSWEET.md](../../by-rating/413-BUYSWEET.md)
+Same problem in rating order (#432 of 735): [../../by-rating/432-BUYSWEET.md](../../by-rating/432-BUYSWEET.md)

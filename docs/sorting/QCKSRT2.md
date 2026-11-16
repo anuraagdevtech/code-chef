@@ -171,4 +171,4 @@ Output `3` then `0 1 3`. Pivoting on index $2$ would move $(2,1)$ ahead of $(2,3
 
 ---
 
-Same problem in rating order (#482 of 486): [../../by-rating/482-QCKSRT2.md](../../by-rating/482-QCKSRT2.md)
+Same problem in rating order (#729 of 735): [../../by-rating/729-QCKSRT2.md](../../by-rating/729-QCKSRT2.md)

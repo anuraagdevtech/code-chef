@@ -174,8 +174,6 @@ Fourth sample: $X = 53$, $M = 7$. Building one tower as fast as possible:
 
 Seven operations produce exactly one tower of height at least $53$, so the output is `1`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#403 of 486): [../../by-rating/403-TOWERTOP.md](../../by-rating/403-TOWERTOP.md)
+Same problem in rating order (#421 of 735): [../../by-rating/421-TOWERTOP.md](../../by-rating/421-TOWERTOP.md)

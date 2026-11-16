@@ -148,8 +148,6 @@ Third sample: the questions are `aabb`, `abab`, `baab`.
 
 The scarcest `a` count is $2$ and the scarcest `b` count is $2$, so the answer is $\min(2,2) = $ `2` — an omen of `aaaa` leaves a common subsequence of length $2$.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#429 of 486): [../../by-rating/429-ORACLCS.md](../../by-rating/429-ORACLCS.md)
+Same problem in rating order (#450 of 735): [../../by-rating/450-ORACLCS.md](../../by-rating/450-ORACLCS.md)

@@ -129,8 +129,6 @@ main()
 
 Row 1 is pure diagonal: three moves, not the six Manhattan would suggest.
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#57 of 486): [../../by-rating/057-CHESSDIST.md](../../by-rating/057-CHESSDIST.md)
+Same problem in rating order (#57 of 735): [../../by-rating/057-CHESSDIST.md](../../by-rating/057-CHESSDIST.md)

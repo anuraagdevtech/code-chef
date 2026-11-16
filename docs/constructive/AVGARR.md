@@ -139,8 +139,6 @@ Second sample: $N = 5$, $X = 1$.
 
 Array $1, 0, 2, -1, 3$: five distinct values summing to $5$, so the mean is `1`.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#240 of 486): [../../by-rating/240-AVGARR.md](../../by-rating/240-AVGARR.md)
+Same problem in rating order (#242 of 735): [../../by-rating/242-AVGARR.md](../../by-rating/242-AVGARR.md)

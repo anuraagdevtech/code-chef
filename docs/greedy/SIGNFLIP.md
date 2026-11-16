@@ -147,4 +147,4 @@ $K$ is exhausted, so $-1$ and $0$ stay out of the subsequence. Output `22`.
 
 ---
 
-Same problem in rating order (#206 of 486): [../../by-rating/206-SIGNFLIP.md](../../by-rating/206-SIGNFLIP.md)
+Same problem in rating order (#206 of 735): [../../by-rating/206-SIGNFLIP.md](../../by-rating/206-SIGNFLIP.md)

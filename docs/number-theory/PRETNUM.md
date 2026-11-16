@@ -177,4 +177,4 @@ Six such numbers, so the output is `6`. Note $6, 8, 10$ all have four divisors.
 
 ---
 
-Same problem in rating order (#468 of 486): [../../by-rating/468-PRETNUM.md](../../by-rating/468-PRETNUM.md)
+Same problem in rating order (#536 of 735): [../../by-rating/536-PRETNUM.md](../../by-rating/536-PRETNUM.md)

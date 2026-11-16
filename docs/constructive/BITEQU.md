@@ -137,8 +137,6 @@ $N = 1$.
 
 All four are distinct and positive. For $N = 0$ the quadruple $12, 10, 1, 9$ gives $(8 \mathbin{|} 1) \oplus 9 = 9 \oplus 9 = 0$.
 
-> CodeChef tags: `Advanced Algorithms`, `Mathematics`, `Bit Manipulation`
-
 ---
 
-Same problem in rating order (#395 of 486): [../../by-rating/395-BITEQU.md](../../by-rating/395-BITEQU.md)
+Same problem in rating order (#413 of 735): [../../by-rating/413-BITEQU.md](../../by-rating/413-BITEQU.md)

@@ -132,8 +132,6 @@ main()
 
 Rows 1 and 5 fail on divisibility; row 4 is the exact upper limit.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#37 of 486): [../../by-rating/037-CHEFSCORE.md](../../by-rating/037-CHEFSCORE.md)
+Same problem in rating order (#37 of 735): [../../by-rating/037-CHEFSCORE.md](../../by-rating/037-CHEFSCORE.md)

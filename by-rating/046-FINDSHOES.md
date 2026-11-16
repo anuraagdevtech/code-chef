@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Clamping one side of a two-part requirement |
-| **CodeChef tags** | `Basic Programming Concepts`, `Mathematics`, `Basic Math`, `Inbuilt functions`, `Arithmetic` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

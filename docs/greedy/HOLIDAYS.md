@@ -148,4 +148,4 @@ Three days worked out of five, so `2` holidays.
 
 ---
 
-Same problem in rating order (#174 of 486): [../../by-rating/174-HOLIDAYS.md](../../by-rating/174-HOLIDAYS.md)
+Same problem in rating order (#174 of 735): [../../by-rating/174-HOLIDAYS.md](../../by-rating/174-HOLIDAYS.md)

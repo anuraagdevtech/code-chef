@@ -135,8 +135,6 @@ main()
 
 From $6$, whatever Chef takes, Misha can take the remainder and leave $0$.
 
-> CodeChef tags: `Algorithms`, `Observation`
-
 ---
 
-Same problem in rating order (#252 of 486): [../../by-rating/252-CHCOINSG.md](../../by-rating/252-CHCOINSG.md)
+Same problem in rating order (#254 of 735): [../../by-rating/254-CHCOINSG.md](../../by-rating/254-CHCOINSG.md)

@@ -19,6 +19,7 @@ from collections import Counter, defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import complexity as X
 import constraints as C
+from roadmap import documented_codes, roadmap_slots, remaining_codes
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, 'data', 'raw')
@@ -478,45 +479,33 @@ def write_index(built, codes):
           f'[{SEQ[first]:03d}. {name} &rarr;]'
           f'(by-rating/{SEQ[first]:03d}-{first}.md)\n')
     A('# CodeChef - Become 5 Star roadmap\n')
-    A('Worked documentation for every problem I have solved on the CodeChef '
+    snapshot_count = len(set(open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()))
+    total_distinct = len({code for course in roadmap_slots().values() for code in course['slots']})
+    A('Worked Python solutions for the CodeChef '
       '[Become 5 Star](https://www.codechef.com/roadmap/become-5-star) roadmap: '
-      'the question, its constraints, an explained Python solution, the time '
-      'and space complexity, the topic or data structure it belongs to, the '
-      'edge cases that decide the problem, and a dry run on a sample.\n')
-    A(f'**{len(built)} of {len(codes)} solved problems documented.**\n')
+      'the question, constraints, approach, runnable code, complexity, '
+      'edge cases, and a dry run.\n')
+    A(f'**{len(built)} of {total_distinct} distinct roadmap problems documented.** '
+      f'**{total_distinct-len(built)} remain.** See [remaining problems](REMAINING.md).\n')
     A('## Roadmap progress\n')
-    A('| Level | Course | Solved | Total | Files here |')
+    A('| Level | Course | Documented distinct problems | Distinct problems | Course slots |')
     A('|---|---|---:|---:|---:|')
+    slots = roadmap_slots()
     for c in IDX['courses']:
-        n = sum(1 for b in built if META[b['code']]['course'] == c['slug'])
-        A(f'| {c["level"]} | {c["title"]} | {c["solved"]} | {c["total"]} | {n} |')
-    A(f'| | **Total** | **{IDX["total_solved"]}** | **{IDX["total_problems"]}** '
-      f'| **{len(built)}** |')
+        course_codes = set(slots[c['slug']]['slots'])
+        covered = len(done & course_codes)
+        A(f'| {c["level"]} | {c["title"]} | {covered} | {len(course_codes)} | {c["total"]} |')
+    A(f'| | **Total, deduplicated across courses** | **{len(built)}** | **{total_distinct}** | **{IDX["total_problems"]}** |')
     A('')
-    note = (f'The roadmap headline counts **{IDX["total_solved"]} solved '
-            'entries**, but that sums a per-course counter and a problem can '
-            'hold more than one slot. Deduplicated it is '
-            f'**{len(codes)} distinct problems**, which is what is documented '
-            'here')
-    slots = os.path.join(ROOT, 'data', 'roadmap_slots.json')
-    if os.path.exists(slots):
-        data = json.load(open(slots))
-        intra = sum(n - 1 for d in data.values()
-                    for n in Counter(d['slots']).values())
-        where = defaultdict(set)
-        for slug, d in data.items():
-            for code in set(d['slots']):
-                where[code].add(slug)
-        cross = sum(1 for c in codes if len(where.get(c, ())) > 1)
-        note += (f': {intra} problems occupy two slots inside a single course '
-                 f'and {cross} are listed in two different courses. A '
-                 'problem listed in two courses is written up once and filed '
-                 'under one of them, which is why the per-course **Files '
-                 'here** column can sit below that course\'s **Solved** '
-                 'count while the totals still agree. Run '
-                 '`python3 tools/reconcile_counts.py` to reproduce the '
-                 'breakdown')
-    A(note + '.\n')
+    A('Course slots can repeat a problem within one course or across courses. '
+      'Each distinct problem is implemented and documented once.\n')
+    A(f'The saved CodeChef profile snapshot for `{IDX["profile"]}` was harvested on '
+      f'{IDX["harvested_on"]}: **{IDX["total_solved"]} solved course entries** '
+      f'and **{snapshot_count} distinct accepted problems**. That snapshot is retained in '
+      '`data/all_solved.txt` and `data/roadmap_index.json`. New local solutions '
+      'are tracked separately in `data/completed.txt`; they have not been submitted '
+      'to CodeChef and do not change the account snapshot. Run '
+      '`python3 tools/reconcile_counts.py` to audit the original counts.\n')
     A('## Views\n')
     A('Every problem is written up once and rendered into two views, which '
       'carry the same six sections and cross-link to each other.\n')
@@ -546,15 +535,21 @@ def write_index(built, codes):
     A('data/raw/<CODE>.json         problem payloads fetched from CodeChef')
     A('data/problem_meta.json       code -> contest, course, level, order')
     A('data/roadmap_slots.json      per-course problem slots, for the count audit')
+    A('data/completed.txt           additional locally completed Python problems')
+    A('REMAINING.md                 generated list of problems still to implement')
     A('tools/                       fetch, build, verify and audit scripts')
     A('```\n')
     A('## Regenerating\n')
     A('```bash')
     A('python3 tools/fetch_raw.py     # pull problem payloads into data/raw/')
     A('python3 tools/build_docs.py    # rebuild docs/ and this README')
-    A('python3 tools/verify.py        # run every solution against its samples')
+    A('python3 tools/verify.py        # run every documented solution against its samples')
+    A('python3 tools/verify_additions.py   # exhaustive and random small-instance oracles')
     A('python3 tools/reconcile_counts.py   # audit the roadmap solved count')
     A('```\n')
+    A('Sample checks establish sample compatibility, not an online-judge acceptance. '
+      'The additional oracle suite checks selected algorithms against exhaustive '
+      'small instances.\n')
     A('Both views are generated, so edit `data/authored/<CODE>.md` or '
       '`solutions/<CODE>.py` and rebuild rather than editing `docs/` or '
       '`by-rating/` directly.\n')
@@ -562,13 +557,44 @@ def write_index(built, codes):
         f.write('\n'.join(L).rstrip() + '\n')
 
 
+
+def write_remaining():
+    pending = set(remaining_codes())
+    lines = ['# Remaining roadmap problems', '',
+             f'**{len(pending)} distinct problems remain.** No solution placeholder is counted as complete.', '',
+             'Generated from the saved roadmap syllabus. Each code appears once, even if it belongs to multiple courses.', '']
+    for course in IDX['courses']:
+        members = list(dict.fromkeys(c for c in roadmap_slots()[course['slug']]['slots'] if c in pending))
+        if not members:
+            continue
+        lines.extend([f'## {course["title"]}', '', '| Code | Problem |', '|---|---|'])
+        for code in members:
+            raw_path = os.path.join(RAW, f'{code}.json')
+            raw = json.load(open(raw_path, encoding='utf-8')) if os.path.exists(raw_path) else {}
+            title = (raw.get('problem_name') or code).replace('|', r'\|')
+            lines.append(f'| `{code}` | [{title}](https://www.codechef.com/problems/{code}) |')
+            pending.remove(code)
+        lines.append('')
+    with open(os.path.join(ROOT, 'REMAINING.md'), 'w', encoding='utf-8') as f:
+        f.write('\n'.join(lines).rstrip()+'\n')
+
+
 SEQ = {}
 
 
 def main():
     global SEQ
-    codes = open(os.path.join(ROOT, 'data', 'all_solved.txt')).read().split()
+    codes = documented_codes()
+    for code in codes:
+        d = load(code)
+        X.classify(d['meta']['time'])
+    # Remove only obsolete generated rating views; inserting a problem changes
+    # sequence numbers, so keeping old names would leave duplicate stale pages.
     SEQ = rating_order(codes)
+    expected = {f'{SEQ[c]:03d}-{c}.md' for c in codes}
+    for name in os.listdir(RATED):
+        if re.fullmatch(r'\d+-[A-Z0-9_]+\.md', name) and name not in expected:
+            os.remove(os.path.join(RATED, name))
     have = [c for c in codes
             if os.path.exists(os.path.join(AUTH, f'{c}.md'))
             and os.path.exists(os.path.join(SOLN, f'{c}.py'))]
@@ -578,6 +604,7 @@ def main():
              and os.path.exists(os.path.join(SOLN, f'{c}.py'))]
     write_index(built, codes)
     write_study_index(built, SEQ)
+    write_remaining()
     extras = sum(1 for b in built if b['has_extras'])
     print(f'built {len(built)} / {len(codes)} docs in two views; '
           f'{extras} have edge cases and a dry run')

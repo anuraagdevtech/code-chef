@@ -165,4 +165,4 @@ Output `18`.
 
 ---
 
-Same problem in rating order (#187 of 486): [../../by-rating/187-COPS.md](../../by-rating/187-COPS.md)
+Same problem in rating order (#187 of 735): [../../by-rating/187-COPS.md](../../by-rating/187-COPS.md)

@@ -131,4 +131,4 @@ In the first row both $1$s rise together on each of the two moves.
 
 ---
 
-Same problem in rating order (#195 of 486): [../../by-rating/195-MAKEEQUAL.md](../../by-rating/195-MAKEEQUAL.md)
+Same problem in rating order (#195 of 735): [../../by-rating/195-MAKEEQUAL.md](../../by-rating/195-MAKEEQUAL.md)

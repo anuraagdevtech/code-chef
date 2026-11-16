@@ -162,4 +162,4 @@ Output `2`.
 
 ---
 
-Same problem in rating order (#266 of 486): [../../by-rating/266-GOODPAIRS.md](../../by-rating/266-GOODPAIRS.md)
+Same problem in rating order (#268 of 735): [../../by-rating/268-GOODPAIRS.md](../../by-rating/268-GOODPAIRS.md)

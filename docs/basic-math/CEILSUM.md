@@ -129,8 +129,6 @@ main()
 
 In the middle row both halves are odd, which is what earns the extra over $\text{gap}/2 = 5$.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#418 of 486): [../../by-rating/418-CEILSUM.md](../../by-rating/418-CEILSUM.md)
+Same problem in rating order (#438 of 735): [../../by-rating/438-CEILSUM.md](../../by-rating/438-CEILSUM.md)

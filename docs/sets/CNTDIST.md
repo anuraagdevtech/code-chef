@@ -147,4 +147,4 @@ Chef's version would make $0 + 1 + 2 = 3$ comparisons here, and $\Theta(n^2)$ in
 
 ---
 
-Same problem in rating order (#478 of 486): [../../by-rating/478-CNTDIST.md](../../by-rating/478-CNTDIST.md)
+Same problem in rating order (#721 of 735): [../../by-rating/721-CNTDIST.md](../../by-rating/721-CNTDIST.md)

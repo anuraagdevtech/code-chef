@@ -130,8 +130,6 @@ main()
 
 Row 4 is the fractional case: $1.5$ against $2$.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#77 of 486): [../../by-rating/077-BUILDINGRACE.md](../../by-rating/077-BUILDINGRACE.md)
+Same problem in rating order (#77 of 735): [../../by-rating/077-BUILDINGRACE.md](../../by-rating/077-BUILDINGRACE.md)

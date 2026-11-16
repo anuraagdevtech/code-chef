@@ -119,4 +119,4 @@ main()
 
 ---
 
-Same problem in rating order (#476 of 486): [../../by-rating/476-ADDI.md](../../by-rating/476-ADDI.md)
+Same problem in rating order (#716 of 735): [../../by-rating/716-ADDI.md](../../by-rating/716-ADDI.md)

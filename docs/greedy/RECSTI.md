@@ -144,4 +144,4 @@ Row 1 ends up with four sticks of two lengths — one rectangle.
 
 ---
 
-Same problem in rating order (#327 of 486): [../../by-rating/327-RECSTI.md](../../by-rating/327-RECSTI.md)
+Same problem in rating order (#332 of 735): [../../by-rating/332-RECSTI.md](../../by-rating/332-RECSTI.md)

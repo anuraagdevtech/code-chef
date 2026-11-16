@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Counting separators, not groups |
-| **CodeChef tags** | `Basic Programming Concepts`, `Mathematics`, `Loops`, `Basic Math` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

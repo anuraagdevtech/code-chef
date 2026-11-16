@@ -126,8 +126,6 @@ main()
 
 Row 2 is the exact tie that floating point would put at risk.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#70 of 486): [../../by-rating/070-SPEEDTEST.md](../../by-rating/070-SPEEDTEST.md)
+Same problem in rating order (#70 of 735): [../../by-rating/070-SPEEDTEST.md](../../by-rating/070-SPEEDTEST.md)

@@ -141,8 +141,6 @@ First sample: $N = 16$ per box, $K = 2$ per day, $S = 10$ days.
 
 Feasible, so the answer is $\lceil 10 \cdot 2 / 16 \rceil = $ `2` buying days.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#357 of 486): [../../by-rating/357-SURVIVE.md](../../by-rating/357-SURVIVE.md)
+Same problem in rating order (#365 of 735): [../../by-rating/365-SURVIVE.md](../../by-rating/365-SURVIVE.md)

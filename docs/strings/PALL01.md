@@ -112,8 +112,6 @@ main()
 | 666 | `666` | yes | `wins` |
 | 343 | `343` | yes | `wins` |
 
-> CodeChef tags: `Data Structures`, `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#72 of 486): [../../by-rating/072-PALL01.md](../../by-rating/072-PALL01.md)
+Same problem in rating order (#72 of 735): [../../by-rating/072-PALL01.md](../../by-rating/072-PALL01.md)

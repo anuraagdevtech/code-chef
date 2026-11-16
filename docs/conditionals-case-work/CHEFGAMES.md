@@ -128,4 +128,4 @@ Only row 2 clears every limit.
 
 ---
 
-Same problem in rating order (#18 of 486): [../../by-rating/018-CHEFGAMES.md](../../by-rating/018-CHEFGAMES.md)
+Same problem in rating order (#18 of 735): [../../by-rating/018-CHEFGAMES.md](../../by-rating/018-CHEFGAMES.md)

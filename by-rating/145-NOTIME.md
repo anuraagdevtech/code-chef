@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Existence check over a list |
-| **CodeChef tags** | `Mathematics`, `Algorithms`, `Basic Math`, `Brute Force`, `Implementation` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ |
 | **Space** | $O(1)$ |

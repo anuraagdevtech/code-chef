@@ -152,8 +152,6 @@ main()
 
 Check $246$: $\prod(1+d) = 3 \cdot 5 \cdot 7 = 105$, odd, so $105 - 1 = 104$ is even and $246$ is magical — consistent with all its digits being even.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#354 of 486): [../../by-rating/354-CHEARMY.md](../../by-rating/354-CHEARMY.md)
+Same problem in rating order (#362 of 735): [../../by-rating/362-CHEARMY.md](../../by-rating/362-CHEARMY.md)

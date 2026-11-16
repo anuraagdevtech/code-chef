@@ -1,4 +1,4 @@
-[&larr; 461. XOR Equal](PALINT.md) &middot; [Index](../../README.md)
+[&larr; 461. XOR Equal](PALINT.md) &middot; [Index](../../README.md) &middot; [487. Subarray XOR &rarr;](SUB_XOR.md)
 
 # 468. Xor and Multiply
 
@@ -139,8 +139,6 @@ Second sample: $N = 3$, $A = 4$ ($100_2$), $B = 6$ ($110_2$), so they differ onl
 
 $X = 011_2 = 3$, giving $(4 \oplus 3) \times (6 \oplus 3) = 7 \times 5 = 35$ — the maximum.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`
-
 ---
 
-Same problem in rating order (#442 of 486): [../../by-rating/442-XORMUL.md](../../by-rating/442-XORMUL.md)
+Same problem in rating order (#465 of 735): [../../by-rating/465-XORMUL.md](../../by-rating/465-XORMUL.md)

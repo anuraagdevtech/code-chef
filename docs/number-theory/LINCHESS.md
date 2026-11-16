@@ -149,8 +149,6 @@ First sample: $K = 6$, players at $4, 3, 2, 8$.
 
 Output `3`: that player needs one move ($3 \to 6$), while the player at $2$ needs two.
 
-> CodeChef tags: `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#179 of 486): [../../by-rating/179-LINCHESS.md](../../by-rating/179-LINCHESS.md)
+Same problem in rating order (#179 of 735): [../../by-rating/179-LINCHESS.md](../../by-rating/179-LINCHESS.md)

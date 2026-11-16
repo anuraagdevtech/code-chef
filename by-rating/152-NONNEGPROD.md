@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Sign of a product from the count of negatives |
-| **CodeChef tags** | `Basic Programming Concepts`, `Mathematics`, `Loops`, `Basic Math` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

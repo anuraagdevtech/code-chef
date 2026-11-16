@@ -179,8 +179,6 @@ Second sample: $a = 13, 11, 10, 8$, so $N = 4$.
 
 Check: $x_2 + x_3 + x_4 = 3 + 4 + 6 = 13 = a_1$. ✓
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#236 of 486): [../../by-rating/236-EQUALITY.md](../../by-rating/236-EQUALITY.md)
+Same problem in rating order (#238 of 735): [../../by-rating/238-EQUALITY.md](../../by-rating/238-EQUALITY.md)

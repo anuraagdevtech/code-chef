@@ -143,8 +143,6 @@ main()
 
 In row 3 both step right then the policeman steps right again while the thief steps left: positions $4 \to 5 \to 4$ and $2 \to 3 \to 4$.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#325 of 486): [../../by-rating/325-CATHIEF.md](../../by-rating/325-CATHIEF.md)
+Same problem in rating order (#330 of 735): [../../by-rating/330-CATHIEF.md](../../by-rating/330-CATHIEF.md)

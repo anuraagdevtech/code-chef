@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Brute Force |
 | **Technique** | Enumerating every non-empty subset |
-| **CodeChef tags** | `Mathematics`, `Basic Math` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(2^k)$ per test case with $k = 3$, so $O(1)$ |
 | **Space** | $O(1)$ |

@@ -135,8 +135,6 @@ First sample: $X = 2$, $Y = 4$ — both even, both at least $2$.
 
 Each contains two `a`s and four `b`s, both read the same forwards and backwards, and they differ.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#299 of 486): [../../by-rating/299-PALINPAIN.md](../../by-rating/299-PALINPAIN.md)
+Same problem in rating order (#301 of 735): [../../by-rating/301-PALINPAIN.md](../../by-rating/301-PALINPAIN.md)

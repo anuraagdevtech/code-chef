@@ -123,8 +123,6 @@ main()
 
 Row 2 reverses on the discard; row 3 ties despite very different totals.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#91 of 486): [../../by-rating/091-DICEGAME2.md](../../by-rating/091-DICEGAME2.md)
+Same problem in rating order (#91 of 735): [../../by-rating/091-DICEGAME2.md](../../by-rating/091-DICEGAME2.md)

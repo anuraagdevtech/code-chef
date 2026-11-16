@@ -130,8 +130,6 @@ Sample: $N = 3$, $M = 3$, $A = 1, 2, 4$.
 
 Both are there, and $M = 3$ appears $0$ times — so everything can be kept. Output `3`, with the chosen set $\{1, 2, 4\}$ whose MEX is $3$.
 
-> CodeChef tags: `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#422 of 486): [../../by-rating/422-MAXMEX.md](../../by-rating/422-MAXMEX.md)
+Same problem in rating order (#442 of 735): [../../by-rating/442-MAXMEX.md](../../by-rating/442-MAXMEX.md)

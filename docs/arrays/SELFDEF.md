@@ -126,8 +126,6 @@ main()
 
 Each row excludes someone for a different reason: too old in rows 1 and 2, too young in row 3.
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#68 of 486): [../../by-rating/068-SELFDEF.md](../../by-rating/068-SELFDEF.md)
+Same problem in rating order (#68 of 735): [../../by-rating/068-SELFDEF.md](../../by-rating/068-SELFDEF.md)

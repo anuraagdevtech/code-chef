@@ -148,8 +148,6 @@ Second sample: counts $4, 3, 1$.
 
 Two odd counts, so one merge: convert all of character $3$ into character $2$, giving counts $4, 4, 0$. Output `1` — the string can now be arranged as a palindrome.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#286 of 486): [../../by-rating/286-MAKEPAL.md](../../by-rating/286-MAKEPAL.md)
+Same problem in rating order (#288 of 735): [../../by-rating/288-MAKEPAL.md](../../by-rating/288-MAKEPAL.md)

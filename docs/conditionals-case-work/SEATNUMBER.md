@@ -140,8 +140,6 @@ main()
 
 Row 3 wraps to position $1$; row 5 sits exactly on the Double limit.
 
-> CodeChef tags: `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#39 of 486): [../../by-rating/039-SEATNUMBER.md](../../by-rating/039-SEATNUMBER.md)
+Same problem in rating order (#39 of 735): [../../by-rating/039-SEATNUMBER.md](../../by-rating/039-SEATNUMBER.md)

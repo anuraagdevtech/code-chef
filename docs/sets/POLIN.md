@@ -148,4 +148,4 @@ main()
 
 ---
 
-Same problem in rating order (#200 of 486): [../../by-rating/200-POLIN.md](../../by-rating/200-POLIN.md)
+Same problem in rating order (#200 of 735): [../../by-rating/200-POLIN.md](../../by-rating/200-POLIN.md)

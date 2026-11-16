@@ -128,8 +128,6 @@ main()
 
 Row 2 is the exact tie; row 3 is a narrow win by three.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#27 of 486): [../../by-rating/027-MONOPOLY2.md](../../by-rating/027-MONOPOLY2.md)
+Same problem in rating order (#27 of 735): [../../by-rating/027-MONOPOLY2.md](../../by-rating/027-MONOPOLY2.md)

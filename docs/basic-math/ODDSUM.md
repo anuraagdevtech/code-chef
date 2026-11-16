@@ -130,8 +130,6 @@ main()
 
 Every prefix sum is odd, and the formula $1 + (N-2)(N-1)$ matches each row.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#343 of 486): [../../by-rating/343-ODDSUM.md](../../by-rating/343-ODDSUM.md)
+Same problem in rating order (#350 of 735): [../../by-rating/350-ODDSUM.md](../../by-rating/350-ODDSUM.md)

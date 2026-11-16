@@ -98,8 +98,6 @@ main()
 | 4 | $6 \times 4$ | `24` |
 | 5 | $24 \times 5$ | `120` |
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`, `Algorithms`, `CPP`
-
 ---
 
-Same problem in rating order (#62 of 486): [../../by-rating/062-FLOW018.md](../../by-rating/062-FLOW018.md)
+Same problem in rating order (#62 of 735): [../../by-rating/062-FLOW018.md](../../by-rating/062-FLOW018.md)

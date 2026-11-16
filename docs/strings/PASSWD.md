@@ -149,4 +149,4 @@ The first row's interior is `cookOff#P`, which has no digit at all.
 
 ---
 
-Same problem in rating order (#267 of 486): [../../by-rating/267-PASSWD.md](../../by-rating/267-PASSWD.md)
+Same problem in rating order (#269 of 735): [../../by-rating/269-PASSWD.md](../../by-rating/269-PASSWD.md)

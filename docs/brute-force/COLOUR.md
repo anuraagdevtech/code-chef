@@ -144,8 +144,6 @@ Third sample: $X = Y = Z = 1$.
 
 Output `3`: mixing anything here is a loss.
 
-> CodeChef tags: `Special`, `Mathematics`, `Bit Manipulation`
-
 ---
 
-Same problem in rating order (#234 of 486): [../../by-rating/234-COLOUR.md](../../by-rating/234-COLOUR.md)
+Same problem in rating order (#236 of 735): [../../by-rating/236-COLOUR.md](../../by-rating/236-COLOUR.md)

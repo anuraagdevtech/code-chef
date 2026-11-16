@@ -142,8 +142,6 @@ First sample: $N = 4$.
 
 The minimum $f(4) = 4 = N$, attained by all three ordered pairs, so the output is `3`.
 
-> CodeChef tags: `Number Theory`
-
 ---
 
-Same problem in rating order (#389 of 486): [../../by-rating/389-OPTPAIRS.md](../../by-rating/389-OPTPAIRS.md)
+Same problem in rating order (#406 of 735): [../../by-rating/406-OPTPAIRS.md](../../by-rating/406-OPTPAIRS.md)

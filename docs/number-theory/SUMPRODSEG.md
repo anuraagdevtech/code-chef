@@ -152,8 +152,6 @@ First sample: $X = 4$, $Y = 24$.
 
 Since $4 > 2$ the product segment lies entirely to the right. Output `2 2` then `4 6` — disjoint, with $2+2 = 4$ and $4 \cdot 6 = 24$.
 
-> CodeChef tags: `Number Theory`
-
 ---
 
-Same problem in rating order (#420 of 486): [../../by-rating/420-SUMPRODSEG.md](../../by-rating/420-SUMPRODSEG.md)
+Same problem in rating order (#440 of 735): [../../by-rating/440-SUMPRODSEG.md](../../by-rating/440-SUMPRODSEG.md)

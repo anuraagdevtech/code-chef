@@ -160,4 +160,4 @@ First sample: $A = 29, 412, 671, 255, 912$.
 
 ---
 
-Same problem in rating order (#372 of 486): [../../by-rating/372-MAXDMGE.md](../../by-rating/372-MAXDMGE.md)
+Same problem in rating order (#385 of 735): [../../by-rating/385-MAXDMGE.md](../../by-rating/385-MAXDMGE.md)

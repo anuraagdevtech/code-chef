@@ -147,8 +147,6 @@ Second sample: $H = 1, 2, 3, 4$ with $W = 2$.
 
 Output `3`.
 
-> CodeChef tags: `Data Structures`, `Queues`, `Mathematics`
-
 ---
 
-Same problem in rating order (#470 of 486): [../../by-rating/470-CHEFTOWN.md](../../by-rating/470-CHEFTOWN.md)
+Same problem in rating order (#546 of 735): [../../by-rating/546-CHEFTOWN.md](../../by-rating/546-CHEFTOWN.md)

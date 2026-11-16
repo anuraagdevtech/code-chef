@@ -131,4 +131,4 @@ main()
 
 ---
 
-Same problem in rating order (#121 of 486): [../../by-rating/121-CHFRICH.md](../../by-rating/121-CHFRICH.md)
+Same problem in rating order (#121 of 735): [../../by-rating/121-CHFRICH.md](../../by-rating/121-CHFRICH.md)

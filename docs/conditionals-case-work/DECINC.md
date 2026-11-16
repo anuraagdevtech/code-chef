@@ -99,8 +99,6 @@ Input is the single value $N = 5$.
 | branch | not divisible, so $N - 1$ |
 | output | `4` |
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#9 of 486): [../../by-rating/009-DECINC.md](../../by-rating/009-DECINC.md)
+Same problem in rating order (#9 of 735): [../../by-rating/009-DECINC.md](../../by-rating/009-DECINC.md)

@@ -127,4 +127,4 @@ For $N = 5$ the answer would be $3$: the first player's hoops are $1, 2, 3$ whil
 
 ---
 
-Same problem in rating order (#141 of 486): [../../by-rating/141-HOOPS.md](../../by-rating/141-HOOPS.md)
+Same problem in rating order (#141 of 735): [../../by-rating/141-HOOPS.md](../../by-rating/141-HOOPS.md)

@@ -1,4 +1,4 @@
-[&larr; 466. Add to Subsequence](SUBSEQDIST.md) &middot; [Index](../../README.md)
+[&larr; 466. Add to Subsequence](SUBSEQDIST.md) &middot; [Index](../../README.md) &middot; [492. Distinct Elements &rarr;](DISTELE.md)
 
 # 484. Bear and AB
 
@@ -167,8 +167,6 @@ First sample: $S = $ `abcb` repeated $K = 2$ times, giving `abcbabcb`.
 
 Total `6`.
 
-> CodeChef tags: `Data Structures`, `Mathematics`
-
 ---
 
-Same problem in rating order (#454 of 486): [../../by-rating/454-ABREPEAT.md](../../by-rating/454-ABREPEAT.md)
+Same problem in rating order (#477 of 735): [../../by-rating/477-ABREPEAT.md](../../by-rating/477-ABREPEAT.md)

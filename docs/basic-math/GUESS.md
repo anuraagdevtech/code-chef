@@ -131,4 +131,4 @@ Favourable pairs: $1 \times 1$ (odd, even) $+\ 1 \times 2$ (even, odd) $= 3$, ou
 
 ---
 
-Same problem in rating order (#231 of 486): [../../by-rating/231-GUESS.md](../../by-rating/231-GUESS.md)
+Same problem in rating order (#232 of 735): [../../by-rating/232-GUESS.md](../../by-rating/232-GUESS.md)

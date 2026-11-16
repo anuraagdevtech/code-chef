@@ -151,4 +151,4 @@ $61 = 8 \cdot 7 + 5$, so eight bags fill and five coins remain.
 
 ---
 
-Same problem in rating order (#202 of 486): [../../by-rating/202-CASH.md](../../by-rating/202-CASH.md)
+Same problem in rating order (#202 of 735): [../../by-rating/202-CASH.md](../../by-rating/202-CASH.md)

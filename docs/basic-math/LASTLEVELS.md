@@ -146,8 +146,6 @@ main()
 
 Row 2 sits on the boundary where no break has appeared yet.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#53 of 486): [../../by-rating/053-LASTLEVELS.md](../../by-rating/053-LASTLEVELS.md)
+Same problem in rating order (#53 of 735): [../../by-rating/053-LASTLEVELS.md](../../by-rating/053-LASTLEVELS.md)

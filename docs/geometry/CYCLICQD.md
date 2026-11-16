@@ -126,8 +126,6 @@ main()
 
 In row 2, $B + D = 20 + 160 = 180$ as well, which the fixed total guarantees.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#75 of 486): [../../by-rating/075-CYCLICQD.md](../../by-rating/075-CYCLICQD.md)
+Same problem in rating order (#75 of 735): [../../by-rating/075-CYCLICQD.md](../../by-rating/075-CYCLICQD.md)

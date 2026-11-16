@@ -136,8 +136,6 @@ main()
 
 Row 4 is the parity case that costs an extra move.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#107 of 486): [../../by-rating/107-INCREAR.md](../../by-rating/107-INCREAR.md)
+Same problem in rating order (#107 of 735): [../../by-rating/107-INCREAR.md](../../by-rating/107-INCREAR.md)

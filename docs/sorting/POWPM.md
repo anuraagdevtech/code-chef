@@ -173,8 +173,6 @@ Third sample: $A = 1000, 100, 1, 10, 1$, sorted to $1, 1, 10, 100, 1000$ with tw
 
 Total `14`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#392 of 486): [../../by-rating/392-POWPM.md](../../by-rating/392-POWPM.md)
+Same problem in rating order (#409 of 735): [../../by-rating/409-POWPM.md](../../by-rating/409-POWPM.md)

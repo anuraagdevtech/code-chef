@@ -135,4 +135,4 @@ Row 1 is the stops-early case; the formula handles it as an ordinary comparison.
 
 ---
 
-Same problem in rating order (#214 of 486): [../../by-rating/214-NFS.md](../../by-rating/214-NFS.md)
+Same problem in rating order (#215 of 735): [../../by-rating/215-NFS.md](../../by-rating/215-NFS.md)

@@ -143,8 +143,6 @@ First sample: $W = 1, 1, 2, 1, 1, 1$ with $N = 6$, so the half is $3$ and the on
 
 Output `3`: the three shifts that place the maximum in the second half.
 
-> CodeChef tags: `Algorithms`, `Constructive`, `Simple Algos`
-
 ---
 
-Same problem in rating order (#432 of 486): [../../by-rating/432-CHCBOX.md](../../by-rating/432-CHCBOX.md)
+Same problem in rating order (#454 of 735): [../../by-rating/454-CHCBOX.md](../../by-rating/454-CHCBOX.md)

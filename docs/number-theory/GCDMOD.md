@@ -140,8 +140,6 @@ Second sample: $A = 9$, $B = 1$, $N = 5$, so the difference is $8$.
 
 Output `2`. Directly, $9^5 + 1^5 = 59050$ and $\gcd(59050, 8) = 2$ ✓
 
-> CodeChef tags: `Mathematics`, `Number Theory`, `Modular Arithmetic`, `GCD`
-
 ---
 
-Same problem in rating order (#444 of 486): [../../by-rating/444-GCDMOD.md](../../by-rating/444-GCDMOD.md)
+Same problem in rating order (#467 of 735): [../../by-rating/467-GCDMOD.md](../../by-rating/467-GCDMOD.md)

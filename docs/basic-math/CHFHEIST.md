@@ -151,8 +151,6 @@ Third sample: $D = 5$, $d = 2$, $p = 1$, $q = 2$. Two complete blocks, one day l
 
 Total `13`. The formula gives $2(2 \cdot 1 + 2 \cdot 1) + 1 \cdot 5 = 8 + 5$.
 
-> CodeChef tags: `Mathematics`, `Sequences and Progression`
-
 ---
 
-Same problem in rating order (#230 of 486): [../../by-rating/230-CHFHEIST.md](../../by-rating/230-CHFHEIST.md)
+Same problem in rating order (#231 of 735): [../../by-rating/231-CHFHEIST.md](../../by-rating/231-CHFHEIST.md)

@@ -137,8 +137,6 @@ main()
 | 1000 | even | — | $2$ | `no` |
 | 99991 | odd, $\geq 4$ | $3, 5, \ldots, 315$ | none | `yes` |
 
-> CodeChef tags: `Mathematics`, `Number Theory`, `Primality Checking`
-
 ---
 
-Same problem in rating order (#105 of 486): [../../by-rating/105-PRB01.md](../../by-rating/105-PRB01.md)
+Same problem in rating order (#105 of 735): [../../by-rating/105-PRB01.md](../../by-rating/105-PRB01.md)

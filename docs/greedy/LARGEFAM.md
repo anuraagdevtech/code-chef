@@ -168,4 +168,4 @@ Output `2`. Three children across two parents leaves two childless people, consi
 
 ---
 
-Same problem in rating order (#315 of 486): [../../by-rating/315-LARGEFAM.md](../../by-rating/315-LARGEFAM.md)
+Same problem in rating order (#319 of 735): [../../by-rating/319-LARGEFAM.md](../../by-rating/319-LARGEFAM.md)

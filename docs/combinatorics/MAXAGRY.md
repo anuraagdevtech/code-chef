@@ -144,8 +144,6 @@ First sample: $N = 7$, $K = 3$, so three swaps on $1 \dots 7$.
 
 The closed form gives $3(15) - 2 \cdot 3 \cdot 4 = 45 - 24 = $ `21`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#246 of 486): [../../by-rating/246-MAXAGRY.md](../../by-rating/246-MAXAGRY.md)
+Same problem in rating order (#248 of 735): [../../by-rating/248-MAXAGRY.md](../../by-rating/248-MAXAGRY.md)

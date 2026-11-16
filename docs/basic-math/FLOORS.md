@@ -138,8 +138,6 @@ main()
 
 Row 4 is the boundary pair: consecutive rooms, different floors.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#69 of 486): [../../by-rating/069-FLOORS.md](../../by-rating/069-FLOORS.md)
+Same problem in rating order (#69 of 735): [../../by-rating/069-FLOORS.md](../../by-rating/069-FLOORS.md)

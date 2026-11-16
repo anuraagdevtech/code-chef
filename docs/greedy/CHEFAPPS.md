@@ -136,4 +136,4 @@ Row 4 is the one that needs the *larger* app removed; row 3 needs both.
 
 ---
 
-Same problem in rating order (#63 of 486): [../../by-rating/063-CHEFAPPS.md](../../by-rating/063-CHEFAPPS.md)
+Same problem in rating order (#63 of 735): [../../by-rating/063-CHEFAPPS.md](../../by-rating/063-CHEFAPPS.md)

@@ -133,8 +133,6 @@ $N = 5$, $K = 10$, values $2, 4, 1, 35, 1$:
 
 One minion qualifies, so `1`. Note $35$ is divisible by $7$ on its own and still fails, because $K$ is not.
 
-> CodeChef tags: `Mathematics`, `Modular Arithmetic`, `Algorithms`
-
 ---
 
-Same problem in rating order (#159 of 486): [../../by-rating/159-CHN15A.md](../../by-rating/159-CHN15A.md)
+Same problem in rating order (#159 of 735): [../../by-rating/159-CHN15A.md](../../by-rating/159-CHN15A.md)

@@ -165,8 +165,6 @@ Second sample, $N = 2$.
 
 Sorted: `1 1 2 2`.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#294 of 486): [../../by-rating/294-TOTCRT.md](../../by-rating/294-TOTCRT.md)
+Same problem in rating order (#296 of 735): [../../by-rating/296-TOTCRT.md](../../by-rating/296-TOTCRT.md)

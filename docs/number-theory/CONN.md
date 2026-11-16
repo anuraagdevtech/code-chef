@@ -127,8 +127,6 @@ main()
 | 7 | odd | yes | $7$ | `YES` |
 | 11 | odd | yes | $7 + 2 + 2$ | `YES` |
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#109 of 486): [../../by-rating/109-CONN.md](../../by-rating/109-CONN.md)
+Same problem in rating order (#109 of 735): [../../by-rating/109-CONN.md](../../by-rating/109-CONN.md)

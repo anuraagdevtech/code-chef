@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Mapping an index to its block |
-| **CodeChef tags** | `Mathematics`, `Basic Programming Concepts`, `Basic Math` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

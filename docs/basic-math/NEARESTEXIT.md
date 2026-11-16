@@ -138,4 +138,4 @@ Rows 2 and 5 are the two sides of the midpoint, one unit apart.
 
 ---
 
-Same problem in rating order (#30 of 486): [../../by-rating/030-NEARESTEXIT.md](../../by-rating/030-NEARESTEXIT.md)
+Same problem in rating order (#30 of 735): [../../by-rating/030-NEARESTEXIT.md](../../by-rating/030-NEARESTEXIT.md)

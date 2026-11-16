@@ -134,4 +134,4 @@ Row 1 at $K = 2$ would give $0$, which is why the runs cannot be merged.
 
 ---
 
-Same problem in rating order (#254 of 486): [../../by-rating/254-FILL01.md](../../by-rating/254-FILL01.md)
+Same problem in rating order (#256 of 735): [../../by-rating/256-FILL01.md](../../by-rating/256-FILL01.md)

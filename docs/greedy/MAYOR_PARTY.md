@@ -127,8 +127,6 @@ main()
 
 Row 2 is the one where excluding $B$ would be a mistake.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#128 of 486): [../../by-rating/128-MAYOR_PARTY.md](../../by-rating/128-MAYOR_PARTY.md)
+Same problem in rating order (#128 of 735): [../../by-rating/128-MAYOR_PARTY.md](../../by-rating/128-MAYOR_PARTY.md)

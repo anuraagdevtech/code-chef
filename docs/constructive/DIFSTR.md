@@ -136,8 +136,6 @@ First sample: three strings of length $3$.
 
 Result `001`, which differs from `101` at position $0$, from `110` at position $0$, and from `100` at position $2$.
 
-> CodeChef tags: `Data Structures`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#352 of 486): [../../by-rating/352-DIFSTR.md](../../by-rating/352-DIFSTR.md)
+Same problem in rating order (#360 of 735): [../../by-rating/360-DIFSTR.md](../../by-rating/360-DIFSTR.md)

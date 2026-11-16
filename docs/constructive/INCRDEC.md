@@ -159,4 +159,4 @@ Output `1 2 3 2 1`: strictly increasing up to $p = 3$, strictly decreasing from 
 
 ---
 
-Same problem in rating order (#328 of 486): [../../by-rating/328-INCRDEC.md](../../by-rating/328-INCRDEC.md)
+Same problem in rating order (#333 of 735): [../../by-rating/333-INCRDEC.md](../../by-rating/333-INCRDEC.md)

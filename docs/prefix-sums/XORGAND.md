@@ -171,8 +171,6 @@ Sample: $A = 1, 2, 3, 4, 5$ with bit lengths $1, 2, 2, 3, 3$.
 
 Checking one: $M = 1$, $X = 4$ gives $1 \oplus 4 = 5 > 1 \mathbin{\&} 4 = 0$ ✓, and the bit lengths $1$ and $3$ do differ.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`, `Simple Algos`
-
 ---
 
-Same problem in rating order (#410 of 486): [../../by-rating/410-XORGAND.md](../../by-rating/410-XORGAND.md)
+Same problem in rating order (#429 of 735): [../../by-rating/429-XORGAND.md](../../by-rating/429-XORGAND.md)

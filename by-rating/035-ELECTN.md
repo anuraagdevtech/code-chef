@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Counting with a predicate |
-| **CodeChef tags** | `Basic Programming Concepts`, `Loops`, `Conditional Statements` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

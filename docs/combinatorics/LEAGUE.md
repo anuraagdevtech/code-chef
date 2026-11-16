@@ -138,4 +138,4 @@ Rows 1 and 2 share an answer, and so would rows 3 and the unlisted $N = 5$.
 
 ---
 
-Same problem in rating order (#123 of 486): [../../by-rating/123-LEAGUE.md](../../by-rating/123-LEAGUE.md)
+Same problem in rating order (#123 of 735): [../../by-rating/123-LEAGUE.md](../../by-rating/123-LEAGUE.md)

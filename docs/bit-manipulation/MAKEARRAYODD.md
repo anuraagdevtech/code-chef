@@ -156,8 +156,6 @@ Two evens, and odd partners exist, so two operations:
 
 Output `2`.
 
-> CodeChef tags: `Mathematics`, `Bit Manipulation`, `Algorithms`
-
 ---
 
-Same problem in rating order (#255 of 486): [../../by-rating/255-MAKEARRAYODD.md](../../by-rating/255-MAKEARRAYODD.md)
+Same problem in rating order (#257 of 735): [../../by-rating/257-MAKEARRAYODD.md](../../by-rating/257-MAKEARRAYODD.md)

@@ -137,4 +137,4 @@ Output `3`.
 
 ---
 
-Same problem in rating order (#250 of 486): [../../by-rating/250-WTCH.md](../../by-rating/250-WTCH.md)
+Same problem in rating order (#252 of 735): [../../by-rating/252-WTCH.md](../../by-rating/252-WTCH.md)

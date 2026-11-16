@@ -122,8 +122,6 @@ main()
 
 Row 2 strands one rupee, which is simply lost.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#59 of 486): [../../by-rating/059-VALENTINE.md](../../by-rating/059-VALENTINE.md)
+Same problem in rating order (#59 of 735): [../../by-rating/059-VALENTINE.md](../../by-rating/059-VALENTINE.md)

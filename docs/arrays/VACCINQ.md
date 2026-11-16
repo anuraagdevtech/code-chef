@@ -135,4 +135,4 @@ Positions $3$ and $4$ are behind Chef and ignored, so the output is `5`.
 
 ---
 
-Same problem in rating order (#165 of 486): [../../by-rating/165-VACCINQ.md](../../by-rating/165-VACCINQ.md)
+Same problem in rating order (#165 of 735): [../../by-rating/165-VACCINQ.md](../../by-rating/165-VACCINQ.md)

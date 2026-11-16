@@ -117,8 +117,6 @@ main()
 | 1 | 5 | 15 | no | `-1` |
 | 4 | 9 | 8 | yes | `8` |
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#54 of 486): [../../by-rating/054-BLACKJACK.md](../../by-rating/054-BLACKJACK.md)
+Same problem in rating order (#54 of 735): [../../by-rating/054-BLACKJACK.md](../../by-rating/054-BLACKJACK.md)

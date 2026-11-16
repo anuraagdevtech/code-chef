@@ -135,4 +135,4 @@ Row 3 uses one step to arrive and wastes the other two on a step out and back.
 
 ---
 
-Same problem in rating order (#223 of 486): [../../by-rating/223-TANDJ1.md](../../by-rating/223-TANDJ1.md)
+Same problem in rating order (#224 of 735): [../../by-rating/224-TANDJ1.md](../../by-rating/224-TANDJ1.md)

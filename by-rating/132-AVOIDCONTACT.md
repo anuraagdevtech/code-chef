@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Greedy |
 | **Technique** | Packing with separation constraints |
-| **CodeChef tags** | `Algorithms`, `Constructive`, `Observation`, `ad-hoc`, `Patterns` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

@@ -128,4 +128,4 @@ Row 1 is the exact multiple; row 3 is the clamped case.
 
 ---
 
-Same problem in rating order (#66 of 486): [../../by-rating/066-SPCP2.md](../../by-rating/066-SPCP2.md)
+Same problem in rating order (#66 of 735): [../../by-rating/066-SPCP2.md](../../by-rating/066-SPCP2.md)

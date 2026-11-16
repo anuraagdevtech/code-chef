@@ -157,8 +157,6 @@ One trade swaps Motu's $6$ for Tomu's $3$:
 
 $10 > 9$, so `YES`.
 
-> CodeChef tags: `Data Structures`
-
 ---
 
-Same problem in rating order (#228 of 486): [../../by-rating/228-MTYFRI.md](../../by-rating/228-MTYFRI.md)
+Same problem in rating order (#229 of 735): [../../by-rating/229-MTYFRI.md](../../by-rating/229-MTYFRI.md)

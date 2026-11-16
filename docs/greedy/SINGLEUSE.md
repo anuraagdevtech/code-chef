@@ -136,8 +136,6 @@ main()
 
 Row 1 is the tie, row 4 the one-shot kill.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#87 of 486): [../../by-rating/087-SINGLEUSE.md](../../by-rating/087-SINGLEUSE.md)
+Same problem in rating order (#87 of 735): [../../by-rating/087-SINGLEUSE.md](../../by-rating/087-SINGLEUSE.md)

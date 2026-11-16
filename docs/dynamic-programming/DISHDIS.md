@@ -1,4 +1,4 @@
-[&larr; 360. Chef and Wedding Arrangements](CHEFWED.md) &middot; [Index](../../README.md)
+[&larr; 360. Chef and Wedding Arrangements](CHEFWED.md) &middot; [Index](../../README.md) &middot; [503. K-Concatenation &rarr;](KCON.md)
 
 # 362. Dish Distribution
 
@@ -162,4 +162,4 @@ Output `3`.
 
 ---
 
-Same problem in rating order (#340 of 486): [../../by-rating/340-DISHDIS.md](../../by-rating/340-DISHDIS.md)
+Same problem in rating order (#347 of 735): [../../by-rating/347-DISHDIS.md](../../by-rating/347-DISHDIS.md)

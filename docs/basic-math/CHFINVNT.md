@@ -151,8 +151,6 @@ Third sample: $N = 10$, $p = 4$, $K = 5$. Residue $r = 4$, with $\lfloor N/K \rf
 
 Eight gases precede residue $4$, none shares it at a lower index, so $p = 4$ is tested $9$th. Output `9`.
 
-> CodeChef tags: `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#346 of 486): [../../by-rating/346-CHFINVNT.md](../../by-rating/346-CHFINVNT.md)
+Same problem in rating order (#354 of 735): [../../by-rating/354-CHFINVNT.md](../../by-rating/354-CHFINVNT.md)

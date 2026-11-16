@@ -149,8 +149,6 @@ Second sample: $A = 5, 3, 2$, sorted to $2, 3, 5$.
 
 Output `17`.
 
-> CodeChef tags: `Mathematics`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#439 of 486): [../../by-rating/439-MVALUE.md](../../by-rating/439-MVALUE.md)
+Same problem in rating order (#462 of 735): [../../by-rating/462-MVALUE.md](../../by-rating/462-MVALUE.md)

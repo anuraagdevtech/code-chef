@@ -135,8 +135,6 @@ First sample: $L = 139$, $R = 141$.
 
 $\lfloor 141/3 \rfloor - \lfloor 138/3 \rfloor = 47 - 46 = $ `1`. The two columns agree on every row, as the congruence guarantees.
 
-> CodeChef tags: `Mathematics`, `Modular Arithmetic`, `Algorithms`, `Constructive`
-
 ---
 
-Same problem in rating order (#260 of 486): [../../by-rating/260-SOD3.md](../../by-rating/260-SOD3.md)
+Same problem in rating order (#262 of 735): [../../by-rating/262-SOD3.md](../../by-rating/262-SOD3.md)

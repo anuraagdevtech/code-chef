@@ -163,8 +163,6 @@ Different parities, so two colours are enough:
 
 Both fixed cells already hold their required colours, and no two neighbours match.
 
-> CodeChef tags: `Algorithms`, `Graph Algos`
-
 ---
 
-Same problem in rating order (#419 of 486): [../../by-rating/419-MINCOLOR.md](../../by-rating/419-MINCOLOR.md)
+Same problem in rating order (#439 of 735): [../../by-rating/439-MINCOLOR.md](../../by-rating/439-MINCOLOR.md)

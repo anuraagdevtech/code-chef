@@ -1,4 +1,4 @@
-[&larr; 333. Flu Shot Lineup](FLUSHOT.md) &middot; [Index](../../README.md)
+[&larr; 333. Flu Shot Lineup](FLUSHOT.md) &middot; [Index](../../README.md) &middot; [506. Problem-2 &rarr;](SET302.md)
 
 # 387. Sheokand and Number
 
@@ -139,4 +139,4 @@ Row 2 is equidistant both ways; row 3 shows the lower side winning as readily as
 
 ---
 
-Same problem in rating order (#318 of 486): [../../by-rating/318-SHKNUM.md](../../by-rating/318-SHKNUM.md)
+Same problem in rating order (#322 of 735): [../../by-rating/322-SHKNUM.md](../../by-rating/322-SHKNUM.md)

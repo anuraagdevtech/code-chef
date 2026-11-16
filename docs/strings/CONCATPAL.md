@@ -161,8 +161,6 @@ First sample: $A = $ `abcdd` ($N = 5$), $B = $ `ac` ($M = 2$). Since $N > M$ the
 
 Leftover of the longer side: `b` $\times 1$, `d` $\times 2$ — one odd count, which the centre can absorb. Output `YES`, e.g. `ca` $+$ `dbdac`… or more simply `ac` $+$ `dbdca` reads as `acdbdca`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#306 of 486): [../../by-rating/306-CONCATPAL.md](../../by-rating/306-CONCATPAL.md)
+Same problem in rating order (#310 of 735): [../../by-rating/310-CONCATPAL.md](../../by-rating/310-CONCATPAL.md)

@@ -114,8 +114,6 @@ main()
 | 5 | 3 | 2 | 1 | no | `NO` |
 | 5 | 5 | 0 | 0 | yes (equal) | `YES` |
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#67 of 486): [../../by-rating/067-CRICUP.md](../../by-rating/067-CRICUP.md)
+Same problem in rating order (#67 of 735): [../../by-rating/067-CRICUP.md](../../by-rating/067-CRICUP.md)

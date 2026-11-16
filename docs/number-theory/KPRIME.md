@@ -174,4 +174,4 @@ Note $4$, $8$ and $16$ all have $\omega = 1$, which is what the first row relies
 
 ---
 
-Same problem in rating order (#324 of 486): [../../by-rating/324-KPRIME.md](../../by-rating/324-KPRIME.md)
+Same problem in rating order (#329 of 735): [../../by-rating/329-KPRIME.md](../../by-rating/329-KPRIME.md)

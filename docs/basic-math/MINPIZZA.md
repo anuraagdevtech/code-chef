@@ -124,8 +124,6 @@ main()
 
 Rows 2 and 3 need the same $12$ slices by different routes, and both round to $3$ rather than $4$.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#17 of 486): [../../by-rating/017-MINPIZZA.md](../../by-rating/017-MINPIZZA.md)
+Same problem in rating order (#17 of 735): [../../by-rating/017-MINPIZZA.md](../../by-rating/017-MINPIZZA.md)

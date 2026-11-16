@@ -189,4 +189,4 @@ Output `7`.
 
 ---
 
-Same problem in rating order (#474 of 486): [../../by-rating/474-LOWSUM.md](../../by-rating/474-LOWSUM.md)
+Same problem in rating order (#662 of 735): [../../by-rating/662-LOWSUM.md](../../by-rating/662-LOWSUM.md)

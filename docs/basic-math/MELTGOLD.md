@@ -147,4 +147,4 @@ Row 3 needs $6 \geq 5$, so three steps rather than the two that $3$ would allow.
 
 ---
 
-Same problem in rating order (#103 of 486): [../../by-rating/103-MELTGOLD.md](../../by-rating/103-MELTGOLD.md)
+Same problem in rating order (#103 of 735): [../../by-rating/103-MELTGOLD.md](../../by-rating/103-MELTGOLD.md)

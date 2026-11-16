@@ -120,8 +120,6 @@ main()
 | 25 | 5 | 0 | has the $5$, needs one $2$ | `1` |
 | 1 | 1 | 1 | no factor of $5$, ever | `-1` |
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#147 of 486): [../../by-rating/147-TWOVSTEN.md](../../by-rating/147-TWOVSTEN.md)
+Same problem in rating order (#147 of 735): [../../by-rating/147-TWOVSTEN.md](../../by-rating/147-TWOVSTEN.md)

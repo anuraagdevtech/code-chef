@@ -159,8 +159,6 @@ Second sample: $A = -3, -2, -1, 0, 1, 2, 3$, magnitudes $3, 2, 1, 0, 1, 2, 3$.
 
 Base sum $= 4$. Smallest added magnitude is $1$, largest subtracted is $2$, so the swap gains $2(2 - 1) = 2$. Output `6`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#232 of 486): [../../by-rating/232-PMA.md](../../by-rating/232-PMA.md)
+Same problem in rating order (#233 of 735): [../../by-rating/233-PMA.md](../../by-rating/233-PMA.md)

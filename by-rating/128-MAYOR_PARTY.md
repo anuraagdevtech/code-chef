@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Greedy |
 | **Technique** | Choosing between mutually exclusive groups |
-| **CodeChef tags** | `Mathematics`, `Basic Math` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

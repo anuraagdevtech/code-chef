@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Arrays |
 | **Technique** | Last index satisfying a predicate |
-| **CodeChef tags** | `Mathematics`, `Algorithms`, `Basic Math`, `Implementation` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(N)$ per test case |
 | **Space** | $O(1)$ |

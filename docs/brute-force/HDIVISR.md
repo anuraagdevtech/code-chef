@@ -128,8 +128,6 @@ Sample 1, $N = 91$, counting down:
 
 The first zero is at $d = 7$, so the output is `7`. Sample 2, $N = 24$, stops earlier: $10$ and $9$ fail, $8$ divides, so `8`.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#110 of 486): [../../by-rating/110-HDIVISR.md](../../by-rating/110-HDIVISR.md)
+Same problem in rating order (#110 of 735): [../../by-rating/110-HDIVISR.md](../../by-rating/110-HDIVISR.md)

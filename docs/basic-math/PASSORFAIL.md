@@ -125,8 +125,6 @@ main()
 
 Row 3 is the negative score that a clamp would destroy.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Algorithms`
-
 ---
 
-Same problem in rating order (#74 of 486): [../../by-rating/074-PASSORFAIL.md](../../by-rating/074-PASSORFAIL.md)
+Same problem in rating order (#74 of 735): [../../by-rating/074-PASSORFAIL.md](../../by-rating/074-PASSORFAIL.md)

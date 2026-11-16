@@ -140,4 +140,4 @@ Output `17`.
 
 ---
 
-Same problem in rating order (#205 of 486): [../../by-rating/205-MAXDIFF.md](../../by-rating/205-MAXDIFF.md)
+Same problem in rating order (#205 of 735): [../../by-rating/205-MAXDIFF.md](../../by-rating/205-MAXDIFF.md)

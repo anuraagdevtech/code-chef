@@ -139,8 +139,6 @@ main()
 
 Rows 2 and 3 show the free count stalling at one across $N = 4, 5$.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`, `Basic Math`
-
 ---
 
-Same problem in rating order (#97 of 486): [../../by-rating/097-SALE2.md](../../by-rating/097-SALE2.md)
+Same problem in rating order (#97 of 735): [../../by-rating/097-SALE2.md](../../by-rating/097-SALE2.md)

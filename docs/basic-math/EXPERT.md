@@ -128,8 +128,6 @@ main()
 
 The last row is the tight case: exactly half still counts.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#19 of 486): [../../by-rating/019-EXPERT.md](../../by-rating/019-EXPERT.md)
+Same problem in rating order (#19 of 735): [../../by-rating/019-EXPERT.md](../../by-rating/019-EXPERT.md)

@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Basic Math |
 | **Technique** | Two competing limits |
-| **CodeChef tags** | `Basic Programming Concepts`, `Mathematics`, `Basic Math`, `Inbuilt functions`, `Integer Division` |
 | **Complexity class** | Constant time $O(1)$ |
 | **Time** | $O(1)$ per test case |
 | **Space** | $O(1)$ |

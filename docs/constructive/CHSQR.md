@@ -161,8 +161,6 @@ $K = 3$, so the shift is $s = 2$ and the centre is cell $(1,1)$ (0-based).
 
 The closest $1$ is one step away, which is the best a $3 \times 3$ Latin square allows.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#335 of 486): [../../by-rating/335-CHSQR.md](../../by-rating/335-CHSQR.md)
+Same problem in rating order (#340 of 735): [../../by-rating/340-CHSQR.md](../../by-rating/340-CHSQR.md)

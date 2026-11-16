@@ -132,8 +132,6 @@ main()
 
 Row 3 is the inclusive boundary: both twos vote.
 
-> CodeChef tags: `Basic Programming Concepts`
-
 ---
 
-Same problem in rating order (#35 of 486): [../../by-rating/035-ELECTN.md](../../by-rating/035-ELECTN.md)
+Same problem in rating order (#35 of 735): [../../by-rating/035-ELECTN.md](../../by-rating/035-ELECTN.md)

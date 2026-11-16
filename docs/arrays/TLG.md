@@ -195,8 +195,6 @@ main()
 
 Output `1 58`. Note player $2$ leads from round $3$ onward but never by much.
 
-> CodeChef tags: `Data Structures`, `Arrays`, `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#177 of 486): [../../by-rating/177-TLG.md](../../by-rating/177-TLG.md)
+Same problem in rating order (#177 of 735): [../../by-rating/177-TLG.md](../../by-rating/177-TLG.md)

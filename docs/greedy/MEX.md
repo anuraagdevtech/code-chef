@@ -168,4 +168,4 @@ Output `6`.
 
 ---
 
-Same problem in rating order (#276 of 486): [../../by-rating/276-MEX.md](../../by-rating/276-MEX.md)
+Same problem in rating order (#278 of 735): [../../by-rating/278-MEX.md](../../by-rating/278-MEX.md)

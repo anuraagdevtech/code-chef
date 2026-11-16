@@ -165,8 +165,6 @@ Fourth sample: $A = 1, 2, 2, 4, 5$.
 
 Output `2`: the three values at most $2$ cannot all fit in the two low positions of a single array. A valid pair of arrays is $[1, 2]$ and $[2, 4, 5]$ — checking the first, $1 \geq 1$ and $2 \geq 2$; and the second, $2 \geq 1$, $4 \geq 2$, $5 \geq 3$.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#360 of 486): [../../by-rating/360-CIREQ.md](../../by-rating/360-CIREQ.md)
+Same problem in rating order (#368 of 735): [../../by-rating/368-CIREQ.md](../../by-rating/368-CIREQ.md)

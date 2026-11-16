@@ -136,8 +136,6 @@ main()
 
 Row 3 short-circuits on the zero before the parity is ever considered.
 
-> CodeChef tags: `Basic Programming Concepts`, `Mathematics`
-
 ---
 
-Same problem in rating order (#152 of 486): [../../by-rating/152-NONNEGPROD.md](../../by-rating/152-NONNEGPROD.md)
+Same problem in rating order (#152 of 735): [../../by-rating/152-NONNEGPROD.md](../../by-rating/152-NONNEGPROD.md)

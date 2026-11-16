@@ -156,8 +156,6 @@ Second sample: $A = 1, 2, 1, 2$, so $N(N-1)/2 = 6$ subarrays with $l < r$.
 
 Unstable $= 6 - 2 = $ `4`. The two excluded subarrays are $A[1,3]$ and $A[2,4]$.
 
-> CodeChef tags: `Data Structures`, `Algorithms`
-
 ---
 
-Same problem in rating order (#323 of 486): [../../by-rating/323-COUNTSUB.md](../../by-rating/323-COUNTSUB.md)
+Same problem in rating order (#328 of 735): [../../by-rating/328-COUNTSUB.md](../../by-rating/328-COUNTSUB.md)

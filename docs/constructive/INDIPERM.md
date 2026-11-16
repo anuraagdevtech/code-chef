@@ -139,4 +139,4 @@ For $i \geq 2$ the remainder is always $i - 1$, never zero.
 
 ---
 
-Same problem in rating order (#211 of 486): [../../by-rating/211-INDIPERM.md](../../by-rating/211-INDIPERM.md)
+Same problem in rating order (#211 of 735): [../../by-rating/211-INDIPERM.md](../../by-rating/211-INDIPERM.md)

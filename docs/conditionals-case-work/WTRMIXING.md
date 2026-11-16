@@ -136,8 +136,6 @@ main()
 
 Row 3 misses by a single degree; row 4 has no warming at all.
 
-> CodeChef tags: `Mathematics`
-
 ---
 
-Same problem in rating order (#60 of 486): [../../by-rating/060-WTRMIXING.md](../../by-rating/060-WTRMIXING.md)
+Same problem in rating order (#60 of 735): [../../by-rating/060-WTRMIXING.md](../../by-rating/060-WTRMIXING.md)

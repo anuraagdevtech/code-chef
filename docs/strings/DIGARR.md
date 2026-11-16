@@ -133,8 +133,6 @@ main()
 | 103 | $1,0,3$ | yes ($0$) | $130$ | `Yes` |
 | 119 | $1,1,9$ | no | — | `No` |
 
-> CodeChef tags: `Data Structures`
-
 ---
 
-Same problem in rating order (#153 of 486): [../../by-rating/153-DIGARR.md](../../by-rating/153-DIGARR.md)
+Same problem in rating order (#153 of 735): [../../by-rating/153-DIGARR.md](../../by-rating/153-DIGARR.md)

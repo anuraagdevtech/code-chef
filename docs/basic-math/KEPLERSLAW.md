@@ -134,4 +134,4 @@ Row 3 is the exact equality that floating point would endanger.
 
 ---
 
-Same problem in rating order (#162 of 486): [../../by-rating/162-KEPLERSLAW.md](../../by-rating/162-KEPLERSLAW.md)
+Same problem in rating order (#162 of 735): [../../by-rating/162-KEPLERSLAW.md](../../by-rating/162-KEPLERSLAW.md)

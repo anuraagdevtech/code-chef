@@ -154,8 +154,6 @@ First sample: $N = 8$ with $A = 3, 6, 7, 8$ gives $P = 3, 1, 2, 6, 4, 5, 7, 8$.
 
 Exactly the four listed lengths close.
 
-> CodeChef tags: `Algorithms`
-
 ---
 
-Same problem in rating order (#317 of 486): [../../by-rating/317-PREFPERM.md](../../by-rating/317-PREFPERM.md)
+Same problem in rating order (#321 of 735): [../../by-rating/321-PREFPERM.md](../../by-rating/321-PREFPERM.md)

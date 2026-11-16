@@ -133,4 +133,4 @@ Row 3 has each needed feature available, but split across the two languages.
 
 ---
 
-Same problem in rating order (#164 of 486): [../../by-rating/164-PROGLANG.md](../../by-rating/164-PROGLANG.md)
+Same problem in rating order (#164 of 735): [../../by-rating/164-PROGLANG.md](../../by-rating/164-PROGLANG.md)

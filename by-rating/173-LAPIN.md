@@ -10,7 +10,6 @@
 |---|---|
 | **Topic** | Strings |
 | **Technique** | Comparing character frequencies |
-| **CodeChef tags** | `Data Structures`, `Arrays`, `Frequency Arrays`, `Maps`, `Hashmaps` |
 | **Complexity class** | Linear $O(n)$ |
 | **Time** | $O(|S|)$ per test case |
 | **Space** | $O(1)$ — at most 26 counters |

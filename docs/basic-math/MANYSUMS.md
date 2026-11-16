@@ -116,4 +116,4 @@ main()
 
 ---
 
-Same problem in rating order (#278 of 486): [../../by-rating/278-MANYSUMS.md](../../by-rating/278-MANYSUMS.md)
+Same problem in rating order (#280 of 735): [../../by-rating/280-MANYSUMS.md](../../by-rating/280-MANYSUMS.md)

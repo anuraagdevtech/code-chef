@@ -163,8 +163,6 @@ First sample: $N = 6$, $K = 3$, $S = $ `aabbcc`, so there are $3$ transitions.
 
 Total `4`.
 
-> CodeChef tags: `Data Structures`
-
 ---
 
-Same problem in rating order (#417 of 486): [../../by-rating/417-SUMPOWER.md](../../by-rating/417-SUMPOWER.md)
+Same problem in rating order (#436 of 735): [../../by-rating/436-SUMPOWER.md](../../by-rating/436-SUMPOWER.md)

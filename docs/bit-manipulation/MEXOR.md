@@ -133,8 +133,6 @@ main()
 
 For $X = 5$, extending to $\{0,\dots,4\}$ would give an OR of $7 > 5$.
 
-> CodeChef tags: `Mathematics`, `Number Theory`
-
 ---
 
-Same problem in rating order (#382 of 486): [../../by-rating/382-MEXOR.md](../../by-rating/382-MEXOR.md)
+Same problem in rating order (#396 of 735): [../../by-rating/396-MEXOR.md](../../by-rating/396-MEXOR.md)

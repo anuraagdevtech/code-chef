@@ -122,8 +122,6 @@ main()
 
 Row 2's single goal lands on shot $10$, which is team $2$'s.
 
-> CodeChef tags: `Basic Programming Concepts`, `Algorithms`
-
 ---
 
-Same problem in rating order (#137 of 486): [../../by-rating/137-PENALTY.md](../../by-rating/137-PENALTY.md)
+Same problem in rating order (#137 of 735): [../../by-rating/137-PENALTY.md](../../by-rating/137-PENALTY.md)

@@ -171,8 +171,6 @@ The string `<=<`, with four slots.
 
 Output `3`, realised by $1 < 2 = 2 < 3$.
 
-> CodeChef tags: `Data Structures`, `Arrays`, `Groupings`
-
 ---
 
-Same problem in rating order (#329 of 486): [../../by-rating/329-CHEFSIGN.md](../../by-rating/329-CHEFSIGN.md)
+Same problem in rating order (#334 of 735): [../../by-rating/334-CHEFSIGN.md](../../by-rating/334-CHEFSIGN.md)
